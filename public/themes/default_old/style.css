@@ -1,0 +1,2292 @@
+/**
+ * File: style.php
+ * User: Masterplan
+ * Date: 3/15/13
+ * Time: 4:36 PM
+ * Desc: System CSS Style
+ */
+
+/*************************************
+*               Body                 *
+*************************************/
+body,html {
+	padding		:	0;
+	margin		:	0;
+	font-family	:	"Trebuchet MS",serif;
+	text-align	:	center;
+	cursor      :   default;
+}
+body.noscroll {
+    overflow: hidden;
+}
+
+/*************************************
+*              Header                *
+*************************************/
+#container{
+    /*width       :   1280px;*/
+    width       :   99%;
+    border	    :	0;
+    margin      :   0 auto;
+}
+#header {
+    width	            :	100%;
+    margin              :	5px auto auto;
+    height              :   122px;
+    background-color    :   #929292;
+}
+#eolLogo {
+    float       :   left;
+    width       :   171px;
+    height      :	88px;
+    background  :   url("images/eol.png") no-repeat;
+    margin-top  :   12px;
+    margin-left:    20px;
+}
+#welcome {
+    font-size   :   12px;
+    float       :   right;
+    width       :   231px;
+    height      :	99px;
+    background  :   url("images/welcome.png") no-repeat;
+    margin-top  :   10px;
+    margin-right:   10px;
+}
+#welcome div {
+    margin-top  :   15px;
+    margin-left :   15px;
+}
+#welcome a {
+    text-decoration :   none;
+}
+#welcome a.u,
+#welcome a.l{
+    font-weight     : bold;
+}
+
+/*************************************
+*                Menu                *
+*************************************/
+ul.topnav {
+    font-size       :   14px;
+    text-align      :   left;
+    list-style      :   none;
+    float           :   left;
+    width           :   98%;
+    margin-top      :   0;
+    margin-bottom   :   0;
+    padding-left    :   2%;
+    background      :   url(images/topnav_bg.gif) repeat-x;
+}
+ul.topnav li {
+    float           :   left;
+    padding         :   0 15px 10px 10px;
+    position        :   relative;
+}
+ul.topnav li:hover{
+    background      :   url(images/topnav_hover.gif) no-repeat center top;
+}
+ul.topnav li a{
+    padding         :   10px 5px;
+    color           :   #fff;
+    display         :   block;
+    text-decoration :   none;
+    cursor          :   pointer;
+    float           :   left;
+}
+ul.topnav li ul.subnav {
+    font-size                               :   12px;
+    list-style                              :   none;
+    position                                :   absolute;
+    left                                    :   0;
+    top                                     :   33px;
+    background                              :   #333;
+    margin                                  :   0;
+    padding                                 :   0;
+    display                                 :   none;
+    float                                   :   left;
+    /*width                                   :   170px;*/
+    -moz-border-radius-bottomleft           :   5px;
+    -moz-border-radius-bottomright          :   5px;
+    -webkit-border-bottom-left-radius       :   5px;
+    -webkit-border-bottom-right-radius      :   5px;
+    border                                  :   1px solid #111;
+    z-index                                 :   1000;
+}
+ul.topnav li ul.subnav li{
+    margin          :   0;
+    padding         :   0;
+    border-top      :   1px solid #252525;
+    border-bottom   :   1px solid #444;
+    clear           :   both;
+    /*width           :   170px;*/
+}
+html ul.topnav li ul.subnav li a {
+    float           :   left;
+    width           :   180px;
+    background      :   #333 url(images/dropdown_linkbg.gif) no-repeat 10px center;
+    padding-left    :   20px;
+}
+html ul.topnav li ul.subnav li a:hover {
+    background      :   #222 url(images/dropdown_linkbg.gif) no-repeat 10px center;
+}
+
+/*************************************
+*               Footer               *
+*************************************/
+#footer{
+    width           :   100%;
+    height          :   36px;
+    background      :   #929292 url('images/footer.png') repeat-x;
+    padding-top     :   5px;
+    font-size       :   12px;
+    text-align      :   center;
+    color: #ffffff;
+}
+
+/*************************************
+*             Timepicker             *
+*************************************/
+.ui-timepicker-div .ui-widget-header {
+    margin-bottom: 8px;
+}
+.ui-timepicker-div dl {
+    text-align: left;
+}
+.ui-timepicker-div dl dt {
+    height: 25px;
+    margin-bottom: -25px;
+}
+.ui-timepicker-div dl dd {
+    margin: 0 10px 10px 65px;
+}
+.ui-timepicker-div td {
+    font-size: 90%;
+}
+.ui-tpicker-grid-label {
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+.ui-timepicker-rtl{
+    direction: rtl;
+}
+.ui-timepicker-rtl dl {
+    text-align: right;
+}
+.ui-timepicker-rtl dl dd {
+    margin: 0 65px 10px 10px;
+}
+div.ui-datepicker{
+    font-size:12px;
+}
+
+/*************************************
+*             Dropdowns              *
+*************************************/
+.dropdownSystemLanguage {
+    float:right;
+    width: 40px;
+    margin: 6px 0 0 2px;
+    padding: 0;
+    cursor: pointer;
+}
+.dropdownSystemLanguage dd,
+.dropdownSystemLanguage dt,
+.dropdownSystemLanguage ul {
+    margin:0;
+    padding:0;
+    font-size: 14px;
+}
+.dropdownSystemLanguage dd {
+    position:relative;
+}
+.dropdownSystemLanguage dt{
+    width: 30px;
+    background: #f5f5f5;
+    text-align: center;
+    display:block;
+    border:1px solid #8a8a8a;
+}
+.dropdownSystemLanguage dt span {
+    display:block;
+    padding: 2px 2px 2px 4px;
+}
+.dropdownSystemLanguage dd ul {
+    background: #f5f5f5;
+    border: 1px solid #8a8a8a;
+    display:none;
+    list-style:none;
+    padding: 2px;
+    position:absolute;
+    top:2px;
+    z-index: 1000;
+    width: 120px;
+    left:-93px;
+    max-height: 100px;
+    overflow-y: auto;
+}
+.dropdownSystemLanguage dd ul li{
+    padding: 1px 1px 1px 3px;
+    float: right;
+}
+.dropdownSystemLanguage dd ul li:hover{
+    color                   :   #FFFFFF;
+    background              :   url(images/hover.png) repeat;
+    background-size         :   100% 100%;
+}
+.dropdownSystemLanguage span.value {
+    display:none;
+}
+.dropdownTranslation {
+    float:left;
+    width: 150px;
+    margin: 0 0 0 2px;
+    padding: 0;
+    cursor: default;
+}
+.dropdownTranslation dd,
+.dropdownTranslation dt,
+.dropdownTranslation ol {
+    margin:0;
+    padding:0;
+    font-size: 12px;
+}
+.dropdownTranslation dd {
+    position:relative;
+}
+.dropdownTranslation dt{
+    /*width: 70px;*/
+    background: #f5f5f5 url(images/arrow2.png) no-repeat scroll right center;
+    display:block;
+    border:1px solid #8a8a8a;
+}
+.dropdownTranslation.notChange dt{
+    /*width: 70px;*/
+    background: none;
+    display:block;
+    border:1px solid #8a8a8a;
+}
+.dropdownTranslation dt span {
+    display:block;
+    padding: 2px 2px 2px 4px;
+}
+.dropdownTranslation dd ol {
+    background: #f5f5f5;
+    border: 1px solid #8a8a8a;
+    display:none;
+    list-style:none;
+    padding: 2px;
+    position:absolute;
+    left:0;
+    top:2px;
+    width:145px;
+    z-index: 1000;
+    max-height          :   150px;
+    overflow-y          :   auto;
+}
+.dropdownTranslation dd ol li{
+    padding: 1px 1px 1px 3px;
+}
+.dropdownTranslation dd ol li:hover{
+    color                   :   #FFFFFF;
+    background              :   url(images/hover.png) repeat;
+    background-size         :   100% 100%;
+}
+.dropdownTranslation span.value {
+    display:none;
+}
+.dropdownInfo {
+    float:left;
+    margin: 0 0 0 2px;
+    padding: 0;
+    cursor: default;
+}
+.dropdownInfo dd,
+.dropdownInfo dt,
+.dropdownInfo ol {
+    margin:0;
+    padding:0;
+    font-size: 12px;
+    width: 180px;
+}
+.dropdownInfo dd {
+    position:relative;
+}
+.dropdownInfo dt{
+    background: #f5f5f5 url(images/arrow2.png) no-repeat scroll right center;
+    display:block;
+    border:1px solid #8a8a8a;
+}
+.dropdownInfo dt.readonly{
+    background: #f5f5f5;
+}
+.dropdownInfo dt span {
+    display:block;
+    padding: 2px 2px 2px 4px;
+}
+.dropdownInfo dd ol {
+    background: #f5f5f5;
+    border: 1px solid #8a8a8a;
+    display:none;
+    list-style:none;
+    padding: 2px;
+    position:absolute;
+    left:0;
+    top:2px;
+    z-index: 1000;
+    max-height: 150px;
+    overflow-y: auto;
+}
+.dropdownInfo dd ol li{
+    padding: 1px 1px 1px 3px;
+    border-bottom: 1px solid #8a8a8a;
+    border-radius: 0;
+}
+.dropdownInfo dd ol li:hover{
+    color                   :   #FFFFFF;
+    background              :   url(images/hover.png) repeat;
+    background-size         :   100% 100%;
+}
+.dropdownInfo dd ol li:last-child{
+    border-bottom: none;
+}
+.dropdownInfo span.value {
+    display:none;
+}
+.clicked{
+    background: #8a8a8a;
+    color: #ffffff;
+}
+
+/*************************************
+*                Main                *
+*************************************/
+#main{
+    text-align      :   left;
+    min-height      :   245px;
+    padding         :   20px;
+    background-color    :   #929292;
+}
+
+/*************************************
+*               Boxes                *
+*************************************/
+.box{
+    width               :   100%;
+    height              :   auto;
+    position            :   relative;
+    clear               :   right;
+}
+.boxTopCenter{
+    background          :   url('images/Box.png') repeat-x;
+    padding-left        :   21px;
+    height              :   38px;
+    font-size           :   15px;
+    font-variant        :   small-caps;
+    color               :   #000000;
+    line-height         :   39px;
+    font-weight         :   bold;
+    border              :   1px solid #686868;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.boxContent{
+    border-left         :   1px solid #686868;
+    border-right        :   1px solid #686868;
+    background-color    :   #FFFFFF;
+    padding             :   10px;
+    font-size           :   11px;
+    color               :   #000000;
+    text-align          :   left;
+}
+.boxLeftS{
+    width               :   48%;
+    position            :   relative;
+    float               :   left;
+}
+.boxCenterS{
+    width               :   48%;
+    position            :   relative;
+    overflow            :   hidden;
+    margin              :   0 auto;
+}
+.boxRightS{
+    width               :   48%;
+    position            :   relative;
+    float               :   right;
+}
+.boxNormal{
+    width               :   100%;
+    position            :   relative;
+    float               :   left;
+}
+.boxNormalS{
+    width               :   50%;
+    position            :   relative;
+    margin              :   0 auto;
+}
+.boxBottom{
+    width               :   100%;
+    height              :   25px;
+    position            :   relative;
+}
+.boxBottomCenter{
+    background          :   url('images/Box.png') repeat-x;
+    padding             :   8px;
+    height              :   22px;
+    font-size           :   10px;
+    color               :   #000000;
+    border              :   1px solid #686868;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/*************************************
+*               Lists                *
+*************************************/
+.list{
+    width                   :   100%;
+    max-height              :   100%;
+    font-size               :   12px;
+    overflow                :   hidden;
+}
+.list ul{
+    list-style              :   none;
+    padding                 :   0;
+    margin                  :   0;
+    display                 :   inline-block;
+    min-width               :   100%;
+}
+.list ul li{
+    white-space             :   nowrap;
+    display                 :   inline-block;
+    min-width               :   100%;
+    border-bottom           :   1px solid #CCCCCC;
+}
+.list ul li a{
+    min-width               :   inherit;
+    display                 :   inline-block;
+    text-decoration         :   none;
+    color                   :   #000000;
+    background-color        :   #FFFFFF;
+    line-height             :   18px;
+    padding-left            :   10px;
+    cursor                  :   pointer;
+    margin                  :   0;
+}
+.list ul li a.all{
+    border-bottom           :   4px double #CCCCCC;
+}
+.list ul li a:hover,
+.list ul li a.selected{
+    color                   :   #FFFFFF;
+    background              :   url(images/hover.png) repeat;
+    background-size         :   100% 100%;
+}
+.list ul li a:not([value]){
+    background              : none;
+    cursor                  : default;
+    color                   : black;
+}
+
+/*************************************
+*              Buttons               *
+*************************************/
+a.button {
+    display                 :   inline-block;
+    padding                 :   0 33px;
+    height                  :   19px;
+    line-height             :   19px;
+    border-radius           :   3px;
+    -webkit-border-radius   :   3px;
+    -o-border-radius        :   3px;
+    -moz-border-radius      :   3px;
+    border                  :   1px solid;
+    text-decoration         :   none;
+    font-family             :   "Lucida Grande", lucida, "Helvetica Neue", helvetica, sans-serif;
+    font-size               :   12px;
+    color                   :   #000;
+    text-shadow             :   0 1px 0 rgba(255,255,255,0.09);
+
+}
+@-webkit-keyframes blinkingO {
+	   from {
+		   -webkit-box-shadow:
+		   		inset 0 19px 0 rgba(0,115,215,0),
+				inset 0 1px 0 rgba(255,255,255,1),
+				0 1px 0 rgba(0,0,0,0.09);
+			}
+	   50% {
+		   -webkit-box-shadow:
+		   		inset 0 19px 0 rgba(0,115,215,0.2),
+				inset 0 1px 0 rgba(255,255,255,1),
+				0 1px 0 rgba(0,0,0,0.09);
+			}
+		to {
+		   -webkit-box-shadow:
+		   		inset 0 19px 0 rgba(0,115,215,0),
+				inset 0 1px 0 rgba(255,255,255,1),
+				0 1px 0 rgba(0,0,0,0.09);
+			}
+		}
+@-moz-keyframes blinkingO {
+	   from {
+		   -moz-box-shadow:
+		   		inset 0 19px 0 rgba(0,115,215,0),
+				inset 0 1px 0 rgba(255,255,255,1),
+				0 1px 0 rgba(0,0,0,0.09);
+			}
+	   50% {
+		   -moz-box-shadow:
+		   		inset 0 19px 0 rgba(0,115,215,0.2),
+				inset 0 1px 0 rgba(255,255,255,1),
+				0 1px 0 rgba(0,0,0,0.09);
+			}
+		to {
+		   -moz-box-shadow:
+		   		inset 0 19px 0 rgba(0,115,215,0),
+				inset 0 1px 0 rgba(255,255,255,1),
+				0 1px 0 rgba(0,0,0,0.09);
+			}
+		}
+@keyframes blinkingO {
+	   from {
+		   box-shadow:
+		   		inset 0 19px 0 rgba(0,115,215,0),
+				inset 0 1px 0 rgba(255,255,255,1),
+				0 1px 0 rgba(0,0,0,0.09);
+			}
+	   50% {
+		   box-shadow:
+		   		inset 0 19px 0 rgba(0,115,215,0.2),
+				inset 0 1px 0 rgba(255,255,255,1),
+				0 1px 0 rgba(0,0,0,0.09);
+			}
+		to {
+		   box-shadow:
+		   		inset 0 19px 0 rgba(0,115,215,0),
+				inset 0 1px 0 rgba(255,255,255,1),
+				0 1px 0 rgba(0,0,0,0.09);
+			}
+		}
+@-webkit-keyframes blinkingD {
+	   from {
+		   -webkit-box-shadow:
+		   		inset 0 19px 0 rgba(215,0,0,0),
+				inset 0 1px 0 rgba(255,255,255,1),
+				0 1px 0 rgba(0,0,0,0.09);
+			}
+	   50% {
+		   -webkit-box-shadow:
+		   		inset 0 19px 0 rgba(215,0,0,0.2),
+				inset 0 1px 0 rgba(255,255,255,1),
+				0 1px 0 rgba(0,0,0,0.09);
+			}
+		to {
+		   -webkit-box-shadow:
+		   		inset 0 19px 0 rgba(215,0,0,0),
+				inset 0 1px 0 rgba(255,255,255,1),
+				0 1px 0 rgba(0,0,0,0.09);
+			}
+		}
+@-moz-keyframes blinkingD {
+	   from {
+		   -moz-box-shadow:
+		   		inset 0 19px 0 rgba(215,0,0,0),
+				inset 0 1px 0 rgba(255,255,255,1),
+				0 1px 0 rgba(0,0,0,0.09);
+			}
+	   50% {
+		   -moz-box-shadow:
+		   		inset 0 19px 0 rgba(215,0,0,0.2),
+				inset 0 1px 0 rgba(255,255,255,1),
+				0 1px 0 rgba(0,0,0,0.09);
+			}
+		to {
+		   -moz-box-shadow:
+		   		inset 0 19px 0 rgba(215,0,0,0),
+				inset 0 1px 0 rgba(255,255,255,1),
+				0 1px 0 rgba(0,0,0,0.09);
+			}
+		}
+@keyframes blinkingD {
+	   from {
+		   box-shadow:
+		   		inset 0 19px 0 rgba(215,0,0,0),
+				inset 0 1px 0 rgba(255,255,255,1),
+				0 1px 0 rgba(0,0,0,0.09);
+			}
+	   50% {
+		   box-shadow:
+		   		inset 0 19px 0 rgba(215,0,0,0.2),
+				inset 0 1px 0 rgba(255,255,255,1),
+				0 1px 0 rgba(0,0,0,0.09);
+			}
+		to {
+		   box-shadow:
+		   		inset 0 19px 0 rgba(215,0,0,0),
+				inset 0 1px 0 rgba(255,255,255,1),
+				0 1px 0 rgba(0,0,0,0.09);
+			}
+		}
+a.button.ok,
+a.button.blue {
+    border-color                        :   #56578f;
+    border-top-color                    :   #5a5caf;
+    border-bottom-color                 :   #52536f;
+    background-image                    :   -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, #D3F7FD),
+        color-stop(0.5, #87C5FB),
+        color-stop(0.5, #A1D1F9),
+        color-stop(1, #D4E9FC)
+    );
+    background-image                    :   -moz-linear-gradient(
+        center bottom,
+        #D3F7FD 0%,
+        #87C5FB 50%,
+        #A1D1F9 50%,
+        #D4E9FC 100%
+    );
+    -webkit-animation-name              :   blinkingO;
+    -webkit-animation-timing-function   :   ease-in-out;
+    -webkit-animation-iteration-count   :   infinite;
+    -webkit-animation-duration          :   1.3s;
+    -moz-animation-name                 :   blinkingO;
+    -moz-animation-timing-function      :   ease-in-out;
+    -moz-animation-iteration-count      :   infinite;
+    -moz-animation-duration             :   1.3s;
+    animation-name                      :   blinkingO;
+    animation-timing-function           :   ease-in-out;
+    animation-iteration-count           :   infinite;
+    animation-duration                  :   1.3s;
+}
+a.button.ok:active,
+a.button.blue:active,
+a.button.normal:active{
+    -webkit-box-shadow      :   inset 0 19px 0 rgba(0,115,215,0.3),
+    inset 0 1px 0 rgba(255,255,255,1),
+    0 1px 0 rgba(0,0,0,0.09);
+    -webkit-animation-name  :   none;
+    -moz-box-shadow         :   inset 0 19px 0 rgba(0,115,215,0.3),
+    inset 0 1px 0 rgba(255,255,255,1),
+    0 1px 0 rgba(0,0,0,0.09);
+    -moz-animation-name     :   none;
+    box-shadow              :   inset 0 19px 0 rgba(0,115,215,0.3),
+    inset 0 1px 0 rgba(255,255,255,1),
+    0 1px 0 rgba(0,0,0,0.09);
+    animation-name          :   none;
+    background-image        :   -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, #D3F7FD),
+        color-stop(0.5, #87C5FB),
+        color-stop(0.5, #A1D1F9),
+        color-stop(1, #D4E9FC)
+    );
+    background-image        :   -moz-linear-gradient(
+        center bottom,
+        #D3F7FD 0%,
+        #87C5FB 50%,
+        #A1D1F9 50%,
+        #D4E9FC 100%
+    );
+    border-color            :   #56578f;
+    border-top-color        :   #5a5caf;
+    border-bottom-color     :   #52536f;
+}
+a.button.normal,
+a.button.inactive {
+    border-color            :   #9a9a9a;
+    background-image        :   -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, #EBEBEB),
+        color-stop(0.5, #ECECEC),
+        color-stop(0.5, #F3F3F3),
+        color-stop(1, #FFFFFF)
+    );
+    background-image        :   -moz-linear-gradient(
+        center bottom,
+        #EBEBEB 0%,
+        #ECECEC 50%,
+        #F3F3F3 50%,
+        #FFFFFF 100%
+    );
+    -webkit-box-shadow      :   inset 0 1px 0 rgba(255,255,255,1),
+    0 1px 0 rgba(0,0,0,0.09);
+    -moz-box-shadow         :   inset 0 1px 0 rgba(255,255,255,1),
+    0 1px 0 rgba(0,0,0,0.09);
+    box-shadow              :   inset 0 1px 0 rgba(255,255,255,1),
+    0 1px 0 rgba(0,0,0,0.09);
+}
+a.button.inactive {
+    opacity         :   0.5;
+    cursor          :   default;
+}
+a.button.delete,
+a.button.red {
+    border-color                        :   #8f5656;
+    border-top-color                    :   #af5a5a;
+    border-bottom-color                 :   #6f5252;
+    background-image                    :   -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, #fdd3d3),
+        color-stop(0.5, #fb8787),
+        color-stop(0.5, #f9a1a1),
+        color-stop(1, #fcd4d4)
+    );
+    background-image                    :   -moz-linear-gradient(
+        center bottom,
+        #fdd3d3 0%,
+        #fb8787 50%,
+        #f9a1a1 50%,
+        #fcd4d4 100%
+    );
+    -webkit-animation-name              :   blinkingD;
+    -webkit-animation-timing-function   :   ease-in-out;
+    -webkit-animation-iteration-count   :   infinite;
+    -webkit-animation-duration          :   1.3s;
+    -moz-animation-name                 :   blinkingD;
+    -moz-animation-timing-function      :   ease-in-out;
+    -moz-animation-iteration-count      :   infinite;
+    -moz-animation-duration             :   1.3s;
+    animation-name                      :   blinkingD;
+    animation-timing-function           :   ease-in-out;
+    animation-iteration-count           :   infinite;
+    animation-duration                  :   1.3s;
+}
+div.smallButtons {
+    height          :   100%;
+    padding         :   1px 0 0;
+    margin          :   0 5px 0 0;
+    float           :   right;
+    position        :   absolute;
+    right           :   0;
+    top             :   0;
+    text-align      :   center;
+}
+div.smallButtons div {
+    font-size           :   12px;
+    vertical-align: middle;
+    margin: 0;
+    padding-top: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+    float : right;
+    border: 1px solid transparent;
+    font-weight: normal;
+}
+div.smallButtons img{
+    padding-left: 6px;
+    padding-top: 1px;
+}
+div.smallButtons div:hover {
+    border: 1px solid #3c3c3c;
+    border-radius: 5px;
+    background-color: rgb(146, 146, 146);
+    cursor: pointer;
+}
+
+/*************************************
+*       Success/Error Message        *
+*************************************/
+#modalSuccess,
+#modalError {
+    width: 100%;
+    background: rgb(12, 156, 12);
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 2px solid black;
+    border-top: 0;
+}
+#modalError {
+    background: rgb(223, 58, 58);
+}
+#modalSuccess p,
+#modalError p {
+    margin: 8px 50px;
+}
+.lbmClose {
+    position: absolute;
+    top: 2px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 10000;
+    background: url(images/lbmClose.png) no-repeat;
+}
+.lbmClose:hover {
+    background-position:0 -30px;
+}
+
+/*************************************
+*             jQuery UI              *
+*************************************/
+.ui-dialog {
+    font-size               :   14px;
+    font-family             :   "Trebuchet MS",serif;
+    border: 1px solid gray;
+    -moz-box-shadow: 0 0 25px #333333;
+    -webkit-box-shadow:0 0 25px #333333;
+    box-shadow: 0 0 25px #333333;
+}
+.ui-dialog .ui-dialog-titlebar {
+    background              :   transparent;
+    border                  :   none;
+    padding                 :   0 0 0 10px;
+}
+.ui-dialog-content p {
+    padding                 :   5px 0 0 70px;
+    margin                  :   0;
+    text-align              :   left;
+}
+.ui-dialog .ui-dialog-buttonpane {
+    margin                  :   0;
+    padding                 :   0;
+    background              :   transparent;
+}
+.ui-dialog .ui-dialog-buttonpane .ui-button {
+    display                 :   inline-block;
+    padding                 :   0;
+    height                  :   23px;
+    width                   :   auto;
+    line-height             :   23px;
+    border-radius           :   3px;
+    -webkit-border-radius   :   3px;
+    -o-border-radius        :   3px;
+    -moz-border-radius      :   3px;
+    border                  :   1px solid;
+    text-decoration         :   none;
+    font-family             :   "Lucida Grande", lucida, "Helvetica Neue", helvetica, sans-serif;
+    font-size               :   12px;
+    color                   :   #000;
+    text-shadow             :   0 1px 0 rgba(255,255,255,0.09);
+    border-color            :   #9a9a9a;
+    background-image        :   -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, #EBEBEB),
+        color-stop(0.5, #ECECEC),
+        color-stop(0.5, #F3F3F3),
+        color-stop(1, #FFFFFF)
+    );
+    background-image        :   -moz-linear-gradient(
+        center bottom,
+        #EBEBEB 0%,
+        #ECECEC 50%,
+        #F3F3F3 50%,
+        #FFFFFF 100%
+    );
+    -webkit-box-shadow      :   inset 0 1px 0 rgba(255,255,255,1),
+    0 1px 0 rgba(0,0,0,0.09);
+    -moz-box-shadow         :   inset 0 1px 0 rgba(255,255,255,1),
+    0 1px 0 rgba(0,0,0,0.09);
+    box-shadow              :   inset 0 1px 0 rgba(255,255,255,1),
+    0 1px 0 rgba(0,0,0,0.09);
+}
+.ui-dialog .ui-dialog-buttonpane .ui-button .ui-button-text {
+    line-height             :   14px;
+}
+.ui-autocomplete{
+    font-size               :   14px;
+    font-family             :   "Trebuchet MS",serif;
+    height: 150px;
+    overflow-y: scroll;
+    text-align: left;
+}
+
+/*************************************
+*              Utility               *
+*************************************/
+.left {
+    float       :   left;
+}
+.right {
+    float       :   right;
+}
+.center {
+    text-align: center;
+}
+.clearer {
+    float       :   none;
+    clear       :   both;
+}
+.hidden {
+    display     :   none;
+}
+.invisible {
+    visibility: hidden;
+}
+.overlimit {
+    color       :   red;
+    font-weight :   bold;
+}
+.msgCenter{
+    text-align      :   center;
+    margin-bottom   :   10px;
+}
+.whiteText{
+    color       :   white;
+}
+input{
+    font-family	:	"Trebuchet MS",serif;
+    font-size: 14px;
+}
+input[type="text"][disabled]{
+    color: #000000;
+    background-color: #ffffff;
+}
+input.numeric {
+    width   :   35px;
+}
+textarea{
+    font-family	:	"Trebuchet MS",serif;
+    font-size: 14px;
+}
+textarea[disabled]{
+    background-color: #ffffff;
+    color: #000000;
+}
+div[id^="message"]{
+    margin-top      :   20px;
+    margin-bottom   :   10px;
+    text-align      :   center;
+    font-weight     :   bold;
+    display         :   none;
+}
+div[id^="error"] {
+    margin-top      :   20px;
+    margin-bottom   :   10px;
+    width           :   100%;
+    text-align      :   center;
+    font-weight     :   bold;
+    color           :   red;
+    display         :   none;
+}
+.readonly {
+    border              :   1px solid transparent;
+    resize              :   none;
+    font-size           :   12px;
+}
+.writable,
+.dropdownInfo dt.writable,
+.dropdownTranslation dt.writable{
+    border              :   1px solid gray;
+    background-color    :   rgb(245, 252, 194);
+    resize              :   none;
+    font-size: 12px;
+}
+img.flag{
+    width: 17px;
+    height: 13px;
+    margin-right: 5px;
+    position: relative;
+    top: 2px;
+}
+img.bigFlag{
+    width: 20px;
+    height: 15px;
+    margin-right: 5px;
+    position: relative;
+    top: 1px;
+}
+img.icon{
+    vertical-align: middle;
+    height: 20px;
+    margin-right: 5px;
+}
+.noItem {
+    border: 1px solid #c2c2c2;
+}
+.lSpace{
+    margin-left         :   10px;
+}
+.rSpace{
+    margin-right        :   10px;
+}
+.tSpace{
+    margin-top          :   10px;
+}
+.bSpace{
+    margin-bottom       :   10px;
+}
+.l2Space{
+    margin-left         :   20px;
+}
+.r2Space{
+    margin-right        :   20px;
+}
+.t2Space{
+    margin-top          :   20px;
+}
+.b2Space{
+    margin-bottom       :   20px;
+}
+.lPad{
+    padding-left         :   10px;
+}
+.rPad{
+    padding-right        :   10px;
+}
+.tPad{
+    padding-top          :   10px;
+}
+.bPad{
+    padding-bottom       :   10px;
+}
+.l2Pad{
+    padding-left         :   20px;
+}
+.r2Pad{
+    padding-right        :   20px;
+}
+.t2Pad{
+    padding-top          :   20px;
+}
+.b2Pad{
+    padding-bottom       :   20px;
+}
+.italic {
+    font-style: italic;
+}
+.bold {
+    font-weight: bold;
+}
+.underline {
+    text-decoration: underline;
+}
+/*************************************
+*      LightboxMe Modal Message      *
+*************************************/
+.backSuccess{
+    background: rgb(12, 156, 12);
+}
+.backError{
+    background: rgb(223, 58, 58);
+}
+.boxHelpMessage {
+    padding-left: 10px;
+    font-variant: normal;
+    font-size: 11px;
+    font-weight: normal;
+    position: relative;
+    left: -10px;
+}
+.boxHelpMessage img {
+    height: 17px;
+    padding-top: 3px;
+    margin-right: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+.infoEdit {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.infoEdit label{
+    float               :   left;
+    position            :   relative;
+    top                 :   4px;
+    min-width           :   25%;
+    margin-right        :   10px;
+    text-align          :   right;
+    font-size           :   12px;
+    font-weight         :   bold;
+}
+.infoEdit input[type="text"],
+.infoEdit input[type="password"] {
+    width: 65%;
+    margin-right: 1%;
+}
+.infoEdit textarea{
+    width: 65%;
+    height: 50px;
+    margin-right: 1%;
+}
+
+/*******************************************************************
+********************************************************************
+***                                                              ***
+***                             Admin                            ***
+***                                                              ***
+********************************************************************
+*******************************************************************/
+
+/*************************************
+*              Homepage              *
+*************************************/
+#adminHomepage .boxContent {
+    font-size: 12px;
+}
+#adminHomepage table {
+    margin-left: 50px;
+}
+#adminTable td:first-child {
+    text-align: right;
+    width: 100px;
+}
+#adminTable td:last-child {
+    padding-left: 20px;
+}
+
+/*************************************
+*             Languages              *
+*************************************/
+/*div.language.odd{*/
+    /*background-color: #efefef;*/
+/*}*/
+/*div.language.even{*/
+    /*background-color: #e2e2e2;*/
+/*}*/
+/*div.language div:not(.clearer){*/
+    /*width: 47.7%;*/
+    /*font-size: 14px;*/
+    /*padding: 10px;*/
+/*}*/
+textarea.language{
+    width: 95%;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    overflow-y: hidden;
+    resize: none;
+    transition: height .3s;     /* autoresize animation*/
+}
+textarea.language.red{
+    background-color: #ff7972;
+}
+textarea.language.green{
+    background-color: #adff8d;
+}
+
+/*************************************
+*            Registration            *
+*************************************/
+#register .infoEdit div{
+    text-align: center;
+}
+
+/*************************************
+*              Profile               *
+*************************************/
+#profile .infoEdit div{
+    text-align: center;
+}
+
+/*******************************************************************
+********************************************************************
+***                                                              ***
+***                            Teacher                           ***
+***                                                              ***
+********************************************************************
+*******************************************************************/
+
+/*************************************
+*              Homepage              *
+*************************************/
+#examsTableMinContainer {
+    width: 48%;
+    float: left;
+    font-size: 12px;
+}
+#testsTableContainer {
+    width: 48%;
+    float: right;
+    font-size: 12px;
+}
+#subjectsList .boxContent {
+    max-height: 250px;
+    overflow: scroll;
+}
+#homeExamsTable .eStatus {
+    text-align: center;
+}
+#homeExamsTable .eStatus img{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 3px;
+    max-height: 18px;
+    max-width: 18px;
+    cursor:pointer;
+}
+
+/*******************************************************************
+********************************************************************
+***                                                              ***
+***                             Login                            ***
+***                                                              ***
+********************************************************************
+*******************************************************************/
+#loginDiv {
+    background          :   url('images/login_background.png') no-repeat;
+    width				:	477px;
+    height				:	460px;
+    margin              :   100px auto auto;
+    text-align			:	center;
+    padding				:	20px;
+    position			:	relative;
+    left				:	40px;
+}
+#loginDiv img {
+    position    :   absolute;
+    top         :   0px;
+    left        :   150px;
+    width       :   60px;
+}
+#loginForm {
+    width	 :	 380px;
+    float	 :	 left;
+    position :	 relative;
+    top		 :	 110px;
+}
+#result {
+    width	    :	380px;
+    font-weight :   bold;
+    font-size   :   11px;
+}
+#loginForm input.text {
+    width	   :	200px;
+    text-align :    center;
+    padding    :    5px;
+}
+#loginForm label {
+    display		:	block;
+    width		:	100%;
+    text-align	:	center;
+}
+#loginForm a.little{
+    font-size: 11px;
+}
+
+/*******************************************************************
+********************************************************************
+***                                                              ***
+***                      Topics / Questions                      ***
+***                                                              ***
+********************************************************************
+*******************************************************************/
+
+/*************************************
+*        New questions panel         *
+*************************************/
+
+#newQuestionType {
+    float: left;
+    margin-top: 10px;
+    width: 185px;
+    padding: 5px 0 5px 5px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 290px;
+}
+.QTDescription {
+    float: left;
+    width: 470px;
+    height: 288px;
+    margin-top: 10px;
+    padding-left: 10px;
+    background: #B6B6B6;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 1px solid black;
+    border-left-width: 0;
+    font-size: 12px;
+}
+.QTDescription p {
+    font-size: 14px;
+}
+
+/*************************************
+*          Questions table           *
+*************************************/
+#questionsTable .qStatus{
+    text-align: center;
+}
+.qStatus img{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 3px;
+    max-height: 18px;
+    max-width: 18px;
+    cursor:pointer;
+}
+#questionsTable .qLanguages {
+    text-align: center;
+}
+#questionsTableContainer {
+    float: right;
+    width: 82%;
+    font-size: 12px;
+}
+
+/*************************************
+*       Questions/Answers tabs       *
+*************************************/
+#topicList .boxContent {
+    height: 296px;
+}
+#question-tab,
+#answers,
+#answerInfoForm {
+    background: #c7c7c7;
+}
+#answerInfoForm {
+    padding: 5px 10px;
+}
+#answersList .boxContent {
+    height: 250px;
+}
+.mandatoryNotice{
+    font-size: 14px;
+    color: white;
+    background: rgb(223, 58, 58);
+    padding: 5px;
+    text-align: center;
+    position: relative;
+    left: -10px;
+    top: -10px;
+    width: 101%;
+}
+#question-tab {
+    width: 96.5%;
+}
+#qLangsTabs,
+#aLangsTabs {
+    width: 630px;
+    overflow-x: auto;
+    position: relative;
+    top: 2px;
+    z-index: 1;
+}
+a.tab {
+    float: left;
+    padding: 7px 15px;
+    border-right: 1px solid #686868;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom-width: 0;
+    background: #e6e6e6;
+    cursor: pointer;
+}
+a.tab.active {
+    background: #c7c7c7;
+    border: 1px solid #686868;
+    border-bottom: 1px solid #c7c7c7;
+}
+a.tab:not(.active):hover {
+    border: 1px solid #999999;
+    background: #dadada url(images/ui-bg_glass_75_dadada_1x400.png) 50% 50% repeat-x;
+    font-weight: normal;
+    color: #212121;
+    border-bottom-width: 0;
+}
+#qEditor,
+#aEditor {
+    width: 630px;
+    border: 1px solid #686868;
+    border-radius: 7px;
+    position: relative;
+    left: -5px;
+    padding: 10px;
+}
+#questionInfo .dropdownInfo dt{
+    height: 19px;
+    overflow: hidden;
+}
+#questionInfo label,
+#answerInfo label {
+    padding-top: 3px;
+}
+#questionDifficulty.dropdownInfo dd,
+#questionDifficulty.dropdownInfo dt,
+#questionDifficulty.dropdownInfo ol {
+    width: 100px;
+}
+.dropdownInfo.scoreMC dd,
+.dropdownInfo.scoreMC dt,
+.dropdownInfo.scoreMC ol,
+.dropdownInfo.scoreMR dd,
+.dropdownInfo.scoreMR dt,
+.dropdownInfo.scoreMR ol,
+.dropdownInfo.scoreYN dd,
+.dropdownInfo.scoreYN dt,
+.dropdownInfo.scoreYN ol,
+.dropdownInfo.scoreTF dd,
+.dropdownInfo.scoreTF dt,
+.dropdownInfo.scoreTF ol {
+    width: 90px;
+}
+#questionType.dropdownInfo dd,
+#questionType.dropdownInfo dt,
+#questionType.dropdownInfo ol {
+    width: 150px;
+}
+div.panel {
+    z-index: 10000000;
+}
+div.ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/*******************************************************************
+********************************************************************
+***                                                              ***
+***                        Test Settings                         ***
+***                                                              ***
+********************************************************************
+*******************************************************************/
+#settingsList .boxContent {
+    height: 300px;
+}
+#testSettingsInfo .infoEdit {
+    background: #e8e8e8;
+}
+#testSettingsInfo .columnLeft{
+    width                       :   45%;
+    float                       :   left;
+    background                  :   #B6B6B6;
+    border-right                :   1px solid #000000;
+    border-top-right-radius     :   10px;
+    border-bottom-right-radius  :   10px;
+    height                      :   280px;
+    margin-left                 :   10px;
+}
+#settingsDuration .dropdownInfo dd,
+#settingsDuration .dropdownInfo dt,
+#settingsDuration .dropdownInfo ol{
+    width               :   65px;
+}
+#settingsDuration label{
+    text-align          :   left;
+    min-width           :   49px;
+    padding-left        :   5px;
+}
+#testSettingsInfo textarea {
+    width: 280px;
+}
+#testSettingsInfo .columnCenter{
+    float                       :   left;
+    width                       :   32%;
+    height                      :   280px;
+    padding-left                :   10px;
+    padding-right               :   10px;
+    position                    :   relative;
+}
+#testSettingsInfo .tableScroll{
+    overflow-y         	        : 	scroll;
+    height				        :	200px;
+}
+#testSettingsInfo .columnRight{
+    width                       :   17%;
+    float                       :   left;
+    height                      :   280px;
+    padding-left                :   10px;
+    padding-right               :   10px;
+    border-left                 :   1px solid #000000;
+    border-top-left-radius      :   10px;
+    border-bottom-left-radius   :   10px;
+    background                  :   #b6b6b6;
+    position                    :   relative;
+}
+#testSettingsInfo .columnCenter table,
+#testSettingsInfo .columnRight table {
+    margin: 0 auto;
+}
+#topicQuestionsSummary,
+#difficultyQuestionsSummary{
+    text-align      :   center;
+    font-weight     :   bold;
+    font-size       :   12px;
+    font-style      :   italic;
+    color           :   white;
+    padding         :   3px;
+    width           :   88%;
+    position        :   absolute;
+    bottom          :   10px;
+}
+#topicQuestionsSummary {
+    width           :   92%;
+}
+#topicsTable th{
+    text-align: center;
+}
+#topicsTable td.settingsTopicCheckbox,
+#topicsTable td.settingsTopicQuestions,
+#topicsTable td.settingsTopicQuestionsMandatory,
+#difficultyTable td.settingsDifficultyQuestions,
+#difficultyTable td.settingsDifficultyQuestionsMandatory{
+    text-align: center;
+}
+#testSettingsInfo td.settingsTopicName,
+#testSettingsInfo .settingsQuestions,
+#testSettingsInfo .settingsDifficultyLabel{
+    font-weight			        :   bold;
+    text-align                  :   right;
+    font-size                   :   12px;
+}
+.questionsTopic{
+    text-align 	: right;
+}
+
+/*******************************************************************
+********************************************************************
+***                                                              ***
+***                            Exams                             ***
+***                                                              ***
+********************************************************************
+*******************************************************************/
+#examsTableContainer {
+    width: 100%;
+    font-size: 12px;
+}
+#examsTable{
+    width: 100%;
+}
+#examsTable tr {
+    cursor: default;
+}
+#examsTable .eStatus {
+    text-align: center;
+    width: 4%;
+}
+#examsTable .eStatus img{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 3px;
+    max-height: 18px;
+    max-width: 18px;
+}
+#examsTable .eDay {
+    width: 7%;
+}
+#examsTable .eTime {
+    width: 5%;
+}
+#examsTable .ePassword {
+    width: 6%;
+}
+#examsTable .eManage{
+    text-align: left;
+    cursor: pointer;
+    width: 10%;
+}
+#examsTable .eManage img{
+    max-height: 18px;
+    max-width: 18px;
+    position: relative;
+    top: 2px;
+}
+span.manageButton {
+    display: table-cell;
+    width: 23px;
+}
+
+/*************************************
+*           Exam Info Panel          *
+*************************************/
+#examInfo .boxContent {
+    padding: 0;
+}
+#examInfo .infoEdit {
+    background: #e8e8e8;
+}
+#examInfo .columnLeft{
+    width                       :   45%;
+    float                       :   left;
+    background                  :   #B6B6B6;
+    border-right                :   1px solid #000000;
+    border-top-right-radius     :   10px;
+    border-bottom-right-radius  :   10px;
+    height                      :   280px;
+    margin-left                 :   10px;
+}
+#examInfo .dropdownInfo dd,
+#examInfo .dropdownInfo dt,
+#examInfo .dropdownInfo ol{
+    width               :   260px;
+}
+#examInfo #examRegiDiv{
+    background: #B6B6B6;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+    border-radius: 10px;
+}
+#examInfo #examDay,
+#examInfo #examRegStartDay,
+#examInfo #examRegEndDay {
+    width: 75px;
+    text-align: center;
+}
+#examInfo #examTime,
+#examInfo #examRegStartTime,
+#examInfo #examRegEndTime {
+    width: 40px;
+    text-align: center;
+}
+#examInfo textarea {
+    width: 260px;
+}
+#examInfo .columnCenter{
+    float                       :   left;
+    width                       :   32%;
+    height                      :   280px;
+    padding-left                :   10px;
+    padding-right               :   10px;
+    position                    :   relative;
+}
+#examInfo .columnRight{
+    width                       :   17%;
+    float                       :   left;
+    height                      :   280px;
+    padding-left                :   10px;
+    padding-right               :   10px;
+    border-left                 :   1px solid #000000;
+    border-top-left-radius      :   10px;
+    border-bottom-left-radius   :   10px;
+    background                  :   #b6b6b6;
+    position                    :   relative;
+}
+.rooms {
+    float: left;
+    /*background-color: #ffffff;*/
+    /*border: 2px solid #ccc;*/
+    width: 100%;
+    height: 145px;
+    overflow-y: scroll;
+}
+
+/*************************************
+*         Registrations List         *
+*************************************/
+#registrationsTableContainer {
+    width: 100%;
+    font-size: 12px;
+}
+#registrationsTable{
+    width: 100%;
+}
+#registrationsTable tr {
+    cursor: default;
+}
+#registrationsTable .uStatus {
+    text-align: center;
+    width: 4%;
+}
+#registrationsTable .uStatus img{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 3px;
+    max-height: 18px;
+    max-width: 18px;
+}
+#registrationsTable .uManage{
+    text-align: left;
+    cursor: pointer;
+    width: 1%;
+}
+#registrationsTable .uManage img{
+    max-height: 18px;
+    max-width: 18px;
+    position: relative;
+    top: 2px;
+}
+
+/*************************************
+*            Correct Test            *
+*************************************/
+div.questionAnswers > div{
+    width               :   98%;
+}
+#correct div.questionText{
+    cursor: pointer;
+}
+#correct div.questionTest.last .questionAnswers{
+    border-bottom: none;
+    margin-bottom: 0;
+}
+div.answered{
+    background-color    :   #fff581;
+}
+.score{
+    float               :   right;
+    margin-right        :   10px;
+}
+.questionScore{
+    float               :   right;
+    margin-right        :   15px;
+    padding-right       :   19px;
+    padding-top         :   2px;
+    margin-top          :   10px;
+    border-top          :   1px solid black;
+    width               :   40px;
+    text-align          :   right;
+}
+div.responseES{
+    height              :   100px;
+    resize              :   none;
+    background-color    :   #e2e2e2;
+    border              :   1px solid gray;
+    margin-bottom       :   10px;
+    padding             :   5px;
+}
+span.responseQuestion,
+span.responseMC,
+span.responseMR,
+span.responseYN,
+span.responseTF {
+    margin-left         :   10px;
+    display             :   inline-block;
+    width               :   16px;
+    height              :   16px;
+    vertical-align      :   middle;
+    margin-right        :   10px;
+}
+span.rightAnswer{
+    background          :   url('images/right.png') no-repeat;
+    background-size     :   100%;
+}
+span.wrongAnswer{
+    background          :   url('images/wrong.png') no-repeat;
+    background-size     :   100%;
+}
+div.emptyQuestion span.responseQuestion{
+    background          :   url('images/mark.png') no-repeat;
+    background-size     :   100%;
+}
+div.rightQuestion span.responseQuestion{
+    background          :   url('images/right.png') no-repeat;
+    background-size     :   100%;
+}
+div.wrongQuestion span.responseQuestion{
+    background          :   url('images/wrong.png') no-repeat;
+    background-size     :   100%;
+}
+div.correctQuestion span.responseQuestion{
+    background          :   url('images/correct.png') no-repeat;
+    background-size     :   100%;
+}
+div.questionText span.responseScore{
+    float:right;
+    margin-right: 20px;
+}
+img.showhide{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 3px;
+    max-height: 18px;
+    max-width: 18px;
+}
+.dropdownScore {
+    float               :   right;
+    margin              :   0;
+    padding             :   0;
+    cursor              :   default;
+}
+.dropdownBonus{
+    float               :   left;
+    margin              :   0;
+    padding             :   0;
+    cursor              :   default;
+}
+.dropdownBonus dd,
+.dropdownScore dd,
+.dropdownBonus dt,
+.dropdownScore dt,
+.dropdownBonus ol,
+.dropdownScore ol {
+    margin              :   0 19px 0 0;
+    padding             :   0;
+    font-size           :   14px;
+    width               :   70px;
+}
+.dropdownBonus dt{
+    margin-top          :   1px;
+}
+.dropdownBonus ol,
+.dropdownScore ol{
+    max-height          :   150px;
+    overflow-y          :   auto;
+}
+.dropdownBonus dd,
+.dropdownScore dd {
+    position            :   relative;
+}
+.dropdownBonus dt,
+.dropdownScore dt{
+    background          :   #f5f5f5 url(images/arrow2.png) no-repeat scroll right center;
+    display             :   block;
+    border              :   1px solid #8a8a8a;
+    text-align          :   right;
+    padding-right       :   15px;
+}
+.dropdownBonus dt span,
+.dropdownScore dt span {
+    display             :   block;
+    padding             :   2px 2px 2px 4px;
+}
+.dropdownBonus dd ol,
+.dropdownScore dd ol {
+    background          :   #f5f5f5;
+    border              :   1px solid #8a8a8a;
+    display             :   none;
+    list-style          :   none;
+    padding             :   2px;
+    position            :   absolute;
+    left                :   0;
+    top                 :   2px;
+    z-index             :   1000;
+}
+.dropdownBonus dd ol li,
+.dropdownScore dd ol li{
+    padding         :   1px 1px 1px 3px;
+    border-bottom   :   1px solid #8a8a8a;
+    text-align      :   left;
+}
+.dropdownBonus dd ol li:hover,
+.dropdownScore dd ol li:hover{
+    color                   :   #FFFFFF;
+    background              :   url(images/hover.png) repeat;
+    background-size         :   100% 100%;
+}
+.dropdownBonus span.value,
+.dropdownScore span.value {
+    display             :   none;
+}
+.dropdownBonus dt.readonly,
+.dropdownScore dt.readonly{
+    background: #f5f5f5;
+}
+#lastLine{
+    width: 100%;
+    border-top: 2px solid #0075ea;
+    text-align: center;
+}
+#finalScorePanel{
+    width:300px;
+    margin: 20px auto;
+    text-align: left;
+}
+#finalScore{
+    font-size: 10pt;
+}
+#finalScore .sLabel{
+    width:150px;
+}
+#finalScore .sScore{
+    text-align: right;
+    padding-right: 30px;
+}
+#finalScore hr{
+    background: black;
+    height: 1px;
+    border: none;
+}
+
+/*******************************************************************
+********************************************************************
+***                                                              ***
+***                            Student                           ***
+***                                                              ***
+********************************************************************
+*******************************************************************/
+
+/*************************************
+*             Exams List             *
+*************************************/
+#examsAvailableTableContainer {
+    width: 100%;
+    font-size: 12px;
+}
+#examsAvailableTable{
+    width: 100%;
+}
+#examsAvailableTable tr {
+    cursor: default;
+}
+#examsAvailableTable .eStatus {
+    text-align: center;
+    width: 4%;
+}
+#examsAvailableTable .eStatus img{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 3px;
+    max-height: 18px;
+    max-width: 18px;
+}
+#examsAvailableTable .eDay {
+    width: 7%;
+}
+#examsAvailableTable .eTime {
+    width: 5%;
+}
+#examsAvailableTable .eManage{
+    text-align: left;
+    cursor: pointer;
+    width: 10%;
+}
+#examsAvailableTable .eManage img{
+    max-height: 18px;
+    max-width: 18px;
+    position: relative;
+    top: 2px;
+}
+
+/*************************************
+*          Exam's Password           *
+*************************************/
+#passwordDiv {
+    background          :   url('images/login_exam.png') no-repeat;
+    width				:	404px;
+    height              :   339px;
+    margin              :   100px auto 0;
+    text-align			:	center;
+}
+#passwordForm {
+    width	    :   100%;
+    margin      :   0 auto;
+    position    :	relative;
+    top		    :	95px;
+    left        :   5px;
+}
+#result {
+    width	    :	100%;
+    font-weight :   bold;
+    font-size   :   11px;
+}
+#passwordForm input.text {
+    width	   :	200px;
+    text-align :    center;
+    padding    :    5px;
+}
+#passwordForm label {
+    width		:	100%;
+    display		:	block;
+    text-align	:	center;
+}
+
+/*************************************
+*                Test                *
+*************************************/
+#break{
+    background          :   url(images/topnav_bg.gif) repeat-x;
+    height              :   35px;
+    width               :   100%;
+    padding             :   0;
+    margin              :   0;
+}
+#countdown{
+    background          :   url(images/topnav_bg.gif) repeat-x;
+    background-size     :   100%;
+    padding-top         :   15px;
+    padding-left        :   5px;
+    height              :   65px;
+    width               :   220px;
+    overflow            :   visible;
+    position            :   absolute;
+    top                 :   20px;
+    left                :   50%;
+    margin-left         :   -110px;
+    cursor              :   pointer;
+    border              :   5px inset #90ee90;
+    z-index             :   1000;
+}
+#correct .boxContent,
+#test .boxContent{
+    background-color    :   #e2e2e2;
+}
+.questionText{
+    font-size           :   14px;
+    padding-top         :   10px;
+    padding-bottom      :   10px;
+    padding-left        :   20px;
+    background          :   #c5defd;
+    border              :   2px solid #0075ea;
+    border-bottom-width :   0px;
+    word-wrap           :   break-word;
+}
+.questionAnswers{
+    font-size           :   14px;
+    padding-top         :   20px;
+    padding-bottom      :   20px;
+    padding-left        :   20px;
+    background-color    :   #c8c8c8;
+    border-left         :   2px solid #0075ea;
+    border-right        :   2px solid #0075ea;
+    border-bottom       :   2px solid #0075ea;
+    margin-bottom       :   20px;
+}
+.questionAnswers textarea{
+    width               :   98%;
+    height              :   100px;
+    resize              :   none;
+}
+.questionAnswers label {
+    line-height         :   20px;
+}
+.mainLang {
+    background-color: #f79250;
+}
+input[type='checkbox']:checked + span{
+    background          :   url('images/checkOk.png') no-repeat;
+    background-size     :   100%;
+    display             :   inline-block;
+    width               :   16px;
+    height              :   16px;
+    vertical-align      :   middle;
+    margin-right        :   10px;
+}
+input[type='checkbox'] + span{
+    background          :   url('images/checkNo.png') no-repeat;
+    background-size     :   100%;
+    display             :   inline-block;
+    width               :   16px;
+    height              :   16px;
+    vertical-align      :   middle;
+    margin-right        :   10px;
+}
+input[type='radio']:checked + span{
+    background          :   url('images/radioOk.png') no-repeat;
+    background-size     :   100%;
+    display             :   inline-block;
+    width               :   16px;
+    height              :   16px;
+    vertical-align      :   middle;
+    margin-right        :   10px;
+}
+input[type='radio'] + span{
+    background          :   url('images/radioNo.png') no-repeat;
+    background-size     :   100%;
+    display             :   inline-block;
+    width               :   16px;
+    height              :   16px;
+    vertical-align      :   middle;
+    margin-right        :   10px;
+}
+
+/*************************************
+*                Extra               *
+*************************************/
+#questionExtra {
+    width: 190px;
+    margin-top: 31px;
+}
+#questionExtra a {
+    padding-left: 0;
+}
+.questionText img.extraIcon{
+    float: right;
+    position: relative;
+    bottom: 4px;
+    height: 25px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+#calculator,
+#periodicTable {
+    width               :   320px;
+    height              :   220px;
+    overflow            :   visible;
+    position            :   absolute;
+    top                 :   20px;
+    right               :   10%;
+    margin-left         :   -110px;
+    cursor              :   pointer;
+    border-top          :   20px solid #238BFF;
+    z-index             :   1001;
+}
+#periodicTable {
+    width               :   600px;
+    height              :   auto;
+    z-index             :   1002;
+}
+span.extraTitle{
+    position: absolute;
+    top: -18px;
+    left: 10px;
+    color:white;
+    font-weight: bold;
+}
+span.extraClose{
+    position: absolute;
+    top: -19px;
+    right: -2px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    z-index: 10000;
+    background: url(images/lbmClose.png) no-repeat;
+    background-size: 100%;
+}
+
+
+/*Aggiunto per la creazione della Report Section*/
+
+/*--------------------------**/
+ /**  Report section   **/
+ /**--------------------------*/
+
+
+        a:link   {text-decoration: none; color: blue;}
+        a:visited {text-decoration: none; color: blue;}
+        a:hover   {color: #ff0000;}
+
+
+
+/* Overview Report */
+
+div.boxFieldOrder{
+    background-color: #999;
+    display: inline-block;
+
+}
+
+
+
+/*.reportEdit label{*/
+    /*top                 :   5px;*/
+    /*min-width          	:   100px;*/
+    /*margin-left         :   12px;*/
+    /*text-align          :   right;*/
+    /*font-size           :   14px;*/
+    /*font-weight         :   bold;*/
+    /*margin-right		:	20px;*/
+/*}*/
+/*select{*/
+		/*color 		: 	#000000 ;*/
+		/*background 	: 	#FFFFFF ;*/
+		/*font-size 	:	12px;*/
+		/*width 		: 	180px;*/
+		/*position 	: 	relative;*/
+		/*font-family :	"Trebuchet MS",serif;*/
+/*}*/
+/*hr{*/
+	/*position	:	relative;*/
+	/*top			:   10px;*/
+	/*color 		: 	#D3D3D3;*/
+/*}*/
+/*#report{*/
+    /*text-align      	:   left;*/
+    /*min-height      	:   245px;*/
+    /*padding         	:   20px;*/
+    /*background-color    :   #929292;*/
+    /* height 				: 	490px; */
+/*}*/
+/*#report2{*/
+    /*text-align      	:   left;*/
+    /*min-height      	:   245px;*/
+    /*padding         	:   20px;*/
+    /*background-color    :   #929292;*/
+    /* height 				: 	620px; */
+/*}*/
+/*.tableNewReport{*/
+	/*font-size           :   14px;*/
+    /*font-weight         :   bold;*/
+    /*font-family 		:	"Trebuchet MS",serif;*/
+/*}*/
+/*.pageNewReport{*/
+	/*font-size           :   18px;*/
+    /*font-weight         :   bold;*/
+    /*font-family 		:	"Trebuchet MS",serif;*/
+    /*color 				: 	#A9A9A9;*/
+    /*margin-left         :   12px;*/
+/*}*/
+/*.pageReporter{*/
+	/*font-size           :   18px;*/
+    /*font-weight         :   bold;*/
+    /*font-family 		:	"Trebuchet MS",serif;*/
+    /*color 				: 	#1E90FF;*/
+/*}*/
+/*.descriptionReporter{*/
+	/*font-size           :   12px;*/
+    /*font-family 		:	"Trebuchet MS",serif;*/
+    /*color 				: 	black;*/
+    /*font-style  		: 	italic;*/
+/*}*/
+/*.viewReportStyle{*/
+	/*font-size           :   14px;*/
+    /*font-family 		:	"Trebuchet MS",serif;*/
+    /*color 				: 	black;*/
+/*}*/
+/*.viewReportTitleStyle{*/
+	/*font-size           :   16px;*/
+    /*font-family 		:	"Trebuchet MS",serif;*/
+    /*color 				: 	black;*/
+    /*font-weight         :   bold;*/
+/*}*/
+/*a.button.superRightSpace{*/
+    /*margin-right         :   63px;*/
+/*}*/
+/*.pageViewReportCreated{*/
+	/*font-size           :   18px;*/
+    /*font-weight         :   bold;*/
+    /*font-family 		:	"Trebuchet MS",serif;*/
+    /*color 				: 	#A9A9A9;*/
+    /*margin-left         :   63px;*/
+/*}*/
+/*.pageCreateNewReport{*/
+	/*font-size           :   18px;*/
+    /*font-weight         :   bold;*/
+    /*font-family 		:	"Trebuchet MS",serif;*/
+    /*color 				: 	#A9A9A9;*/
+    /*margin-left         :   12px;*/
+    /*margin-bottom       :   50px;*/
+/*}*/
+/*.dateReportBoldStyle{*/
+	/*font-size           :   14px;*/
+    /*font-family 		:	"Trebuchet MS",serif;*/
+    /*color 				: 	black;*/
+    /*font-weight         :   bold;*/
+/*}*/
+/*.dateReportNormalStyle{*/
+	/*font-size           :   14px;*/
+    /*font-family 		:	"Trebuchet MS",serif;*/
+    /*color 				: 	black;*/
+/*}*/
+
+/*.pageReportResults{*/
+	/*font-size           :   18px;*/
+    /*font-weight         :   bold;*/
+    /*font-family 		:	"Trebuchet MS",serif;*/
+    /*color 				: 	#A9A9A9;*/
+    /*margin-left         :   2px;*/
+/*}*/
+/*.reportTitle{*/
+	/*font-size           :   32px;*/
+    /*font-weight         :   bold;*/
+    /*font-family 		:	"Trebuchet MS",serif;*/
+    /*color 				: 	#A9A9A9;*/
+    /*margin-left         :   12px;*/
+/*}*/

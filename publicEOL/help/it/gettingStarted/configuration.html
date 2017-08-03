@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>EOL - Configurazione iniziale</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="../../help.css">
+</head>
+<body>
+
+<h3>Configurazione iniziale</h3>
+
+<p>Ora che tutto è stato installato correttamente non rimane altro che effettuare una prima configurazione: si rinomini
+    il file <code>config-sample.php</code> contenuto nella cartella <code>includes</code> in <code>config.php</code> e
+    si aggiorni il file con le impostazioni del proprio server web e del database creato:
+
+<p>
+<table style="padding-left: 35px;">
+    <tr>
+        <td><code>$config['systemTitle'] = 'EOL - Esami On Line'</code></td>
+        <td style="padding-left: 50px">Nome del sistema (visibile sul fondo di tutte le pagine)</td>
+    </tr>
+    <tr>
+        <td><code>$config['systemHome'] = 'http://www.eol_mio.dominio/'</code></td>
+        <td style="padding-left: 50px">Homepage del sito web</td>
+    </tr>
+    <tr>
+        <td><code>$config['systemEmail'] = 'no-reply@eol_mio.dominio'</code></td>
+        <td style="padding-left: 50px">Indirizzo e-mail dal quale inviare comunicazioni</td>
+    </tr>
+    <tr>
+        <td><code>$config['systemLang'] = 'en'</code></td>
+        <td style="padding-left: 50px">Lingua di default del sistema (controllare la tabella <code>Languages</code> nel database)</td>
+    </tr>
+    <tr>
+        <td><code>$config['systemTimeZone'] = 'Europe/Rome'</code></td>
+        <td style="padding-left: 50px">Time Zone di default del sistema (controllare la documentazione di PHP per la lista dei Time Zone)</td>
+    </tr>
+    <tr>
+        <td>&ensp;</td>
+        <td>&ensp;</td>
+    </tr>
+    <tr>
+        <td><code>$config['dbHost'] = 'localhost'</code></td>
+        <td style="padding-left: 50px">Host del database (tipicamente <code>'localhost'</code>)</td>
+    </tr>
+    <tr>
+        <td><code>$config['dbPort'] = '3306'</code></td>
+        <td style="padding-left: 50px">Porta d'accesso al database (porta di default di MySQL <code>'3306'</code>)</td>
+    </tr>
+    <tr>
+        <td><code>$config['dbName'] = 'eol'</code></td>
+        <td style="padding-left: 50px">Nome del database creato utilizzando lo script (nome di default <code>'eol'</code>)</td>
+    </tr>
+    <tr>
+        <td><code>$config['dbUsername'] = 'username'</code></td>
+        <td style="padding-left: 50px">Utente con accessi <a class="bold">totali</a> al database di EOL</td>
+    </tr>
+    <tr>
+        <td><code>$config['dbPassword'] = 'password'</code></td>
+        <td style="padding-left: 50px">Password dell'utente con accessi <a class="bold">totali</a> al database di EOL</td>
+    </tr>
+</table>
+
+<p>È possibile, ma non necessario, configurare anche la lingua di default per i plug-in CKEditor e Roxy Fileman:
+<ul>
+    <li>
+        <a class="bold">CKEditor:</a> aprire il file <code>config.js</code> presente nella cartella <code>public/ckeditor</code>
+        e modificare la stringa<br/>
+        <code style="padding-left: 35px;">config.defaultLanguage = 'en'</code><br/>
+        usando una delle lingue disponibili nella cartella <code>public/ckeditor/lang</code> (ad esempio usare <code>'en'</code> per l'inglese,
+        <code>'it'</code> per l'italiano, etc... ).<br/>
+    </li>
+    <li>
+        <a class="bold">Roxy Fileman:</a> aprire il file <code>conf.json</code> presente nella cartella <code>public/fileman</code>
+        e modificare la stringa<br/>
+        <code style="padding-left: 35px;">"LANG" : ""</code><br/>
+        usando una delle lingue disponibili nella cartella <code>public/fileman/lang</code> (ad esempio usare <code>'en'</code> per l'inglese,
+        <code>'fr'</code> per il francese, etc...).<br/>
+    </li>
+</ul>
+
+<footer>
+    <a class="gotoPrev showHelp" href="/help/it/gettingStarted/install.html">&lt;&lt;&ensp; Precedente</a>
+    <a class="gotoNext showHelp" href="/help/it/gettingStarted/firstAccess.html">Successivo &ensp;&gt;&gt;</a>
+</footer>
+
+</body>
+</html>

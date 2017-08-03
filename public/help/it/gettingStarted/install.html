@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>EOL - Installazione</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="../../help.css">
+</head>
+<body>
+
+<h3>Installazione</h3>
+
+<p>Ora verrà illustrato come installare il sistema partendo dai sorgenti PHP scaricati e successivamente installando il database.
+
+<h4>Installazione dei sorgenti</h4>
+
+<p>Una volta creato e configurato il server web ed estratto il contenuto dell'archivio contenente i sorgenti di EOL
+    occorrerà copiarli all'interno della root dell'host configurato.
+
+<p><a class="bold red">ATTENZIONE : </a>Per ragioni di sicurezza EOL elabora tutte le richieste attraverso un'unica pagina PHP chiamata
+    <code>index.php</code> e situata all'interno della cartella <code>public</code>; pertanto, per poter utilizzare il sistema
+    occorre che la root dell'host punti direttamente alla cartella <code>public</code>. Per fare questo basterà configurare
+    correttamente la variabile <code>DocumentRoot</code> dell'host: ecco un esempio:
+
+<pre>
+    &lt;VirtualHost *:80>
+        ServerAdmin email@mio.dominio
+        <a class="bold">DocumentRoot "/var/www/html/eol/public"</a>
+        ServerName www.eol_mio.dominio
+        ErrorLog "logs/eol/error_log"
+        CustomLog "logs/eol/access_log" common
+        &lt;Directory>
+            Options FollowSymLinks
+            AllowOverride All
+        &lt;/Directory/>
+    &lt;/VirtualHost/>
+</pre>
+
+<p>
+    Si ricorda di verificare che il proprietario dei file sorgenti di EOL sia l'utente che "lavora" sul server web
+    (tipicamente si tratta dell'utente <a class="italic">'html'</a> o <a class="italic">'apache'</a>); se così non fosse
+    si consiglia di modificare tale valore, controllando il manuale del vostro sistema operativo.
+    Nei sistemi POSIX (come UNIX, Linux, OS/X etc) basta andare nella cartella principale di EOL e inviare il seguente comando da terminale:<br/>
+    <code style="padding-left: 35px">$ chown -R apache:apache *</code>
+<p>
+    Similmente occorre verificare se l'utente che lavora sul server web abbia tutti i permessi necessari sui file sorgenti di EOL;
+    se così non fosse si consiglia di modificare l'assegnazione dei permessi controllando il manuale del vostro sistema operativo.
+    Nei sistemi POSIX (come UNIX, Linux, OS/X etc) basta andare nella cartella principale di EOL e inviare il seguente comando da terminale:<br/>
+    <code style="padding-left: 35px">$ chmod -R 755 *</code>.
+
+<h4>Installazione del database</h4>
+
+<p>Una volta installati i sorgenti non rimane altro che creare il database su cui tutti i dati di EOL andranno memorizzati.
+
+<p>Il file <code>DB MySQL.sql</code> presente all'interno della cartella <code>utils</code> è uno script SQL che permette la creazione
+    di un nuovo database MySQL all'interno del vostro server web. Questo script può essere utilizzato dal Command Line Tool
+    di MySQL oppure attraverso uno dei numerosi strumenti di amministrazione MySQL presenti in rete, come phpMyAdmin, reperibile
+    all'indirizzo <a href="http://www.phpmyadmin.net/home_page/index.php">http://www.phpmyadmin.net/home_page/index.php</a> ma molto spesso
+    già disponibile nei pacchetti (X)AMP.
+
+<p>Lo script genererà automaticamente un nuovo database chiamato <code>'eol'</code>, ma nel caso si voglia modificare tale nome
+    basterà modificare il file <code>DB MySQL.sql</code> con un qualsiasi editor di testo e sostituire <a class="bold">tutte</a>
+    le occorrenze di <code>`eol`</code> con <code>`nome_del_db`</code>, salvando il file al termine.
+
+<p>Quando il database sarà stato creato, per la sicurezza del vostro server web, si raccomanda di creare un nuovo utente
+    <a class="bold">protetto da password</a> e di assegnare ad esso tutti i permessi di lavoro esclusivamente per il database
+    dedicato ad EOL. Questa operazione è possibile attraverso phpMyAdmin (<a href="https://wiki.phpmyadmin.net/pma/user_management">Guida</a>)
+    oppure con il Command Line Tool di MySQL (<a href="http://dev.mysql.com/doc/refman/5.6/en/grant.html">Guida</a>).
+
+<footer>
+    <a class="gotoPrev showHelp" href="/help/it/gettingStarted/requirements.html">&lt;&lt;&ensp; Precedente</a>
+    <a class="gotoNext showHelp" href="/help/it/gettingStarted/configuration.html">Successivo &ensp;&gt;&gt;</a>
+</footer>
+
+</body>
+</html>

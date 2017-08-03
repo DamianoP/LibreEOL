@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>EOL - Requisiti</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="../../help.css">
+</head>
+<body>
+
+<h3>Requisiti per utilizzare EOL</h3>
+
+<p>Per installare EOL - Esami On Line occorre avere un web server totalmente funzionante.<br/>
+   Per un aiuto con l'installazione e la configurazione di un web server rimandiamo alle guide e ai manuali
+   dei software che lo compongono.<br/>
+   L'attuale versione di EOL è stata testata per funzionare correttamente con i seguenti pacchetti:
+
+<ul>
+    <li><a class="bold underline">Web server</a> : Apache 2+ (<a href="http://httpd.apache.org/" target="_blank">http://httpd.apache.org</a>)</li>
+    <li><a class="bold underline">PHP</a> : PHP 5.3+ (<a href="http://www.php.net" target="_blank">http://www.php.net</a>) con le librerie <a class="italic">json</a> e <a class="italic">php-xml</a> abilitate</li>
+    <li><a class="bold underline">DBMS</a> : MySQL 5.5+ (<a href="http://www.mysql.com" target="_blank">http://www.mysql.com</a>)</li>
+</ul>
+
+<p>Nel caso si voglia installare EOL nella propria macchina è possibile usare uno dei pacchetti <a class="italic">(X)AMP</a>
+    (<a class="italic">Apache, MySQL, PHP</a>) disponibili per il sistema operativo desiderato:
+
+<ul>
+    <li><a class="bold underline">XAMPP</a> - Multipiattaforma (<a href="http://www.apachefriends.org/en/xampp.html" target="_blank">http://www.apachefriends.org/en/xampp.html</a>)</li>
+    <li><a class="bold underline">WAMP</a> - Windows (<a href="http://www.wampserver.com/en/" target="_blank">http://www.wampserver.com/en/</a>)</li>
+    <li><a class="bold underline">MAMP</a> - Macintosh (<a href="http://www.mamp.info/en/index.php" target="_blank">http://www.mamp.info/en/index.php</a>)</li>
+</ul>
+
+<h4>Recupero dei sorgenti</h4>
+
+<p>Andando direttamente nel repository EOL su <a href="https://github.com/EOL-EsamiOnLine/EOL" target="_blank">GitHub</a> e
+cliccando sul bottone <a class="italic">Download Zip</a> in basso a destra della pagina, sarà possibile scaricare
+tutto il software completo di EOL.<br/>
+Terminato il download basterà estrarre l'archivio compresso con un qualsiasi estrattore tipo WinRAR, 7-Zip, etc...
+
+<h4>Configurazione di Apache e PHP</h4>
+
+<p>Affinché EOL sia in grado di inviare correttamente e-mail occorre asicurarsi che il servizio <code>sendmail</code> sia attivo e funzionante.<br/>
+    Per i sistemi POSIX è sufficiente usare il comando seguente da terminale:<br/>
+    <code style="padding-left: 35px">$ /usr/sbin/getsebool httpd_can_sendmail</code><br/>
+<p>Se il sistema risponde con un <code>"on"</code> allora il servizio e-mail è già attivo, altrimenti lo si può attivare usando il comando: <br/>
+    <code style="padding-left: 35px">$ setsebool -P httpd_can_sendmail 1</code><br/>
+    Se si vuole verificare l'avvenuta attivazione basterà rieseguire il primo comando.
+
+<p>Per il corretto funzionamento di EOL è necessario che nella versione di PHP utilizzata siano abilitate le seguenti librerie:
+<ul>
+    <li>JSON</li>
+    <li>php-xml</li>
+</ul>
+
+<p>Inoltre è necessario che nel file <code>php.ini</code> di configurazione di PHP le vabiabili elencate siano impostate come segue:
+<ul>
+    <li><code>short_open_tag = On</code></li>
+    <li><code>magic_quotes_gpc = Off</code></li>
+    <li><code>magic_quotes_runtime = Off</code></li>
+    <li><code>magic_quotes_sybase = Off</code></li>
+</ul>
+
+<footer>
+    <a class="gotoPrev showHelp" href="/help/it/gettingStarted/gettingStarted.html">&lt;&lt;&ensp; Precedente</a>
+    <a class="gotoNext showHelp" href="/help/it/gettingStarted/install.html">Successivo &ensp;&gt;&gt;</a>
+</footer>
+
+</body>
+</html>

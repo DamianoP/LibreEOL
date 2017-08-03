@@ -1,0 +1,202 @@
+<!doctype html>
+
+    <head>
+        <meta charset="UTF-8"/>
+        <title>EOL - Esami On Line Installation</title>
+        <meta name="description" content="EOL - Esami On Line Installation instructions"/>
+    </head>
+
+    <body>
+    <h1>EOL Installation</h1>
+
+    <h3 id="requirements">EOL System Requirements</h3>
+
+    <p>To install EOL Online Assessment System you must have a fully functioning web server.<br/>
+       This version of EOL was tested on following system(s):
+    <ul>
+        <li>Web server: <strong>Apache</strong> 2+ (<a href="http://httpd.apache.org/" target="_blank">http://httpd.apache.org</a>)</li>
+        <li><strong>PHP</strong> 5.3 (<a href="http://www.php.net" target="_blank">http://www.php.net</a>) with <em>json</em> and <em>php-xml</em> libraries enabled</li>
+        <li>DBMS MySQL</strong> 5.5+ (<a href="http://www.mysql.com" target="_blank">http://www.mysql.com</a>)</li>
+    </ul>
+
+    <p>For help with the installation and configuration of the web server please refer to the specific manuals.<br/>
+        To install EOL on your local machine (for local testing only) use one of the (X)AMP system available for your operating system:
+
+    <ul>
+        <li><strong>XAMPP</strong> - Multi-platform - Apache, MySQL, PHP, installation (<a href="http://www.apachefriends.org/en/xampp.html" target="_blank">http://www.apachefriends.org/en/xampp.html</a>).</li>
+        <li><strong>WAMP</strong> - Windows platform - Apache, MySQL, PHP, installation (<a href="http://www.wampserver.com/en/" target="_blank">http://www.wampserver.com/en/</a>).</li>
+        <li><strong>MAMP</strong> - Macintosh platform - Apache MySQL, PHP, installation (<a href="http://www.mamp.info/en/index.php" target="_blank">http://www.mamp.info/en/index.php</a>).</li>
+    </ul>
+
+    <h3 id="apachephpConfiguration">Apache/PHP Configuration</h3>
+
+    For the correct use of EOL, PHP has to be configured to support the following libraries:<br/>
+    Some parameters of PHP must also be set as the following:
+    <ul>
+        <li>
+            <strong>php.ini:</strong><br/>
+            <ul style="list-style: none">
+                <li><code>short_open_tag = On</code></li>
+                <li><code>magic_quotes_gpc = Off</code></li>
+                <li><code>magic_quotes_runtime = Off</code></li>
+                <li><code>magic_quotes_sybase = Off</code></li>
+            </ul>
+        </li><br/>
+
+        <li>
+            <strong>PHP Libraries:</strong><br/>
+            <ul style="list-style: none">
+                <li>Install/Enable JSON</li>
+                <li>Install/Enable php-xml</li>
+            </ul>
+        </li><br/>
+
+        <li>
+            <strong>Apache:</strong><br/>
+            <ul style="list-style: none">
+                <li>
+                    Check if your e-mail server is running using the following command:<br/>
+                        <code style="padding-left:50px">$ /usr/sbin/getsebool httpd_can_sendmail</code><br/>
+                    If system answers "on" your e-mail server is configured, otherwise use:<br/>
+                        <code style="padding-left: 50px">$ setsebool -P httpd_can_sendmail 1</code><br/>
+                    Try the previuos command to test again.
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3 id="getSource">Getting Sources</h3>
+
+    EOL can be downloaded from <a href="https://github.com/EOL-EsamiOnLine/EOL" target="_blank">GitHub</a>.<br/>
+    Clicking on <em>Download Zip</em> button at the right bottom of the page you download a compressed archive.<br/>
+    When download is complete unzip the file wherever you want.
+
+    <h3 id="createHost">Create Host and Installing Files</h3>
+    <p>In order to use EOL you must have a configured host: if you want to use EOL on local machine use your (X)AMP manual<br/>
+       to learn how to create a new (virtual) host on your machine.<br/>
+       Otherwise, if you want to use EOL on real host contact your web administrator and tell him to create a new (virtual) host for EOL.
+
+    <p>
+        Now we are assuming you have established a working web server, that all <a href="#requirements">requirements</a> are
+        satisfied, and that you know where to put files to display on the web server.
+    <p>
+        Copy all files and folder into a directory under your web server root.
+    <p>
+        Remember to check and eventually change the files owner to the Web server user (typically <em>'html'</em> or <em>'apache'</em>); to do that check the manual of your OS.<br/>
+        e.g. On POSIX based systems (like Unix, Linux, OS/X etc), go to EOL root directory and enter the following system command:<br/>
+        <code style="padding-left: 50px">$ chown -R apache:apache *</code>
+    <p>
+        Remember also to change the files access permission so that only Web server user can write into the them; to do that check the manual of your OS.<br/>
+        e.g. On POSIX based systems (like Unix, Linux, OS/X etc), go to EOL root dicrectory and enter the following system command:<br/>
+        <code style="padding-left: 50px">$ chmod -R 755 *</code>.
+
+    <p><strong style="color:red">ATTENTION : </strong>For security reason EOL use only a single PHP public page inside <code>public</code> folder and named <code>index.php</code>;<br/>
+    so, to use EOL the Web Server Document Root must be setted inside that folder like following:
+
+    <pre>
+    &lt;VirtualHost *:80>
+        ServerAdmin email@doma.in
+        <strong>DocumentRoot "/var/www/html/eol/public"</strong>
+        ServerName www.eol_doma.in
+        ErrorLog "logs/eol/error_log"
+        CustomLog "logs/eol/access_log" common
+        &lt;Directory>
+            Options FollowSymLinks
+            AllowOverride All
+        &lt;/Directory/>
+    &lt;/VirtualHost/>
+    </pre>
+
+
+    <h3 id="dbmsConfiguration">DBMS Configuration</h3>
+
+    <p>In order for EOL to work properly, you will need to have a fully functioning MySQL Database.<br/>
+        <code>DB MySQL.sql</code> file Inside <code>utils</code> folder is the MySQL script that allow to create
+        a new MySQL database, named <code>'eol'</code>.<br/>
+        If you want to create the database with a different name, e.g. <code>'db_name'</code>, simply change <strong>every</strong> occurrence of <code>`eol`</code>
+        to <code>`db_name`</code> in <code>DB MySQL.sql</code> file, but remember it, bacause we will use it later.
+    <p>
+        To use that script you can simply use the MySQL command line tool or every MySQL administration tool, like phpMyAdmin (<a href="http://www.phpmyadmin.net/home_page/index.php">http://www.phpmyadmin.net/home_page/index.php</a>).
+    <p>
+        When database is created, for your security, we recommend to create also a new user <strong>with password</strong> and grant him all privileges only for EOL's database;<br/>
+        to do that also you can use phpMyAdmin (<a href="https://wiki.phpmyadmin.net/pma/user_management">HowTo</a>)
+        or MySQL command line (<a href="http://dev.mysql.com/doc/refman/5.6/en/grant.html">HowTo</a>).
+
+    <h3 id="eolConfiguration">EOL Configuration</h3>
+        When all is ready you can rename <code>config-sample.php</code> file inside <code>includes</code> folder into <code>config.php</code> and fill it with your web server and database informations:
+
+    <p>
+    <table style="padding-left: 50px;">
+        <tr>
+            <td><code>$config['systemTitle'] = 'EOL - Esami On Line'</code></td>
+            <td style="padding-left: 50px">System title</td>
+        </tr>
+        <tr>
+            <td><code>$config['systemHome'] = 'http://www.eol_doma.in/'</code></td>
+            <td style="padding-left: 50px">System home website</td>
+        </tr>
+        <tr>
+            <td><code>$config['systemEmail'] = 'no-reply@eol_doma.in'</code></td>
+            <td style="padding-left: 50px">System comunication email</td>
+        </tr>
+        <tr>
+            <td><code>$config['systemLang'] = 'en'</code></td>
+            <td style="padding-left: 50px">Default system language (watch Languages table in database)</td>
+        </tr>
+        <tr>
+            <td><code>$config['systemTimeZone'] = 'Europe/Rome'</code></td>
+            <td style="padding-left: 50px">Default system time zone (watch php documentation from time zone available)</td>
+        </tr>
+        <tr>
+            <td>&ensp;</td>
+            <td>&ensp;</td>
+        </tr>
+        <tr>
+            <td><code>$config['dbHost'] = 'localhost'</code></td>
+            <td style="padding-left: 50px">Database web address (usually is 'localhost')</td>
+        </tr>
+        <tr>
+            <td><code>$config['dbPort'] = '3306'</code></td>
+            <td style="padding-left: 50px">Database port (MySQL's default port is '3306')</td>
+        </tr>
+        <tr>
+            <td><code>$config['dbName'] = 'eol'</code></td>
+            <td style="padding-left: 50px">Name of database created with included script (default is 'eol')</td>
+        </tr>
+        <tr>
+            <td><code>$config['dbUsername'] = 'username'</code></td>
+            <td style="padding-left: 50px">Database user's name that have <strong>ALL</strong> privileges of EOL's database</td>
+        </tr>
+        <tr>
+            <td><code>$config['dbPassword'] = 'password'</code></td>
+            <td style="padding-left: 50px">Database user's password</td>
+        </tr>
+    </table>
+
+    <p>Is also possible to config the language of CKEditor and Roxy Fileman Javascript library:
+    <ul>
+        <li>
+            <strong>CKEditor:</strong> go to <code>config.js</code> inside <code>public/ckeditor</code> folder and change<br>
+            <code style="padding-left: 50px;">config.defaultLanguage = 'en'</code><br/>
+            using one of the language available in <code>public/ckeditor/lang</code> folder (e.g. use 'en' for english, 'it' for italian, etc... ).<br/>
+        </li>
+        <li>
+            <strong>Roxy Fileman:</strong> go to <code>conf.json</code> inside <code>public/fileman</code> folder and change<br>
+            <code style="padding-left: 50px;">"LANG" : ""</code><br/>
+            using one of the language available in <code>public/fileman/lang</code> folder (e.g. use 'en' for english, 'fr' for french, etc...).<br/>
+        </li>
+    </ul>
+
+    <h3 id="firstAccess">First Access</h3>
+
+    <p>If all ready and configured you can now access to administration panel, by pointing your web browser to <em>http://www.eol_dom.ain</em> and using the following
+        e-mail and password:</p>
+    <ul>
+        <li>email: test@eol.org</li>
+        <li>password: testeol</li>
+    </ul>
+
+    <p>In order to protect your system remember to change the password using <em>Profile</em> page.
+
+    </body>
+</html>
