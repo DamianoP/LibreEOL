@@ -1,0 +1,65 @@
+<?php
+/**
+ * File: test.php
+ * User: Masterplan
+ * Date: 5/3/13
+ * Time: 12:30 PM
+ * Desc: Shows test page
+ */
+global $user, $log, $config;
+session_start();
+
+
+?>
+<style>
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+th {
+    background-color: #c5d2e0;
+    color: black;
+}
+tr:nth-child(even){background-color: #e8e8e8}
+tr:hover {background-color: #d0e0d5}
+tr{
+  transition-property: background-color;
+  transition-duration: 0.2s;
+}
+</style>
+<div id="navbar">
+    <?php printMenu(); ?>
+</div>
+<div id="main">
+
+<?php
+if($user->id>0){
+    $db = new sqlDB();
+    $db->getVotes($user->id); // die("Error");
+    if($db==false) die("Error");    
+    echo "<table class='table'>
+    <tr style='font-weight:bold'>
+        <th>".ttExam."</th>
+        <th>".ttReportDateTaken."</th>
+        <th>".ttScoreFinal."</th>
+    </tr>";
+   
+    while($row = $db->nextRowAssoc()){
+        echo "<tr>";
+        echo "<td>".$row["Name"]."</td>";
+        echo "<td>".$row["regStart"]."</td>";
+   //     echo "<td>".$row["scoreTest"]."/".$row["scoreType"]."</td>";
+        echo "<td>".$row["scoreFinal"]."/".$row["scoreType"]."</td>";
+        echo "</tr>";
+    }
+    echo "</table>";
+}
+?>
+
+</div>
+

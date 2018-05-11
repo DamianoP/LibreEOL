@@ -16,6 +16,8 @@ class User {
     public $email;      // User's e-mail
     public $lang;       // System language selected by user
     public $role;       // User's role Student (s), Teacher (t), Admin (a) or Teacher/Admin (ta)
+    public $group;      // User's group
+    public $subgroup;   // User's subgroup
 
     /**
      * @name    User
@@ -33,6 +35,8 @@ class User {
             $this->email    = $result['email'];
             $this->lang     = $result['lang'];
             $this->role     = $result['role'];
+            $this->group    = $result['group'];
+            $this->subgroup = $result['subgroup'];
         }else{
             $this->id       = '';
             $this->name     = '';
@@ -40,6 +44,8 @@ class User {
             $this->email    = '';
             $this->lang     = $config['systemLang'];
             $this->role     = '?';
+            $this->group    = '';
+            $this->subgroup = '';
         }
 
     }

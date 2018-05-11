@@ -1,5 +1,6 @@
 /**
  * Created by tomma on 01/12/2016.
+* Reviewed by damiano on 2017
  */
 /**
  * File: Newstudent.js
@@ -40,13 +41,15 @@ function createGroup(){
 function createSubgroup(){
     var group = $( "#group option:selected" ).val();
     var subgroup = $("#subgroupName").val().trim();
+    var description = $("#subgroupDescription").val().trim();
     if((subgroup != '')){
         $.ajax({
             url     : "index.php?page=admin/newsubgroup",
             type    : "post",
             data    : {
                 group           :  group,
-                subgroup        :  subgroup
+                subgroup        :  subgroup,
+                description:description
             },
             success : function (data) {
                 data = data.split(ajaxSeparator);
@@ -71,3 +74,4 @@ function helpjs(){
     $(".ui-dialog").css("background", "url('"+imageDir+"helpDialog.png')");
 
 }
+

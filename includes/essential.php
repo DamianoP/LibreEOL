@@ -366,6 +366,7 @@ function studentMenu(){
 <ul class="topnav">
     <li><a href="index.php"><?= ttHome ?></a></li>
     <li><a href="index.php?page=admin/profile"><?= ttProfile ?></a></li>
+    <li><a href="index.php?page=student/votes"><?= ttMyExams ?></a></li>
 
 <?php
 }

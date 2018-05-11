@@ -136,10 +136,10 @@ class Engine {
 
         // Import Javascript script (if exists)
         if(file_exists($config['systemLibsDir'].$this->controller.'/'.$this->controller.'.js')){
-            echo '<script type="text/javascript" src="'.$config['systemLibsDir'].$this->controller.'/'.$this->controller.'.js'.'"></script>';
+            echo '<script type="text/javascript" src="'.$config['systemLibsDir'].$this->controller.'/'.$this->controller.'.js?ver=21'.'"></script>';
         }
         if(file_exists($config['systemLibsDir'].$this->controller.'/'.$this->action.'.js')){
-            echo '<script type="text/javascript" src="'.$config['systemLibsDir'].$this->controller.'/'.$this->action.'.js'.'"></script>';
+            echo '<script type="text/javascript" src="'.$config['systemLibsDir'].$this->controller.'/'.$this->action.'.js?ver=21'.'"></script>';
         }
 
     }

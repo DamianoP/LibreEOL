@@ -158,6 +158,7 @@ class ImportqmController extends Controller{
 
 
         if($db->qSelect("Flag_Import")) {
+	//if(true){if(true){
             if($row = $db->nextRowEnum() and $row[0]==0){
 
                 try {

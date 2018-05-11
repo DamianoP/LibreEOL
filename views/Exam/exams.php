@@ -105,9 +105,13 @@ if(isset($_POST['idExam'])){
                             <span class="manageButton archive">
                                 <?php if($statusID != 'a') echo '<img name="archive" src="'.$config['themeImagesDir'].'Archive.png" title="'.ttArchive.'" onclick="archiveExam(new Array(true, this));">'; ?>
                             </span>
+                            <?php 
+                            /*
                             <span class="manageButton delete">
-                                <img name="delete" src="<?= $config['themeImagesDir'] ?>delete.png" title="<?= ttDelete ?>" onclick="deleteExam(new Array(true, this));">
+                               <img name="delete" src="<?= $config['themeImagesDir'] ?>delete.png" title="<?= ttDelete ?>" onclick="deleteExam(new Array(true, this));">
                             </span>
+                            */
+                            ?>
                         </td>
                         <td><?= $idExam ?></td>
                         <td><?= $idSubject ?></td>

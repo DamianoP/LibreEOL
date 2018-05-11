@@ -211,7 +211,9 @@ class QuestionController extends Controller{
                                 $NewquestionID = $questionID[0];
 
                                 if ($OldquestionID != $NewquestionID) { //if question's id change (assigned question was modified)
-
+ 				    // AGGIUNTA DAMIANO PER RENDERE CONSISTENTE QUESTIONSDISTRIBUTION
+				   // $queryQuestionsDistributions = "UPDATE questionsdistribution SET fkQuestion=".$NewquestionID." WHERE fkQuestion=".$OldquestionID;
+                                   // $db->execQuery($queryQuestionsDistributions);
                                     $qlog->append($usernamesurname . " modified question id " . $OldquestionID . " in question id " . $NewquestionID . "\n-"); //write file log
 
                                     //select to find idparent

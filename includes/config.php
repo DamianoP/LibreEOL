@@ -12,9 +12,9 @@
  *----------------------------------*/
 session_start();
 // System version
-$config['systemVersion'] = '2.0';
+$config['systemVersion'] = '2.6';
 // System title
-$config['systemTitle'] = 'LibreEOL - Exams On Line';
+$config['systemTitle'] = '>>SALOTTO<<';
 // System home website (used for emails)
 $config['systemHome'] = 'http://'. $_SERVER["SERVER_NAME"].'/';
 // System comunication email
@@ -66,19 +66,19 @@ $config['ellipsis'] = ' [...]';
  *----------------------------------*/
 
 // Database type (mysql | ...)
-$config['dbType'] = 'mysql';
+$config['dbType'] = '';
 // Database web address
-$config['dbHost'] = 'localhost';
+$config['dbHost'] = '';
 // Database port
-$config['dbPort'] = '3306';
+$config['dbPort'] = '';
 // Database name
 if(isset($_SESSION['dbNameChanged'])){
     $config['dbName']=$_SESSION['dbNameChanged'];
 }else{
-	$config['dbName'] = 'echemtest';
+	$config['dbName'] = '';
 }
 // Database access username
-$config['dbUsername'] = 'root';
+$config['dbUsername'] = '';
 // Database access password
 //$config['dbPassword'] = '';
 $config['dbPassword'] = '';

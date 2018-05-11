@@ -114,7 +114,7 @@ global $config, $user, $qlog;
                               <td>'.$topic.'</td>
                               <td>'.$type.'</td>
                               <td>'.$difficulty.'</td>
-                              <td onMouseover="showHistory(event,'.$idQuestion.')" onMouseout="hideHistory()">'.$idQuestion.'</td>
+                              <td onclick="showHistory(event,'.$idQuestion.')">'.$idQuestion.'</td>
                               <td>'.$idTopic.'</td>
                               <td>'.$typeID.'</td>
                               <td>'.$languageID.'</td>
@@ -145,7 +145,7 @@ global $config, $user, $qlog;
                       <td>'.$topic.'</td>
                       <td>'.$type.'</td>
                       <td>'.$difficulty.'</td>
-                      <td onMouseover="showHistory(event,'.$idQuestion.')" onMouseout="hideHistory()">'.$idQuestion.'</td>
+                      <td onclick="showHistory(event,'.$idQuestion.')">'.$idQuestion.'</td>
                       <td>'.$idTopic.'</td>
                       <td>'.$typeID.'</td>
                       <td>'.$languageID.'</td>

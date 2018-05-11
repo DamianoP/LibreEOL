@@ -51,10 +51,13 @@ global $user, $tt;
                 ?>
             </select>
             <div class="clearer"></div>
-            <label class="b2Space"><?= ttSubgroup ?> : </label>
-            <input class="writable" type="text" id="subgroupName" size="75%" value="">
+            <label class=""><?= ttSubgroup ?> : </label>
+            <input class="writable" type="text" id="subgroupName" size="75%" value="">           
+<br><br>
+            <label class=""><?= ttDescription ?> : </label>
+            <input class="writable" type="text" id="subgroupDescription" size="75%" value="">       
             <div class="clearer"></div>
-
+<br><br>
             <div>
                 <a class="normal button" id="create" onclick="createSubgroup();"><?= ttCreate ?></a>
             </div>
@@ -62,5 +65,7 @@ global $user, $tt;
         <?php closeBox() ?>
     </div>
 </div>
+
+
 
 

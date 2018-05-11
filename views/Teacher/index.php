@@ -80,7 +80,7 @@ global $config, $user;
                           <tr>
                               <th class="tName">'.ttName.'</th>
                               <th class="tSubject">'.ttSubject.'</th>
-                              <th class="tTime">'.ttTimeUsed.'</th>
+                              <th class="tTime">'.ttDay.'</th>
                               <th class="tScore">'.ttScoreTest.'</th>
                               <th class="tTestID"></th>
                               <th class="tTestStatus"></th>
@@ -101,6 +101,7 @@ global $config, $user;
                     $time = $diff->format("%H:%I:%S");
                     */
 
+			/*
                     $start = strtotime($test['timeStart']);
                     $end = strtotime($test['timeEnd']);
                     $diff = $end - $start;
@@ -115,14 +116,18 @@ global $config, $user;
 
                     $time = date("H:i:s",mktime($arr['hours'],$arr['minutes'],$arr['seconds']));
 
-
+			*/
 
                     $score = $test['scoreTest'];
+		    if(!isset($test['timeStart'])) 
+                      $start="0000-00-00 00:00:00";
+                    else
+                      $start=$test['timeStart'];
 
                     echo '<tr>
                               <td>'.$test['surname'].' '.$test['name'].'</td>
                               <td>'.$subject.'</td>
-                              <td>'.$time.'</td>
+                              <td>'.$start.'</td>
                               <td>'.$score.'</td>
                               <td>'.$idTest.'</td>
                               <td>'.$testStatus.'</td>

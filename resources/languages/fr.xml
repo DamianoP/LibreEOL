@@ -564,4 +564,23 @@
   <text id="ttMaxHardReached">Numero massimo di domande difficili già raggiunto</text>
   <text id="ttMaxMediumReached">Numero massimo di domande intermedie già raggiunto</text>
   <text id="ttMaxEasyReached">Numero massimo di domande facili già raggiunto</text>
+  <text id="ttProfCert">Certificazione delle competenze</text>
+  <text id="ttCertify">Viene certificato che</text>
+  <text id="ttSuccess">ha superato con successo</text>
+  <text id="ttEvaluation">con la valutazione seguente</text>
+  <text id="ttAccreditedTestSite">nel test ufficiale di</text>
+  <text id="ttOn">a</text>
+  <text id="ttNumQuestionsTopic">Numero di domande per ogni topic</text>
+  <text id="ttParamNotSet">Parametro mancante</text>
+  <text id="ttNotEnoughQuestions">Non ci sono abbastanza domande</text>
+  <text id="ttExamArchivedCertNot">Esame archiviato correttamente, i certificati potrebbero non essere stati generati.</text>
+  <text id="ttSendCertificate">Invia certificato</text>
+  <text id="ttCertificateAlert">Sei sicuro di voler inviare il certificato dell'esame allo studente ? L'operazione non può in alcun modo essere annullata!</text>
+  <text id="ttCertificateScore">Lo studente non ha il punteggio minimo per ricevere un certificato!</text>
+  <text id="ttCertificateGenerated">Il certificato è stato generato correttamente</text>
+  <text id="ttBut">ma</text>
+  <text id="ttAnd">e</text>
+  <text id="ttCertificateEmailSended">l'email è stata correttamente inviata</text>
+  <text id="ttCertificateGeneratedProblem">Il certificato non è stato generato!</text>
+  <text id="ttCertificatePoint">Il punteggio dello studente è troppo basso e non può essere emesso un certificato.</text>
 </language>

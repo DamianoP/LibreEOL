@@ -14,6 +14,7 @@ global $user, $tt, $config;
     <?php printMenu(); ?>
 </div>
 <div id="main">
+
     <?php
     $subjectInfo = null;
     $db = new sqlDB();
@@ -208,9 +209,11 @@ global $user, $tt, $config;
             ?>
         </div>
         <div class="clearer"></div>
+        <!---- 
         <div id="viewPanel">
             <a class="normal button right rSpace" id="editSettingsInfo" onclick="editSettingsInfo()"><?= ttEdit ?></a>
         </div>
+        ---->
         <div id="editPanel" class="hidden">
             <a class="ok button right bSpace tSpace rSpace" id="saveSettingsInfo" onclick="saveSettingsInfo(new Array(true));"><?= ttSave ?></a>
             <a class="red button right bSpace tSpace rSpace" id="deleteSettings" onclick="deleteSettings(new Array(true));"><?= ttDelete ?></a>

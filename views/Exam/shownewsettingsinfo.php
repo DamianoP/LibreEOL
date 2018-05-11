@@ -28,7 +28,9 @@ $hard = '5';
 $desc = '';
 $summaryClass = '';
 $write = '';
-
+$idUsr = -1;
+$sbgrp = -1;
+$grp = -1;
 $topicsForSettings = array();
 
 $db = new sqlDB();
@@ -50,6 +52,9 @@ if($_POST['action'] == 'show'){
         $hard = $testSettings['numHard'];
         $desc = $testSettings['description'];
         $certificate = $testSettings['certificate'];
+        $idUsr = $testSettings['idUser'];
+        $sbgrp = $testSettings['subgroup'];
+        $grp = $testSettings['group'];
         $summaryClass = 'hidden';
         $write = 'disabled';
 
@@ -64,7 +69,6 @@ if($_POST['action'] == 'show'){
 }
 ?>
 
-<div id="loader" class="loader" style="visibility: hidden"></div>
 <form class="infoEdit" onsubmit="return false;">
 
     <div class="columnLeft">
@@ -386,3 +390,17 @@ if($_POST['action'] == 'show'){
     </div>
 
 </form>
+<?php 
+    if (
+        ($user->group ==$grp && $user->subgroup==$sbgrp) || ($grp==null && $subgroup==null)
+        )
+    {
+        echo "<div>".$user->group." - ".$grp."</div>";
+        echo "<div>".$user->subgroup." - ".$sbgrp."</div>";
+?>
+    <div id="viewPanel">
+        <a class="normal button right rSpace" id="editSettingsInfo" onclick="editSettingsInfo()"><?= ttEdit ?></a>
+    </div>
+<?php
+    }
+?>

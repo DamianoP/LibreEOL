@@ -10,7 +10,7 @@ global $config;
 ?>
 <br><br>
 <div id="footer">
-    <p><?= ttBasedOn ?> <a href="https://github.com/manu89/echemTest-EOL" class="bold" target="_blank"><?= $config['systemTitle'] ?></a> (v <?= $config['systemVersion'] ?>)</p>
+    <p><?= ttBasedOn ?> <a href="https://github.com/DamianoP/echemTest-EOL" class="bold" target="_blank"><?= $config['systemTitle'] ?></a> (v <?= $config['systemVersion'] ?>)</p>
 </div>
 </div>
 <div id="dialogError"><p></p></div>

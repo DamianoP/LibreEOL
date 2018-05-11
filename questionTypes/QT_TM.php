@@ -167,13 +167,13 @@ class QT_TM extends Question
             shuffle($answerSet);
             if($answered[0]!=null)
                 $questionAnswers .= '<div>
-                                        <form action="QT_TM.php">
+                                        <form action="QT_TM.php" onkeypress="return event.keyCode != 13;">
                                             <input id="inputNumber" type="text" value="'.$answered[0].'">
                                         </form>
                                     </div> ';
             else
                 $questionAnswers .= '<div>
-                                        <form action="QT_TM.php">
+                                        <form action="QT_TM.php" onkeypress="return event.keyCode != 13;">
                                             <input id="inputNumber" type="text" value="'.$answered[0].'">
                                         </form>
                                     </div> ';

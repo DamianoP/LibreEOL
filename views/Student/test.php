@@ -27,7 +27,6 @@ $extras = array(
 </div>
 <div id="countdown"></div>
 <div id="main">
-<div id="loader" class="loader"></div>
     <?php
     $idSet = $_SESSION['idSet'];
     $db = new sqlDB();
@@ -63,7 +62,7 @@ $extras = array(
             if(count($questions) != $questionsNum){
                 die(ttEQuestionNotFound);
             }
-            echo '<div id="contenitoreDelTest" style="visibility:hidden">';
+            echo '<div id="contenitoreDelTest">';
             shuffle($questions);
             openBox(ttTest, 'normal', 'test');
             foreach($questions as $questionInfo){
@@ -156,6 +155,7 @@ $('.questionTest').click(function(index, div) {
 });
 */
 // questa funzione controlla che l'insegnante non abbia chiuso l'esame dello studente
+/* 
 setInterval(function CheckExamAvailabilityJs() {
     $.ajax({
         url     : "index.php?page=student/checkexamavailability",
@@ -190,7 +190,7 @@ setInterval(function CheckExamAvailabilityJs() {
         }
     });
 }, 60000);
-
+*/
 
 //questa funzione salva lo stato dell'esame sul server ogni X secondi
 setInterval(function(){ 
@@ -199,9 +199,3 @@ setInterval(function(){
 }, 10000);
 </script>
 
-<script>
-$(document).ready(function() {
-    $('#contenitoreDelTest').css("visibility","visible");
-    $('#loader').hide();
-});
-</script>

@@ -61,10 +61,15 @@ if(($_POST['action'] == 'show')&&($_POST['type'] == 's')){
     echo '<div class="clearer"></div>';
 
     ?>
-    <label class="b2Space" for="subgroupName"><?= ttSubgroup?> : </label>
+    <label class="" for="subgroupName"><?= ttSubgroup?> : </label>
     <?php
     echo '<input class="writable" type="text" id="subgroupName" name="subgroupName" value="'.$subgroupName.'">';
+    ?>
+<br><br>
+    <label class="" for="subgroupName"><?= ttDescription?> : </label>
 
+    <?php
+    echo '<input class="writable" type="text" id="subgroupDescription" name="subgroupDescription" value="'.$subgroup['Description'].'">';
     ?>
     <div class="clearer"></div>
     <br>
@@ -75,9 +80,5 @@ if(($_POST['action'] == 'show')&&($_POST['type'] == 's')){
     <?php
 }
 ?>
-
-
-
-
 
 

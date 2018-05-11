@@ -1,6 +1,7 @@
 /**
  * Created by tomma on 03/12/2016.
- */
+ * Reviewed by damiano on 2017
+*/
 var groupRowSelected = null;
 
 /**
@@ -106,15 +107,17 @@ function saveSubgroupEdit(){
     else{
         var idSubgroup = $(groupRowSelected).attr("value");
         var subgroupName = $("#subgroupName").val();
+        var description = $("#subgroupDescription").val();
         var fkGroup = $( "#group option:selected" ).val();
-        if((idSubgroup != '')&&(subgroupName != '')&&(fkGroup != '')){
+        if((idSubgroup != '')&&(subgroupName != '')&&(fkGroup != '')&&(description != '')){
             $.ajax({
                 url     : "index.php?page=admin/updatesubgroupinfo",
                 type    : "post",
                 data    : {
                     idSubgroup  : idSubgroup,
                     subgroupName: subgroupName,
-                    fkGroup     : fkGroup
+                    fkGroup     : fkGroup,
+                    description:description
                 },
                 success : function (data) {
 
@@ -144,3 +147,5 @@ function cancelEdit(askConfirmation){
 
     }
 }
+
+

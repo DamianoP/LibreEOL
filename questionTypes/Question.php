@@ -96,9 +96,11 @@ abstract class Question {
             if(($idQuestion = $db->nextRowEnum()) && ($idQuestion = $idQuestion[0])){
                 if($db2->qGetSettingsOnNewQuestion($this->get('idTopic'))){
                     $testSetting = $db2->getResultAssoc('idTestSetting');
+                    /*
                     foreach ($testSetting as $idtestSetting => $test){
                         $db2->qInsertQuestionsDistributionOnNewQuestion($idtestSetting,$idQuestion);
                     }
+                    */
                 }
                 $db2->close();
                 return $idQuestion;

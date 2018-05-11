@@ -139,7 +139,15 @@ global $config;
 
         <?php
         }else{
-            die(ttEDatabase);
+           // die(ttEDatabase);
+	    echo '
+            <form id="myForm" action="index.php?page=exam/view" method="post">
+                <input type="hidden" name="idTest" value="'.$_POST['idTest'].'">
+            </form>
+            <script type="text/javascript">
+                document.getElementById("myForm").submit();
+            </script>
+            ';
         }
     }else{
         die(ttEDatabase.' / '.ttETestNotFound);

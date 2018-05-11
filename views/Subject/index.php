@@ -92,7 +92,7 @@ global $user, $config;
         <div id="editPanel" class="hidden">
             <a class="ok button right lSpace" id="saveEdit" onclick="saveEdit();"><?= ttSave ?></a>
             <a class="normal button right" id="cancelEdit" onclick="cancelEdit(true);"><?= ttCancel ?></a>
-            <a class="delete button left lSpace" id="deleteSubject" onclick="deleteSubject(true);"><?= ttDelete ?></a>
+           <!---  <a class="delete button left lSpace" id="deleteSubject" onclick="deleteSubject(true);"><?= ttDelete ?></a>---->
         </div>
         <div id="createPanel" class="hidden">
             <a class="ok button right lSpace" id="createNew" onclick="createNewSubject();"><?= ttCreate ?></a>

@@ -184,7 +184,7 @@
   <text id="ttFalse">False</text>
   <text id="ttFinalScore">Final Score</text>
   <!-- ======================== G ======================== -->
-  <text id="ttGeneralInformations">General Informations</text>
+  <text id="ttGeneralInformations">General Information</text>
   <!-- ======================== H ======================== -->
   <text id="ttHours">hours</text>
   <text id="ttHome">Home</text>
@@ -284,7 +284,7 @@
   <text id="ttNoAnswers">No answers available for this question</text>
   <text id="ttNoExams">No exams available for this subject</text>
   <text id="ttNoExamInProgress">No exam in progress</text>
-  <text id="ttNoInfo">There aren't informations about this exam</text>
+  <text id="ttNoInfo">There aren't information about this exam</text>
   <text id="ttNoQuestions">No questions available for this topic</text>
   <text id="ttNoRooms">No rooms created: 'All' only available</text>
   <text id="ttNoSettings">No settings available for this subject</text>
@@ -594,4 +594,23 @@
   <text id="ttMaxEasyReached">Maximum number of easy questions already reached</text>
   <text id="ttMSubgroupCreated">Sottogruppo creato correttamente</text>
   <text id="ttTeacherSubmitStudentExam">If you click the yes button, the student exam will automatically be delivered to the system in its current state. If the student is still doing the exam, any further modification will not be considered.</text>
+  <text id="ttProfCert">Proficiency Certificate</text>
+  <text id="ttCertify">This is to certify that</text>
+  <text id="ttSuccess">has successfully passed</text>
+  <text id="ttEvaluation">with evaluation</text>
+  <text id="ttAccreditedTestSite">in the Accredited Test Site of the</text>
+  <text id="ttOn">on</text>
+  <text id="ttNumQuestionsTopic">Number of questions for each topic</text>
+  <text id="ttParamNotSet">Missing parameters</text>
+  <text id="ttNotEnoughQuestions">Not enough questions</text>
+  <text id="ttExamArchivedCertNot">The exam is archived but certificates have not been generated</text>
+  <text id="ttSendCertificate">Download certificate</text>
+  <text id="ttCertificateAlert">Are you sure you want to generate and download the exam certificate to the student? The operation can not be canceled in any way!</text>
+  <text id="ttCertificateScore">The student does not have the minimum score to receive a certificate</text>
+  <text id="ttCertificateGenerated">The certificate was generated correctly</text>
+  <text id="ttBut">but</text>
+  <text id="ttAnd">and</text>
+  <text id="ttCertificateEmailSended">the email was successfully sent</text>
+  <text id="ttCertificateGeneratedProblem">The certificate was not generated!</text>
+  <text id="ttCertificatePoint">The student score is too low and can not be issued a certificate.</text>
 </language>

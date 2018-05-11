@@ -272,3 +272,47 @@ function executeSaveStudentExamProblem(){
         }
     });
 }
+
+function sendCertificate(askConfirmationAndSelectedTest){
+    testRowEdit = $(askConfirmationAndSelectedTest[1]).closest("tr");
+    confirmDialog(ttWarning, ttCertificateAlert, executeSendCertificate, false);  
+}
+
+function executeSendCertificate(){
+    var idTestdaCertificare = registrationsTable.row(testRowEdit).data()[rtci.testID];
+    console.log("clicked on "+idTestdaCertificare);
+    if(idTestdaCertificare.trim()=="") {
+        showErrorMessage(ttETestNotFound);
+        return;
+    }
+    $.ajax({
+        url     : "index.php?page=exam/printcertificate",
+        type    : "post",
+        dataType: 'json',
+        data    : {
+            idTest    :     idTestdaCertificare
+        },
+        success : function (data){
+            //if(data.trim() == "ACK"){
+            if(data[0] == "success"){   
+                var path = data[1];
+                var link = document.createElement("a");
+                link.download = "certificate.pdf";
+                link.target = "_blank";
+                link.href = path;
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+                delete link;
+                showSuccessMessage(ttCertificateGenerated);
+            }else if(data[0] == "problem"){
+                showErrorMessage(data[1]);
+            }else{
+                showErrorMessage("?");
+            }
+        },
+        error : function (request, status, error) {
+            alert("jQuery AJAX request error:".error);
+        }
+    });
+}

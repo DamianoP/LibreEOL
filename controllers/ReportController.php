@@ -173,7 +173,7 @@ class ReportController extends Controller{
      *  @name   actionAoreportresult
      *  @descr  Shows the report
      */
-    private function actionResultstudent(){
+private function actionResultstudent(){
         global $config;
         $idExam = $_POST["idExam"];
         $subject = $_POST["subject"];
@@ -200,11 +200,20 @@ class ReportController extends Controller{
         chmod($path,0777);
         chmod($path2,0777);
         $db=new sqlDB();
-        if ($db->qGetRatingExam($idExam)) {
-            $a = ttName.",".ttSurname.",".ttEmail.",".ttTimeStart.",".ttTimeEnd.",".ttTimeUsed.",".ttScoreTest.",".ttFinalScore;
+        if ($db->qGetRatingExam($idExam)) {            
+            $a = ttName."#".ttSurname."#".ttEmail."#".ttTimeStart."#".ttTimeEnd."#".ttTimeUsed."#".ttScoreTest."#".ttFinalScore;
+            $db2=new sqlDB();
+            $db2->getTopicByExam($idExam);
+            $h=0;
+            $listaTopic=array();
+            while ($topic = $db2->nextRowAssoc()) {
+                $a.="#".$topic["Topics"];
+                $listaTopic[$h]=$topic["Topics"];
+                $h++;
+            }
             $title = array($a);
-            fputcsv($file,explode(",", $title[0]));
-            fputcsv($file2,explode(",", $title[0]));
+            fputcsv($file,explode("#", $title[0]));
+            fputcsv($file2,explode("#", $title[0]));
             while ($info = $db->nextRowAssoc()) {
                 $start = strtotime($info['timeStart']);
                 $end = strtotime($info['timeEnd']);
@@ -225,6 +234,32 @@ class ReportController extends Controller{
                     $time = date("H:i:s",mktime($arr['hours'],$arr['minutes'],$arr['seconds']));
                 }
                 $info["timeDiff"] = $time;
+                $db3=new sqlDB();
+                $db3->getReportDetailed($info["idTest"]);
+                $scoreArray=array();
+                while($scoreTemp = $db3->nextRowAssoc()){
+                    $scoreArray[$scoreTemp["Topics"]]["punteggio"]=$scoreTemp["punteggio"];
+                    $scoreArray[$scoreTemp["Topics"]]["MaxScore"]=$scoreTemp["MaxScore"];
+                }
+                $count=0;
+                while($count<$h){
+                    $valore=0;
+                    $risultato="";
+                    if(isset($scoreArray[$listaTopic[$count]]))
+                        $valore=$scoreArray[$listaTopic[$count]]["punteggio"];
+                    if($scoreArray[$listaTopic[$count]]["MaxScore"]>0){
+                        $percentage=$scoreArray[$listaTopic[$count]]["MaxScore"]/100*1.1;
+                        if($valore>=($scoreArray[$listaTopic[$count]]["MaxScore"]-$percentage))
+                            $risultato="100%";
+                        else
+                            $risultato=round((($valore/$scoreArray[$listaTopic[$count]]["MaxScore"])*100),3)."%";
+                    }
+                    $info[$count]=$risultato;
+                    $count++;
+                }
+                $info["name"]=urldecode($this->replaceCharacter($info["name"]));
+                $info["surname"]=urldecode($this->replaceCharacter($info["surname"]));
+                unset($info["idTest"]);
                 fputcsv($file,$info);
                 fputcsv($file2,$info);
             }
@@ -1555,6 +1590,115 @@ private function actionDeletetemplate(){
 
 
     }
+
+
+    private function replaceCharacter($word) {
+        $word = str_replace("@","%40",$word);
+        $word = str_replace("`","%60",$word);
+        $word = str_replace("Â¢","%A2",$word);
+        $word = str_replace("Â£","%A3",$word);
+        $word = str_replace("Â¥","%A5",$word);
+        $word = str_replace("|","%A6",$word);
+        $word = str_replace("Â«","%AB",$word);
+        $word = str_replace("Â¬","%AC",$word);
+        $word = str_replace("Â¯","%AD",$word);
+        $word = str_replace("Âº","%B0",$word);
+        $word = str_replace("Â±","%B1",$word);
+        $word = str_replace("Âª","%B2",$word);
+        $word = str_replace("Âµ","%B5",$word);
+        $word = str_replace("Â»","%BB",$word);
+        $word = str_replace("Â¼","%BC",$word);
+        $word = str_replace("Â½","%BD",$word);
+        $word = str_replace("Â¿","%BF",$word);
+        $word = str_replace("Ã€","%C0",$word);
+        $word = str_replace("Ã","%C1",$word);
+        $word = str_replace("Ã‚","%C2",$word);
+        $word = str_replace("Ãƒ","%C3",$word);
+        $word = str_replace("Ã„","%C4",$word);
+        $word = str_replace("Ã…","%C5",$word);
+        $word = str_replace("Ã†","%C6",$word);
+        $word = str_replace("Ã‡","%C7",$word);
+        $word = str_replace("Ãˆ","%C8",$word);
+        $word = str_replace("Ã‰","%C9",$word);
+        $word = str_replace("ÃŠ","%CA",$word);
+        $word = str_replace("Ã‹","%CB",$word);
+        $word = str_replace("ÃŒ","%CC",$word);
+        $word = str_replace("Ã","%CD",$word);
+        $word = str_replace("ÃŽ","%CE",$word);
+        $word = str_replace("Ã","%CF",$word);
+        $word = str_replace("Ã","%D0",$word);
+        $word = str_replace("Ã‘","%D1",$word);
+        $word = str_replace("Ã’","%D2",$word);
+        $word = str_replace("Ã“","%D3",$word);
+        $word = str_replace("Ã”","%D4",$word);
+        $word = str_replace("Ã•","%D5",$word);
+        $word = str_replace("Ã–","%D6",$word);
+        $word = str_replace("Ã˜","%D8",$word);
+        $word = str_replace("Ã™","%D9",$word);
+        $word = str_replace("Ãš","%DA",$word);
+        $word = str_replace("Ã›","%DB",$word);
+        $word = str_replace("Ãœ","%DC",$word);
+        $word = str_replace("Ã","%DD",$word);
+        $word = str_replace("Ãž","%DE",$word);
+        $word = str_replace("ÃŸ","%DF",$word);
+        $word = str_replace("Ã ","%E0",$word);
+        $word = str_replace("Ã¡","%E1",$word);
+        $word = str_replace("Ã¢","%E2",$word);
+        $word = str_replace("Ã£","%E3",$word);
+        $word = str_replace("Ã¤","%E4",$word);
+        $word = str_replace("Ã¥","%E5",$word);
+        $word = str_replace("Ã¦","%E6",$word);
+        $word = str_replace("Ã§","%E7",$word);
+        $word = str_replace("Ã¨","%E8",$word);
+        $word = str_replace("Ã©","%E9",$word);
+        $word = str_replace("Ãª","%EA",$word);
+        $word = str_replace("Ã«","%EB",$word);
+        $word = str_replace("Ã¬","%EC",$word);
+        $word = str_replace("Ã­","%ED",$word);
+        $word = str_replace("Ã®","%EE",$word);
+        $word = str_replace("Ã¯","%EF",$word);
+        $word = str_replace("Ã°","%F0",$word);
+        $word = str_replace("Ã±","%F1",$word);
+        $word = str_replace("Ã²","%F2",$word);
+        $word = str_replace("Ã³","%F3",$word);
+        $word = str_replace("Ã´","%F4",$word);
+        $word = str_replace("Ãµ","%F5",$word);
+        $word = str_replace("Ã¶","%F6",$word);
+        $word = str_replace("Ã·","%F7",$word);
+        $word = str_replace("Ã¸","%F8",$word);
+        $word = str_replace("Ã¹","%F9",$word);
+        $word = str_replace("Ãº","%FA",$word);
+        $word = str_replace("Ã»","%FB",$word);
+        $word = str_replace("Ã¼","%FC",$word);
+        $word = str_replace("Ã½","%FD",$word);
+        $word = str_replace("Ã¾","%FE",$word);
+        $word = str_replace("Ã¿","%FF",$word);        
+        $word = str_replace("Å‘","o",$word);    
+        $word = str_replace("Å»","Z",$word);    
+        $word = str_replace("Å‚","l",$word);    
+        $word = str_replace("Ä…","a",$word);
+        $word = str_replace("â€™","'",$word);
+        $word = str_replace("Ä™","e",$word);        
+        $word = str_replace("Åš","S",$word);
+        $cyr = [
+            'Ð°','Ð±','Ð²','Ð³','Ð´','Ðµ','Ñ‘','Ð¶','Ð·','Ð¸','Ð¹','Ðº','Ð»','Ð¼','Ð½','Ð¾','Ð¿',
+            'Ñ€','Ñ','Ñ‚','Ñƒ','Ñ„','Ñ…','Ñ†','Ñ‡','Ñˆ','Ñ‰','ÑŠ','Ñ‹','ÑŒ','Ñ','ÑŽ','Ñ',
+            'Ð','Ð‘','Ð’','Ð“','Ð”','Ð•','Ð','Ð–','Ð—','Ð˜','Ð™','Ðš','Ð›','Ðœ','Ð','Ðž','ÐŸ',
+            'Ð ','Ð¡','Ð¢','Ð£','Ð¤','Ð¥','Ð¦','Ð§','Ð¨','Ð©','Ðª','Ð«','Ð¬','Ð­','Ð®','Ð¯'
+        ];
+        $lat = [
+            'a','b','v','g','d','e','io','zh','z','i','y','k','l','m','n','o','p',
+            'r','s','t','u','f','h','ts','ch','sh','sht','a','i','y','e','yu','ya',
+            'A','B','V','G','D','E','Io','Zh','Z','I','Y','K','L','M','N','O','P',
+            'R','S','T','U','F','H','Ts','Ch','Sh','Sht','A','I','Y','e','Yu','Ya'
+        ];
+        $word = str_replace($cyr, $lat, $word);
+        return $word;
+    }
+
+
+
+
     private function accessRules(){
         return array(
             array(

@@ -647,7 +647,7 @@ class AdminController extends Controller{
             $db = new sqlDB();
             if(($db->qSelect('Tokens', 'value', $_POST['token'])) && ($token = $db->nextRowAssoc()) &&
                ($db->qSelect('Users', 'email', $token['email'])) && ($userInfo = $db->nextRowAssoc()) &&
-               ($db->qUpdateProfile($userInfo['idUser'], null, null, null, sha1($_POST['password']))) &&
+               ($db->qUpdateProfile($userInfo['idUser'], null, null, null,null,null, sha1($_POST['password']))) &&
                ($db->qDelete('Tokens', 'value', $_POST['token']))){
                 $message = str_replace('_USERNAME_', $userInfo['name'], ttMailCredentials);
                 $message = str_replace('_USEREMAIL_', $userInfo['email'], $message);
@@ -901,9 +901,9 @@ class AdminController extends Controller{
     private function actionNewsubgroup(){
         global $log;
 
-        if(isset($_POST['group']) && isset($_POST['subgroup'])){
+        if(isset($_POST['group']) && isset($_POST['subgroup']) && isset($_POST['description']) ){
             $db = new sqlDB();
-            if($db->qNewSubgroup($_POST['group'], $_POST['subgroup'])){
+            if($db->qNewSubgroup($_POST['group'], $_POST['subgroup'],$_POST['description'])){
                 echo "ACK";
             }else{
                 die($db->getError());
@@ -970,10 +970,9 @@ class AdminController extends Controller{
      */
     private function actionUpdatesubgroupinfo(){
         global $log;
-
-        if((isset($_POST['idSubgroup']))&& (isset($_POST['subgroupName'])) && (isset($_POST['fkGroup']))){
+        if((isset($_POST['idSubgroup']))&& (isset($_POST['subgroupName'])) && (isset($_POST['fkGroup'])) && (isset($_POST['description']))){
             $db = new sqlDB();
-            if($db->qUpdateSubgroupInfo($_POST['idSubgroup'],$_POST['subgroupName'], $_POST['fkGroup'])){
+            if($db->qUpdateSubgroupInfo($_POST['idSubgroup'],$_POST['subgroupName'], $_POST['fkGroup'], $_POST['description'])){
                 echo "ACK";
             }else{
                 die($db->getError());
@@ -1037,3 +1036,5 @@ class AdminController extends Controller{
         );
     }
 }
+
+

@@ -72,7 +72,7 @@ $(function(){
             { className: "eSettings" },
             { className: "ePassword", width : "30px", sortable : false },
             { className: "eManage", searchable : false, sortable : false },
-            { className: "eExamID", visible : true },
+            { className: "eExamID", visible : false },
             { className: "eSubjectID", visible : false },
             { className: "eSettingsID", visible : false },
             { className: "eStatusID", visible : false }

@@ -23,10 +23,12 @@ global $config;
         $idSubject = $testInfo['fkSubject'];
         $numQuestions = $testInfo['questions'];
         $scoreTest = $testInfo['scoreTest'];
+        $scoreType = $testInfo['scoreType'];
         $bonus = $testInfo['testBonus'];
         $scoreFinal = ($testInfo['scoreFinal'] > $testInfo['scoreType'])? $testInfo['scoreType'].' '.ttCumLaudae : $testInfo['scoreFinal'];
         $scale = $testInfo['scale'];
-
+        $isEditable = ($testInfo['editable'] == 0)? false : true;
+	
         if(($db->qViewArchivedTest($_POST['idTest'], null, $idSubject)) && ($questions = $db->getResultAssoc('idQuestion'))){
             if(count($questions) != $numQuestions){
                 die(ttEQuestionNotFound);
@@ -66,13 +68,25 @@ global $config;
                         </tr>
                         <tr>
                             <td class="sLabel"><?= ttFinalScore ?></td>
-                            <td colspan="2" class="sScore"><label id="scorePost"><?= $scoreFinal ?></label></td>
-                        </tr>
+			    <td class="sScore"><label id="scorePost"><?= $scoreFinal ?></label></td>
+                            <td><span id="areaModificaVoto" style="display:none">
+                                <?php if($isEditable){?>
+                                <input id="punteggioFinale" type="number" min="0" max=<?php echo "'".$scoreType."'";?> value=<?php echo "'".$scoreFinal."'";?>>
+                                
+                                <?php }?>
+
+                                </span>
+                            </td>                        </tr>
                     </table>
                     <input type="hidden" id="idTest" value="<?= $testInfo['idTest'] ?>">
 
                 </div>
-                <a class="button ok" onclick="window.close();"><?= ttClose ?></a>
+                <a class="button ok" onclick="checkStatus()" style="width:70px" id="bottoneChiusuraPagina"><?= ttClose ?></a>
+                <?php if($isEditable){?>
+                <a class="button delete" style="width:70px" onclick="editVoteStudent()">
+                                    <?= ttEdit ?>
+                </a>
+                <?php } ?>
             </div>
 
             <div class="clearer"></div>
@@ -91,3 +105,55 @@ global $config;
     ?>
 
 </div>
+<script>
+var salvataggio=0;
+function editVoteStudent(){
+    if(document.getElementById('areaModificaVoto').style.display=="none"){
+        document.getElementById('areaModificaVoto').style.display = '';        
+        document.getElementById('bottoneChiusuraPagina').innerHTML = "<?= ttSave ?>";
+        salvataggio=1;
+    }
+    else {
+        document.getElementById('areaModificaVoto').style.display = 'none';        
+        document.getElementById('bottoneChiusuraPagina').innerHTML = "<?= ttClose ?>";
+        salvataggio=0;
+    }
+}
+
+function checkStatus(){
+    if(salvataggio==1){
+        if(confirm("<?= ttConfirmProcedure ?>") == true){
+            risalvaEsame()  
+        }        
+    }else
+        window.close();
+    
+}
+
+function risalvaEsame(){
+    var valore=document.getElementById('punteggioFinale').value;
+    if(valore><?php echo $scoreType;?>){
+        alert("<?php echo ttError; ?>");
+    }else{
+        $.ajax({
+            url     : "index.php?page=exam/Updatearchivedtest",
+            type    : "post",
+            data    : {
+                idTest        :   <?php echo $_POST['idTest'];?>,
+                scoreFinal    :   valore
+            },
+            success : function (data) {
+                if(data == "ACK"){
+                    showSuccessMessage(ttMConfirm);
+                    setTimeout(function(){ window.close() }, 1500);
+                }else{
+                    showErrorMessage(data);
+                }
+            },
+            error : function (request, status, error) {
+                alert("jQuery AJAX request error:".error);
+            }
+        });
+    }
+}
+</script>

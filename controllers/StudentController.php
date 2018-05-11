@@ -201,7 +201,7 @@ class StudentController extends Controller{
                     if((isset($_POST['submit'])) && ($_POST['submit'] == "true")){      // Close test
                         if($ok=$db->qEndTest($_SESSION['idSet'])){
                             unset($_SESSION['idSet']);
-                            $log->append("Test closed:".$ok);
+                            //$log->append("Test closed:".$ok);
                             echo 'ACK';
                         }else{
                             die($db->getError());
@@ -317,6 +317,20 @@ class StudentController extends Controller{
         unset($_SESSION['idSet']);
         echo "ACK";
     }
+        /**
+     *  @name   actionProfile
+     *  @descr  Shows profile page of user's account
+     */
+    private function actionVotes(){
+        global $engine;
+
+        $engine->renderDoctype();
+        $engine->loadLibs();
+        $engine->renderHeader();
+        $engine->renderPage();
+        $engine->renderFooter();
+
+    }
 
 
     /**
@@ -334,7 +348,7 @@ class StudentController extends Controller{
         return array(
             array(
                 'allow',
-                'actions' => array('Index', 'Checkexamstatus', 'Logintest',
+                'actions' => array('Index','Votes', 'Checkexamstatus', 'Logintest',
                                    'Starttest', 'Test', 'Submittest', 'Register','Checkexamavailability','Closetest'),
                 'roles'   => array('s'),
             ),

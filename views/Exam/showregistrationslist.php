@@ -10,7 +10,7 @@
 global $user, $config, $log;
 
 if(!(isset($_POST['action'])) || ($_POST['action'] != 'refresh')){
-    openBox(ttRegistrations, 'normal-70.1%', 'registrationsList');
+    openBox(ttRegistrations, 'normal-80.1%', 'registrationsList');
 }
 
 ?>
@@ -143,11 +143,18 @@ if(!(isset($_POST['action'])) || ($_POST['action'] != 'refresh')){
                             <td><?= $registration['scoreTest'] ?>/<?=$testsettingInfo['scoreType']?></td>
                             <td><?= $scoreFinal ?>/<?=$testsettingInfo['scoreType']?></td>
                             <td>
-                                <?php if (($examInfo['status'] != 'a') || ($registration['status'] == 'a')) { ?>
-                                    <span class="manageButton <?= $status['action'] ?>">
+                                <?php if (($examInfo['status'] != 'a') || ($registration['status'] == 'a')) {?>
+                                    <span class="manageButton <?= $status['action'] ?>" style="width:50px;">
                                     <img src="<?= $config['themeImagesDir'] . $status['actionIcon'] ?>.png"
                                          title="<?= $status['actionTitle'] ?>" alt="<?= $status['actionTitle'] ?>"
                                          onclick="<?= $status['actionFunction'] ?>">
+                                    <?php if($registration['status']=='a') {
+                                        $percentScore = $scoreFinal / $testsettingInfo['scoreType'] * 100 ;
+                                        if($percentScore>=30 && $config['dbName']=="echemtest"){?>
+                                    <img style="float:right;" src="<?= $config['themeImagesDir'] ."emailCert2" ?>.png?ver=2"
+                                         title="<?= ttSendCertificate ?>" alt="<?= ttSendCertificate ?>"
+                                         onclick="sendCertificate(new Array(true, this))">
+                                    <?php } }?>     
                                 </span>
                                 <?php } ?>
                             </td>
@@ -187,3 +194,15 @@ if(!(isset($_POST['action'])) || ($_POST['action'] != 'refresh')){
     closeBox();
 }
 ?>
+<script>
+// aggiunta di Damiano 26 settembre 2009, rende la schermata piu lunga, larga e leggibile
+var altezzaStudentList = $(window).height()-330;
+if(altezzaStudentList<250){
+    altezzaStudentList=250;
+}
+try{
+    document.getElementsByClassName('dataTables_scrollBody')[1].style.height=altezzaStudentList+"px";
+}catch(exception){
+    console.log("Error: "+exception.message);
+}
+</script>
