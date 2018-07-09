@@ -108,7 +108,7 @@ if(isset($_POST['idExam'])){
                             <?php 
                             /*
                             <span class="manageButton delete">
-                               <img name="delete" src="<?= $config['themeImagesDir'] ?>delete.png" title="<?= ttDelete ?>" onclick="deleteExam(new Array(true, this));">
+                                <img name="delete" src="<?= $config['themeImagesDir'] ?>delete.png" title="<?= ttDelete ?>" onclick="deleteExam(new Array(true, this));">
                             </span>
                             */
                             ?>

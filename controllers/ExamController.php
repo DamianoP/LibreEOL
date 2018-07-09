@@ -112,9 +112,7 @@ class ExamController extends Controller{
                            <span class="manageButton archive">
                                <img name="archive" src="'.$config['themeImagesDir'].'Archive.png" title="'.ttArchive.'" onclick="archiveExam();">
                            </span>
-                           <span class="manageButton delete">
-                               <img name="delete" src="'.$config['themeImagesDir'].'delete.png" title="'.ttDelete.'" onclick="deleteExam(new Array(true, this));">
-                           </span>';
+                           ';
 
                 $updatedExam = array(
                     '<img alt="'.constant('tt'.$statuses[$examInfo['status']][0]).'"
@@ -191,9 +189,7 @@ class ExamController extends Controller{
                            <span class="manageButton archive">
                                <img name="archive" src="'.$config['themeImagesDir'].'Archive.png" title="'.ttArchive.'" onclick="archiveExam(new Array(true, this));">
                            </span>
-                           <span class="manageButton delete">
-                               <img name="delete" src="'.$config['themeImagesDir'].'delete.png" title="'.ttDelete.'" onclick="deleteExam(new Array(true, this));">
-                           </span>';
+                           ';
 
                 $newExam = array(
                     '<img alt="'.constant('tt'.$statuses[$examInfo['status']][0]).'"
@@ -1042,6 +1038,20 @@ non viene più utilizzata
         }
     }
 
+        /**
+     *  @name   actionResetSessionTestSettings
+     *  @descr  Reset Value
+     */
+    private function actionResetSessionTestSettings(){
+        global $log, $engine,$config, $user;
+
+        unset($_POST['idSubject']);
+        unset($_SESSION['idSubject']);
+
+    }
+
+
+
     /**
      *  @name   actionShowsettingsinfo
      *  @descr  Show info about an exam's settings
@@ -1262,7 +1272,6 @@ non viene più utilizzata
                 }
             }
             $log->append(">>>>>>>>>>>>>>>>>>>> 6");
-
             for($j=0; $j<$numTopics; $j++) $matrixDistribution[$j][3] = $topicQuestionsId[$j];
             $dCoefficients = array();
             // Calculates the distribution coefficients
@@ -1366,9 +1375,8 @@ non viene più utilizzata
      *  @descr  calculates the  matrixdistribution of topics
      */
     private function calcTopicDistribution($numQuestions,$numDifficulty,$topicQuestionsID,$topicQuestionsValue,$matrixMaxQuestions,$matrixDistribution,$dCoefficients){
-        global $log;
-        $log->append("Entro in calcTopicDistribution");
         $numTopics = count($topicQuestionsID);
+
         $numT = array(); //vector of questions have to be included for each topic
         $numI = array(); //vector of questions have to be hypothetically included for each topic
         $matrixAnomalies = array(array()); // matrice anomalie
@@ -1378,7 +1386,6 @@ non viene più utilizzata
             }
         }
         //adds to the matrix the questions that must to be added
-        $log->append("calcTopicDistribution add matrix");
         for ($i = 0; $i < $numTopics;$i++) {
             for ($j = 0; $j < 3; $j++){
                 //calculates the number of questions have to be added divided by difficulty
@@ -1399,7 +1406,6 @@ non viene più utilizzata
             }
         }
         //add the other questions
-        $log->append("calcTopicDistribution add other");
         for ($i = 0; $i < $numTopics;$i++) {
             $numR = $topicQuestionsValue[$i] - $numI[$i];
             $j = mt_rand(0, 2);
@@ -1423,7 +1429,6 @@ non viene più utilizzata
         }
         $counterFinale = 0;
         //corrects the anomalies, STEP 1
-        $log->append("calcTopicDistribution step1");
         for($j=0; $j<3; $j++){
             for ($i=0; $i<$numTopics; $i++){
                 $counter = 0;
@@ -1446,16 +1451,9 @@ non viene più utilizzata
         }
 
         //corrects the anomalies, STEP 2
-
-        $log->append("calcTopicDistribution step2");
-        $conteggio=0;
-        $maxConteggio=50000;
         for($j=0; $j<3; $j++){
-            $conteggio++;
             for ($i=0; $i<$numTopics; $i++){
-                $conteggio++;
                 while($matrixAnomalies[$i][$j] > 0){ // DAMIANO
-                    $conteggio++;
                     $tempDiff1 = null;
                     $tempDiff2 = null;
                     $goOn = true;
@@ -1466,14 +1464,7 @@ non viene più utilizzata
                         $tempDiff2 = ($j+2)%3;
                     }
                     $k = 0;
-
-                    if($conteggio>$maxConteggio)
-                        die("aiutoooooo");
-                    $log->append("Entro, K=".$k." ; num topic: ".$numTopics);
                     while($k<$numTopics && $goOn){
-                        $conteggio++;
-                        if($conteggio>$maxConteggio)
-                            die("aiutoooooo");
                         if($matrixMaxQuestions[$k][$j] > 0 && $matrixDistribution[$k][$tempDiff1] > 0){
                             $matrixDistribution[$k][$j]++;
                             $matrixMaxQuestions[$k][$j]--;
@@ -1497,7 +1488,7 @@ non viene più utilizzata
                 }
             }
         }
-        $log->append("calcTopicDistribution return");
+
         return array($matrixDistribution,$matrixMaxQuestions,$matrixAnomalies,$numDifficulty,$numQuestions,$counterFinale);
     }
 
@@ -1896,9 +1887,14 @@ non viene più utilizzata
         return array(
             array(
                 'allow',
+                'actions' => array('Deleteexam'),
+                'roles'   => array('a'),
+            ),
+            array(
+                'allow',
                 'actions' => array('Settings', 'Showsettingsinfo','Shownewsettingsinfo', 'Updatesettingsinfo', 'Newsettings','Newsettings2', 'Deletesettings',
-                                   'Exams', 'Showexaminfo', 'Deleteexam', 'Testsettingslist', 'Updateexaminfo', 'Newexam', 'Changestatus',
-                                   'Showregistrationslist', 'Showaddstudentspanel', 'Registerstudents', 'Toggleblock', 'Correct', 'View', 'Archiveexam','Printcertificate','Savestudentexam','Sendmail','Updatearchivedtest'),
+                                   'Exams', 'Showexaminfo', 'Testsettingslist', 'Updateexaminfo', 'Newexam', 'Changestatus',
+                                   'Showregistrationslist', 'Showaddstudentspanel', 'Registerstudents', 'Toggleblock', 'Correct', 'View', 'Archiveexam','Printcertificate','Savestudentexam','Sendmail','Updatearchivedtest','Resetsessiontestsettings'),
                 'roles'   => array('t','e'),
             ),
             array(
@@ -1910,11 +1906,6 @@ non viene più utilizzata
     }
 
 }
-
-
-
-
-
 
 
 

@@ -120,7 +120,6 @@ if($_POST['action'] == 'show'){
 
         <label class="tSpace"><?= ttDuration ?> : </label>
         <div id="settingsDuration" class="tSpace">
-            
             <dl class="dropdownInfo" id="settingsDurationH">
                 <dt class="<?= $editClass ?>">
                     <span><?= intval($duration/60) ?>
@@ -296,7 +295,6 @@ $script .= ');';
         </table>
         <div class="<?= $summaryClass ?> backSuccess" id="difficultyQuestionsSummary"><span><?= $difficultyQuestionSummary ?></span> <?= ttQuestions ?></div>
     </div>
-
     <div class="clearer"></div>
 
     <script>

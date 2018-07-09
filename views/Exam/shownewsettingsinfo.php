@@ -28,6 +28,7 @@ $hard = '5';
 $desc = '';
 $summaryClass = '';
 $write = '';
+
 $idUsr = -1;
 $sbgrp = -1;
 $grp = -1;
@@ -53,8 +54,8 @@ if($_POST['action'] == 'show'){
         $desc = $testSettings['description'];
         $certificate = $testSettings['certificate'];
         $idUsr = $testSettings['idUser'];
-        $sbgrp = $testSettings['subgroup'];
         $grp = $testSettings['group'];
+        $sbgrp = $testSettings['subgroup'];
         $summaryClass = 'hidden';
         $write = 'disabled';
 
@@ -395,8 +396,8 @@ if($_POST['action'] == 'show'){
         ($user->group ==$grp && $user->subgroup==$sbgrp) || ($grp==null && $subgroup==null)
         )
     {
-        echo "<div>".$user->group." - ".$grp."</div>";
-        echo "<div>".$user->subgroup." - ".$sbgrp."</div>";
+//	echo "<div>".$user->group." - ".$testSettings['group']."</div>";
+//        echo "<div>".$user->subgroup." - ".$sbgrp."</div>";
 ?>
     <div id="viewPanel">
         <a class="normal button right rSpace" id="editSettingsInfo" onclick="editSettingsInfo()"><?= ttEdit ?></a>

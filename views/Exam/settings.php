@@ -13,7 +13,8 @@ global $user, $tt, $config;
 <div id="navbar">
     <?php printMenu(); ?>
 </div>
-<div id="main">
+<div id="loader" class="loader"></div>
+<div id="main" style="visibility: hidden;">
 
     <?php
     $subjectInfo = null;
@@ -34,7 +35,16 @@ global $user, $tt, $config;
         }else{
             echo ttEDatabase;
         }
-        closeBox();
+//        closeBox();
+        ?>
+        </div>
+          <div class="boxBottom">
+              <div class="boxBottomCenter" style="height:42px">
+                <div id="backButtonTestSettings" style="text-align:center;display:grid"><div class="button"><?=ttCancel?></div></div>
+              </div>
+          </div>
+        </div>
+        <?php
     }else{
         echo ttEDatabase;
     }
@@ -233,4 +243,22 @@ global $user, $tt, $config;
 
 <script>
     var mainLang = <?= $mainLang ?>;
+    $("#backButtonTestSettings").on("click", function(){ 
+        $.ajax({
+            url     : "index.php?page=exam/resetSessiontestsettings",
+            type    : "post",
+            success : function (data) {
+                window.location.href = 'index.php?page=exam/settings';
+            },
+            error : function (request, status, error) {
+                alert("jQuery AJAX request error:".error);
+            }
+        });   
+    });
+
+    $(document).ready(function() {
+        $('#main').css("visibility","visible");
+        $('#loader').hide();
+});
 </script>
+
