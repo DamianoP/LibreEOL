@@ -5,7 +5,7 @@ Developed and verified by Damiano Perri 2016-2018 and Osvaldo Gervasi
 
 
 URL: www.libreeol.org
-Version 2.6 - 10/05/2018
+Version 2.6.2 - 09/07/2018
 
 Other developers: Alessandro Moretti, Emanuele Gragnoli , Giovanni Scieri, Luca Caprini , Matteo Botticchia , Riccardo Gai , Tommaso Giorni
 
