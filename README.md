@@ -1,5 +1,5 @@
 # echemTest-EOL
-LibreEol is an innovative online assessment system based on HTML5, CSS2/3, PHP5 and Ajax
+LibreEol is an innovative online assessment system based on HTML5, CSS2/3, PHP7 and Ajax
 
 Developed and verified by Damiano Perri 2016-2018 and Osvaldo Gervasi
 
