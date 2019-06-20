@@ -8,7 +8,7 @@ URL:  https://www.libreeol.org
 URL:  https://echemtest.libreeol.org
 Version 2.7.4 - 21/06/2019
 
-Other developers: Alessandro Moretti, Emanuele Gragnoli , Giovanni Scieri, Luca Caprini , Matteo Botticchia , Riccardo Gai , Tommaso Giorni, Cristiano Regni
+Other developers: Alessandro Moretti, Cristiano Regni, Emanuele Gragnoli , Giovanni Scieri, Luca Caprini , Matteo Botticchia , Riccardo Gai , Tommaso Giorni
 
 Third-party Software
 --------------------
