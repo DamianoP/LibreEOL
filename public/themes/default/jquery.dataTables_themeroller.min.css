@@ -49,7 +49,7 @@ table.dataTable tbody tr {
 
 table.dataTable tbody tr.selected {
     /*background-color: #b0bed9*/
-    background: url(images/hover.png) repeat;
+    background: #008CEF;
     background-size: 100% 100%;
     color: white;
     cursor: pointer;
@@ -96,7 +96,7 @@ table.dataTable.stripe tbody tr.odd, table.dataTable.display tbody tr.odd {
 
 table.dataTable.stripe tbody tr.odd.selected, table.dataTable.display tbody tr.odd.selected {
     /*background-color: #abb9d3*/
-    background: url(images/hover.png) repeat;
+    background: #008CEF;
     background-size: 100% 100%;
     color: white;
     cursor: pointer;
@@ -104,7 +104,7 @@ table.dataTable.stripe tbody tr.odd.selected, table.dataTable.display tbody tr.o
 
 table.dataTable.hover tbody tr:hover, table.dataTable.hover tbody tr.odd:hover, table.dataTable.hover tbody tr.even:hover, table.dataTable.display tbody tr:hover, table.dataTable.display tbody tr.odd:hover, table.dataTable.display tbody tr.even:hover {
     /*background-color: #f5f5f5*/
-    background: url(images/hover.png) repeat;
+    background-color: #008CEF; /* da cambiare*/
     background-size: 100% 100%;
     color: white;
     cursor: pointer;
@@ -120,7 +120,7 @@ table.dataTable.order-column tbody tr>.sorting_1, table.dataTable.order-column t
 
 table.dataTable.order-column tbody tr.selected>.sorting_1, table.dataTable.order-column tbody tr.selected>.sorting_2, table.dataTable.order-column tbody tr.selected>.sorting_3, table.dataTable.display tbody tr.selected>.sorting_1, table.dataTable.display tbody tr.selected>.sorting_2, table.dataTable.display tbody tr.selected>.sorting_3 {
     /*background-color: #acbad4*/
-    background: url(images/hover.png) repeat;
+    background: #008CEF;
     background-size: 100% 100%;
     color: white;
     cursor: pointer;
@@ -181,21 +181,21 @@ table.dataTable.display tbody tr.even.selected>.sorting_3, table.dataTable.order
 }
 
 table.dataTable.display tbody tr:hover>.sorting_1, table.dataTable.display tbody tr.odd:hover>.sorting_1, table.dataTable.display tbody tr.even:hover>.sorting_1, table.dataTable.order-column.hover tbody tr:hover>.sorting_1, table.dataTable.order-column.hover tbody tr.odd:hover>.sorting_1, table.dataTable.order-column.hover tbody tr.even:hover>.sorting_1 {
-    background: url(images/hover.png) repeat;
+    background: #008CEF;
     background-size: 100% 100%;
     color: white;
     cursor: pointer;
 }
 
 table.dataTable.display tbody tr:hover>.sorting_2, table.dataTable.display tbody tr.odd:hover>.sorting_2, table.dataTable.display tbody tr.even:hover>.sorting_2, table.dataTable.order-column.hover tbody tr:hover>.sorting_2, table.dataTable.order-column.hover tbody tr.odd:hover>.sorting_2, table.dataTable.order-column.hover tbody tr.even:hover>.sorting_2 {
-    background: url(images/hover.png) repeat;
+    background: #008CEF;
     background-size: 100% 100%;
     color: white;
     cursor: pointer;
 }
 
 table.dataTable.display tbody tr:hover>.sorting_3, table.dataTable.display tbody tr.odd:hover>.sorting_3, table.dataTable.display tbody tr.even:hover>.sorting_3, table.dataTable.order-column.hover tbody tr:hover>.sorting_3, table.dataTable.order-column.hover tbody tr.odd:hover>.sorting_3, table.dataTable.order-column.hover tbody tr.even:hover>.sorting_3 {
-    background: url(images/hover.png) repeat;
+    background: #008CEF;
     background-size: 100% 100%;
     color: white;
     cursor: pointer;
@@ -382,3 +382,7 @@ table.dataTable, table.dataTable th, table.dataTable td {
 
 .ui-tabs-vertical > .ui-tabs-panel {
     padding: 1em; float: left; border: 1px solid #686868;}
+
+#examsTable_filter{
+    margin-right: 120px!important;
+}

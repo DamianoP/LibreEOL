@@ -1,0 +1,2807 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE questestinterop SYSTEM "ims_qtiasiv1p2.dtd">
+
+<questestinterop>
+<scale>100</scale>
+
+
+<item title="001 213." ident="3356801823023603">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Greek version\General Chemistry 2 v400gr</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Τα στοιχεία Α και Β (τα γράμματα δεν παριστούν χημικά σύμβολα) έχουν την ακόλουθη ηλεκτρονική κατανομή:</P>
+<P>&nbsp; A: 1s<SUP>2 </SUP>2s<SUP>2 </SUP>2p<SUP>6 </SUP>3s<SUP>2 </SUP>3p<SUP>6 </SUP>4s<SUP>2<BR></SUP>&nbsp; B: 1s<SUP>2 </SUP>2s<SUP>2</SUP> 2p<SUP>5</SUP></P>
+<P>Συμπληρώστε με το σωστό μαθηματικό σύμβολο την πρόταση?<BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;The first ionisation energy of A is greater than that of B.<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;The first ionisation energies of A and B are equal.<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;The first ionisation energy of B is greater than that of A.<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;It is impossible to tell which first ionisation energy is greater.<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;The atomic number of A and B is the same for both elements.<BR><BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="2" >
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="002 224." ident="0491336373542569">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Greek version\General Chemistry 2 v400gr</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Η πλήρης εξίσωση καύσεως της προπανόλης είναι:<BR><BR>
+<CENTER>2 C<SUB>3</SUB>H<SUB>7</SUB>OH&nbsp;+&nbsp;9 O<SUB>2</SUB>&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;6 CO<SUB>2</SUB>&nbsp;+&nbsp;8 H<SUB>2</SUB>O<BR></CENTER><BR>Πόσα mol οξυγόνου αντιδρούν με 10&nbsp;mol προπανόλης?<BR><BR>
+<CENTER><img class="extraIcon calculator" src="themes/default/images/QEc.png"><BR></CENTER>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;&nbsp;9<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[11<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[20<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[45<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[90<BR><BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="3" >
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="003 234. The list below gives the n" ident="6193120704086451">
+<itemmetadata>
+<qmd_itemtype>Multiple Response</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Greek version\General Chemistry 2 v400gr</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[&#922;&#945;&#964;&#969;&#964;&#941;&#961;&#969; &#948;&#943;&#948;&#959;&#957;&#964;&#945;&#953; &#964;&#945; &#959;&#957;&#972;&#956;&#945;&#964;&#945; &#948;&#953;&#945;&#966;&#972;&#961;&#969;&#957; &#964;&#973;&#960;&#969;&#957; &#948;&#949;&#963;&#956;&#974;&#957; &#960;&#959;&#965; &#963;&#965;&#957;&#945;&#957;&#964;&#974;&#957;&#964;&#945;&#953; &#963;&#964;&#953;&#962; &#967;&#951;&#956;&#953;&#954;&#941;&#962; &#949;&#957;&#974;&#963;&#949;&#953;&#962;. <br><br>&#928;&#959;&#953;&#972;&#962; &#949;&#943;&#957;&#945;&#953; &#959; &#954;&#973;&#961;&#953;&#959;&#962; &#964;&#973;&#960;&#959;&#962; &#948;&#949;&#963;&#956;&#959;&#973; &#963;&#949; &#964;&#949;&#956;&#940;&#967;&#953;&#959; &#968;&#949;&#965;&#948;&#945;&#961;&#947;&#973;&#961;&#959;&#965;.<BR><BR>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<BR>]]></mattext>
+</material>
+<response_lid ident="1" rcardinality="Multiple">
+<render_choice shuffle="Yes" minnumber="1" maxnumber="5">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;M&#949;&#964;&#945;&#955;&#955;&#953;&#954;&#972;&#962; &#948;&#949;&#963;&#956;&#972;&#962;<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;&#921;&#959;&#957;&#964;&#953;&#954;&#972;&#962; &#948;&#949;&#963;&#956;&#972;&#962;<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;&#916;&#949;&#963;&#956;&#972;&#962; &#965;&#948;&#961;&#959;&#947;&#972;&#957;&#959;&#965;<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;&#927;&#956;&#959;&#953;&#959;&#960;&#959;&#955;&#953;&#954;&#972;&#962; &#948;&#949;&#963;&#956;&#972;&#962;<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;&#916;&#949;&#963;&#956;&#972;&#962; van der Waals<BR><BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="1" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+<varequal respident="1">B</varequal>
+<varequal respident="1">C</varequal>
+<varequal respident="1">D</varequal>
+<varequal respident="1">E</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="header" continue="Yes">
+<conditionvar>Unrecognized or unsupported test method
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="header"/>
+</respcondition>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Add">60</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="header" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="004 244. The graph shows the variat" ident="6117247147247204">
+<itemmetadata>
+<qmd_itemtype>Numeric</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Greek version/General Chemistry 2 v400gr</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[&#932;&#959; &#947;&#961;&#940;&#966;&#951;&#956;&#945; <I>&#948;&#949;&#943;&#967;&#957;&#949;&#953; &#964;&#951;&#957; &#956;&#949;&#964;&#945;&#946;&#959;&#955;&#941;&#962; &#964;&#951;&#962; &#956;&#949;&#947;&#943;&#963;&#964;&#951;&#962; &#948;&#953;&#945;&#955;&#965;&#964;&#972;&#964;&#951;&#964;&#945;&#962; &#964;&#959;&#965; &#957;&#953;&#964;&#961;&#953;&#954;&#959;&#973; &#954;&#945;&#955;&#943;&#959;&#965; &#963;&#964;&#959; &#973;&#948;&#969;&#961; &#949;&#957; &#963;&#967;&#941;&#963;&#949;&#953; &#960;&#961;&#959;&#962; &#964;&#951;&#957; &#952;&#949;&#961;&#956;&#959;&#954;&#961;&#945;&#963;&#943;&#945;. &#919; &#948;&#953;&#945;&#955;&#965;&#964;&#972;&#964;&#951;&#964;&#945; &#949;&#954;&#966;&#961;&#940;&#950;&#949;&#964;&#945;&#953; &#963;&#949; g KNO<SUB>3</SUB> &#948;&#953;&#945;&#955;&#949;&#955;&#965;&#956;&#941;&#957;&#945; &#963;&#949; 100&nbsp;g &#973;&#948;&#945;&#964;&#959;&#962;.</I><BR><BR>Use the information in the graph to answer the following question:<BR><BR><TABLE align=center><TR><TD width=350>]]></mattext>
+</material>
+<material>
+<matimage imagtype="image/jpg" uri="../topicresources/624634016/g21404_gr_col.jpg" height="331" width="309"/>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[</TD><TD>&#916;&#953;&#940;&#955;&#965;&#956;&#945; 100&nbsp;g KNO<SUB>3</SUB> &#963;&#949; 100&nbsp;g H<SUB>2</SUB>O &#968;&#973;&#967;&#949;&#964;&#945;&#953; &#945;&#960;&#972; &#964;&#959;&#965;&#962; 100&deg;C &#963;&#949; &#967;&#945;&#956;&#951;&#955;&#972;&#964;&#949;&#961;&#949;&#962; &#952;&#949;&#961;&#956;&#959;&#954;&#961;&#945;&#963;&#943;&#949;&#962;. &#931;&#949; &#960;&#959;&#953;&#940; &#952;&#949;&#961;&#956;&#959;&#954;&#961;&#945;&#963;&#943;&#945;, &#963;&#949; &#945;&#954;&#941;&#961;&#945;&#953;&#949;&#962; &#956;&#959;&#957;&#940;&#948;&#949;&#962;, &#952;&#945; &#949;&#956;&#966;&#945;&#957;&#953;&#963;&#952;&#959;&#973;&#957; &#959;&#953; &#960;&#961;&#974;&#964;&#959;&#953; &#954;&#961;&#973;&#963;&#964;&#945;&#955;&#955;&#959;&#953; KNO<SUB>3</SUB>;<BR><BR>&#913;&#960;&#940;&#957;&#964;&#951;&#963;&#951;:<BR>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[</TD></TR></TABLE><BR>]]></mattext>
+</material>
+<response_num ident="1" rcardinality="Single">
+<render_fib fibtype="Decimal" prompt="Box" rows="1" columns="4" maxchars="4"/>
+</response_num>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">57.0</varequal>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" >
+<conditionvar>
+<or>
+<vargte respident="1">55.0</vargte>
+<varlte respident="1">57.0</varlte>
+<vargte respident="1">57.0</vargte>
+<varlte respident="1">59.0</varlte>
+</or>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" >
+<conditionvar>
+<other/>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="005 246." ident="3926254282587954">
+<itemmetadata>
+<qmd_itemtype>Pull-down list</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Greek version\General Chemistry 2 v400gr</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[&#913;&#957;&#964;&#953;&#963;&#964;&#959;&#953;&#967;&#943;&#963;&#964;&#949; &#964;&#953;&#962; &#954;&#945;&#964;&#969;&#964;&#941;&#961;&#969; &#960;&#961;&#959;&#964;&#940;&#963;&#949;&#953;&#962; &#956;&#949; &#964;&#945; &#948;&#953;&#945;&#955;&#973;&#956;&#945;&#964;&#945; &#913; &#941;&#969;&#962; &#917;.<BR><BR><table width="75%" border="0" align="center">  <tr>    <td width="12%">A</td>    <td width="45%">NH<SUB>3</SUB>(&#965;&#948;&#945;&#964;&#953;&#954;&#942;)</td>    <td width="43%">0,010&nbsp;mol/dm<SUP>3</SUP></td>  </tr>  <tr>    <td width="12%">B</td>    <td width="45%">CH<SUB>3</SUB>COONa(&#965;&#948;&#945;&#964;&#953;&#954;&#972;)</td>    <td width="43%">0,010&nbsp;mol/dm<SUP>3</SUP></td>   </tr>  <tr>    <td width="12%">C</td>    <td width="45%">HCl(&#965;&#948;&#945;&#964;&#953;&#954;&#972;)</td>    <td width="43%">0,010&nbsp;mol/dm<SUP>3</SUP></td>  </tr>  <tr>    <td width="12%">D</td>    <td width="45%">CH<SUB>3</SUB>COOH(&#965;&#948;&#945;&#964;&#953;&#954;&#972;)</td>    <td width="43%">0,010&nbsp;mol/dm<SUP>3</SUP></td>  </tr>  <tr>    <td width="12%">E</td>    <td width="45%">NaOH(&#965;&#948;&#945;&#964;&#953;&#954;&#972;)</td>    <td width="43%">0,010&nbsp;mol/dm<SUP>3</SUP></td>  </tr></table><BR><BR>                               Answer each of the questions by selecting the appropriate solution from A to E above.<BR><BR>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<BR>]]></mattext>
+</material>
+<response_lid ident="1">
+<material>
+<mattext texttype="text/html"><![CDATA[&#941;&#967;&#949;&#953; pH=2<BR>]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">A</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">B</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">C</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">D</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">E</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="2">
+<material>
+<mattext texttype="text/html"><![CDATA[&#972;&#964;&#945;&#957; &#945;&#957;&#945;&#956;&#953;&#967;&#952;&#962;&#949;&#943; &#956;&#949; &#943;&#963;&#959; &#972;&#947;&#954;&#959; &#948;&#953;&#945;&#955;&#973;&#956;&#945;&#964;&#959;&#962; &#914; &#963;&#967;&#951;&#956;&#945;&#964;&#943;&#950;&#949;&#953; &#961;&#965;&#952;&#956;&#953;&#963;&#964;&#953;&#954;&#972; &#948;&#953;&#940;&#955;&#965;&#956;&#945;.<BR>]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">A</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">B</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">C</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">D</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">E</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="3">
+<material>
+<mattext texttype="text/html"><![CDATA[&#941;&#967;&#949;&#953; pH&gt;7 &#963;&#949; &#952;&#949;&#961;&#956;&#959;&#954;&#961;&#945;&#963;&#943;&#945; &#948;&#969;&#956;&#945;&#964;&#943;&#959;&#965; &#955;&#972;&#947;&#969; &#956;&#949;&#961;&#953;&#954;&#959;&#973; &#953;&#959;&#957;&#953;&#963;&#956;&#959;&#973; &#964;&#969;&#957; &#956;&#959;&#961;&#943;&#969;&#957; &#964;&#951;&#962; &#948;&#953;&#945;&#955;&#949;&#955;&#965;&#956;&#941;&#957;&#951;&#962; &#959;&#965;&#963;&#943;&#945;&#962;. <BR>]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">A</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">B</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">C</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">D</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">E</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Add">20</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" continue="Yes">
+<conditionvar>
+<varequal respident="2">E</varequal>
+</conditionvar>
+<setvar action="Add">20</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" continue="Yes">
+<conditionvar>
+<varequal respident="3">C</varequal>
+</conditionvar>
+<setvar action="Add">20</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="default" >
+<conditionvar>
+<or>
+<other/>
+<not>
+<other/>
+</not>
+</or>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="default"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="default" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="006 254." ident="5582361502380186">
+<itemmetadata>
+<qmd_itemtype>Hot Spot</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Greek version/General Chemistry 2 v400gr</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[&#913;&#960;&#945;&#957;&#964;&#942;&#963;&#964;&#949; &#949;&#960;&#953;&#963;&#951;&#956;&#945;&#943;&#957;&#959;&#957;&#964;&#945;&#962; &#956;&#949; &#964;&#959;&#957; &#948;&#949;&#943;&#954;&#964;&#951; &#964;&#959; &#948;&#953;&#940;&#947;&#961;&#945;&#956;&#956;&#945; &#960;&#959;&#965; <br>&#945;&#960;&#959;&#948;&#943;&#948;&#949;&#953; &#954;&#945;&#955;&#973;&#964;&#949;&#961;&#945; &#964;&#951;&#957; &#963;&#967;&#941;&#963;&#951;:<BR><BR><I>Relationship:<BR>The change in temperature (Y) with time (X) when a fixed mass of water is heated at a constant rate.<BR></I><CENTER>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[</CENTER><BR>]]></mattext>
+</material>
+<response_xy ident="1" rcardinality="Single">
+<render_hotspot>
+<material>
+<matimage imagtype="image/jpg" uri="../topicresources/624634016/g216002_col.jpg" height="263" width="384"/>
+</material>
+</render_hotspot>
+</response_xy>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="right" >
+<conditionvar>
+<varinside respident="1" areatype="Rectangle">0,0 192,131</varinside>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="right"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="right" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="007 260." ident="5783643606810009">
+<itemmetadata>
+<qmd_itemtype>Pull-down list</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Greek version\General Chemistry 2 v400gr</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[&#914;&#961;&#949;&#943;&#964;&#949; &#964;&#959;&#957; &#963;&#969;&#963;&#964;&#972; &#945;&#961;&#953;&#952;&#956;&#972; &#959;&#958;&#949;&#953;&#948;&#974;&#963;&#949;&#969;&#962; &#964;&#969;&#957; &#954;&#945;&#964;&#969;&#964;&#941;&#961;&#969; &#949;&#957;&#974;&#963;&#949;&#969;&#957; &#964;&#959;&#965; &#952;&#949;&#943;&#959;&#965;:<BR><BR>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<BR>]]></mattext>
+</material>
+<response_lid ident="1">
+<material>
+<mattext texttype="text/html"><![CDATA[H<SUB>2</SUB>S&nbsp;&nbsp;]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">-2</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">+2</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">+4</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">+6</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="2">
+<material>
+<mattext texttype="text/html"><![CDATA[SO<SUB>2</SUB>&nbsp;&nbsp;]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">-2</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">+2</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">+4</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">+6</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="3">
+<material>
+<mattext texttype="text/html"><![CDATA[SO<SUB>3</SUB>&nbsp;&nbsp;]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">-2</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">+2</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">+4</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">+6</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="4">
+<material>
+<mattext texttype="text/html"><![CDATA[H<SUB>2</SUB>SO<SUB>3</SUB>&nbsp;&nbsp;]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">-2</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">+2</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">+4</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">+6</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="5">
+<material>
+<mattext texttype="text/html"><![CDATA[Na<SUB>2</SUB>SO<SUB>4</SUB>&nbsp;&nbsp;]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">-2</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">+2</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">+4</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">+6</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Add">12</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" continue="Yes">
+<conditionvar>
+<varequal respident="2">B</varequal>
+</conditionvar>
+<setvar action="Add">12</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" continue="Yes">
+<conditionvar>
+<varequal respident="3">C</varequal>
+</conditionvar>
+<setvar action="Add">12</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" continue="Yes">
+<conditionvar>
+<varequal respident="4">B</varequal>
+</conditionvar>
+<setvar action="Add">12</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="4" continue="Yes">
+<conditionvar>
+<varequal respident="5">C</varequal>
+</conditionvar>
+<setvar action="Add">12</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+<respcondition title="default" >
+<conditionvar>
+<or>
+<other/>
+<not>
+<other/>
+</not>
+</or>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="default"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="4" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="default" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="008 271." ident="5964576106126924">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Greek version\General Chemistry 2 v400gr</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[&#922;&#945;&#964;&#940; &#964;&#951;&#957; &#952;&#941;&#961;&#956;&#945;&#957;&#963;&#951; &#945;&#957;&#959;&#961;&#947;&#940;&#957;&#959;&#965; &#940;&#955;&#945;&#964;&#959;&#962; &#956;&#949; &#947;&#965;&#956;&#957;&#942; &#966;&#955;&#972;&#947;&#945; &#949;&#956;&#966;&#945;&#957;&#943;&#950;&#949;&#964;&#945;&#953; &#960;&#961;&#940;&#963;&#953;&#957;&#959; &#967;&#961;&#974;&#956;&#945;. <BR><BR>&#932;&#959; &#940;&#955;&#945;&#962; &#960;&#949;&#961;&#953;&#941;&#967;&#949;&#953;: <BR><BR>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<BR>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Na<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;K<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Li<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Ca<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Ba<BR><BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="4" >
+<conditionvar>
+<varequal respident="1">E</varequal>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="4" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="009 277. A weak acid, HA, dissociates according t" ident="3066799176866011">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Greek version/General Chemistry 2 v400gr</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>A weak acid, HA, dissociates according to:<BR>
+<CENTER>HA&nbsp;&nbsp;=&nbsp;&nbsp;H<SUP>+</SUP>(υδατικό)&nbsp;+&nbsp;A<SUP>-</SUP>(υδατικό)</CENTER><BR><BR>Η σταθερά διαστάσεως K<SUB>a</SUB> ασθενούς οξέος είναι 10<SUP>-7</SUP>&nbsp;mol·dm<SUP>-3</SUP>.<BR>Ποιό είναι το κατά προσέγγιση pH ενός διαλύματος του οξέος 0,1&nbsp;mol·dm<SUP>-3</SUP>:<BR><BR>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<img class="extraIcon calculator" src="themes/default/images/QEc.png"> 
+<CENTER></CENTER><BR>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="No">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[1<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[2<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[3<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[4<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[5<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0 1" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="0 1"/>
+</respcondition>
+<respcondition title="1 2" >
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="1 2"/>
+</respcondition>
+<respcondition title="2 3" >
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="2 3"/>
+</respcondition>
+<respcondition title="3 4" >
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="3 4"/>
+</respcondition>
+<respcondition title="4 5" >
+<conditionvar>
+<varequal respident="1">E</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="4 5"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0 1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1 2" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2 3" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="3 4" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="4 5" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="010 294.What kind of reaction is represe" ident="4692500435513032">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Greek version\General Chemistry 2 v400gr</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[&#932;&#943; &#964;&#973;&#960;&#959; &#945;&#957;&#964;&#953;&#948;&#961;&#940;&#963;&#949;&#969;&#962; &#960;&#945;&#961;&#953;&#963;&#964;&#940; &#951; &#949;&#958;&#943;&#963;&#969;&#963;&#951;:<BR><BR><CENTER>CH<SUB>3</SUB>CH(OH)NH-NH<SUB>2</SUB>&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;&nbsp;CH<SUB>3</SUB>CH=N-NH<SUB>2</SUB>&nbsp;+&nbsp;H<SUB>2</SUB>O</CENTER><BR>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;&#960;&#961;&#959;&#963;&#952;&#942;&#954;&#951;<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;&#960;&#959;&#955;&#965;&#956;&#949;&#961;&#953;&#963;&#956;&#972;<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;&#956;&#949;&#964;&#940;&#952;&#949;&#963;&#951;<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;&#945;&#957;&#964;&#953;&#954;&#945;&#964;&#940;&#963;&#964;&#945;&#963;&#951;<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;&#945;&#960;&#972;&#963;&#960;&#945;&#963;&#951;<BR><BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="4" >
+<conditionvar>
+<varequal respident="1">E</varequal>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="4" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="011 218. The following table shows" ident="3332136470495694">
+<itemmetadata>
+<qmd_itemtype>Text Match</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Greek version\General Chemistry 2 v400gr</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[O &#954;&#945;&#964;&#969;&#964;&#941;&#961;&#969; &#960;&#943;&#957;&#945;&#954;&#945;&#962; &#948;&#949;&#943;&#967;&#957;&#949;&#953; &#964;&#969;&#957; &#945;&#961;&#953;&#952;&#956;&#972; &#951;&#955;&#949;&#954;&#964;&#961;&#959;&#957;&#943;&#969;&#957; &#941;&#958;&#953; &#959;&#965;&#948;&#949;&#964;&#941;&#961;&#969;&#957; &#945;&#964;&#972;&#956;&#969;&#957; E &#941;&#969;&#962; X.<BR><BR><table align="center" width="650">  <tr>     <td width="350">       <h3>Atom&nbsp;</h3>    </td>    <td width="50">       <h3 align="right">E</h3>    </td>    <td width="50">       <h3 align="right">G</h3>    </td>    <td width="50">       <h3 align="right">J</h3>    </td>    <td width="50">       <h3 align="right">L </h3>    </td>    <td width="50">       <h3 align="right">M</h3>    </td>    <td width="50">       <h3 align="right">X</h3>    </td>  </tr>  <tr>     <td width="350">       <h3 align="left">Number of electrons</h3>    </td>    <td width="50">       <h3 align="right">6</h3>    </td>    <td width="50">       <h3 align="right">9</h3>    </td>    <td width="50">       <h3 align="right">14</h3>    </td>    <td width="50">       <h3 align="right">16</h3>    </td>    <td width="50">       <h3 align="right">18</h3>    </td>    <td width="50">       <h3 align="right">19</h3>    </td>  </tr></table><BR>X&#961;&#951;&#963;&#953;&#956;&#959;&#960;&#959;&#953;&#942;&#963;&#964;&#949; &#964;&#945; &#947;&#961;&#940;&#956;&#956;&#945;&#964;&#945; &#917; &#941;&#969;&#962; X &#947;&#953;&#945; &#957;&#945; &#945;&#960;&#949;&#953;&#954;&#959;&#957;&#943;&#963;&#949;&#964;&#949; &#964;&#959; &#963;&#964;&#959;&#953;&#967;&#949;&#943;&#959; &#942; &#941;&#957;&#945; &#940;&#964;&#959;&#956;&#959; &#964;&#959;&#965; &#963;&#964;&#959;&#953;&#967;&#949;&#943;&#959;&#965;.<BR><BR>&#928;&#959;&#953;&#972; &#945;&#960;&#972; &#964;&#945; &#963;&#964;&#959;&#953;&#967;&#949;&#943;&#945; E &#941;&#969;&#962; X &#949;&#943;&#957;&#945;&#953; &#964;&#959; &#954;&#945;&#955;&#973;&#964;&#949;&#961;&#959; &#945;&#957;&#945;&#947;&#969;&#947;&#953;&#954;&#972; &#956;&#941;&#963;&#959;; <BR><BR>&#913;&#960;&#940;&#957;&#964;&#951;&#963;&#951;:<BR>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<BR>]]></mattext>
+</material>
+<response_str ident="1" rcardinality="Single">
+<render_fib fibtype="String" prompt="Box" rows="1" columns="21" />
+</response_str>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1" case="No">J</varequal>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="default" >
+<conditionvar>
+<other/>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="default"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="default" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="012 321." ident="5360926113243176">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Greek version\General Chemistry 2 v400gr</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[&#906;&#963;&#949;&#962; &#956;&#940;&#950;&#949;&#962; &#959;&#958;&#965;&#947;&#972;&#957;&#959;&#965; &#954;&#945;&#953; &#965;&#948;&#961;&#959;&#947;&#972;&#957;&#959;&#965; &#945;&#957;&#964;&#953;&#948;&#961;&#959;&#973;&#957; &#963;&#949; &#954;&#955;&#949;&#953;&#963;&#964;&#972; &#948;&#959;&#967;&#949;&#943;&#959; &#969;&#962; &#949;&#958;&#942;&#962;: <BR><BR><CENTER>2 H<SUB>2</SUB>(&#945;&#941;&#961;&#953;&#959;)&nbsp;+&nbsp;O<SUB>2</SUB>(&#945;&#941;&#961;&#953;&#959;)&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;&nbsp;2&nbsp;H<SUB>2</SUB>O(&#965;&#947;&#961;&#972;)</CENTER><BR>&#924;&#949;&#964;&#940; &#964;&#959; &#960;&#941;&#961;&#945;&#962; &#964;&#951;&#962; &#945;&#957;&#964;&#953;&#948;&#961;&#940;&#963;&#949;&#969;&#962; &#964;&#959; &#948;&#959;&#967;&#949;&#943;&#959; &#952;&#945; &#960;&#949;&#961;&#953;&#941;&#967;&#949;&#953;:<BR><BR>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<BR>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[&#956;&#972;&#957;&#959; &#973;&#948;&#969;&#961; &#954;&#945;&#953; &#959;&#958;&#965;&#947;&#972;&#957;&#959;<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[&#956;&#972;&#957;&#959; &#973;&#948;&#969;&#961; &#954;&#945;&#953; &#965;&#948;&#961;&#959;&#947;&#972;&#957;&#959;<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[&#956;&#972;&#957;&#959; &#973;&#948;&#969;&#961;<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[&#973;&#948;&#969;&#961;, &#965;&#948;&#961;&#959;&#947;&#972;&#957;&#959; &#954;&#945;&#953; &#959;&#958;&#965;&#947;&#972;&#957;&#959;<BR><BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="1" >
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="013 336." ident="8188971025759218">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Greek version\General Chemistry 2 v400gr</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[&#932;&#959; &#963;&#951;&#956;&#949;&#943;&#959; &#950;&#941;&#963;&#949;&#969;&#962; &#964;&#959;&#965;  (to be checked against the original)<br><table width="75%" border="1" align=center>  <tr>     <td colspan="3">       <div align="center">Data</div>    </td>  </tr>  <tr>     <td width="34%" align="center">Compound</td>    <td width="32%" align="center"> &#956;&#959;&#961;. &#946;&#940;&#961;&#959;&#962; <br>g/mol</td>    <td width="34%" align="center">&#949;&#943;&#957;&#945;&#953; <BR>&deg;C</td>  </tr>  <tr>     <td width="34%" height="27" align="center">&#967;&#955;&#969;&#961;&#953;&#959;&#973;&#967;&#959;&#965; &#957;&#945;&#964;&#961;&#943;&#959;&#965;  (NaCl)</td>    <td width="32%" height="27" align="center">58,5</td>    <td width="34%" height="27" align="center">1413</td>  </tr>  <tr>     <td width="34%" align="center">&#964;&#949;&#964;&#961;&#945;&#967;&#955;&#969;&#961;&#940;&#957;&#952;&#961;&#945;&#954;&#945;  (CCl<SUB>4</SUB>)</td>    <td width="32%" align="center">154</td>    <td width="34%" align="center">77</td>  </tr></table><BR>&#931;&#965;&#947;&#954;&#961;&#943;&#957;&#959;&#957;&#964;&#945;&#962; &#964;&#945; &#956;&#959;&#961;&#953;&#945;&#954;&#940; &#946;&#940;&#961;&#951;, &#952;&#945; &#965;&#960;&#941;&#952;&#949;&#964;&#949; &#954;&#945;&#957;&#949;&#943;&#962; &#972;&#964;&#953; &#959; &#964;&#949;&#964;&#961;&#945;&#967;&#955;&#969;&#961;&#940;&#957;&#952;&#961;&#945;&#954;&#945;&#962; &#941;&#967;&#949;&#953; &#965;&#968;&#951;&#955;&#972;&#964;&#949;&#961;&#959; &#963;&#951;&#956;&#949;&#943;&#959; &#950;&#941;&#963;&#949;&#969;&#962;. &#915;&#953;&#945; &#960;&#959;&#953;&#972;&#957; &#955;&#972;&#947;&#959; &#963;&#965;&#956;&#946;&#945;&#943;&#957;&#949;&#953; &#964;&#959; &#945;&#957;&#964;&#943;&#952;&#949;&#964;&#959;:<BR><BR>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<BR>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;&#964;&#959; &#967;&#955;&#969;&#961;&#953;&#959;&#973;&#967;&#959; &#957;&#940;&#964;&#961;&#953;&#959; &#949;&#943;&#957;&#945;&#953; &#963;&#964;&#949;&#961;&#949;&#972; &#954;&#945;&#953; &#959; &#964;&#949;&#964;&#961;&#945;&#967;&#955;&#969;&#961;&#940;&#957;&#952;&#961;&#945;&#954;&#945;&#962; &#965;&#947;&#961;&#972;&#962;.<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;&#964;&#959; &#967;&#955;&#969;&#961;&#953;&#959;&#973;&#967;&#959; &#957;&#940;&#964;&#961;&#953;&#959; &#949;&#943;&#957;&#945;&#953; &#960;&#959;&#955;&#953;&#954;&#942; &#941;&#957;&#969;&#963;&#951; &#954;&#945;&#953; &#959; &#964;&#949;&#964;&#961;&#945;&#967;&#955;&#969;&#961;&#940;&#957;&#952;&#961;&#945;&#954;&#945;&#962; &#959;&#956;&#959;&#953;&#959;&#960;&#959;&#955;&#953;&#954;&#942;.<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;&#964;&#959; &#967;&#955;&#969;&#961;&#953;&#959;&#973;&#967;&#959; &#957;&#940;&#964;&#961;&#953;&#959; &#949;&#943;&#957;&#945;&#953; &#945;&#957;&#972;&#961;&#947;&#945;&#957;&#951; &#941;&#957;&#969;&#963;&#951; &#954;&#945;&#953; &#959; &#964;&#949;&#964;&#961;&#945;&#967;&#955;&#969;&#961;&#940;&#957;&#952;&#961;&#945;&#954;&#945;&#962; &#959;&#961;&#947;&#945;&#957;&#953;&#954;&#942;.<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;&#964;&#959; &#967;&#955;&#969;&#961;&#953;&#959;&#973;&#967;&#959; &#957;&#940;&#964;&#961;&#953;&#959; &#949;&#943;&#957;&#945;&#953; &#948;&#953;&#945;&#955;&#965;&#964;&#972; &#963;&#964;&#959; &#973;&#948;&#969;&#961; &#954;&#945;&#953; &#959; &#964;&#949;&#964;&#961;&#945;&#967;&#955;&#969;&#961;&#940;&#957;&#952;&#961;&#945;&#954;&#945;&#962; &#945;&#948;&#953;&#940;&#955;&#965;&#964;&#959;&#962;.<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;&#964;&#959; &#967;&#955;&#969;&#961;&#953;&#959;&#973;&#967;&#959; &#957;&#940;&#964;&#961;&#953;&#959; &#946;&#945;&#963;&#943;&#950;&#949;&#964;&#945;&#953; &#963;&#949; &#954;&#965;&#946;&#953;&#954;&#972; &#960;&#955;&#941;&#947;&#956;&#945; &#954;&#945;&#953; &#959; &#964;&#949;&#964;&#961;&#945;&#967;&#955;&#969;&#961;&#940;&#957;&#952;&#961;&#945;&#954;&#945;&#962; &#963;&#949; &#964;&#949;&#964;&#961;&#945;&#949;&#948;&#961;&#953;&#954;&#972;.<BR><BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="1" >
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="014 340. Which of following compou" ident="8273849474346676">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Greek version\General Chemistry 2 v400gr</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[&#928;&#959;&#953;&#940; &#945;&#960;&#972; &#964;&#953;&#962; &#954;&#945;&#964;&#969;&#964;&#941;&#961;&#969; &#949;&#957;&#974;&#963;&#949;&#953;&#962; &#963;&#967;&#951;&#956;&#945;&#964;&#943;&#950;&#949;&#953; &#963;&#949; &#963;&#964;&#949;&#961;&#949;&#940; &#956;&#959;&#961;&#966;&#942; &#956;&#959;&#961;&#953;&#945;&#954;&#959;&#973;&#962; &#954;&#961;&#965;&#963;&#964;&#940;&#955;&#955;&#959;&#965;&#962;;<BR><BR>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<BR>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[CO<SUB>2</SUB><BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[SiO<SUB>2</SUB><BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[KBr<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[MgO<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[SiC<BR><BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="015 366. Calculate the pH of 0.01 M" ident="8106470296870362">
+<itemmetadata>
+<qmd_itemtype>Numeric</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Greek version/General Chemistry 2 v400gr</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Στους 25°C ένα υδατικό διάλυμα υδροξειδίου του βαρίου έχει συγκέντρωση 0,020&nbsp;mol/dm<SUP>3</SUP>.<BR><BR><img class="extraIcon calculator" src="themes/default/images/QEc.png"><BR><BR>Το pH του διαλύματος είναι:<BR></P>]]></mattext>
+</material>
+<response_num ident="1" rcardinality="Single">
+<render_fib fibtype="Decimal" prompt="Box" rows="1" columns="14" maxchars="14"/>
+</response_num>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">12</varequal>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" >
+<conditionvar>
+<or>
+<vargte respident="1">1.9</vargte>
+<varlte respident="1">2.0</varlte>
+<vargte respident="1">2.0</vargte>
+<varlte respident="1">2.1</varlte>
+</or>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" >
+<conditionvar>
+<other/>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[&lt;CONDITION &gt;&quot;number&quot; = 2.0&lt;/CONDITION&gt;]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="016 372." ident="0010461938868813">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Greek version/General Chemistry 2 v400gr</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[&#928;&#959;&#953;&#940; &#954;&#940;&#952;&#949;&#964;&#951; &#945;&#960;&#972;&#963;&#964;&#945;&#963;&#951; &#960;&#945;&#961;&#953;&#963;&#964;&#940; &#964;&#951;&#957; &#952;&#949;&#961;&#956;&#972;&#964;&#951;&#964;&#945; &#945;&#957;&#964;&#953;&#948;&#961;&#940;&#963;&#949;&#969;&#962;. &#931;&#964;&#959;&#957; &#940;&#958;&#959;&#957;&#945; &#964;&#969;&#957; X &#963;&#951;&#956;&#949;&#953;&#974;&#957;&#949;&#964;&#945;&#953; &#951; &#960;&#959;&#961;&#949;&#943;&#945; &#964;&#951;&#962; &#945;&#957;&#964;&#953;&#948;&#961;&#940;&#963;&#949;&#969;&#962; &#954;&#945;&#953; &#963;&#964;&#959;&#957; &#940;&#958;&#959;&#957;&#945; &#964;&#969;&#957; Y &#951; &#949;&#957;&#941;&#961;&#947;&#949;&#953;&#945;:<BR><BR><table align=center><tr><td width=400 cellpadding=10>]]></mattext>
+</material>
+<material>
+<matimage imagtype="image/jpg" uri="../topicresources/624634016/G2NRJ_gr_col.jpg" height="248" width="313"/>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[</td><td>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[</td></tr></table><BR>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="No">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;W<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;X<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Y<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Z<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Z-W<BR><BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="2" >
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="017 378." ident="0043438034755863">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Greek version\General Chemistry 2 v400gr</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[&#931;&#949; &#960;&#959;&#953;&#940; &#945;&#960;&#972; &#964;&#953;&#962; &#954;&#945;&#964;&#969;&#964;&#941;&#961;&#969; &#956;&#949;&#964;&#945;&#946;&#959;&#955;&#941;&#962; &#951; &#941;&#957;&#969;&#963;&#951; &#945;&#961;&#953;&#963;&#964;&#949;&#961;&#940; &#964;&#959;&#965; &#946;&#941;&#955;&#959;&#965;&#962; &#948;&#949;&#957; &#959;&#958;&#949;&#953;&#948;&#974;&#957;&#949;&#964;&#945;&#953;:<BR><BR>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<BR>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[Cl<SUB>2</SUB>&nbsp;&nbsp;&nbsp;<B>&rarr;</B>&nbsp;&nbsp;&nbsp;2 Cl<SUP>-</SUP><BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[S<SUP>2-</SUP>&nbsp;&nbsp;&nbsp;<B>&rarr;</B>&nbsp;&nbsp;&nbsp;S<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[CH<SUB>3</SUB>CH<SUB>2</SUB>OH&nbsp;&nbsp;&nbsp;<B>&rarr;</B>&nbsp;&nbsp;&nbsp;CH<SUB>3</SUB>CHO<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[Fe<SUP>2+</SUP>&nbsp;&nbsp;&nbsp;<B>&rarr;</B>&nbsp;&nbsp;&nbsp;Fe<SUP>3+</SUP><BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[SO<SUB>2</SUB>&nbsp;&nbsp;&nbsp;<B>&rarr;</B>&nbsp;&nbsp;&nbsp;SO<SUB>3</SUB><BR><BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="018 300." ident="2046424466728233">
+<itemmetadata>
+<qmd_itemtype>Pull-down list</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Greek version/General Chemistry 2 v400gr</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<CENTER>]]></mattext>
+</material>
+<material>
+<matimage imagtype="image/jpg" uri="../topicresources/624634016/g2tb04_col.jpg" height="173" width="555"/>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[</CENTER><BR>&#928;&#959;&#953;&#972; &#945;&#960;&#972; &#964;&#945; &#963;&#964;&#959;&#953;&#967;&#949;&#943;&#945; &#964;&#959;&#965; &#963;&#967;&#942;&#956;&#945;&#964;&#959;&#962;:<BR><BR>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<BR>]]></mattext>
+</material>
+<response_lid ident="1">
+<material>
+<mattext texttype="text/html"><![CDATA[&#941;&#967;&#949;&#953; &#964;&#945; &#960;&#949;&#961;&#953;&#963;&#963;&#972;&#964;&#949;&#961;&#945; &#960;&#961;&#969;&#964;&#972;&#957;&#953;&#945;?<BR>]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">He</mattext>
+</material>
+</response_label>
+<response_label ident="H">
+<material>
+<mattext texttype="text/plain">F</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">Na</mattext>
+</material>
+</response_label>
+<response_label ident="F">
+<material>
+<mattext texttype="text/plain">Al</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">Si</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">S</mattext>
+</material>
+</response_label>
+<response_label ident="G">
+<material>
+<mattext texttype="text/plain">Ca</mattext>
+</material>
+</response_label>
+<response_label ident="I">
+<material>
+<mattext texttype="text/plain">Fe</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">Br</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="2">
+<material>
+<mattext texttype="text/html"><![CDATA[&#949;&#943;&#957;&#945;&#953; &#964;&#959; &#949;&#955;&#945;&#966;&#961;&#972;&#964;&#949;&#961;&#959; &#945;&#956;&#941;&#964;&#945;&#955;&#955;&#959;?<BR>]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">He</mattext>
+</material>
+</response_label>
+<response_label ident="H">
+<material>
+<mattext texttype="text/plain">F</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">Na</mattext>
+</material>
+</response_label>
+<response_label ident="F">
+<material>
+<mattext texttype="text/plain">Al</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">Si</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">S</mattext>
+</material>
+</response_label>
+<response_label ident="G">
+<material>
+<mattext texttype="text/plain">Ca</mattext>
+</material>
+</response_label>
+<response_label ident="I">
+<material>
+<mattext texttype="text/plain">Fe</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">Br</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="3">
+<material>
+<mattext texttype="text/html"><![CDATA[&#941;&#967;&#949;&#953; &#960;&#940;&#957;&#964;&#959;&#964;&#949; &#963;&#964;&#953;&#962; &#949;&#957;&#974;&#963;&#949;&#953;&#962; &#964;&#959;&#965; &#945;&#961;&#953;&#952;&#956;&#972; &#959;&#958;&#949;&#953;&#948;&#974;&#963;&#949;&#969;&#962; +2?<BR>]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">He</mattext>
+</material>
+</response_label>
+<response_label ident="H">
+<material>
+<mattext texttype="text/plain">F</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">Na</mattext>
+</material>
+</response_label>
+<response_label ident="F">
+<material>
+<mattext texttype="text/plain">Al</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">Si</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">S</mattext>
+</material>
+</response_label>
+<response_label ident="G">
+<material>
+<mattext texttype="text/plain">Ca</mattext>
+</material>
+</response_label>
+<response_label ident="I">
+<material>
+<mattext texttype="text/plain">Fe</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">Br</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="4">
+<material>
+<mattext texttype="text/html"><![CDATA[&#963;&#967;&#951;&#956;&#945;&#964;&#943;&#950;&#949;&#953; &#949;&#960;&#945;&#956;&#966;&#959;&#964;&#949;&#961;&#943;&#950;&#959;&#957;&#964;&#945; &#959;&#958;&#949;&#943;&#948;&#953;&#945;?<BR>]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">He</mattext>
+</material>
+</response_label>
+<response_label ident="H">
+<material>
+<mattext texttype="text/plain">F</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">Na</mattext>
+</material>
+</response_label>
+<response_label ident="F">
+<material>
+<mattext texttype="text/plain">Al</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">Si</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">S</mattext>
+</material>
+</response_label>
+<response_label ident="G">
+<material>
+<mattext texttype="text/plain">Ca</mattext>
+</material>
+</response_label>
+<response_label ident="I">
+<material>
+<mattext texttype="text/plain">Fe</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">Br</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="5">
+<material>
+<mattext texttype="text/html"><![CDATA[&#949;&#943;&#957;&#945;&#953; &#964;&#959; &#960;&#953;&#959; &#951;&#955;&#949;&#954;&#964;&#961;&#945;&#961;&#957;&#951;&#964;&#953;&#954;&#972;?<BR>]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">He</mattext>
+</material>
+</response_label>
+<response_label ident="H">
+<material>
+<mattext texttype="text/plain">F</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">Na</mattext>
+</material>
+</response_label>
+<response_label ident="F">
+<material>
+<mattext texttype="text/plain">Al</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">Si</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">S</mattext>
+</material>
+</response_label>
+<response_label ident="G">
+<material>
+<mattext texttype="text/plain">Ca</mattext>
+</material>
+</response_label>
+<response_label ident="I">
+<material>
+<mattext texttype="text/plain">Fe</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">Br</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Add">12</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" continue="Yes">
+<conditionvar>
+<varequal respident="2">D</varequal>
+</conditionvar>
+<setvar action="Add">12</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" continue="Yes">
+<conditionvar>
+<varequal respident="3">G</varequal>
+</conditionvar>
+<setvar action="Add">12</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" continue="Yes">
+<conditionvar>
+<varequal respident="4">F</varequal>
+</conditionvar>
+<setvar action="Add">12</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="4" continue="Yes">
+<conditionvar>
+<varequal respident="5">H</varequal>
+</conditionvar>
+<setvar action="Add">12</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+<respcondition title="default" >
+<conditionvar>
+<or>
+<other/>
+<not>
+<other/>
+</not>
+</or>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="default"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="4" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="default" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="019 401." ident="0344950605752497">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Greek version\General Chemistry 2 v400gr</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<CENTER>N<SUB>2</SUB>(&#945;&#941;&#961;&#953;&#959;)&nbsp;+&nbsp;3&nbsp;H<SUB>2</SUB>(&#945;&#941;&#961;&#953;&#959;)&nbsp;<img src=file:///C:/perception3/author/resources/equi.gif width="48" height="21">&nbsp;2NH<SUB>3</SUB>(&#945;&#941;&#961;&#953;&#959;)  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&Delta;H &lt; 0&nbsp;(&#952;&#949;&#961;&#956;&#972;&#964;&#951;&#964;&#945;)</CENTER><BR><BR>&#928;&#959;&#963;&#972;&#964;&#951;&#964;&#949;&#962; &#945;&#950;&#974;&#964;&#959;&#965;, &#965;&#948;&#961;&#959;&#947;&#972;&#957;&#959;&#965; &#954;&#945;&#953; &#945;&#956;&#956;&#969;&#957;&#943;&#945;&#962; &#953;&#963;&#959;&#961;&#961;&#959;&#960;&#959;&#973;&#957; &#963;&#949; &#948;&#959;&#967;&#949;&#943;&#959; &#945;&#960;&#972; &#945;&#957;&#959;&#958;&#949;&#943;&#948;&#969;&#964;&#959; &#967;&#940;&#955;&#965;&#946;&#945; &#963;&#964;&#959;&#965;&#962; 500&deg;C. &#919; &#953;&#963;&#959;&#961;&#961;&#959;&#960;&#943;&#945; &#948;&#943;&#948;&#949;&#964;&#945;&#953; &#945;&#960;&#972; &#964;&#951;&#957; &#949;&#958;&#943;&#963;&#969;&#963;&#951;: <BR><BR>&#928;&#959;&#953;&#940; &#945;&#960;&#972; &#964;&#953;&#962; &#954;&#945;&#964;&#969;&#964;&#941;&#961;&#969; &#960;&#961;&#959;&#964;&#940;&#963;&#949;&#953;&#962; &#960;&#949;&#961;&#953;&#947;&#961;&#940;&#966;&#949;&#953; &#954;&#945;&#955;&#973;&#964;&#949;&#961;&#945; &#964;&#953; &#963;&#965;&#956;&#946;&#945;&#943;&#957;&#949;&#953;, &#972;&#964;&#945;&#957; &#945;&#965;&#958;&#951;&#952;&#949;&#943; &#951; &#963;&#965;&#947;&#954;&#941;&#957;&#964;&#961;&#969;&#963;&#951; &#964;&#959;&#965; &#965;&#948;&#961;&#959;&#947;&#972;&#957;&#959;&#965; &#954;&#945;&#953; &#949;&#960;&#953;&#964;&#949;&#965;&#967;&#952;&#949;&#943; &#957;&#941;&#945; &#953;&#963;&#959;&#961;&#961;&#959;&#960;&#943;&#945;<br><br>Text to be checked against the original version<br><br>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[&#917;&#955;&#945;&#964;&#964;&#974;&#957;&#949;&#964;&#945;&#953; &#951; &#945;&#960;&#972;&#948;&#959;&#963;&#951; &#963;&#949; &#945;&#956;&#956;&#969;&#957;&#943;&#945;.<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[&#927;&#953; &#963;&#965;&#947;&#954;&#949;&#957;&#964;&#961;&#974;&#963;&#949;&#953;&#962; &#953;&#963;&#959;&#961;&#961;&#959;&#960;&#943;&#945;&#962; &#948;&#949;&#957; &#956;&#949;&#964;&#945;&#946;&#940;&#955;&#955;&#959;&#957;&#964;&#945;&#953; &#949;&#957; &#963;&#967;&#941;&#963;&#949;&#953; &#960;&#961;&#959;&#962; &#964;&#953;&#962;.<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[&#913;&#965;&#958;&#940;&#957;&#949;&#953; &#951; &#945;&#960;&#972;&#948;&#959;&#963;&#951; &#963;&#949; &#945;&#956;&#956;&#969;&#957;&#943;&#945;.<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[&#913;&#957;&#941;&#961;&#967;&#949;&#964;&#945;&#953; &#951; &#952;&#949;&#961;&#956;&#959;&#954;&#961;&#945;&#963;&#943;&#945;.<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[&#924;&#949;&#964;&#945;&#946;&#940;&#955;&#955;&#949;&#964;&#945;&#953; &#951; &#964;&#953;&#956;&#942; &#964;&#951;&#962; &#963;&#964;&#945;&#952;&#949;&#961;&#940;&#962; &#953;&#963;&#959;&#961;&#961;&#959;&#960;&#943;&#945;&#962;.<BR><BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="2" >
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="020 417." ident="0665403098361212">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Greek version\General Chemistry 2 v400gr</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[&#931;&#964;&#959; &#960;&#959;&#955;&#965;&#963;&#964;&#965;&#961;&#941;&#957;&#953;&#959; &#949;&#960;&#945;&#957;&#945;&#955;&#945;&#956;&#946;&#940;&#957;&#949;&#964;&#945;&#953; &#951; &#959;&#956;&#940;&#948;&#945;?<BR><BR>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<BR>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[-CH<SUB>2</SUB>CH(CH<SUB>3</SUB>)-<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[-CH<SUB>2</SUB>CH<SUB>2</SUB>-<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[-CH<SUB>2</SUB>CH(C<SUB>6</SUB>H<SUB>5</SUB>)-<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[-NHCH<SUB>2</SUB>CO-<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[-CH<SUB>2</SUB>CH<SUB>2</SUB>O-<BR><BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="2" >
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="021 443." ident="8518101751630718">
+<itemmetadata>
+<qmd_itemtype>Pull-down list</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Greek version\General Chemistry 2 v400gr</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[&#931;&#951;&#956;&#949;&#953;&#974;&#963;&#964;&#949; &#963;&#969;&#963;&#964;&#972; &#942; &#955;&#940;&#952;&#959;&#962; &#963;&#964;&#953;&#962; &#954;&#945;&#964;&#969;&#964;&#941;&#961;&#969; &#960;&#961;&#959;&#964;&#940;&#963;&#949;&#953;&#962;, &#945;&#957;&#945;&#966;&#949;&#961;&#972;&#956;&#949;&#957;&#949;&#962; &#963;&#949; &#963;&#967;&#941;&#963;&#949;&#953;&#962; &#963;&#964;&#959;&#957; &#960;&#949;&#961;&#953;&#959;&#948;&#953;&#954;&#972; &#960;&#943;&#957;&#945;&#954;&#945;. &#917;&#960;&#953;&#955;&#941;&#958;&#945;&#964;&#949; &#940;&#947;&#957;&#969;&#963;&#964;&#959; &#949;&#940;&#957; &#948;&#949;&#957; &#949;&#943;&#963;&#945;&#963;&#964;&#949; &#946;&#941;&#946;&#945;&#953;&#959;&#953;.<BR><BR>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<BR>]]></mattext>
+</material>
+<response_lid ident="1">
+<material>
+<mattext texttype="text/html"><![CDATA[&#959;&#953; &#953;&#948;&#953;&#972;&#964;&#951;&#964;&#949;&#962; &#964;&#959;&#965; &#960;&#961;&#974;&#964;&#959;&#965; &#963;&#964;&#959;&#953;&#967;&#949;&#943;&#959;&#965; &#949;&#954;&#940;&#963;&#964;&#951;&#962; &#959;&#956;&#940;&#948;&#945;&#962; &#964;&#959;&#965; &#960;&#949;&#961;&#953;&#959;&#948;&#953;&#954;&#959;&#973; &#963;&#965;&#963;&#964;&#942;&#956;&#945;&#964;&#959;&#962; &#964;&#949;&#943;&#957;&#959;&#965;&#957; &#957;&#945; &#948;&#953;&#945;&#966;&#959;&#961;&#959;&#960;&#959;&#953;&#951;&#952;&#959;&#973;&#957; &#945;&#960;&#972; &#945;&#965;&#964;&#941;&#962; &#964;&#969;&#957; &#955;&#959;&#953;&#960;&#974;&#957; &#963;&#964;&#959;&#953;&#967;&#949;&#943;&#969;&#957; &#964;&#951;&#962; &#959;&#956;&#940;&#948;&#945;&#962;.<BR>]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">true</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">false</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="2">
+<material>
+<mattext texttype="text/html"><![CDATA[&#972;&#964;&#945;&#957; &#954;&#945;&#957;&#949;&#943;&#962; &#954;&#953;&#957;&#949;&#943;&#964;&#945;&#953; &#963;&#964;&#959;&#957; &#960;&#949;&#961;&#953;&#959;&#948;&#953;&#954;&#972; &#960;&#943;&#957;&#945;&#954;&#945; &#949;&#958; &#945;&#961;&#953;&#963;&#964;&#949;&#961;&#974;&#957; &#960;&#961;&#959;&#962; &#964;&#945; &#948;&#949;&#958;&#953;&#940;, &#959; &#967;&#945;&#961;&#945;&#954;&#964;&#942;&#961;&#945;&#962; &#964;&#969;&#957; &#963;&#964;&#959;&#953;&#967;&#949;&#943;&#969;&#957; &#956;&#949;&#964;&#945;&#946;&#945;&#943;&#957;&#949;&#953; &#945;&#960;&#972; &#964;&#959;&#957; &#945;&#956;&#941;&#964;&#945;&#955;&#955;&#959; &#963;&#964;&#959;&#957; &#956;&#949;&#964;&#945;&#955;&#955;&#953;&#954;&#972;.<BR>]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">True</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">false</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="3">
+<material>
+<mattext texttype="text/html"><![CDATA[&#972;&#964;&#945;&#957; &#954;&#945;&#957;&#949;&#943;&#962; &#954;&#945;&#964;&#941;&#961;&#967;&#949;&#964;&#945;&#953; &#963;&#964;&#959;&#957; &#960;&#949;&#961;&#953;&#959;&#948;&#953;&#954;&#972; &#960;&#943;&#957;&#945;&#954;&#945;, &#964;&#959; &#956;&#941;&#947;&#953;&#963;&#964;&#959; &#963;&#952;&#941;&#957;&#959;&#962; &#964;&#969;&#957; &#963;&#964;&#959;&#953;&#967;&#949;&#943;&#969;&#957; &#945;&#965;&#958;&#940;&#957;&#949;&#953;.<BR>]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">True</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">false</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="4">
+<material>
+<mattext texttype="text/html"><![CDATA[&#963;&#949; &#963;&#965;&#947;&#954;&#949;&#954;&#961;&#953;&#956;&#941;&#957;&#951; &#959;&#956;&#940;&#948;&#945; &#964;&#959;&#965; &#960;&#949;&#961;&#953;&#959;&#948;&#953;&#954;&#959;&#973; &#963;&#965;&#963;&#964;&#942;&#956;&#945;&#964;&#959;&#962; &#964;&#945; &#940;&#964;&#959;&#956;&#945; &#964;&#969;&#957; &#963;&#964;&#959;&#953;&#967;&#949;&#943;&#969;&#957; &#941;&#967;&#959;&#965;&#957; &#964;&#951;&#957; &#943;&#948;&#953;&#945; &#948;&#953;&#945;&#956;&#972;&#961;&#966;&#969;&#963;&#951; &#949;&#958;&#969;&#964;&#949;&#961;&#953;&#954;&#974;&#957; &#951;&#955;&#949;&#954;&#964;&#961;&#959;&#957;&#943;&#969;&#957;.<BR>]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">True</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">false</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1"></varequal>
+</conditionvar>
+<setvar action="Add">15</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" continue="Yes">
+<conditionvar>
+<varequal respident="2">B</varequal>
+</conditionvar>
+<setvar action="Add">15</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" continue="Yes">
+<conditionvar>
+<varequal respident="3">B</varequal>
+</conditionvar>
+<setvar action="Add">15</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" continue="Yes">
+<conditionvar>
+<varequal respident="4">A</varequal>
+</conditionvar>
+<setvar action="Add">15</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="default" >
+<conditionvar>
+<or>
+<other/>
+<not>
+<other/>
+</not>
+</or>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="default"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="default" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="022 447." ident="1781370464322039">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Greek version/General Chemistry 2 v400gr</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[&#932;&#959; &#947;&#961;&#940;&#966;&#951;&#956;&#945; &#948;&#949;&#943;&#967;&#957;&#949;&#953; &#964;&#959; &#960;&#959;&#963;&#972; &#953;&#950;&#942;&#956;&#945;&#964;&#959;&#962; &#960;&#959;&#965; &#963;&#967;&#951;&#956;&#945;&#964;&#943;&#950;&#949;&#964;&#945;&#953; &#972;&#964;&#945;&#957; &#948;&#972;&#963;&#949;&#953;&#962; &#964;&#969;&#957; 2&nbsp;cm<SUP>3</SUP> 0,10M &#965;&#948;&#961;&#959;&#958;&#949;&#953;&#948;&#943;&#959;&#965; &#964;&#959;&#965; &#957;&#945;&#964;&#961;&#943;&#959;&#965; &#960;&#961;&#959;&#963;&#964;&#943;&#952;&#949;&#957;&#964;&#945;&#953; &#948;&#953;&#945;&#948;&#959;&#967;&#953;&#954;&#940; &#963;&#949; 10,0&nbsp;cm<SUP>3</SUP> &#945;&#954;&#961;&#953;&#946;&#974;&#962; 0,10M &#952;&#949;&#953;&#953;&#954;&#959;&#973; &#967;&#945;&#955;&#954;&#959;&#973;. &#932;&#959; &#960;&#959;&#963;&#972; &#964;&#959;&#965; &#953;&#950;&#942;&#956;&#945;&#964;&#959;&#962; &#965;&#960;&#959;&#955;&#959;&#947;&#943;&#950;&#949;&#964;&#945;&#953; &#945;&#960;&#972; &#964;&#959; &#973;&#968;&#959;&#962; &#964;&#959;&#965; &#963;&#964;&#959;&#957; &#948;&#959;&#954;&#953;&#956;&#945;&#963;&#964;&#953;&#954;&#972; &#963;&#969;&#955;&#942;&#957;&#945;.<BR><BR>&#914;&#940;&#963;&#949;&#953; &#964;&#969;&#957; &#960;&#955;&#951;&#961;&#959;&#966;&#959;&#961;&#953;&#974;&#957; &#964;&#959;&#965; &#947;&#961;&#945;&#966;&#942;&#956;&#945;&#964;&#959;&#962;, &#960;&#959;&#953;&#972;&#962; &#967;&#951;&#956;&#953;&#954;&#972;&#962; &#964;&#973;&#960;&#959;&#962; &#960;&#949;&#961;&#953;&#947;&#961;&#940;&#966;&#949;&#953; &#954;&#945;&#955;&#973;&#964;&#949;&#961;&#945; &#964;&#959; &#943;&#950;&#951;&#956;&#945;:<BR><BR><table align=center><tr><td width=400>]]></mattext>
+</material>
+<material>
+<matimage imagtype="image/jpg" uri="../topicresources/624634016/g232002_gr_col.jpg" height="327" width="360"/>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[</td><td>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[</td></tr></table><BR>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[CuSO<SUB>4</SUB>.Cu(OH)<SUB>2</SUB><BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[Cu(OH)<SUB>2</SUB><BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[Na<SUB>2</SUB>SO<SUB>4</SUB><BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[Cu<SUB>2</SUB>SO<SUB>4</SUB><BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[CuSO<SUB>4</SUB>.2NaOH<BR><BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="023 449." ident="2393311185334174">
+<itemmetadata>
+<qmd_itemtype>Pull-down list</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Greek version/General Chemistry 2 v400gr</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[&#916;&#943;&#948;&#959;&#957;&#964;&#945;&#953; &#964;&#945; &#956;&#972;&#961;&#953;&#945;:<BR><BR><table align=center width="75%" border="0">  <tr>     <td><b>NH<SUB>3</SUB></b></td>    <td><b>BF<SUB>3</SUB></b></td>    <td><b>NO<SUB>2</SUB><SUP>-</SUP></b></td>    <td><b>H<SUB>2</SUB>O</b></td>    <td><b>NH<SUB>4</SUB><SUP>+</SUP></b></td>  </tr></table><BR>&#931;&#951;&#956;&#949;&#953;&#974;&#963;&#964;&#949; &#960;&#959;&#953;&#972; &#945;&#960;&#972; &#964;&#945; &#960;&#945;&#961;&#940;&#960;&#955;&#949;&#965;&#961;&#945; &#963;&#967;&#942;&#956;&#945;&#964;&#945; A &#941;&#969;&#962; F &#945;&#957;&#964;&#953;&#963;&#964;&#959;&#953;&#967;&#949;&#943; &#963;&#964;&#951;&#957; &#956;&#959;&#961;&#953;&#945;&#954;&#942; &#947;&#949;&#969;&#956;&#949;&#964;&#961;&#943;&#945; &#949;&#954;&#940;&#963;&#964;&#959;&#965; &#956;&#959;&#961;&#943;&#959;&#965;..<BR><BR><table align=center><tr><td width=500>]]></mattext>
+</material>
+<material>
+<matimage imagtype="image/jpg" uri="../topicresources/624634016/g233001_col.jpg" height="279" width="459"/>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[</td><td>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[</td></tr></table><BR>]]></mattext>
+</material>
+<response_lid ident="1">
+<material>
+<mattext texttype="text/html"><![CDATA[<B>NH<SUB>3</SUB></B>&nbsp;&nbsp;]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">A</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">B</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">C</mattext>
+</material>
+</response_label>
+<response_label ident="F">
+<material>
+<mattext texttype="text/plain">D</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">E</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">F</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="2">
+<material>
+<mattext texttype="text/html"><![CDATA[<B>BF<SUB>3</SUB></B>&nbsp;&nbsp;]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">A</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">B</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">C</mattext>
+</material>
+</response_label>
+<response_label ident="F">
+<material>
+<mattext texttype="text/plain">D</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">E</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">F</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="3">
+<material>
+<mattext texttype="text/html"><![CDATA[<B>NO<SUB>2</SUB><SUP>-</SUP></B>&nbsp;&nbsp;]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">A</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">B</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">C</mattext>
+</material>
+</response_label>
+<response_label ident="F">
+<material>
+<mattext texttype="text/plain">D</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">E</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">F</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="4">
+<material>
+<mattext texttype="text/html"><![CDATA[<B>H<SUB>2</SUB>O</B>&nbsp;&nbsp;]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">A</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">B</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">C</mattext>
+</material>
+</response_label>
+<response_label ident="F">
+<material>
+<mattext texttype="text/plain">D</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">E</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">F</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="5">
+<material>
+<mattext texttype="text/html"><![CDATA[<B>NH<SUB>4</SUB><SUP>+</SUP></B>&nbsp;&nbsp;]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">A</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">B</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">C</mattext>
+</material>
+</response_label>
+<response_label ident="F">
+<material>
+<mattext texttype="text/plain">D</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">E</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">F</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Add">12</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" continue="Yes">
+<conditionvar>
+<varequal respident="2">F</varequal>
+</conditionvar>
+<setvar action="Add">12</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" continue="Yes">
+<conditionvar>
+<varequal respident="3">B</varequal>
+</conditionvar>
+<setvar action="Add">12</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" continue="Yes">
+<conditionvar>
+<varequal respident="4">C</varequal>
+</conditionvar>
+<setvar action="Add">12</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="4" continue="Yes">
+<conditionvar>
+<varequal respident="5">D</varequal>
+</conditionvar>
+<setvar action="Add">12</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+<respcondition title="default" >
+<conditionvar>
+<or>
+<other/>
+<not>
+<other/>
+</not>
+</or>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="default"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="4" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="default" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="024 457." ident="1099152343867295">
+<itemmetadata>
+<qmd_itemtype>Pull-down list</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Greek version\General Chemistry 2 v400gr</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[Cadmium hydroxide, Cd(OH)<SUB>2</SUB>, is sparingly soluble in water. Which of the following actions will change the Cd<SUP>2+</SUP>concentration in a solution of cadmium hydroxide which is formed by mixing water with an excess  of solid Cd(OH)<SUB>2</SUB>?<BR><BR>Select true if the action changes the Cd<SUP>++</SUP> concentration.  Otherwise, choose false.<BR><BR>&#931;&#951;&#956;&#949;&#953;&#974;&#963;&#964;&#949; &#963;&#969;&#963;&#964;&#972; &#942; &#955;&#940;&#952;&#959;&#962; &#963;&#964;&#953;&#962; &#954;&#945;&#964;&#969;&#964;&#941;&#961;&#969; &#960;&#961;&#959;&#964;&#940;&#963;&#949;&#953;&#962;. &#915;&#953;&#945; &#957;&#945; &#945;&#965;&#958;&#951;&#952;&#949;&#943; &#951; &#948;&#953;&#945;&#955;&#965;&#964;&#972;&#964;&#951;&#964;&#945; &#964;&#959;&#965; &#965;&#948;&#961;&#959;&#958;&#949;&#953;&#948;&#943;&#959;&#965; &#964;&#959;&#965; &#954;&#945;&#948;&#956;&#943;&#959;&#965;, Cd(OH)<SUB>2</SUB>, &#963;&#949; &#965;&#948;&#945;&#964;&#953;&#954;&#940; &#948;&#953;&#945;&#955;&#973;&#956;&#945;&#964;&#945; &#960;&#961;&#959;&#963;&#964;&#943;&#952;&#949;&#964;&#945;&#953; (Text to be checked against the original version):<BR><BR>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<BR>]]></mattext>
+</material>
+<response_lid ident="1">
+<material>
+<mattext texttype="text/html"><![CDATA[&#973;&#948;&#969;&#961;.<BR>]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">True</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">False</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="2">
+<material>
+<mattext texttype="text/html"><![CDATA[&#963;&#964;&#949;&#961;&#949;&#972; &#967;&#955;&#969;&#961;&#953;&#959;&#973;&#967;&#959; &#957;&#940;&#964;&#961;&#953;&#959;.<BR>]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">True</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">False</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="3">
+<material>
+<mattext texttype="text/html"><![CDATA[&#963;&#964;&#949;&#961;&#949;&#972; &#967;&#955;&#969;&#961;&#953;&#959;&#973;&#967;&#959; &#954;&#940;&#948;&#956;&#953;&#959;.<BR>]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">True</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">False</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="4">
+<material>
+<mattext texttype="text/html"><![CDATA[&#965;&#948;&#945;&#964;&#953;&#954;&#972; &#948;&#953;&#940;&#955;&#965;&#956;&#945; &#965;&#948;&#961;&#959;&#967;&#955;&#969;&#961;&#953;&#954;&#959;&#973; &#959;&#958;&#941;&#959;&#962;.<BR>]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">True</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">False</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="5">
+<material>
+<mattext texttype="text/html"><![CDATA[&#965;&#948;&#945;&#964;&#953;&#954;&#972; &#948;&#953;&#940;&#955;&#965;&#956;&#945; &#965;&#948;&#961;&#959;&#958;&#949;&#953;&#948;&#943;&#959;&#965; &#964;&#959;&#965; &#957;&#945;&#964;&#961;&#943;&#959;&#965;.<BR>]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">True</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">False</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Add">12</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" continue="Yes">
+<conditionvar>
+<varequal respident="2">B</varequal>
+</conditionvar>
+<setvar action="Add">12</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" continue="Yes">
+<conditionvar>
+<varequal respident="3">A</varequal>
+</conditionvar>
+<setvar action="Add">12</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" continue="Yes">
+<conditionvar>
+<varequal respident="4">B</varequal>
+</conditionvar>
+<setvar action="Add">12</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="4" continue="Yes">
+<conditionvar>
+<varequal respident="5">B</varequal>
+</conditionvar>
+<setvar action="Add">12</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+<respcondition title="default" >
+<conditionvar>
+<or>
+<other/>
+<not>
+<other/>
+</not>
+</or>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="default"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="4" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="default" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="025 281. From the following formula, cho" ident="3050844434872722">
+<itemmetadata>
+<qmd_itemtype>Hot Spot</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Greek version/General Chemistry 2 v400gr</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[&#913;&#960;&#972; &#964;&#959;&#965;&#962; &#954;&#945;&#964;&#969;&#964;&#941;&#961;&#969; &#964;&#973;&#960;&#959;&#965;&#962; &#949;&#960;&#953;&#955;&#941;&#958;&#945;&#964;&#949; &#964;&#972;&#957; &#956;&#972;&#957;&#959; &#960;&#959;&#965; &#948;&#949;&#957; &#960;&#945;&#961;&#953;&#963;&#964;&#940; &#964;&#959; 2-&#956;&#949;&#952;&#965;&#955;&#959;&#960;&#949;&#957;&#964;&#940;&#957;&#953;&#959;<BR><BR><CENTER>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[</CENTER><BR>]]></mattext>
+</material>
+<response_xy ident="1" rcardinality="Single">
+<render_hotspot>
+<material>
+<matimage imagtype="image/jpg" uri="../topicresources/624634016/g210004_col.jpg" height="216" width="500"/>
+</material>
+</render_hotspot>
+</response_xy>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="right" >
+<conditionvar>
+<varinside respident="1" areatype="Rectangle">139,114 315,215</varinside>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="right"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="right" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="026 466. A container is filled with an e" ident="0806501123075426">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Greek version\General Chemistry 2 v400gr</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[&#904;&#957;&#945; &#948;&#959;&#967;&#949;&#943;&#959; &#960;&#955;&#951;&#961;&#959;&#973;&#964;&#945;&#953; &#956;&#949; &#943;&#963;&#959; &#945;&#961;&#953;&#952;&#956;&#972; mol &#951;&#955;&#943;&#959;&#965; &#954;&#945;&#953; &#957;&#941;&#959;&#965;. &#928;&#959;&#953;&#940; &#945;&#960;&#972; &#964;&#953;&#962; &#954;&#945;&#964;&#969;&#964;&#941;&#961;&#969; &#960;&#961;&#959;&#964;&#940;&#963;&#949;&#953;&#962; &#949;&#943;&#957;&#945;&#953; &#963;&#969;&#963;&#964;&#942;?<BR><BR>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<BR>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[&#964;&#945; &#940;&#964;&#959;&#956;&#945; &#957;&#941;&#959;&#965; &#941;&#967;&#959;&#965;&#957; &#964;&#951;&#957; &#956;&#949;&#947;&#945;&#955;&#973;&#964;&#949;&#961;&#951; &#956;&#941;&#963;&#951; &#954;&#953;&#957;&#951;&#964;&#953;&#954;&#942; &#949;&#957;&#941;&#961;&#947;&#949;&#953;&#945;.<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[&#964;&#945; &#940;&#964;&#959;&#956;&#945; &#957;&#941;&#959;&#965; &#941;&#967;&#959;&#965;&#957; &#964;&#951;&#957; &#956;&#949;&#947;&#945;&#955;&#973;&#964;&#949;&#961;&#951; &#956;&#941;&#963;&#951; &#964;&#945;&#967;&#973;&#964;&#951;&#964;&#945;.<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[&#964;&#945; &#940;&#964;&#959;&#956;&#945; &#951;&#955;&#943;&#959;&#965; &#941;&#967;&#959;&#965;&#957; &#964;&#951;&#957; &#956;&#949;&#947;&#945;&#955;&#973;&#964;&#949;&#961;&#951; &#956;&#941;&#963;&#951; &#954;&#953;&#957;&#951;&#964;&#953;&#954;&#942; &#949;&#957;&#941;&#961;&#947;&#949;&#953;&#945;.<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[&#964;&#945; &#940;&#964;&#959;&#956;&#945; &#951;&#955;&#943;&#959;&#965; &#941;&#967;&#959;&#965;&#957; &#964;&#959; &#956;&#949;&#947;&#945;&#955;&#973;&#964;&#949;&#961;&#959; &#956;&#941;&#963;&#959; &#960;&#959;&#963;&#959;&#963;&#964;&#972; &#963;&#965;&#947;&#954;&#961;&#959;&#973;&#963;&#949;&#969;&#957; &#956;&#949; &#964;&#945; &#964;&#959;&#953;&#967;&#974;&#956;&#945;&#964;&#945;.<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[&#964;&#945; &#940;&#964;&#959;&#956;&#945; &#957;&#941;&#959;&#965; &#954;&#945;&#953; &#964;&#945; &#940;&#964;&#959;&#956;&#945; &#951;&#955;&#943;&#959;&#965; &#941;&#967;&#959;&#965;&#957; &#964;&#951;&#957; &#943;&#948;&#953;&#945; &#956;&#941;&#963;&#951; &#964;&#945;&#967;&#973;&#964;&#951;&#964;&#945;.<BR><BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="3" >
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="027 473." ident="2025970400316296">
+<itemmetadata>
+<qmd_itemtype>Multiple Response</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Greek version\General Chemistry 2 v400gr</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[&#931;&#949; &#960;&#959;&#953;&#941;&#962; &#945;&#960;&#972; &#964;&#953;&#962; &#954;&#945;&#964;&#969;&#964;&#941;&#961;&#969; &#945;&#957;&#964;&#953;&#948;&#961;&#940;&#963;&#949;&#953;&#962; &#964;&#959; H<SUB>2</SUB>SO<SUB>4</SUB> &#948;&#961;&#945; &#969;&#962; &#959;&#958;&#949;&#953;&#948;&#969;&#964;&#953;&#954;&#972;?<BR><BR>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<BR>]]></mattext>
+</material>
+<response_lid ident="1" rcardinality="Multiple">
+<render_choice shuffle="Yes" minnumber="1" maxnumber="5">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[Cu&nbsp;+&nbsp;2&nbsp;H<SUB>2</SUB>SO<SUB>4</SUB>&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;&nbsp;CuSO<SUB>4</SUB>&nbsp;+&nbsp;SO<SUB>2</SUB>&nbsp;+&nbsp;2&nbsp;H<SUB>2</SUB>O<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[Zn&nbsp;+&nbsp;2&nbsp;H<SUB>2</SUB>SO<SUB>4</SUB>&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;&nbsp;ZnSO<SUB>4</SUB>&nbsp;+&nbsp;SO<SUB>2</SUB>&nbsp;+&nbsp;2&nbsp;H<SUB>2</SUB>O<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[CuO&nbsp;+&nbsp; H<SUB>2</SUB>SO<SUB>4</SUB>&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;&nbsp;CuSO<SUB>4</SUB>&nbsp;+&nbsp;H<SUB>2</SUB>O<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[Cu(OH)<SUB>2</SUB>&nbsp;+&nbsp;H<SUB>2</SUB>SO<SUB>4</SUB>&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;&nbsp;CuSO<SUB>4</SUB>&nbsp;+&nbsp;2&nbsp;H<SUB>2</SUB>O<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[ZnO&nbsp;+&nbsp; H<SUB>2</SUB>SO<SUB>4</SUB>&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;&nbsp;ZnSO<SUB>4</SUB>&nbsp;+&nbsp;H<SUB>2</SUB>O<BR><BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="header" continue="Yes">
+<conditionvar>Unrecognized or unsupported test method
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="header"/>
+</respcondition>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Add">30</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" continue="Yes">
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Add">30</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+<varequal respident="1">B</varequal>
+<varequal respident="1">C</varequal>
+<varequal respident="1">D</varequal>
+<varequal respident="1">E</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="header" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="028 477." ident="3511690603303173">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Greek version\General Chemistry 2 v400gr</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[&#928;&#959;&#953;&#940; &#945;&#960;&#972; &#964;&#953;&#962; &#954;&#945;&#964;&#969;&#964;&#941;&#961;&#969; &#960;&#961;&#959;&#964;&#940;&#963;&#949;&#953;&#962; &#960;&#949;&#961;&#943; &#964;&#951;&#962; &#959;&#956;&#940;&#948;&#945;&#962; &#945;&#955;&#959;&#947;&#972;&#957;&#959;&#965; &#949;&#943;&#957;&#945;&#953; &#963;&#969;&#963;&#964;&#942;?<BR><BR>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<BR>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[&#951; &#951;&#955;&#949;&#954;&#964;&#961;&#945;&#961;&#957;&#951;&#964;&#953;&#954;&#972;&#964;&#951;&#964;&#945; &#945;&#965;&#958;&#940;&#957;&#949;&#953; &#945;&#960;&#972; &#964;&#959; F &#963;&#964;&#959; I.<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[&#951; &#949;&#957;&#941;&#961;&#947;&#949;&#953;&#945; &#960;&#961;&#974;&#964;&#959;&#965; &#953;&#959;&#957;&#953;&#963;&#956;&#959;&#973; &#949;&#955;&#945;&#964;&#964;&#974;&#957;&#949;&#964;&#945;&#953; &#945;&#960;&#972; &#964;&#959; I &#963;&#964;&#959; F.<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[&#964;&#959; &#966;&#952;&#972;&#961;&#953;&#959; &#949;&#956;&#966;&#945;&#957;&#943;&#950;&#949;&#953; &#964;&#951;&#957; &#956;&#953;&#954;&#961;&#972;&#964;&#949;&#961;&#951; &#964;&#940;&#963;&#951; &#960;&#961;&#959;&#962; &#945;&#957;&#945;&#947;&#969;&#947;&#942;.<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[&#964;&#959; Cl<SUB>2</SUB> &#959;&#958;&#949;&#953;&#948;&#974;&#957;&#949;&#953; &#964;&#959; &#965;&#948;&#945;&#964;&#953;&#954;&#972; I<SUP>-</SUP>.<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[&#964;&#959; Br<SUB>2</SUB> &#949;&#943;&#957;&#945;&#953; &#953;&#963;&#967;&#965;&#961;&#972;&#964;&#949;&#961;&#959; &#945;&#957;&#945;&#947;&#969;&#947;&#953;&#954;&#972; &#956;&#941;&#963;&#959; &#945;&#960;&#972; &#964;&#959; F<SUB>2</SUB>.<BR><BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="3" >
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="029 486." ident="1906898393043530">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Greek version\General Chemistry 2 v400gr</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[&#913;&#960;&#972; &#964;&#953;&#962; &#954;&#945;&#964;&#969;&#964;&#941;&#961;&#969; &#967;&#951;&#956;&#953;&#954;&#941;&#962; &#945;&#957;&#964;&#953;&#948;&#961;&#940;&#963;&#949;&#953;&#962;, &#959;&#953; &#959;&#960;&#959;&#943;&#949;&#962; &#955;&#945;&#956;&#946;&#940;&#957;&#959;&#965;&#957; &#967;&#974;&#961;&#945; &#963;&#949; &#954;&#955;&#949;&#953;&#963;&#964;&#972; &#963;&#973;&#963;&#964;&#951;&#956;&#945;, &#960;&#959;&#953;&#940; &#949;&#956;&#966;&#945;&#957;&#943;&#950;&#949;&#953; &#952;&#949;&#964;&#953;&#954;&#942; &#956;&#949;&#964;&#945;&#946;&#959;&#955;&#942; &#949;&#957;&#964;&#961;&#959;&#960;&#943;&#945;&#962; (&#963;&#949; &#960;&#943;&#949;&#963;&#951; 105&nbsp;Pa)?<BR><BR>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<BR>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[Cl<SUP>-</SUP>(&#965;&#948;&#945;&#964;&#953;&#954;&#972;)&nbsp;+&nbsp;NH<SUB>4</SUB><SUP>+</SUP>(&#965;&#948;&#945;&#964;&#953;&#954;&#972;)&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;&nbsp;NH<SUB>4</SUB>Cl(&#963;&#964;&#949;&#961;&#949;&#972;)<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[2&nbsp;Ca(&#963;&#964;&#949;&#961;&#949;&#972;)&nbsp;+&nbsp;O<SUB>2</SUB>(&#945;&#941;&#961;&#953;&#959;)&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;&nbsp;2&nbsp;CaO(&#963;&#964;&#949;&#961;&#949;&#972;)<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[N<SUB>2</SUB>(&#945;&#941;&#961;&#953;&#959;)&nbsp;+&nbsp;3&nbsp;H<SUB>2</SUB>(&#945;&#941;&#961;&#953;&#959;)&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;&nbsp;2&nbsp;NH<SUB>3</SUB>(&#945;&#941;&#961;&#953;&#959;)<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[CaCO<SUB>3</SUB>(&#963;&#964;&#949;&#961;&#949;&#972;)&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;&nbsp;CaO(&#963;&#964;&#949;&#961;&#949;&#972;)&nbsp;+&nbsp;CO<SUB>2</SUB>(&#945;&#941;&#961;&#953;&#959;)<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[H<SUB>2</SUB>O(&#945;&#941;&#961;&#953;&#959;)&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;&nbsp;H<SUB>2</SUB>O(&#965;&#947;&#961;&#972;)<BR><BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="3" >
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="030 497." ident="7540089726556340">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Greek version\General Chemistry 2 v400gr</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[&#924;&#943;&#945; &#941;&#957;&#969;&#963;&#951; &#941;&#967;&#949;&#953; &#964;&#959;&#957; &#964;&#973;&#960;&#959; C<SUB>3</SUB>H<SUB>8</SUB>O, &#956;&#949;&#961;&#953;&#954;&#942; &#948;&#949; &#959;&#958;&#949;&#943;&#948;&#969;&#963;&#951; &#964;&#951;&#957; &#956;&#949;&#964;&#945;&#964;&#961;&#941;&#960;&#949;&#953; &#963;&#949; C<SUB>3</SUB>H<SUB>6</SUB>O. &#914;&#940;&#963;&#949;&#953; &#964;&#951;&#962; &#960;&#955;&#951;&#961;&#959;&#966;&#959;&#961;&#943;&#945;&#962; &#945;&#965;&#964;&#942;&#962;, &#951; &#941;&#957;&#969;&#963;&#951; &#949;&#943;&#957;&#945;&#953; &#954;&#945;&#964;&#940; &#960;&#940;&#963;&#945; &#960;&#953;&#952;&#945;&#957;&#972;&#964;&#951;&#964;&#945;:<BR><BR>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<BR>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[&#945;&#955;&#948;&#949;û&#948;&#951; (&#945;&#955;&#954;&#945;&#957;&#940;&#955;&#951;)<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[&#964;&#961;&#953;&#964;&#959;&#964;&#945;&#947;&#942;&#962; &#945;&#955;&#954;&#959;&#972;&#955;&#951; (&#945;&#955;&#954;&#945;&#957;&#972;&#955;&#951;)<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[&#959;&#955;&#949;&#966;&#943;&#957;&#951; (&#945;&#955;&#954;&#941;&#957;&#953;&#959;)<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[&#948;&#949;&#965;&#964;&#949;&#961;&#959;&#964;&#945;&#947;&#942;&#962; &#945;&#955;&#954;&#959;&#972;&#955;&#951; (&#945;&#955;&#954;&#945;&#957;&#972;&#955;&#951;)<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[&#945;&#953;&#952;&#941;&#961;&#945;&#962;<BR><BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="3" >
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+</item>
+
+
+</questestinterop>
+
+

@@ -1,0 +1,2670 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE questestinterop SYSTEM "ims_qtiasiv1p2.dtd">
+
+<questestinterop>
+<scale>100</scale>
+
+
+<item title="000N Welcome to LibreEOL Discovery Test" ident="1276200207558765">
+<itemmetadata>
+<qmd_itemtype>Explanation</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>LibreEOL</qmd_toolvendor>
+<qmd_topic>DDB English version\Tutorial on using the system</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>
+<CENTER>Welcome to the Practice Sample Test<BR \ />Let's try some question types with an explanation on how to answer them...</CENTER><BR \>
+<P></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>This short test, will help you to learn how to answer the different types of question that you will face in the Chemistry test ...<BR \>Centered on the bottom, the "Submit" button enables you to submit your answers.<BR \>On the right handside, a scrolling cursor enables you to navigate along the test, to access the question individually.<BR \>Also centered on the top, a timer will be displayed, with the time left to the end of the test!<BR \>After proceeding at the end of the test, you will see your scoring. You can then exit while clicking on the button "HOME", or review your answer with the marking. The feedback, if any available, is displayed in green at the bottom of a question.<BR \></P>
+<P>Good luck !<BR \></P>]]></mattext>
+</material>
+</presentation>
+</item>
+
+
+<item title="001N Europe - Hot Spot" ident="9337587925859813">
+<itemmetadata>
+<qmd_itemtype>Hot Spot</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>LibreEOL</qmd_toolvendor>
+<qmd_topic>DDB English version\Tutorial on using the system</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><FONT color=blue>Click on "<STRONG>Sardinia</STRONG>" country&nbsp;on the map below, the original CD-Rom EChemTest cover map ... </FONT><BR \></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>This is a <B><I>"Hot-Spot" graphic question</B></I>. Move the mouse pointer onto the map spot representing the appropriate country place, then click: the red point will move to the  point where you clicked; you can change your mind, by just clicking on another spot.<BR \></P>]]></mattext>
+</material>
+<response_xy ident="1" rcardinality="Single">
+<render_hotspot>
+<material>
+<matimage imagtype="image/jpg" uri="../topicresources/947183604/ECTWelcome.jpg" height="441" width="642"/>
+</material>
+</render_hotspot>
+</response_xy>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="right" >
+<conditionvar>
+<varinside respident="1" areatype="Rectangle">240,330,40,40</varinside>
+</conditionvar>
+<setvar action="Set">2</setvar>
+<displayfeedback linkrefid="right"/>
+</respcondition>
+<respcondition title="wrong" >
+<conditionvar>
+<other/>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="wrong"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="right" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Yes correct, this is Sardinia, an island belonging to Italia.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="wrong" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Wrong answer, getting back to&nbsp;your geographical book ...]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="002N Chemistry - Multiple Choices Q" ident="2423094959555630">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>LibreEOL</qmd_toolvendor>
+<qmd_topic>DDB English version\Tutorial on using the system</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><FONT color=blue>Select within the list, the correct statement that described the best the salt compound?</FONT><BR \>
+<P></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>This is a <B><I>Multiple choice question</B></I>, with only one choice to be selected. Click on the item below that seems correct to you. If you change your mind , just click on an another answer, it will autoatically unselect the previous tick. Typical symbol is a circle (unique choice). Once you are sure of your answer, validate your answer by clicking on the appropriate button.<BR \></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[Salt is a white cubic crystalline compound.]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[Salt is a dark red cristal.]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[Salt has no ionic bonds and is as hard as diamond.]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[Salt is a&nbsp;white compound that is impossible to dissolve in water.]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">1</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" >
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" >
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" >
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="4" >
+<conditionvar>
+<unanswered respident="1"/>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Right, the crystaline structure is cubic, the color is white.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[The common color is white, or kind of yellow-brownish, but not red at all (Ruby).]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Salt is a pure ionic compound, composed of sodium Na+ cations and chlorine Cl- anions, that makes salt easily breakable.</P>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Yes salt has a white color, but it is certainly one of the most soluble in water, up to 330g/L at room temperature.</P>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="4" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Salt: white color, soluble in water, and pure ionic cubic cristal that makes salt easily breakable.</P>]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="002N Europe - Multiple Choices Q" ident="6100968789581144">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>LibreEOL</qmd_toolvendor>
+<qmd_topic>DDB English version\Tutorial on using the system</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><FONT color=blue>Select the list of country states that composed the first "European" organization ?</FONT><BR \>
+<P></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>This is a <B><I>Multiple choice question</B></I>, with only one choice to be selected. Click on the item below that seems correct to you. If you change your mind , just click on an another answer, it will autoatically unselect the previous tick. Typical symbol is a circle (unique choice). Once you are sure of your answer, validate your answer by clicking on the appropriate button.<BR \></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[Belgium, France, Germany, Italia, Luxemburg, Netherland<BR \>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[Belgium, Denmark, Germany, Italy, Luxemburg, Netherland<BR \>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[Belgium, Germany, France, Italy, Netherland<BR \>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[Benelux, Germany, France, Italy, Ireland<BR \>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">1</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" >
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" >
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" >
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="4" >
+<conditionvar>
+<unanswered respident="1"/>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Right, the correct statement is :<br />Belgium, Deutschland, France, Italia, Luxembourg, Nederland]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[The first &quot;European organization&quot; was composed by 6 members. Denmark and Ireland joigned the organization much later.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[The first &quot;European organization&quot; was composed by 6 members. Denmark and Ireland joigned the organization much later.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[The first &quot;European organization&quot; was composed by 6 members. Denmark and Ireland joigned the organization much later.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="4" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[... but the correct statement is :Belgium, Deutschland, France, Italia, Luxembourg, Nederland<BR \>The first "European organization" was composed by 6 members. Denmark and Ireland joigned the organization much later.]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="003N Chemistry - Numeric Q" ident="8579684922129288">
+<itemmetadata>
+<qmd_itemtype>Numeric</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>LibreEOL</qmd_toolvendor>
+<qmd_topic>DDB English version\Tutorial on using the system</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><FONT color=blue>When does Niels Bohr proposed his quantic model of atom? <BR \>Type in the box below the 4 digits of the year (e.g. 2013) </FONT><BR \></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>This is a <B><I>Numerical question</B></I>. You are supposed to click on the box below with the mouse, and to type in the digits number.<BR \></P>]]></mattext>
+</material>
+<response_num ident="1" rcardinality="Single">
+<render_fib fibtype="Integer" prompt="Box" rows="1" columns="4" maxchars="4"/>
+</response_num>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">1913</varequal>
+</conditionvar>
+<setvar action="Set">2</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="4" >
+<conditionvar>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Yes, this is the correct answer. The quantic model of atom was proposed in 1913, we are celebrating the 100th anniversary in 2013.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="4" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Well the correct answer is 1913, already 100 years ago (in 2013).]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="003N Europe - Numeric Q" ident="1192493369360380">
+<itemmetadata>
+<qmd_itemtype>Numeric</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>LibreEOL</qmd_toolvendor>
+<qmd_topic>DDB English version\Tutorial on using the system</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><FONT color=blue>When was the first European Organization first created? <BR \>Type in the box below the 4 digits of the year (e.g. 1999) </FONT><BR \></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>This is a <B><I>Numerical question</B></I>. You are supposed to click on the box below with the mouse, and to type in the digits number.<BR \></P>]]></mattext>
+</material>
+<response_num ident="1" rcardinality="Single">
+<render_fib fibtype="Integer" prompt="Box" rows="1" columns="4" maxchars="4"/>
+</response_num>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">1956</varequal>
+</conditionvar>
+<setvar action="Set">2</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="3" >
+<conditionvar>
+<vargte respident="1">1954</vargte>
+<varlte respident="1">1958</varlte>
+</conditionvar>
+<setvar action="Set">1</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="1" >
+<conditionvar>
+<varlt respident="1">1956</varlt>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" >
+<conditionvar>
+<vargt respident="1">1956</vargt>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="4" >
+<conditionvar>
+<unanswered respident="1"/>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Yes, this is the correct answer.<BR \>The European organization was born in 1956, and was composed by the 6 following country states (Belgium, France, Germany, Italy, Luxembourg and the Netherlands)]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Not too bad ... almost good !!<br />The European organization was born in 1956, and was composed by the 6 following country states (Belgium, France, Germany, Italy, Luxembourg and the Netherlands)]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Sorry, this is not the correct answer ; it was a few years after !<br />The European organization was born in 1956, and was composed by the 6 following country states (Belgium, France, Germany, Italy, Luxembourg and the Netherlands)]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Sorry, this is not the correct answer ; it was before !<br />The European organization was born in 1956, and was composed by the 6 following country states (Belgium, France, Germany, Italy, Luxembourg and the Netherlands)]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="4" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Well the correct answer is 1956.<BR \>The European organization was born in 1956, and was composed by the 6 following country states (Belgium, France, Germany, Italy, Luxembourg and the Netherlands)]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+<!--
+<item title="004N Chemistry - Matching Q" ident="8900081664394629">
+<itemmetadata>
+<qmd_itemtype>Matching</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>LibreEOL</qmd_toolvendor>
+<qmd_topic>DDB English version\Tutorial on using the system</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><FONT color=blue>Associate the definition discovery with the corrresponding discoverer.</FONT><BR \></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>This is a <B><I>Matching question</B></I>. Drag the mouse on the small box (right of the list), click on the field, select your answer, and click on the one that seems correct to you. Once you have finished, you can change your mind by repeating exactly the same procedure, and select a different answer.<BR \></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<material>
+<mattext texttype="text/html"><![CDATA[Isolate Cr and Be]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">Vauquelin</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">Thenard</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">Hahneman</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">Pasteur</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">Fleming</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="2">
+<material>
+<mattext texttype="text/html"><![CDATA[Synthesize oxigenated water]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">Vauquelin</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">Thenard</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">Hahneman</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">Pasteur</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">Fleming</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="3">
+<material>
+<mattext texttype="text/html"><![CDATA[Father of the homeopathy]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">Vauquelin</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">Thenard</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">Hahneman</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">Pasteur</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">Fleming</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="4">
+<material>
+<mattext texttype="text/html"><![CDATA[Discover the antirabic vaccine]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">Vauquelin</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">Thenard</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">Hahneman</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">Pasteur</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">Fleming</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="5">
+<material>
+<mattext texttype="text/html"><![CDATA[Discover the Penicilin]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">Vauquelin</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">Thenard</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">Hahneman</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">Pasteur</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">Fleming</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1" case="No">Vauquelin</varequal>
+</conditionvar>
+<setvar action="Add">1</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" continue="Yes">
+<conditionvar>
+<varequal respident="2" case="No">Thenard</varequal>
+</conditionvar>
+<setvar action="Add">1</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" continue="Yes">
+<conditionvar>
+<varequal respident="3" case="No">Hahneman</varequal>
+</conditionvar>
+<setvar action="Add">1</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" continue="Yes">
+<conditionvar>
+<varequal respident="4" case="No">Pasteur</varequal>
+</conditionvar>
+<setvar action="Add">1</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="4" continue="Yes">
+<conditionvar>
+<varequal respident="5" case="No">Fleming</varequal>
+</conditionvar>
+<setvar action="Add">1</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+<respcondition title="Always happens" >
+<conditionvar>
+<or>
+<other/>
+<not>
+<other/>
+</not>
+</or>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="Always happens"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="4" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="Always happens" view="Candidate">
+</itemfeedback>
+</item>
+-->
+<!--
+<item title="004N Europe - Matching Q" ident="2184598656541766">
+<itemmetadata>
+<qmd_itemtype>Pull-down list</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>LibreEOL</qmd_toolvendor>
+<qmd_topic>DDB English version\Tutorial on using the system</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><FONT color=blue>Associate the country member(s) with the year of membership.</FONT><BR \></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>This is a <B><I>Matching question</B></I>. Drag the mouse on the small box (right of the list), click on the field, select your answer, and click on the one that seems correct to you. Once you have finished, you can change your mind by repeating exactly the same procedure, and select a different answer.<BR \></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<material>
+<mattext texttype="text/html"><![CDATA[Danmark<BR \>]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">1972</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">1973</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">1981</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">1986</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">1995</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="2">
+<material>
+<mattext texttype="text/html"><![CDATA[Ireland, United Kingdom<BR \>]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">1972</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">1973</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">1981</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">1986</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">1995</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="3">
+<material>
+<mattext texttype="text/html"><![CDATA[Greece<BR \>]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">1972</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">1973</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">1981</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">1986</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">1995</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="4">
+<material>
+<mattext texttype="text/html"><![CDATA[Espana, Portugal<BR \>]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">1972</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">1973</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">1981</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">1986</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">1995</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="5">
+<material>
+<mattext texttype="text/html"><![CDATA[Österreich, Sverige, Suomi Finland<BR \>]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">1972</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">1973</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">1981</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">1986</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">1995</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Add">1</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" continue="Yes">
+<conditionvar>
+<varequal respident="2">C</varequal>
+</conditionvar>
+<setvar action="Add">1</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" continue="Yes">
+<conditionvar>
+<varequal respident="3">E</varequal>
+</conditionvar>
+<setvar action="Add">1</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" continue="Yes">
+<conditionvar>
+<varequal respident="4">D</varequal>
+</conditionvar>
+<setvar action="Add">1</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="4" continue="Yes">
+<conditionvar>
+<varequal respident="5">B</varequal>
+</conditionvar>
+<setvar action="Add">1</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+<respcondition title="default" >
+<conditionvar>
+<or>
+<other/>
+<not>
+<other/>
+</not>
+</or>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="default"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="4" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="default" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[<BR \><BR \>6 country members in 1956, and 15 members 43 years later !]]></mattext>
+</material>
+</itemfeedback>
+</item>
+-->
+
+<item title="005N Chemistry - Multiple Response Q fn" ident="3542609881334140">
+<itemmetadata>
+<qmd_itemtype>Multiple Response</qmd_itemtype>
+<qmd_maximumscore>5</qmd_maximumscore>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>LibreEOL</qmd_toolvendor>
+<qmd_topic>DDB English version\Tutorial on using the system</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><FONT color=blue>Considering the following formula modelizing the filtration profile:<BR \><BR \>
+<CENTER>Porosity&nbsp;<B>d</B>&nbsp;=&nbsp;4·K·A&nbsp;/&nbsp;p&nbsp;&nbsp;&nbsp;&nbsp;Flow <B>D</B>&nbsp;=&nbsp;N·Δp·r<SUP>2</SUP>&nbsp;/&nbsp;8·η·L</CENTER><BR \>Select and tick which of the parameters listed below, can have a negative effect on filtration if increased?</FONT><BR \>
+<P></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>This is a <B><I>Multiple response question</B></I>. You are supposed to select the correct statements (one or more, 3 in that case). There may be a limitation in the number of items you can select. For example, here you are not supposed to click on more than 3 items. If you want to change your mind, de-select the item you don't want anymore by re-clicking on it, and then select the new item chosen.<BR \></P>]]></mattext>
+</material>
+<response_lid ident="1" rcardinality="Multiple">
+<render_choice shuffle="Yes" minnumber="1" maxnumber="10">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[<B>A:</B> liquid superficial tension at 20&deg;C]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[<B>d:</B> porosity]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[<B>K:</B> constant]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[<B>&Delta;p:</B> difference of pressure in / out]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[<B>p:</B> gaz pressure]]></mattext>
+</material>
+</response_label>
+<response_label ident="F">
+<material>
+<mattext texttype="text/html"><![CDATA[<B>D:</B> flow in mL/min]]></mattext>
+</material>
+</response_label>
+<response_label ident="G">
+<material>
+<mattext texttype="text/html"><![CDATA[<B>N:</B> number of canicula "surface"]]></mattext>
+</material>
+</response_label>
+<response_label ident="H">
+<material>
+<mattext texttype="text/html"><![CDATA[<B>r:</B> average canicula radius]]></mattext>
+</material>
+</response_label>
+<response_label ident="I">
+<material>
+<mattext texttype="text/html"><![CDATA[<B>&eta;:</B> liquid viscocity]]></mattext>
+</material>
+</response_label>
+<response_label ident="J">
+<material>
+<mattext texttype="text/html"><![CDATA[<B>L:</B> canicula length "thickness"]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0 A: liquid superficial tension at 20°C" continue="Yes">
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="0 A: liquid superficial tension at 20°C"/>
+</respcondition>
+<respcondition title="1 d: porosity" continue="Yes">
+<conditionvar>
+
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="1 d: porosity"/>
+</respcondition>
+<respcondition title="2 K: constant" continue="Yes">
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="2 K: constant"/>
+</respcondition>
+<respcondition title="3 Dp: difference of pressure in / out" continue="Yes">
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="3 Dp: difference of pressure in / out"/>
+</respcondition>
+<respcondition title="4 p: gaz pressure" continue="Yes">
+<conditionvar>
+<varequal respident="1">E</varequal>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="4 p: gaz pressure"/>
+</respcondition>
+<respcondition title="5 D: flow mL/min" continue="Yes">
+<conditionvar>
+<varequal respident="1">F</varequal>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="5 D: flow mL/min"/>
+</respcondition>
+<respcondition title="6 N: number of canicula  surface" continue="Yes">
+<conditionvar>
+<varequal respident="1">G</varequal>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="6 N: number of canicula  surface"/>
+</respcondition>
+<respcondition title="7 r: average canicula radius" continue="Yes">
+<conditionvar>
+<varequal respident="1">H</varequal>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="7 r: average canicula radius"/>
+</respcondition>
+<respcondition title="8 eta: liquid viscocity" continue="Yes">
+<conditionvar>
+<varequal respident="1">I</varequal>
+</conditionvar>
+<setvar action="Add">1</setvar>
+<displayfeedback linkrefid="8 eta: liquid viscocity"/>
+</respcondition>
+<respcondition title="9 L: canicula length  thickness" continue="Yes">
+<conditionvar>
+<varequal respident="1">J</varequal>
+</conditionvar>
+<setvar action="Add">1</setvar>
+<displayfeedback linkrefid="9 L: canicula length  thickness"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0 A: liquid superficial tension at 20°C" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1 d: porosity" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2 K: constant" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="3 Dp: difference of pressure in / out" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="4 p: gaz pressure" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="5 D: flow mL/min" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="6 N: number of canicula  surface" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="7 r: average canicula radius" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="8 eta: liquid viscocity" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="9 L: canicula length  thickness" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="005N Chemistry - Multiple Response Q fp" ident="0023368558414999">
+<itemmetadata>
+<qmd_itemtype>Multiple Response</qmd_itemtype>
+<qmd_maximumscore>5</qmd_maximumscore>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>LibreEOL</qmd_toolvendor>
+<qmd_topic>DDB English version\Tutorial on using the system</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><FONT color=blue>Considering the following formula modelizing the filtration profile:<BR \><BR \>
+<CENTER>Porosity&nbsp;<B>d</B>&nbsp;=&nbsp;4·K·A&nbsp;/&nbsp;p&nbsp;&nbsp;&nbsp;&nbsp;Flow <B>D</B>&nbsp;=&nbsp;N·Δp·r<SUP>2</SUP>&nbsp;/&nbsp;8·η·L</CENTER><BR \>Select and tick which of the parameters listed below, can have a positive effect on filtration if increased?</FONT><BR \>
+<P></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>This is a <B><I>Multiple response question</B></I>. You are supposed to select the correct statements (one or more, 3 in that case). There may be a limitation in the number of items you can select. For example, here you are not supposed to click on more than 3 items. If you want to change your mind, de-select the item you don't want anymore by re-clicking on it, and then select the new item chosen.<BR \></P>]]></mattext>
+</material>
+<response_lid ident="1" rcardinality="Multiple">
+<render_choice shuffle="Yes" minnumber="1" maxnumber="10">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[<B>A:</B> liquid superficial tension at 20&deg;C]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[<B>d:</B> porosity]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[<B>K:</B> constant]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[<B>&Delta;p:</B> difference of pressure in&nbsp;/&nbsp;out]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[<B>p:</B> gaz pressure]]></mattext>
+</material>
+</response_label>
+<response_label ident="F">
+<material>
+<mattext texttype="text/html"><![CDATA[<B>D:</B> flow in mL/min]]></mattext>
+</material>
+</response_label>
+<response_label ident="G">
+<material>
+<mattext texttype="text/html"><![CDATA[<B>N:</B> number of canicula "surface"]]></mattext>
+</material>
+</response_label>
+<response_label ident="H">
+<material>
+<mattext texttype="text/html"><![CDATA[<B>r:</B> average canicula radius]]></mattext>
+</material>
+</response_label>
+<response_label ident="I">
+<material>
+<mattext texttype="text/html"><![CDATA[<B>&eta;:</B> liquid viscocity]]></mattext>
+</material>
+</response_label>
+<response_label ident="J">
+<material>
+<mattext texttype="text/html"><![CDATA[<B>L:</B> canicula length "thickness"]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0 A: liquid superficial tension at 20°C" continue="Yes">
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="0 A: liquid superficial tension at 20°C"/>
+</respcondition>
+<respcondition title="1 d: porosity" continue="Yes">
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Add">1</setvar>
+<displayfeedback linkrefid="1 d: porosity"/>
+</respcondition>
+<respcondition title="2 K: constant" continue="Yes">
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="2 K: constant"/>
+</respcondition>
+<respcondition title="3 Dp: difference of pressure in / out" continue="Yes">
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Add">1</setvar>
+<displayfeedback linkrefid="3 Dp: difference of pressure in / out"/>
+</respcondition>
+<respcondition title="4 p: gaz pressure" continue="Yes">
+<conditionvar>
+<varequal respident="1">E</varequal>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="4 p: gaz pressure"/>
+</respcondition>
+<respcondition title="5 D: flow mL/min" continue="Yes">
+<conditionvar>
+<varequal respident="1">F</varequal>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="5 D: flow mL/min"/>
+</respcondition>
+<respcondition title="6 N: number of canicula  surface" continue="Yes">
+<conditionvar>
+<varequal respident="1">G</varequal>
+</conditionvar>
+<setvar action="Add">1</setvar>
+<displayfeedback linkrefid="6 N: number of canicula  surface"/>
+</respcondition>
+<respcondition title="7 r: average canicula radius" continue="Yes">
+<conditionvar>
+<varequal respident="1">H</varequal>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="7 r: average canicula radius"/>
+</respcondition>
+<respcondition title="8 eta: liquid viscocity" continue="Yes">
+<conditionvar>
+<varequal respident="1">I</varequal>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="8 eta: liquid viscocity"/>
+</respcondition>
+<respcondition title="9 L: canicula length  thickness" continue="Yes">
+<conditionvar>
+<varequal respident="1">J</varequal>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="9 L: canicula length  thickness"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0 A: liquid superficial tension at 20°C" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1 d: porosity" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2 K: constant" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="3 Dp: difference of pressure in / out" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="4 p: gaz pressure" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="5 D: flow mL/min" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="6 N: number of canicula  surface" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="7 r: average canicula radius" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="8 eta: liquid viscocity" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="9 L: canicula length  thickness" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="005N Europe - Multiple Responses Q" ident="5936738809501257">
+<itemmetadata>
+<qmd_itemtype>Multiple Response</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>LibreEOL</qmd_toolvendor>
+<qmd_topic>DDB English version\Tutorial on using the system</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><FONT color=blue><STRONG>Text option 1:</STRONG> "Select from the list below, the correct items:" <EM>(no indication of the number of correct items)</EM><BR \>or<BR \><STRONG>Text option 2:</STRONG> "Select from the list below, the&nbsp;3 correct items:" <EM>(indication of the number of correct items)</EM></FONT></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>This is a <B><I>Multiple response question</B></I>. You are supposed to select the correct statements (one or more, 3 in that case). There may be a limitation in the number of items you can select. For example, here you are not supposed to click on more than 3 items. If you want to change your mind, de-select the item you don't want anymore by re-clicking on it, and then select the new item chosen.<BR \></P>]]></mattext>
+</material>
+<response_lid ident="1" rcardinality="Multiple">
+<render_choice shuffle="No" minnumber="1" maxnumber="6">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[In 2013, Norway is a member of the European Union.]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[Europe, European Union, European Economical Area, are all having the same meaning.]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[Switzerland is member of the European Economical Area.]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[The Scandic area is including Norway, Sweden and&nbsp;Finland.]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[The Baltic area is including Estonia, Latvia, Poland and Lithuania.]]></mattext>
+</material>
+</response_label>
+<response_label ident="F">
+<material>
+<mattext texttype="text/html"><![CDATA[Iberic area is including only 2 EU member states.]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="right" >
+<conditionvar>
+<not>
+<varequal respident="1">A</varequal>
+</not>
+<not>
+<varequal respident="1">B</varequal>
+</not>
+<varequal respident="1">C</varequal>
+<varequal respident="1">D</varequal>
+<not>
+<varequal respident="1">E</varequal>
+</not>
+<varequal respident="1">F</varequal>
+</conditionvar>
+<setvar action="Set">6</setvar>
+<displayfeedback linkrefid="right"/>
+</respcondition>
+<respcondition title="wrong" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+<varequal respident="1">B</varequal>
+<varequal respident="1">C</varequal>
+<varequal respident="1">D</varequal>
+<varequal respident="1">E</varequal>
+<varequal respident="1">F</varequal>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="wrong"/>
+</respcondition>
+<respcondition title="1" continue="Yes">
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" continue="Yes">
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" continue="Yes">
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Add">1</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="4" continue="Yes">
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Add">1</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+<respcondition title="5" continue="Yes">
+<conditionvar>
+<varequal respident="1">E</varequal>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="5"/>
+</respcondition>
+<respcondition title="6" continue="Yes">
+<conditionvar>
+<varequal respident="1">F</varequal>
+</conditionvar>
+<setvar action="Add">1</setvar>
+<displayfeedback linkrefid="6"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="right" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Yes correct !]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="wrong" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[You can not select all items. Wrong strategy !]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[No, Norway is member of the European Economical Area and not member of the European Union; nevertheless Norway is in Europe.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[No, not having the same meaning: the European Economical Area is larger than the European Union; Geographical Europe is going up to the Ural Mountain ranges.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Yes correct, as is Norway for example.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="4" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Yes right, Denmark is also part of the Scandic area.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="5" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[No Poland is not part of the Baltic area, even if Lithuania and Poland have of common border.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="6" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Yes Iberic area is including both Spain and Portugal, both EU member states.]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="006N Chemistry - Blank Q" ident="1954056900476295">
+<itemmetadata>
+<qmd_itemtype>Select a Blank</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>LibreEOL</qmd_toolvendor>
+<qmd_topic>DDB English version\Tutorial on using the system</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><FONT color=blue>Complete the sentence below with the appropriate option from the drop-down list.</FONT><BR \></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>This is a <STRONG><EM>Blank Question</EM></STRONG>. Within a sentence, one or more blank space(s) have to be filled with from a list of options (drop-down list).<BR \></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[EChemTest stands for ]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">European</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">Electronic</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">Extended</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">Evaluation</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<material>
+<mattext texttype="text/html"><![CDATA[ Chemistry Test.]]></mattext>
+</material>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="right" >
+<conditionvar>
+<varequal respident="1" case="No">European</varequal>
+</conditionvar>
+<setvar action="Set">1</setvar>
+<displayfeedback linkrefid="right"/>
+</respcondition>
+<respcondition title="wrong" >
+<conditionvar>
+<other/>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="wrong"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="right" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Correct, it is European Chemistry Test.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="wrong" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Wrong, this is European Chemistry Test, and not Electronic, Extended or Evaluation Chemistry Test.]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="007N Chemistry - True/False Q" ident="1715585313515284">
+<itemmetadata>
+<qmd_itemtype>Pull-down list</qmd_itemtype>
+<qmd_maximumscore>3</qmd_maximumscore>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>LibreEOL</qmd_toolvendor>
+<qmd_topic>DDB English version\Tutorial on using the system</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><FONT color=blue>Answer by "<STRONG>True</STRONG>" or "<STRONG>False</STRONG>" the following statements.</FONT><BR \></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>This is a <B><I>"True/False" question</B></I>. Like the <B><I>Matching</B></I> and <B><I>Ranking</B></I> questions, move the cursor onto the pop-up menu, select your answer by clicking on it. Repeat this procedure for each of the pop-up menus. If you want to change your&nbsp;mind, redo it for the one you want to change.<BR \></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<material>
+<mattext texttype="text/html"><![CDATA[Centuries ago, salt was an exchange currency or trading market in desertical area (Africa, South-America, ...), and in some countries and for years, a tax system was in use all over Europe and built on salt.]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">True</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">False</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="2">
+<material>
+<mattext texttype="text/html"><![CDATA[Gold metal was always used as a trading / exchange system since the ancient Egypt and on all continents.]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">True</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">False</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="3">
+<material>
+<mattext texttype="text/html"><![CDATA[Iron is known since the ancient time, and was discovered at the so called "Iron age" (approximately at the 11-12th century A.C.).]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">True</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">False</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="1" continue="Yes">
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Add">1</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" continue="Yes">
+<conditionvar>
+<varequal respident="2">B</varequal>
+</conditionvar>
+<setvar action="Add">1</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" continue="Yes">
+<conditionvar>
+<varequal respident="3">B</varequal>
+</conditionvar>
+<setvar action="Add">1</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="007N Europe  - True/False Q" ident="4505024946867990">
+<itemmetadata>
+<qmd_itemtype>Pull-down list</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>LibreEOL</qmd_toolvendor>
+<qmd_topic>DDB English version\Tutorial on using the system</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<FONT COLOR=BLUE>Answer by &quot;True&quot; or &quot;False&quot; the following statements.</FONT><BR \><BR \>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>This is a <B><I>"True/False" question</B></I>. Like the <B><I>Matching</B></I> and <B><I>Ranking</B></I> questions, move the cursor onto the pop-up menu, select your answer by clicking on it. Repeat this procedure for each of the pop-up menus. If you want to change mind, redo it for the one you want to change.<BR \></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<material>
+<mattext texttype="text/html"><![CDATA[<B>*</B> Norwegian is one of the official European languages.<BR \>]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">True</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">False</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="2">
+<material>
+<mattext texttype="text/html"><![CDATA[<B>*</B> The European flag contains the same number of stars as official languages.<BR \>]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">True</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">False</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="3">
+<material>
+<mattext texttype="text/html"><![CDATA[<B>*</B> Irish is one exception. It is not considered as an official language (English is the official one) although it is spoken all over Ireland.<BR \>]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">True</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">False</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="1" continue="Yes">
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Add">1</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" continue="Yes">
+<conditionvar>
+<varequal respident="2">B</varequal>
+</conditionvar>
+<setvar action="Add">1</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" continue="Yes">
+<conditionvar>
+<varequal respident="3">A</varequal>
+</conditionvar>
+<setvar action="Add">1</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="default" >
+<conditionvar>
+<or>
+<other/>
+<not>
+<other/>
+</not>
+</or>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="default"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="default" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[EU or EEC have only 11 official languages (Danish, Dutch, English, Finnish, French, German, Greek, Italian, Spanish, Portuguese, Swedish)]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="008N Chemistry - Text Match Q" ident="9683255093951603">
+<itemmetadata>
+<qmd_itemtype>Text Match</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>LibreEOL</qmd_toolvendor>
+<qmd_topic>DDB English version\Tutorial on using the system</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><FONT color=blue>There is 2 different spellings for the "S" element ... </FONT><BR \></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>This is a <STRONG><EM>Text Match question</EM></STRONG>, you are expected to type in the blank box, the word or sentence. Sometimes, it can be case sensitive.<BR \></P>]]></mattext>
+</material>
+<response_str ident="1" rcardinality="Single">
+<render_fib fibtype="String" prompt="Box" rows="1" columns="8" />
+</response_str>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="right1" >
+<conditionvar>
+<or>
+<varequal respident="1" case="No">Sulfur</varequal>
+<varequal respident="1" case="No">sulfur</varequal>
+</or>
+</conditionvar>
+<setvar action="Set">1</setvar>
+<displayfeedback linkrefid="right1"/>
+</respcondition>
+<respcondition title="right2" >
+<conditionvar>
+<or>
+<varequal respident="1" case="No">Sulphur</varequal>
+<varequal respident="1" case="No">sulphur</varequal>
+</or>
+</conditionvar>
+<setvar action="Set">1</setvar>
+<displayfeedback linkrefid="right2"/>
+</respcondition>
+<respcondition title="other" >
+<conditionvar>
+<other/>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="other"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="right1" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Yes correct, the alternate spelling way is "Sulphur / sulphur".]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="right2" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Yes correct, the alternate spelling way is "Sulfur / sulfur".]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="other" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Sorry the question was how to spell the element "S", either "Sulfur" or "Sulphur".]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+<!--
+<item title="009N Chemistry - Ranking Q 1.standard" ident="2789690704607769">
+<itemmetadata>
+<qmd_itemtype>Ranking</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>LibreEOL</qmd_toolvendor>
+<qmd_topic>DDB English version\Tutorial on using the system</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><FONT color=blue>Rank the different gases from the noble gas column from top head number 1 to the 6th at the bottom place.</FONT><BR \></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>This is a <B><I>Ranking question</B></I>. Like the previous one, you need to select within the small pop-up menu the rank position of the country.<BR \></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<material>
+<mattext texttype="text/html"><![CDATA[Helium gas]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">1st</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">2nd</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">3rd</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">4th</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">5th</mattext>
+</material>
+</response_label>
+<response_label ident="F">
+<material>
+<mattext texttype="text/plain">6th</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="2">
+<material>
+<mattext texttype="text/html"><![CDATA[Neon gas]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">1st</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">2nd</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">3rd</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">4th</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">5th</mattext>
+</material>
+</response_label>
+<response_label ident="F">
+<material>
+<mattext texttype="text/plain">6th</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="3">
+<material>
+<mattext texttype="text/html"><![CDATA[Argon gas]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">1st</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">2nd</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">3rd</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">4th</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">5th</mattext>
+</material>
+</response_label>
+<response_label ident="F">
+<material>
+<mattext texttype="text/plain">6th</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="4">
+<material>
+<mattext texttype="text/html"><![CDATA[Krypton gas]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">1st</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">2nd</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">3rd</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">4th</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">5th</mattext>
+</material>
+</response_label>
+<response_label ident="F">
+<material>
+<mattext texttype="text/plain">6th</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="5">
+<material>
+<mattext texttype="text/html"><![CDATA[Xenon gas]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">1st</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">2nd</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">3rd</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">4th</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">5th</mattext>
+</material>
+</response_label>
+<response_label ident="F">
+<material>
+<mattext texttype="text/plain">6th</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="6">
+<material>
+<mattext texttype="text/html"><![CDATA[Radon gas]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">1st</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">2nd</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">3rd</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">4th</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">5th</mattext>
+</material>
+</response_label>
+<response_label ident="F">
+<material>
+<mattext texttype="text/plain">6th</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="right" >
+<conditionvar>
+<varequal respident="1" case="No">1st</varequal>
+<varequal respident="2" case="No">2nd</varequal>
+<varequal respident="3" case="No">3rd</varequal>
+<varequal respident="4" case="No">4th</varequal>
+<varequal respident="5" case="No">5th</varequal>
+<varequal respident="6" case="No">6th</varequal>
+</conditionvar>
+<setvar action="Set">6</setvar>
+<displayfeedback linkrefid="right"/>
+</respcondition>
+<respcondition title="wrong" >
+<conditionvar>
+<other/>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="wrong"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="right" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[You have perfectly top-down rebuilt the rare or noble gas column of the periodic table!]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="wrong" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Too bad, better getting back to the nobel gas family ...]]></mattext>
+</material>
+</itemfeedback>
+</item>
+-->
+<!--
+<item title="009N Chemistry - Ranking Q 2.graph" ident="6416968120768715">
+<itemmetadata>
+<qmd_itemtype>Ranking</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>LibreEOL</qmd_toolvendor>
+<qmd_topic>DDB English version\Tutorial on using the system</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><FONT color=blue>Rank the different gases from the noble gas column from top head number 1 to the 6th at the bottom place.</FONT><BR \></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>This is a <B><I>Ranking question</B></I>. Like the previous one, but in that case, it is presented as a drag-and-drop question ...<BR \></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<material>
+<mattext texttype="text/html"><![CDATA[Helium gas]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">1st</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">2nd</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">3rd</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">4th</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">5th</mattext>
+</material>
+</response_label>
+<response_label ident="F">
+<material>
+<mattext texttype="text/plain">6th</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="2">
+<material>
+<mattext texttype="text/html"><![CDATA[Neon gas]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">1st</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">2nd</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">3rd</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">4th</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">5th</mattext>
+</material>
+</response_label>
+<response_label ident="F">
+<material>
+<mattext texttype="text/plain">6th</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="3">
+<material>
+<mattext texttype="text/html"><![CDATA[Argon gas]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">1st</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">2nd</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">3rd</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">4th</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">5th</mattext>
+</material>
+</response_label>
+<response_label ident="F">
+<material>
+<mattext texttype="text/plain">6th</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="4">
+<material>
+<mattext texttype="text/html"><![CDATA[Krypton gas]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">1st</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">2nd</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">3rd</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">4th</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">5th</mattext>
+</material>
+</response_label>
+<response_label ident="F">
+<material>
+<mattext texttype="text/plain">6th</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="5">
+<material>
+<mattext texttype="text/html"><![CDATA[Xenon gas]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">1st</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">2nd</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">3rd</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">4th</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">5th</mattext>
+</material>
+</response_label>
+<response_label ident="F">
+<material>
+<mattext texttype="text/plain">6th</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="6">
+<material>
+<mattext texttype="text/html"><![CDATA[Radon gas]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">1st</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">2nd</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">3rd</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">4th</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">5th</mattext>
+</material>
+</response_label>
+<response_label ident="F">
+<material>
+<mattext texttype="text/plain">6th</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="right" >
+<conditionvar>
+<varequal respident="1" case="No">1st</varequal>
+<varequal respident="2" case="No">2nd</varequal>
+<varequal respident="3" case="No">3rd</varequal>
+<varequal respident="4" case="No">4th</varequal>
+<varequal respident="5" case="No">5th</varequal>
+<varequal respident="6" case="No">6th</varequal>
+</conditionvar>
+<setvar action="Set">6</setvar>
+<displayfeedback linkrefid="right"/>
+</respcondition>
+<respcondition title="wrong" >
+<conditionvar>
+<other/>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="wrong"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="right" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[You have perfectly top-down rebuilt the rare or noble gas column of the periodic table!]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="wrong" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Too bad, better getting back to the nobel gas family ...]]></mattext>
+</material>
+</itemfeedback>
+</item>
+-->
+<!--
+<item title="010N Europe - Drag and Drop" ident="3284483436530807">
+<itemmetadata>
+<qmd_itemtype>Hot Spot</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>LibreEOL</qmd_toolvendor>
+<qmd_topic>DDB English version\Tutorial on using the system</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><FONT color=blue>Place the 5 different flags on the apprpriate country on the map below, the original CD-Rom EChemTest cover map.</FONT><BR \></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>This is a <STRONG><EM>Drag and Drop question</EM></STRONG>. You are supposed to move the mouse cursor on the bottom left corner where they are 5 flags located. Then right-click and maintain on one of the flag, drag the mouse cursor to the appropriate spot on the map, and release the right button. Do it again for the 5 options presented here. At any time you can change your mind, by simply click-drag-move-release one flag from one place to another.<BR \></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/plain">
+Multiple Drag and Drop questions are not yet supported
+</mattext>
+</material>
+</presentation>
+</item>
+-->
+<!--
+<item title="011N Chemistry - Matrix Q" ident="4225439573507165">
+<itemmetadata>
+<qmd_itemtype>Matrix</qmd_itemtype>
+<qmd_maximumscore>4</qmd_maximumscore>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>LibreEOL</qmd_toolvendor>
+<qmd_topic>DDB English version\Tutorial on using the system</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><FONT color=blue>Select the appropriate state of the matter for each compound from the left list.</FONT><BR \></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>This is a <B><I>Matrix question</B></I>. You are supposed to select the correct option for each line "statement" - similar to a mutlitple choices question with different statements in the same question. If you want to change your mind, re-clicking on new item.<BR \></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<material>
+<mattext texttype="text/html"><![CDATA[Salt]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">Solid cristal</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">Liquid</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">Gas</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">Solid amorphous</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="2">
+<material>
+<mattext texttype="text/html"><![CDATA[Vinager]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">Solid cristal</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">Liquid</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">Gas</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">Solid amorphous</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="3">
+<material>
+<mattext texttype="text/html"><![CDATA[Chocolate]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">Solid cristal</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">Liquid</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">Gas</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">Solid amorphous</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="4">
+<material>
+<mattext texttype="text/html"><![CDATA[Diamond]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">Solid cristal</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">Liquid</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">Gas</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">Solid amorphous</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Add">1</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" continue="Yes">
+<conditionvar>
+<varequal respident="2">B</varequal>
+</conditionvar>
+<setvar action="Add">1</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" continue="Yes">
+<conditionvar>
+<varequal respident="3">D</varequal>
+</conditionvar>
+<setvar action="Add">1</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" continue="Yes">
+<conditionvar>
+<varequal respident="4">C</varequal>
+</conditionvar>
+<setvar action="Add">1</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+</item>
+-->
+
+<item title="999N Training Test completed" ident="0540901719549516">
+<itemmetadata>
+<qmd_itemtype>Explanation</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>LibreEOL</qmd_toolvendor>
+<qmd_topic>DDB English version\Tutorial on using the system</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>The Training Test is now completed.<BR \>Was this test useful for you ? we hope so.<BR \>Click on "Proceed" to first review your answers and the question feedbacks of the Training test, then "Home" to access the Selection Window and start another Assessment if available with your account.<BR \></P>]]></mattext>
+</material>
+</presentation>
+</item>
+
+<!--
+<item title="Copy of 004N Chemistry - Matching Q" ident="2547619559586703">
+<itemmetadata>
+<qmd_itemtype>Pull-down list</qmd_itemtype>
+<qmd_maximumscore>5</qmd_maximumscore>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>LibreEOL</qmd_toolvendor>
+<qmd_topic>DDB English version\Tutorial on using the system</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><FONT color=blue>Match the following definition with the corresponding scientific awarded with the Nobel Price&nbsp;... </FONT><BR \></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>This is a <B><I>Matching question</B></I>. Drag the mouse on the small box (right of the list), click on the field, select your answer, and click on the one that seems correct to you. Once you have finished, you can change your mind by repeating exactly the same procedure, and select a different answer.<BR \></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<material>
+<mattext texttype="text/html"><![CDATA[in Chemistry in 1959 for the discovery of Polarography in 1922.<br>]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">Jaroslav Heyrovsky (1890-1967), Czech Chemist</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">Albert Szent-Györgyi (1893-1986), Hungarian Biochemist</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">Odd Hassel (1897-1981), Norwegian Chemist</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="2">
+<material>
+<mattext texttype="text/html"><![CDATA[in Medicine in 1937 for the discovery of the Ascorbic Acid "Vitamin C".<br>]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">Jaroslav Heyrovsky (1890-1967), Czech Chemist</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">Albert Szent-Györgyi (1893-1986), Hungarian Biochemist</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">Odd Hassel (1897-1981), Norwegian Chemist</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="3">
+<material>
+<mattext texttype="text/html"><![CDATA[in Chemistry in 1969 with D. Barton (UK) for the research linking electron diffraction and molecular conformation.<br>]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">Jaroslav Heyrovsky (1890-1967), Czech Chemist</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">Albert Szent-Györgyi (1893-1986), Hungarian Biochemist</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">Odd Hassel (1897-1981), Norwegian Chemist</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Add">1</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" continue="Yes">
+<conditionvar>
+<varequal respident="2">B</varequal>
+</conditionvar>
+<setvar action="Add">1</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" continue="Yes">
+<conditionvar>
+<varequal respident="3">A</varequal>
+</conditionvar>
+<setvar action="Add">1</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+</item>
+-->
+
+</questestinterop>
+
+

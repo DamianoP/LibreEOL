@@ -7,7 +7,7 @@
  * Desc: Student's Homepage
  */
 
-global $user;
+global $user, $config;
 //unset($_SESSION['idSet']);
 ?>
 
@@ -35,6 +35,9 @@ global $user;
                     array_push($readedSubjects, $subject['fkSubject']);
                 }
             }
+	    if($config['dbName']=="echemtest"){
+		echo '<li><a class="showSubjectInfoAndExams" value="demotest" href="?page=student/demotest">' . ttDemoTest .'</a></li>';
+	    }
             echo '</ul></div>';
         }else{
             die($db->getError());

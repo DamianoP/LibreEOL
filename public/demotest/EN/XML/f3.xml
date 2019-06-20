@@ -1,0 +1,2595 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE questestinterop SYSTEM "ims_qtiasiv1p2.dtd">
+
+<questestinterop>
+<scale>100</scale>
+
+
+<item title="001 5. The following schematic di" ident="3830338978523702">
+<itemmetadata>
+<qmd_itemtype>Text Match</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB English version\General Chemistry 1 v400en</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[The following schematic diagram represents the fractional distillation of crude oil (crude petroleum) in industry. The letters A to E denote different products obtained from the distillation. <BR><BR>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><IMG border=0 hspace=0 alt="" src="../topicresources/413605864/g1raffin_en_col.jpg" width=306 height=226><BR></P></IMG>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Question: Which one of the fractions A to E has the lowest boiling point range?</P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[Answer: ]]></mattext>
+</material>
+<response_str ident="1" rcardinality="Single">
+<render_fib fibtype="String" prompt="Box" rows="1" columns="21" />
+</response_str>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1" case="No">A</varequal>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="default" >
+<conditionvar>
+<other/>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="default"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="default" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="002 14." ident="5056165671904093">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB English version\General Chemistry 1 v400en</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[Which one of the substances listed below is <I>not</I> an element ?<BR><BR>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Water<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Copper<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Hydrogen<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Iron<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Oxygen<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="003 42." ident="7794654484095093">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB English version\General Chemistry 1 v400en</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[What is the change in oxidation number (oxidation state, valency) of manganese in the reaction represented by the following equation:<BR><BR>
+<CENTER>MnO<SUB>2</SUB>&nbsp;+&nbsp;4HCl&nbsp;&nbsp;→&nbsp;&nbsp;MnCl<SUB>2</SUB>&nbsp;+&nbsp;Cl<SUB>2</SUB>&nbsp;+&nbsp;2H<SUB>2</SUB>O<BR></CENTER><BR><BR>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[  2 <BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[  3 <BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[  4 <BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[  5 <BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[  6 <BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="004 47." ident="5639810697773701">
+<itemmetadata>
+<qmd_itemtype>Pull-down list</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB English version\General Chemistry 1 v400en</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[For each of these statements, select whether it is True or False.<BR><BR>]]></mattext>
+</material>
+<response_lid ident="1">
+<material>
+<mattext texttype="text/html"><![CDATA[Ions are particles with an electric charge.<BR>]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">True</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">False</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="2">
+<material>
+<mattext texttype="text/html"><![CDATA[When an atom loses electrons, it becomes a negative ion.&nbsp;&nbsp;<BR>]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">True</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">False</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="3">
+<material>
+<mattext texttype="text/html"><![CDATA[There are always electrons in the negative ion.<BR>]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">True</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">False</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="4">
+<material>
+<mattext texttype="text/html"><![CDATA[Alkali metals are reactive and form the +1 ions.<BR>]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">True</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">False</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="5">
+<material>
+<mattext texttype="text/html"><![CDATA[Positive and negative ions attract each other.<BR>]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">True</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">False</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Add">12</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" continue="Yes">
+<conditionvar>
+<varequal respident="2">B</varequal>
+</conditionvar>
+<setvar action="Add">12</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" continue="Yes">
+<conditionvar>
+<varequal respident="3">A</varequal>
+</conditionvar>
+<setvar action="Add">12</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" continue="Yes">
+<conditionvar>
+<varequal respident="4">A</varequal>
+</conditionvar>
+<setvar action="Add">12</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="4" continue="Yes">
+<conditionvar>
+<varequal respident="5">A</varequal>
+</conditionvar>
+<setvar action="Add">12</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+<respcondition title="default" >
+<conditionvar>
+<or>
+<other/>
+<not>
+<other/>
+</not>
+</or>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="default"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="4" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="default" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="005 55." ident="5856882275311886">
+<itemmetadata>
+<qmd_itemtype>Multiple Response</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB English version\General Chemistry 1 v400en</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[Which of the following substances are liquid at room temperature and standard pressure?<BR><BR>]]></mattext>
+</material>
+<response_lid ident="1" rcardinality="Multiple">
+<render_choice shuffle="Yes" minnumber="1" maxnumber="5">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Carbon monoxide<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Mercury <BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Aluminium <BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Water <BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Ethanol <BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="1" continue="Yes">
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Add">20</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="3" continue="Yes">
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Add">20</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="4" continue="Yes">
+<conditionvar>
+<varequal respident="1">E</varequal>
+</conditionvar>
+<setvar action="Add">20</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+<varequal respident="1">B</varequal>
+<varequal respident="1">C</varequal>
+<varequal respident="1">D</varequal>
+<varequal respident="1">E</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="4" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="006 58." ident="5943094039018023">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB English version\General Chemistry 1 v400en</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[Which of the following does not lead to an increase in the nitrogen content of soil?<BR><BR>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Growing wheat in the soil<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;The action of <I>Clostridium</I> and <I>Azobacteria</I> bacteria<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Growing leguminous plants in the soil<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Applying nitrogenous fertilisers<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Rainfall and snowfall<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="007 68.The process whereby high-m" ident="5998641193038106">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB English version\General Chemistry 1 v400en</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[The process whereby hydrocarbons of high molecular mass are converted into hydrocarbons of low molecular mass is called:<BR><BR>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Cracking<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Decomposition<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Disintegration<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Condensation<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Fractional distillation<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="008 72." ident="0809677407829086">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB English version\General Chemistry 1 v400en</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[The ability to conduct electricity readily is a property of ...<BR><BR>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;metals<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;non-metals<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;semiconductors<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;halogens<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;glass<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="009 73." ident="6334346721251582">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB English version\General Chemistry 1 v400en</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[How is the presence of ions in an aqueous solution most directly detected?<BR><BR>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;By finding out if it conducts electricity.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;By measuring the density of the solution and comparing it with the density of pure water.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;By measuring whether the solution has an electric charge.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;By evaporating the solution and testing the residue for conductivity.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;By adding an ionic substance to the solution and seeing whether there is a reaction.<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="010 78." ident="7590003537713583">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB English version\General Chemistry 1 v400en</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[The main component of paper is ...<BR><BR>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Hemicellulose<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Cellophane<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Celluloid<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Cellulose<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Clay<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="3" >
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="011 83." ident="9329528093382568">
+<itemmetadata>
+<qmd_itemtype>Numeric</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB English version\General Chemistry 1 v400en</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[A sample of an aqueous sodium chloride solution containing 8&nbsp;g of sodium chloride in 100&nbsp;ml of solution is concentrated to half of its original volume.<BR>How many grams of sodium chloride are contained in 25&nbsp;ml of the new solution?<BR><BR>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<img class="extraIcon calculator" src="themes/default/images/QEc.png">]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[Answer&nbsp;(g): ]]></mattext>
+</material>
+<response_num ident="1" rcardinality="Single">
+<render_fib fibtype="Decimal" prompt="Box" rows="1" columns="4" maxchars="4"/>
+</response_num>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="1" >
+<conditionvar>
+<varequal respident="1">4.0</varequal>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="012 92." ident="8445613615369036">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB English version\General Chemistry 1 v400en</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[The relative atomic mass of carbon (C) is about 12. Approximately, how many atoms are contained in&nbsp;6&nbsp;g of carbon?<BR><BR>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="No">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;3×10<SUP>7</SUP><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;3×10<SUP>9</SUP><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;3×10<SUP>12</SUP><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;3×10<SUP>14</SUP><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;3×10<SUP>23</SUP><BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="4" >
+<conditionvar>
+<varequal respident="1">E</varequal>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="4" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="013 117." ident="2111210465665754">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB English version\General Chemistry 1 v400en</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[What is the minimum weight of sodium chloride (NaCl) that is needed to prepare 7.10&nbsp;g of chlorine ?<BR><BR>Relative atomic masses:&nbsp;&nbsp;Na&nbsp;=&nbsp;23.0&nbsp;;&nbsp;Cl&nbsp;=&nbsp;35.5<BR><BR>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<img class="extraIcon calculator" src="themes/default/images/QEc.png">]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="No">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;&nbsp;5.9 g<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;&nbsp;7.1 g<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[11.7 g<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[12.7 g<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[14.2 g<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="2" >
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="014 120." ident="0001267282404616">
+<itemmetadata>
+<qmd_itemtype>Pull-down list</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB English version\General Chemistry 1 v400en</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[For each of the following statements, you are asked to decide whether it is <I>True</I> or <I>False</I>.<BR><BR>]]></mattext>
+</material>
+<response_lid ident="1">
+<material>
+<mattext texttype="text/html"><![CDATA[There are only three atoms in one ammonia molecule (NH<SUB>3</SUB>). <BR>]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">True</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">False</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="2">
+<material>
+<mattext texttype="text/html"><![CDATA[The formula of hydrogen chloride is HClO<SUB>4</SUB>. <BR>]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">True</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">False</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="3">
+<material>
+<mattext texttype="text/html"><![CDATA[Sodium hydroxide (NaOH) is an acid. <BR>]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">True</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">False</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="4">
+<material>
+<mattext texttype="text/html"><![CDATA[Sodium chloride readily dissolves in water. <BR>]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">True</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">False</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="5">
+<material>
+<mattext texttype="text/html"><![CDATA[CuSO<SUB>4</SUB> is called copper sulphate. <BR>]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">True</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">False</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Add">12</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" continue="Yes">
+<conditionvar>
+<varequal respident="2">B</varequal>
+</conditionvar>
+<setvar action="Add">12</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" continue="Yes">
+<conditionvar>
+<varequal respident="3">B</varequal>
+</conditionvar>
+<setvar action="Add">12</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" continue="Yes">
+<conditionvar>
+<varequal respident="4">A</varequal>
+</conditionvar>
+<setvar action="Add">12</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="4" continue="Yes">
+<conditionvar>
+<varequal respident="5">A</varequal>
+</conditionvar>
+<setvar action="Add">12</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+<respcondition title="default" >
+<conditionvar>
+<or>
+<other/>
+<not>
+<other/>
+</not>
+</or>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="default"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="4" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="default" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="015 126." ident="5724476296697486">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB English version\General Chemistry 1 v400en</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[The graph below shows the solubilities (in g solute/100&nbsp;ml water) of sodium nitrate and sodium chloride at different temperatures. Refer to it to answer this question.<BR><BR>100&nbsp;g of sodium nitrate and 100&nbsp;g of sodium chloride are added to 100&nbsp;cm<SUP>3</SUP> of water at 60°C. The mixture is stirred until no more solid dissolves. It is then filtered, keeping the temperature at 60°C.<BR><BR>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><IMG border=0 hspace=0 alt="" src="../topicresources/413605864/g125003_en_col.jpg" width=351 height=262><BR></P></IMG>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[What is the residue left on the filter paper ?<BR><BR>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="No">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;about 63&nbsp;g of solid sodium chloride<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;about 37&nbsp;g of solid sodium chloride<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;about 100&nbsp;g of solid sodium nitrate<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;about 23&nbsp;g of solid sodium nitrate<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;no solid substance]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="016 137." ident="0098394549266703">
+<itemmetadata>
+<qmd_itemtype>Multiple Response</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB English version\General Chemistry 1 v400en</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[From the following, select the <B>three</B> bases that are most commonly used in the chemical industry.<BR><BR>]]></mattext>
+</material>
+<response_lid ident="1" rcardinality="Multiple">
+<render_choice shuffle="Yes" minnumber="1" maxnumber="5">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Ammonia<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Calcium hydroxide<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Sodium hydroxide<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Potassium hydroxide<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Methyl amine<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="3" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+<varequal respident="1">B</varequal>
+<varequal respident="1">C</varequal>
+<varequal respident="1">D</varequal>
+<varequal respident="1">E</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="header" continue="Yes">
+<conditionvar>Unrecognized or unsupported test method
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="header"/>
+</respcondition>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Add">20</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" continue="Yes">
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Add">20</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" continue="Yes">
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Add">20</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="header" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="017 146." ident="4561544872687417">
+<itemmetadata>
+<qmd_itemtype>Multiple Response</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB English version\General Chemistry 1 v400en</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[Apart from carbon, proteins always contain:<BR><BR>]]></mattext>
+</material>
+<response_lid ident="1" rcardinality="Multiple">
+<render_choice shuffle="Yes" minnumber="1" maxnumber="5">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Nitrogen<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Hydrogen<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Oxygen<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Sulphur<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Halogens<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="3" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+<varequal respident="1">B</varequal>
+<varequal respident="1">C</varequal>
+<varequal respident="1">D</varequal>
+<varequal respident="1">E</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="header" continue="Yes">
+<conditionvar>Unrecognized or unsupported test method
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="header"/>
+</respcondition>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Add">20</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" continue="Yes">
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Add">20</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" continue="Yes">
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Add">20</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="header" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="018 156. According to the chemical" ident="2491102722524263">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB English version\General Chemistry 1 v400en</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[According to the chemical reactivity series, metals can displace other metals from their solutions.Which of the following metals will displace copper from its solution?<BR><BR>
+<CENTER>Gold&nbsp;-&nbsp;Iron&nbsp;-&nbsp;Magnesium&nbsp;-&nbsp;Silver&nbsp;-&nbsp;Zinc</CENTER><BR><BR>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Iron, magnesium and zinc<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;All metals listed<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Gold and silver only<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Iron and zinc only<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Zinc only<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="019 160. An aqueous solution of sodium io" ident="5514532779061461">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB English version\General Chemistry 1 v400en</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[An aqueous solution of sodium iodide is electrolysed with platinum electrodes.<BR><BR>What is the main product at the cathode (negative electrode) ?<BR><BR>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;oxygen molecules<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;iodine molecules<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;hydroxide ions (OH<SUP>-</SUP>)<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;sodium atoms<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;hydrogen molecules<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="4" >
+<conditionvar>
+<varequal respident="1">E</varequal>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="4" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="020 162." ident="0693780907841072">
+<itemmetadata>
+<qmd_itemtype>Multiple Response</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB English version\General Chemistry 1 v400en</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[Correct statements about the material known as 'PVC' include: <BR><BR>]]></mattext>
+</material>
+<response_lid ident="1" rcardinality="Multiple">
+<render_choice shuffle="No" minnumber="1" maxnumber="5">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;PVC stands for 'polyvinyl chloride'. <BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;PVC contains carbon. <BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;PVC contains oxygen. <BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;PVC contains chlorine. <BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;When PVC is burnt, only carbon dioxide and water are produced. <BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="2" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+<varequal respident="1">B</varequal>
+<varequal respident="1">C</varequal>
+<varequal respident="1">D</varequal>
+<varequal respident="1">E</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="header" continue="Yes">
+<conditionvar>Unrecognized or unsupported test method
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="header"/>
+</respcondition>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Add">20</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" continue="Yes">
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Add">20</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="3" continue="Yes">
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Add">20</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="header" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="021 96. The two nonmetals in the f" ident="9929045770516729">
+<itemmetadata>
+<qmd_itemtype>Multiple Response</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB English version\General Chemistry 1 v400en</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[The two non-metals in the following group are:<BR><BR>]]></mattext>
+</material>
+<response_lid ident="1" rcardinality="Multiple">
+<render_choice shuffle="Yes" minnumber="1" maxnumber="5">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;iodine<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;argon<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;potassium<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;iron<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;uranium<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="2" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+<varequal respident="1">B</varequal>
+<varequal respident="1">C</varequal>
+<varequal respident="1">D</varequal>
+<varequal respident="1">E</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="header" continue="Yes">
+<conditionvar>Unrecognized or unsupported test method
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="header"/>
+</respcondition>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Add">30</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" continue="Yes">
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Add">30</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="header" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="022 166. The following are importan" ident="2769971769759732">
+<itemmetadata>
+<qmd_itemtype>Pull-down list</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB English version\General Chemistry 1 v400en</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[The following are important methods of separation used in chemistry:<BR><BR>
+<CENTER>Chromatography&nbsp;-&nbsp;Crystallisation&nbsp;-&nbsp;Distillation&nbsp;-&nbsp;Filtration&nbsp;-&nbsp;Sublimation</CENTER><BR>Select the best method for the separation of the substances in each of the following cases. <BR><BR>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<BR>]]></mattext>
+</material>
+<response_lid ident="1">
+<material>
+<mattext texttype="text/html"><![CDATA[Separating sand from a sand/salt mixture.]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">Chromatography</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">Crystallisation</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">Distillation</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">Filtration</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">Sublimation</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="2">
+<material>
+<mattext texttype="text/html"><![CDATA[Separating water from a sample of ink.]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">Chromatography</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">Crystallisation</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">Distillation</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">Filtration</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">Sublimation</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="3">
+<material>
+<mattext texttype="text/html"><![CDATA[Separating a dye from a mixture of dyes.]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">Chromatography</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">Crystallisation</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">Distillation</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">Filtration</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">Sublimation</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="4">
+<material>
+<mattext texttype="text/html"><![CDATA[Separating pure iodine from a sample of impure iodine.&nbsp;&nbsp;]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">Chromatography</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">Crystallisation</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">Distillation</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">Filtration</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">Sublimation</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="5">
+<material>
+<mattext texttype="text/html"><![CDATA[Separating ethanol from an sample of ethanol in water.&nbsp;&nbsp;]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">Chromatography</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">Crystallisation</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">Distillation</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">Filtration</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">Sublimation</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Add">12</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" continue="Yes">
+<conditionvar>
+<varequal respident="2">C</varequal>
+</conditionvar>
+<setvar action="Add">12</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" continue="Yes">
+<conditionvar>
+<varequal respident="3">E</varequal>
+</conditionvar>
+<setvar action="Add">12</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" continue="Yes">
+<conditionvar>
+<varequal respident="4">D</varequal>
+</conditionvar>
+<setvar action="Add">12</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="4" continue="Yes">
+<conditionvar>
+<varequal respident="5">C</varequal>
+</conditionvar>
+<setvar action="Add">12</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+<respcondition title="default" >
+<conditionvar>
+<or>
+<other/>
+<not>
+<other/>
+</not>
+</or>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="default"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="4" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="default" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="023 177. When marble pieces are ad" ident="2743097775863060">
+<itemmetadata>
+<qmd_itemtype>Multiple Response</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB English version\General Chemistry 1 v400en</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[When marble pieces are added to hydrochloric acid, the following reaction takes place:<BR><BR>
+<CENTER>CaCO<SUB>3</SUB>(s)&nbsp;+&nbsp;2HCl(aq)&nbsp;&nbsp;&nbsp;→&nbsp;&nbsp;&nbsp;CaCl<SUB>2</SUB>(aq)&nbsp;+&nbsp;H<SUB>2</SUB>O(l)&nbsp;+&nbsp;CO<SUB>2</SUB>(g)<BR></CENTER><BR>Which of the following actions would increase the rate of formation of carbon dioxide?<BR><BR>]]></mattext>
+</material>
+<response_lid ident="1" rcardinality="Multiple">
+<render_choice shuffle="Yes" minnumber="1" maxnumber="5">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Reducing the size of the marble pieces<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Heating the reaction mixture<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Adding water to the reaction mixture<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Using nitric acid instead of hydrochloric acid<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Collecting the carbon dioxide in a gas cylinder<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="2" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+<varequal respident="1">B</varequal>
+<varequal respident="1">C</varequal>
+<varequal respident="1">D</varequal>
+<varequal respident="1">E</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="header" continue="Yes">
+<conditionvar>Unrecognized or unsupported test method
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="header"/>
+</respcondition>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Add">30</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" continue="Yes">
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Add">30</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="header" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="024 180.Compounds that have low melting" ident="1725994857024407">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB English version\General Chemistry 1 v400en</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[Compounds that have high melting points, conduct electricity in the molten phase and are often soluble in water are<BR><BR>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;ionic<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;covalent<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;metallic<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;hydrogen compounds<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;organic<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="025 183." ident="8515757408019899">
+<itemmetadata>
+<qmd_itemtype>Multiple Response</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB English version\General Chemistry 1 v400en</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[From the list, select the gases that can be collected using the apparatus shown in the diagram on the left.<BR><BR>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><IMG border=0 hspace=0 alt="" src="../topicresources/413605864/g135001_en_col.jpg" width=207 height=221><BR></P></IMG>]]></mattext>
+</material>
+<response_lid ident="1" rcardinality="Multiple">
+<render_choice shuffle="Yes" minnumber="1" maxnumber="5">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Hydrogen<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Ammonia<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Methane<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Carbon dioxide<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Chlorine<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="3" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+<varequal respident="1">B</varequal>
+<varequal respident="1">C</varequal>
+<varequal respident="1">D</varequal>
+<varequal respident="1">E</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="header" continue="Yes">
+<conditionvar>Unrecognized or unsupported test method
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="header"/>
+</respcondition>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Add">20</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" continue="Yes">
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Add">20</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" continue="Yes">
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Add">20</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="header" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="026 184." ident="3114717281191270">
+<itemmetadata>
+<qmd_itemtype>Multiple Response</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB English version\General Chemistry 1 v400en</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[Oxides which produce alkaline solutions when mixed with water include:<BR><BR>]]></mattext>
+</material>
+<response_lid ident="1" rcardinality="Multiple">
+<render_choice shuffle="Yes" minnumber="1" maxnumber="5">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Na<SUB>2</SUB>O<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;CaO<SUB> </SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;SO<SUB>2</SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Al<SUB>2</SUB>O<SUB>3</SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;SiO<SUB>2</SUB><BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="2" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+<varequal respident="1">B</varequal>
+<varequal respident="1">C</varequal>
+<varequal respident="1">D</varequal>
+<varequal respident="1">E</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="header" continue="Yes">
+<conditionvar>Unrecognized or unsupported test method
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="header"/>
+</respcondition>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Add">30</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" continue="Yes">
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Add">30</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="header" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="027 192." ident="4284381845876443">
+<itemmetadata>
+<qmd_itemtype>Numeric</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB English version\General Chemistry 1 v400en</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[Calculate how many moles of ethanoic acid (CH<SUB>3</SUB>COOH: relative molecular mass 60) may be produced from 92&nbsp;g of ethanol (CH<SUB>3</SUB>CH<SUB>2</SUB>OH: relative molecular mass 46).<BR><BR>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<img class="extraIcon calculator" src="themes/default/images/QEc.png">]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[Answer: ]]></mattext>
+</material>
+<response_num ident="1" rcardinality="Single">
+<render_fib fibtype="Decimal" prompt="Box" rows="1" columns="14" maxchars="14"/>
+</response_num>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">2.0</varequal>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" >
+<conditionvar>
+<or>
+<vargte respident="1">1.95</vargte>
+<varlte respident="1">2.0</varlte>
+<vargte respident="1">2.0</vargte>
+<varlte respident="1">2.05</varlte>
+</or>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" >
+<conditionvar>
+<unanswered respident="1"/>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="028 193.The reaction between zinc and hy" ident="1244243113684285">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB English version\General Chemistry 1 v400en</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[The reaction between zinc (Zn) and hydrochloric acid produces...<BR><BR>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;zinc hydride and chlorine<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;zinc hypochlorite<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;zinc chloride and hydrogen<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;zinc hydride and water<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;zinc hydroxide and chlorine<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="2" >
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="029 199." ident="0794045479880252">
+<itemmetadata>
+<qmd_itemtype>Pull-down list</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB English version\General Chemistry 1 v400en</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[Complete the following statements by choosing the appropriate terms under the selector button.<BR><BR>]]></mattext>
+</material>
+<response_lid ident="1">
+<material>
+<mattext texttype="text/html"><![CDATA[A substance which conducts electricity  in aqueous solution is a(n)&nbsp;... <BR>]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">anode</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">electrolyte</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">cathode</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">electric current</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">electrolysis</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="2">
+<material>
+<mattext texttype="text/html"><![CDATA[The process by which an electric current produces a chemical change is&nbsp;... <BR>]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">anode</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">electrolyte</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">cathode</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">electric current</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">electrolysis</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="3">
+<material>
+<mattext texttype="text/html"><![CDATA[The electrode at which oxidation occurs is called a(n)&nbsp;... <BR>]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">anode</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">electrolyte</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">cathode</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">electric current</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">electrolysis</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="4">
+<material>
+<mattext texttype="text/html"><![CDATA[The electrode at which reduction occurs is called a(n)&nbsp;... <BR>]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">anode</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">electrolyte</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">cathode</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">electric current</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">electrolysis</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="5">
+<material>
+<mattext texttype="text/html"><![CDATA[The flow or movement of electrons through a conductor is a(n)&nbsp;... <BR>]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">anode</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">electrolyte</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">cathode</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">electric current</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">electrolysis</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Add">12</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" continue="Yes">
+<conditionvar>
+<varequal respident="2">E</varequal>
+</conditionvar>
+<setvar action="Add">12</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" continue="Yes">
+<conditionvar>
+<varequal respident="3">A</varequal>
+</conditionvar>
+<setvar action="Add">12</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" continue="Yes">
+<conditionvar>
+<varequal respident="4">D</varequal>
+</conditionvar>
+<setvar action="Add">12</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="4" continue="Yes">
+<conditionvar>
+<varequal respident="5">B</varequal>
+</conditionvar>
+<setvar action="Add">12</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+<respcondition title="default" >
+<conditionvar>
+<or>
+<other/>
+<not>
+<other/>
+</not>
+</or>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="default"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="4" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="default" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="030 200." ident="9092747368274005">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB English version\General Chemistry 1 v400en</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[Which of the following would yield the greatest amount of useful energy ?<BR><BR>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;1&nbsp;kg of uranium in a nuclear plant.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;1&nbsp;kg of water dropped 100&nbsp;m in a hydroelectric plant.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;1&nbsp;kg of grass fed to a horse working in the field.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;1&nbsp;h of sunshine over a photo voltaic plant of 1&nbsp;km<SUP>2</SUP> surface.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;1&nbsp;litre of petrol (gasoline) used as fuel in a motor.<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+</item>
+
+
+</questestinterop>
+
+

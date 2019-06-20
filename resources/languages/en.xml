@@ -216,7 +216,7 @@
   <text id="ttLogout">LOGOUT</text>
   <!-- ======================== M ======================== -->
   <text id="ttMailLostPassword">To reset your account password please click the following link:\n\n_LINK_\n\nIf you have not request a password reset ignore this email.</text>
-  <text id="ttMailCredentials">Hi _USERNAME_,\nBelow are shown your personal access credentials:\n\nE-mail : _USEREMAIL_ \n Password : _USERPASSWORD_</text>
+  <text id="ttMailCredentials">Dear _USERNAME_ ,\nYour password associated to the account _USEREMAIL_ has been modified according to your request.\n\nThe LibreEOL Team.</text>
   <text id="ttMailNewTeacher">Welcome to _SYSTEMNAME_.\nTo activate your accunt please click the following link and set your personal account's password:</text>
   <text id="ttMainLanguage">Main Language</text>
   <text id="ttManage">Manage</text>
@@ -613,4 +613,8 @@
   <text id="ttCertificateEmailSended">the email was successfully sent</text>
   <text id="ttCertificateGeneratedProblem">The certificate was not generated!</text>
   <text id="ttCertificatePoint">The student score is too low and can not be issued a certificate.</text>
+  <text id="ttPrivacy1">I read and accept the</text>
+  <text id="ttPrivacy2">ECTN Privacy Policy</text>
+  <text id="ttPrivacy3">I wish to be informed on the possibility of obtaining an Individual Proficiency Certificate</text>
+  <text id="ttDemoTest">Demo test</text>
 </language>

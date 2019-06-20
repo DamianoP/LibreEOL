@@ -49,7 +49,7 @@ class sqlDB {
     public function qLogin($email, $password){
         $mysqli = $this->connect();
 
-        $query = "SELECT idUser, name, surname, email, password, role, alias, `group`, `subgroup`
+        $query = "SELECT idUser, name, surname, email, password, role, alias, `group`, `subgroup`,`privacy`
                   FROM Users
                   JOIN Languages
                       ON fkLanguage = idLanguage
@@ -70,7 +70,7 @@ class sqlDB {
         if (!$stmt->execute()) {
             echo 'Execute failed: (' . $stmt->errno . ') ' . $stmt->error;
         }
-        $stmt->bind_result($i, $n, $s, $e, $p, $r, $l,$g,$y);
+        $stmt->bind_result($i, $n, $s, $e, $p, $r, $l,$g,$y,$privacy);
         if($stmt->fetch()){
             $result = array(
                 'id'        => $i,
@@ -81,6 +81,7 @@ class sqlDB {
                 'role'      => $r,
                 'group'     => $g,
                 'subgroup'  => $y);
+            $_SESSION['privacy']=$privacy;
             // AGGIUNTA DAMIANO LOGIN TIME lastLogin
             /*
             $dt = new DateTime(); 
@@ -97,6 +98,22 @@ class sqlDB {
         return $result;
     }
 
+  public function qAcceptPrivacy(){
+    global $user;
+    $ack = true;
+    $this->result = null;
+    $this->mysqli = $this->connect();
+    try{
+      // ci stava anche AND U.subGroup = '$subGroup
+        $query = "UPDATE `Users` SET `privacy`=1 WHERE `idUser`='$user->id'";
+        $this->execQuery($query);
+        $_SESSION["privacy"]=1;
+    }catch(Exception $ex){
+        $ack = false;
+        $log->append(__FUNCTION__." : ".$this->getError());
+    }
+    return $ack;
+  }
 /*******************************************************************
 *                            Subjects                              *
 *******************************************************************/
@@ -1332,7 +1349,7 @@ class sqlDB {
                     ORDER BY datetime DESC";
           }else{
             $query = "SELECT idExam, Exams.name exam, status, Subjects.name subject,
-                           TestSettings.name settings, password, datetime, idSubject, idTestSetting, scale
+                           TestSettings.name settings, password, datetime, idSubject, idTestSetting, scale,Exams.group,Exams.subgroup as EsubG
                     FROM
                         Exams
                             LEFT JOIN Subjects ON Exams.fkSubject = Subjects.idSubject
@@ -1350,6 +1367,36 @@ class sqlDB {
 
         return $ack;
     }
+    public function qGetSubGroupName($idSubgroup){
+        global $log, $user;
+        $ack = true;
+        $this->result = null;
+        $this->mysqli = $this->connect();
+        try{
+            $query = "SELECT NameSubGroup FROM SubGroup WHERE idSubgroup ='$idSubgroup'";
+            $this->execQuery($query);
+        }catch(Exception $ex){
+            $ack = false;
+            $log->append(__FUNCTION__." : ".$this->getError());
+        }
+        return $ack;
+    }
+
+
+    public function qCountStudentForExam($idExam){
+        global $log;
+        $ack = true;
+        $this->result = null;
+        $this->mysqli = $this->connect();
+        try{
+            $query = "SELECT `fkExam`, COUNT(*) as numberOfStudents FROM Tests WHERE `fkExam` ='$idExam' GROUP BY `fkExam`";
+            $this->execQuery($query);
+        }catch(Exception $ex){
+            $ack = false;
+            $log->append(__FUNCTION__." : ".$this->getError());
+        }
+        return $ack;
+    }
 
     /**
      * @name    qExamsAvailable
@@ -1359,16 +1406,16 @@ class sqlDB {
      * @descr   Get list of exams for requested subject
      */
     public function qExamsAvailable($idSubject, $idUser){
-        global $log;
+        global $log,$user;
         $ack = true;
         $this->result = null;
         $this->mysqli = $this->connect();
-
         try{
             $query = "SELECT *
                       FROM Exams AS E
                       WHERE
                           E.fkSubject = '$idSubject'
+                          AND E.`group`='$user->group' AND E.`subgroup`='$user->subgroup' 
                           AND (
                               ((E.status = 'w' OR E.status = 's') AND NOW() BETWEEN E.regStart AND E.regEnd)
                               OR
@@ -1397,7 +1444,7 @@ class sqlDB {
      * @descr   Get list of available exams for requested teacher
      */
     public function qExamsInProgress($subGroup,$idTeacher=null){
-        global $log;
+        global $log,$user;
         $ack = true;
         $this->result = null;
         $this->mysqli = $this->connect();
@@ -1409,9 +1456,11 @@ class sqlDB {
                       JOIN Users_Subjects AS US ON US.fkSubject = S.idSubject
                       JOIN Users AS U ON U.idUser  = US.fkUser
                       WHERE
-                          E.status != 'a' ";
+                          E.status != 'a'";
+	   if($user->role=="s")
+	     $query .=" AND E.status = 's' AND E.`group`='$user->group' AND E.`subgroup`='$user->subgroup'";
             if($idTeacher != null)
-                $query .= "AND
+                $query .= " AND
                            E.fkSubject IN (SELECT US.fkSubject
                                            FROM Users_Subjects AS US
                                            WHERE
@@ -1440,16 +1489,22 @@ class sqlDB {
      * @descr   Returns true if info was saved successfully, false otherwise
      */
     public function qNewExam($name, $idSubject, $idTestSetting, $datetime, $desc, $regStart, $regEnd, $rooms, $password){
-        global $log;
+        global $log,$user,$config;
         $ack = true;
         $this->result = null;
         $this->mysqli = $this->connect();
-
+	$idUsr=-1;
+        $grp=-1;
+        $sbgrp=-1;
         $queries = array();
         try{
+
+            $idUsr=$user->id;
+            $grp=$user->group;
+            $sbgrp=$user->subgroup;
             $data = $this->prepareData(array($name, $desc));
-            $query = "INSERT INTO Exams (name, datetime, description, regStart, regEnd, password, fkTestSetting, fkSubject)
-                      VALUES ('$data[0]', '$datetime', '$data[1]', $regStart, $regEnd, '$password', '$idTestSetting', '$idSubject')";
+            $query = "INSERT INTO Exams (name, datetime, description, regStart, regEnd, password, fkTestSetting, fkSubject,`group`,`subgroup`,idUsr)
+                      VALUES ('$data[0]', '$datetime', '$data[1]', $regStart, $regEnd, '$password', '$idTestSetting', '$idSubject','$grp','$sbgrp','$idUsr')";
             array_push($queries, $query);
             $query = "SET @examID = LAST_INSERT_ID()";
             array_push($queries, $query);
@@ -1471,6 +1526,30 @@ class sqlDB {
                       WHERE idExam = @examID";
             array_push($queries, $query);
             $this->execTransaction($queries);
+            if($config['dbName']=='echemtest'){
+	     try{
+              $dbGroup=new sqlDB();
+              $dbGroup->qGetGroupAndSubgroupName($user->group,$user->subgroup);
+              $result=$dbGroup->nextRowAssoc();
+              $emailGroup=$result['NameGroup'];
+              $emailSubGroup=$result['NameSubGroup'];
+
+              $to = "echemtest@master-up.it";
+              $subject = "Automatic notification from echemTest";
+              $message =  "New exam created: ".$name.
+                          " \r\n The exam was created by the user: ".$user->email.
+                          " \r\n Exam date: ".$datetime.
+                          " \r\n Group: ".$emailGroup.
+                          " \r\n SubGroup: ".$emailSubGroup;
+              $headers = 'from:' . $user->email . "\r\n" .
+                    'Reply-To:' . $user->email . "\r\n" .
+                    'X-Mailer: PHP/' . phpversion();
+              if (!mail($to, $subject, $message, $headers)) {
+                $log->append("Error, the email has not been sent. New exam:".$name." by ".$user->email." for the date:".$datetime);
+              }
+	  
+	   }catch(Exception $ex){}
+	  }
         }catch(Exception $ex){
             $ack = false;
             $log->append(__FUNCTION__." : ".$this->getError());
@@ -1768,7 +1847,7 @@ class sqlDB {
 
         try{
           
-            $query = "SELECT Tests.idTest,Users.name,Users.surname,Users.email,Tests.timeStart,Tests.timeEnd,TIMESTAMPDIFF(SECOND, Tests.timeStart, Tests.timeEnd) as timeDiff,Tests.scoreTest,Tests.scoreFinal
+            $query = "SELECT Tests.idTest,Users.name,Users.surname,Users.privacy,Users.email,Tests.timeStart,Tests.timeEnd,TIMESTAMPDIFF(SECOND, Tests.timeStart, Tests.timeEnd) as timeDiff,Tests.scoreTest,Tests.scoreFinal
              FROM Tests JOIN Users ON fkUser = idUser 
              WHERE Tests.fkExam = $idExam AND Tests.status='a'";
             $this->execQuery($query);
@@ -10972,14 +11051,21 @@ class sqlDB {
      * @return  Boolean
      * @descr   Returns true if info was saved successfully, false otherwise
      */
-    public function qUpdateStudentInfo($idUser, $name,$surname,$email,$group,$subgroup,$role){
+    public function qUpdateStudentInfo($idUser, $name,$surname,$email,$group,$subgroup,$role,$password){
         global $log;
         $ack = true;
         $this->result = null;
         $this->mysqli = $this->connect();
-
+        if($password!=null){
+	  if($password!=""){
+            $password=trim($password);
+            $password=sha1($password);
+	  }
+        }
+        else
+          $password="";
         try{
-
+          if($password==""){
             $query = "UPDATE Users
                       SET
                           name = '$name',
@@ -10990,13 +11076,26 @@ class sqlDB {
                           role = '$role'
                       WHERE
                           idUser = '$idUser'";
+          }else{
+            $query = "UPDATE Users
+                      SET
+                          name = '$name',
+                          surname = '$surname',
+                          email = '$email',
+                          `group` = '$group',
+                          `subgroup` = '$subgroup',
+                          role = '$role',
+                          password = '$password'
+                      WHERE
+                          idUser = '$idUser'";
+
+          }
 
             $this->execQuery($query);
         }catch(Exception $ex){
             $ack = false;
             $log->append(__FUNCTION__." : ".$this->getError());
         }
-
         return $ack;
     }
 
@@ -11107,6 +11206,56 @@ class sqlDB {
 
         return $ack;
     }
+
+
+
+
+    /**
+     * @name    qGetGroupName
+     * @return  String
+     * @descr   Returns grup name by id
+     */
+    public function qGetGroupName($idGroup){
+        global $log;
+        $ack = true;
+        $this->result = null;
+        $this->mysqli = $this->connect();
+        try{
+            $query = "SELECT `NameGroup` FROM `GroupNTC` WHERE `idGroup`='$idGroup'";
+            $this->execQuery($query);
+        }catch (Exception $ex){
+            $ack = false;
+            $log->append(__FUNCTION__.' : '.$this->getError());
+        }
+    }
+
+
+    /**
+     * @name    qGetGroupAndSubgroupName
+     * @return  String
+     * @descr   Returns subgrup name by id
+     */
+    public function qGetGroupAndSubgroupName($idGroup,$idSubGroup){
+        global $log;
+        $ack = true;
+        $this->result = null;
+        $this->mysqli = $this->connect();
+        try{
+            $query = "SELECT `GroupNTC`.`NameGroup`,`SubGroup`.`NameSubGroup` 
+                      FROM `SubGroup`,`GroupNTC`
+                      WHERE `GroupNTC`.`idGroup`=`SubGroup`.`fkGroup`
+                      AND `GroupNTC`.`idGroup`='$idGroup'
+                      AND `SubGroup`.`idSubGroup`='$idSubGroup'";
+            $this->execQuery($query);
+        }catch (Exception $ex){
+            $ack = false;
+            $log->append(__FUNCTION__.' : '.$this->getError());
+        }
+    }
+
+
+
+
 
     /**
      * @name    qNewGroup

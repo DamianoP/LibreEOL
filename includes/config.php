@@ -12,13 +12,13 @@
  *----------------------------------*/
 session_start();
 // System version
-$config['systemVersion'] = '2.6.2';
+$config['systemVersion'] = '2.7.4';
 // System title
 $config['systemTitle'] = 'LibreEOL - Exams On Line';
 // System home website (used for emails)
 $config['systemHome'] = 'http://'. $_SERVER["SERVER_NAME"].'/';
 // System comunication email
-$config['systemEmail'] = 'no-reply@libreeol.org';
+$config['systemEmail'] = '';
 // Default system language (watch Languages table in db)
 $config['systemLang'] = 'en';
 // Default system time zone (watch php documentation from time zone available)
@@ -66,11 +66,11 @@ $config['ellipsis'] = ' [...]';
  *----------------------------------*/
 
 // Database type (mysql | ...)
-$config['dbType'] = 'mysql';
+$config['dbType'] = '';
 // Database web address
-$config['dbHost'] = 'localhost';
+$config['dbHost'] = '';
 // Database port
-$config['dbPort'] = '3306';
+$config['dbPort'] = '';
 // Database name
 if(isset($_SESSION['dbNameChanged'])){
     $config['dbName']=$_SESSION['dbNameChanged'];
@@ -82,7 +82,7 @@ $config['dbUsername'] = '';
 // Database access password
 //$config['dbPassword'] = '';
 $config['dbPassword'] = '';
-
+//V6Jn8nunQ8TUd8BE
 /*----------------------------------*
  *  All themes configurations       *
  *----------------------------------*/
@@ -102,3 +102,8 @@ $config['themeDir'] = $config['themesDir'].$config['themeName'].'/';
 $config['themeImagesDir'] = $config['themeDir'].'images/';
 // Theme's flags directory
 $config['themeFlagsDir'] = $config['themeDir'].'flags/';
+
+
+$config['usernameCertificate']="";
+$config['passwordCertificate']="";
+$config['urlCertificate']="";

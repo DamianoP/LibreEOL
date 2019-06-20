@@ -64,6 +64,7 @@ function saveEdit(){
         var group = ris[0];
         var subgroup = ris[1];
         var role = null ;
+        var password = $("#studentPassword").val();
         if ($("input[name=studentRole]:checked").val() == "t") {
             role = "t";
         } else if ($("input[name=studentRole]:checked").val() == "at") {
@@ -90,14 +91,17 @@ function saveEdit(){
                         email       :  email,
                         group       :  group,
                         subgroup    :  subgroup,
-                        role        :  role
+                        role        :  role,
+                        password    :  password
                     },
                     success : function (data) {
-
-                        showSuccessMessage(ttMEdit);
-                        $(studentRowSelected).text(surname + " " + name);
-                        cancelEdit(false);
-
+                        if(data == "ACK"){
+                            showSuccessMessage(ttMEdit);
+                            $(studentRowSelected).text(surname + " " + name);
+                            cancelEdit(false);
+                        }else{
+                            showErrorMessage(data);
+                        }
                     }
                 });
             }else showErrorMessage(ttEEmailNotValid);

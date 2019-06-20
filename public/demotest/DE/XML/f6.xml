@@ -1,0 +1,1308 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE questestinterop SYSTEM "ims_qtiasiv1p2.dtd">
+
+<questestinterop>
+<scale>100</scale>
+
+
+<item title="001 phys10de r 11 -State of matter" ident="5453856633201340">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB German version\Physikalische Chemie 3 v400de</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Der Druck in einem Bechälter wird durch eine Vakuumpumpe bei 298,15&nbsp;K auf 10<SUP>-9</SUP>&nbsp;Torr reduziert. Berechnen Sie die Anzahl der in dem evakuierten Behälter verbleibenden Moleküle pro Volumeneinheit.<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><img class="extraIcon calculator" src="themes/default/images/QEc.png"><BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[3,2&#183;10<SUP>6</SUP> Molek&#252;le&#183;cm<SUP>-3</SUP></SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[5,4&#183;10<SUP>-14</SUP> mol</SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[5,4&#183;10<SUP>-17</SUP> mol&#183;m<SUP>-3</SUP>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[3,2&#183;10<SUP>13</SUP> Molek&#252;le&#183;cm<SUP>-3</SUP></SUB>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[3,2&#183;10<SUP>11</SUP> Molek&#252;le&#183;cm<SUP>-3</SUP></SUB><BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="3" >
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Set">4</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="002 phys11de n 11 -Phase equilibrium" ident="7418358238513291">
+<itemmetadata>
+<qmd_itemtype>Multiple Response</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB German version\Physikalische Chemie 3 v400de</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Eine organische Säure AH wird zwischen Wasser (1) und einem unpolaren organischen Lösungsmittel (2) verteilt. Welche <B>zwei</B> der folgenden Formeln sind richtig ?<BR><BR><I>μ</I><SUP>*</SUP><SUB>AH</SUB> ist das chemische Potential der reinen Säure AH.<BR></P>]]></mattext>
+</material>
+<response_lid ident="1" rcardinality="Multiple">
+<render_choice shuffle="Yes" minnumber="1" maxnumber="5">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[<I>&micro*</I><SUB>HA</SUB>(1) = <I>&micro*</I><SUB>HA</SUB>(2)<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[<I>&micro*</I><SUB>HA</SUB>(2) = <I>&micro*</I><SUB>A<SUP>-</SUP></SUB>(1) + <I>&micro*</I><SUB>H<SUP>+</SUP></SUB>(1)<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[<I>&micro*</I><SUB>HA</SUB>(1) + <I>&micro*</I><SUB>HA</SUB>(2) = <I>&micro*</I><SUB>AH</SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[<I>&micro*</I><SUB>HA</SUB>(1) + <I>&micro*</I><SUB>AH</SUB>(2) = <I>&micro*</I><SUB>A<SUP>-</SUP></SUB>(1) + <I>&micro*</I><SUB>H<SUP>+</SUP></SUB>(1)<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[<I>&micro*</I><SUB>A<SUP>-</SUP></SUB>(1) = <I>&micro*</I><SUB>H<SUP>+</SUP></SUB>(1)<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="header" continue="Yes">
+<conditionvar>Unrecognized or unsupported test method
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="header"/>
+</respcondition>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Add">2</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" continue="Yes">
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Add">2</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" >
+<conditionvar>
+<other/>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="header" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="003 phys12de r 20 -Thermodynamics" ident="6181816404680035">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB German version\Physikalische Chemie 3 v400de</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Leiten Sie einen Ausdruck für den Dampfdruck <I>P</I> einer Lösung her als Funktion des Molenbruchs <L>x</L><SUB>2 </SUB>der Lösung. Die Lösung soll dem Raoultschen Gesetz gehorchen.<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><FONT color=blue>Gegeben:<BR>&nbsp;&nbsp;<I>P</I><SUP>*</SUP><SUB>1</SUB> ist der Dampfdruck der reinen Komponente 1<BR>&nbsp;&nbsp;<I>P</I><SUP>*</SUP><SUB>2 </SUB>ist der Dampfdruck der reinen Komponente 2</FONT><BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[<I> P = P</I><SUP>*</SUP><SUB>1</SUB>&#183;<I>x</I><SUB>1</SUB> +  <I>P</I><SUP>*</SUP><SUB>2</SUB>&#183;<I>x</I><SUB>2</SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[<I> P = P</I><SUP>*</SUP><SUB>1</SUB>&#183;<I>x</I><SUB> 2</SUB> + <I>P</I><SUP>*</SUP><SUB>1</SUB>&#183;(1 - <SUB></SUB><I>x</I><SUB>2</SUB>)<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[ <I>P = P</I><SUP>*</SUP><SUB>1</SUB>+ (<I>P</I><SUP>*</SUP><SUB>1 </SUB> - <I>P</I><SUP>*</SUP><SUB>2</SUB>)&#183;<I>x</I><SUB>2</SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[<I> P = P</I><SUP>*</SUP><SUB>1</SUB>+ (<I>P</I><SUP>*</SUP><SUB>2 </SUB> - <I>P</I><SUP>*</SUP><SUB>1</SUB>)&#183;<I>x</I><SUB>2</SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[ <I>P = P</I><SUP>*</SUP><SUB>1</SUB>+ (<I>P</I><SUP>*</SUP><SUB>2</SUB> - <I>P</I><SUP>*</SUP><SUB>1</SUB>)&#183;<I>x</I><SUB>1</SUB><BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">2</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="3" >
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Set">4</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="004 phys13de k 11 -Chemical equilibria" ident="0853197688619528">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB German version\Physikalische Chemie 3 v400de</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Angenommen, Sie sollen einen Liter einer 0,1&nbsp;molaren Essigsäurelösung neutralisieren (eine schwache Säure, die in wäßriger Lösung nur zu 1,3&nbsp;% dissoziiert ist). Welche Menge Natriumhydroxid benötigen Sie?<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><img class="extraIcon calculator" src="themes/default/images/QEc.png"><BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="No">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[Weniger als 0,1 mol&nbsp;&nbsp;&nbsp;&nbsp;<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[ 0,1 mol<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[Mehr als 0,1 mol&nbsp;&nbsp;&nbsp;&nbsp;<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="1" >
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Set">4</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="005 phys14de l 01 -Kinetics" ident="6821731222277566">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB German version\Physikalische Chemie 3 v400de</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Gegeben sei die Reaktion <BR><BR>
+<CENTER>aA + bB&nbsp;&nbsp;→&nbsp;&nbsp;pP + qQ</CENTER><BR>
+<P></P>
+<P>wenn <I>n</I><SUB>A</SUB> die Stoffmenge der Substanz A, und <I>V</I> das Volumen des Systems ist, kann die Geschwindigkeit der Abnahme <L>v</L><SUB>A</SUB> der Substanz A beschrieben werden durch:<BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[<I>v</I><SUB>A</SUB> = - a/<I>V</I> &#183; d<I>n</I><SUB>A</SUB>/d<I>t</I><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[<I>v</I><SUB>A</SUB> = - a&#183;<I>V</I> &#183; d<I>n</I><SUB>A</SUB>/d<I>t</I><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[<I> v</I><SUB>A</SUB> = - 1/(a&#183;<I>V</I>) &#183; d<I>n</I><SUB>A</SUB>/d<I>t</I><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[<I>v</I><SUB>A</SUB> = - a/<I>t</I> &#183; d<I>n</I><SUB>A</SUB>/d<I>V</I><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[<I>v</I><SUB>A</SUB> = - a&#183;<I>t</I> &#183; d<I>n</I><SUB>A</SUB>/d<I>V</I><BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="2" >
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Set">4</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="006 phys15de a 02-Catalysis" ident="5747867185762903">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB German version\Physikalische Chemie 3 v400de</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Vervollständigen Sie den Satz: Der Zusatz eines Katalysators zu einer Reaktion...<BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[...ändert die Gleichgewichtskonstante.<SUB> </SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[...ändert die Aktivierungsenergie.<SUB> </SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[...ändert <FONT face=Symbol>D</FONT><SUB>r</SUB><I>G</I>° der Reaktion.<SUB> </SUB><BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="1" >
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Set">4</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="007 phys16de n 41 -Electrochemistry" ident="4934085581195045">
+<itemmetadata>
+<qmd_itemtype>Multiple Response</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB German version\Physikalische Chemie 3 v400de</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Markieren Sie die <B>zwei</B> der unten aufgeführten Reaktionen, die unter Standardbedinungen spontan ablaufen.<BR>Die Aktivität aller Reaktonden betrüge ein Standard Reducktionspotentiale bei 25°C:<BR><BR>
+<TABLE border=0 align=center>
+<TBODY>
+<TR>
+<TD><I>E°</I>(Cl<SUB>2 </SUB>/ Cl<SUP>-</SUP>) = 1,36 V </TD>
+<TD><I>E°</I>(Fe<SUP>3+</SUP>/ Fe<SUP>2+</SUP>) = 0,77 V </TD></TR>
+<TR>
+<TD><I>E°</I>(Ce<SUP>4+</SUP>/ Ce<SUP>3+</SUP>) = 1,61 V&nbsp;&nbsp;&nbsp;</TD>
+<TD><I>E°</I>(MnO<SUB>4</SUB><SUP>-</SUP>,H<SUP>+</SUP>/ Mn<SUP>2+</SUP>) = 1,51 V</TD></TR>
+<TR>
+<TD><I>E°</I>(Cu<SUP>2+</SUP>/ Cu<SUP>+</SUP>) = 0,15 V </TD>
+<TD><I>E°</I>(O<SUB>2</SUB>,H<SUP>+</SUP>/ H<SUB>2</SUB>O) = 1,23 V</TD></TR></TBODY></TABLE><BR></P>]]></mattext>
+</material>
+<response_lid ident="1" rcardinality="Multiple">
+<render_choice shuffle="Yes" minnumber="1" maxnumber="5">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[2Ce<SUP>4+</SUP>(aq) + 2Cl<SUP>-</SUP>(aq)<SUB> </SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[5Fe<SUP>2+</SUP>(aq) + MnO<SUB>4</SUB><SUP>-</SUP>(aq) + 8H<SUP>+</SUP>(aq)<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[Cu<SUP>2+</SUP>(aq) + Ce<SUP>3+</SUP>(aq)<SUB> </SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[4Fe<SUP>3+</SUP>(aq) + 2H<SUB>2</SUB>O(l)<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[Fe<SUP>2+</SUP>(aq) + (1/2)H<SUB>2</SUB>(g)<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="2" continue="Yes">
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Add">2</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" continue="Yes">
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Add">2</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="008 phys17de p 05 -Atomic structure" ident="3428851871855927">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB German version\Physikalische Chemie 3 v400de</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Wieviele Orbitale sind in der Schale mit <I>n</I> = 3?<BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[ 9<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[ 3<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[ 6<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[ 7<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">4</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="009 phys18de m 08 -Molecular structure" ident="5581250332021997">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB German version\Physikalische Chemie 3 v400de</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Sortieren Sie die Moleküle CH<SUB>4</SUB>, CH<SUB>3</SUB>F, CH<SUB>2</SUB>F<SUB>2</SUB> und CF<SUB>4</SUB>, nach der Größe ihres Dipolmomentes:<BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[CH<SUB>3</SUB>F  &gt;  CH<SUB>2</SUB>F<SUB>2</SUB>  &gt;  CF<SUB>4 </SUB>  &gt;  CH<SUB>4</SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[CH<SUB>2</SUB>F<SUB>2</SUB>  &gt;  CF<SUB>4 </SUB>  &gt;  CH<SUB>3</SUB>F  &gt;  CH<SUB>4</SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[CH<SUB>4  </SUB>  =  CF<SUB>4 </SUB>  &gt;  CH<SUB>3</SUB>F  &gt;  CH<SUB>2</SUB>F<SUB>2</SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[CF<SUB>4</SUB>  &gt;  CH<SUB>2</SUB>F<SUB>2</SUB>  &gt;  CH<SUB>3</SUB>F  &gt;  CH<SUB>4</SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[CH<SUB>2</SUB>F<SUB>2</SUB>  &gt;  CH<SUB>3</SUB>F  &gt;  CH<SUB>4</SUB>  =  CF<SUB>4</SUB><BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="4" >
+<conditionvar>
+<varequal respident="1">E</varequal>
+</conditionvar>
+<setvar action="Set">4</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="4" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="010 phys19de m 21 -Spectroscopy" ident="4811947250278234">
+<itemmetadata>
+<qmd_itemtype>Multiple Response</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB German version\Physikalische Chemie 3 v400de</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Der Kernspin sowohl<SUB> </SUB>von <SUP>31</SUP>P als auch von <SUP>19</SUP>F beträgt 1/2.</P>
+<P>Welche <B>zwei </B>der folgenden, das NMR-Spektrum von PF<SUB>3 </SUB>, das C<SUB>3v</SUB> Symmetrie besitzt, betreffenden Aussagen sind richtig?<BR></P>]]></mattext>
+</material>
+<response_lid ident="1" rcardinality="Multiple">
+<render_choice shuffle="Yes" minnumber="1" maxnumber="6">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[  Das <SUP>31</SUP>P -Spektrum ist ein Singulett <BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[ Das<SUP> 31</SUP>P-Spektrum ist ein Dublett  <BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[  Das <SUP>31</SUP>P-Spektrum ist ein Quartett<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[  Das <SUP>19</SUP>F-Spektrum ist ein Singulett <BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[  Das <SUP>19</SUP>F-Spektrum ist ein Dublett<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="F">
+<material>
+<mattext texttype="text/html"><![CDATA[  Das <SUP>19</SUP>F-Spektrum ist ein Quartett <BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="2" continue="Yes">
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Add">2</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="4" continue="Yes">
+<conditionvar>
+<varequal respident="1">E</varequal>
+</conditionvar>
+<setvar action="Add">2</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="4" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="011 phys20de n 52 -State of matter" ident="3800230438929971">
+<itemmetadata>
+<qmd_itemtype>Numeric</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB German version\Physikalische Chemie 3 v400de</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Das kritische Volumen von CH<SUB>4</SUB> beträgt 99&nbsp;cm<SUP>3</SUP>·mol<SUP>-1</SUP>. Wie groß ist der ungefähre Radius der Moleküle (in nm), wenn das Gas im kritischen Bereich der van der Waals Gleichung gehorcht?<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><img class="extraIcon calculator" src="themes/default/images/QEc.png"><BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><FONT color=blue>Gegeben: <I>N</I><SUB>A</SUB> = 6,022·10<SUP>23</SUP>mol<SUP>-1<BR></SUP></FONT></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[Antwort (nm): ]]></mattext>
+</material>
+<response_num ident="1" rcardinality="Single">
+<render_fib fibtype="Decimal" prompt="Box" rows="1" columns="14" maxchars="14"/>
+</response_num>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">0.24</varequal>
+</conditionvar>
+<setvar action="Set">6</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" >
+<conditionvar>
+<or>
+<vargte respident="1">0.14</vargte>
+<varlte respident="1">0.24</varlte>
+<vargte respident="1">0.24</vargte>
+<varlte respident="1">0.34</varlte>
+</or>
+</conditionvar>
+<setvar action="Set">6</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" >
+<conditionvar>
+<unanswered respident="1"/>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="012 phys21de r 65 -Phase equilibrium" ident="0495883642923844">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB German version\Physikalische Chemie 3 v400de</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Der Dampfdruck von reinem Benzol beträgt 74,66&nbsp;Torr bei 20°C. Der Dampfdruck wird durch Zugabe von 2,00&nbsp;g eines bestimmten Kohlenwasserstoffs mit 94,4&nbsp;% Kohlenstoffgehalt zu 100&nbsp;g Benzol auf 74,01&nbsp;Torr bei 20°C erniedrigt.<BR>Berechnen Sie die Summenformel des Kohlenwasserstoffs?<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><img class="extraIcon calculator" src="themes/default/images/QEc.png"><BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[  C<SUB>14</SUB>H<SUB>10</SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[  C<SUB>7</SUB>H<SUB>5</SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[ C<SUB>21</SUB>H<SUB>15</SUB>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[ C<SUB>12</SUB>H<SUB>26</SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[ C<SUB>16</SUB>H<SUB>12</SUB><BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">6</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="013 phys22de r 81 -Thermodynamics" ident="9087470465980781">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB German version\Physikalische Chemie 3 v400de</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Angenommen, Sie haben eine ideale Lösung aus 3,00&nbsp;mol Benzol und 2,00&nbsp;mol Toluol. Berechnen Sie das Verhältnis der Fugazität des reinen Benzols und der Fugazität des Benzols in der idealen Lösung unter der Vorraussetzung, daß Temperatur und Druck konstant sind.<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><img class="extraIcon calculator" src="themes/default/images/QEc.png"><BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[0,60<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[1,67<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[0,40<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[2,50<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[1,00<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="1" >
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Set">6</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="014 phys23de n 92 -Chemical equilibria" ident="9575298783343960">
+<itemmetadata>
+<qmd_itemtype>Numeric</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB German version\Physikalische Chemie 3 v400de</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[Die Dissoziation von Stickstofftrioxid wird durch folgende Gleichung beschrieben <BR><BR>
+<CENTER>N<SUB>2</SUB>O<SUB>3</SUB>(g)&nbsp;&nbsp;→&nbsp;&nbsp;NO<SUB>2</SUB>(g) + NO(g)<BR></CENTER>
+<DIV align=left>Wie groß ist die Standard-Gibbs-Enthalpie dieser Reaktion in kJ·mol<SUP>-1</SUP>, wenn der Dissoziationsgrad <I>α</I>&nbsp;=&nbsp;0,3 bei <I>T</I>&nbsp;=&nbsp;298&nbsp;K, <I>P</I>°&nbsp;=&nbsp;1&nbsp;bar&nbsp;=&nbsp;10<SUP>5</SUP>&nbsp;Pa?<BR></DIV>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><img class="extraIcon calculator" src="themes/default/images/QEc.png"><BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><FONT color=blue>Gegeben: <I>R</I> = 8,314 J·K<SUP>-1</SUP>·mol<SUP>-1<BR></SUP></FONT></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[Antwort (kJ·mol<SUP>-1</SUP>):]]></mattext>
+</material>
+<response_num ident="1" rcardinality="Single">
+<render_fib fibtype="Decimal" prompt="Box" rows="1" columns="14" maxchars="14"/>
+</response_num>
+<material>
+<mattext texttype="text/html"><![CDATA[</tr><td>]]></mattext>
+</material>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">5.73</varequal>
+</conditionvar>
+<setvar action="Set">6</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" >
+<conditionvar>
+<or>
+<vargte respident="1">5.72</vargte>
+<varlte respident="1">5.73</varlte>
+<vargte respident="1">5.73</vargte>
+<varlte respident="1">5.74</varlte>
+</or>
+</conditionvar>
+<setvar action="Set">6</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" >
+<conditionvar>
+<other/>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="015 phys24de a 10 -Kinetics" ident="3040178888083469">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB German version\Physikalische Chemie 3 v400de</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Eine chemische Reaktion bei T = 15°C ist nach 3 Minuten und 32 Sekunden beendet. Bei 50°C ist dieselbe Reaktion bei gleichen Konzentrationen und Stoffmengen nach 45 Sekunden beendet. Wie groß ist die Aktivierungsenergie der Reaktion?<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><img class="extraIcon calculator" src="themes/default/images/QEc.png"><BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><FONT color=blue>Gegeben:<I> R</I> = 8,314 J·mol<SUP>-1</SUP>·K<SUP>-1<BR></SUP></FONT></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[  39,7 kJ&#183;mol<SUP>-1</SUP><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[  44,5 kJ&#183;mol<SUP>-1</SUP>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[  28,7 kJ&#183;mol<SUP>-1</SUP><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[  34,2 kJ&#183;mol<SUP>-1</SUP><BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="3" >
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Set">6</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="016 phys25de b 01 -Catalysis" ident="2221958495721195">
+<itemmetadata>
+<qmd_itemtype>Multiple Response</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB German version\Physikalische Chemie 3 v400de</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Bei der Untersuchung der Pt-katalysierten Reaktion:</P>
+<P align=center>2CO + 2NO = 2CO<SUB>2</SUB> + N<SUB>2</SUB></P>
+<DIV align=left>wurde gefunden, daß bei niedrigen CO-Drücken die Reaktion nach 1. Ordnung bzgl. CO verläuft; bei Erhöhung des CO-Drucks bei konst. NO-Druck und konst. Temperatur durchläuft die Reaktionsgeschwindigkeit ein Maximum und bei sehr hohen Drücken ist sie umgekehrt proportional zum CO-Druck und die Aktivierungsenergie ist gleich der Adsorbtionswärme von CO. Ist der Partialdruck von NO nicht größer als der von CO, ist die Aktivierungsenergie gleich der Adsorbtionswärme von N<SUB>2</SUB>. Welche der folgenden Aussagen sind mit diesen Beobachtungen zu vereinbaren?<BR></DIV>]]></mattext>
+</material>
+<response_lid ident="1" rcardinality="Multiple">
+<render_choice shuffle="Yes" minnumber="1" maxnumber="4">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[Die Reaktion CO(ads) + O(ads)&nbsp;&nbsp;→&nbsp;&nbsp;CO<SUB>2</SUB>(ads) ist geschwindigkeitsbestimmend.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[Die Reaktion kann durch ein Produkt inhibiert werden.<SUB> </SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[Die Adsorption von NO ist der geschwindigkeitsbestimmende Schritt.<SUB> </SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[Die Oberflächenreaktion läuft zwischen CO(ads) und NO(ads) ab.<SUB> </SUB><BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="header" continue="Yes">
+<conditionvar>Unrecognized or unsupported test method
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="header"/>
+</respcondition>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Add">3</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" continue="Yes">
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Add">3</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" continue="Yes">
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Add">-1</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" continue="Yes">
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Add">-1</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="header" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="017 phys26de n 126 -Electrochemistry" ident="4128887718642023">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB German version\Physikalische Chemie 3 v400de</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P align=left>Das Potential der Zelle</P>
+<P align=center>Pt(s) | H<SUB>2</SUB>(g, <I>f</I> = 1) | HCl(aq, <I>a</I> = 1) | AgCl(s) | Ag(s)</P>
+<P align=left>in V wird zwischen 273 und 350 K beschrieben durch</P>
+<P align=center><I>E</I> = 0,1213 + 1,746·10<SUP>-3</SUP>·<I>T</I> - 3,26·10<SUP>-6</SUP>·<I>T</I><SUP>2</SUP></P>
+<P align=left>Welchen Wert hat Δ<SUB>r</SUB><I>S</I> der Zellreaktion bei 298 K?<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><img class="extraIcon calculator" src="themes/default/images/QEc.png"><BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><FONT color=blue>Gegeben:<I> F</I> = 96484 C·mol<SUP>-1<BR></SUP></FONT></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[  - 19&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[  19<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[  34<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[  - 34<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[  - 38<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">6</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="018 phys27de m 31 -Atomic structure" ident="5434739126965499">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB German version\Physikalische Chemie 3 v400de</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Die Ionisierungsenergie von Natrium beträgt 494&nbsp;kJ/mol. Mit Strahlung der Wellenlänge 590&nbsp;nm lassen sich Natriumatome aus dem Grundzustand in einen angeregten [Ne]&nbsp;3p<SUP>1</SUP>-Zustand bringen. Welche Ionisierungsenergie besitzt Natrium in diesem angeregten Zustand?<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><img class="extraIcon calculator" src="themes/default/images/QEc.png"><BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><FONT color=blue>Gegeben: <I>h =</I> 6,63·10<SUP>-34</SUP>J s; <I>N</I><SUB>A </SUB>= 6,02·10<SUP>23 </SUP>mol<SUP>-1</SUP>; <I>c =</I> 3,00·10<SUP>8 </SUP>m/s<BR></FONT></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[   203 kJ/mol&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[   291 kJ/mol<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[   385 kJ/mol<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[   494 kJ/mol<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[   697 kJ/mol<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="1" >
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Set">6</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="019 phys28de m 47 -Molecular structure" ident="2155880097804288">
+<itemmetadata>
+<qmd_itemtype>Numeric</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB German version\Physikalische Chemie 3 v400de</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Der Grund-Schwingungs-Modus von <SUP>1</SUP>H<SUP>35</SUP>Cl beträgt 2988,9&nbsp;cm<SUP>-1</SUP>. Benutzt man eine harmonische Näherung, wie groß ist die Kraftkonstante der Bindung in <SUP>1</SUP>H<SUP>35</SUP>Cl?<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><img class="extraIcon calculator" src="themes/default/images/QEc.png"><BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><FONT color=blue>Gegeben: <BR>&nbsp; Atommassen: <SUP>1</SUP>H = 1,0078; <SUP>35</SUP>Cl = 34,969 g/mol&nbsp;<BR><I>&nbsp; c</I> = 2,9979·10<SUP>8</SUP> m/s; <I>N</I><SUB>A </SUB>= 6,0221·10<SUP>23</SUP> mol<SUP>-1<BR></SUP></FONT></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[Antwort (N/m):<BR>]]></mattext>
+</material>
+<response_num ident="1" rcardinality="Single">
+<render_fib fibtype="Decimal" prompt="Box" rows="1" columns="14" maxchars="14"/>
+</response_num>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">515.59</varequal>
+</conditionvar>
+<setvar action="Set">6</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" >
+<conditionvar>
+<or>
+<vargte respident="1">515.54</vargte>
+<varlte respident="1">515.59</varlte>
+<vargte respident="1">515.59</vargte>
+<varlte respident="1">515.64</varlte>
+</or>
+</conditionvar>
+<setvar action="Set">4</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" >
+<conditionvar>
+<other/>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="020 phys29de m 63 -Spectroscopy" ident="5760157628630585">
+<itemmetadata>
+<qmd_itemtype>Numeric</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB German version\Physikalische Chemie 3 v400de</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Die molare Absorption ε einer Lösung von Chlorbenzol in n-Heptan beträgt ε&nbsp;=&nbsp;1,22·10<SUP>3</SUP>·m<SUP>2</SUP>·mol<SUP>-1</SUP> bei 256&nbsp;nm. Berechnen Sie die Konzentration einer Chlorbenzollösung in n-Heptan deren Transmission bei 256&nbsp;nm in einer 2&nbsp;cm Zelle 0,296 beträgt.<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><img class="extraIcon calculator" src="themes/default/images/QEc.png"><BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[Antwort: (·10<SUP>-5 </SUP>M):]]></mattext>
+</material>
+<response_num ident="1" rcardinality="Single">
+<render_fib fibtype="Decimal" prompt="Box" rows="1" columns="14" maxchars="14"/>
+</response_num>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">2.17</varequal>
+</conditionvar>
+<setvar action="Set">6</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" >
+<conditionvar>
+<or>
+<vargte respident="1">2.16</vargte>
+<varlte respident="1">2.17</varlte>
+<vargte respident="1">2.17</vargte>
+<varlte respident="1">2.18</varlte>
+</or>
+</conditionvar>
+<setvar action="Set">6</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" >
+<conditionvar>
+<other/>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+</item>
+
+
+</questestinterop>
+
+

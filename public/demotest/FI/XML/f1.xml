@@ -1,0 +1,1307 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE questestinterop SYSTEM "ims_qtiasiv1p2.dtd">
+
+<questestinterop>
+<scale>100</scale>
+
+
+<item title="001 phys10uk r 11 -State of matter" ident="2377991596341021">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Finnish version\Fysikaalinen kemia 3 v400fi</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Paine lasketaan astiassa 10<SUP>-9</SUP> torriin 298,15 K:ssa. Laske jäljellä olevien molekyylien lukumäärä tilavuusyksikköä kohti.<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<DIV align=center><img class="extraIcon calculator" src="themes/default/images/QEc.png"></DIV>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[3,2&#183;10<SUP>6</SUP> molekyyli&#228;&#183;cm<SUP>-3</SUP></SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[5,4&#183;10<SUP>-14</SUP> mol</SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[5,4&#183;10<SUP>-17</SUP> mol&#183;m<SUP>-3</SUP>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[3,2&#183;10<SUP>13</SUP> molekyyli&#228;&#183;cm<SUP>-3</SUP></SUB>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[3,2&#183;10<SUP>11</SUP> molekyyli&#228;&#183;cm<SUP>-3</SUP></SUB><BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="3" >
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Set">4</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="002 phys11uk n 11 -Phase equilibrium" ident="2498892712169121">
+<itemmetadata>
+<qmd_itemtype>Multiple Response</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Finnish version\Fysikaalinen kemia 3 v400fi</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Kun orgaaninen happo AH jakautuu veden (1) ja poolittoman orgaanisen liuottimen (2) kesken, mitkä kaksi seuraavista yhtälöistä ovat oikein?</P>
+<P><I>μ</I><SUP>*</SUP><SUB>AH</SUB> on puhtaan AH:n kemiallinen potentiaali.<BR></P>]]></mattext>
+</material>
+<response_lid ident="1" rcardinality="Multiple">
+<render_choice shuffle="Yes" minnumber="1" maxnumber="5">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[<I>&micro*</I><SUB>HA</SUB>(1) = <I>&micro*</I><SUB>HA</SUB>(2)<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[<I>&micro*</I><SUB>HA</SUB>(2) = <I>&micro*</I><SUB>A<SUP>-</SUP></SUB>(1) + <I>&micro*</I><SUB>H<SUP>+</SUP></SUB>(1)<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[<I>&micro*</I><SUB>HA</SUB>(1) + <I>&micro*</I><SUB>HA</SUB>(2) = <I>&micro*</I><SUB>AH</SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[<I>&micro*</I><SUB>HA</SUB>(1) + <I>&micro*</I><SUB>AH</SUB>(2) = <I>&micro*</I><SUB>A<SUP>-</SUP></SUB>(1) + <I>&micro*</I><SUB>H<SUP>+</SUP></SUB>(1)<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[<I>&micro*</I><SUB>A<SUP>-</SUP></SUB>(1) = <I>&micro*</I><SUB>H<SUP>+</SUP></SUB>(1)<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="header" continue="Yes">
+<conditionvar>Unrecognized or unsupported test method
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="header"/>
+</respcondition>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Add">2</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" continue="Yes">
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Add">2</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" >
+<conditionvar>
+<other/>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="header" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="003 phys12uk r 20 -Thermodynamics" ident="4071007060200832">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Finnish version\Fysikaalinen kemia 3 v400fi</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Mitkä seuraavista lausekkeista esittävät höyrynpaineen <I>P</I> riippuvuutta liuenneen aineen mooliosuudesta <L>x</L><SUB>2</SUB>? Liuen- nut aine noudattaa Raoultin lakia.<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><FONT color=blue>Data:<BR>&nbsp;<I>P</I><SUP>*</SUP><SUB>1</SUB> on puhtaan komponentin 1 höyrynpaine<BR>&nbsp;<I>P</I><SUP>*</SUP><SUB>2 </SUB>on puhtaan komponentin 2 höyrynpaine<BR></FONT></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[<I> P = P</I><SUP>*</SUP><SUB>1</SUB>&#183;<I>x</I><SUB>1</SUB> +  <I>P</I><SUP>*</SUP><SUB>2</SUB>&#183;<I>x</I><SUB>2</SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[<I> P = P</I><SUP>*</SUP><SUB>1</SUB>&#183;<I>x</I><SUB> 2</SUB> + <I>P</I><SUP>*</SUP><SUB>1</SUB>&#183;(1 - <SUB></SUB><I>x</I><SUB>2</SUB>)<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[ <I>P = P</I><SUP>*</SUP><SUB>1</SUB>+ (<I>P</I><SUP>*</SUP><SUB>1 </SUB> - <I>P</I><SUP>*</SUP><SUB>2</SUB>)&#183;<I>x</I><SUB>2</SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[<I> P = P</I><SUP>*</SUP><SUB>1</SUB>+ (<I>P</I><SUP>*</SUP><SUB>2 </SUB> - <I>P</I><SUP>*</SUP><SUB>1</SUB>)&#183;<I>x</I><SUB>2</SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[ <I>P = P</I><SUP>*</SUP><SUB>1</SUB>+ (<I>P</I><SUP>*</SUP><SUB>2</SUB> - <I>P</I><SUP>*</SUP><SUB>1</SUB>)&#183;<I>x</I><SUB>1</SUB><BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">2</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="3" >
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Set">4</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="004 phys13uk k 11 -Chemical equilibria" ident="5133902420921451">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Finnish version\Fysikaalinen kemia 3 v400fi</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Kuinka paljon natriumhydroksidia tarvitaan neutraloimaan 1 litra 0,1 molaarista etikkahappoliuosta? Etikkahappo on heikko happo jonka molekyyleistä vain 1,3 % on dissosioituneena vesiliuoksessa.<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<DIV align=center><img class="extraIcon calculator" src="themes/default/images/QEc.png"></DIV>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="No">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[V&#228;hemm&#228;n kuin 0,1 moolia&nbsp;&nbsp;&nbsp;&nbsp;<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[ 0,1 moolia<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[Enemm&#228;n kuin 0,1 moolia&nbsp;&nbsp;&nbsp;&nbsp;<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="1" >
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Set">4</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="005 phys14uk l 01 -Kinetics" ident="9312086496294184">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Finnish version\Fysikaalinen kemia 3 v400fi</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Oletetaan reaktio</P>
+<P align=center>aA + bB → pP + qQ</P>
+<P>Valitse yhtälö joka esittää lajikkeen A häviämisen nopeutta <L>v</L><SUB>A</SUB>, kun <L>n</L><SUB>A</SUB> on lajikkeen A ainemäärä ja <I>V</I> on systeemin tilavuus.<BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[<I>v</I><SUB>A</SUB> = - a/<I>V</I> &#183; d<I>n</I><SUB>A</SUB>/d<I>t</I><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[<I>v</I><SUB>A</SUB> = - a&#183;<I>V</I> &#183; d<I>n</I><SUB>A</SUB>/d<I>t</I><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[<I> v</I><SUB>A</SUB> = - 1/(a&#183;<I>V</I>) &#183; d<I>n</I><SUB>A</SUB>/d<I>t</I><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[<I>v</I><SUB>A</SUB> = - a/<I>t</I> &#183; d<I>n</I><SUB>A</SUB>/d<I>V</I><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[<I>v</I><SUB>A</SUB> = - a&#183;<I>t</I> &#183; d<I>n</I><SUB>A</SUB>/d<I>V</I><BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="2" >
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Set">4</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="006 phys15uk a 02-Catalysis" ident="2768247766852407">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Finnish version\Fysikaalinen kemia 3 v400fi</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Valitse oikea täydennys lauseeseen: Katalyytin lisääminen kemialliseen reaktioon ...<BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[... muuttaa reaktion tasapainovakiota.<SUB>&nbsp;</SUB><SUP> </SUP><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[... muuttaa reaktion aktivoitumisenergiaa.<SUB>&nbsp;</SUB><SUP> </SUP><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[... muuttaa reaktion <FONT face=Symbol>D</FONT><SUB>r</SUB><I>G</I>°:aa.<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="1" >
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Set">4</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="007 phys16uk n 41 -Electrochemistry" ident="1884030327927735">
+<itemmetadata>
+<qmd_itemtype>Multiple Response</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Finnish version\Fysikaalinen kemia 3 v400fi</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Alla on annettu eräitä standardeja elektrodi pelkistys potentiaaleja:<BR></P>
+<TABLE border=0 align=center>
+<TBODY>
+<TR>
+<TD><I>E°</I>(Cl<SUB>2 </SUB>/ Cl<SUP>-</SUP>) = 1,36 V </TD>
+<TD><I>E°</I>(Fe<SUP>3+</SUP>/ Fe<SUP>2+</SUP>) = 0,77 V </TD></TR>
+<TR>
+<TD><I>E°</I>(Ce<SUP>4+</SUP>/ Ce<SUP>3+</SUP>) = 1,61 V&nbsp;&nbsp;&nbsp;</TD>
+<TD><I>E°</I>(MnO<SUB>4</SUB><SUP>-</SUP>,H<SUP>+</SUP>/ Mn<SUP>2+</SUP>) = 1,51 V</TD></TR>
+<TR>
+<TD><I>E°</I>(Cu<SUP>2+</SUP>/ Cu<SUP>+</SUP>) = 0,15 V </TD>
+<TD><I>E°</I>(O<SUB>2</SUB>,H<SUP>+</SUP>/ H<SUB>2</SUB>O) = 1,23 V</TD></TR></TBODY></TABLE>
+<P>Valitse <B>kaksi</B> reaktiota jotka tapahtuvat spontaanisti standardi- tilassa (konstituenttien aktiivisuus = 1).<BR></P>]]></mattext>
+</material>
+<response_lid ident="1" rcardinality="Multiple">
+<render_choice shuffle="Yes" minnumber="1" maxnumber="5">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[2Ce<SUP>4+</SUP>(aq) + 2Cl<SUP>-</SUP>(aq)<SUB>&nbsp;</SUB><SUP> </SUP><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[5Fe<SUP>2+</SUP>(aq) + MnO<SUB>4</SUB><SUP>-</SUP>(aq) + 8H<SUP>+</SUP>(aq)<SUB>&nbsp;</SUB><SUP> </SUP><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[Cu<SUP>2+</SUP>(aq) + Ce<SUP>3+</SUP>(aq)<SUB>&nbsp;</SUB><SUP> </SUP><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[4Fe<SUP>3+</SUP>(aq) + 2H<SUB>2</SUB>O(l)<SUB>&nbsp;</SUB><SUP> </SUP><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[Fe<SUP>2+</SUP>(aq) + (1/2)H<SUB>2</SUB>(g)<SUB>&nbsp;</SUB><SUP> </SUP><BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="2" continue="Yes">
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Add">2</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" continue="Yes">
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Add">2</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="008 phys17uk p 05 -Atomic structure" ident="4466014709849356">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Finnish version\Fysikaalinen kemia 3 v400fi</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Kuinka monta orbitaalia on kuorella <I>n</I> = 3?<BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[ 9<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[ 3<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[ 6<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[ 7<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">4</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="009 phys18uk m 08 -Molecular structure" ident="6082936101653476">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Finnish version\Fysikaalinen kemia 3 v400fi</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Missä järjestyksessä molekyylien CH<SUB>4</SUB>, CH<SUB>3</SUB>F, CH<SUB>2</SUB>F<SUB>2</SUB> ja CF<SUB>4 </SUB>dipolimomentit pienenevät?<BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[CH<SUB>3</SUB>F  &gt;  CH<SUB>2</SUB>F<SUB>2</SUB>  &gt;  CF<SUB>4 </SUB>  &gt;  CH<SUB>4</SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[CH<SUB>2</SUB>F<SUB>2</SUB>  &gt;  CF<SUB>4 </SUB>  &gt;  CH<SUB>3</SUB>F  &gt;  CH<SUB>4</SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[CH<SUB>4  </SUB>  =  CF<SUB>4 </SUB>  &gt;  CH<SUB>3</SUB>F  &gt;  CH<SUB>2</SUB>F<SUB>2</SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[CF<SUB>4</SUB>  &gt;  CH<SUB>2</SUB>F<SUB>2</SUB>  &gt;  CH<SUB>3</SUB>F  &gt;  CH<SUB>4</SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[CH<SUB>2</SUB>F<SUB>2</SUB>  &gt;  CH<SUB>3</SUB>F  &gt;  CH<SUB>4</SUB>  =  CF<SUB>4</SUB><BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="4" >
+<conditionvar>
+<varequal respident="1">E</varequal>
+</conditionvar>
+<setvar action="Set">4</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="4" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="010 phys19uk m 21 -Spectroscopy" ident="7676884330938848">
+<itemmetadata>
+<qmd_itemtype>Multiple Response</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Finnish version\Fysikaalinen kemia 3 v400fi</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Sekä <SUP>31</SUP>P:n että <SUP>19</SUP>F:n ytimen spin <I>I</I> = 1/2.<BR>Valitse <B>kaksi</B> oikeata väitettä koskien PF<SUB>3</SUB>:n NMR-spektrejä (PF<SUB>3</SUB>:lla on C<SUB>3v</SUB>-symmetria):<BR></P>]]></mattext>
+</material>
+<response_lid ident="1" rcardinality="Multiple">
+<render_choice shuffle="Yes" minnumber="1" maxnumber="6">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[  <SUP>31</SUP>P spektri on singletti <BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[ <SUP> 31</SUP>P spektri on dubletti  <BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[  <SUP>31</SUP>P spektri on kvartetti<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[  <SUP>19</SUP>F spektri on singletti  <BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[  <SUP>19</SUP>F spektri on dubletti <BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="F">
+<material>
+<mattext texttype="text/html"><![CDATA[  <SUP>19</SUP>F spektri on kvartetti <BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="2" continue="Yes">
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Add">2</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="4" continue="Yes">
+<conditionvar>
+<varequal respident="1">E</varequal>
+</conditionvar>
+<setvar action="Add">2</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="4" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="011 phys20uk n 52 -State of matter" ident="4494639509527843">
+<itemmetadata>
+<qmd_itemtype>Numeric</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Finnish version\Fysikaalinen kemia 3 v400fi</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>CH<SUB>4</SUB>:n kriittinen tilavuus on 99 cm<SUP>3</SUP>·mol<SUP>-1</SUP>. Mikä on CH<SUB>4</SUB>-molekyylien säde nm:ssä jos kaasu noudattaa van der Waalsin yhtälöä kriittisellä alueella?<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<DIV align=center><img class="extraIcon calculator" src="themes/default/images/QEc.png"></DIV>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><FONT color=blue>Data: <I>N</I><SUB>A</SUB> = 6,022·10<SUP>23</SUP>mol<SUP>-1<BR></SUP></FONT></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[Vastaa (nm): ]]></mattext>
+</material>
+<response_num ident="1" rcardinality="Single">
+<render_fib fibtype="Decimal" prompt="Box" rows="1" columns="14" maxchars="14"/>
+</response_num>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">0.24</varequal>
+</conditionvar>
+<setvar action="Set">6</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" >
+<conditionvar>
+<or>
+<vargte respident="1">0.14</vargte>
+<varlte respident="1">0.24</varlte>
+<vargte respident="1">0.24</vargte>
+<varlte respident="1">0.34</varlte>
+</or>
+</conditionvar>
+<setvar action="Set">6</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" >
+<conditionvar>
+<unanswered respident="1"/>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="012 phys21uk r 65 -Phase equilibrium" ident="3087137750311252">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Finnish version\Fysikaalinen kemia 3 v400fi</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Puhtaan bentseenin höyrynpaine 20°C:ssa on 74,66 torria. Höyrynpaine laskee 74,01 torriin kun 2,00 g erästä hiilivetyä (joka sisältää 94,4 % hiiltä) liuotetaan 100 g:aan bentseeniä 20°C:ssa. Laske ao. hiilivedyn molekyylikaava.<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<DIV align=center><img class="extraIcon calculator" src="themes/default/images/QEc.png"></DIV>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[  C<SUB>14</SUB>H<SUB>10</SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[  C<SUB>7</SUB>H<SUB>5</SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[ C<SUB>21</SUB>H<SUB>15</SUB>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[ C<SUB>12</SUB>H<SUB>26</SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[ C<SUB>16</SUB>H<SUB>12</SUB><BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">6</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="013 phys22uk r 81 -Thermodynamics" ident="0778253595270656">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Finnish version\Fysikaalinen kemia 3 v400fi</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Ideaalisessa liuoksessa on 3,00 mol bentseeniä ja 2,00 mol tolueenia.<BR>Laske fugasiteettien suhde puhtaalle bentseenille ja ideaaliliuoksessa olevalle bentseenille (kaikki suureet vakiolämpötilassa ja -paineessa).<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<DIV align=center><img class="extraIcon calculator" src="themes/default/images/QEc.png"></DIV>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[0,60<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[1,67<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[0,40<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[2,50<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[1,00<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="1" >
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Set">6</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="014 phys23uk n 92 -Chemical equilibria" ident="3176544227738277">
+<itemmetadata>
+<qmd_itemtype>Numeric</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Finnish version\Fysikaalinen kemia 3 v400fi</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Typpitrioksidi dissosioituu seuraavan reaktioyhtälön mukaisesti:</P>
+<P align=center>N<SUB>2</SUB>O<SUB>3</SUB>(g) → NO<SUB>2</SUB>(g) + NO(g)</P>
+<P>Jos dissosiaatioaste on 0,3 (<I>T</I> = 298 K, <I>P</I>° = 1 bar = 10<SUP>5</SUP> Pa), laske reaktion standardi Gibbsin funktio kJ·mol<SUP>-1</SUP>?<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<DIV align=center><img class="extraIcon calculator" src="themes/default/images/QEc.png"></DIV>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><FONT color=blue>Data: <I>R</I> = 8,314 J·K<SUP>-1</SUP>·mol<SUP>-1<BR></SUP></FONT></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[Vastaa (kJ·mol<SUP>-1</SUP>):]]></mattext>
+</material>
+<response_num ident="1" rcardinality="Single">
+<render_fib fibtype="Decimal" prompt="Box" rows="1" columns="14" maxchars="14"/>
+</response_num>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">5.73</varequal>
+</conditionvar>
+<setvar action="Set">6</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" >
+<conditionvar>
+<or>
+<vargte respident="1">5.72</vargte>
+<varlte respident="1">5.73</varlte>
+<vargte respident="1">5.73</vargte>
+<varlte respident="1">5.74</varlte>
+</or>
+</conditionvar>
+<setvar action="Set">6</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" >
+<conditionvar>
+<other/>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="015 phys24uk a 10 -Kinetics" ident="2743246170144591">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Finnish version\Fysikaalinen kemia 3 v400fi</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Muuan kemiallinen reaktio on päättynyt ajassa 3 min 32 sek 15°C:ssa. Sama reaktio samoilla konsentraatioilla ja kokonaisainemäärillä on päättynyt ajassa 45 sek 50°C:ssa. Mikä on reaktion aktivoitumisenergia?<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<DIV align=center><img class="extraIcon calculator" src="themes/default/images/QEc.png"></DIV>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><FONT color=blue>Data:<I> R</I> = 8,314 J·mol<SUP>-1</SUP>·K<SUP>-1<BR></SUP></FONT></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[  39,7 kJ&#183;mol<SUP>-1</SUP><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[  44,5 kJ&#183;mol<SUP>-1</SUP>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[  28,7 kJ&#183;mol<SUP>-1</SUP><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[  34,2 kJ&#183;mol<SUP>-1</SUP><BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="3" >
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Set">6</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="016 phys25uk b 01 -Catalysis" ident="9500988023240242">
+<itemmetadata>
+<qmd_itemtype>Multiple Response</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Finnish version\Fysikaalinen kemia 3 v400fi</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Pt-katalysoidusta reaktiosta</P>
+<P align=center>2CO + 2NO = 2CO<SUB>2</SUB> + N<SUB>2</SUB></P>
+<P>tehtiin seuraavat havainnot:<BR>- alhaisessa CO:n paineessa reaktio oli CO:n suhteen ensimmäistä kertalukua.<BR>- lisättäessä CO:n painetta vakiollisessa NO:n paineessa ja vakiolämpötilassa reaktionopeudella oli maksimikohta.<BR>- hyvin korkeassa paineessa reaktionopeus oli kääntäen verrannollinen CO:n paineeseen ja aktivoitumisenergia yhtä suuri kuin CO:n adsorptiolämpö.<BR>- kun NO:n osapaine on paljon suurempi kuin CO:n osapaine, aktivoitumisenergia on yhtä suuri kuin N<SUB>2</SUB>:n adsorptiolämpö.</P>
+<P>Mitkä seuraavista väitteistä ovat yhteensopivia koehavaintojen kanssa?<BR></P>]]></mattext>
+</material>
+<response_lid ident="1" rcardinality="Multiple">
+<render_choice shuffle="Yes" minnumber="1" maxnumber="4">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[Reaktionopeuden määräävä reaktio on CO(ads) + O(ads)&nbsp;&nbsp;→&nbsp;&nbsp;CO<SUB>2</SUB>(ads).<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[Joku reaktiotuotteista inhiboi reaktiota.<SUB> </SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[Reaktionopeus riippuu NO:n adsorption nopeudesta.<SUB> </SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[Katalyytin pinnalla tapahtuu reaktio CO(ads):n ja NO(ads):n välillä.<SUB> </SUB><BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="header" continue="Yes">
+<conditionvar>Unrecognized or unsupported test method
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="header"/>
+</respcondition>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Add">3</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" continue="Yes">
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Add">3</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" continue="Yes">
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Add">-1</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" continue="Yes">
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Add">-1</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="header" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="017 phys26uk n 126 -Electrochemistry" ident="0310097525252630">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Finnish version\Fysikaalinen kemia 3 v400fi</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Potentiaali (V) välillä 273-350 K kennossa</P>
+<P align=center>Pt(s) | H<SUB>2</SUB>(g, <I>f</I> = 1) | HCl(aq, <I>a</I> = 1) | AgCl(s) | Ag(s)</P>
+<P>saadaan yhtälöstä</P>
+<P align=center><I>E</I> = 0,1213 + 1,746·10<SUP>-3</SUP>·<I>T</I> - 3,26·10<SUP>-6</SUP>·<I>T</I><SUP>2</SUP></P>
+<P>Valitse oikea Δ<SUB>r</SUB><I>S</I> S:n arvo kennoreaktiolle 298 K:ssa?<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<DIV align=center><img class="extraIcon calculator" src="themes/default/images/QEc.png"></DIV>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><FONT color=blue>Data:<I> F</I> = 96484 C·mol<SUP>-1<BR></SUP></FONT></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[  - 19&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[  19<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[  34<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[  - 34<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[  - 38<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">6</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="018 phys27uk m 31 -Atomic structure" ident="9643900244496399">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Finnish version\Fysikaalinen kemia 3 v400fi</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Natriumin ionisaatioenergia on 494 kJ/mol. Natrium- atomi voidaan virittää perustilastaan konfiguraatioon [Ne] 3p<SUP>1</SUP> 590 nm:n aallonpituisella säteilyllä.<BR>Mikä energia tarvitaan ionisoimaan natrium tässä virittyneessä tilassa?<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<DIV align=center><img class="extraIcon calculator" src="themes/default/images/QEc.png"></DIV>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><FONT color=blue>Data: <I>h =</I> 6,63·10<SUP>-34</SUP>J s; <I>N</I><SUB>A </SUB>= 6,02·10<SUP>23 </SUP>mol<SUP>-1</SUP>; <I>c =</I> 3,00·10<SUP>8 </SUP>m/s<BR></FONT></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[   203 kJ/mol&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[   291 kJ/mol<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[   385 kJ/mol<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[   494 kJ/mol<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[   697 kJ/mol<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="1" >
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Set">6</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="019 phys28uk m 47 -Molecular structure" ident="6060881611231558">
+<itemmetadata>
+<qmd_itemtype>Numeric</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Finnish version\Fysikaalinen kemia 3 v400fi</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Perusvärähtelymoodi <SUP>1</SUP>H<SUP>35</SUP>Cl:lle esiintyy 2988,9 cm<SUP>-1</SUP>:ssä. Olettaen että värähtely on harmonista, mikä voimavakio saadaan <SUP>1</SUP>H<SUP>35</SUP>Cl:lle?<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<DIV align=center><img class="extraIcon calculator" src="themes/default/images/QEc.png"></DIV>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><FONT color=blue>Data: Atomimassat: <SUP>1</SUP>H = 1,0078; <SUP>35</SUP>Cl = 34,969 g/mol; <I>c</I> = 2,9979·10<SUP>8</SUP> m/s; <I>N</I><SUB>A </SUB>= 6,0221·10<SUP>23</SUP> mol<SUP>-1<BR></SUP></FONT></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[Vastaa (N/m): ]]></mattext>
+</material>
+<response_num ident="1" rcardinality="Single">
+<render_fib fibtype="Decimal" prompt="Box" rows="1" columns="14" maxchars="14"/>
+</response_num>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">515.59</varequal>
+</conditionvar>
+<setvar action="Set">6</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" >
+<conditionvar>
+<or>
+<vargte respident="1">515.54</vargte>
+<varlte respident="1">515.59</varlte>
+<vargte respident="1">515.59</vargte>
+<varlte respident="1">515.64</varlte>
+</or>
+</conditionvar>
+<setvar action="Set">4</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" >
+<conditionvar>
+<other/>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="020 phys29uk m 63 -Spectroscopy" ident="2278832448955566">
+<itemmetadata>
+<qmd_itemtype>Numeric</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Finnish version\Fysikaalinen kemia 3 v400fi</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Klooribentseenin molaarinen absorptiokerroin n-heptaaniliuoksessa 265 nm:ssa on ε = 1,22·10<SUP>3</SUP>·m<SUP>2</SUP>·mol<SUP>-1</SUP>.</P>
+<P>Laske klooribentseenin konsentraatio heptaaniliuoksessa jos sen transmittanssi 256 nm:ssa 2 cm:n kyvetissä on 0,296.<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<DIV align=center><img class="extraIcon calculator" src="themes/default/images/QEc.png"></DIV>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[Vastaa (·10<SUP>-5 </SUP>M): ]]></mattext>
+</material>
+<response_num ident="1" rcardinality="Single">
+<render_fib fibtype="Decimal" prompt="Box" rows="1" columns="14" maxchars="14"/>
+</response_num>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">2.17</varequal>
+</conditionvar>
+<setvar action="Set">6</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" >
+<conditionvar>
+<or>
+<vargte respident="1">2.16</vargte>
+<varlte respident="1">2.17</varlte>
+<vargte respident="1">2.17</vargte>
+<varlte respident="1">2.18</varlte>
+</or>
+</conditionvar>
+<setvar action="Set">6</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" >
+<conditionvar>
+<other/>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+</item>
+
+
+</questestinterop>
+
+

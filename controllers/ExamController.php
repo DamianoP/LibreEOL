@@ -76,9 +76,10 @@ class ExamController extends Controller{
      *  @descr  Saves edited informations about an exam
      */
     private function actionUpdateexaminfo(){
-        global $ajaxSeparator, $config, $log;
+        global $ajaxSeparator, $config, $log, $user;
 
         $db = new sqlDB();
+        $db2 = new sqlDB();
         if((isset($_POST['idExam'])) && (isset($_POST['password']))){
             $newPassword = randomPassword(8);
 
@@ -100,6 +101,14 @@ class ExamController extends Controller{
                 $datetime = new DateTime($examInfo['datetime']);
                 $day = $datetime->format("d/m/Y");
                 $time = $datetime->format("H:i");
+                $students=0;
+                $db2->qGetSubGroupName($user->subgroup);
+                $groupName=$db2->nextRowAssoc()["NameSubGroup"];
+		$db2->qCountStudentForExam($_POST['idExam']);
+                $students=$db2->nextRowAssoc()["numberOfStudents"];
+                if($students==""){
+                    $students=0;
+                }
                 $manage = '<span class="manageButton edit">
                                <img name="edit" src="'.$config['themeImagesDir'].'edit.png"title="'.ttEdit.'" onclick="showExamInfo(this);">
                            </span>
@@ -123,6 +132,8 @@ class ExamController extends Controller{
                     $examInfo['exam'],
                     $examInfo['subject'],
                     $examInfo['settings'],
+                    $students,
+                    $groupName,
                     $examInfo['password'],
                     $manage,
                     $examInfo['idExam'],
@@ -161,13 +172,14 @@ class ExamController extends Controller{
      *  @descr  Action used to create a new exam
      */
     private function actionNewexam(){
-        global $log, $config, $ajaxSeparator;
+        global $log, $config, $ajaxSeparator,$user;
 
         if((isset($_POST['name'])) && (isset($_POST['idSubject'])) && (isset($_POST['idTestSettings'])) &&
            (isset($_POST['datetime'])) && (isset($_POST['desc'])) && (isset($_POST['regStart'])) &&
            (isset($_POST['regEnd'])) && (isset($_POST['rooms']))){
 
             $db = new sqlDB();
+	    $db2 = new sqlDB();
             $password = randomPassword(8);
             if(($db->qNewExam($_POST['name'], $_POST['idSubject'], $_POST['idTestSettings'], $_POST['datetime'],
                               $_POST['desc'], $_POST['regStart'], $_POST['regEnd'], $_POST['rooms'], $password)) && ($examInfo = $db->nextRowAssoc())){
@@ -177,6 +189,9 @@ class ExamController extends Controller{
                 $datetime = new DateTime($examInfo['datetime']);
                 $day = $datetime->format("d/m/Y");
                 $time = $datetime->format("H:i");
+                $students=0;
+                $db2->qGetSubGroupName($user->subgroup);
+                $groupName=$db2->nextRowAssoc()["NameSubGroup"];
                 $manage = '<span class="manageButton edit">
                                <img name="edit" src="'.$config['themeImagesDir'].'edit.png"title="'.ttEdit.'" onclick="showExamInfo(this);">
                            </span>
@@ -200,6 +215,8 @@ class ExamController extends Controller{
                     $examInfo['exam'],
                     $examInfo['subject'],
                     $examInfo['settings'],
+                    $students,
+                    $groupName,
                     $examInfo['password'],
                     $manage,
                     $examInfo['idExam'],
@@ -1738,6 +1755,25 @@ non viene più utilizzata
             header("Location: index.php?page=exam/exams");
         }
     }
+
+
+    /**
+     *  @name   actionCorrectdemotest
+     *  @descr  Show page to View test
+     */
+    private function actionCorrectdemotest(){
+      global $log, $engine;
+
+      $engine->renderDoctype();
+      $engine->loadLibs();
+      $engine->renderHeader();
+      $engine->renderPage();
+      $engine->renderFooter();
+  }
+
+
+
+
     /**
      *  @name   actionToggleblock
      *  @descr  Action to block/unblock student's test
@@ -1896,6 +1932,11 @@ non viene più utilizzata
                                    'Exams', 'Showexaminfo', 'Testsettingslist', 'Updateexaminfo', 'Newexam', 'Changestatus',
                                    'Showregistrationslist', 'Showaddstudentspanel', 'Registerstudents', 'Toggleblock', 'Correct', 'View', 'Archiveexam','Printcertificate','Savestudentexam','Sendmail','Updatearchivedtest','Resetsessiontestsettings'),
                 'roles'   => array('t','e'),
+            ),
+	    array(
+              'allow',
+              'actions' => array('Correctdemotest'),
+              'roles'   => array('s'),
             ),
             array(
                 'deny',

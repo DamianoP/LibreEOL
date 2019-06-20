@@ -10,7 +10,7 @@ var examEditing = false;
 var examRowSelected = null;
 var examRowEdit = null;
 var examNew = false;
-var altezza = $(window).height()-330;
+var altezza = $(window).height()-400;
 if(altezza<250){
     altezza=250;
 }
@@ -22,12 +22,14 @@ var etci = {
     subject : 3,
     name : 4,
     settings : 5,
-    password : 6,
-    manage : 7,
-    examID : 8,
-    subjectID : 9,
-    settingsID : 10,
-    statusID : 11
+    numStudents : 6,
+    subgroupinfo : 7,
+    password : 8,
+    manage : 9,
+    examID : 10,
+    subjectID : 11,
+    settingsID : 12,
+    statusID : 13
 };
 
 statuses = {"w" : {"imageTitle"  : "Waiting",
@@ -58,24 +60,33 @@ $(function(){
     $("#newExam").on("click", function(){ newExam(); });
 
     examsTable = $("#examsTable").DataTable({
+        "paging":true,
+        "pageLength": 30,
+        "processing": true,
+        deferRender:    true,
+        "lengthChange": false,
+        data:dataset,
         scrollY:        altezza,
         scrollCollapse: false,
         jQueryUI:       true,
-        paging:         false,
         order: [ [etci.day, "desc"], [etci.time, "desc"] ],
         columns : [
-            { className: "eStatus", searchable : false, type: "alt-string", width : "10px" },
+            { className: "eStatus", searchable : false, type: "alt-string", width : "10px" , sortable : false},
             { className: "eDay", type: "date-eu", width: "60px"},
             { className: "eTime", width : "30px" },
             { className: "eSubject" },
             { className: "eName" },
             { className: "eSettings" },
+
+            { className: "eNumTests",searchable : false },
+            { className: "eGroup" },
+
             { className: "ePassword", width : "30px", sortable : false },
-            { className: "eManage", searchable : false, sortable : false },
-            { className: "eExamID", visible : false },
-            { className: "eSubjectID", visible : false },
-            { className: "eSettingsID", visible : false },
-            { className: "eStatusID", visible : false }
+            { className: "eManage",searchable : false, searchable : false, sortable : false },
+            { className: "eExamID",searchable : false, visible : false },
+            { className: "eSubjectID",searchable : false, visible : false },
+            { className: "eSettingsID",searchable : false, visible : false },
+            { className: "eStatusID",searchable : false, visible : false }
         ],
         language : {
             info: ttDTExamInfo,
@@ -125,15 +136,17 @@ function showExamInfo(selected){
  *  @descr  Shows requested exam's students list
  *  @param  selected            DOM Element             Selected exam
  */
-function showStudentsList(selected){
-    if(selected == null){
-        selected = $("#examsTable tr.selected");
-    }else{
-        $("#examsTable tr").removeClass("selected");
-        $(selected).closest("tr").addClass("selected");
+function showStudentsList(selected,idExam=null){
+    if(idExam==null){
+        if(selected == null){
+            selected = $("#examsTable tr.selected");
+        }else{
+            $("#examsTable tr").removeClass("selected");
+            $(selected).closest("tr").addClass("selected");
+        }
+        examRowEdit = $(selected).closest("tr");
+        var idExam = examsTable.row(examRowEdit).data()[etci.examID];
     }
-    examRowEdit = $(selected).closest("tr");
-    var idExam = examsTable.row(examRowEdit).data()[etci.examID];
     $.ajax({
         url     : "index.php?page=exam/showregistrationslist",
         type    : "post",
@@ -210,6 +223,7 @@ function archiveExam(askConfirmationAndExamToArchive){
                     examRowEdit.find("span.manageButton.action img").remove();
                     examRowEdit.find("span.manageButton.archive img").remove();
                     showSuccessMessage(ttMExamArchived);
+                    resultStudent(0);
                 }else{
 //                    alert(data);
                     errorDialog(ttError, data);
@@ -302,4 +316,69 @@ function helpjs(){
                      .dialog("open");
     $(".ui-dialog").css("background", "url('"+imageDir+"helpDialog.png')");
 
+}
+
+
+function resultStudent(click=0){
+    var idExam = examsTable.row(examRowEdit).data()[etci.examID];
+    var subject = examsTable.row(examRowEdit).data()[etci.name];
+    var examDate = examsTable.row(examRowEdit).data()[etci.day];
+    $.ajax({
+        url     : "index.php?page=report/resultstudent",
+        type    : "post",
+        dataType: 'json',
+        data    : {
+            idExam: idExam,
+            subject:subject,
+            date: examDate
+        },
+        success : function (data){
+            if(data[0] == "success"){
+                if(click==1){
+                    var path = data[1];
+                    var link = document.createElement("a");
+                    link.download = subject+"_"+examDate+".csv";
+                    link.target = "_blank";
+                    link.href = path;
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                    delete link;
+                }
+            }else{
+                showErrorMessage(data);
+            }
+        },
+        error : function (request, status, error) {
+            alert("jQuery AJAX request error:".error);
+        }
+    });
+}
+
+
+function resultExams(){
+    $.ajax({
+        url     : "index.php?page=report/resultsexams",
+        type    : "post",        
+        dataType: 'json',
+        success : function (data){
+            if(data[0] == "success"){
+                var path = data[1];
+                var link = document.createElement("a");
+                link.download = "report"+".csv";
+                link.target = "_blank";
+                link.href = path;
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+                delete link;
+            }else{
+                showErrorMessage(data);
+                console.log(data);
+            }
+        },
+        error : function (request, status, error) {
+            alert("jQuery AJAX request error:".error);
+        }
+    });
 }

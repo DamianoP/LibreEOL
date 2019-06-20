@@ -28,7 +28,7 @@ var ttci = {
 
 var examsTable = null;
 var testsTable = null;
-var altezza = $(window).height()-330;
+var altezza = $(window).height()-400;
 if(altezza<250){
     altezza=250;
 }
@@ -38,18 +38,23 @@ $(function(){
      *  @descr  Exams DataTables initialization
      */
     examsTable = $("#homeExamsTable").DataTable({
+        "paging":true,
+        "pageLength": 30,
+        "processing": true,
+        deferRender:    true,
+        "lengthChange": false,
+        data:dataset1,
         scrollY:        altezza,
         scrollCollapse: false,
         jQueryUI:       true,
-        paging:         false,
         order: [ etci.day, "dsc" ],
         columns : [
-            { className: "eStatus", searchable : false, type: "alt-string", width : "10px" },
+            { className: "eStatus", searchable : false, type: "alt-string", width : "10px",sortable : false },
             { className: "eName"},
             { className: "eSubject"},
             { className: "eDay", type: "date-eu"},
             { className: "eTime"},
-            { className: "eExamID", visible : false }
+            { className: "eExamID",searchable : false, visible : false }
         ],
         language : {
             info: ttDTExamInfo,
@@ -65,18 +70,23 @@ $(function(){
      *  @descr  Tests DataTables initialization
      */
     testsTable = $("#homeTestsTable").DataTable({
+        "paging":true,
+        "pageLength": 30,
+        "processing": true,
+        deferRender:    true,
+        "lengthChange": false,
+        data:dataset,
         scrollY:        altezza,
         scrollCollapse: false,
         jQueryUI:       true,
-        paging:         false,
-        order: [[ ttci.name, "asc" ]],
+        order: [[ ttci.time, "dsc" ]],
         columns : [
             { className: "tName"},
             { className: "tSubject"},
             { className: "tTime"},
             { className: "tScore"},
-            { className: "tTestID", visible : false },
-            { className: "tTestStatus", visible : false }
+            { className: "tTestID", visible : false,searchable : false },
+            { className: "tTestStatus", visible : false,searchable : false }
         ],
         language : {
             info: ttDTTestInfo,

@@ -174,10 +174,11 @@ class ReportController extends Controller{
      *  @descr  Shows the report
      */
 private function actionResultstudent(){
-        global $config;
+        global $config,$user,$log;
         $idExam = $_POST["idExam"];
         $subject = $_POST["subject"];
-        $subject = str_replace(" ", "_", $subject);
+        $subject = str_replace(" ", "_", $subject);        
+	$subject = str_replace("/", "_", $subject);
         $date = $_POST["date"];
         $date = explode("/", $date);
         $date = $date[0]."-".$date[1]."-".$date[2];
@@ -194,14 +195,18 @@ private function actionResultstudent(){
             mkdir("temp");
         }
         $path = $dir."/".$date.".csv";
+	$path2 = "temp/".$subject."_".$date.".csv";
         $path2 = "temp/".$date.".csv";
         $file = fopen($path,"w");
         $file2 = fopen($path2,"w");
         chmod($path,0777);
         chmod($path2,0777);
         $db=new sqlDB();
-        if ($db->qGetRatingExam($idExam)) {            
-            $a = ttName."#".ttSurname."#".ttEmail."#".ttTimeStart."#".ttTimeEnd."#".ttTimeUsed."#".ttScoreTest."#".ttFinalScore;
+        if ($db->qGetRatingExam($idExam)) { 
+            if($config['dbName'] == 'EOL')
+	        $a = ttName."#".ttSurname."#".ttEmail."#".ttTimeStart."#".ttTimeEnd."#".ttTimeUsed."#".ttScoreTest."#".ttFinalScore;
+	    else           
+            	$a = ttName."#".ttSurname."#Certificate#".ttEmail."#".ttTimeStart."#".ttTimeEnd."#".ttTimeUsed."#".ttScoreTest."#".ttFinalScore;
             $db2=new sqlDB();
             $db2->getTopicByExam($idExam);
             $h=0;
@@ -259,12 +264,57 @@ private function actionResultstudent(){
                 }
                 $info["name"]=urldecode($this->replaceCharacter($info["name"]));
                 $info["surname"]=urldecode($this->replaceCharacter($info["surname"]));
+		if($info["privacy"]==1){
+			$info["privacy"]="Requested";
+		}else{
+			$info["privacy"]="Not requested";
+		}
+		if($config['dbName'] == 'EOL')
+			unset($info["privacy"]);
                 unset($info["idTest"]);
                 fputcsv($file,$info);
                 fputcsv($file2,$info);
             }
             echo json_encode(array("success",$path2));
-        }else{
+
+            try{
+                if($config['dbName'] == 'echemtest'){ // LEVA QUESTA COSA !!!
+
+                    $dbGroup=new sqlDB();
+                    $dbGroup->qGetGroupAndSubgroupName($user->group,$user->subgroup);
+                    $result=$dbGroup->nextRowAssoc();
+                    $emailGroup=$result['NameGroup'];
+                    $emailSubGroup=$result['NameSubGroup'];
+
+                    exec("curl --user ".$config['usernameCertificate'].":".$config['passwordCertificate']." -F data=@".$path2." ".$config['urlCertificate']." >/dev/null 2>/dev/null &" );
+                
+
+		try{
+                        $filename=$subject."_".$date.".csv";
+                        $emailTo = "echemtest@master-up.it";
+                        $emailSubject = "Automatic notification from echemTest";
+                        $emailMessage =  "File sent to the server: ".$filename.
+                                  " \r\n The certificate was created by the user: ".$user->email.
+                                  " \r\n Exam date: ".$date.
+                                  " \r\n Group: ".$emailGroup.
+                                  " \r\n SubGroup: ".$emailSubGroup;
+                        $emailHeaders = 'from:' . $user->email . "\r\n" .
+                            'Reply-To:' . $user->email . "\r\n" .
+                            'X-Mailer: PHP/' . phpversion();
+                        if (!mail($emailTo, $emailSubject, $emailMessage, $emailHeaders)) {
+                            $log->append("Error, the email has not been sent. Filename:".$filename." by ".$user->email." for the date:".$date);
+                        }
+		}catch(Exception $ex){}
+
+
+
+
+		}
+            }catch(Exception $ex){
+                echo $ex;
+            }
+
+	}else{
             echo json_encode(array("success","error"));
         }
         fclose($file);
@@ -1697,6 +1747,51 @@ private function actionDeletetemplate(){
     }
 
 
+private function actionResultsexams(){
+        global $config,$user;
+        $nameReport="report".$user->iduser;
+        $path = "temp/".$nameReport.".csv";
+        $path=stripslashes($path);
+        $file = fopen($path,"w");
+        chmod($path,0777);
+        $db=new sqlDB();
+        $a = ttName."#".ttDay."#".ttSubject."#".ttSubgroup."#".ttStudent;
+        $title = array($a);
+        fputcsv($file,explode("#", $title[0]));
+        if($db->qExams()){
+            while($exam = $db->nextRowAssoc()){
+                $name = $exam['exam'];
+                $day = date('d/m/Y', strtotime($exam['datetime']));
+                $subject = $exam['subject'];
+
+                $db2 = new sqlDB();
+                $subGroupDescription="";
+                if($exam['EsubG']!=null){
+                    if($db2->qGetSubGroupName($exam['EsubG'])){
+                        $subGroupDescription=$db2->nextRowAssoc()["NameSubGroup"];
+                    }
+                }
+
+                $numberOfStudents=0;
+                if($exam['idExam']!=null){
+                    if($db2->qCountStudentForExam($exam['idExam'])){
+                        $numberOfStudents=$db2->nextRowAssoc()["numberOfStudents"];
+                        if($numberOfStudents=="")
+                            $numberOfStudents=0;
+                    }
+                }
+                
+                $rigaCSV = $name."#".$day."#".$subject."#".$subGroupDescription."#".$numberOfStudents;
+                $rigaCSV = array($rigaCSV);
+                fputcsv($file,explode("#", $rigaCSV[0]));
+            }
+            echo json_encode(array("success",$path));
+        }else{
+            echo json_encode(array("error","error"));
+        }
+        fclose($file);
+    }
+
 
 
     private function accessRules(){
@@ -1708,7 +1803,7 @@ private function actionDeletetemplate(){
                     'Printparticipantdetails','Aoreportparameters','Showgroups','Aoreportresult',
                     'Savetemplate','Loadtemplate','Deletetemplate',
                     'Creport','Showstudentcreport','Creportparameters','Creportlist',
-                    'Showtestscreport','Loadcreportresult','Creportpdf','Resultstudent'),
+                    'Showtestscreport','Loadcreportresult','Creportpdf','Resultstudent','Resultsexams'),
                 'roles'   => array('a','e','t','at'),
             ),
             array(

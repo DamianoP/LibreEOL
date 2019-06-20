@@ -19,8 +19,8 @@ global $user, $engine, $config;
     
 
     <link rel="stylesheet" href="<?= $config['themeDir'];?>jquery-ui.css" media="screen" type="text/css" />
-    <link rel="stylesheet" href="<?= $config['themeDir'];?>style.css?ver=21" media="screen" type="text/css" />
-    <link rel="stylesheet" href="<?= $config['themeDir'];?>jquery.dataTables_themeroller.min.css" media="screen" type="text/css" />
+    <link rel="stylesheet" href="<?= $config['themeDir'];?>style.css?ver=22" media="screen" type="text/css" />
+    <link rel="stylesheet" href="<?= $config['themeDir'];?>jquery.dataTables_themeroller.min.css?ver=22" media="screen" type="text/css" />
     <link rel="shortcut icon" type="image/png" href="<?= $config['themeImagesDir'] ?>favicon.png"/>
 
 

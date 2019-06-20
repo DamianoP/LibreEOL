@@ -1,0 +1,2828 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE questestinterop SYSTEM "ims_qtiasiv1p2.dtd">
+
+<questestinterop>
+<scale>100</scale>
+
+
+<item title="001 213." ident="9029877527004936">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Romanian version\Chimie Generală 2 v400ro</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Atomii a două elemente A şi B (literele nu reprezintă simbolurile lor chimice) prezintă următoarea configuraţie electronică<BR>&nbsp;&nbsp;&nbsp;&nbsp;A: 1s<SUP>2 </SUP>2s<SUP>2 </SUP>2p<SUP>6 </SUP>3s<SUP>2 </SUP>3p<SUP>6 </SUP>4s<SUP>2<BR></SUP>&nbsp;&nbsp;&nbsp;&nbsp;B: 1s<SUP>2 </SUP>2s<SUP>2</SUP> 2p<SUP>5</SUP></P>
+<P>Care dintre următoarele afirmaţii este corectă?<BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[Prima treaptă a energiei de ionizare este mai mare pentru A decât pentru B.]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[Primele trepte ale energiei de ionizare sunt egale pentru A şi B.]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[Prima treaptă a energiei de ionizare este mai mare pentru B decât pentru A.]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[Este imposibil de precizat care energie de ionizare este mai mare.]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[Numărul atomic al A și B este aceeași pentru ambele elemente.]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="2" >
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="002 224." ident="0761127599251775">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Romanian version\Chimie Generală 2 v400ro</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Ecuaţia reacţiei pentru combustia propanolului este</P>
+<P>2 C<SUB>3</SUB>H<SUB>7</SUB>OH&nbsp;+&nbsp;9 O<SUB>2</SUB>&nbsp;&nbsp;&nbsp;→&nbsp;&nbsp;&nbsp;6 CO<SUB>2</SUB>&nbsp;+&nbsp;8 H<SUB>2</SUB>O</P>
+<P>Câţi moli de oxigen sunt necesari pentru combustia a 10 moli de propanol<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><img class="extraIcon calculator" src="themes/default/images/QEc.png"></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;&nbsp;9<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[11<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[20<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[45<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[90<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="3" >
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="003 234. The list below gives the n" ident="9513571794764991">
+<itemmetadata>
+<qmd_itemtype>Multiple Response</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Romanian version\Chimie Generală 2 v400ro</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>În lista de mai jos sunt enumerate diferite tipuri de legături care pot apare în substanţele chimice.<BR>Selectaţi din lista de mai jos principalele tipuri de legături prezente într-o bucată de zinc:<BR></P>]]></mattext>
+</material>
+<response_lid ident="1" rcardinality="Multiple">
+<render_choice shuffle="Yes" minnumber="1" maxnumber="5">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[Legături metalice]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[Legături ionice]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[Legături de hidrogen]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[Legături covalente]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[Forţe Van der Waals]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="1" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+<varequal respident="1">B</varequal>
+<varequal respident="1">C</varequal>
+<varequal respident="1">D</varequal>
+<varequal respident="1">E</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="header" continue="Yes">
+<conditionvar>Unrecognized or unsupported test method
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="header"/>
+</respcondition>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Add">60</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="header" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="004 244. The graph shows the variat" ident="5904903532258100">
+<itemmetadata>
+<qmd_itemtype>Numeric</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Romanian version\Chimie Generală 2 v400ro</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Graficul prezintă variaţia cu temperatura a solubilităţii maxime a azotatului de potasiu (KNO<SUB>3</SUB>) în apă. Solubilitatea este exprimată în grame de KNO<SUB>3</SUB> dizolvate la 100&nbsp;grame de apă.</P>
+<P>Folosind informaţia din grafic răspundeţi la următoarea întrebare:<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><IMG border=0 hspace=0 alt="" src="../topicresources/1051229939/g21404en_col.jpg" width=309 height=331></IMG><BR>Legendă: Temperature = Temperatură<BR>Solubility (g solute per 100 g water) = Solubilitate (g de substanţă la 100 g apă)<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>O soluţie conţinând 100&nbsp;g de KNO<SUB>3</SUB> în 100&nbsp;g de apă este răcită de la 100°C. La ce temperatură, cu precizie de grad, apar primele cristale de KNO<SUB>3</SUB>.<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[Răspuns:]]></mattext>
+</material>
+<response_num ident="1" rcardinality="Single">
+<render_fib fibtype="Decimal" prompt="Box" rows="1" columns="4" maxchars="4"/>
+</response_num>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">57.0</varequal>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" >
+<conditionvar>
+<or>
+<vargte respident="1">55.0</vargte>
+<varlte respident="1">57.0</varlte>
+<vargte respident="1">57.0</vargte>
+<varlte respident="1">59.0</varlte>
+</or>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" >
+<conditionvar>
+<other/>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="005 246." ident="2529428651396163">
+<itemmetadata>
+<qmd_itemtype>Pull-down list</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Romanian version\Chimie Generală 2 v400ro</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>A pâna la E sunt soluţii apoase, fiecare conţinând 0,010&nbsp;moli de solut/dm<SUP>3</SUP>.</P>
+<TABLE border=0 width="75%" align=center>
+<TBODY>
+<TR>
+<TD width="12%">A</TD>
+<TD width="45%">NH<SUB>3</SUB>(aq)</TD>
+<TD width="43%">0,010&nbsp;mol/dm<SUP>3</SUP></TD></TR>
+<TR>
+<TD width="12%">B</TD>
+<TD width="45%">CH<SUB>3</SUB>COONa(aq)</TD>
+<TD width="43%">0,010&nbsp;mol/dm<SUP>3</SUP></TD></TR>
+<TR>
+<TD width="12%">C</TD>
+<TD width="45%">HCl(aq)</TD>
+<TD width="43%">0,010&nbsp;mol/dm<SUP>3</SUP></TD></TR>
+<TR>
+<TD width="12%">D</TD>
+<TD width="45%">CH<SUB>3</SUB>COOH(aq)</TD>
+<TD width="43%">0,010&nbsp;mol/dm<SUP>3</SUP></TD></TR>
+<TR>
+<TD width="12%">E</TD>
+<TD width="45%">NaOH(aq)</TD>
+<TD width="43%">0,010&nbsp;mol/dm<SUP>3</SUP></TD></TR></TBODY></TABLE>
+<P>Răspundeţi la fiecare dintre întrebările de mai jos alegând soluţia potrivită dintre cele enumerate mai sus.<BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<material>
+<mattext texttype="text/html"><![CDATA[Care soluţie are pH = 2?]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">A</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">B</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">C</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">D</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">E</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="2">
+<material>
+<mattext texttype="text/html"><![CDATA[Care dintre soluţii formează o soluţie tampon atunci când este amestecată cu un volum egal de soluţie B?]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">A</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">B</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">C</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">D</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">E</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="3">
+<material>
+<mattext texttype="text/html"><![CDATA[Care soluţie în care solutul suferă o ionizare parţială, are un pH mai mare de 7?]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">A</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">B</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">C</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">D</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">E</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Add">20</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" continue="Yes">
+<conditionvar>
+<varequal respident="2">B</varequal>
+</conditionvar>
+<setvar action="Add">20</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" continue="Yes">
+<conditionvar>
+<varequal respident="3">E</varequal>
+</conditionvar>
+<setvar action="Add">20</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="default" >
+<conditionvar>
+<or>
+<other/>
+<not>
+<other/>
+</not>
+</or>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="default"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="default" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="006 254." ident="0295930045164801">
+<itemmetadata>
+<qmd_itemtype>Hot Spot</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Romanian version\Chimie Generală 2 v400ro</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Răspundeţi la această întrebare selectând cu indicatorul mouse-ului diagrama care reprezintă cel mai bine relaţia arătată mai jos.<BR>Relaţia: Variaţia temperaturii (Y) cu timpul (X) când o masă definită de apă este încălzită cu viteză constantă.<BR></P>]]></mattext>
+</material>
+<response_xy ident="1" rcardinality="Single">
+<render_hotspot>
+<material>
+<matimage imagtype="image/jpg" uri="../topicresources/1051229939/g216002_col.jpg" height="263" width="384"/>
+</material>
+</render_hotspot>
+</response_xy>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="right" >
+<conditionvar>
+<varinside respident="1" areatype="Rectangle">0,0 192,131</varinside>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="right"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="right" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="007 260." ident="2435722264329377">
+<itemmetadata>
+<qmd_itemtype>Pull-down list</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Romanian version\Chimie Generală 2 v400ro</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Pentru fiecare dintre următorii compuşi, identificaţi numărul de oxidare al sulfului?<BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<material>
+<mattext texttype="text/html"><![CDATA[H<SUB>2</SUB>S&nbsp;&nbsp;]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">-2</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">+2</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">+4</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">+6</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="2">
+<material>
+<mattext texttype="text/html"><![CDATA[SO<SUB>2</SUB>&nbsp;&nbsp;]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">-2</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">+2</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">+4</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">+6</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="3">
+<material>
+<mattext texttype="text/html"><![CDATA[SO<SUB>3</SUB>&nbsp;&nbsp;]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">-2</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">+2</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">+4</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">+6</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="4">
+<material>
+<mattext texttype="text/html"><![CDATA[H<SUB>2</SUB>SO<SUB>3</SUB>&nbsp;&nbsp;]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">-2</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">+2</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">+4</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">+6</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="5">
+<material>
+<mattext texttype="text/html"><![CDATA[Na<SUB>2</SUB>SO<SUB>4</SUB>&nbsp;&nbsp;]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">-2</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">+2</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">+4</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">+6</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Add">12</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" continue="Yes">
+<conditionvar>
+<varequal respident="2">A</varequal>
+</conditionvar>
+<setvar action="Add">12</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" continue="Yes">
+<conditionvar>
+<varequal respident="3">B</varequal>
+</conditionvar>
+<setvar action="Add">12</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" continue="Yes">
+<conditionvar>
+<varequal respident="4">A</varequal>
+</conditionvar>
+<setvar action="Add">12</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="4" continue="Yes">
+<conditionvar>
+<varequal respident="5">B</varequal>
+</conditionvar>
+<setvar action="Add">12</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+<respcondition title="default" >
+<conditionvar>
+<or>
+<other/>
+<not>
+<other/>
+</not>
+</or>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="default"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="4" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="default" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="008 271." ident="6507030120693897">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Romanian version\Chimie Generală 2 v400ro</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Când o sare anorganică este încălzită în flacăra unui bec Bunsen, flacăra îşi schimbă culoarea în verde. Aceasta indică faptul că sarea conţine:<BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Na<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;K<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Li<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Ca<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Ba<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="4" >
+<conditionvar>
+<varequal respident="1">E</varequal>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="4" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="009 277. A weak acid, HA, dissociates according t" ident="0804760422038273">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Romanian version\Chimie Generală 2 v400ro</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Un acid slab (HA) disociază conform echilibrului:</P>
+<P>HA &nbsp;<IMG border=0 hspace=0 alt="" src="../topicresources/1051229939/equi.gif" width=39 height=14>&nbsp; H+(aq) + A-(aq)</P>
+<P>Constanta de disociere, K<SUB>a</SUB>, a acidului este 1,0×10<SUP>-7</SUP>&nbsp;mol·l<SUP>-1</SUP>. pH-ul aproximativ al unei soluţii 0,1&nbsp;mol·l<SUP>-1</SUP> din acest acid este:<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><img class="extraIcon calculator" src="themes/default/images/QEc.png"><BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="No">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[1<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[2<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[3<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[4<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[5<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0 1" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="0 1"/>
+</respcondition>
+<respcondition title="1 2" >
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="1 2"/>
+</respcondition>
+<respcondition title="2 3" >
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="2 3"/>
+</respcondition>
+<respcondition title="3 4" >
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="3 4"/>
+</respcondition>
+<respcondition title="4 5" >
+<conditionvar>
+<varequal respident="1">E</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="4 5"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0 1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1 2" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2 3" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="3 4" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="4 5" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="010 294.What kind of reaction is represe" ident="1502583528396156">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Romanian version\Chimie Generală 2 v400ro</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Ce tip de reacţie este reprezentată de următoarea ecuaţie?</P>
+<P>CH<SUB>3</SUB>CH(OH)NH-NH<SUB>2</SUB>&nbsp;&nbsp;&nbsp;→&nbsp;&nbsp;&nbsp;CH<SUB>3</SUB>CH=N-NH<SUB>2</SUB>&nbsp;+&nbsp;H<SUB>2</SUB>O<BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[adiţie]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[polimerizare]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[rearanjare]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[substituţie]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[eliminare]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="4" >
+<conditionvar>
+<varequal respident="1">E</varequal>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="4" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="011 218. The following table shows" ident="4941801917964907">
+<itemmetadata>
+<qmd_itemtype>Text Match</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Romanian version\Chimie Generală 2 v400ro</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Tabelul următor prezintă numărul de electroni în 6 atomi neutri, denumiţi cu litere de la E la X.</P>
+<TABLE width=650 align=center>
+<TBODY>
+<TR>
+<TD width=350>
+<H3>Element&nbsp;</H3></TD>
+<TD width=50>
+<H3 align=right>E</H3></TD>
+<TD width=50>
+<H3 align=right>G</H3></TD>
+<TD width=50>
+<H3 align=right>J</H3></TD>
+<TD width=50>
+<H3 align=right>L </H3></TD>
+<TD width=50>
+<H3 align=right>M</H3></TD>
+<TD width=50>
+<H3 align=right>X</H3></TD></TR>
+<TR>
+<TD width=350>
+<H3 align=left>Număr de electroni</H3></TD>
+<TD width=50>
+<H3 align=right>6</H3></TD>
+<TD width=50>
+<H3 align=right>9</H3></TD>
+<TD width=50>
+<H3 align=right>14</H3></TD>
+<TD width=50>
+<H3 align=right>16</H3></TD>
+<TD width=50>
+<H3 align=right>18</H3></TD>
+<TD width=50>
+<H3 align=right>19</H3></TD></TR></TBODY></TABLE>
+<P>Folosiţi litera din tabel pentru a reprezenta un element sau un atom al unui element.<BR>Întrebare: Care dintre elementele de la E la X este cel mai bun agent reducător?<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[Răspuns:]]></mattext>
+</material>
+<response_str ident="1" rcardinality="Single">
+<render_fib fibtype="String" prompt="Box" rows="1" columns="21" />
+</response_str>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1" case="No">J</varequal>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="default" >
+<conditionvar>
+<other/>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="default"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="default" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="012 321." ident="6880147590332477">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Romanian version\Chimie Generală 2 v400ro</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Mase egale de oxigen şi hidrogen sunt puse să reacţioneze într-un container închis (nu încercaţi să realizaţi reacţia în afara incintei):</P>
+<P>2 H<SUB>2</SUB>(g)&nbsp;+&nbsp;O<SUB>2</SUB>(g)&nbsp;&nbsp;&nbsp;→&nbsp;&nbsp;&nbsp;2&nbsp;H<SUB>2</SUB>O(l)</P>
+<P>După ce reacţia este completă, containerul va conţine:<BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[Numai apă şi oxigen]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[Numai apă şi hidrogen]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[Numai apă]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[Apă, Hidrogen şi Oxigen]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="1" >
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="013 336." ident="9318537545278447">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Romanian version\Chimie Generală 2 v400ro</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<TABLE border=1 width="75%" align=center>
+<TBODY>
+<TR>
+<TD colSpan=3>
+<DIV align=center>Datele</DIV></TD></TR>
+<TR>
+<TD width="34%" align=middle>Compus</TD>
+<TD width="32%" align=middle>Masa molară (g/mol)</TD>
+<TD width="34%" align=middle>Punct de fierbere (°C)</TD></TR>
+<TR>
+<TD height=27 width="34%" align=middle>Clorură de sodiu (NaCl)</TD>
+<TD height=27 width="32%" align=middle>58,5</TD>
+<TD height=27 width="34%" align=middle>1413</TD></TR>
+<TR>
+<TD width="34%" align=middle>Tetraclormetan (CCl<SUB>4</SUB>)</TD>
+<TD width="32%" align=middle>154</TD>
+<TD width="34%" align=middle>77</TD></TR></TBODY></TABLE>
+<P>Cea mai bună explicaţie a faptului că tetraclormetanul are un punct de fierbere mult mai scăzut în ciuda masei moleculare mai mari, este<BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[NaCl este solidă şi CCl<SUB>4</SUB> este lichidă.]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[NaCl este compus ionic şi CCl<SUB>4</SUB> este compus covalent.]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[NaCl este o substanţă anorganică în timp ce CCl<SUB>4</SUB> este o substanţă organică.]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[NaCl este solubil în apă în timp ce CCl<SUB>4</SUB> nu este solubil în apă.]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[NaCl are structură de reţea cubică iar CCl<SUB>4</SUB> are structură tetraedrică.]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="1" >
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="014 340. Which of following compou" ident="0345725024369551">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Romanian version\Chimie Generală 2 v400ro</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Care dintre următorii compuşi conţin molecule, în stare solidă.<BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[CO<SUB>2</SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[SiO<SUB>2</SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[KBr<SUB>&nbsp;</SUB> <BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[MgO<SUB> </SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[SiC<SUB> </SUB><BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="015 366. Calculate the pH of 0.01 M" ident="4940731865854492">
+<itemmetadata>
+<qmd_itemtype>Numeric</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Romanian version\Chimie Generală 2 v400ro</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>La 25°C o soluţie apoasă de hidroxid de potasiu, KOH, are concentraţia 0,010 mol/dm<SUP>3</SUP>.<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><img class="extraIcon calculator" src="themes/default/images/QEc.png"><BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[pH-ul acestei soluţii este: ]]></mattext>
+</material>
+<response_num ident="1" rcardinality="Single">
+<render_fib fibtype="Decimal" prompt="Box" rows="1" columns="14" maxchars="14"/>
+</response_num>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">12</varequal>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" >
+<conditionvar>
+<or>
+<vargte respident="1">1.9</vargte>
+<varlte respident="1">2.0</varlte>
+<vargte respident="1">2.0</vargte>
+<varlte respident="1">2.1</varlte>
+</or>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" >
+<conditionvar>
+<other/>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[&lt;CONDITION &gt;&quot;number&quot; = 2.0&lt;/CONDITION&gt;]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="016 372." ident="1995003071363761">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Romanian version\Chimie Generală 2 v400ro</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>În diagrama prezentată mai jos, care dintre distanţele pe verticală reprezintă căldura (entalpia) de reacţie?<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><IMG border=0 hspace=0 alt="" src="../topicresources/1051229939/G2NRJ_en_col.jpg" width=313 height=248></IMG><BR>Legendă: Energy = Energie / Reaction pathway = Calea de reacţie<BR>Reactants = Reactanţi / Products = Produşi<BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="No">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;W<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;X<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Y<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Z<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Z-W<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="2" >
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="017 378." ident="1582003414528031">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Romanian version\Chimie Generală 2 v400ro</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>În care dintre următoarele transformări substanţa din stânga săgeţii ecuaţiei nu suferă un proces de oxidare?<BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[Cl<SUB>2</SUB>&nbsp;&nbsp;&nbsp;<B>→</B>&nbsp;&nbsp;&nbsp;2 Cl<SUP>-</SUP><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[S<SUP>2-</SUP>&nbsp;&nbsp;&nbsp;<B>→</B>&nbsp;&nbsp;&nbsp;S<SUB> </SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[CH<SUB>3</SUB>CH<SUB>2</SUB>OH&nbsp;&nbsp;&nbsp;<B>→</B>&nbsp;&nbsp;&nbsp;CH<SUB>3</SUB>CHO<SUP> </SUP><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[Fe<SUP>2+</SUP>&nbsp;&nbsp;&nbsp;<B>→</B>&nbsp;&nbsp;&nbsp;Fe<SUP>3+</SUP><SUB> </SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[SO<SUB>2</SUB>&nbsp;&nbsp;&nbsp;<B>→</B>&nbsp;&nbsp;&nbsp;SO<SUB>3</SUB><SUP> </SUP><BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="018 300." ident="1407674530695140">
+<itemmetadata>
+<qmd_itemtype>Pull-down list</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Romanian version\Chimie Generală 2 v400ro</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><IMG border=0 hspace=0 alt="" src="../topicresources/1051229939/g2tb04_col.jpg" width=555 height=173></P></IMG>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Care dintre elementele prezente în Tabelul Periodic de mai sus ...<BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<material>
+<mattext texttype="text/html"><![CDATA[are cel mai mare număr de protoni în atomii săi?]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="F">
+<material>
+<mattext texttype="text/plain">He</mattext>
+</material>
+</response_label>
+<response_label ident="I">
+<material>
+<mattext texttype="text/plain">F</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">Na</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">Al</mattext>
+</material>
+</response_label>
+<response_label ident="G">
+<material>
+<mattext texttype="text/plain">Si</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">S</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">Ca</mattext>
+</material>
+</response_label>
+<response_label ident="H">
+<material>
+<mattext texttype="text/plain">Fe</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">Br</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="2">
+<material>
+<mattext texttype="text/html"><![CDATA[este cel mai uşor nemetal?]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="F">
+<material>
+<mattext texttype="text/plain">He</mattext>
+</material>
+</response_label>
+<response_label ident="I">
+<material>
+<mattext texttype="text/plain">F</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">Na</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">Al</mattext>
+</material>
+</response_label>
+<response_label ident="G">
+<material>
+<mattext texttype="text/plain">Si</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">S</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">Ca</mattext>
+</material>
+</response_label>
+<response_label ident="H">
+<material>
+<mattext texttype="text/plain">Fe</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">Br</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="3">
+<material>
+<mattext texttype="text/html"><![CDATA[are totdeauna numărul de oxidare +2 în compuşii săi?]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="F">
+<material>
+<mattext texttype="text/plain">He</mattext>
+</material>
+</response_label>
+<response_label ident="I">
+<material>
+<mattext texttype="text/plain">F</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">Na</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">Al</mattext>
+</material>
+</response_label>
+<response_label ident="G">
+<material>
+<mattext texttype="text/plain">Si</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">S</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">Ca</mattext>
+</material>
+</response_label>
+<response_label ident="H">
+<material>
+<mattext texttype="text/plain">Fe</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">Br</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="4">
+<material>
+<mattext texttype="text/html"><![CDATA[formează un oxid amfoter?]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="F">
+<material>
+<mattext texttype="text/plain">He</mattext>
+</material>
+</response_label>
+<response_label ident="I">
+<material>
+<mattext texttype="text/plain">F</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">Na</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">Al</mattext>
+</material>
+</response_label>
+<response_label ident="G">
+<material>
+<mattext texttype="text/plain">Si</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">S</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">Ca</mattext>
+</material>
+</response_label>
+<response_label ident="H">
+<material>
+<mattext texttype="text/plain">Fe</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">Br</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="5">
+<material>
+<mattext texttype="text/html"><![CDATA[are cel mai puternic caracter electronegativ?]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="F">
+<material>
+<mattext texttype="text/plain">He</mattext>
+</material>
+</response_label>
+<response_label ident="I">
+<material>
+<mattext texttype="text/plain">F</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">Na</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">Al</mattext>
+</material>
+</response_label>
+<response_label ident="G">
+<material>
+<mattext texttype="text/plain">Si</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">S</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">Ca</mattext>
+</material>
+</response_label>
+<response_label ident="H">
+<material>
+<mattext texttype="text/plain">Fe</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">Br</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Add">12</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" continue="Yes">
+<conditionvar>
+<varequal respident="2">F</varequal>
+</conditionvar>
+<setvar action="Add">12</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" continue="Yes">
+<conditionvar>
+<varequal respident="3">D</varequal>
+</conditionvar>
+<setvar action="Add">12</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" continue="Yes">
+<conditionvar>
+<varequal respident="4">B</varequal>
+</conditionvar>
+<setvar action="Add">12</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="4" continue="Yes">
+<conditionvar>
+<varequal respident="5">I</varequal>
+</conditionvar>
+<setvar action="Add">12</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+<respcondition title="default" >
+<conditionvar>
+<or>
+<other/>
+<not>
+<other/>
+</not>
+</or>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="default"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="4" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="default" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="019 401." ident="7026214988502132">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Romanian version\Chimie Generală 2 v400ro</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Azotul şi hidrogenul reacţionează la 500°C până la echilibru într-un container de oţel inoxidabil. Ecuaţia reacţiei la echilibru este:</P>
+<P>N<SUB>2</SUB>(g)&nbsp;+&nbsp;3&nbsp;H<SUB>2</SUB>(g) &nbsp;<IMG border=0 hspace=0 alt="" src="../topicresources/1051229939/equi.gif" width=39 height=14>&nbsp; 2NH<SUB>3</SUB>(g) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ΔH &lt; 0</P>
+<P>Care va fi efectul produs de creşterea concentraţiei de hidrogen în amestecul la echilibru?<BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[Scade randamentul (cantitatea).]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[Concentraţiile la echilibru rămân neschimbate.]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[Creşte randamentul în amoniac.]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[Creşte temperatura amestecului.]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[Valoarea constantei de echilibru se modifică.]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="2" >
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="020 417." ident="3675468780520431">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Romanian version\Chimie Generală 2 v400ro</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Care dintre următoarele specii reprezintă unitatea monomeră pentru polistiren?<BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[-CH<SUB>2</SUB>CH(CH<SUB>3</SUB>)-<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[-CH<SUB>2</SUB>CH<SUB>2</SUB>-<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[-CH<SUB>2</SUB>CH(C<SUB>6</SUB>H<SUB>5</SUB>)-<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[-NHCH<SUB>2</SUB>CO-<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[-CH<SUB>2</SUB>CH<SUB>2</SUB>O-<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="2" >
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="021 443." ident="0501968639007348">
+<itemmetadata>
+<qmd_itemtype>Pull-down list</qmd_itemtype>
+<qmd_maximumscore>60</qmd_maximumscore>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Romanian version\Chimie Generală 2 v400ro</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Examinaţi următoarele enunţuri privind relaţiile elementelor din Sistemul Periodic.<BR>Pentru fiecare indicaţi care este adevărat sau fals:<BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<material>
+<mattext texttype="text/html"><![CDATA[Proprietăţile primului element din fiecare grupă a Sistemului Periodic tind să fie diferite de cele ale celorlalte elemente din grupă.]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">Adevărat</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">Fals</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="2">
+<material>
+<mattext texttype="text/html"><![CDATA[Dacă ne deplasăm de la stânga la dreapta în Sistemul Periodic, caracterul elementelor se schimbă de la nemetalic la metalic.]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">Adevărat</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">Fals</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="3">
+<material>
+<mattext texttype="text/html"><![CDATA[Valenţa maximă a elementelor creşte dacă ne deplasăm în grupă de sus în jos.]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">Adevărat</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">Fals</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="4">
+<material>
+<mattext texttype="text/html"><![CDATA[Atomii elementelor dintr-o grupă a Sistemului Periodic au aceeaşi configuraţie a stratului electronic extern.]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">Adevărat</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">Fals</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Add">15</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" continue="Yes">
+<conditionvar>
+<varequal respident="2">A</varequal>
+</conditionvar>
+<setvar action="Add">15</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" continue="Yes">
+<conditionvar>
+<varequal respident="3">A</varequal>
+</conditionvar>
+<setvar action="Add">15</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" continue="Yes">
+<conditionvar>
+<varequal respident="4">B</varequal>
+</conditionvar>
+<setvar action="Add">15</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="default" >
+<conditionvar>
+<or>
+<other/>
+<not>
+<other/>
+</not>
+</or>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="default"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="default" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="022 447." ident="9802465979478378">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Romanian version\Chimie Generală 2 v400ro</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Graficul de mai jos prezintă cantitatea de precipitat formată la adăugarea treptată a 2&nbsp;cm<SUP>3</SUP> de soluţie de hidroxid de sodiu 0,10&nbsp;mol/l la 10,0&nbsp;cm<SUP>3</SUP> soluţie de sulfat de cupru 0,10&nbsp;mol/l. Cantitatea de precipitat este indicată de înălţimea sa in tubul test.<BR>Conform informaţiilor din grafic, de care dintre următoarele formule este descrisă cel mai bine compoziţia chimică a precipitatului?<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><IMG border=0 hspace=0 alt="" src="../topicresources/1051229939/g232002_col.jpg" width=360 height=327></IMG><BR>Legendă: Height of precipitate / cm = Înălţimea precipitatului / cm<BR>Volume of 0,10 M NaOH added ! Volumul adăugat de soluţie NaOH 0,10 M<BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[CuSO<SUB>4</SUB>.Cu(OH)<SUB>2</SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[Cu(OH)<SUB>2</SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[Na<SUB>2</SUB>SO<SUB>4</SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[Cu<SUB>2</SUB>SO<SUB>4</SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[CuSO<SUB>4</SUB>.2NaOH<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="023 449." ident="4560144058322507">
+<itemmetadata>
+<qmd_itemtype>Pull-down list</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Romanian version\Chimie Generală 2 v400ro</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Considerăm următoarele specii chimice</P>
+<TABLE border=0 width="75%" align=center>
+<TBODY>
+<TR>
+<TD><B>NH<SUB>3</SUB></B></TD>
+<TD><B>BF<SUB>3</SUB></B></TD>
+<TD><B>NO<SUB>2</SUB><SUP>-</SUP></B></TD>
+<TD><B>H<SUB>2</SUB>O</B></TD>
+<TD><B>NH<SUB>4</SUB><SUP>+</SUP></B></TD></TR></TBODY></TABLE>
+<P>Selectaţi din diagramele de la A la F pe cea care reprezintă cel mai bine geometria moleculară pentru fiecare substanţă.<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><IMG border=0 hspace=0 alt="" src="../topicresources/1051229939/g233001_col.jpg" width=459 height=279><BR></P></IMG>]]></mattext>
+</material>
+<response_lid ident="1">
+<material>
+<mattext texttype="text/html"><![CDATA[<B>NH<SUB>3</SUB></B>&nbsp;&nbsp;]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">A</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">B</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">C</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">D</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">E</mattext>
+</material>
+</response_label>
+<response_label ident="F">
+<material>
+<mattext texttype="text/plain">F</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="2">
+<material>
+<mattext texttype="text/html"><![CDATA[<B>BF<SUB>3</SUB></B>&nbsp;&nbsp;]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">A</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">B</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">C</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">D</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">E</mattext>
+</material>
+</response_label>
+<response_label ident="F">
+<material>
+<mattext texttype="text/plain">F</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="3">
+<material>
+<mattext texttype="text/html"><![CDATA[<B>NO<SUB>2</SUB><SUP>-</SUP></B>&nbsp;&nbsp;]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">A</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">B</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">C</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">D</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">E</mattext>
+</material>
+</response_label>
+<response_label ident="F">
+<material>
+<mattext texttype="text/plain">F</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="4">
+<material>
+<mattext texttype="text/html"><![CDATA[<B>H<SUB>2</SUB>O</B>&nbsp;&nbsp;]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">A</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">B</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">C</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">D</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">E</mattext>
+</material>
+</response_label>
+<response_label ident="F">
+<material>
+<mattext texttype="text/plain">F</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="5">
+<material>
+<mattext texttype="text/html"><![CDATA[<B>NH<SUB>4</SUB><SUP>+</SUP></B>&nbsp;&nbsp;]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">A</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">B</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">C</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">D</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">E</mattext>
+</material>
+</response_label>
+<response_label ident="F">
+<material>
+<mattext texttype="text/plain">F</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Add">12</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" continue="Yes">
+<conditionvar>
+<varequal respident="2">E</varequal>
+</conditionvar>
+<setvar action="Add">12</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" continue="Yes">
+<conditionvar>
+<varequal respident="3">B</varequal>
+</conditionvar>
+<setvar action="Add">12</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" continue="Yes">
+<conditionvar>
+<varequal respident="4">A</varequal>
+</conditionvar>
+<setvar action="Add">12</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="4" continue="Yes">
+<conditionvar>
+<varequal respident="5">D</varequal>
+</conditionvar>
+<setvar action="Add">12</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+<respcondition title="default" >
+<conditionvar>
+<or>
+<other/>
+<not>
+<other/>
+</not>
+</or>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="default"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="4" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="default" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="024 457." ident="7921714513507905">
+<itemmetadata>
+<qmd_itemtype>Pull-down list</qmd_itemtype>
+<qmd_maximumscore>60</qmd_maximumscore>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Romanian version\Chimie Generală 2 v400ro</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Hidroxidul de cadmiu, Cd(OH)<SUB>2</SUB>, este greu solubil în apă.<BR>Care dintre următoarele acţiuni, intervenţii, duce la modificarea concentraţiei Cd<SUP>2+</SUP> în soluţia de hidroxid de cadmiu care rezultă din amestecarea apei cu hidroxid de cadmiu solid?</P>
+<P>Selectaţi opţiunea "Adevărat" dacă acţiunea modifică concentraţia cadmiului; dacă nu selectaţi opţiunea "Fals".<BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<material>
+<mattext texttype="text/html"><![CDATA[Adăugarea de apă la soluţie.]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">Adevărat</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">Fals</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="2">
+<material>
+<mattext texttype="text/html"><![CDATA[Modificarea temperaturii soluţiei.]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">Adevărat</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">Fals</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="3">
+<material>
+<mattext texttype="text/html"><![CDATA[Adăugarea de clorură de cadmiu solidă la soluţie.]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">Adevărat</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">Fals</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="4">
+<material>
+<mattext texttype="text/html"><![CDATA[Adăugarea de acid clorhidric la soluţie.]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">Adevărat</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">Fals</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="5">
+<material>
+<mattext texttype="text/html"><![CDATA[Adăugarea de hidroxid de sodiu la soluţie.]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">Adevărat</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">Fals</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Add">12</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" continue="Yes">
+<conditionvar>
+<varequal respident="2">B</varequal>
+</conditionvar>
+<setvar action="Add">12</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" continue="Yes">
+<conditionvar>
+<varequal respident="3">A</varequal>
+</conditionvar>
+<setvar action="Add">12</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" continue="Yes">
+<conditionvar>
+<varequal respident="4">B</varequal>
+</conditionvar>
+<setvar action="Add">12</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="4" continue="Yes">
+<conditionvar>
+<varequal respident="5">B</varequal>
+</conditionvar>
+<setvar action="Add">12</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+<respcondition title="default" >
+<conditionvar>
+<or>
+<other/>
+<not>
+<other/>
+</not>
+</or>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="default"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="4" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="default" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="025 281. From the following formula, cho" ident="8513705533673286">
+<itemmetadata>
+<qmd_itemtype>Hot Spot</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Romanian version\Chimie Generală 2 v400ro</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Una dintre următoarele formule nu reprezintă 2-metilpentan.<BR>Selectaţi această formulă folosind mouse-ul:<BR></P>]]></mattext>
+</material>
+<response_xy ident="1" rcardinality="Single">
+<render_hotspot>
+<material>
+<matimage imagtype="image/jpg" uri="../topicresources/1051229939/g210004_col.jpg" height="216" width="500"/>
+</material>
+</render_hotspot>
+</response_xy>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="right" >
+<conditionvar>
+<varinside respident="1" areatype="Rectangle">139,114 315,215</varinside>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="right"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="right" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="026 466. A container is filled with an e" ident="8031221620218476">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Romanian version\Chimie Generală 2 v400ro</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>O incintă este umplută cu un număr egal de moli de heliu şi neon. Care dintre următoarele afirmaţii despre amestec este corectă?<BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[Atomii de neon prezintă o energie cinetică medie mai mare decât atomii de heliu.]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[Atomii de neon prezintă o viteză medie mai mare decât atomii de heliu.]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[Atomii de heliu prezintă o energie cinetică medie mai mare decât atomii de neon.]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[Atomii de heliu prezintă o rată medie de coliziune cu pereţii mai mare decât atomii de neon.]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[Atomii de neon prezintă aceeaşi viteză medie ca şi atomii de heliu.]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="3" >
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="027 473." ident="4623066016611638">
+<itemmetadata>
+<qmd_itemtype>Multiple Response</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Romanian version\Chimie Generală 2 v400ro</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>În care dintre următoarele reacţii H<SUB>2</SUB>SO<SUB>4</SUB> acţionează ca agent oxidant?<BR></P>]]></mattext>
+</material>
+<response_lid ident="1" rcardinality="Multiple">
+<render_choice shuffle="Yes" minnumber="1" maxnumber="5">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[Cu&nbsp;+&nbsp;2&nbsp;H<SUB>2</SUB>SO<SUB>4</SUB>&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;&nbsp;CuSO<SUB>4</SUB>&nbsp;+&nbsp;SO<SUB>2</SUB>&nbsp;+&nbsp;2&nbsp;H<SUB>2</SUB>O<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[Zn&nbsp;+&nbsp;2&nbsp;H<SUB>2</SUB>SO<SUB>4</SUB>&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;&nbsp;ZnSO<SUB>4</SUB>&nbsp;+&nbsp;SO<SUB>2</SUB>&nbsp;+&nbsp;2&nbsp;H<SUB>2</SUB>O<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[CuO&nbsp;+&nbsp; H<SUB>2</SUB>SO<SUB>4</SUB>&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;&nbsp;CuSO<SUB>4</SUB>&nbsp;+&nbsp;H<SUB>2</SUB>O<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[Cu(OH)<SUB>2</SUB>&nbsp;+&nbsp;H<SUB>2</SUB>SO<SUB>4</SUB>&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;&nbsp;CuSO<SUB>4</SUB>&nbsp;+&nbsp;2&nbsp;H<SUB>2</SUB>O<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[ZnO&nbsp;+&nbsp; H<SUB>2</SUB>SO<SUB>4</SUB>&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;&nbsp;ZnSO<SUB>4</SUB>&nbsp;+&nbsp;H<SUB>2</SUB>O<BR><BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="header" continue="Yes">
+<conditionvar>Unrecognized or unsupported test method
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="header"/>
+</respcondition>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Add">30</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" continue="Yes">
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Add">30</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+<varequal respident="1">B</varequal>
+<varequal respident="1">C</varequal>
+<varequal respident="1">D</varequal>
+<varequal respident="1">E</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="header" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="028 477." ident="1717666638164727">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Romanian version\Chimie Generală 2 v400ro</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Care dintre următoarele afirmaţii despre halogeni este adevărată?<BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[Caracterul electronegativ creşte de la fluor la iod.<SUB> </SUB>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[Valoarea primei trepte a energiei de ionizare descreşte de la iod la fluor.<SUB> </SUB>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[Fluorul prezintă cea mai mică tendinţă de a fi redus.<SUB> </SUB>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[Cl<SUB>2</SUB> va oxida I<SUP>-</SUP> (aq).<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[Bromul este agent oxidant mai puternic decât fluorul.<SUB> </SUB>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="3" >
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="029 486." ident="0443156213518975">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Romanian version\Chimie Generală 2 v400ro</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Care dintre următoarele reacţii chimice, când au loc la presiune constantă, sunt însoţite de creşterea entropiei?<BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[Cl<SUP>-</SUP>(aq)&nbsp;+&nbsp;NH<SUB>4</SUB><SUP>+</SUP>(aq)&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;&nbsp;NH<SUB>4</SUB>Cl(s)<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[2&nbsp;Ca(s)&nbsp;+&nbsp;O<SUB>2</SUB>(g)&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;&nbsp;2&nbsp;CaO(s)<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[N<SUB>2</SUB>(g)&nbsp;+&nbsp;3&nbsp;H<SUB>2</SUB>(g)&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;&nbsp;2&nbsp;NH<SUB>3</SUB>(g)<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[CaCO<SUB>3</SUB>(s)&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;&nbsp;CaO(s)&nbsp;+&nbsp;CO<SUB>2</SUB>(g)<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[H<SUB>2</SUB>O(g)&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;&nbsp;H<SUB>2</SUB>O(l)<BR><BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="3" >
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="030 497." ident="7745116628850796">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Romanian version\Chimie Generală 2 v400ro</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Un compus X are formula C<SUB>3</SUB>H<SUB>8</SUB>O. Prin oxidare devine compusul cu formula C<SUB>3</SUB>H<SUB>6</SUB>O. Aceste informaţii sugerează că X este:<BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[O aldehidă]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[Un alcool terţiar]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[O olefină (alchenă)]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[Un alcool secundar]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[Un eter]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="3" >
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Set">60</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+</item>
+
+
+</questestinterop>
+
+

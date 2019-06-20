@@ -76,7 +76,7 @@ function saveLanguageFiles(){
         translationsTable.rows().eq(0).filter(function(rowIndex){
             var id = translationsTable.cell(rowIndex, ttci.translationID).data().trim();
             var text = $(translationsTable.cell(rowIndex, ttci.langTo).node()).find("span").text();
-            if(text == "")
+	if(text == "")
                 empty = true;
             constants.push(id);
             translations.push(text);

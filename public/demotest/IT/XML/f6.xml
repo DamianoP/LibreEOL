@@ -1,0 +1,2851 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE questestinterop SYSTEM "ims_qtiasiv1p2.dtd">
+
+<questestinterop>
+<scale>100</scale>
+
+
+<item title="001  Use the marker to select from the following structures the  B one  /B with the IUPAC-name   B 2,5-dibromo-4-ethylnon-4-ene /B . BR    BR  CENTER" ident="1993273744754428">
+<itemmetadata>
+<qmd_itemtype>Hot Spot</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Italian version\Chimica Organica 3 v400it</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Utilizzare il cursore per selezionare tra le seguenti strutture <B>quella</B>corrispondente alla terminologia IUPAC per il <B>2,5-dibromo-4-etilnon-4-ene</B>.<BR></P>]]></mattext>
+</material>
+<response_xy ident="1" rcardinality="Single">
+<render_hotspot>
+<material>
+<matimage imagtype="image/jpg" uri="../topicresources/1799059400/o3g011.jpg" height="283" width="446"/>
+</material>
+</render_hotspot>
+</response_xy>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="Correct" >
+<conditionvar>
+<varinside respident="1" areatype="Rectangle">233,0 445,154</varinside>
+</conditionvar>
+<setvar action="Set">2</setvar>
+<displayfeedback linkrefid="Correct"/>
+</respcondition>
+<respcondition title="Wrong 1" >
+<conditionvar>
+<varinside respident="1" areatype="Rectangle">0,0 220,138</varinside>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="Wrong 1"/>
+</respcondition>
+<respcondition title="Wrong 2" >
+<conditionvar>
+<varinside respident="1" areatype="Rectangle">0,143 218,281</varinside>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="Wrong 2"/>
+</respcondition>
+<respcondition title="Wrong 3" >
+<conditionvar>
+<varinside respident="1" areatype="Rectangle">225,162 444,280</varinside>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="Wrong 3"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="Correct" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[This is the correct structure, numbered as shown.<BR><CENTER><img src="%SERVER.GRAPHICS%o3g01f1b.gif" width="112" height="79"></CENTER>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="Wrong 1" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[This is not the correct structure. Numbering from the right hand side, this structure is :<CENTER><B>2,4-dibromo-5-ethylnon-4-ene</B><BR><img src="%SERVER.GRAPHICS%o3g01f1a.gif" width="132" height="62"></CENTER>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="Wrong 2" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[This is not the correct structure. Numbering from the left hand side, this structure is :<CENTER><B>5,8-dibromo-6-ethylnon-4-ene</B><BR><img src="%SERVER.GRAPHICS%o3g01f1c.gif" width="148" height="72"></CENTER>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="Wrong 3" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[This is not the correct structure. Numbering from the left hand side, this structure is :<CENTER><B>3,6-dibromo-7-ethylnon-4-ene</B><BR><img src="%SERVER.GRAPHICS%o3g01f1d.gif" width="126" height="62"></CENTER>]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="002  The charge in hybridisatio" ident="4862459986076524">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Italian version\Chimica Organica 3 v400it</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Come cambia l'ibridazione del carbonile di carbonio nella seguente reazione?<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P align=center><IMG border=0 hspace=0 alt="" src=../topicresources/1799059400/o3g021_col.jpg" width=248 height=77></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="No">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[ da sp<SUP>2</SUP> a sp<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[da sp<SUP>3</SUP> a sp<SUP>2<BR></SUP>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[da sp<SUP>2</SUP> a sp<SUP>3<BR></SUP>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[da sp a sp<SUP>3<BR></SUP>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[non cambia <BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="Correct" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">2</setvar>
+<displayfeedback linkrefid="Correct"/>
+</respcondition>
+<respcondition title="False 4" >
+<conditionvar>
+<varequal respident="1">E</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="False 4"/>
+</respcondition>
+<respcondition title="False 3" >
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="False 3"/>
+</respcondition>
+<respcondition title="False 2" >
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="False 2"/>
+</respcondition>
+<respcondition title="False 1" >
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="False 1"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="Correct" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questa e' la risposta corretta.<BR>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="False 4" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questa non e' la risposta corretta. Gli atomi di carbonile di carbonio hanno ibridazione  sp<SUP>2</SUP></B>, e gli atomi di nitrile di carbonio hanno ibridazione <B>sp</B>. Il cambiamento indicato e' quindi da <B>sp<SUP>2</SUP></B> a <B>sp</B>.<BR>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="False 3" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questa non e' la risposta corretta. Gli atomi di carbonile di carbonio hanno ibridazione  sp<SUP>2</SUP></B>, e gli atomi di nitrile di carbonio hanno ibridazione <B>sp</B>. Il cambiamento indicato e' quindi da <B>sp<SUP>2</SUP></B> a <B>sp</B>.<BR>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="False 2" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questa non e' la risposta corretta. Gli atomi di carbonile di carbonio hanno ibridazione  sp<SUP>2</SUP></B>, e gli atomi di nitrile di carbonio hanno ibridazione <B>sp</B>. Il cambiamento indicato e' quindi da <B>sp<SUP>2</SUP></B> a <B>sp</B>.<BR>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="False 1" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questa non e' la risposta corretta. Gli atomi di carbonile di carbonio hanno ibridazione  sp<SUP>2</SUP></B>, e gli atomi di nitrile di carbonio hanno ibridazione <B>sp</B>. Il cambiamento indicato e' quindi da <B>sp<SUP>2</SUP></B> a <B>sp</B>.<BR>]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="003  Which of the following types of" ident="7897871026731668">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Italian version\Chimica Organica 3 v400it</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><B>Quale</B> dei seguenti gruppi funzionali e' presente nella struttura indicata?<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P align=center><IMG border=0 hspace=0 alt="" src="../topicresources/1799059400/o3g031_col.jpg" width=112 height=80></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[anidride<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[carbonato<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[chetoestere<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[iactone<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">2</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="False 2" >
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="False 2"/>
+</respcondition>
+<respcondition title="False 1" >
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="False 1"/>
+</respcondition>
+<respcondition title="False 3" >
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="False 3"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[This is the correct answer<BR>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="False 2" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[This is not the correct answer. A ketone consists of a carbonyl group attached to two alkyl groups. The structure shown has carbonyl groups attached to an alkyl group and oxygen. The correct answer is anhydride.<BR>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="False 1" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[This is not the correct answer. A carbonate group has the structure <B>-O.CO.O-</B>, but this compound has the structure <B>-CO.O.CO-</B>. The correct answer is anhydride.<BR>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="False 3" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[This is not the correct answer. A lactone is a cyclic ester. It therefore has only the group <B>-O.CO-</B> in its structure, not the group <B>-CO.O.CO-</B>. The correct answer is anhydride.<BR>]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="004  Use the marker to select which  B one /B  of the" ident="4899341560881146">
+<itemmetadata>
+<qmd_itemtype>Hot Spot</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Italian version\Chimica Organica 3 v400it</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Utilizzare il cursore per selezionare <B>quale</B> delle stutture <BR><B>A, B, C </B>o<B> D</B> ha una configurazione diversa dalla struttura <B>1</B>.<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P align=center><IMG border=0 hspace=0 alt="" src="../topicresources/1799059400/o3g041_col.jpg" width=220 height=86></P>]]></mattext>
+</material>
+<response_xy ident="1" rcardinality="Single">
+<render_hotspot>
+<material>
+<matimage imagtype="image/jpg" uri="../topicresources/1799059400/o3g042.jpg" height="150" width="673"/>
+</material>
+</render_hotspot>
+</response_xy>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="all correct" >
+<conditionvar>
+<varinside respident="1" areatype="Rectangle">352,0 508,149</varinside>
+</conditionvar>
+<setvar action="Set">2</setvar>
+<displayfeedback linkrefid="all correct"/>
+</respcondition>
+<respcondition title="wrong" >
+<conditionvar>
+<other/>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="wrong"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="all correct" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[This is the correct answer.<BR>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="wrong" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[This is not the correct structure. It has the <B>R</B>- configuration, and so does structure <B>1</B>; you should have identified a structure with the <B>S</B>- configuration, i.e. structure C.<BR>]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="005  Which one of the following seri" ident="4842598611509184">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Italian version\Chimica Organica 3 v400it</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><B>Quale </B>delle seguenti serie contiene solo nucleofili?<BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[  NH<SUB>3</SUB> ; H<SUB>2</SUB>O ; CN<B><SUP>-</B> </SUP> ; I<B><SUP>-<BR></SUP></B>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[  NH<SUB>3</SUB> ; H<SUB>2</SUB>O ; I<B><SUP>-</B> </SUP> ; BH<SUB>3<BR></SUB>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[  NH<SUB>3</SUB> ; H<SUB>2</SUB>O  ; BF<SUB>4<B></SUB><SUP>-</SUP></B>; Br<B><SUP>-<BR> </SUP></B>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[  AlCl<SUB>3</SUB> ; Me<SUB>3</SUB>O<SUP>+</SUP> ; NO<SUB>2</SUB><SUP>+</SUP> ;<SUP> </SUP>BF<SUB>3<BR></SUB>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">2</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="False 2" >
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="False 2"/>
+</respcondition>
+<respcondition title="False 1" >
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="False 1"/>
+</respcondition>
+<respcondition title="False 3" >
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="False 3"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questa e' la risposta corretta.<BR>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="False 2" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questa non e' la risposta corretta. Un nucleofilo e' una specie che ha a disposizione una coppia di elettroni che puo' essere utilizzata per formare un legame. Tutte queste specie sono nucleofili tranne <B>BF<SUB>4</SUB><SUP>-</SUP></B>, che puo' generare il nucleofilo <B>F<SUP>-</SUP></B>, ma non lo e' lui stesso. La risposta corretta e'  <B>NH<SUB>3</SUB>; H<SUB>2</SUB>O; CN<SUP>-</SUP>; I<SUP>-</SUP></B>.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="False 1" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questa non e' la risposta corretta. Un nucleofilo e' una specie che ha a disposizione una coppia di elettroni che puo' essere utilizzata per formare un legame. Tutte queste specie sono nucleofili tranne<B>BH<SUB>3</SUB></B>, che e' un elettrofilo. Ha infatti modo di accettare una coppia di elettroni per formare un legame. La risposta corretta e'  <B>NH<SUB>3</SUB>; H<SUB>2</SUB>O; CN<SUP>-</SUP>; I<SUP>-</SUP></B>.<BR>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="False 3" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questa non e' la risposta corretta. Un nucleofilo e' una specie che ha a disposizione una coppia di elettroni che puo' essere utilizzata per formare un legame. Nessuna di queste specie e' un nucleofilo. <B>BF<SUB>3</SUB></B>, <B>AlCl<SUB>3</SUB></B> e <B>NO<SUB>2</SUB><SUP>+</SUP></B> sono elettrofili, ciascuna infatti ha modo di accettare una coppia di elettroni per formare un legame. <B>Me<SUB>3</SUB>O<SUP>+</SUP></B> puo' generare l'elettrofilo <B>Me<SUP>+</SUP></B>. La risposta corretta e' <B>NH<SUB>3</SUB>; H<SUB>2</SUB>O; CN<SUP>-</SUP>; I<SUP>-</SUP></B>.<BR>]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="006  Which of the following solvents" ident="9118602676004218">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Italian version\Chimica Organica 3 v400it</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Quale dei seguenti solventi forma facilmente perossidi pericolosi quando esposto all'aria e alla luce per lunghi periodi di tempo?<BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[Dietil etere<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[  t-butil metil etere(MTBE)<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[Etanolo<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[Dimetilformammide (DMF)<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">2</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="False 2" >
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="False 2"/>
+</respcondition>
+<respcondition title="False 3" >
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="False 3"/>
+</respcondition>
+<respcondition title="False 1" >
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="False 1"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[This is the correct answer.<BR>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="False 2" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[This is not the correct answer. Ethanol does not form peroxides. The correct answer is Diethyl ether.<BR>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="False 3" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[This is not the correct answer. Dimethylformamide (<B>DMF</B>) does not form peroxides. The correct answer is Diethyl ether.<BR>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="False 1" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[This is not the correct answer. t-Butyl methyl ether (<B>MTBE</B>) does not form peroxides. The correct answer is Diethyl ether.<BR>]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="007  Which aromatic compound of" ident="7305676610074769">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Italian version\Chimica Organica 3 v400it</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P align=center><IMG border=0 hspace=0 alt="" src="../topicresources/1799059400/o3g071it_col.jpg" width=482 height=157></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Quale dei seguenti composti aromatici ha cinque picchi nel suo spettro NMR del C-H disaccoppiato al <SUB>13</B></SUB>C?<BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="No">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[  <CITE>o</CITE>-xilene (<B>1</B>)<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[  <CITE>m</CITE>-xilene (<B>2</B>)<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[  <CITE>p</CITE>-xilene (<B>3</B>)<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[etilbenzene (<B>4</B>)<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="1" >
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Set">2</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="False 0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="False 0"/>
+</respcondition>
+<respcondition title="False 2" >
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="False 2"/>
+</respcondition>
+<respcondition title="False 3" >
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="False 3"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="1" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questa e' la risposta corretta. L'<B>m-Xilene</B>ha due singoli e tre coppie di atomi di carbonio magneticamente equivalenti, e quindi cinque picchi al suo spettro NMR al <SUB>13</SUB>C.<BR><CENTER><img src="%SERVER.GRAPHICS%o3g0712.jpg" width="142" height="130"></CENTER>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="False 0" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questa non e' la risposta corretta. L'<B><I>o</I>-Xilene</B> ha quattro coppie di atomi di carbonio magneticamente equivalenti, e quindi mostra quattro picchi nel suo spettro NMR al <SUB>13</SUB>C. La risposta corretta e' <B><I>m</I>-xilene</B>.<BR><CENTER><img src="%SERVER.GRAPHICS%o3g0711.jpg" width="514" height="158"></CENTER>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="False 2" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questa non e' la risposta corretta. Il <B><I>p</I>-Xilene</B> ha tre gruppi di atommi di carbonio magneticamente equivalenti, e quindi mostra tre picchi nel suo spettro NMR al  <SUB>13</SUB>C. La risposta corretta e' <B><I>m</I>-xilene</B>.<BR><CENTER><img src="%SERVER.GRAPHICS%o3g0713.jpg" width="141" height="120"></CENTER>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="False 3" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[This is not the correct answer. <B>Ethyl-benzene</B> has four unique and two pairs of magnetically equivalent carbon atoms, and so shows six peaks in its <SUB>13</SUB>C NMR spectrum. The correct answer is <B><I>m</I>-xylene</B>.<BR><CENTER><img src="%SERVER.GRAPHICS%o3g0714.jpg" width="164" height="125"></CENTER>]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="008  Use the marker to select which would be the major product in the following reaction. BR   BR  CENTER" ident="7462278838131650">
+<itemmetadata>
+<qmd_itemtype>Hot Spot</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Italian version\Chimica Organica 3 v400it</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Selezionare la molecola (A, B, C or D) che sarebbe il prodotto principale nella reazione seguente e trascinarlo dopo la freccia di reazione.<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/plain">
+Multiple Drag and Drop questions are not yet supported
+</mattext>
+</material>
+</presentation>
+</item>
+
+
+<item title="009  Put question wording here and p" ident="3002787834130142">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Italian version\Chimica Organica 3 v400it</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><B>Quale</B> delle seguenti affermazioni relative alle reazioni di eliminazione <B>E1</B> e' corretta?<BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[La stereochimica delle reazioni di eliminazione E1 segue preferibilmente un cammino di <CITE>anti</CITE>-elimination.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[Il meccanismo E1 e' un meccanismo a due stadi con un intermedio di reazione carico positivamente.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[  Le reazioni E1 sono generalmente piu' veloci avendo come solvente l'esano piuttosto che l'acqua.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[Le reazioni di eliminazione  E1 procedono solo in presenza di una base forte.<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="1" >
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Set">2</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="False 2" >
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="False 2"/>
+</respcondition>
+<respcondition title="False 3" >
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="False 3"/>
+</respcondition>
+<respcondition title="False 0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="False 0"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="1" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questa e' l'affermazione corretta.<BR>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="False 2" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questa non e' l'affermazione corretta. La separazione dello ione nelle reazioni di eliminazione <B>E1</B> e' accelerata dall'uso di un solvente polare, quindi la reazione in acqua e' piu' veloce. La risposta corretta e': <I>Il meccanismo E1 e' un meccanismo a due stadi con un intermedio di reazione carico positivamente.</I>.<BR>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="False 3" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questa non e' l'affermazione corretta. La base non partecipa alle reazioni di eliminazione  <B>E1</B>; lo stadio iniziale e' la separazione del gruppo uscente. Una base forte da preferibilmente reazioni di eliminazione <B>E2</B>. La risposta corretta e': <I>Il meccanismo E1 e' un meccanismo a due stadi con un intermedio di reazione carico positivamente.</I><BR>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="False 0" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questa non e' l'affermazione corretta. Dopo la perdita del gruppo uscente, e' possibile una rotazione libera dell'intermediario. Come risultato tutti i possibili prodotti stero vengono a formarsi, con una prevalenza di isomeri <B>E</B>. La risposta corretta e': <I>Il meccanismo E1 e' un meccanismo a due stadi con un intermedio di reazione carico positivamente.</I>.<BR>]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="010  Put question wording here and p" ident="0146714526098548">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Italian version\Chimica Organica 3 v400it</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Selezionare dai seguenti set di reagenti e condizioni <B>quella</B> che preferibilmente porta al prodotto mostrato nello schema di reazione.<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P align=center><IMG border=0 hspace=0 alt="" src="../topicresources/1799059400/o3g101_col.jpg" width=316 height=102></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[ 1. HNO<SUB>3</SUB>/H<SUB>2</SUB>SO<SUB>4</SUB>;  2. Br<SUB>2</SUB>/FeBr<SUB>3</SUB>;  3. Fe/HCl<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[ 1. HNO<SUB>3</SUB>/H<SUB>2</SUB>SO<SUB>4</SUB>;  2. Fe/HCl;  3. Br<SUB>2</SUB>/FeBr<SUB>3<BR></SUB>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[ 1. Br<SUB>2</SUB>/FeBr<SUB>3</SUB>;  2. HNO<SUB>3</SUB>/H<SUB>2</SUB>SO<SUB>4</SUB>;  3. Fe/HCl<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[ 1. HNO<SUB>3</SUB>/H<SUB>2</SUB>SO<SUB>4</SUB>; 2. Br<SUB>2</SUB>/FeBr<SUB>3</SUB>;  3. NaNH<SUB>2<BR></SUB>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">2</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="False 1" >
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="False 1"/>
+</respcondition>
+<respcondition title="False 2" >
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="False 2"/>
+</respcondition>
+<respcondition title="False 3" >
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="False 3"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questa e' la sequenza corretta. Questa reazione inizia con la nitrazione del benzene. <B>Br<SUB>2</SUB>/FeBr<SUB>3</SUB></B> brominera' e il nitrobenzene in posizione <I>meta</I>, ma il nitrobenzene e' altamente disattivato verso reazioni di sostituzione elettrofila aromatica, quindi potrebbe essere poco. Successivamente la reazione mediante il <B>Fe/HCl</B> portera' alla <I>meta</I>-bromoanilina, sebbene del bromo potrebbe perdersi in condizioni riducenti, lasciando anilina.<BR>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="False 1" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questa non e' la risposta corretta. Lo schema di reazione inizierebbe con la mononitrazione del benzene. Il <B>Fe/HCl</B> reagente ridurrebbe il gruppo nitro a gruppo ammino. Successivamente la reazione con Further reaction with the <B>Br<SUB>2</SUB>/FeBr<SUB>3</SUB></B> brominerebbe l'amminobenzene in posizione <I>o</I>- e<I>p</I>-. La sequenza corretta e': 1. HNO<SUB>3</SUB>/H<SUB>2</SUB>SO<SUB>4</SUB>; 2. Br<SUB>2</SUB>/FeBr<SUB>3</SUB>; 3. Fe/HCl.<BR>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="False 2" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questa non e' la sequenza coretta. Lo schema di reazione inizierebbe con la brominazione del benzene. L'azoto reagente, <B>HNO<SUB>3</SUB>/H<SUB>2</SUB>SO<SUB>4</SUB></B>, provocherebbe una reazione di nitrazione del  bromobenzene in poisizione orto- e para-. Successivamente la reazione con <B>Fe/HCl</B> produrrebbe una miscela di <I>orto</I>- e <I>para</I>-bromoaniline, sebbene del bromo potrebbe perdersi in condizioni riducenti, lasciando anilina. La sequenza corretta e': <B>1. HNO<SUB>3</SUB>/H<SUB>2</SUB>SO<SUB>4</SUB>; 2. Br<SUB>2</SUB>/FeBr<SUB>3</SUB>; 3. Fe/HCl</B>.<BR>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="False 3" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questa non e' la risposta corretta. La reazione inizierebbe con la nitrazione del benzene. Il <B>Br<SUB>2</SUB>/FeBr<SUB>3</SUB></B> brominerebbe il nitrobenzene in posizione <I>meta</I>-, ma il nitrobenzene e' altamente disattivato nei contronti di reazioni di sostituzione aromatica elettrofila, quindi potrebbe essere poco. Successivamente la reazione con il <B>NaNH<SUB>2</SUB></B> provocherebbe la perdita del <B>-Br</B> dall'anello, e la sua sostituzione di <B>-NH<SUB>2</SUB></B>, <I>o</I>-, <I>m</I>-, o <I>p</I>- al gruppo nitro. La sequenza corretta e': <B>1. HNO<SUB>3</SUB>/H<SUB>2</SUB>SO<SUB>4</SUB>; 2. Br<SUB>2</SUB>/FeBr<SUB>3</SUB>; 3. Fe/HCl</B>.<BR>]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="011  Put in here whatever rich" ident="5350880409526525">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Italian version\Chimica Organica 3 v400it</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><B>Quale</B> delle seguenti affermazioni riguardo le reazioni di <B>Grignard </B>e' corretta?<BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[  CH<SUB>3</SUB>COOCH<SUB>3</SUB> e CH<SUB>3</SUB>COOC<SUB>6</SUB>H<SUB>5</SUB> formano lo stesso alcool terziario quando trattati con eccesso di C<SUB>2</SUB>H<SUB>5</SUB>MgBr liberando H<SUP>+</SUP>/H<SUB>2</SUB>O.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[  C<SUB>2</SUB>H<SUB>5</SUB>COOCH<SUB>3</SUB> e  CH<SUB>3</SUB>COOC<SUB>2</SUB>H<SUB>5</SUB> formano lo stesso alcool terziario quando trattati con eccesso di C<SUB>2</SUB>H<SUB>5</SUB>MgBr liberando H<SUP>+</SUP>/H<SUB>2</SUB>O.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[  CH<SUB>3</SUB>COOCH<SUB>3</SUB> e CH<SUB>3</SUB>COOC<SUB>6</SUB>H<SUB>5</SUB> formano lo stesso alcool secondario quando trattati con eccesso di  C<SUB>2</SUB>H<SUB>5</SUB>MgBr liberando  H<SUP>+</SUP>/H<SUB>2</SUB>O.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[Acetone e acetaldeide formano lo stesso alcool secondario quando trattati con eccesso di  C<SUB>2</SUB>H<SUB>5</SUB>MgBr liberando  H<SUP>+</SUP>/H<SUB>2</SUB>O.<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">2</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="False 1" >
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="False 1"/>
+</respcondition>
+<respcondition title="False 3" >
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="False 3"/>
+</respcondition>
+<respcondition title="False 2" >
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="False 2"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questa e' la risposta corretta. Il prodotto e' il <B>3-metil pentano-3-ol</B>.<BR>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="False 1" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questa non e' la risposta corretta. Il <B>C<SUB>2</SUB>H<SUB>5</SUB>COOCH<SUB>3</SUB></B> reagisce con <B>C<SUB>2</SUB>H<SUB>5</SUB>MgBr</B> poi con  H+/H<SUB>2</SUB>O per dare il 3-etilpentano-3-ol, mentre il   <B>CH<SUB>3</SUB>COOC<SUB>2</SUB>H<SUB>5</SUB></B> reagisce con  <B>C<SUB>2</SUB>H<SUB>5</SUB>MgBr</B> poi con  <B>H<SUP>+</SUP>/H<SUB>2</SUB>O</B> a dare 3-metilpentano-3-ol. La risposta corretta e': CH<SUB>3</SUB>COOCH<SUB>3</SUB> e  <B>CH<SUB>3</SUB>COOC<SUB>6</SUB>H<SUB>5</SUB></B> formano lo stesso alcool terziario quando trattati con eccesso di  <B>C<SUB>2</SUB>H<SUB>5</SUB>MgBr</B> liberando  <B>H<SUP>+</SUP>/H<SUB>2</SUB>O</B>.<BR>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="False 3" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questa non e' la risposta corretta. L'acetone reagisce con <B>C<SUB>2</SUB>H<SUB>5</SUB>MgBr</B> poi con  <B>H<SUP>+</SUP>/H<SUB>2</SUB>O</B> a dare un alcool terziario, il 2-metilbutano-2-ol; invece l'acetaldeide reagisce con <B>C<SUB>2</SUB>H<SUB>5</SUB>MgBr</B> poi con  <B>H<SUP>+</SUP>/H<SUB>2</SUB>O</B> a dare un alcool secondario, il butano-2-ol. La risposta corretta e': CH<SUB>3</SUB>COOCH<SUB>3</SUB> e  <B>CH<SUB>3</SUB>COOC<SUB>6</SUB>H<SUB>5</SUB></B> formano lo stesso alcool terziario quando trattati con eccesso di  <B>C<SUB>2</SUB>H<SUB>5</SUB>MgBr</B> liberando  <B>H<SUP>+</SUP>/H<SUB>2</SUB>O</B>.<BR>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="False 2" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questa non e' la risposta corretta. Gli esteri reagiscono con eccesso di  <B>C<SUB>2</SUB>H<SUB>5</SUB>MgBr</B> liberando  <B>H<SUP>+</SUP>/H<SUB>2</SUB>O</B> a dare alcool terziari. La risposta corretta e': CH<SUB>3</SUB>COOCH<SUB>3</SUB> e  <B>CH<SUB>3</SUB>COOC<SUB>6</SUB>H<SUB>5</SUB></B> formano lo stesso alcool terziario quando trattati con eccesso di  <B>C<SUB>2</SUB>H<SUB>5</SUB>MgBr</B> liberando  <B>H<SUP>+</SUP>/H<SUB>2</SUB>O</B>.<BR>]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="012  Use the marker to select which  B one /B  of the alkenes shown below gives ethanal and butan-2-one when subjected to ozonolysis.  BR    CENTER" ident="6970392383565658">
+<itemmetadata>
+<qmd_itemtype>Hot Spot</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Italian version\Chimica Organica 3 v400it</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Utilizzare il cursore per selezionare <B>quale</B> alchene tra quelli mostrati di seguito forma etanale e butano-2-one quando sottosposto a ozonolisi.<BR></P>]]></mattext>
+</material>
+<response_xy ident="1" rcardinality="Single">
+<render_hotspot>
+<material>
+<matimage imagtype="image/jpg" uri="../topicresources/1799059400/o3g121.jpg" height="120" width="743"/>
+</material>
+</render_hotspot>
+</response_xy>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="all correct" >
+<conditionvar>
+<varinside respident="1" areatype="Rectangle">430,0 557,119</varinside>
+</conditionvar>
+<setvar action="Set">2</setvar>
+<displayfeedback linkrefid="all correct"/>
+</respcondition>
+<respcondition title="false 1" >
+<conditionvar>
+<varinside respident="1" areatype="Rectangle">0,0 159,119</varinside>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="false 1"/>
+</respcondition>
+<respcondition title="false 2" >
+<conditionvar>
+<varinside respident="1" areatype="Rectangle">162,0 280,119</varinside>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="false 2"/>
+</respcondition>
+<respcondition title="false 3" >
+<conditionvar>
+<varinside respident="1" areatype="Rectangle">289,0 423,119</varinside>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="false 3"/>
+</respcondition>
+<respcondition title="false 5" >
+<conditionvar>
+<varinside respident="1" areatype="Rectangle">574,0 742,119</varinside>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="false 5"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="all correct" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questo e' l'alchene corretto.<BR><CENTER><img src="%SERVER.GRAPHICS%o3g121d.jpg" width="133" height="80"></CENTER>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="false 1" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questo non e' l'alchene corretto. I prodotto dell'ozonolisi sarebbero metanale e butanale.  L'alchene corretto e' il 3-metilpent-2-ene (<B>A</B>).<BR><CENTER><img src="%SERVER.GRAPHICS%o3g121a.jpg" width="138" height="135"></CENTER>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="false 2" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Queso non e' l'alchene corretto. I prodotti dell'ozonolisi sarebbero etanale e propanone.  L'alchene corretto e' 3-metilpent-2-ene (<B>A</B>).<BR><CENTER><img src="%SERVER.GRAPHICS%o3g121b.jpg" width="138" height="158"></CENTER>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="false 3" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questo non e' l'alchene corretto. I prodotto dell'ozonolisi sarebbero l'etanale e il 2-metilpropanale. L'alchene corretto e' 3-metilpent-2-ene (<B>A</B>).<BR><CENTER><img src="%SERVER.GRAPHICS%o3g121b.jpg" width="138" height="158"></CENTER>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="false 5" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questo nonn e' l'alche corretto. I prodotti dell'ozonollisi sarebbero il propanale e il butan-2-one. L'alchene corretto e' 3-metilpent-2-ene (<B>A</B>).<BR><CENTER><img src="%SERVER.GRAPHICS%o3g121b.jpg" width="138" height="158"></CENTER>]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="013  Suggest the most suitable" ident="2410887033067609">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Italian version\Chimica Organica 3 v400it</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><B>Quale </B>dei seguenti reagenti e' adatto per la reazione indicato di seguito?<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P align=center><IMG border=0 hspace=0 alt="" src="../topicresources/1799059400/o3g131_col.jpg" width=420 height=152></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[   NaBH<SUB>4 </SUB>in metanolo<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[NaH<SUB> </SUB>in tetraidrofurano<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[   LiAlH<SUB>4 </SUB>in dietiletere<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[   H<SUB>2</SUB>, Pd-C in metanolo<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">2</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="False 2" >
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="False 2"/>
+</respcondition>
+<respcondition title="False 3" >
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="False 3"/>
+</respcondition>
+<respcondition title="False 1" >
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="False 1"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questo e' il reagente corretto. <B>NaBH<SUB>4</SUB></B> in metanolo riduce solo i gruppi esteri molto lentamente.<BR>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="False 2" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questo non e' il reagente corretto. <B>LiAlH<SUB>4</SUB></B> in dietiletere ridurrebbe entrambe le funzioni carbonili a dare <I>para</I>-bis(idrometil)benzene. Il reagente corretto e' <B>NaBH<SUB>4</SUB></B> in metanolo.<BR>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="False 3" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questo non e' il reagente corretto. <B>H<SUB>2</SUB></B>, <B>Pd-C</B> in metanolo ridurrebbe entrambe le funzioni carbonili a <B>-CH<SUB>2</SUB>OH</B>. Il reagente corretto e' <B>NaBH<SUB>4</SUB></B> in metanolo.<BR>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="False 1" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questo non e'  il reagente corretto. <B>NaH</B> in tetraidrofurano e' usato come base forte, ma raramente come agente riducente, e in applicazioni speciali. Il reagente corretto e' <B>NaBH<SUB>4</SUB></B> in metanolo.<BR>]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="014  The1H-NMR spectrum of diet" ident="0934897228206782">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Italian version\Chimica Organica 3 v400it</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Quale dei seguenti anioni e' la base piu' debole?<BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[    C<SUB>6</SUB>H<SUB>5</SUB>SO<SUB>3<B></SUB><SUP>-<BR></SUP></B>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[    C<SUB>6</SUB>H<SUB>5</SUB>O<B><SUP>-<BR></SUP></B>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[    C<SUB>2</SUB>H<SUB>5</SUB>O<B><SUP>-<BR></SUP></B>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[    C<SUB>6</SUB>H<SUB>5</SUB>CO<SUB>2<B></SUB><SUP>-</SUP></B> <BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">2</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="False 2" >
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="False 2"/>
+</respcondition>
+<respcondition title="False" >
+<conditionvar>
+<other/>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="False"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questo anione e' la base piu' debole. Le basi piu' deboli sono quelle che si formano dal piu' forte acido coniugato. L'acido ppiu' forte della lista e' il  <B>C<SUB>6</SUB>H<SUB>5</SUB>SO<SUB>3</SUB>H</B>, quindi questo anione sara' la base piu' debole.<BR>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="False 2" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questa non e' la base piu' debole. Le basi piu' deboli sono quelle formate dagli acidi coniugati piu' forti. L'acido piu' forte della lista e' il  C<SUB>6</SUB>H<SUB>5</SUB>SO<SUB>3</SUB>H, quindi la base piu' debole sara'  C<SUB>6</SUB>H<SUB>5</SUB>SO<SUB>3</SUB><SUP>-</SUP>. L'anione C<SUB>2</SUB>H<SUB>5</SUB>O<SUP>-</SUP> e' la base piu' forte della lista.<BR>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="False" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questa non e' la base piu' debole. Le basi piu' deboli sono quelle formate dagli acidi coniugati piu' forti. L'acido piu' forte della lista e' il  C<SUB>6</SUB>H<SUB>5</SUB>SO<SUB>3</SUB>H, quindi la base piu' debole sara'  C<SUB>6</SUB>H<SUB>5</SUB>SO<SUB>3</SUB><SUP>-</SUP>. L'anione C<SUB>2</SUB>H<SUB>5</SUB>O<SUP>-</SUP> e' la base piu' forte della lista.<BR>]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="015 Use the marker to select which  B one /B  of the following peroxides is most easily formed from the corresponding hydrocarbon by auto-oxidation via a radical reaction. BR    CENTER" ident="5597620034112684">
+<itemmetadata>
+<qmd_itemtype>Hot Spot</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Italian version\Chimica Organica 3 v400it</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Utilizzare il cursore per selezionare <B>quale</B> dei seguenti perossidi si forma ppiu' facilmente dal corrispondente idrocarbuto mediante auto ossidazione mediante una reazione radicalica.<BR></P>]]></mattext>
+</material>
+<response_xy ident="1" rcardinality="Single">
+<render_hotspot>
+<material>
+<matimage imagtype="image/jpg" uri="../topicresources/1799059400/o3g151.jpg" height="174" width="467"/>
+</material>
+</render_hotspot>
+</response_xy>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="all correct" >
+<conditionvar>
+<varinside respident="1" areatype="Rectangle">131,0 223,173</varinside>
+</conditionvar>
+<setvar action="Set">2</setvar>
+<displayfeedback linkrefid="all correct"/>
+</respcondition>
+<respcondition title="wrong 1" >
+<conditionvar>
+<varinside respident="1" areatype="Rectangle">0,0 130,173</varinside>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="wrong 1"/>
+</respcondition>
+<respcondition title="wrong 3" >
+<conditionvar>
+<varinside respident="1" areatype="Rectangle">227,0 327,173</varinside>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="wrong 3"/>
+</respcondition>
+<respcondition title="wrong 4" >
+<conditionvar>
+<varinside respident="1" areatype="Rectangle">329,0 465,172</varinside>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="wrong 4"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="all correct" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questo e' il perossido corretto. L'estrazione radicalica di un atomo di idrogeno puo' avvenire da idrocarburi benzilici, dando con il 2-propilbenzene il radicale terziario stabile che porta a questo prodotto.<BR><CENTER><img src="%SERVER.GRAPHICS%o3g151b.jpg" width="115" height="150"></CENTER>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="wrong 1" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questo non e' il perossido corretto. L'astrazione radicalica di un atomo di idrogeno puo' avvenire da idrocarburi benzilici, ma il radicale primario che si forma non e' stabile come il radicale terziario che porta al perossido corretto, <B>A</B>.<BR><CENTER><img src="%SERVER.GRAPHICS%o3g151a.jpg" width="245" height="157"></CENTER>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="wrong 3" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questo non e' il perossido corretto. L'astrazione radicalica di un atomo di idrogeno diretamente attaccato all'anello del benzene non avviene facilmente. Il perossido corretto e' il composto <B>A</B>.<BR><CENTER><img src="%SERVER.GRAPHICS%o3g151c.jpg" width="209" height="156"></CENTER>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="wrong 4" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questo non e' il perossido corretto. Un radicale piu' stabile si forma dall'estrazione di un atomo di idrogeno terziario dal 2-propil sidecianocome dai gruppi metilici. Il perossido corretto e' il composto <B>A</B>.<BR><CENTER><img src="%SERVER.GRAPHICS%o3g151d.jpg" width="235" height="153"></CENTER>]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="016  Which one of the following stru" ident="4344075474317434">
+<itemmetadata>
+<qmd_itemtype>Hot Spot</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Italian version\Chimica Organica 3 v400it</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Utilizzare il cursore per selezionare <B>quale </B>delle seguenti strutture si puo' prevedere essere un aromatico secondo la regola di Hückels.<BR></P>]]></mattext>
+</material>
+<response_xy ident="1" rcardinality="Single">
+<render_hotspot>
+<material>
+<matimage imagtype="image/jpg" uri="../topicresources/1799059400/o3g161.jpg" height="142" width="454"/>
+</material>
+</render_hotspot>
+</response_xy>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="right" >
+<conditionvar>
+<varinside respident="1" areatype="Rectangle">176,0 271,107</varinside>
+</conditionvar>
+<setvar action="Set">4</setvar>
+<displayfeedback linkrefid="right"/>
+</respcondition>
+<respcondition title="default" continue="Yes">
+<conditionvar>
+<other/>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="default"/>
+</respcondition>
+<respcondition title="false 1" >
+<conditionvar>
+<varinside respident="1" areatype="Rectangle">1,0 92,93</varinside>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="false 1"/>
+</respcondition>
+<respcondition title="false 2" >
+<conditionvar>
+<varinside respident="1" areatype="Rectangle">97,0 176,94</varinside>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="false 2"/>
+</respcondition>
+<respcondition title="false 4" >
+<conditionvar>
+<varinside respident="1" areatype="Rectangle">273,1 350,99</varinside>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="false 4"/>
+</respcondition>
+<respcondition title="false 5" >
+<conditionvar>
+<varinside respident="1" areatype="Rectangle">360,1 453,103</varinside>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="false 5"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="right" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questa e' la struttura corretta. E' ciclica, coniugata e ha sei <font face=symbol>p</font> elettroni, conformemente alla reglola di <B>Hückel’s </B>(4n +2) <font face=symbol>p</font>.<BR><CENTER><img src="%SERVER.GRAPHICS%o3g16fA.jpg" width="48" height="51"></CENTER>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="default" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questa non e' la struttura corretta. La regola di <B>Hückel’s </B> prevede aromaticita' per strutture coniugate cicliche con (4n +2) <font face=symbol>p</font> elettroni. ]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="false 1" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Il <B>Cicloottatetraene </B>non e' coniugato perche' non e' planare e ha otto  <font face=symbol>p</font> elettroni. La struttura corretta e' il <B>catione tropilio A</B>, con sei <font face=symbol>p</font> elettroni.<BR><CENTER><img src="%SERVER.GRAPHICS%o3g16f1.jpg" width="54" height="54">&nbsp;&nbsp;&nbsp;&nbsp;<img src="%SERVER.GRAPHICS%o3g16fA.jpg" width="48" height="51" border="1"></CENTER>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="false 2" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[L'<B>anione tropilio </B>e' coniugato ma ha otto <font face=symbol>p</font> elettroni. La struttura corretta e' il <B>catione tropilio A</B>, con sei <font face=symbol>p</font> elettroni.<BR><CENTER><img src="%SERVER.GRAPHICS%o3g16f2.jpg" width="51" height="51">&nbsp;&nbsp;&nbsp;&nbsp;<img src="%SERVER.GRAPHICS%o3g16fA.jpg" width="48" height="51" border="1"></CENTER>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="false 4" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Il <B>cationione ciclopentadienile</B> e' coniugato ma ha quattro <font face=symbol>p</font> elettroni. La struttura corretta e' il <B>cationio tropilio A</B>, con sei <font face=symbol>p</font> elettroni.<BR><CENTER><img src="%SERVER.GRAPHICS%o3g16f4.jpg" width="40" height="43">&nbsp;&nbsp;&nbsp;&nbsp;<img src="%SERVER.GRAPHICS%o3g16fA.jpg" width="48" height="51" border="1"></CENTER>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="false 5" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[L'<B>anione cicloesadiene</B> ha sei <font face=symbol>p</font> elettroni, ma non e' completamente un sistema coniugato ciclico. La struttura corretta e' il <B>catione tropilio  A</B>, con sei <font face=symbol>p</font> elettroni.<BR><CENTER><img src="%SERVER.GRAPHICS%o3g16f5.jpg" width="54" height="51">&nbsp;&nbsp;&nbsp;&nbsp;<img src="%SERVER.GRAPHICS%o3g16fA.jpg" width="48" height="51" border="1"></CENTER>]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="017  Put question wording here and p" ident="2477924470849429">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Italian version\Chimica Organica 3 v400it</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P align=center><IMG border=0 hspace=0 alt="" src="../topicresources/1799059400/o3g171_col.jpg" width=150 height=147></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Quanti stereoisomeri (isomeri configurazionali) sono possibili con la struttura seguente?<BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[4 (1 coppia di enantiomeri piu' 2 composti meso)<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[8 (4 coppie di enantiomeri)<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[3 (1 coppie di enantiomeri piu' 1 composto meso)<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[6 (2 coppie di enantiomeri piu' 2 composti meso)<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">4</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="false 1" >
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="false 1"/>
+</respcondition>
+<respcondition title="false 2" >
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="false 2"/>
+</respcondition>
+<respcondition title="false 3" >
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="false 3"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questa e' la risposta corretta- vedi di seguito:<BR><CENTER><img src="%SERVER.GRAPHICS%o3g17f.jpg" width="606" height="122"></CENTER>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="false 1" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questa non e' la risposta corretta.I due meso composti sono possibili ma solo una coppia di enantiomeri. La risposta corretta e'  "4 (1 Paio di enantiomeri e 2 composti meso)" - vedi di seguito:<BR><CENTER><img src="%SERVER.GRAPHICS%o3g17f.jpg" width="606" height="122"></CENTER>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="false 2" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questa non e' la risposta corretta.Una coppia di enantiomeri e' possibile ma ci sono anche 2 composti meso. La risposta corretta e'  "4 (1 Paio di enantiomeri e 2 composti meso)" - vedi di seguito:<BR><CENTER><img src="%SERVER.GRAPHICS%o3g17f.jpg" width="606" height="122"></CENTER>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="false 3" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questa non e' la risposta corretta.Solo una coppia di enantiomeri e' possibile, insieme con du composti meso. La risposta corretta e'  "4 (1 Paio di enantiomeri e 2 composti meso)" - vedi di seguito:<BR><CENTER><img src="%SERVER.GRAPHICS%o3g17f.jpg" width="606" height="122"></CENTER>]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="018  Match the compounds A-D with th" ident="0395582788935223">
+<itemmetadata>
+<qmd_itemtype>Pull-down list</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Italian version\Chimica Organica 3 v400it</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Individua i composti <B>1-4</B> secondo le caratteristiche spettrali selezionate.<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P align=center><IMG border=0 hspace=0 alt="" src="../topicresources/1799059400/o3g181_col.jpg" width=448 height=104></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><STRONG>Osservare i dati spettroscopici:<BR></STRONG></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P align=center><IMG border=0 hspace=0 alt="" src="../topicresources/1799059400/thnmr_en.gif" width=470 height=345><IMG border=0 hspace=0 alt="" src="../topicresources/1799059400/tcnmr_en.gif" width=469 height=242><IMG border=0 hspace=0 alt="" src="../topicresources/1799059400/tir_en.gif" width=469 height=423></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<material>
+<mattext texttype="text/html"><![CDATA[<SUP>1</SUP>H NMR: d = 1,70 (3H), 5,85 (1H) e 6,05 (1H).<BR>]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">composto 1</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">composto2</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">composto 3</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">composto 4</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="2">
+<material>
+<mattext texttype="text/html"><![CDATA[<SUP>13</SUP>C NMR: d = 111,8 (singoletto) e 131,7 (tripletto).<BR>]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">composto 1</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">composto 2</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">composto 3</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">composto 4</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="3">
+<material>
+<mattext texttype="text/html"><![CDATA[IR:  990 cm<SUP>-1</SUP> (forte) e 910 cm<SUP>-1</SUP>.<BR><SUP></SUP>]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">composto 1</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">composto 2</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">composto 3</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">composto 4</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="4">
+<material>
+<mattext texttype="text/html"><![CDATA[<SUP>1</SUP>H NMR: d = 0,3 (4H, multipletto), e 3,0 (1H, multipletto).<BR>]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">composto 1</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">composto 2</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">composto 3</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">composto 4</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1"></varequal>
+</conditionvar>
+<setvar action="Add">1</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="0 wrong" continue="Yes">
+<conditionvar>
+<not>
+<varequal respident="1"></varequal>
+</not>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="0 wrong"/>
+</respcondition>
+<respcondition title="1" continue="Yes">
+<conditionvar>
+<varequal respident="2"></varequal>
+</conditionvar>
+<setvar action="Add">1</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="1 wrong" continue="Yes">
+<conditionvar>
+<not>
+<varequal respident="2"></varequal>
+</not>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="1 wrong"/>
+</respcondition>
+<respcondition title="2" continue="Yes">
+<conditionvar>
+<varequal respident="3"></varequal>
+</conditionvar>
+<setvar action="Add">1</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="2 wrong" continue="Yes">
+<conditionvar>
+<not>
+<varequal respident="3"></varequal>
+</not>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="2 wrong"/>
+</respcondition>
+<respcondition title="3" continue="Yes">
+<conditionvar>
+<varequal respident="4"></varequal>
+</conditionvar>
+<setvar action="Add">1</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="3 wrong" continue="Yes">
+<conditionvar>
+<not>
+<varequal respident="4"></varequal>
+</not>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="3 wrong"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Esatto. Questo e' lo spettro NMR completo dell' <SUP>1</SUP>H del composto  <B>3</B>. Il gruppo metile fornisce il segnale dei 3 protoni a <FONT face=symbol>d</FONT> =1.70 ppm, e i protoni dei due alcheno forniscono segnali separati a piu' basso campo.<BR><CENTER><SUP>1</SUP>H NMR: <font face=symbol>d</font> =1.70 (3H), 5.85 (1H) e 6.05 (1H)&nbsp;&nbsp;&nbsp;&nbsp;<img src="%SERVER.GRAPHICS%o3g18f3.gif" width="114" height="63"></CENTER>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="0 wrong" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questa non e' la risposta corretta. Questo e' lo spettro NMR completo dell' <SUP>1</SUP>H del composto  <B>3</B>. Il gruppo metile fornisce il segnale dei 3 protoni a <FONT face=symbol>d</FONT> =1.70 ppm, e i protoni dei due alcheno forniscono segnali separati a piu' basso campo.<BR><CENTER><SUP>1</SUP>H NMR: <font face=symbol>d</font> =1.70 (3H), 5.85 (1H) e 6.05 (1H)&nbsp;&nbsp;&nbsp;&nbsp;<img src="%SERVER.GRAPHICS%o3g18f3.gif" width="114" height="63"></CENTER>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Esatto. Questo e' lo spettro NMR della regione dell'alchene relativa al <SUP>13</SUP>C del composto <B>4</B>. Il singoletto mostra che nessun atomo di H e' attaccato al legame C=C.<BR><CENTER><SUP>13</SUP>C NMR: <font face=symbol>d</font> = 111.8 (singoletto) e 131.7 (tripletto)&nbsp;&nbsp;&nbsp;&nbsp;<img src="%SERVER.GRAPHICS%o3g18f4.gif" width="114" height="63"></CENTER>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="1 wrong" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questa non e' la risposta corretta. Questo e' lo spettro NMR della regione dell'alchene relativa al <SUP>13</SUP>C del composto <B>4</B>. Il singoletto mostra che nessun atomo di H e' attaccato al legame C=C.<BR><CENTER><SUP>13</SUP>C NMR: <font face=symbol>d</font> = 111.8 (singoletto) e 131.7 (tripletto)&nbsp;&nbsp;&nbsp;&nbsp;<img src="%SERVER.GRAPHICS%o3g18f4.gif" width="114" height="63"></CENTER>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Esatto. Questo e' parte dello spettro IR del comprosto <B>2</B>. I due assorbimenti sono dovuti alle deformazioni fuori dal piano dei legami <B>C-H</B>  di un alcheme terminale.<BR><CENTER>IR: 990 cm<SUP>-1</SUP> (forte) e 910 cm<SUP>-1</SUP>&nbsp;&nbsp;&nbsp;&nbsp;<img src="%SERVER.GRAPHICS%o3g18f2.gif" width="114" height="63"></CENTER>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="2 wrong" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questa non e' la risposta corretta. Questo e' parte dello spettro IR del comprosto <B>2</B>. I due assorbimenti sono dovuti alle deformazioni fuori dal piano dei legami <B>C-H</B>  di un alcheme terminale.<BR><CENTER>IR: 990 cm<SUP>-1</SUP> (forte) e 910 cm<SUP>-1</SUP>&nbsp;&nbsp;&nbsp;&nbsp;<img src="%SERVER.GRAPHICS%o3g18f2.gif" width="114" height="63"></CENTER>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Esatto. Questo e' lo spettro NMR completo dell'<SUP>1</SUP>H del composto  <B>1</B>. I quattro protoni dei due gruppi CH<SUB>2</SUB> mostra le caratteristiche di uno shift chimico a campi alti dei ciclopropani, mentre il protone singolo  e' portato a campi piu' bassi dal cloro elettronegativo adiacente.<BR><CENTER><SUP>1</SUP>H NMR: <font face=symbol>d</font> = 0.3 (4H, multipletto) e 3.0 1H, multiplet)&nbsp;&nbsp;&nbsp;&nbsp;<img src="%SERVER.GRAPHICS%o3g18f1.gif" width="114" height="63"></CENTER>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="3 wrong" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questa non e' la risposta corretta. Questo e' lo spettro NMR completo dell'<SUP>1</SUP>H del composto  <B>1</B>. I quattro protoni dei due gruppi CH<SUB>2</SUB> mostra le caratteristiche di uno shift chimico a campi alti dei ciclopropani, mentre il protone singolo  e' portato a campi piu' bassi dal cloro elettronegativo adiacente.<BR><CENTER><SUP>1</SUP>H NMR: <font face=symbol>d</font> = 0.3 (4H, multipletto) e 3.0 1H, multiplet)&nbsp;&nbsp;&nbsp;&nbsp;<img src="%SERVER.GRAPHICS%o3g18f1.gif" width="114" height="63"></CENTER>]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="019new  Put question wording here and s" ident="6289593994703952">
+<itemmetadata>
+<qmd_itemtype>Hot Spot</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Italian version\Chimica Organica 3 v400it</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Utilizzare il cursore per selezionare <B>quale </B>delle strutture seguenti rappresenta un dimero che si formatosi a temperatura ambiente dal ciclopentadiene a temperatura ambiente.<BR></P>]]></mattext>
+</material>
+<response_xy ident="1" rcardinality="Single">
+<render_hotspot>
+<material>
+<matimage imagtype="image/jpg" uri="../topicresources/1799059400/o3g191.jpg" height="113" width="624"/>
+</material>
+</render_hotspot>
+</response_xy>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="right" >
+<conditionvar>
+<varinside respident="1" areatype="Rectangle">147,0 293,112</varinside>
+</conditionvar>
+<setvar action="Set">4</setvar>
+<displayfeedback linkrefid="right"/>
+</respcondition>
+<respcondition title="false 1" >
+<conditionvar>
+<varinside respident="1" areatype="Rectangle">1,0 142,112</varinside>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="false 1"/>
+</respcondition>
+<respcondition title="false 3" >
+<conditionvar>
+<varinside respident="1" areatype="Rectangle">303,0 455,112</varinside>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="false 3"/>
+</respcondition>
+<respcondition title="false 4" >
+<conditionvar>
+<varinside respident="1" areatype="Rectangle">464,0 623,112</varinside>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="false 4"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="right" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questa e' la struttura corretta, formatasi mediante una reazione di cicloaddizione (Diels Alder)  <font face=symbol>(4p + 2p)</font> concertata.<BR><CENTER><img src="%SERVER.GRAPHICS%o3g19fA.gif" width="151" height="113" border="1"></CENTER>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="false 1" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questa non e' la risposta corretta. Il doppio legame e' in posizione sbagliata per una reazione di cicloaddizione (Diels Alder) <font face=symbol>(4p + 2p)</font> concertata. La struttura corretta e' <B>A</B>.<BR><CENTER><img src="%SERVER.GRAPHICS%o3g19f1.gif" width="143" height="113">&nbsp;&nbsp;&nbsp;&nbsp;<img src="%SERVER.GRAPHICS%o3g19fA.gif" width="151" height="113" border="1"></CENTER>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="false 3" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questa non e'la risposta corretta. Questo e' il prodotto di una reazione di cicloaddzione concertata <font face=symbol>(2p + 2p)</font> termicamente impossibile. La struttura corretta, formata mediante una reazione di cicloaddizione  (Diels Alder)  <font face=symbol>(4p + 2p)</font> concertata, e' <B>A</B>.<BR><CENTER><img src="%SERVER.GRAPHICS%o3g19f3.gif" width="165" height="113">&nbsp;&nbsp;&nbsp;&nbsp;<img src="%SERVER.GRAPHICS%o3g19fA.gif" width="151" height="113" border="1"></CENTER>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="false 4" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questa non e'la risposta corretta. Questo e' il prodotto di una reazione di cicloaddzione concertata <font face=symbol>(2p + 2p)</font> termicamente impossibile. La struttura corretta, formata mediante una reazione di cicloaddizione  (Diels Alder)  <font face=symbol>(4p + 2p)</font> concertata, e' <B>A</B>.<BR><CENTER><img src="%SERVER.GRAPHICS%o3g19f3.gif" width="165" height="113">&nbsp;&nbsp;&nbsp;&nbsp;<img src="%SERVER.GRAPHICS%o3g19fA.gif" width="151" height="113" border="1"></CENTER>]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="020new  Give the structure of the" ident="0023472341852738">
+<itemmetadata>
+<qmd_itemtype>Hot Spot</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Italian version\Chimica Organica 3 v400it</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Utilizzare il cursore per selezionare <B>quale </B>dei seguenti composti formera' come prodotto principale un deuterio libero se trattato con tert.butossido di potassio (KOBu<SUP>t </SUP>) in HOBu<SUP>t</SUP>.<BR></P>]]></mattext>
+</material>
+<response_xy ident="1" rcardinality="Single">
+<render_hotspot>
+<material>
+<matimage imagtype="image/jpg" uri="../topicresources/1799059400/o3g202.jpg" height="142" width="595"/>
+</material>
+</render_hotspot>
+</response_xy>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="right" >
+<conditionvar>
+<varinside respident="1" areatype="Rectangle">284,0 420,123</varinside>
+</conditionvar>
+<setvar action="Set">4</setvar>
+<displayfeedback linkrefid="right"/>
+</respcondition>
+<respcondition title="false 1" >
+<conditionvar>
+<varinside respident="1" areatype="Rectangle">2,0 132,116</varinside>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="false 1"/>
+</respcondition>
+<respcondition title="false 2" >
+<conditionvar>
+<varinside respident="1" areatype="Rectangle">139,0 280,131</varinside>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="false 2"/>
+</respcondition>
+<respcondition title="false 4" >
+<conditionvar>
+<varinside respident="1" areatype="Rectangle">431,1 594,129</varinside>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="false 4"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="right" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questo e' il composto corretto. Il trattamento con <I>tert</I>-butossido di potassio in HOBu<SUP>t</SUP> avviene in una <font face=symbol>b</font>-eliminazione  antiperiplanare, dalla conformazione preferenziale (mostrata), in modo che sia DBr che  HBr vengono eliminati.<BR><CENTER><img src="%SERVER.GRAPHICS%o3g20f3.gif" width="143" height="114"></CENTER>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="false 1" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questo non e' il composto corretto. Il trattamento con <I>tert</I>-butossido di potassio in  HOBu<SUP>t</SUP> avviene in una <font face=symbol>b</font>-eliminazione, llasciando il deuterio in posizione <font face=symbol>a</font> intoccato. Il composto corretto e' <B>A</B>.<BR><CENTER><img src="%SERVER.GRAPHICS%o3g20f1.gif" width="137" height="114">&nbsp;&nbsp;&nbsp;&nbsp;<img src="%SERVER.GRAPHICS%o3g20fA.gif" width="143" height="114" border="1"></CENTER>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="false 2" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questo non e' il composto corretto. Il trattamento con <I>tert</I>-butossido di potassio in HOBu<SUP>t</SUP> avviene in una <font face=symbol>b</font>-elimination antiperiplanare, dalla conformazione preferenziale (mostrata), in modo che sia DBr che  HBr vengono eliminati.<BR><CENTER><img src="%SERVER.GRAPHICS%o3g20f3.gif" width="143" height="114"></CENTER>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="false 4" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questo non e' il composto corretto. Il trattamento con <I>tert</I>-butossido di potassio in HOBu<SUP>t</SUP> avviene in una <font face=symbol>b</font>-elimination antiperiplanare, dalla conformazione preferenziale (mostrata), in modo che sia DBr che  HBr vengono eliminati.<BR><CENTER><img src="%SERVER.GRAPHICS%o3g20f3.gif" width="143" height="114"></CENTER>]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="021new  Which product results from" ident="4610683500270350">
+<itemmetadata>
+<qmd_itemtype>Hot Spot</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Italian version\Chimica Organica 3 v400it</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Utilizzare il cursore per selezionare <B>quale </B>tra i composti seguenti e' il prodotto principale della reazione dell'estere <B>1</B> con sodio metallico in seguito a idrolisi.<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P align=center><IMG border=0 hspace=0 alt="" src="%SERVER.GRAPHICS%../topicresources/1799059400/o3g211it_col.jpg" width=287 height=88></P>]]></mattext>
+</material>
+<response_xy ident="1" rcardinality="Single">
+<render_hotspot>
+<material>
+<matimage imagtype="image/jpg" uri="../topicresources/1799059400/o3g212.jpg" height="85" width="595"/>
+</material>
+</render_hotspot>
+</response_xy>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="right" >
+<conditionvar>
+<varinside respident="1" areatype="Rectangle">153,1 293,84</varinside>
+</conditionvar>
+<setvar action="Set">4</setvar>
+<displayfeedback linkrefid="right"/>
+</respcondition>
+<respcondition title="false 1" >
+<conditionvar>
+<varinside respident="1" areatype="Rectangle">3,1 146,78</varinside>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="false 1"/>
+</respcondition>
+<respcondition title="false 3" >
+<conditionvar>
+<varinside respident="1" areatype="Rectangle">298,1 438,76</varinside>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="false 3"/>
+</respcondition>
+<respcondition title="false 4" >
+<conditionvar>
+<varinside respident="1" areatype="Rectangle">444,0 594,84</varinside>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="false 4"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="right" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questo e' il composto corretto, formato in una condensazione acyloin, dovuta all'azione del sodio in etere con un estere. <BR><CENTER><img src="%SERVER.GRAPHICS%o3g21f2.gif" width="145" height="75"></CENTER>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="false 1" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questo non e' il composto esatto. Il sodio in etere da luogo a una condensazione acyloin con gli esteri, a formare il prodotto <B>A</B> - la scelta giusta. Una successiva ossidazione sarebbe necessaria per la formazione del dichetone.<BR><CENTER><img src="%SERVER.GRAPHICS%o3g21f1.gif" width="151" height="75">&nbsp;&nbsp;&nbsp;&nbsp;<img src="%SERVER.GRAPHICS%o3g21fA.gif" width="145" height="75" border="1"></CENTER>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="false 3" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questo non e' il composto esatto. Il sodio in etere da luogo a una condensazione acyloin con gli esteri, a formare il prodotto <B>A</B> - la scelta giusta.  Una successiva deidratazione sarebbe necessaria per la produzione di un enone. <BR><CENTER><img src="%SERVER.GRAPHICS%o3g21f3.gif" width="145" height="75">&nbsp;&nbsp;&nbsp;&nbsp;<img src="%SERVER.GRAPHICS%o3g21fA.gif" width="145" height="75" border="1"></CENTER>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="false 4" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questo non e' il composto esatto. Il sodio in etere da luogo a una condensazione acyloin con gli esteri, a formare il prodotto <B>A</B> - la scelta giusta. Questo prodotto si forma con una condensazione di Claisen, dovuta all'azione del metossido di sodio in metanolo su un estere. <BR><CENTER><img src="%SERVER.GRAPHICS%o3g21f4.gif" width="154" height="75">&nbsp;&nbsp;&nbsp;&nbsp;<img src="%SERVER.GRAPHICS%o3g21fA.gif" width="145" height="75" border="1"></CENTER>]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="022  Suggest the most suitable" ident="1616629168639677">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Italian version\Chimica Organica 3 v400it</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Quale prodotto si formera' dall' ossidazione di <B>Baeyer-Villiger</B> dell'acetofenone (<B>1</B>) seguita da idrolisi?<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P align=center><IMG border=0 hspace=0 alt="" src="../topicresources/1799059400/o3g221_col.jpg" width=153 height=115></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[acido acetico e fenolo <BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[acido benzoico e metanolo<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[una miscela di acido acetico e benzoico, fenolo e metanolo  a mixture of acetic and benzoic acid, phenol and methanol<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[acido <I>o</I>-idrossibenzoico (acido salicilico) e metanolo <BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">4</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="False 1" >
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="False 1"/>
+</respcondition>
+<respcondition title="False 3" >
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="False 3"/>
+</respcondition>
+<respcondition title="False 2" >
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="False 2"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questa e' la risposta corretta. Poiche' il gruppo metile ha una tendenza migratoria piu' bassa, il gruppo fenile migrera' verso l'ossigeno del perossido.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="False 1" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questa non e' la risposta corretta. Poiche' il gruppo metile ha una tendenza migratoria piu' bassa, il gruppo fenile migrera' verso l'ossigeno del perossido, formando il fenolo (non il metanolo). La risposta corretta e': <I>acido acetico e fenolo</I>.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="False 3" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questa non e' la risposta corretta.L'ossidazione di <B>Baeyer-Villiger</B> attacca un ossigeno al carbonio del gruppo carbonilico, ma questo non condiziona l'anello del benzene. La risposta corretta e': <I>acido acetico e fenolo</I>.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="False 2" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questa non e' la risposta corretta. Poiche' il gruppo metile ha una tendenza migratoria piu' bassa, il gruppo fenile migrera' verso l'ossigeno del perossido, formando fenolo (non metanolo). La risposta corretta e': <I>acido acetico e fenolo</I>.]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="023  Put question wording here and p" ident="2892701835043913">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Italian version\Chimica Organica 3 v400it</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Selezionare tra i seguenti reagenti e condizioni di reazione <B>quella</B> che piu' probabilmente portera' al prodotto mostrato nello schema di reazione.<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P align=center><IMG border=0 hspace=0 alt="" src="../topicresources/1799059400/o3g231_col.jpg" width=426 height=84></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[ 1. C<SUB>6</SUB>H<SUB>5</SUB>OH/H<SUP>+</SUP>;  2. CH<SUB>3</SUB>MgBr (2 eq) e H<SUP>+</SUP>/H<SUB>2</SUB>O<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[ 1. CH<SUB>3</SUB>MgBr (3 eq) e H<SUP>+ </SUP>/H<SUB>2</SUB>O<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[ 1. CH<SUB>3</SUB>Li (2 eq) e H<SUP>+</SUP>/H<SUB>2</SUB>O<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[ 1. (CH<SUB>3</SUB>)<SUB>2</SUB>CuLi (1 eq) e  H<SUP>+</SUP>/H<SUB>2</SUB>O <BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">4</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="false 1" continue="Yes">
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="false 1"/>
+</respcondition>
+<respcondition title="false 2" continue="Yes">
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="false 2"/>
+</respcondition>
+<respcondition title="false 3" continue="Yes">
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="false 3"/>
+</respcondition>
+<respcondition title="default" >
+<conditionvar>
+<or>
+<other/>
+<not>
+<other/>
+</not>
+</or>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="default"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questa e' la risposta corretta, i.e. primo l'estere usando un reagente organimetallico.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="false 1" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questo non e' il corretto set di reagenti e condizioni. Un reagente di <B>Grignard</B> potrebbe solo reagire una volta con l'acido carbossilico a formare un sale e un idrocarburo (metano). Dopo idrolisi acida l'acido carbossilicosarebbe rigenerato. ]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="false 2" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[QUesto non e' il corretto set di reagenti e condizioni. Due equivalenti di reagenti organometallici reagirebbero con l'acido carbossilico a formare un chetone (esan-2-one) dopo idrolisi. ]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="false 3" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questo non e' il corretto set di reagenti e condizioni. Un reagente organometallico reagirebbe solo una volta con l'acido carbossilico a formare un sale e un idrocarburo (metano). Dopo l'idrolisi acida l'acido carbossilico sarebbe rigenerato. ]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="default" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[La risposta correta e': <B>1.</B> C<SUB>6</SUB>H<SUB>5</SUB>OH/H<SUP>+</SUP>; <B>2.</B> CH<SUB>3</SUB>MgBr (2 eq) e H<SUP>+</SUP>/H<SUB>2</SUB>Oi.e. prima dall'estere prima di usare un reagente organometallico. ]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="024new  This is the marker to move" ident="6409317101493300">
+<itemmetadata>
+<qmd_itemtype>Hot Spot</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Italian version\Chimica Organica 3 v400it</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Utilizzare il cursore per selezionare <B>quale </B>ammino estere (1 mole) mostrati di seguito reagisce con 2 moli di anidride acetica senza formare N<SUB>2</SUB> se trattato con HNO<SUB>2</SUB>.<BR></P>]]></mattext>
+</material>
+<response_xy ident="1" rcardinality="Single">
+<render_hotspot>
+<material>
+<matimage imagtype="image/jpg" uri="../topicresources/1799059400/o3g241.jpg" height="198" width="595"/>
+</material>
+</render_hotspot>
+</response_xy>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="right" >
+<conditionvar>
+<varinside respident="1" areatype="Rectangle">194,2 373,161</varinside>
+</conditionvar>
+<setvar action="Set">4</setvar>
+<displayfeedback linkrefid="right"/>
+</respcondition>
+<respcondition title="false 1" >
+<conditionvar>
+<varinside respident="1" areatype="Rectangle">1,0 153,87</varinside>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="false 1"/>
+</respcondition>
+<respcondition title="false 2" >
+<conditionvar>
+<varinside respident="1" areatype="Rectangle">39,98 186,179</varinside>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="false 2"/>
+</respcondition>
+<respcondition title="false 4" >
+<conditionvar>
+<varinside respident="1" areatype="Rectangle">396,0 594,83</varinside>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="false 4"/>
+</respcondition>
+<respcondition title="false 5" >
+<conditionvar>
+<varinside respident="1" areatype="Rectangle">372,85 594,189</varinside>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="false 5"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="right" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questo e' l'ammino estere corretto.<BR><CENTER><img src="%SERVER.GRAPHICS%o3g24f3.gif" width="170" height="111"></CENTER>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="false 1" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questo non e' l'ammino estere corretto. Questo puo' solo reagire con una mole di anidride acetica, sebbene non forma N<SUB>2</SUB> se trattato con HNO<SUB>2</SUB>. Il corretto ammino estere e' <B>A</B>.<BR><CENTER><img src="%SERVER.GRAPHICS%o3g24f1.gif" width="157" height="90">&nbsp;&nbsp;&nbsp;&nbsp;<img src="%SERVER.GRAPHICS%o3g24fA.gif" width="170" height="111" border="1"></CENTER>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="false 2" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questo non e' il corretto ammino estere. Questo puo' reagire con due moli di anidride acetica, ma forma N<SUB>2</SUB> se trattato con HNO<SUB>2</SUB>. L'ammino estere correto e' <B>A</B>.<BR><CENTER><img src="%SERVER.GRAPHICS%o3g24f2.gif" width="157" height="90">&nbsp;&nbsp;&nbsp;&nbsp;<img src="%SERVER.GRAPHICS%o3g24fA.gif" width="170" height="111" border="1"></CENTER>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="false 4" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questo non e' l'ammino estere corretto. Questo reagisce con due moli di anidride acetica, ma forma N<SUB>2</SUB> se trattato con HNO<SUB>2</SUB>. L'ammino estere corretto e' <B>A</B>.<BR><CENTER><img src="%SERVER.GRAPHICS%o3g24f4.gif" width="176" height="90">&nbsp;&nbsp;&nbsp;&nbsp;<img src="%SERVER.GRAPHICS%o3g24fA.gif" width="170" height="111" border="1"></CENTER>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="false 5" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questo non e' il corretto ammino estere. Questo reagisce con tre moli di anidride acetica, ma forma anche N<SUB>2</SUB> se trattato con HNO<SUB>2</SUB>. L'ammino estere corretto e' <B>A</B>.<BR><CENTER><img src="%SERVER.GRAPHICS%o3g24f5.gif" width="218" height="97">&nbsp;&nbsp;&nbsp;&nbsp;<img src="%SERVER.GRAPHICS%o3g24fA.gif" width="170" height="111" border="1"></CENTER>]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="025  Which aromatic compound of" ident="3796721272794078">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Italian version\Chimica Organica 3 v400it</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Quale polimero e' rappresentato dalla seguente formula di struttura?<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P align=center><IMG border=0 hspace=0 alt="" src="../topicresources/1799059400/o3g251_col.jpg" width=337 height=104></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[polipropilene isotattico<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[polipropilene atattico<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[polietilene isotattico<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[polipropilene sindiotattico<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="3" continue="Yes">
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Set">4</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="False 0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="False 0"/>
+</respcondition>
+<respcondition title="False 1" >
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="False 1"/>
+</respcondition>
+<respcondition title="False 2" >
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="False 2"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="3" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questa e' la descrizione corretta di questo tipo di polimero, con i gruppi funzionali o catene laterali alternati verso il basso per la lunghezza del polimero. ]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="False 0" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questa non e' la corretta descrizione di questo polimero. I polimeri isotattici hanno tutti i gruppi funzionali o catene laterali dalla stessa parte. La corretta descrizione e'  <I>polipropilene sindiotattico</I>.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="False 1" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questa non e' la corretta descrizione per questo polimero. I polimeri atattici hanno i gruppi fnzionali o catene laterali distribuiti i maniera casuale lungo la catena. La descrizione corretta e'  <I>polipropilene sindiotattico</I>.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="False 2" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questa non e' la corretta descrizione di questo polimero. Un polimero non puo' essere definito come sindiotattico, isotattico o atattico a meno che non presenti gruppi funzionali o catene laterali. Il polietilene non si presenta cosi'. La descrizione corretta e'  <I>polipropilene sindiotattico</I>.]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="026new  Which one is the correct Fische" ident="9922177348230410">
+<itemmetadata>
+<qmd_itemtype>Hot Spot</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Italian version\Chimica Organica 3 v400it</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Utilizzare il cursore per selezionare <B>quella </B>tra le proiezioni di Fischer mostrate qui sotto rappresenta correttamente il composto <B>1</B>.<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P align=center><IMG border=0 hspace=0 alt="" src="../topicresources/1799059400/o3g261_col.jpg" width=209 height=132></P>]]></mattext>
+</material>
+<response_xy ident="1" rcardinality="Single">
+<render_hotspot>
+<material>
+<matimage imagtype="image/jpg" uri="../topicresources/1799059400/o3g262.jpg" height="156" width="454"/>
+</material>
+</render_hotspot>
+</response_xy>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="right" >
+<conditionvar>
+<varinside respident="1" areatype="Rectangle">222,0 342,126</varinside>
+</conditionvar>
+<setvar action="Set">4</setvar>
+<displayfeedback linkrefid="right"/>
+</respcondition>
+<respcondition title="false 1" >
+<conditionvar>
+<varinside respident="1" areatype="Rectangle">1,0 107,116</varinside>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="false 1"/>
+</respcondition>
+<respcondition title="false 2" >
+<conditionvar>
+<varinside respident="1" areatype="Rectangle">111,0 220,117</varinside>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="false 2"/>
+</respcondition>
+<respcondition title="false 4" >
+<conditionvar>
+<varinside respident="1" areatype="Rectangle">344,0 453,118</varinside>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="false 4"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="right" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questa e' la corretta proiezione di Fischer per il composto <B>1</B> :&nbsp;&nbsp;<img src="%SERVER.GRAPHICS%o3g26fA.gif" width="66" height="81">]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="false 1" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questa non e' la corretta proiezione di Fischer : &nbsp;&nbsp;<img src="%SERVER.GRAPHICS%o3g26f1.gif" width="62" height="74"><BR>Per dare la struttura del composto <B>1</B>, il Br e il CH<SUB>3</SUB> devono essere scambiati. La proiezione corretta e' <B>A</B> : &nbsp;&nbsp;<img src="%SERVER.GRAPHICS%o3g26fA.gif" width="66" height="81">]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="false 2" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questa non e' la proiezione di Fischer corretta : &nbsp;&nbsp;<img src="%SERVER.GRAPHICS%o3g26f2.gif" width="66" height="74"><BR>Per dare la struttura del composto <B>1</B>, il CH<SUB>3</SUB> e il  CO<SUB>2</SUB>H devono essere scambiati. La corretta proiezione e' <B>A</B> : &nbsp;&nbsp;<img src="%SERVER.GRAPHICS%o3g26fA.gif" width="66" height="81">]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="false 4" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questa non e' la corretta proiezione di Fischer : &nbsp;&nbsp;<img src="%SERVER.GRAPHICS%o3g26f4.gif" width="62" height="74"><BR>Per dare la struttura del composto <B>1</B>, il H e il D devono essere scambiati. La corretta proiezione e' <B>A</B> : &nbsp;&nbsp;<img src="%SERVER.GRAPHICS%o3g26fA.gif" width="66" height="81">]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="027new  Which one of the following" ident="9476619357241108">
+<itemmetadata>
+<qmd_itemtype>Hot Spot</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Italian version\Chimica Organica 3 v400it</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Utilizzare il cursore per selezionare <B>quale</B>degli stereoisomeri del 1,2,3,4,5,6-esaidrossicicloesano mostrati di seguito ha le seguenti proprieta' spettroscopiche in D<SUB>2</SUB>O.<BR></P>
+<TABLE border=1 align=center><B>
+<TBODY>
+<TR>
+<TD><SUP>1</SUP>H NMR: <FONT face=symbol>d</FONT></TD>
+<TD><SUP>13</SUP>C NMR: <FONT face=symbol>d</FONT></TD></TR></B>
+<TR>
+<TD>3,88 (1H, t, J = 2,8 Hz) <BR>3,46 (2H, t, J = 9,6 Hz) <BR>3,36 (2H, dd, J = 2,8; 9,6 Hz) <BR>3,10 (1H, t, J = 9,6 Hz) </TD>
+<TD>71,1 (d) <BR>72,2 (d) <BR>72,4 (d) <BR>74,3 (d)</TD></TR></TBODY></TABLE><BR>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><B>Osservare i dati spettroscopici:<BR></B></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P align=center><IMG border=0 hspace=0 alt="" src="../topicresources/1799059400/thnmr_en.gif" width=470 height=345></P>
+<P align=center><IMG border=0 hspace=0 alt="" src="../topicresources/1799059400/tcnmr_en.gif" width=469 height=242></P>]]></mattext>
+</material>
+<response_xy ident="1" rcardinality="Single">
+<render_hotspot>
+<material>
+<matimage imagtype="image/jpg" uri="../topicresources/1799059400/o3g271.jpg" height="198" width="595"/>
+</material>
+</render_hotspot>
+</response_xy>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="right" >
+<conditionvar>
+<varinside respident="1" areatype="Rectangle">452,1 592,147</varinside>
+</conditionvar>
+<setvar action="Set">6</setvar>
+<displayfeedback linkrefid="right"/>
+</respcondition>
+<respcondition title="false 1" >
+<conditionvar>
+<varinside respident="1" areatype="Rectangle">1,0 147,147</varinside>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="false 1"/>
+</respcondition>
+<respcondition title="false 2" >
+<conditionvar>
+<varinside respident="1" areatype="Rectangle">157,0 297,149</varinside>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="false 2"/>
+</respcondition>
+<respcondition title="false 3" >
+<conditionvar>
+<varinside respident="1" areatype="Rectangle">309,0 449,146</varinside>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="false 3"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="right" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questo e' lo stereoisomero che rispecchia le caratteristiche spettroscopiche date. Gli atomi di carbonio sono in quatttro distinti campi magnetici (strutturali), incrementando lo spettro NMR del <SUP>13</SUP>C NMR dato. Ci sono inoltre quattro distinti campi protonici, che incrementano lo spettro NMR dell'<SUP>1</SUP>H NMR dato.<BR><CENTER><img src="%SERVER.GRAPHICS%o3g27f4.gif" width="84" height="79" border="1"></CENTER>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="false 1" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questo non e' il corretto stereoisomero. Tutti gli atomi di carbonio sono nello stesso campo magnetico (strutturale), e quindi lo spettro NMR del <SUP>13</SUP>C NMR mostrerebbe solo un segnale, e non lo spettro NMR del <SUP>13</SUP>C NMR dato. Lo stereoisomero corretto e' <B>A</B>.<BR><CENTER><img src="%SERVER.GRAPHICS%o3g27f1.gif" width="84" height="79">&nbsp;&nbsp;&nbsp;&nbsp;<img src="%SERVER.GRAPHICS%o3g27fA.gif" width="84" height="82" border="1"></CENTER>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="false 2" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questo non e' il corretto stereoisomero. Gli atomi di carbonio si trovano solo in due campi magnetici (strutturali differenti, che darebbero luogo a due segnali, non allo spettro NMR del <SUP>13</SUP>C NMR dato. Il corretto stereoisomero e' <B>A</B>.<BR><CENTER><img src="%SERVER.GRAPHICS%o3g27f2.gif" width="84" height="79">&nbsp;&nbsp;&nbsp;&nbsp;<img src="%SERVER.GRAPHICS%o3g27fA.gif" width="84" height="82" border="1"></CENTER>]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="false 3" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questo non e' il corretto stereoisomero. Gli atomi di carbonio si trovano solo in tre campi maegnetici (strutturali) distinti, e darebbero luogo a tre segnali, e non allo spettro NMR del  <SUP>13</SUP>C NMR dato. Il corretto stereoisomero e' <B>A</B>.<BR><CENTER><img src="%SERVER.GRAPHICS%o3g27f3.gif" width="84" height="79">&nbsp;&nbsp;&nbsp;&nbsp;<img src="%SERVER.GRAPHICS%o3g27fA.gif" width="84" height="82" border="1"></CENTER>]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="028*  Put the question wording here a" ident="5401962782979048">
+<itemmetadata>
+<qmd_itemtype>Pull-down list</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Italian version\Chimica Organica 3 v400it</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Scegliere nelle seguenti caselle il reagente appropiato per ciascun passo della seguente reazione di sintesi.<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P align=center><IMG border=0 hspace=0 alt="" src="../topicresources/1799059400/o3g281_col.jpg" width=504 height=112></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<material>
+<mattext texttype="text/html"><![CDATA[Reagente per il passo <B>a</B> :]]></mattext>
+</material>
+<render_choice shuffle="No">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">NaOCH3</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">HCl</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">boroidruro di sodio</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">Mg-Hg</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">NaH, ioduro di metile</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="2">
+<material>
+<mattext texttype="text/html"><![CDATA[Reagente per il passo <B>b</B> :<BR>]]></mattext>
+</material>
+<render_choice shuffle="No">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">NaOCH3</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">HCl</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">boroidruro di sodio</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">Mg-Hg</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">NaH, ioduro di metile</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="3">
+<material>
+<mattext texttype="text/html"><![CDATA[Reagente per il passo <B>c</B> :<BR>]]></mattext>
+</material>
+<render_choice shuffle="No">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">NaOCH3</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">HCl</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">boroidruro di sodio</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">Mg-Hg</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">NaH, ioduro di metile</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="4">
+<material>
+<mattext texttype="text/html"><![CDATA[Reagente per il passo <B>d</B> :<BR>]]></mattext>
+</material>
+<render_choice shuffle="No">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">NaOCH3</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">HCl</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">boroidruro di sodio</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">Mg-Hg</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">NaH, ioduro di metile</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="Correct" continue="Yes">
+<conditionvar>
+<varequal respident="1">D</varequal>
+<varequal respident="2">B</varequal>
+<varequal respident="3"></varequal>
+<varequal respident="4"></varequal>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="Correct"/>
+</respcondition>
+<respcondition title="part 1" continue="Yes">
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Add">2</setvar>
+<displayfeedback linkrefid="part 1"/>
+</respcondition>
+<respcondition title="part 2" continue="Yes">
+<conditionvar>
+<varequal respident="2">B</varequal>
+</conditionvar>
+<setvar action="Add">2</setvar>
+<displayfeedback linkrefid="part 2"/>
+</respcondition>
+<respcondition title="part 3" continue="Yes">
+<conditionvar>
+<varequal respident="3"></varequal>
+</conditionvar>
+<setvar action="Add">1</setvar>
+<displayfeedback linkrefid="part 3"/>
+</respcondition>
+<respcondition title="part 4" continue="Yes">
+<conditionvar>
+<varequal respident="4"></varequal>
+</conditionvar>
+<setvar action="Add">1</setvar>
+<displayfeedback linkrefid="part 4"/>
+</respcondition>
+<respcondition title="wrong" continue="Yes">
+<conditionvar>
+<other/>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="wrong"/>
+</respcondition>
+<respcondition title="default" >
+<conditionvar>
+<or>
+<other/>
+<not>
+<other/>
+</not>
+</or>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="default"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="Correct" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[La risposta e' corretta. ]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="part 1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="part 2" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="part 3" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="part 4" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="wrong" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[La risposta non e' corretta. ]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="default" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Il passo ‘<B>a</B>’ richiede una amalgama di magnesio <B>(Mg-Hg</B>) per portare a una reazione <B>pinacol</B>. <BR>Nel passo ‘<B>b</B>’ il pinacol si riarrangia quando trattato con acido cloridrico <B>HCl</B>). <BR>Il boroidrossido di sodio (<B>NaBH<SUB>4</SUB></B>) e' usato nel passo ‘<B>c</B>’ per ridurre il chetone ad un alcool secondario; <BR>e nel passo ‘<B>d</B>’ l'alcool e' metilato a etere di metile con <B>NaH </B>e  <B>ioduro di metile</B>.<BR><CENTER><img src="%SERVER.GRAPHICS%o3g28f.gif" width="410" height="50"></CENTER>]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="029new Put question wording here and s" ident="9881947406851310">
+<itemmetadata>
+<qmd_itemtype>Hot Spot</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Italian version\Chimica Organica 3 v400it</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Utilizzare il cursore per selezionare <B>quale </B>dei cinque gruppi OH del b-D-glucosio e' facilmente sostituito dall' OCH<SUB>3 </SUB>trattato con acido cloridrico in metanolo.<BR></P>]]></mattext>
+</material>
+<response_xy ident="1" rcardinality="Single">
+<render_hotspot>
+<material>
+<matimage imagtype="image/jpg" uri="../topicresources/1799059400/o3g291.jpg" height="198" width="312"/>
+</material>
+</render_hotspot>
+</response_xy>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="right" continue="Yes">
+<conditionvar>
+<varinside respident="1" areatype="Rectangle">241,99 310,154</varinside>
+</conditionvar>
+<setvar action="Set">6</setvar>
+<displayfeedback linkrefid="right"/>
+</respcondition>
+<respcondition title="wrong" continue="Yes">
+<conditionvar>
+<other/>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="wrong"/>
+</respcondition>
+<respcondition title="default" >
+<conditionvar>
+<or>
+<other/>
+<not>
+<other/>
+</not>
+</or>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="default"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="right" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[La risposta e' corretta. ]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="wrong" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[La risposta non e'corretta. ]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="default" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Solo uno dei conque gruppi OH e' facilmente sostituito da OCH<SUB>3</SUB> se trattato con acido cloridrico in metanolo.  E' quello dell'atomo di carbonio adiacent all'atomo di ossigeno nell'anello - l'<B>OH emiacetale</B>, indicato con un  (<B>*</B>).<BR><CENTER><img src="%SERVER.GRAPHICS%o3g29f.gif" width="108" height="65"></CENTER>]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="030new+  Put question wording here and s" ident="5606273238192072">
+<itemmetadata>
+<qmd_itemtype>Hot Spot</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Italian version\Chimica Organica 3 v400it</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Utilizzare il cursore per selezionare quale dei composti seguenti si forma in maniera predominante in una reazione della piridina con litio fenile e poi un'addizione di D<SUB>2</SUB>O.<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P align=center><IMG border=0 hspace=0 alt="" src="../topicresources/1799059400/o3g301_col.jpg" width=471 height=127></P>]]></mattext>
+</material>
+<response_xy ident="1" rcardinality="Single">
+<render_hotspot>
+<material>
+<matimage imagtype="image/jpg" uri="../topicresources/1799059400/o3g302.jpg" height="170" width="624"/>
+</material>
+</render_hotspot>
+</response_xy>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="right" >
+<conditionvar>
+<varinside respident="1" areatype="Rectangle">7,22 157,130</varinside>
+</conditionvar>
+<setvar action="Set">6</setvar>
+<displayfeedback linkrefid="right"/>
+</respcondition>
+<respcondition title="wrong" continue="Yes">
+<conditionvar>
+<other/>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="wrong"/>
+</respcondition>
+<respcondition title="default" continue="Yes">
+<conditionvar>
+<or>
+<other/>
+<not>
+<other/>
+</not>
+</or>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="default"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="right" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questo e' il composto corretto. La piridina si sottopone a sostituzione aromatica nucleofila in posizione 2. Il Deuterio non viene incorporato nel prodotto ma forma <B>D-H</B> dal complesso formato inizialmente.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="wrong" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Questo non e' il composto corretto. ]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="default" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[La piridina si sottopone a sostituzione nucleofila aromatica in posizione 2. Il Deuterio non viene incorporato nel  prodotto ma forma <B>D-H</B> dal complesso formato inizialmente.<BR>Il prodotto corretto e' la <B>2-fenilpiridina</B> : &nbsp;&nbsp;<img src="%SERVER.GRAPHICS%o3g30f1.gif" width="68" height="46">]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+</questestinterop>
+
+

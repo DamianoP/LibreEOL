@@ -6,7 +6,6 @@
  * Time: 11:24 AM
  * Desc: Class witch load and show all requested modules
  */
-
 class Engine {
 
     public $controller;
@@ -133,13 +132,13 @@ class Engine {
     public function loadLibs() {
 
         global $config;
-
+        $jsVer=39;
         // Import Javascript script (if exists)
         if(file_exists($config['systemLibsDir'].$this->controller.'/'.$this->controller.'.js')){
-            echo '<script type="text/javascript" src="'.$config['systemLibsDir'].$this->controller.'/'.$this->controller.'.js?ver=21'.'"></script>';
+            echo '<script type="text/javascript" src="'.$config['systemLibsDir'].$this->controller.'/'.$this->controller.'.js?ver='.$jsVer.'"></script>';
         }
         if(file_exists($config['systemLibsDir'].$this->controller.'/'.$this->action.'.js')){
-            echo '<script type="text/javascript" src="'.$config['systemLibsDir'].$this->controller.'/'.$this->action.'.js?ver=21'.'"></script>';
+            echo '<script type="text/javascript" src="'.$config['systemLibsDir'].$this->controller.'/'.$this->action.'.js?ver='.$jsVer.'"></script>';
         }
 
     }

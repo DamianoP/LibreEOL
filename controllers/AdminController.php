@@ -801,11 +801,12 @@ class AdminController extends Controller{
      */
     private function actionUpdatestudentinfo(){
         global $log;
-
         if((isset($_POST['name'])) && (isset($_POST['surname'])) &&
-            (isset($_POST['email'])) && (isset($_POST['group'])) && (isset($_POST['subgroup'])) && (isset($_POST['idStudent']))){
+            (isset($_POST['email'])) && (isset($_POST['group'])) && 
+            (isset($_POST['subgroup'])) && (isset($_POST['idStudent']))
+            && (isset($_POST['password']))){
             $db = new sqlDB();
-            if($db->qUpdateStudentInfo($_POST['idStudent'],$_POST['name'], $_POST['surname'], $_POST['email'], $_POST['group'],$_POST['subgroup'],$_POST['role'])){
+            if($db->qUpdateStudentInfo($_POST['idStudent'],$_POST['name'], $_POST['surname'], $_POST['email'], $_POST['group'],$_POST['subgroup'],$_POST['role'],$_POST['password'])){
                 echo "ACK";
             }else{
                 die($db->getError());
@@ -983,6 +984,14 @@ class AdminController extends Controller{
         }
     }
 
+    private function actionAcceptprivacy(){
+        global $user, $log;
+        $db = new sqlDB();
+        if($db->qAcceptPrivacy())
+            echo "ACK";
+        else
+            echo "NACK";
+    }
 
     /**
      * @name   accessRules
@@ -1010,7 +1019,7 @@ class AdminController extends Controller{
             ),
             array(
                 'allow',
-                'actions' => array('Profile', 'Updateprofile'),
+                'actions' => array('Profile', 'Updateprofile','Acceptprivacy'),
                 'roles'   => array('a', 't', 's','e'),
             ),
             array(

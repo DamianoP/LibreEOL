@@ -231,6 +231,11 @@ class QT_NM extends Question
 
 		$upperBound=$answer['translation']+($answer['translation']/100);
                 $lowerBound=$answer['translation']-($answer['translation']/100);
+                if($upperBound<$lowerBound){ // for negative numbers !!!
+                    $tempVar=$lowerBound;
+                    $lowerBound=$upperBound;
+                    $upperBound=$tempVar;
+                }
                 if(($answered['0']>=$lowerBound)&&($answered['0']<=$upperBound)) {
 		    $right_wrongClass =  'rightAnswer';
                     $questionScore += round(($answer['score'] * $scale), 1);
@@ -286,6 +291,11 @@ class QT_NM extends Question
                         while ($traslation = $db2->nextRowAssoc()) {
              			    $upperBound=$traslation['translation']+($traslation['translation']/100);
             			    $lowerBound=$traslation['translation']-($traslation['translation']/100);
+                            if($upperBound<$lowerBound){ // for negative numbers !!!
+                                $tempVar=$lowerBound;
+                                $lowerBound=$upperBound;
+                                $upperBound=$tempVar;
+                            }
                             if(($answerr['0']>=$lowerBound)&&($answerr['0']<=$upperBound)) {
                                 $score += $result['score'];
 				                break;

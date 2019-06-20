@@ -101,6 +101,18 @@ class SubjectController extends Controller{
         }
     }
 
+    private function actionShowsubjectinfoandexamsdemotest(){
+      global $engine, $log;
+
+      if(isset($_POST['idSubject'])){
+          $engine->loadLibs();
+          $engine->renderPage();
+      }else{
+          $log->append(__FUNCTION__." : Params not set");
+      }
+  }
+
+
     /**
      *  @name   actionUpdatesubjectinfo
      *  @descr  Save edited informations about a subject
@@ -298,7 +310,7 @@ class SubjectController extends Controller{
             ),
             array(
                 'allow',
-                'actions' => array('Showsubjectinfoandexams'),
+                'actions' => array('Showsubjectinfoandexams','Showsubjectinfoandexamsdemotest'),
                 'roles'   => array('s'),
             ),
             array(

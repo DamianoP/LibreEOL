@@ -19,8 +19,8 @@ global $user, $engine, $config;
     
 
     <link rel="stylesheet" href="<?= $config['themeDir'];?>jquery-ui.css" media="screen" type="text/css" />
-    <link rel="stylesheet" href="<?= $config['themeDir'];?>style.css?ver=21" media="screen" type="text/css" />
-    <link rel="stylesheet" href="<?= $config['themeDir'];?>jquery.dataTables_themeroller.min.css" media="screen" type="text/css" />
+    <link rel="stylesheet" href="<?= $config['themeDir'];?>style.css?ver=22" media="screen" type="text/css" />
+    <link rel="stylesheet" href="<?= $config['themeDir'];?>jquery.dataTables_themeroller.min.css?ver=22" media="screen" type="text/css" />
     <link rel="shortcut icon" type="image/png" href="<?= $config['themeImagesDir'] ?>favicon.png"/>
 
 
@@ -54,4 +54,33 @@ global $user, $engine, $config;
     <div id="container">
 
 
+
+<?php 
+if( isset($_SESSION) && isset($_SESSION["privacy"]) && $_SESSION["privacy"]==0 &&
+    $user->role=="s"){
+    ?>
+    <div id="privacyDIV" style="color:#a94442;background-color:#f2dede;border-color:#ebccd1;padding:10px;border:1px solid transparent;border-radius:4px">
+        <strong><?= ttPrivacy3; ?></strong>
+        <a class="normal button" style="width:60px;padding:7px" id="login" onclick="privacy();">OK</a>
+    </div>
+    <script>
+        function privacy(){
+            $.ajax({
+            url     : "index.php?page=admin/Acceptprivacy",
+            success : function (data, status) {
+                if(data == "ACK"){
+			document.getElementById("privacyDIV").style.display="none"
+                }else{
+                    alert(data);
+                }
+            },
+            error : function (request, status, error) {
+                alert("jQuery AJAX request error:".error);
+            }
+            });
+        }
+    </script>
+<?php
+}
+?>
 

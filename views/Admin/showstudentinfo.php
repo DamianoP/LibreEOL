@@ -81,6 +81,23 @@ if($_POST['action'] == 'show'){
     </br>
 </span>
 
-<div class="clearer b2Space"></div>
+<!---- AGGIUNTA ---->
+<div class="clearer"></div><br>
+<label><?= ttPassword ?> :
+</label>
+<a class="normal button" id="showPasswordFieldButton" onclick="showPasswordField();" style="transform: scale(0.8)"><?= ttEdit." ".ttPassword ?> </a>
+<input class="writable" type="text" id="studentPassword" name="studentPassword" value="" style="visibility:hidden">
 
+
+
+<script>
+function showPasswordField(){
+    document.getElementById("studentPassword").style="visibility:visible;";
+    //document.getElementById("showPasswordFieldButton").style="visibility:hidden;";
+    var bottone=document.getElementById("showPasswordFieldButton");
+    bottone.parentNode.removeChild(bottone);
+}
+</script>
+<!---- FINE AGGIUNTA ---->
+<div class="clearer"></div>
 

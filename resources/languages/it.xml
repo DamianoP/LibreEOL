@@ -216,7 +216,7 @@
   <text id="ttLogout">ESCI</text>
   <!-- ======================== M ======================== -->
   <text id="ttMailLostPassword">Per impostare una nuova password clicca il link seguente:\n\n_LINK_\n\nSe non hai richiesto il reset della password allora ignora questa email.</text>
-  <text id="ttMailCredentials">Ciao _USERNAME_,\nDi seguito sono riportate le tue credenziali di accesso:\n\nE-mail : _USEREMAIL_ \n Password : _USERPASSWORD_</text>
+  <text id="ttMailCredentials">Caro _USERNAME_ ,\nLa tua password associata alla email: _USEREMAIL_ risulta impostata in accordo alla tua richiesta\n\nIl team di LibreEOL.</text>
   <text id="ttMailNewTeacher">Benvenuto in _SYSTEMNAME_.\n\nPer attivare il tuo account clicca il link seguente e imposta la tua password personale:</text>
   <text id="ttMainLanguage">Lingua principale</text>
   <text id="ttManage">Gestisci</text>
@@ -608,4 +608,8 @@
   <text id="ttCertificateEmailSended">l'email è stata correttamente inviata</text>
   <text id="ttCertificateGeneratedProblem">Il certificato non è stato generato!</text>
   <text id="ttCertificatePoint">Il punteggio dello studente è troppo basso e non può essere emesso un certificato.</text>
+  <text id="ttPrivacy1">Ho letto e accetto la</text>
+  <text id="ttPrivacy2">normativa sulla privacy ECTN</text>
+  <text id="ttPrivacy3">Desidero essere informato sulla possibilità di ottenere un Certificato di Competenza Individuale</text>
+  <text id="ttDemoTest">Test di prova</text>
 </language>

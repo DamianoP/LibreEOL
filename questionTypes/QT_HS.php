@@ -230,13 +230,17 @@ class QT_HS extends Question {
                 $right_wrongClass = ($answer['score'] > 0) ? 'rightAnswer' : 'wrongAnswer';
 
                 $risultato = explode(',', $answer['translation'], 4 );
+
+                $answered[0]=$answered[0]+13;
+                $answered[1]=$answered[1]+13;  
                 if(($answered[0] >= intval($risultato[0])) && ($answered[0] <= intval($risultato[2])) ) {
                     if(($answered[1] >= intval($risultato[1])) && ($answered[1] <= intval($risultato[3])) ) {
                         $questionScore += round(($answer['score']* $scale ), 1);
                         $answerdClass = 'answered';
                     }
                 }
-
+                $answered[0]=$answered[0]-13;
+                $answered[1]=$answered[1]-10;  
                 $questionAnswers .= '<div class="'.$answerdClass.'">
                                          <span value="'.$idAnswer.'" class="responseHS '.$right_wrongClass.'"></span>
                                          <label>'.$answer['translation'].'</label>
@@ -310,6 +314,8 @@ class QT_HS extends Question {
                             $risultato = explode(',', $traslation['translation'], 4 );
                             //$log->append(var_export($risultato, true));
                             //$log->append(var_export($answerrdecode, true));
+                            $answerrdecode[0]=$answerrdecode[0]+13;
+                            $answerrdecode[1]=$answerrdecode[1]+13;
                             if(($answerrdecode[0] >= intval($risultato[0])) && ($answerrdecode[0] <= intval($risultato[2])) ) {
                                 if(($answerrdecode[1] >= intval($risultato[1])) && ($answerrdecode[1] <= intval($risultato[3])) ) {
                                     //$log->append(var_export("RISPOSTA GIUSTA", true));

@@ -8,7 +8,6 @@
  */
 
 global $log, $config, $user;
-
 $db = new sqlDB();
 if(($db->qSelect('Subjects', 'idSubject', $_POST['idSubject'])) && ($subject = $db->nextRowAssoc())){ ?>
 

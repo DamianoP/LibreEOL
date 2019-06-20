@@ -23,6 +23,10 @@ $(document).ready(function () {
  *  @descr  Binded login function
  */
 function logIn() {
+    if(!document.getElementById("checkbox").checked){
+        $("#result").text("Before proceeding, you must accept the privacy policy");
+        return;
+    }
     if(($("#email").val() == "") || ($("#password").val() == "")){
         $("#result").text(ttELogin);
     }else{

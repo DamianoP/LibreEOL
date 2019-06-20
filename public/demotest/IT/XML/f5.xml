@@ -1,0 +1,2911 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE questestinterop SYSTEM "ims_qtiasiv1p2.dtd">
+
+<questestinterop>
+<scale>100</scale>
+
+
+<item title="001 Inor10uk-Q2 Which of the following ions has the smallest radius ?" ident="9688312388409869">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Italian version\Chimica Inorganica 3 v400it</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[Quale tra i seguenti ioni ha il raggio piu' piccolo ?<BR>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[Ca<SUP>2+</SUP><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[Cr<SUP>3+</SUP><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[Na<SUP>+</SUP><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[Ag<SUP>+</SUP><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[O<SUB>2</SUB><SUP>2-</SUP><BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="1" >
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Set">8</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" >
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" >
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="4" >
+<conditionvar>
+<varequal respident="1">E</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="1" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Ions contract with increasing positive charge.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Ions contract with increasing positive charge.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Ions contract with increasing positive charge.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="4" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Ions contract with increasing positive charge.]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="002 Inor11uk-Q2 Which of the following statements are true for a triple" ident="9966987996550256">
+<itemmetadata>
+<qmd_itemtype>Multiple Response</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Italian version\Chimica Inorganica 3 v400it</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[Quali tra le seguenti affermazioni sono vere per un legame triplo ?<BR>]]></mattext>
+</material>
+<response_lid ident="1" rcardinality="Multiple">
+<render_choice shuffle="Yes" minnumber="1" maxnumber="5">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[E' piu' forte e lungo di un legame doppio.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[E' piu' forte e piu' corto di un legame doppio.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[E' piu' debole e piu' lungo di un legame doppio.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[E' piu' debole e piu' corto di un legame doppio.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[E' piu' forte e piu' corto di un legame singolo.<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="header" continue="Yes">
+<conditionvar>Unrecognized or unsupported test method
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="header"/>
+</respcondition>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" continue="Yes">
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Add">4</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" continue="Yes">
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" continue="Yes">
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="4" continue="Yes">
+<conditionvar>
+<varequal respident="1">E</varequal>
+</conditionvar>
+<setvar action="Add">4</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="header" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Stronger bonds are shorter than corresponding weaker ones.Strength increases in the order: single, double, triple.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="4" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="003 Inor12uk-Q2 The molecule of BCl3, in it&apos;s equilibrium configuration" ident="9131657057319491">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Italian version\Chimica Inorganica 3 v400it</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[La molecola di BCl<SUB>3</SUB> , nella sua configurazione di equilibrio, e' planare, con un angolo di legame di 120&#176;.<BR>GLi elementi di simmetria della molecola sono:<BR><BR><I><U>Dove :</U></I><BR> <B>E</B> = <I>identita'</I> ; <B>C<SUB>n</SUB></B> = <I><B>n</B>-fold axis</I> ; <B>s</B> = <I>planare</I><BR> <B>S<SUB>n</SUB></B> = <I>improper axis order <B>n</B></I> ; <B>h, v</B> = <I>orizzontale, verticale</I><BR>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[ E , 2C<SUB>3</SUB> , 3C<SUB>2</SUB> , s<SUB>h</SUB> , 3s<SUB>v</SUB> , 2S<SUB>3</SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[ E , 2C<SUB>2</SUB> , 3C<SUB>3</SUB> , s<SUB>h</SUB> , 3s<SUB>v</SUB> , 2S<SUB>3</SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[ E , 3C<SUB>2</SUB> , 3C<SUB>3</SUB> , s<SUB>h</SUB> , 3s<SUB>v</SUB> , 2S<SUB>3</SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[ E , 2C<SUB>2</SUB> , 3C<SUB>3</SUB> , 3s<SUB>h</SUB> , s<SUB>v</SUB> , 2S<SUB>3</SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[ E , 2C<SUB>2</SUB> , 3C<SUB>3</SUB> , s<SUB>h</SUB> , 3s<SUB>v</SUB> , S<SUB>3</SUB><BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">8</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="004 Inor13uk-Q2 The compound K2[OsCl5N] has the systematic" ident="4036517916626311">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Italian version\Chimica Inorganica 3 v400it</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[Il composto <B>K<SUB>2</SUB>[OsCl<SUB>5</SUB>N]</B> si chiama:<BR>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[  Potassium pentachloronitridoosmate (VIII)<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[  Potassium pentachloronitridoosmate (VI)<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[  Potassium amidopentachloroosmate (VI)<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[  Potassium azidopentachloroosmate (VI)<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[  Potassium chlorohydrazidoosmate (V)<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">8</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" >
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" >
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" >
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="4" >
+<conditionvar>
+<varequal respident="1">E</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[The ligands are 5 Cl- and a nitrido N3-.The metal oxidation state is in brackets after the anion.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[The ligands are 5 Cl- and a nitrido N3-.The metal oxidation state is in brackets after the anion.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[The ligands are 5 Cl- and a nitrido N3-.The metal oxidation state is in brackets after the anion.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[The ligands are 5 Cl- and a nitrido N3-.The metal oxidation state is in brackets after the anion.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="4" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[The ligands are 5 Cl- and a nitrido N3-.The metal oxidation state is in brackets after the anion.]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="005 Inor14uk-Q2 Which of the following stereochemistries are possible" ident="7013475915766873">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Italian version\Chimica Inorganica 3 v400it</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[Quale delle seguenti configurazioni stereochimiche sono possibile per un metallo complesso di formula generica pari a <B>MX<SUB>2</SUB>Y<SUB>2</SUB></B> ?<BR>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[ tetraedrica e quadrato planare<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[tetraedrica e ottaedrica <BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[quadrato planare e ottaedrica<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[lineare e tetraedrica<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[trigonale planare e tetraedrica<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">8</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="006 Inor15uk-Q2 When hydrides of the alkali metals are treated" ident="1776213476970278">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Italian version\Chimica Inorganica 3 v400it</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[Quando idruri di metalli alcalini sono trattati con acqua, uno dei prodotti finali sara' :<BR>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="No">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[    H<SUB>2</SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[    H<SUP>-</SUP><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[    H<SUP>+</SUP><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[    O<SUB>2</SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[Non c'e' reazione<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">8</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" >
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" >
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" >
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="4" >
+<conditionvar>
+<varequal respident="1">E</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Equilibrium between H-, H+ and H2 lies effectively towards H2.Any solvent such as water which gives a concentration of protons [solvated] will therefore give dihydrogen.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Equilibrium between H-, H+ and H2 lies effectively towards H2.Any solvent such as water which gives a concentration of protons [solvated] will therefore give dihydrogen.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Equilibrium between H-, H+ and H2 lies effectively towards H2.Any solvent such as water which gives a concentration of protons [solvated] will therefore give dihydrogen.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="4" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Equilibrium between H-, H+ and H2 lies effectively towards H2.Any solvent such as water which gives a concentration of protons [solvated] will therefore give dihydrogen.]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="007 inor16uk-Q2 When PBr5 is treated with water, the products" ident="1231644209711202">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Italian version\Chimica Inorganica 3 v400it</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[Quando <B>PBr<SUB>5</SUB></B> e' trattato con acqua, i prodotti saranno :<BR>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[  H<SUB>3</SUB>PO<SUB>4</SUB> e HBr<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[  H<SUB>3</SUB>PO<SUB>3</SUB> e HBr<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[  H<SUB>3</SUB>PO<SUB>2</SUB> e HBr<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[  H<SUB>2</SUB>P<SUB>2</SUB>O<SUB>7</SUB> e HBr<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[  P<SUB>4</SUB>O<SUB>10</SUB> e Br<SUB>2</SUB><BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">8</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" >
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" >
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" >
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="4" >
+<conditionvar>
+<varequal respident="1">E</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[No redox reactions occur, so H3PO3, H3PO2 and H2PO7 are wrong. P(V) oxide reacts with water.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[No redox reactions occur, so H3PO3, H3PO2 and H2PO7 are wrong. P(V) oxide reacts with water.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[No redox reactions occur, so H3PO3, H3PO2 and H2PO7 are wrong. P(V) oxide reacts with water.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="4" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[No redox reactions occur, so H3PO3, H3PO2 and H2PO7 are wrong. P(V) oxide reacts with water.]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="008 Inor17uk-Q2 Of the following statements about fluorine" ident="9717443610174601">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Italian version\Chimica Inorganica 3 v400it</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[Tra le seguenti affermazioni riguardo al fluoro, quale non e' vera ?<BR>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[ Produce bassi stati di ossidazione negli elementi con i quali reagisce.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[Ha un'alta elettronegativita'.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[ Forma numerosi composti con gli altri alogeni.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[E' un atomo piccolo.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[Il legame F-F ha una bassa entalpia.<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">8</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" >
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" >
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" >
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="4" >
+<conditionvar>
+<varequal respident="1">E</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Fluorine generally brings out the highest oxidation states in the elements it reacts with.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Fluorine generally brings out the highest oxidation states in the elements it reacts with.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Fluorine generally brings out the highest oxidation states in the elements it reacts with.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="4" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Fluorine generally brings out the highest oxidation states in the elements it reacts with.]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="009 Inor18uk-Q2 Of the following pairs of transition metals, which has atoms" ident="5607321714743686">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Italian version\Chimica Inorganica 3 v400it</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[Tra le seguenti coppie di metalli di transizione, quale ha atomi con le stesse dimensioni ?<BR>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[  Zr e Hf<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[  Cr e Mo<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[  Ni e Pd<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[  Ti e Ca<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[  Ta e Ir<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">8</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" >
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" >
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" >
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="4" >
+<conditionvar>
+<varequal respident="1">E</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[2nd & 3rd row transition metals have approximately similar radii from a combination of the increase from the 4d to 5d shells and the intervening lanthanide contraction. Zr & Hf are particularly close.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[2nd & 3rd row transition metals have approximately similar radii from a combination of the increase from the 4d to 5d shells and the intervening lanthanide contraction. Zr & Hf are particularly close.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[2nd & 3rd row transition metals have approximately similar radii from a combination of the increase from the 4d to 5d shells and the intervening lanthanide contraction. Zr & Hf are particularly close.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="4" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[2nd & 3rd row transition metals have approximately similar radii from a combination of the increase from the 4d to 5d shells and the intervening lanthanide contraction. Zr & Hf are particularly close.]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="010 Inor19uk-Q2 How many unpaired electrons would you expect to find in the cation" ident="0913561972312641">
+<itemmetadata>
+<qmd_itemtype>Numeric</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Italian version\Chimica Inorganica 3 v400it</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[Quante coppie di elettroni spaiati ci si aspetta di trovare nel catione <br><br><center><B>[Co(NH<SUB>3</SUB>)<SUB>6</SUB>]<SUP>2+</SUP></B> ?</center><BR>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[Scrivere la risposta nella casella seguente : &nbsp;&nbsp;&nbsp;]]></mattext>
+</material>
+<response_num ident="1" rcardinality="Single">
+<render_fib fibtype="Decimal" prompt="Box" rows="1" columns="4" maxchars="4"/>
+</response_num>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">3.0</varequal>
+</conditionvar>
+<setvar action="Set">8</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="2" >
+<conditionvar>
+<other/>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[La specie e' ottaedrica, d^7, e i ligandi formano un piccolo campo cristallino. La configurazione sara' quindi t_2g^5 . e_g#^2 ;  formando 3 coppie di elettroni spaiati (configurazione ad alto spin).]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="011 Inor1auk-Q2 For many ligand substitution reactions of octahedral complexes" ident="4645827833157894">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Italian version\Chimica Inorganica 3 v400it</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[Per numerose reazioni di sostituzione di liganti in complessi ottaedrici, si e' notato che la resa ha una leggera dipendenza dalla natura del ligante entrante, e varia leggermente solo in presenza di un ligante con lo stesso ingombro sterico ma differente struttura elettronica.<BR><BR>Questo suggerisce :<BR>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[Che il passo che determina la resa e' dissociativo.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[Che il passo che determina la resa e' associativo.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[Che gli effeti elettronici non sono determinanti nel meccanismo.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[Che complessi ottaedrici hanno la stessa resa.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[Che le rese non dipendono dal meccanismo.<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">8</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="012 Inor1buk-Q2 Which of the following is a correct statement about Lewis" ident="7386524833722424">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Italian version\Chimica Inorganica 3 v400it</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[Quale delle seguenti affermazioni e' corretta per acidi e basi di Lewis ?<BR>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[Un acido di Lewis e' un accettore di una coppia di elettroni e una base di Lewis e' un donatore di una coppia di elettroni.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[Un acido di Lewis e' un donatore di protoni e una base di Lewis e' un accettore di protoni.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[Un acido di Lewis e una base di Lewis sono entrambi accettori di elettroni.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[Un acido di Lewis e una base di Lewis sono entrambi donatori di elettroni.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[Un acido di Lewis e' sia donatore di protoni che donatore di elettroni.<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">8</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" >
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" >
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" >
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="4" >
+<conditionvar>
+<varequal respident="1">E</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Lewis acids and bases are defined by electron pair acceptance and donation.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Lewis acids and bases are defined by electron pair acceptance and donation.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Lewis acids and bases are defined by electron pair acceptance and donation.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="4" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Lewis acids and bases are defined by electron pair acceptance and donation.]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="013 Inor1cuk-Q2 Which of the following groups of organometallic compounds" ident="1892172084543258">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Italian version\Chimica Inorganica 3 v400it</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[Quale dei segeunti gruppi di compost organometallici sono tuti elettron deficienti (o presentano orbitali multicentrici) ?<BR>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[Alchili dei gruppi del litio e del berillio.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[Alchili di boro e silicio.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[Alchili dei metalli di transizione.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[Composti organici del mercurio.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[Tetralchili di Ti, Zr e Hf.<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">8</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" >
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" >
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" >
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="4" >
+<conditionvar>
+<varequal respident="1">E</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Electron deficiency relates pairs of bonding electrons to pairs of directly bonded atoms. Thus electron poor compounds [e.g. Ti tetraalkyls, having fewer than 18 valence electrons] are not electron deficient.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Electron deficiency relates pairs of bonding electrons to pairs of directly bonded atoms. Thus electron poor compounds [e.g. Ti tetraalkyls, having fewer than 18 valence electrons] are not electron deficient.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Electron deficiency relates pairs of bonding electrons to pairs of directly bonded atoms. Thus electron poor compounds [e.g. Ti tetraalkyls, having fewer than 18 valence electrons] are not electron deficient.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="4" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Electron deficiency relates pairs of bonding electrons to pairs of directly bonded atoms. Thus electron poor compounds [e.g. Ti tetraalkyls, having fewer than 18 valence electrons] are not electron deficient.]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="014 Inor1duk-Q2 The common orthorhombic form of elemental sulphur" ident="7902764116776679">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Italian version\Chimica Inorganica 3 v400it</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[La comune forma ortorombica di un solfuro elementare  ha una struttura che consiste in:<BR>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[Corona a 8 anelli.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[6 anelli planari.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[5 anelli piegati.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[Gabbie tridimensionali.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[Polimeri incrociati.<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">8</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="015 Inor1euk-Q2 With which group of functions is iron associated" ident="6700246194312095">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Italian version\Chimica Inorganica 3 v400it</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[A quale dei seguenti processi il ferro e' associato nei sistemi biologici ?<BR>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[Accumulo e trasporto di ossigeno, reazioni redox.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[Formazione di ossa e guarigione.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[Sintesi di proteine e idrolisi.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[Reazioni di riarrangiamento molecolare.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[Sintesi di acidi grassi e vitamine.<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">8</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" >
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" >
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" >
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="4" >
+<conditionvar>
+<varequal respident="1">E</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Iron is at the active site in myoglobin [O2 storage], haemoglobin [O2 transport] and in the electron transport chain.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Iron is at the active site in myoglobin [O2 storage], haemoglobin [O2 transport] and in the electron transport chain.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Iron is at the active site in myoglobin [O2 storage], haemoglobin [O2 transport] and in the electron transport chain.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="4" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Iron is at the active site in myoglobin [O2 storage], haemoglobin [O2 transport] and in the electron transport chain.]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="016 Inor20uk-Q2 For some dioxygen species the O-O bond lengths" ident="8319773459915341">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Italian version\Chimica Inorganica 3 v400it</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[Per alcune specie di diossidi <B>O-O</B> le distanze di legame sono :<BR><BR><CENTER>112 pm ; 121 pm ; 126 pm ; 149 pm<BR></CENTER><BR>Per quale dei seguenti gruppi queste sono le distanze di legame corrette ?<BR>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[O<SUB>2</SUB><SUP>+</SUP> ,  O<SUB>2</SUB> ,  O<SUB>2</SUB><SUP>-</SUP> ,  O<SUB>2</SUB><SUP>2-</SUP><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[O<SUB>2</SUB><SUP>2-</SUP> ,  O<SUB>2</SUB><SUP>-</SUP> ,  O<SUB>2</SUB> ,  O<SUB>2</SUB><SUP>+</SUP><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[O<SUB>2</SUB> ,  O<SUB>2</SUB><SUP>-</SUP> ,  O<SUB>2</SUB><SUP>2-</SUP> ,  O<SUB>2</SUB><SUP>+</SUP><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[O<SUB>2</SUB><SUP>+</SUP> ,  O<SUB>2</SUB><SUP>2-</SUP> ,  O<SUB>2</SUB><SUP>-</SUP> ,  O<SUB>2</SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[O<SUB>2</SUB><SUP>-</SUP> ,  O<SUB>2</SUB><SUP>2-</SUP> ,  O<SUB>2</SUB><SUP>+</SUP> , O<SUB>2</SUB><BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">16</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" >
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" >
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" >
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="4" >
+<conditionvar>
+<varequal respident="1">E</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[The highest occupied molecular orbital is antibonding, so removal of an electron shortens the distance by strengthening the bond. All additions of electrons to O2 further lengthen the bond.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[The highest occupied molecular orbital is antibonding, so removal of an electron shortens the distance by strengthening the bond. All additions of electrons to O2 further lengthen the bond.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[The highest occupied molecular orbital is antibonding, so removal of an electron shortens the distance by strengthening the bond. All additions of electrons to O2 further lengthen the bond.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="4" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[The highest occupied molecular orbital is antibonding, so removal of an electron shortens the distance by strengthening the bond. All additions of electrons to O2 further lengthen the bond.]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="017 Inor24uk-Q2 How many isomeric species of all types" ident="6168321196576701">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Italian version\Chimica Inorganica 3 v400it</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[Quante specie ispotopiche di tutti i tipi possono essere fatte per una specie di cromo ottoedrico con formula del tipo<BR><BR><B>
+<CENTER>[Cr(<I>hfacac</I>)<SUB>3</SUB>(<I>acac</I>)<SUB>n</SUB>]</CENTER><BR></B>in cui "<I>acac</I>" e' il ligante MeCOCHCOMe,&nbsp;e "<I>hfacac</I>" e' CF<SUB>3</SUB>COCHCOCF<SUB>3</SUB> ?<BR>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="No">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[  4<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[  5<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[  6<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[  7<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[  8<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" >
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" >
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" >
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="4" >
+<conditionvar>
+<varequal respident="1">E</varequal>
+</conditionvar>
+<setvar action="Set">16</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Species exist for n = 0, 1, 2, and 3. Each species has an enantiomer.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Species exist for n = 0, 1, 2, and 3. Each species has an enantiomer.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Species exist for n = 0, 1, 2, and 3. Each species has an enantiomer.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Species exist for n = 0, 1, 2, and 3. Each species has an enantiomer.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="4" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="018 Inor25uk-Q2 The heats of dissociation of amine adducts of trimethyl" ident="0239134386582689">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Italian version\Chimica Inorganica 3 v400it</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[I calori di dissociazione di composti amminici di boro trimetile <B>[BMe<SUB>3</SUB>]</B> con le seguenti ammine sono date da :<BR><BR><CENTER><B>Me<SUB>3</SUB>N</B> 73,6 ;  <B>Me<SUB>2</SUB>NH</B>  80,7 ;  <B>MeNH<SUB>2</SUB></B>  73,6 ;  <B>NH<SUB>3</SUB></B>  57,5 kJ.mol<SUP>-1</SUP><BR></CENTER><BR>Questi valori possono essere giustificati meglio da quale delle seguenti affermazioni ?<BR>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[Una combinazione di effetti sterici e elettronici.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[Principalmente sterici in origine.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[ Principalmente con caratteristiche di induzione elettronica in orgine.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[Dovuto a causae di un cambiamento nell'ibridazione del <B>B</B>.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[Dovuto a effetti di risonanza.<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">16</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" >
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" >
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" >
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="4" >
+<conditionvar>
+<varequal respident="1">E</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Inductively more methyls strengthen the bond, but sterically they weaken it around the small B atom. The overall picture is a net result.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Inductively more methyls strengthen the bond, but sterically they weaken it around the small B atom. The overall picture is a net result.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Inductively more methyls strengthen the bond, but sterically they weaken it around the small B atom. The overall picture is a net result.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="4" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Inductively more methyls strengthen the bond, but sterically they weaken it around the small B atom. The overall picture is a net result.]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="019 Inor26uk-Q2 In the 119Sn NMR spectrum, SnCl4 has a shift" ident="1589986347382432">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Italian version\Chimica Inorganica 3 v400it</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[Nello spettro NMR del <B><SUP>119</SUP>Sn</B>, il <B>SnCl<SUB>4</SUB></B> ha uno spostamento di 150 ppm, e l'<B>SnBr<SUB>4</SUB></B> ha uno spostamento di 638 ppm, come il tetrametile di stagno.Quando i due sono mescolati lo spettro NMR mostra dei picchi nelle seguenti posizioni, con le intensita' indicate tra parentesi :<BR><BR><CENTER>150 <B>(1)</B> ; 265 <B>(4)</B> ; 387 <B>(6)</B> ; 509 <B>(4)</B> ; 635 <B>(1)</B><BR></CENTER><BR>La spiegazione e' :<BR>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[Formazione statistica di specie del tipo   <B>SnBr<SUB>n</SUB>Cl<SUB>4-n</SUB></B> mediante ridistribuzione.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[Reazione con il solvente.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[ Idrolisi parziale dovuta a impurita' nella miscela.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[  Formazione di claster di molecole complesse.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[Formazione di complessi donatore-accettore tra le specie.<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">16</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" >
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" >
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" >
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="4" >
+<conditionvar>
+<varequal respident="1">E</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Redistribution of Cl & Br between the tin atoms. This is common for main group elements. The clue is intensities which follow the coefficients of the Pascal triangle {statistical weightings}.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Redistribution of Cl & Br between the tin atoms. This is common for main group elements. The clue is intensities which follow the coefficients of the Pascal triangle {statistical weightings}.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Redistribution of Cl & Br between the tin atoms. This is common for main group elements. The clue is intensities which follow the coefficients of the Pascal triangle {statistical weightings}.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="4" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Redistribution of Cl & Br between the tin atoms. This is common for main group elements. The clue is intensities which follow the coefficients of the Pascal triangle {statistical weightings}.]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="020 Inor27uk-Q2 Which of the following statements about thionyl chloride" ident="3117169762314681">
+<itemmetadata>
+<qmd_itemtype>Multiple Response</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Italian version\Chimica Inorganica 3 v400it</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[Quali delle seguenti affermazioni relativamente al <B>SOCl<SUB>2</SUB></B> sono vere ?<BR>]]></mattext>
+</material>
+<response_lid ident="1" rcardinality="Multiple">
+<render_choice shuffle="Yes" minnumber="1" maxnumber="5">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[Puo' essere preparato da <B>SO<SUB>2</SUB></B> e <B>PCl<SUB>5</SUB></B>.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[Si idrolizza velocemente a <B>HCl</B> e <B>SO<SUB>2</SUB></B>.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[  E' un reagente utile per la deidratazione di sali metallici.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[Il legame <B>S-O</B> ha carattere di doppio legame.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[E' sia un acido che una base di Lewis.<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="header" continue="Yes">
+<conditionvar>Unrecognized or unsupported test method
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="header"/>
+</respcondition>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Add">3</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" continue="Yes">
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Add">3</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" continue="Yes">
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Add">3</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" continue="Yes">
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Add">3</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="4" continue="Yes">
+<conditionvar>
+<varequal respident="1">E</varequal>
+</conditionvar>
+<setvar action="Add">4</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="header" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Tutte le affermazioni sono corrette.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="4" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="021 Inor28uk-Q3 The structures of the species [Ni(CN)4]2-" ident="6810549598631929">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Italian version\Chimica Inorganica 3 v400it</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[Le strutture delle specie <B>[Ni(CN)<SUB>4</SUB>]<SUP>2-</SUP></B>, <B>[NiCl<SUB>4</SUB>]<SUP>2-</SUP></B>, e <B>[Ni(CO)<SUB>4</SUB>]</B> sono rispettivamente :<BR>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[Planare quadrata, tetraedrica, tetraedrica.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[  Tetraedrica, quadrato planare, tetraedrica.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[Tetraedrica, tetraedrica, quadrato planare.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[Quadrato planare, ottaedrica, tetraedrica.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[ Tetraedrica, ottaedrica, quadrato planare.<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">16</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" >
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" >
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" >
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="4" >
+<conditionvar>
+<varequal respident="1">E</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[The strong-field ligand, CN-, enforces square planar geometry on the d8 ion, which avoids occupancy of the highest energy metal orbital. The others are tetrahedral as expected. Octahedral describes 6-coordinate geometry.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[The strong-field ligand, CN-, enforces square planar geometry on the d8 ion, which avoids occupancy of the highest energy metal orbital. The others are tetrahedral as expected. Octahedral describes 6-coordinate geometry.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[The strong-field ligand, CN-, enforces square planar geometry on the d8 ion, which avoids occupancy of the highest energy metal orbital. The others are tetrahedral as expected. Octahedral describes 6-coordinate geometry.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="4" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[The strong-field ligand, CN-, enforces square planar geometry on the d8 ion, which avoids occupancy of the highest energy metal orbital. The others are tetrahedral as expected. Octahedral describes 6-coordinate geometry.]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="022 Inor29uk-Q1 Which of the following statements about the two complexes" ident="5674653138802473">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Italian version\Chimica Inorganica 3 v400it</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[Quale delle seguenti affermazioni relativamente alla stabilita' dei complessi<BR><B>[Co(</B><I>en</I><B>)(OH<SUB>2</SUB>)<SUB>4</SUB>]<SUP>2+</SUP> (A)</B> , e  <B>[Co(NH<SUB>3</SUB>)<SUB>2</SUB>(OH<SUB>2</SUB>)<SUB>4</SUB>]<SUP>2+ </SUP>(B)</B> , e' vera ?<BR><BR>(<I>en</I> = H<SUB>2</SUB>NCH<SUB>2</SUB>CH<SUB>2</SUB>NH<SUB>2</SUB>)<BR>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[  <B>A</B> e' piu' stabile grazie all'effetto chelate che e' entropico in origine.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[  <B>B</B> e' piu' stabile perche' l'ammoniaca lega piu'  fortemente che l'etilendiammina.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[Hanno una stabilita' molto simile dato che la natura dei legami e' molto simile in entrambi i complessi.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[Non si puo' dire niente in quanto dipende dalla stereochimica dei complessi.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[  <B>A</B> e' piu' stabile perche' le entalpie di legame sono sensibilmente piu' alte.<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">16</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" >
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" >
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" >
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="4" >
+<conditionvar>
+<varequal respident="1">E</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[There is little difference between bond strengths (enthalpies), but the bidentate ligand binds with displacement of two monodentate ligands, contributing to increased entropy. Comparison of formation constants is complicated by dimensional difficulties, but the origin of the effect is genuinely entropic.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[There is little difference between bond strengths (enthalpies), but the bidentate ligand binds with displacement of two monodentate ligands, contributing to increased entropy. Comparison of formation constants is complicated by dimensional difficulties, but the origin of the effect is genuinely entropic.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[There is little difference between bond strengths (enthalpies), but the bidentate ligand binds with displacement of two monodentate ligands, contributing to increased entropy. Comparison of formation constants is complicated by dimensional difficulties, but the origin of the effect is genuinely entropic.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="4" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[There is little difference between bond strengths (enthalpies), but the bidentate ligand binds with displacement of two monodentate ligands, contributing to increased entropy. Comparison of formation constants is complicated by dimensional difficulties, but the origin of the effect is genuinely entropic.]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="023 Inor2auk-Q2 For the reaction: trans-[Co(LL)2Cl2]" ident="4982032944192340">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Italian version\Chimica Inorganica 3 v400it</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[Per la reazione : 
+<CENTER><I>trans</I>-[Co(LL)<SUB>2</SUB>Cl<SUB>2</SUB>]<SUP>+</SUP> + H<SUB>2</SUB>O&nbsp;&nbsp;→&nbsp;&nbsp;[Co(LL)<SUB>2</SUB>(H<SUB>2</SUB>O)Cl]<SUP>2+</SUP> + Cl<SUP>-</SUP><BR></CENTER><BR>la resa aumenta secondo il seguente ordine : <BR>
+<CENTER><BR><B>LL</B> = H<SUB>2</SUB>N(CH<SUB>2</SUB>)<SUB>2</SUB>NH<SUB>2</SUB> <B>&lt;</B> H<SUB>2</SUB>NCH<SUB>2</SUB>CHMeNH<SUB>2</SUB> <B>&lt;</B> H<SUB>2</SUB>NCH<SUB>2</SUB>CMe<SUB>2</SUB>NH<SUB>2</SUB> <B>&lt;</B> H<SUB>2</SUB>N(CMe<SUB>2</SUB>)<SUB>2</SUB>NH<SUB>2</SUB><BR><BR></CENTER>Questo perche' :<BR>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[  La reazione e' dissociativa e favorita dall'aumento della massa.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[La reazione e associativa e favorita dai gruppi metile.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[I gruppi metile destabilizzano la sostanza iniziale .<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[La geometria dei complessi cambia lungo la serie.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[Il cloruro destabilizza la sostanza iniziale.<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">16</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" >
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" >
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" >
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="4" >
+<conditionvar>
+<varequal respident="1">E</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Thermodynamic difference and effects are minimal. The increasing bulk of the ligand favours the dissociation of Cl- and such processes are typical of substitutions at octahedral metal centres.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Thermodynamic difference and effects are minimal. The increasing bulk of the ligand favours the dissociation of Cl- and such processes are typical of substitutions at octahedral metal centres.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Thermodynamic difference and effects are minimal. The increasing bulk of the ligand favours the dissociation of Cl- and such processes are typical of substitutions at octahedral metal centres.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="4" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Thermodynamic difference and effects are minimal. The increasing bulk of the ligand favours the dissociation of Cl- and such processes are typical of substitutions at octahedral metal centres.]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="024 Inor2cuk-Q2 Which of the following statements characterise the complex" ident="8935893097083570">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Italian version\Chimica Inorganica 3 v400it</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[Quale delle seguenti affermazioni  caratterizza il complesso <B>[Fe(<FONT face=symbol>h</FONT>-C<SUB>4</SUB>H<SUB>4</SUB>)(CO)<SUB>3</SUB>]</B> ?<BR> (C<SUB>4</SUB>H<SUB>4</SUB> = ciclobutadiene).<BR>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[E' stabile, presenta 18 elettroni, che libera ciclobutadiene nell'ossidazione da Ce(IV).<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[Non puo' essere ottenuto a causa dell'instabilita' del ciclobutadiene.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[E' stato preparato solo un composto del Fe a 20 elettroni.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[Puo' esere ottenuto, ma solo come sale cationico reattivo.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[Una configurazione con 18 elettroni non reattivo all'attacco di nucleofili, elettrofili o ossidanti.<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">16</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" >
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" >
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" >
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="4" >
+<conditionvar>
+<varequal respident="1">E</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[The unstable ring is stabilised by coordination. Oxidation releases cyclobutadiene, which is highly reactive.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[The unstable ring is stabilised by coordination. Oxidation releases cyclobutadiene, which is highly reactive.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[The unstable ring is stabilised by coordination. Oxidation releases cyclobutadiene, which is highly reactive.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="4" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[The unstable ring is stabilised by coordination. Oxidation releases cyclobutadiene, which is highly reactive.]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="025 Inor2duk-Q2 Which of the following statements is true ?" ident="1332743727005069">
+<itemmetadata>
+<qmd_itemtype>Multiple Response</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Italian version\Chimica Inorganica 3 v400it</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[Quale delle seguenti affermazioni e' vera ?<BR>]]></mattext>
+</material>
+<response_lid ident="1" rcardinality="Multiple">
+<render_choice shuffle="Yes" minnumber="1" maxnumber="5">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[I silicati sono formati da unita' di <B>SiO<SUB>4</SUB><SUP>4-</SUP></B>, ma possono condividere 0, 1, 2, 3 or 4 atomi di &quot<B>O</B>&quot tra le unita'.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[Silicati diversi sono formati da unita' diverse di <B>SiO<SUB>n</SUB></B>.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[L'unita' del  <B>SiO<SUB>4</SUB></B> e' tetraedrica nei silicati.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[I soli silicati stabili sono gli alluminosilicati che contengono anche alluminio.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[I silicati con struttura planare, come le miche, hanno una unita' trigonale planare <B>SiO<SUB>3</SUB><SUP>3-</SUP></B>.<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="header" continue="Yes">
+<conditionvar>Unrecognized or unsupported test method
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="header"/>
+</respcondition>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Add">8</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" continue="Yes">
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" continue="Yes">
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Add">8</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" continue="Yes">
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="4" continue="Yes">
+<conditionvar>
+<varequal respident="1">E</varequal>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="header" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[It is the sharing of oxygen atoms between the SiO4 units which give different silicates the different overall stoichiometries. The individual units are tettrahedral.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="4" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="026 Inor30uk-Q2 The term symbol for the electronic ground state" ident="7208348203394689">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Italian version\Chimica Inorganica 3 v400it</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[Il simbolo per lo stato elettronico fondamentale dell'idrogeno molecolare  <B>H<SUB>2</SUB></B> e' :<BR><CENTER>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[</CENTER>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[<SUP>1</SUP>S<SUB>g</SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[<SUP>3</SUP>S<SUB>g</SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[<SUP>1</SUP>D<SUB>g</SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[<SUP>3</SUP>P<SUB>u</SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[<SUP>1</SUP>S<SUB>u</SUB><BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">24</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" >
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" >
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" >
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="4" >
+<conditionvar>
+<varequal respident="1">E</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Singlet, with no unpaired electrons, symmetrical with respect to the centre of symmetry [g], sigma, no angular momentum about the bond axis (or equivalently, no change in the sign of the wavefunction).]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Singlet, with no unpaired electrons, symmetrical with respect to the centre of symmetry [g], sigma, no angular momentum about the bond axis (or equivalently, no change in the sign of the wavefunction).]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Singlet, with no unpaired electrons, symmetrical with respect to the centre of symmetry [g], sigma, no angular momentum about the bond axis (or equivalently, no change in the sign of the wavefunction).]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="4" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Singlet, with no unpaired electrons, symmetrical with respect to the centre of symmetry [g], sigma, no angular momentum about the bond axis (or equivalently, no change in the sign of the wavefunction).]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="027 Inor38uk-Q2 For the molecules [Mo2(OOCMe)4]" ident="6959618668106889">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Italian version\Chimica Inorganica 3 v400it</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[Per le molecole <B>[Mo<SUB>2</SUB>(OOCMe)<SUB>4</SUB>]</B> , <B>[W<SUB>2</SUB>Cl<SUB>4</SUB>(PEt<SUB>3</SUB>)<SUB>4</SUB>]</B> e<B>[Mo<SUB>2</SUB>(OBu<SUP></B><I>t</I><B></SUP>)<SUB>6</SUB>(µ-CO)]</B> l'odine dei legami metallo-metallo e gli stati di ossidazione sono rispettivamente :<BR>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[4,4,2  and  II, II, III<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[3,3,2  and  III, III, II<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[2,2,0  and  IV, IV, V<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[4,4,2  and  II, IV, III<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[0,0,2  and  V, V, III<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">24</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" >
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" >
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" >
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="4" >
+<conditionvar>
+<varequal respident="1">E</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Mo & W have 6 valence electrons; acetate, butoxide and chloride are 1-electron ligands. CO & PEt3 are 2-electron ligands. The bridging CO should be taken to contribute 1 electron to each metal.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Mo & W have 6 valence electrons; acetate, butoxide and chloride are 1-electron ligands. CO & PEt3 are 2-electron ligands. The bridging CO should be taken to contribute 1 electron to each metal.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Mo & W have 6 valence electrons; acetate, butoxide and chloride are 1-electron ligands. CO & PEt3 are 2-electron ligands. The bridging CO should be taken to contribute 1 electron to each metal.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="4" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Mo & W have 6 valence electrons; acetate, butoxide and chloride are 1-electron ligands. CO & PEt3 are 2-electron ligands. The bridging CO should be taken to contribute 1 electron to each metal.]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="028 Inor39uk-Q2 Which of the following reaction sequences is correct" ident="0671580865648509">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Italian version\Chimica Inorganica 3 v400it</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[Quale delle seguenti reazioni e' esatta per la sintesi del <BR><BR><CENTER><I>cis</I><B>-[PtCl<SUB>2</SUB>(NH<SUB>3</SUB>)<SUB>2</SUB>]</B>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[A] ?</CENTER><BR>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="No">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[[Pt(NH<SUB>3</SUB>)<SUB>4</SUB>]<SUP>2+</SUP> + HCl&nbsp;&nbsp;→&nbsp;&nbsp;[PtCl(NH<SUB>3</SUB>)<SUB>3</SUB>]<SUP>+</SUP>&nbsp;&nbsp;→&nbsp;&nbsp;(+HCl)&nbsp;&nbsp;→&nbsp;&nbsp;[A]<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[[PtCl<SUB>4</SUB>]<SUP>2-</SUP> + NH<SUB>3</SUB>&nbsp;&nbsp;→&nbsp;&nbsp;[PtCl<SUB>3</SUB>(NH<SUB>3</SUB>)]<SUP>-</SUP>&nbsp;&nbsp;→&nbsp;&nbsp;(+NH<SUB>3</SUB>)&nbsp;&nbsp;→&nbsp;&nbsp;[A]<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[PtCl<SUB>2</SUB> + 2NH<SUB>3</SUB>&nbsp;&nbsp;→&nbsp;&nbsp;[A]<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[[Pt(NH<SUB>3</SUB>)<SUB>2</SUB>]<SUP>2+</SUP> + 2HCl&nbsp;&nbsp;→&nbsp;&nbsp;[A]<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[Pt + 2NH<SUB>3</SUB> + Cl<SUB>2</SUB>&nbsp;&nbsp;→&nbsp;&nbsp;[A]<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" >
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Set">24</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" >
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" >
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="4" >
+<conditionvar>
+<varequal respident="1">E</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="4" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="029 Inor3euk-Q2 Which of the following statements about the metalloenzyme" ident="1631956376251638">
+<itemmetadata>
+<qmd_itemtype>Multiple Response</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Italian version\Chimica Inorganica 3 v400it</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[Quali delle seguenti affermazioni  relative ad un enzima metellico, l'anidrasi carbonica, sono vere ?<BR>]]></mattext>
+</material>
+<response_lid ident="1" rcardinality="Multiple">
+<render_choice shuffle="Yes" minnumber="1" maxnumber="5">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[Contiene <B>Zn<SUP>2+</SUP></B> coordinato da tre residui di istidina.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[Catalizza sia l'idratazione di <B>CO<SUB>2</SUB></B> sia la reazione inversa.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[Idrata solamente <B>CO<SUB>2</SUB></B>.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[La direzione di reazione dipende dal pH.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[La sua funzione e' il raggiungimento di un rapido equilibrio del <B>CO<SUB>2</SUB></B> con <B>HCO<SUB>3</SUB><SUP>-</SUP></B>.<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="header" continue="Yes">
+<conditionvar>Unrecognized or unsupported test method
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="header"/>
+</respcondition>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Add">6</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" continue="Yes">
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Add">6</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="3" continue="Yes">
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Add">6</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="4" continue="Yes">
+<conditionvar>
+<varequal respident="1">E</varequal>
+</conditionvar>
+<setvar action="Add">6</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="header" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="4" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="030 Inor3fuk-Q2 N2F4 is a highly reactive gas" ident="5227895340440407">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Italian version\Chimica Inorganica 3 v400it</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<B>N<SUB>2</SUB>F<SUB>4</SUB></B> e' un gas altamente reattivo, per esempio, strappa <B>H</B> dai tioli. Il gas presenta una riga di assorbimento a 260 nm che, a temperatura costante, e' inversamente proporzionale alla radice quadrata della pressione [<FONT size=+1 face=SYMBOL>µ</FONT> 1/√P].<BR><BR>Questo perche':<BR>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[Il composto dissocia in radicali <B>NF<SUB>2</SUB></B>.<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[Reagisce con le pareti del contenitore.<SUB> </SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[Dimerizza.<SUB> </SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[Polimerizza.<SUB> </SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[Si decompone a <B>N<SUB>2</SUB></B> e <B>2F<SUB>2</SUB></B>.<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">24</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" >
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" >
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" >
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="4" >
+<conditionvar>
+<varequal respident="1">E</varequal>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[La pressione avvicina i radicali e impedisce la dissociazione.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[La pressione avvicina i radicali e impedisce la dissociazione.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[La pressione avvicina i radicali e impedisce la dissociazione.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="4" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[La pressione avvicina i radicali e impedisce la dissociazione.]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+</questestinterop>
+
+

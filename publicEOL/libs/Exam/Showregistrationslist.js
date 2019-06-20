@@ -8,6 +8,7 @@
 
 var testRowEdit = null;
 
+var refreshTable=false;
 var registrationsTable = null;
 var rtci = {
     status : 0,
@@ -24,40 +25,8 @@ var rtci = {
 };
 
 $(function(){
-
     $("#addStudents").on("click", showAddStudentsPanel);
-
-    registrationsTable = $("#registrationsTable").DataTable({
-        scrollY:        200,
-        scrollCollapse: false,
-        jQueryUI:       true,
-        paging:         false,
-        order: [rtci.name, "asc"],
-        columns : [
-            { className: "uStatus", searchable : false, type: "alt-string", width : "10px" },
-            { className: "uName" },
-            { className: "uEmail" },
-            { className: "uTimeStart"},
-            { className: "uTimeEnd"},
-            { className: "uTimeUsed"},
-            { className: "uScoreTest"},
-            { className: "uScoreFinal"},
-            { className: "uManage", width : "30px" , searchable : false, sortable : false },
-            { className: "uStudentID", visible : false },
-            { className: "uTestID", visible : false }
-        ],
-        language : {
-            info: ttDTRegisteredStudentInfo,
-            infoFiltered: ttDTRegisteredStudentFiltered,
-            infoEmpty: ttDTRegisteredStudentEmpty
-        }
-    });
-    $("#registrationsTable_filter").css("margin-right", "50px")
-                                   .after($("#addStudents").parent())
-                                   .before($("#registrationsTable_info"));
-
 });
-
 /**
  *  @name   toggleBlackTest
  *  @param  askConfirmationAndSelectedTest          Array       askConfirmation Boolean, img of test to block/unblock
@@ -145,55 +114,24 @@ function showAddStudentsPanel(){
  *  @name   refreshStudentsList
  *  @descr  Refreshes requested exam's students list
  */
-function refreshStudentsList(){
+function refreshStudentsList(el,dir){
     var idExam = examsTable.row(examRowEdit).data()[etci.examID];
     $.ajax({
         url     : "index.php?page=exam/showregistrationslist",
         type    : "post",
         data    : {
-            idExam  :  idExam,
-            action  :  "refresh"
+            idExam      :  idExam,
+            action      :  "refresh",
+            sortingElem :  el,
+            sortingOrder:  dir
         },
         success : function (data){
             if(data == "NACK"){
 //                alert(data);
             }else{
-//                alert(data);
                 $("#registrationsList .boxContent").html(data);
             }
-        },
-        error : function (request, status, error) {
-            alert("jQuery AJAX request error:".error);
-        }
-    });
-}
-function resultStudent(){
-    var idExam = examsTable.row(examRowEdit).data()[etci.examID];
-    var subject = examsTable.row(examRowEdit).data()[etci.name];
-    var examDate = examsTable.row(examRowEdit).data()[etci.day];
-    $.ajax({
-        url     : "index.php?page=report/resultstudent",
-        type    : "post",
-        dataType: 'json',
-        data    : {
-            idExam: idExam,
-            subject:subject,
-            date: examDate
-        },
-        success : function (data){
-            if(data[0] == "success"){
-                var path = data[1];
-                var link = document.createElement("a");
-                link.download = subject+examDate+".csv";
-                link.target = "_blank";
-                link.href = path;
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
-                delete link;
-            }else{
-                showErrorMessage(data);
-            }
+
         },
         error : function (request, status, error) {
             alert("jQuery AJAX request error:".error);

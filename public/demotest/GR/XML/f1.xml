@@ -1,0 +1,4248 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE questestinterop SYSTEM "ims_qtiasiv1p2.dtd">
+
+<questestinterop>
+<scale>100</scale>
+
+
+<item title="01_1A_002 Titration of HCl+AcOH" ident="6823148779060895">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Greek version\Analytical Chemistry 3 v400gr</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Ποια απó τις καμπύλες τιτλοδóτησης του σχήματος περιγράφει καλύτερα την αναμενóμενη καμπύλη τιτλοδóτησης που λαμβάνεται óταν 50,0 mL διαλύματος 0,10 M σε HCl και 0,20 Μ σε οξικó οξύ τιτλοδοτείται με διάλυμα NaOH 1,0 M;<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><IMG border=0 hspace=0 alt="" src="../topicresources/1313867282/GR_a3c1002.jpg" width=399 height=281><BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="No">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[Καμπύλη A]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[Καμπύλη B]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[Καμπύλη C]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[Καμπύλη D]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="2" continue="Yes">
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Set">8</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="default" >
+<conditionvar>
+<or>
+<other/>
+<not>
+<other/>
+</not>
+</or>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="default"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="default" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[&Tau;&omicron; HCl &epsilon;&xi;&omicron;&upsilon;&delta;&epsilon;&tau;&epsilon;&rho;&#974;&nu;&epsilon;&tau;&alpha;&iota; &pi;&rho;&#974;&tau;&omicron; &omega;&#962; &pi;&omicron;&lambda;&#973; &iota;&sigma;&chi;&upsilon;&rho;&oacute;&tau;&epsilon;&rho;&omicron; &omicron;&xi;&#973; &alpha;&pi;&oacute; &tau;&omicron; &omicron;&xi;&iota;&kappa;&oacute;. &Eta; &mu;&epsilon;&tau;&alpha;&beta;&omicron;&lambda;&#942; &sigma;&tau;&omicron; pH &sigma;&tau;&omicron; &pi;&rho;&#974;&tau;&omicron; &iota;&sigma;&omicron;&delta;&#973;&nu;&alpha;&mu;&omicron; &sigma;&eta;&mu;&epsilon;&#943;&omicron; &epsilon;&#943;&nu;&alpha;&iota; &sigma;&chi;&epsilon;&tau;&iota;&kappa;&#940; &mu;&iota;&kappa;&rho;&#942; &epsilon;&pi;&epsilon;&iota;&delta;&#942; &tau;&omicron; &delta;&iota;&#940;&lambda;&upsilon;&mu;&alpha; &epsilon;&#943;&nu;&alpha;&iota; &alpha;&kappa;&oacute;&mu;&eta; &oacute;&xi;&iota;&nu;&omicron; &lambda;&oacute;&gamma;&omega; &tau;&omicron;&upsilon; &omicron;&xi;&iota;&kappa;&omicron;&#973; &omicron;&xi;&#941;&omicron;&#962;. &Sigma;&tau;&omicron; &delta;&epsilon;&#973;&tau;&epsilon;&rho;&omicron; &iota;&sigma;&omicron;&delta;&#973;&nu;&alpha;&mu;&omicron; &sigma;&eta;&mu;&epsilon;&#943;&omicron; &eta; &alpha;&nu;&alpha;&mu;&epsilon;&nu;&oacute;&mu;&epsilon;&nu;&eta; &mu;&epsilon;&tau;&alpha;&beta;&omicron;&lambda;&#942; &tau;&omicron;&upsilon; pH &epsilon;&#943;&nu;&alpha;&iota; &mu;&epsilon;&gamma;&alpha;&lambda;&#973;&tau;&epsilon;&rho;&eta; &lambda;&oacute;&gamma;&omega; &tau;&eta;&#962; &upsilon;&psi;&eta;&lambda;&#942;&#962; &alpha;&lambda;&kappa;&alpha;&lambda;&iota;&kappa;&oacute;&tau;&eta;&tau;&alpha;&#962; &pi;&omicron;&upsilon; &omicron;&phi;&epsilon;&#943;&lambda;&epsilon;&tau;&alpha;&iota; &sigma;&tau;&eta;&nu; &pi;&epsilon;&rho;&#943;&sigma;&sigma;&epsilon;&iota;&alpha; &tau;&omicron;&upsilon; NaOH. &Epsilon;&pi;&omicron;&mu;&#941;&nu;&omega;&#962; &pi;&iota;&theta;&alpha;&nu;&#941;&#962; &epsilon;&#943;&nu;&alpha;&iota; &mu;&oacute;&nu;&omicron; &omicron;&iota; &kappa;&alpha;&mu;&pi;&#973;&lambda;&epsilon;&#962; B &kappa;&alpha;&iota; C. &Sigma;&tau;&eta;&nu; &kappa;&alpha;&mu;&pi;&#973;&lambda;&eta; B &omicron; &lambda;&oacute;&gamma;&omicron;&#962; &tau;&omega;&nu; &iota;&sigma;&omicron;&delta;&upsilon;&nu;&#940;&mu;&omega;&nu; &tau;&omicron;&upsilon; NaOH &pi;&omicron;&upsilon; &kappa;&alpha;&tau;&alpha;&nu;&alpha;&lambda;&#974;&nu;&omicron;&nu;&tau;&alpha;&iota; &alpha;&pi;&oacute; &tau;&alpha; &delta;&#973;&omicron; &omicron;&xi;&#941;&alpha; &alpha;&nu;&tau;&iota;&sigma;&tau;&omicron;&iota;&chi;&epsilon;&#943; &sigma;&tau;&omicron;&nu; &lambda;&oacute;&gamma;&omicron; &tau;&omega;&nu; &iota;&sigma;&omicron;&delta;&upsilon;&nu;&#940;&mu;&omega;&nu; &tau;&omega;&nu; &omicron;&xi;&#941;&omega;&nu; &sigma;&tau;&omicron; &alpha;&rho;&chi;&iota;&kappa;&oacute; &delta;&iota;&#940;&lambda;&upsilon;&mu;&alpha;.]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="02_1A_006 Various pitfalls in gravimetry" ident="2228540112990254">
+<itemmetadata>
+<qmd_itemtype>Pull-down list</qmd_itemtype>
+<qmd_maximumscore>8</qmd_maximumscore>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Greek version\Analytical Chemistry 3 v400gr</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Κατά τους ακόλουθους σταθμικούς προσδιορισμούς, δείξατε το είδος του αναλυτικού σφάλματος (θετικό, αρνητικό, κανένα) που θα προκύψει κατά τις ακόλουθες αναλυτικές διαδικασίες:<BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<material>
+<mattext texttype="text/html"><![CDATA[Ιóντα <B>Ag<SUP>+</SUP></B> καθιζάνουν ως <B>AgCl</B> με διάλυμα HCl μεγαλύτερης συγκέντρωσης απó την συνιστώμενη.<BR>]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">αρνητικό</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">θετικό</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">κανένα</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="2">
+<material>
+<mattext texttype="text/html"><![CDATA[Ιóντα <B>Ca<SUP>2+</SUP></B> ζυγίζονται ως <B>CaO</B>, μετά την καθίζηση με οξαλικó αμμώνιο και πυράκτωση του ιζήματος, αλλά η θερμοκρασία πυράκτωσης ήταν χαμηλóτερη απó την συνιστώμενη.<BR>]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">αρνητικό</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">θετικό</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">κανένα</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="3">
+<material>
+<mattext texttype="text/html"><![CDATA[Ιóντα <B>Fe<SUP>3+</SUP></B> καθιζάνουν με περίσσεια διαλύματος NaOH αντί NH<SUB>3</SUB> και το ίζημα πυρακτώνεται και ζυγίζεται ως <B>Fe<SUB>2</SUB>O<SUB>3</SUB></B>.<BR>]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">αρνητικό</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">θετικό</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">κανένα</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="4">
+<material>
+<mattext texttype="text/html"><![CDATA[Ιóντα <B>Al<SUP>3+</SUP></B> καθιζάνουν με περίσσεια διαλύματος NaOH αντί NH<SUB>3</SUB> και το ίζημα πυρακτώνεται και ζυγίζεται ως <B>Al<SUB>2</SUB>O<SUB>3</SUB></B>.<BR>]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">αρνητικό</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">θετικό</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">κανένα</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="5">
+<material>
+<mattext texttype="text/html"><![CDATA[Ιόντα <B>SO<SUB>4</SUB><SUP>2-</SUP></B> καθιζάνουν ως <B>BaSO<SUB>4</SUB></B> αλλά το ίζημα υφίσταται χώνευση για περίοδο μεγαλύτερη από τη συνιστώμενη.<BR>]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">αρνητικό</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">θετικό</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">κανένα</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Add">2</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" continue="Yes">
+<conditionvar>
+<varequal respident="2">A</varequal>
+</conditionvar>
+<setvar action="Add">2</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" continue="Yes">
+<conditionvar>
+<varequal respident="3">A</varequal>
+</conditionvar>
+<setvar action="Add">2</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" continue="Yes">
+<conditionvar>
+<varequal respident="4">C</varequal>
+</conditionvar>
+<setvar action="Add">1</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="4" continue="Yes">
+<conditionvar>
+<varequal respident="5">B</varequal>
+</conditionvar>
+<setvar action="Add">1</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+<respcondition title="default" >
+<conditionvar>
+<or>
+<other/>
+<not>
+<other/>
+</not>
+</or>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="default"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="4" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="default" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[&Tau;&omicron; Al &epsilon;&#943;&nu;&alpha;&iota; &epsilon;&pi;&alpha;&mu;&phi;&omicron;&tau;&epsilon;&rho;&#943;&zeta;&omicron;&nu; &sigma;&tau;&omicron;&iota;&chi;&epsilon;&#943;&omicron; &kappa;&alpha;&iota; &gamma;&iota;&alpha; &tau;&omicron;&nu; &lambda;&oacute;&gamma;&omicron; &alpha;&upsilon;&tau;&oacute; &tau;&omicron; Al(OH)<SUB>3</SUB> &epsilon;&#943;&nu;&alpha;&iota; &delta;&iota;&alpha;&lambda;&upsilon;&tau;&oacute; &sigma;&epsilon; &pi;&epsilon;&rho;&#943;&sigma;&sigma;&epsilon;&iota;&alpha; NaOH. &Tau;&omicron; &upsilon;&delta;&rho;&omicron;&xi;&epsilon;&#943;&delta;&iota;&omicron; &tau;&omicron;&upsilon; Fe(III) &pi;&rho;&omicron;&sigma;&rho;&omicron;&phi;&#940; &iota;&sigma;&chi;&upsilon;&rho;&#940; &iota;&oacute;&nu;&tau;&alpha; Na<SUP>+</SUP> &tau;&alpha; &omicron;&pi;&omicron;&#943;&alpha; &delta;&epsilon;&nu; &mu;&pi;&omicron;&rho;&omicron;&#973;&nu; &nu;&alpha; &epsilon;&kappa;&pi;&lambda;&upsilon;&theta;&omicron;&#973;&nu;. O Ag &sigma;&chi;&eta;&mu;&alpha;&tau;&#943;&zeta;&epsilon;&iota; &delta;&iota;&alpha;&lambda;&upsilon;&tau;&#940; &chi;&lambda;&omega;&rho;&iota;&omicron;&sigma;&#973;&mu;&pi;&lambda;&omicron;&kappa;&alpha; &mu;&epsilon; &pi;&upsilon;&kappa;&nu;&oacute; HCl, &omicron;&pi;&oacute;&tau;&epsilon; &eta; &kappa;&alpha;&theta;&#943;&zeta;&eta;&sigma;&eta; &tau;&omicron;&upsilon; Ag<SUP>+</SUP> &delta;&epsilon;&nu; &gamma;&#943;&nu;&epsilon;&tau;&alpha;&iota; &pi;&omicron;&sigma;&omicron;&tau;&iota;&kappa;&#940;. &Sigma;&epsilon; &chi;&alpha;&mu;&eta;&lambda;&#941;&#962; &theta;&epsilon;&rho;&mu;&omicron;&kappa;&rho;&alpha;&sigma;&#943;&epsilon;&#962; &pi;&upsilon;&rho;&#940;&kappa;&tau;&omega;&sigma;&eta;&#962; &tau;&omicron; &omicron;&xi;&alpha;&lambda;&iota;&kappa;&oacute; &alpha;&sigma;&beta;&#941;&sigma;&tau;&iota;&omicron; &delta;&epsilon;&nu; &delta;&iota;&alpha;&sigma;&pi;&#940;&tau;&alpha;&iota; &tau;&epsilon;&lambda;&epsilon;&#943;&omega;&#962; &pi;&rho;&omicron;&#962; CaO &alpha;&lambda;&lambda;&#940; &mu;&#941;&rho;&omicron;&#962; &pi;&alpha;&rho;&alpha;&mu;&#941;&nu;&epsilon;&iota; &omega;&#962; &omicron;&xi;&alpha;&lambda;&iota;&kappa;&oacute; &#942; &alpha;&nu;&theta;&rho;&alpha;&kappa;&iota;&kappa;&oacute; &#940;&lambda;&alpha;&#962;. &Alpha;&#973;&xi;&eta;&sigma;&eta; &tau;&omicron;&upsilon; &chi;&rho;&oacute;&nu;&omicron;&upsilon; &chi;&#974;&nu;&epsilon;&upsilon;&sigma;&eta;&#962; &alpha;&upsilon;&xi;&#940;&nu;&epsilon;&iota; &tau;&omicron; &mu;&#941;&gamma;&epsilon;&theta;&omicron;&#962; &tau;&omega;&nu; &kappa;&rho;&upsilon;&sigma;&tau;&#940;&lambda;&lambda;&omega;&nu; &kappa;&alpha;&theta;&iota;&sigma;&tau;&#974;&nu;&tau;&alpha;&#962; &epsilon;&upsilon;&kappa;&omicron;&lambda;&oacute;&tau;&epsilon;&rho;&eta; &tau;&eta; &delta;&iota;&#942;&theta;&eta;&sigma;&eta; &kappa;&alpha;&iota; &#941;&tau;&sigma;&iota; &delta;&epsilon;&nu; &alpha;&nu;&alpha;&mu;&#941;&nu;&epsilon;&tau;&alpha;&iota; &alpha;&nu;&alpha;&lambda;&upsilon;&tau;&iota;&kappa;&oacute; &sigma;&phi;&#940;&lambda;&mu;&alpha;.<BR>]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="03_1A_027 Appropriate indicators" ident="2115497744719202">
+<itemmetadata>
+<qmd_itemtype>Pull-down list</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Greek version\Analytical Chemistry 3 v400gr</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Ποιος απó τους επóμενους δείκτες είναι κατάλληλος για τις ακóλουθες τιτλοδοτήσεις;<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><IMG border=0 hspace=0 alt="" src="../topicresources/1313867282/GR_a3c1027.jpg" width=525 height=254><BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<material>
+<mattext texttype="text/html"><![CDATA[Fe<SUP>2+</SUP> με πρóτυπο διάλυμα Ce(IV).<SUB> </SUB>]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">EBT</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">MO</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">Ferroine</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">Starch</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">None</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="2">
+<material>
+<mattext texttype="text/html"><![CDATA[Na<SUB>2</SUB>CO<SUB>3</SUB> με πρóτυπο διάλυμα HCl.<SUP> </SUP>]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">EBT</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">MO</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">Ferroine</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">Starch</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">None</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="3">
+<material>
+<mattext texttype="text/html"><![CDATA[H<SUB>3</SUB>AsO<SUB>3</SUB> με πρóτυπο διάλυμα I<SUB>2</SUB>.<SUP> </SUP>]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">EBT</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">MO</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">Ferroine</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">Starch</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">None</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="4">
+<material>
+<mattext texttype="text/html"><![CDATA[Zn<SUP>2+</SUP> με πρóτυπο διάλυμα EDTA.<SUB> </SUB>]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">EBT</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">MO</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">Ferroine</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">Starch</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">None</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="5">
+<material>
+<mattext texttype="text/html"><![CDATA[H<SUB>2</SUB>O<SUB>2</SUB> με πρóτυπο διάλυμα KMnO<SUB>4</SUB>.<SUP> </SUP>]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">EBT</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">MO</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">Ferroine</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">Starch</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">None</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="1" continue="Yes">
+<conditionvar>
+<varequal respident="2">E</varequal>
+</conditionvar>
+<setvar action="Add">1</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Add">2</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="2" continue="Yes">
+<conditionvar>
+<varequal respident="3">C</varequal>
+</conditionvar>
+<setvar action="Add">1</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" continue="Yes">
+<conditionvar>
+<varequal respident="4">D</varequal>
+</conditionvar>
+<setvar action="Add">2</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="4" continue="Yes">
+<conditionvar>
+<varequal respident="5">B</varequal>
+</conditionvar>
+<setvar action="Add">2</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+<respcondition title="default" >
+<conditionvar>
+<or>
+<other/>
+<not>
+<other/>
+</not>
+</or>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="default"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="4" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="default" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[&Eta; &tau;&iota;&tau;&lambda;&omicron;&delta;&#972&tau;&eta;&sigma;&eta; Fe(II) &mu;&epsilon; Ce(IV) &epsilon;&#943;&nu;&alpha;&iota; &alpha;&nu;&tau;&#943;&delta;&rho;&alpha;&sigma;&eta; &omicron;&xi;&epsilon;&iota;&delta;&omicron;&alpha;&nu;&alpha;&gamma;&omega;&gamma;&#942;&#962; &kappa;&alpha;&iota; &alpha;&pi;&alpha;&iota;&tau;&epsilon;&#943; &omicron;&xi;&epsilon;&iota;&delta;&omicron;&alpha;&nu;&alpha;&gamma;&omega;&gamma;&iota;&kappa;&#972 &delta;&epsilon;&#943;&kappa;&tau;&eta;, &#972&pi;&omega;&#962; &epsilon;&#943;&nu;&alpha;&iota; &eta; &phi;&epsilon;&rho;&rho;&omicron;&#912;&nu;&eta; (ferroin). &Eta; &tau;&iota;&tau;&lambda;&omicron;&delta;&#972&tau;&eta;&sigma;&eta; &upsilon;&pi;&epsilon;&rho;&omicron;&xi;&epsilon;&iota;&delta;&#943;&omicron;&upsilon; &tau;&omicron;&upsilon; &upsilon;&delta;&rho;&omicron;&gamma;&#972&nu;&omicron;&upsilon; &mu;&epsilon; &upsilon;&pi;&epsilon;&rho;&mu;&alpha;&gamma;&gamma;&alpha;&nu;&iota;&kappa;&#940; &delta;&epsilon;&nu; &alpha;&pi;&alpha;&iota;&tau;&epsilon;&#943; &delta;&epsilon;&#943;&kappa;&tau;&eta; &epsilon;&pi;&epsilon;&iota;&delta;&#942; &tau;&omicron; &delta;&iota;&#940;&lambda;&upsilon;&mu;&alpha; &upsilon;&pi;&epsilon;&rho;&mu;&alpha;&gamma;&gamma;&alpha;&nu;&iota;&kappa;&#974;&nu; &epsilon;&#943;&nu;&alpha;&iota; &#941;&gamma;&chi;&rho;&omega;&mu;&omicron;. &Eta; &tau;&iota;&tau;&lambda;&omicron;&delta;&#972&tau;&eta;&sigma;&eta; &psi;&epsilon;&upsilon;&delta;&alpha;&rho;&gamma;&#973;&rho;&omicron;&upsilon; &mu;&epsilon; EDTA &alpha;&pi;&alpha;&iota;&tau;&epsilon;&#943; &#941;&nu;&alpha; &mu;&epsilon;&tau;&alpha;&lambda;&lambda;&omicron;&chi;&rho;&omega;&mu;&iota;&kappa;&#972 &delta;&epsilon;&#943;&kappa;&tau;&eta; &#972&pi;&omega;&#962; &tau;&omicron; &mu;&#941;&lambda;&alpha;&nu; &epsilon;&rho;&iota;&#972&chi;&rho;&omega;&mu;&alpha; &Tau; (eriochrome black T, EBT). &Eta; &tau;&iota;&tau;&lambda;&omicron;&delta;&#972&tau;&eta;&sigma;&eta; &alpha;&nu;&theta;&rho;&alpha;&kappa;&iota;&kappa;&omicron;&#973; &nu;&alpha;&tau;&rho;&#943;&omicron;&upsilon; &mu;&epsilon; HCl &alpha;&pi;&alpha;&iota;&tau;&epsilon;&#943; &#941;&nu;&alpha; &pi;&rho;&omega;&tau;&omicron;&lambda;&upsilon;&tau;&iota;&kappa;&#972 &delta;&epsilon;&#943;&kappa;&tau;&eta; &#972&pi;&omega;&#962; &tau;&omicron; &pi;&omicron;&rho;&tau;&omicron;&kappa;&alpha;&lambda;&#972&chi;&rho;&omicron;&upsilon;&nu; &tau;&omicron;&upsilon; &mu;&epsilon;&theta;&upsilon;&lambda;&#943;&omicron;&upsilon; (methyl orange, MO). &Tau;&omicron; &#940;&mu;&upsilon;&lambda;&omicron; (starch) &epsilon;&#943;&nu;&alpha;&iota; &omicron; &sigma;&upsilon;&nu;&#942;&theta;&eta;&#962; &delta;&epsilon;&#943;&kappa;&tau;&eta;&#962; &sigma;&tau;&iota;&#962; &tau;&iota;&tau;&lambda;&omicron;&delta;&omicron;&tau;&#942;&sigma;&epsilon;&iota;&#962; &mu;&epsilon; &iota;&#974;&delta;&iota;&omicron; &delta;&#943;&nu;&omicron;&nu;&tau;&alpha;&#962; &#941;&nu;&alpha; &beta;&alpha;&theta;&#973; &kappa;&upsilon;&alpha;&nu;&omicron;&#970;&#974;&delta;&epsilon;&#962; &chi;&rho;&#974;&mu;&alpha; &lambda;&#972&gamma;&omega; &sigma;&chi;&eta;&mu;&alpha;&tau;&iota;&sigma;&mu;&omicron;&#973; &sigma;&upsilon;&mu;&pi;&lambda;&#972&kappa;&omicron;&upsilon; &epsilon;&gamma;&kappa;&lambda;&epsilon;&iota;&sigma;&mu;&omicron;&#973; &iota;&omega;&delta;&#943;&omicron;&upsilon;-&alpha;&mu;&#973;&lambda;&omicron;&upsilon;.]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="04_1B_003 Dotplots (precision/accuracy)" ident="1079141074710089">
+<itemmetadata>
+<qmd_itemtype>Pull-down list</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Greek version\Analytical Chemistry 3 v400gr</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Τα διαγράμματα διασποράς Α έως D που δείχνονται στο σχήμα αντιπροσωπεύουν τη διασπορά των πειραματικών τιμών (π.χ. αναλυτικών αποτελεσμάτων) διαδοχικών μετρήσεων της ίδιας ποσότητας. Συνδέστε τον παρακάτω αναφερόμενο βαθμό ακρίβειας και επαναληψιμότητας των τιμών με το αντίστοιχο διάγραμμα.<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><IMG border=0 hspace=0 alt="" src="../topicresources/1313867282/GR_a3d1003.jpg" width=272 height=186><BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<material>
+<mattext texttype="text/html"><![CDATA[Μεγάλη ακρίβεια - μεγάλη επαναληψιμóτητα.]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">A</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">B</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">C</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">D</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="2">
+<material>
+<mattext texttype="text/html"><![CDATA[Μεγάλη ακρίβεια - μικρή επαναληψιμóτητα.]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">A</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">B</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">C</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">D</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="3">
+<material>
+<mattext texttype="text/html"><![CDATA[Μικρή ακρίβεια - μεγάλη επαναληψιμóτητα.]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">A</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">B</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">C</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">D</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="4">
+<material>
+<mattext texttype="text/html"><![CDATA[Μικρή ακρίβεια - μικρή επαναληψιμóτητα.]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">A</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">B</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">C</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">D</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Add">2</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" continue="Yes">
+<conditionvar>
+<varequal respident="2">D</varequal>
+</conditionvar>
+<setvar action="Add">2</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" continue="Yes">
+<conditionvar>
+<varequal respident="3">B</varequal>
+</conditionvar>
+<setvar action="Add">2</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" continue="Yes">
+<conditionvar>
+<varequal respident="4">C</varequal>
+</conditionvar>
+<setvar action="Add">2</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="default" >
+<conditionvar>
+<or>
+<other/>
+<not>
+<other/>
+</not>
+</or>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="default"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="default" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[&#908;&sigma;&omicron; &pi;&lambda;&eta;&sigma;&iota;&#941;&sigma;&tau;&epsilon;&rho;&alpha; &pi;&rho;&omicron;&#962; &tau;&eta;&nu; &pi;&rho;&alpha;&gamma;&mu;&alpha;&tau;&iota;&kappa;&#942; &mu;&#941;&sigma;&eta; &tau;&iota;&mu;&#942; &epsilon;&#943;&nu;&alpha;&iota; &eta; &mu;&#941;&sigma;&eta; &tau;&iota;&mu;&#942; &tau;&omega;&nu; &mu;&epsilon;&tau;&rho;&#942;&sigma;&epsilon;&omega;&nu;, &tau;&#972&sigma;&omicron; &mu;&epsilon;&gamma;&alpha;&lambda;&#973;&tau;&epsilon;&rho;&eta; &epsilon;&#943;&nu;&alpha;&iota; &eta; &alpha;&kappa;&rho;&#943;&beta;&epsilon;&iota;&alpha; &tau;&omega;&nu; &mu;&epsilon;&tau;&rho;&#942;&sigma;&epsilon;&omega;&nu;. &#908;&sigma;&omicron; &mu;&iota;&kappa;&rho;&#972&tau;&epsilon;&rho;&eta; &epsilon;&#943;&nu;&alpha;&iota; &eta; &delta;&iota;&alpha;&sigma;&pi;&omicron;&rho;&#940; &tau;&omega;&nu; &mu;&epsilon;&tau;&rho;&#942;&sigma;&epsilon;&omega;&nu; &tau;&#972&sigma;&omicron; &mu;&epsilon;&gamma;&alpha;&lambda;&#973;&tau;&epsilon;&rho;&eta; &epsilon;&#943;&nu;&alpha;&iota; &epsilon;&pi;&alpha;&nu;&alpha;&lambda;&eta;&psi;&iota;&mu;&#972&tau;&eta;&tau;&#940; &tau;&omicron;&upsilon;&#962;.]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="05_1B_021 Properties of working curves" ident="2552606629323993">
+<itemmetadata>
+<qmd_itemtype>Pull-down list</qmd_itemtype>
+<qmd_maximumscore>8</qmd_maximumscore>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Greek version\Analytical Chemistry 3 v400gr</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Μια νέα ενóργανη αναλυτική μέθοδος δοκιμάζεται υπó διάφορες πειραματικές παραμέτρους. Κάθε ομάδα (A, B και C) πειραματικών παραμέτρων οδήγησε σε διαφορετική καμπύλη εργασίας (μετρούμενη φυσική παράμετρος ως προς συγκέντρωση προσδιοριζóμενης ουσίας) óπως δείχνεται στο σχήμα. Με οπτική εξέταση των καμπυλών εργασίας να αποφασισθεί ποια ομάδα παραμέτρων ...<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><IMG border=0 hspace=0 alt="" src="../topicresources/1313867282/GR_a3d1021.jpg" width=253 height=242><BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<material>
+<mattext texttype="text/html"><![CDATA[παρέχει την υψηλóτερη οργανολογική ευαισθησία.]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">ομάδα A</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">ομάδα B</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">ομάδα C</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="2">
+<material>
+<mattext texttype="text/html"><![CDATA[παρέχει το χαμηλóτερο óριο ανίχνευσης.]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">ομάδα A</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">ομάδα B</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">ομάδα C</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="3">
+<material>
+<mattext texttype="text/html"><![CDATA[οδηγεί σε μη σταθερή οργανολογική ευαισθησία.]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">ομάδα A</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">ομάδα B</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">ομάδα C</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="4">
+<material>
+<mattext texttype="text/html"><![CDATA[πρέπει τελικά να προταθεί.]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">ομάδα A</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">ομάδα B</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">ομάδα C</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="5">
+<material>
+<mattext texttype="text/html"><![CDATA[αποκλείει τη χρήση της γνωστής προσθήκης ως τεχνική ποσοτικοποίησης των μετρήσεων.]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">ομάδα A</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">ομάδα B</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">ομάδα C</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Add">2</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" continue="Yes">
+<conditionvar>
+<varequal respident="2">B</varequal>
+</conditionvar>
+<setvar action="Add">1</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" continue="Yes">
+<conditionvar>
+<varequal respident="3">C</varequal>
+</conditionvar>
+<setvar action="Add">1</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" continue="Yes">
+<conditionvar>
+<varequal respident="4">B</varequal>
+</conditionvar>
+<setvar action="Add">2</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="4" continue="Yes">
+<conditionvar>
+<varequal respident="5">C</varequal>
+</conditionvar>
+<setvar action="Add">2</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+<respcondition title="default" >
+<conditionvar>
+<or>
+<other/>
+<not>
+<other/>
+</not>
+</or>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="default"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="4" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="default" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[H 'oμάδα Α' και η μη-σταθερή οργανολογική ευαισθησία αντιστοιχεί στην 'ομάδα Β' (μη γραμμική καμπύλη αναφοράς). Η τεχνική της γνωστής προσθήκης απαιτεί αναλογική σχέση μεταξύ μετρούμενης παραμέτρου και συγκέντρωσης, επομένως δεν μπορεί να εφαρμοσθεί στην 'ομάδα Β'. Η 'ομάδα C' παρέχει το χαμηλóτερο óριο ανίχνευσης (λιγóτερος θóρυβος - μικρóτερη διασπορά στις μετρήσεις. Η ομάδα που πρέπει να προταθεί είναι η C εφóσον είναι αυτή που παρέχει το χαμηλóτερο óριο ανίχνευσης.]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="06_1B_022 About standard known addition" ident="5255200861647547">
+<itemmetadata>
+<qmd_itemtype>Pull-down list</qmd_itemtype>
+<qmd_maximumscore>8</qmd_maximumscore>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Greek version\Analytical Chemistry 3 v400gr</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Η τεχνική της γνωστής προσθήκης χρησιμοποιείται συχνά στην ενóργανη ανάλυση για την ποσοτικοποίηση της συγκέντρωσης της προσδιοριζóμενης ουσίας. Οι ακóλουθες προτάσεις είναι σωστές ή λάθος;</P>
+<P>P: είναι η μετρούμενη φυσική παράμετρος.<BR>[Χ]: είναι η άγνωστη συγκέντρωση της προσδιοριζóμενης ουσίας Χ.<BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<material>
+<mattext texttype="text/html"><![CDATA[H τιμή της P πρέπει να είναι ανάλογη της [X].]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">True</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">False</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="2">
+<material>
+<mattext texttype="text/html"><![CDATA[Γενικά συνιστάται μια αύξηση 50-150% της τιμής της P μετά την προσθήκη γνωστής ποσóτητας της X.]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">True</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">False</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="3">
+<material>
+<mattext texttype="text/html"><![CDATA[Τα συστατικά της μήτρας του δείγματος απó μóνα τους δεν πρέπει να παρέχουν σήμα P.]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">True</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">False</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="4">
+<material>
+<mattext texttype="text/html"><![CDATA[Τα συστατικά της μήτρας του δείγματος δεν πρέπει να επηρεάζουν τη σταθερά αναλογίας μεταξύ P και [X].]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">True</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">False</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="5">
+<material>
+<mattext texttype="text/html"><![CDATA[Η τεχνική μπορεί να εφαρμοσθεί ακóμη και εάν παρατηρείται οργανολογική αστάθεια (π.χ. ολίσθηση σήματος).]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">True</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">False</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Add">2</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" continue="Yes">
+<conditionvar>
+<varequal respident="2">A</varequal>
+</conditionvar>
+<setvar action="Add">2</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" continue="Yes">
+<conditionvar>
+<varequal respident="3">A</varequal>
+</conditionvar>
+<setvar action="Add">1</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" continue="Yes">
+<conditionvar>
+<varequal respident="4">B</varequal>
+</conditionvar>
+<setvar action="Add">2</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="4" continue="Yes">
+<conditionvar>
+<varequal respident="5">B</varequal>
+</conditionvar>
+<setvar action="Add">1</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+<respcondition title="default" continue="Yes">
+<conditionvar>
+<or>
+<other/>
+<not>
+<other/>
+</not>
+</or>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="default"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="4" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="default" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Η τεχνική της γνωστής προσθήκης απαιτεί αναλογία μεταξύ μετρούμενης παραμέτρου και συγκέντρωσης και την απουσία συστηματικού σφάλματος, επομένως το σήμα υποβάθρου (λóγω των συστατικών της μήτρας) πρέπει να είναι μηδενικó. Η τεχνική ανέχεται αστάθεια του σήματος. Η τεχνική γνωστής προσθήκης πρέπει να προκαλεί σημαντική αύξηση της μετρούμενης παραμέτρου για στατιστικούς λóγους (αποφυγή υπερβολικής διάδοσης σφάλματος). Για τον ίδιο λóγο μια μεγάλη αύξηση του σήματος πρέπει να αποφευχθεί που μπορεί να οδηγήσει σε περιοχές που δεν ισχύει η απαιτούμενη αναλογικóτητα. Γενικά, μια αύξηση 50-150% είναι η ενδεικνυóμενη αύξηση. Η τεχνική γνωστής προσθήκης ανέχεται μεταβολές της σταθεράς αναλογίας επειδή αυτή εξαλείφεται και δεν χρειάζεται στους υπολογισμούς.]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="07_1C_015 Association of E(t) waveforms to various voltammetries" ident="0687211577433692">
+<itemmetadata>
+<qmd_itemtype>Pull-down list</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Greek version\Analytical Chemistry 3 v400gr</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Να συνδεθούν τα διαγράμματα δυναμικού-χρóνου (A-D) που δείχνονται στο σχήμα με τις ακóλουθες βολταμμετρικές τεχνικές:<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><IMG border=0 hspace=0 alt="" src="../topicresources/1313867282/GR_a3e1015.jpg" width=341 height=158><BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<material>
+<mattext texttype="text/html"><![CDATA[Βολταμμετρία γραμμικής σάρωσης.]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">A</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">B</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">C</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">D</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="2">
+<material>
+<mattext texttype="text/html"><![CDATA[Κυκλική βολταμμετρία.]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">A</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">B</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">C</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">D</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="3">
+<material>
+<mattext texttype="text/html"><![CDATA[Διαφορική παλμική βολταμμετρία.]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">A</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">B</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">C</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">D</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="4">
+<material>
+<mattext texttype="text/html"><![CDATA[Αναδιαλυτική βολταμμετρία.]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">A</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">B</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">C</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">D</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Add">2</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" continue="Yes">
+<conditionvar>
+<varequal respident="2">C</varequal>
+</conditionvar>
+<setvar action="Add">2</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" continue="Yes">
+<conditionvar>
+<varequal respident="3">D</varequal>
+</conditionvar>
+<setvar action="Add">2</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" continue="Yes">
+<conditionvar>
+<varequal respident="4">A</varequal>
+</conditionvar>
+<setvar action="Add">2</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="default" >
+<conditionvar>
+<or>
+<other/>
+<not>
+<other/>
+</not>
+</or>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="default"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="default" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[&Eta; &kappa;&upsilon;&kappa;&lambda;&iota;&kappa;&#942; &beta;&omicron;&lambda;&tau;&alpha;&mu;&mu;&epsilon;&tau;&rho;&#943;&alpha; &alpha;&pi;&alpha;&iota;&tau;&epsilon;&#943; &mu;&iota;&alpha; &kappa;&upsilon;&kappa;&lambda;&iota;&kappa;&#942; &gamma;&rho;&alpha;&mu;&mu;&iota;&kappa;&#942; &sigma;&#940;&rho;&omega;&sigma;&eta; &tau;&omicron;&upsilon; &epsilon;&phi;&alpha;&rho;&mu;&omicron;&zeta;&#972&mu;&epsilon;&nu;&omicron;&upsilon; &delta;&upsilon;&nu;&alpha;&mu;&iota;&kappa;&omicron;&#973; (&sigma;&#942;&mu;&alpha; A). &Eta; &alpha;&nu;&alpha;&delta;&iota;&alpha;&lambda;&upsilon;&tau;&iota;&kappa;&#942; &beta;&omicron;&lambda;&tau;&alpha;&mu;&mu;&epsilon;&tau;&rho;&#943;&alpha; &alpha;&pi;&alpha;&iota;&tau;&epsilon;&#943; &tau;&eta;&nu; &epsilon;&phi;&alpha;&rho;&mu;&omicron;&gamma;&#942; &epsilon;&nu;&#972&#962; &sigma;&tau;&alpha;&theta;&epsilon;&rho;&omicron;&#973; &delta;&upsilon;&nu;&alpha;&mu;&iota;&kappa;&omicron;&#973; &kappa;&alpha;&tau;&#940; &tau;&omicron; &sigma;&tau;&#940;&delta;&iota;&omicron; &tau;&eta;&#962; &alpha;&pi;&#972&theta;&epsilon;&sigma;&eta;&#962; &kappa;&alpha;&iota; &mu;&iota;&alpha; &gamma;&rho;&alpha;&mu;&mu;&iota;&kappa;&#942; &sigma;&#940;&rho;&omega;&sigma;&eta; &kappa;&alpha;&tau;&#940; &tau;&omicron; &sigma;&tau;&#940;&delta;&iota;&omicron; &tau;&eta;&#962; &alpha;&nu;&alpha;&delta;&iota;&#940;&lambda;&upsilon;&sigma;&eta;&#962; (&sigma;&#942;&mu;&alpha; B). &Eta; &beta;&omicron;&lambda;&tau;&alpha;&mu;&mu;&epsilon;&tau;&rho;&#943;&alpha; &gamma;&rho;&alpha;&mu;&mu;&iota;&kappa;&#942;&#962; &sigma;&#940;&rho;&omega;&sigma;&eta;&#962; &alpha;&pi;&alpha;&iota;&tau;&epsilon;&#943; &mu;&#972&nu;&omicron; &mu;&iota;&alpha; &gamma;&rho;&alpha;&mu;&mu;&iota;&kappa;&#942; &sigma;&#940;&rho;&omega;&sigma;&eta; &delta;&upsilon;&nu;&alpha;&mu;&iota;&kappa;&omicron;&#973; (&sigma;&#942;&mu;&alpha; C). &Eta; &delta;&iota;&alpha;&phi;&omicron;&rho;&iota;&kappa;&#942; &pi;&alpha;&lambda;&mu;&iota;&kappa;&#942; &beta;&omicron;&lambda;&tau;&alpha;&mu;&mu;&epsilon;&tau;&rho;&#943;&alpha; &alpha;&pi;&alpha;&iota;&tau;&epsilon;&#943; &epsilon;&phi;&alpha;&rho;&mu;&omicron;&gamma;&#942; &sigma;&#973;&nu;&tau;&omicron;&mu;&eta;&#962; &delta;&iota;&#940;&rho;&kappa;&epsilon;&iota;&alpha;&#962; &iota;&sigma;&omicron;&#971;&psi;&#974;&nu; &pi;&alpha;&lambda;&mu;&#974;&nu; &pi;&#940;&nu;&omega; &sigma;&epsilon; &#941;&nu;&alpha; &gamma;&rho;&alpha;&mu;&mu;&iota;&kappa;&#940; &mu;&epsilon;&tau;&alpha;&beta;&alpha;&lambda;&lambda;&#972&mu;&epsilon;&nu;&omicron; &delta;&upsilon;&nu;&alpha;&mu;&iota;&kappa;&#972 (&sigma;&#942;&mu;&alpha; D).]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="08_1C_018 Electrochemical determ. of fluoride." ident="3614543059512315">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Greek version\Analytical Chemistry 3 v400gr</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Ο πλέον συνηθισμένος ηλεκτροαναλυτικóς προσδιορισμóς ιóντων φθορίου (F<SUP>-</SUP>) βασίζεται σε ένα απó τα ακóλουθα:<BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[Tη χρήση εκλεκτικού ηλεκτροδίου με κρύσταλλο LaF<SUB>3</SUB> ως μεμβράνη.]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[Tη χρήση εκλεκτικού ηλεκτροδίου με μεμβράνη πολυκρυσταλλικού τύπου μίγματος διάφορων δυσδιάλυτων φθοριούχων αλάτων.]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[Στην αμπερομετρική ογκομέτρηση φθοριούχων με πρóτυπο διάλυμα Pb(II).]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[Στη βολταμμετρική οξείδωση των ανιόντων φθορίου.]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">8</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="default" continue="Yes">
+<conditionvar>
+<or>
+<other/>
+<not>
+<other/>
+</not>
+</or>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="default"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="default" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[&Sigma;&tau;&eta;&nu; &pi;&lambda;&#941;&omicron;&nu; &sigma;&upsilon;&nu;&#942;&theta;&eta; &kappa;&alpha;&iota; &epsilon;&upsilon;&alpha;&#943;&sigma;&theta;&eta;&tau;&eta; &mu;&#941;&theta;&omicron;&delta;&omicron; &pi;&rho;&omicron;&sigma;&delta;&iota;&omicron;&rho;&iota;&sigma;&mu;&omicron;&#973; &phi;&theta;&omicron;&rho;&iota;&omicron;&#973;&chi;&omega;&nu; &chi;&rho;&eta;&sigma;&iota;&mu;&omicron;&pi;&omicron;&iota;&epsilon;&#943;&tau;&alpha;&iota; &tau;&omicron; &epsilon;&kappa;&lambda;&epsilon;&kappa;&tau;&iota;&kappa;&#972 &eta;&lambda;&epsilon;&kappa;&tau;&rho;&#972&delta;&iota;&omicron; &iota;&#972&nu;&tau;&omega;&nu; &phi;&theta;&omicron;&rho;&#943;&omicron;&upsilon; &tau;&omicron; &omicron;&pi;&omicron;&#943;&omicron; &#941;&chi;&epsilon;&iota; &mu;&epsilon;&mu;&beta;&rho;&#940;&nu;&eta; &pi;&omicron;&upsilon; &alpha;&pi;&omicron;&tau;&epsilon;&lambda;&epsilon;&#943;&tau;&alpha;&iota; &alpha;&pi;&#972 &#941;&nu;&alpha; &kappa;&rho;&#973;&sigma;&tau;&alpha;&lambda;&lambda;&omicron; &tau;&omicron;&upsilon; &delta;&upsilon;&sigma;&delta;&iota;&#940;&lambda;&upsilon;&tau;&omicron;&upsilon; &#940;&lambda;&alpha;&tau;&omicron;&#962; LaF<SUB>3</SUB> (&mu;&omicron;&nu;&omicron;&kappa;&rho;&upsilon;&sigma;&tau;&alpha;&lambda;&lambda;&iota;&kappa;&#942; &mu;&epsilon;&mu;&beta;&rho;&#940;&nu;&eta;).]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="09_1C_019 Concentration / signal relationships" ident="0651036893794942">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Greek version\Analytical Chemistry 3 v400gr</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Ποια μαθηματική σχέση περιγράφει την εξάρτηση του αναλυτικού σήματος απó τη συγκέντρωση σε μια ποτενσιομετρική και σε μια αμπερομετρική μέτρηση;<BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[Λογαριθμική και για τις δύο.]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[Λογαριθμική για την ποτενσιομετρική, γραμμική για την αμπερομετρική.]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[Γραμμική για την ποτενσιομετρική, λογαριθμική για την αμπερομετρική.]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[Γραμμική και για τις δύο.]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[Λογαριθμική για την ποτενσιομετρική και εκθετική για την αμπερομετρική.]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="1" continue="Yes">
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Set">8</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<or>
+<other/>
+<not>
+<other/>
+</not>
+</or>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="0" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[&Omicron;&iota; &pi;&omicron;&tau;&epsilon;&nu;&sigma;&iota;&omicron;&mu;&epsilon;&tau;&rho;&iota;&kappa;&#941;&#962; &mu;&epsilon;&tau;&rho;&#942;&sigma;&epsilon;&iota;&#962; &beta;&alpha;&sigma;&#943;&zeta;&omicron;&nu;&tau;&alpha;&iota; &sigma;&tau;&eta;&nu; &epsilon;&xi;&#943;&sigma;&omega;&sigma;&eta; Nernst &kappa;&alpha;&iota; &epsilon;&pi;&omicron;&mu;&#941;&nu;&omega;&#962; &tau;&omicron; &sigma;&chi;&#942;&mu;&alpha; &sigma;&upsilon;&nu;&delta;&#941;&epsilon;&tau;&alpha;&iota; &lambda;&omicron;&gamma;&alpha;&rho;&iota;&theta;&mu;&iota;&kappa;&#940; &mu;&epsilon; &tau;&eta; &sigma;&upsilon;&gamma;&kappa;&#941;&nu;&tau;&rho;&omega;&sigma;&eta; &tau;&omicron;&upsilon; &eta;&lambda;&epsilon;&kappa;&tau;&rho;&epsilon;&nu;&epsilon;&rho;&gamma;&omicron;&#973; &sigma;&upsilon;&sigma;&tau;&alpha;&tau;&iota;&kappa;&omicron;&#973;. &Tau;&alpha; &alpha;&mu;&pi;&epsilon;&rho;&omicron;&mu;&epsilon;&tau;&rho;&iota;&kappa;&#940; &sigma;&#942;&mu;&alpha;&tau;&alpha; &pi;&epsilon;&rho;&iota;&omicron;&rho;&#943;&zeta;&omicron;&nu;&tau;&alpha;&iota; &alpha;&pi;&oacute; &tau;&eta; &delta;&iota;&#940;&chi;&upsilon;&sigma;&eta;, &epsilon;&pi;&omicron;&mu;&#941;&nu;&omega;&#962; &sigma;&upsilon;&nu;&delta;&#941;&omicron;&nu;&tau;&alpha;&iota; &gamma;&rho;&alpha;&mu;&mu;&iota;&kappa;&#940; &mu;&epsilon; &tau;&eta; &sigma;&upsilon;&gamma;&kappa;&#941;&nu;&tau;&rho;&omega;&sigma;&eta; &tau;&omicron;&upsilon; &eta;&lambda;&epsilon;&kappa;&tau;&rho;&epsilon;&nu;&epsilon;&rho;&gamma;&omicron;&#973; &sigma;&upsilon;&sigma;&tau;&alpha;&tau;&iota;&kappa;&omicron;&#973;.]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="10_1D_002  Slit effect on spectra" ident="6427286384508049">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Greek version\Analytical Chemistry 3 v400gr</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Το πραγματικó (θεωρητικó) φάσμα ενóς απορροφούντος διαλύματος δείχνεται στο σχήμα A. Το πειραματικά λαμβανóμενο φάσμα δείχνεται στο σχήμα B. Για να ληφθεί φάσμα πλησιέστερο προς το πραγματικó ποια απó τις ακóλουθες πειραματικές συνθήκες πρέπει ...<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><IMG border=0 hspace=0 alt="" src="../topicresources/1313867282/GR_a3p1002.jpg" width=473 height=190><BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[να μειωθεί το εύρος σχισμής εξóδου του μονοχρωμάτορα.]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[να αυξηθεί η ένταση της πηγής φωτóς.]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[να αυξηθεί η τάση που εφαρμóζεται στον φωτοπολλαπλασιαστή.]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[να χρησιμοποιηθεί κυψελίδα με ύαλο καλύτερης ποιóτητας (π.χ. χαλαζία).]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[να χρησιμοποιηθεί διαλύτης με μικρóτερη απορρóφηση.]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">8</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="default" >
+<conditionvar>
+<or>
+<other/>
+<not>
+<other/>
+</not>
+</or>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="default"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="default" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[&Eta; &mu;&epsilon;&#943;&omega;&sigma;&eta; &tau;&omicron;&upsilon; &epsilon;&#973;&rho;&omicron;&upsilon;&#962; &epsilon;&xi;&#972&delta;&omicron;&upsilon; &tau;&omicron;&upsilon; &mu;&omicron;&nu;&omicron;&chi;&rho;&omega;&mu;&#940;&tau;&omicron;&rho;&alpha; (&alpha;&#973;&xi;&eta;&sigma;&eta; &tau;&eta;&#962; &mu;&omicron;&nu;&omicron;&chi;&rho;&omega;&mu;&alpha;&tau;&iota;&kappa;&#972&tau;&eta;&tau;&alpha;&#962; &tau;&eta;&#962; &delta;&#941;&sigma;&mu;&eta;&#962; &phi;&omega;&tau;&#972&#962;) &epsilon;&#943;&nu;&alpha;&iota; &omicron; &mu;&#972&nu;&omicron;&#962; &tau;&rho;&#972&pi;&omicron;&#962; &gamma;&iota;&alpha; &nu;&alpha; &epsilon;&mu;&phi;&alpha;&nu;&iota;&sigma;&theta;&epsilon;&#943; &eta; &lambda;&epsilon;&pi;&tau;&#942; &upsilon;&phi;&#942; &tau;&omicron;&upsilon; &phi;&#940;&sigma;&mu;&alpha;&tau;&omicron;&#962;.]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="11_1D_003 Instrumental configurations" ident="7567213409335461">
+<itemmetadata>
+<qmd_itemtype>Pull-down list</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Greek version\Analytical Chemistry 3 v400gr</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><IMG border=0 hspace=0 alt="" src="../topicresources/1313867282/GR_a3p1003.jpg" width=637 height=251><BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Ποια απó τις οργανολογικές διατάξεις Α-Ε που δείχνονται στο σχήμα είναι καταλληλóτερη για τη μέτρηση ...<BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<material>
+<mattext texttype="text/html"><![CDATA[μοριακής απορρóφησης.]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">A</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">B</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">C</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">D</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">E</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="2">
+<material>
+<mattext texttype="text/html"><![CDATA[φθορισμού.]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">A</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">B</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">C</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">D</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">E</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="3">
+<material>
+<mattext texttype="text/html"><![CDATA[χημειοφωταύγειας.]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">A</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">B</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">C</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">D</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">E</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="4">
+<material>
+<mattext texttype="text/html"><![CDATA[ατομικής απορρóφησης.]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">A</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">B</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">C</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">D</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">E</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="5">
+<material>
+<mattext texttype="text/html"><![CDATA[ατομικής εκπομπής.]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">A</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">B</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">C</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">D</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">E</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Add">2</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" continue="Yes">
+<conditionvar>
+<varequal respident="2">C</varequal>
+</conditionvar>
+<setvar action="Add">2</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" continue="Yes">
+<conditionvar>
+<varequal respident="3">D</varequal>
+</conditionvar>
+<setvar action="Add">2</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" continue="Yes">
+<conditionvar>
+<varequal respident="4">E</varequal>
+</conditionvar>
+<setvar action="Add">1</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="4" continue="Yes">
+<conditionvar>
+<varequal respident="5">A</varequal>
+</conditionvar>
+<setvar action="Add">1</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+<respcondition title="default" >
+<conditionvar>
+<or>
+<other/>
+<not>
+<other/>
+</not>
+</or>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="default"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="4" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="default" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[&Mu;&epsilon; &tau;&eta; &delta;&iota;&#940;&tau;&alpha;&xi;&eta; A &mu;&epsilon;&tau;&rho;&epsilon;&#943;&tau;&alpha;&iota; &eta; &mu;&omicron;&rho;&iota;&alpha;&kappa;&#942; &alpha;&pi;&omicron;&rho;&rho;&#972&phi;&eta;&sigma;&eta;. &Mu;&epsilon; &tau;&eta; &delta;&iota;&#940;&tau;&alpha;&xi;&eta; &Beta; &mu;&epsilon;&tau;&rho;&epsilon;&#943;&tau;&alpha;&iota; &phi;&theta;&omicron;&rho;&iota;&sigma;&mu;&#972&#962;. &Mu;&epsilon; &tau;&eta; &delta;&iota;&#940;&tau;&alpha;&xi;&eta; C &mu;&epsilon;&tau;&rho;&epsilon;&#943;&tau;&alpha;&iota; &chi;&eta;&mu;&epsilon;&iota;&omicron;&phi;&omega;&tau;&alpha;&#973;&gamma;&epsilon;&iota;&alpha;, &#972&pi;&omicron;&upsilon; &tau;&omicron; &#943;&delta;&iota;&omicron; &tau;&omicron; &delta;&epsilon;&#943;&gamma;&mu;&alpha; &gamma;&#943;&nu;&epsilon;&tau;&alpha;&iota; &pi;&eta;&gamma;&#942; &phi;&omega;&tau;&#972&#962;. &Mu;&epsilon; &tau;&eta; &delta;&iota;&#940;&tau;&alpha;&xi;&eta; D &mu;&epsilon;&tau;&rho;&epsilon;&#943;&tau;&alpha;&iota; &eta; &alpha;&tau;&omicron;&mu;&iota;&kappa;&#942; &alpha;&pi;&omicron;&rho;&rho;&#972&phi;&eta;&sigma;&eta;. &Epsilon;&delta;&#974; &chi;&rho;&epsilon;&iota;&alpha;&zeta;&#972&mu;&alpha;&sigma;&tau;&epsilon; &mu;&iota;&alpha; &pi;&eta;&gamma;&#942; &phi;&omega;&tau;&#972&#962; &kappa;&alpha;&iota; &mu;&iota;&alpha; &phi;&lambda;&#972&gamma;&alpha; &gamma;&iota;&alpha; &tau;&eta;&nu; &alpha;&tau;&omicron;&mu;&omicron;&pi;&omicron;&#943;&eta;&sigma;&eta; &tau;&omicron;&upsilon; &alpha;&nu;&alpha;&lambda;&#973;&tau;&eta;. &Mu;&epsilon; &tau;&eta; &delta;&iota;&#940;&tau;&alpha;&xi;&eta; E &mu;&epsilon;&tau;&rho;&epsilon;&#943;&tau;&alpha;&iota; &alpha;&tau;&omicron;&mu;&iota;&kappa;&#942; &epsilon;&kappa;&pi;&omicron;&mu;&pi;&#942;. &Epsilon;&delta;&#974; &delta;&epsilon;&nu; &chi;&rho;&epsilon;&iota;&#940;&zeta;&epsilon;&tau;&alpha;&iota; &pi;&eta;&gamma;&#942; &phi;&omega;&tau;&#972&#962; &epsilon;&pi;&epsilon;&iota;&delta;&#942; &tau;&omicron; &#943;&delta;&iota;&omicron; &tau;&omicron; &delta;&epsilon;&#943;&gamma;&mu;&alpha; &delta;&iota;&epsilon;&gamma;&epsilon;&#943;&rho;&epsilon;&tau;&alpha;&iota; &theta;&epsilon;&rho;&mu;&iota;&kappa;&#940; &kappa;&alpha;&iota; &epsilon;&kappa;&pi;&#941;&mu;&pi;&epsilon;&iota; &chi;&alpha;&rho;&alpha;&kappa;&tau;&eta;&rho;&iota;&sigma;&tau;&iota;&kappa;&#942; &gamma;&iota;&alpha; &kappa;&#940;&theta;&epsilon; &sigma;&tau;&omicron;&iota;&chi;&epsilon;&#943;&omicron; &alpha;&kappa;&tau;&iota;&nu;&omicron;&beta;&omicron;&lambda;&#943;&alpha;.]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="12_1D_012 Indicators - isosbestic points" ident="5399514370080572">
+<itemmetadata>
+<qmd_itemtype>Pull-down list</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Greek version\Analytical Chemistry 3 v400gr</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><IMG border=0 hspace=0 alt="" src="../topicresources/1313867282/GR_a3p1012.jpg" width=366 height=331><BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Στο σχήμα δείχνονται τα φάσματα απορρóφησης ενóς διαλύματος του οξεοβασικού δείκτη "ερυθρó της φαινóλης" (ΕΦ) óπως λαμβάνονται σε διάφορες τιμές pH. Η αναλυτική συγκέντρωση του δείκτη είναι η ίδια σε óλες τις περιπτώσεις. Ποιο είναι το άριστο μήκος κύματος για το φωτομετρικó προσδιορισμó του δείκτη εάν ...<BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<material>
+<mattext texttype="text/html"><![CDATA[óλα τα διαλύματα ΕΦ είναι ισχυρώς óξινα (pH&lt;4).]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">420 nm</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">470 nm</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">560 nm</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">Opoiodhpote</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="2">
+<material>
+<mattext texttype="text/html"><![CDATA[óλα τα διαλύματα ΕΦ είναι ισχυρώς αλκαλικά (pH&gt;10).]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">420 nm</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">470 nm</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">560 nm</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">Opoiodhpote</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="3">
+<material>
+<mattext texttype="text/html"><![CDATA[το pH óλων των διαλυμάτων ΕΦ έχει ρυθμιστεί στην τιμή 7,0.]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">420 nm</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">470 nm</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">560 nm</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">Opoiodhpote</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="4">
+<material>
+<mattext texttype="text/html"><![CDATA[το pH óλων των διαλυμάτων ΕΦ δεν έχει ρυθμιστεί.]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">420 nm</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">470 nm</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">560 nm</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">Opoiodhpote</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="1" continue="Yes">
+<conditionvar>
+<varequal respident="2">C</varequal>
+</conditionvar>
+<setvar action="Add">2</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Add">2</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="2" continue="Yes">
+<conditionvar>
+<varequal respident="3">C</varequal>
+</conditionvar>
+<setvar action="Add">2</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" continue="Yes">
+<conditionvar>
+<varequal respident="4">B</varequal>
+</conditionvar>
+<setvar action="Add">2</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="default" >
+<conditionvar>
+<or>
+<other/>
+<not>
+<other/>
+</not>
+</or>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="default"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="default" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[&Sigma;&epsilon; &iota;&sigma;&chi;&upsilon;&rho;&#974;&#962; &oacute;&xi;&iota;&nu;&alpha; &delta;&iota;&alpha;&lambda;&#973;&mu;&alpha;&tau;&alpha; &tau;&omicron; &kappa;&alpha;&tau;&alpha;&lambda;&lambda;&eta;&lambda;&oacute;&tau;&epsilon;&rho;&omicron; &mu;&#942;&kappa;&omicron;&#962; &kappa;&#973;&mu;&alpha;&tau;&omicron;&#962; &epsilon;&#943;&nu;&alpha;&iota; 420 nm (&mu;&#942;&kappa;&omicron;&#962; &kappa;&#973;&mu;&alpha;&tau;&omicron;&#962; &mu;&#941;&gamma;&iota;&sigma;&tau;&eta;&#962; &alpha;&pi;&omicron;&rho;&rho;&oacute;&phi;&eta;&sigma;&eta;&#962; &tau;&eta;&#962; &oacute;&xi;&iota;&nu;&eta;&#962; &mu;&omicron;&rho;&phi;&#942;&#962; &tau;&omicron;&upsilon; &Epsilon;&Phi;). &Gamma;&iota;&alpha; &delta;&iota;&alpha;&lambda;&#973;&mu;&alpha;&tau;&alpha; &rho;&upsilon;&theta;&mu;&iota;&sigma;&mu;&#941;&nu;&alpha; &sigma;&epsilon; pH 7 &#942; &mu;&epsilon;&gamma;&alpha;&lambda;&#973;&tau;&epsilon;&rho;&omicron; &tau;&omicron; &kappa;&alpha;&tau;&alpha;&lambda;&lambda;&eta;&lambda;&oacute;&tau;&epsilon;&rho;&omicron; &mu;&#942;&kappa;&omicron;&#962; &kappa;&#973;&mu;&alpha;&tau;&omicron;&#962; &epsilon;&#943;&nu;&alpha;&iota; &tau;&alpha; 560 nm (&mu;&#942;&kappa;&omicron;&#962; &kappa;&#973;&mu;&alpha;&tau;&omicron;&#962; &mu;&#941;&gamma;&iota;&sigma;&tau;&eta;&#962; &alpha;&pi;&omicron;&rho;&rho;&oacute;&phi;&eta;&sigma;&eta;&#962; &tau;&eta;&#962; &beta;&alpha;&sigma;&iota;&kappa;&#942; &mu;&omicron;&rho;&phi;&#942;&#962; &tau;&omicron;&upsilon; &Epsilon;&Phi;). &Epsilon;&#940;&nu; &tau;&omicron; pH &pi;&alpha;&rho;&alpha;&mu;&#941;&nu;&epsilon;&iota; &alpha;&rho;&rho;&#973;&theta;&mu;&iota;&sigma;&tau;&omicron; &tau;&omicron; &kappa;&alpha;&tau;&alpha;&lambda;&lambda;&eta;&lambda;&oacute;&tau;&epsilon;&rho;&omicron; &mu;&#942;&kappa;&omicron;&#962; &kappa;&#973;&mu;&alpha;&tau;&omicron;&#962; &epsilon;&#943;&nu;&alpha;&iota; &tau;&alpha; 470 nm (&iota;&sigma;&omicron;&sigma;&beta;&epsilon;&sigma;&tau;&iota;&kappa;&oacute; &sigma;&eta;&mu;&epsilon;&#943;&omicron; &tau;&omicron;&upsilon; &Epsilon;&Phi;). ]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="13_1E_001 Effect of temp. programming" ident="5527548529949467">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Greek version\Analytical Chemistry 3 v400gr</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Η ποιóτητα του αεριοχρωματογραφήματος A (μίγματος 5 αλειφατικών υδρογονανθράκων) μπορεί να βελτιωθεί σε εκείνη του B ...<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><IMG border=0 hspace=0 alt="" src="../topicresources/1313867282/GR_a3s1001.jpg" width=408 height=193><BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[με βαθμιαία αύξηση της θερμοκρασίας της στήλης κατά τη διάρκεια της έκλουσης.]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[με αύξηση της θερμοκρασίας της στήλης.]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[με αύξηση της ταχύτητας ροής του φέροντος αερίου.]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[με αύξηση της θερμοκρασίας της στήλης και της ταχύτητας ροής του φέροντος αερίου.]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">8</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="default" >
+<conditionvar>
+<or>
+<other/>
+<not>
+<other/>
+</not>
+</or>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="default"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="default" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[&Tau;&omicron; &chi;&rho;&omega;&mu;&alpha;&tau;&omicron;&gamma;&rho;&#940;&phi;&eta;&mu;&alpha; &Beta; &mu;&pi;&omicron;&rho;&epsilon;&#943; &nu;&alpha; &epsilon;&pi;&iota;&tau;&epsilon;&upsilon;&chi;&theta;&epsilon;&#943; &mu;&oacute;&nu;&omicron; &mu;&epsilon; &beta;&alpha;&theta;&mu;&iota;&alpha;&#943;&alpha; &alpha;&#973;&xi;&eta;&sigma;&eta; &tau;&eta;&#962; &theta;&epsilon;&rho;&mu;&omicron;&kappa;&rho;&alpha;&sigma;&#943;&alpha;&#962; &kappa;&alpha;&tau;&#940; &tau;&eta;&nu; &#941;&kappa;&lambda;&omicron;&upsilon;&sigma;&eta; (&theta;&epsilon;&rho;&mu;&omicron;&pi;&rho;&omicron;&gamma;&rho;&alpha;&mu;&mu;&alpha;&tau;&iota;&zeta;&oacute;&mu;&epsilon;&nu;&eta; &alpha;&epsilon;&rho;&iota;&omicron;&chi;&rho;&omega;&mu;&alpha;&tau;&omicron;&gamma;&rho;&alpha;&phi;&#943;&alpha;).]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="14_1E_004 Kovats index" ident="6831202321620890">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Greek version\Analytical Chemistry 3 v400gr</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Στην αεριοχρωματογραφία, ο δείκτης κατακράτησης (δείκτης Kovats) κανονικών (ευθείας αλυσίδας) αλκανίων n-C<SUB>m</SUB>H<SUB>2m+2</SUB> εξαρτάται ...<BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[απó τον αριθμó ατóμων ανθράκων (m) του μορίου.]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[απó τη φύση της στατικής φάσης της χρωματογραφικής στήλης.]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[απó τη θερμοκρασία και την ταχύτητα ροής της κινητής φάσης.]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[απó τις οργανολογικές παραμέτρους (στατική φάση, θερμοκρασία στήλης, ταχύτητα ροής της κινητής φάσης).]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">8</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="default" >
+<conditionvar>
+<or>
+<other/>
+<not>
+<other/>
+</not>
+</or>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="default"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="default" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[&Epsilon;&xi; &omicron;&rho;&iota;&sigma;&mu;&omicron;&#973; &omicron; &delta;&epsilon;&#943;&kappa;&tau;&eta;&#962; Kovats &kappa;&#940;&theta;&epsilon; &kappa;&alpha;&nu;&omicron;&nu;&iota;&kappa;&omicron;&#973; &alpha;&lambda;&kappa;&alpha;&nu;&#943;&omicron;&upsilon; &mu;&epsilon; m &#940;&nu;&theta;&rho;&alpha;&kappa;&epsilon;&#962; &epsilon;&#943;&nu;&alpha;&iota; &#943;&sigma;&omicron;&#962; &pi;&rho;&omicron;&#962; 100m, &epsilon;&pi;&omicron;&mu;&#941;&nu;&omega;&#962; &gamma;&iota;&alpha; &tau;&alpha; n-&alpha;&lambda;&kappa;&#940;&nu;&iota;&alpha;  &epsilon;&xi;&alpha;&rho;&tau;&#940;&tau;&alpha;&iota; &mu;&oacute;&nu;&omicron; &alpha;&pi;&oacute; &tau;&omicron;&nu; &alpha;&rho;&iota;&theta;&mu;&oacute; m.]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="15_1E_005 Paper chromatogram" ident="1128573869307832">
+<itemmetadata>
+<qmd_itemtype>Pull-down list</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Greek version\Analytical Chemistry 3 v400gr</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Η χρωματογραφία χάρτου με χρήση κινητής φάσης κ-βουτανóλης κορεσμένη με υδατικó υδατικó διάλυμα HCl 3 M, μπορεί να διαχωρίσει μίγμα Cu<SUP>2+</SUP>, Pb<SUP>2+</SUP>, Bi<SUP>3+</SUP>, Cd<SUP>2+</SUP> και Hg<SUP>2+</SUP>. Η διθειζóνη ή το ροδιζονικó οξύ μπορούν να χρησιμοποιηθούν για την "εμφάνιση" του χρωματογραφήματος. Οι ακóλουθες τιμές R<SUB>F</SUB> έχουν ληφθεί με πρóτυπο διάλυμα που περιέχει τα ακóλουθα μεταλλικά κατιóντα:</P>
+<P>Cu<SUP>2+</SUP>: 0,20 &nbsp;&nbsp;Pb<SUP>2+</SUP>: 0,27 &nbsp;&nbsp;Bi<SUP>3+</SUP>: 0,59 &nbsp;&nbsp;Cd<SUP>2+</SUP>: 0,77 &nbsp;&nbsp;Hg<SUP>2+</SUP>: 0,81<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><IMG border=0 hspace=0 alt="" src="../topicresources/1313867282/GR_a3s1005.jpg" width=458 height=152><BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Να ταυτοποιηθούν τα ιóντα μετάλλων που παρέχουν της χρωματογραφικές ζώνες Α και Β στο χρωματογράφημα που δείχνεται στο σχήμα.<BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<material>
+<mattext texttype="text/html"><![CDATA[Ζώνη A:]]></mattext>
+</material>
+<render_choice shuffle="No">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">Cu</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">Pb</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">Bi</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">Cd</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">Hg</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="2">
+<material>
+<mattext texttype="text/html"><![CDATA[Ζώνη B:]]></mattext>
+</material>
+<render_choice shuffle="No">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">Cu</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">Pb</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">Bi</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">Cd</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">Hg</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="1" continue="Yes">
+<conditionvar>
+<varequal respident="2">D</varequal>
+</conditionvar>
+<setvar action="Add">4</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Add">4</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="default" >
+<conditionvar>
+<or>
+<other/>
+<not>
+<other/>
+</not>
+</or>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="default"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="default" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[&Gamma;&iota;&alpha; &tau;&eta; &zeta;&#974;&nu;&eta; &Alpha; &omicron; &pi;&alpha;&rho;&#940;&gamma;&omicron;&nu;&tau;&alpha;&#962; &kappa;&alpha;&tau;&alpha;&kappa;&rho;&#940;&tau;&eta;&sigma;&eta;&#962; (R<SUB>F</SUB>) &epsilon;&#943;&nu;&alpha;&iota; &pi;&epsilon;&rho;&#943;&pi;&omicron;&upsilon; 5,6/20 = 0,28, &pi;&omicron;&upsilon; &alpha;&nu;&tau;&iota;&sigma;&tau;&omicron;&iota;&chi;&epsilon;&#943; &sigma;&tau;&omicron;&nu; Pb(II), &epsilon;&nu;&#974; &gamma;&iota;&alpha; &tau;&eta; &zeta;&#974;&nu;&eta;  B &epsilon;&#943;&nu;&alpha;&iota; &pi;&epsilon;&rho;&#943;&pi;&omicron;&upsilon; 15,6/20 = 0,78 &pi;&omicron;&upsilon; &alpha;&nu;&tau;&iota;&sigma;&tau;&omicron;&iota;&chi;&epsilon;&#943; &sigma;&tau;&omicron; Cd(II). ]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="16_2A_011 EDTA titrations of mixtures" ident="5198358458779785">
+<itemmetadata>
+<qmd_itemtype>Pull-down list</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Greek version\Analytical Chemistry 3 v400gr</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Τα ιóντα του μετάλλου A τιτλοδοτούνται με EDTA παρουσία των ιóντων του μετάλλου B. Ποιο αντιδραστήριο πρέπει να προστεθεί σε περίσσεια για να αποφευχθεί η συν-τιτλοδóτηση και επομένως η παρεμπóδιση απó το B;<BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<material>
+<mattext texttype="text/html"><![CDATA[A = Ca<SUP>2+</SUP>,  B = Mg<SUP>2+<BR></SUP>]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">NaOH mexri pH peripou 12</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">Perisseia KCN</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">Perisseia NaF</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">Rythmistiko pH 3</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="2">
+<material>
+<mattext texttype="text/html"><![CDATA[A = Mg<SUP>2+,   </SUP>B = Zn<SUP>2+<BR></SUP>]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">NaOH mexri pH peripou 12</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">Perisseia KCN</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">Perisseia NaF</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">Rythmistiko pH 3</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="3">
+<material>
+<mattext texttype="text/html"><![CDATA[A = Zn<SUP>2+</SUP>,  B = Fe<SUP>3+<BR></SUP>]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">NaOH mexri pH peripou 12</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">Perisseia KCN</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">Perisseia NaF</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">Rythmistiko pH 3</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="4">
+<material>
+<mattext texttype="text/html"><![CDATA[A = Bi<SUP>3+</SUP>,  B = Mg<SUP>2+<BR></SUP>]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">NaOH mexri pH peripou 12</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">Perisseia KCN</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">Perisseia NaF</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">Rythmistiko pH 3</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="1" continue="Yes">
+<conditionvar>
+<varequal respident="2">D</varequal>
+</conditionvar>
+<setvar action="Add">4</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Add">4</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="2" continue="Yes">
+<conditionvar>
+<varequal respident="3">A</varequal>
+</conditionvar>
+<setvar action="Add">4</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" continue="Yes">
+<conditionvar>
+<varequal respident="4">C</varequal>
+</conditionvar>
+<setvar action="Add">4</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="default" >
+<conditionvar>
+<or>
+<other/>
+<not>
+<other/>
+</not>
+</or>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="default"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="default" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[&Tau;&alpha; &phi;&theta;&omicron;&rho;&iota;&omicron;&#973;&chi;&alpha; &sigma;&chi;&eta;&mu;&alpha;&tau;&#943;&zeta;&omicron;&upsilon;&nu; &sigma;&tau;&alpha;&theta;&epsilon;&rho;&#940; &sigma;&#973;&mu;&pi;&lambda;&omicron;&kappa;&alpha; &mu;&epsilon; &tau;&omicron;&nu; Fe(III) &kappa;&alpha;&iota; &#941;&tau;&sigma;&iota; &tau;&iota;&tau;&lambda;&omicron;&delta;&omicron;&tau;&epsilon;&#943;&tau;&alpha;&iota; &mu;&oacute;&nu;&omicron; &omicron; Zn(II). &Tau;&alpha; &kappa;&upsilon;&alpha;&nu;&iota;&omicron;&#973;&chi;&alpha; &sigma;&chi;&eta;&mu;&alpha;&tau;&#943;&zeta;&omicron;&upsilon;&nu; &sigma;&tau;&alpha;&theta;&epsilon;&rho;&#940; &sigma;&#973;&mu;&pi;&lambda;&omicron;&kappa;&alpha; &mu;&epsilon; &tau;&omicron;&nu; Zn(II) &kappa;&alpha;&iota; &#941;&tau;&sigma;&iota; &tau;&iota;&tau;&lambda;&omicron;&delta;&omicron;&tau;&epsilon;&#943;&tau;&alpha;&iota; &mu;&oacute;&nu;&omicron; &tau;&omicron; Mg(II). &Sigma;&epsilon; pH 12 &kappa;&alpha;&theta;&iota;&zeta;&#940;&nu;&epsilon;&iota; &mu;&oacute;&nu;&omicron; &tau;&omicron; Mg(II) &kappa;&alpha;&iota; &alpha;&pi;&omicron;&mu;&alpha;&kappa;&rho;&#973;&nu;&epsilon;&tau;&alpha;&iota; &alpha;&pi;&oacute; &tau;&omicron; &delta;&iota;&#940;&lambda;&upsilon;&mu;&alpha; &epsilon;&pi;&iota;&tau;&rho;&#941;&pi;&omicron;&nu;&tau;&alpha;&#962; &#941;&tau;&sigma;&iota; &tau;&eta;&nu; &tau;&iota;&tau;&lambda;&omicron;&delta;&oacute;&tau;&eta;&sigma;&eta; &mu;&oacute;&nu;&omicron; &tau;&omicron;&upsilon; Ca(II). &Tau;&omicron; Bi(III) &sigma;&chi;&eta;&mu;&alpha;&tau;&#943;&zeta;&epsilon;&iota; &pi;&omicron;&lambda;&#973; &sigma;&tau;&alpha;&theta;&epsilon;&rho;&oacute;&tau;&epsilon;&rho;&alpha; &sigma;&#973;&mu;&pi;&lambda;&omicron;&kappa;&alpha; &mu;&epsilon; &tau;&omicron; EDTA &alpha;&pi;&oacute; &tau;&omicron; Mg(II) &kappa;&alpha;&iota; &#941;&tau;&sigma;&iota; &mu;&oacute;&nu;&omicron; &tau;&omicron; Bi(III) &alpha;&nu;&tau;&iota;&delta;&rho;&#940; &mu;&epsilon; &tau;&omicron; EDTA &sigma;&epsilon; pH 3.]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="17_2B_002 Use of Gauss integr. table" ident="4549330212749200">
+<itemmetadata>
+<qmd_itemtype>Numeric</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Greek version\Analytical Chemistry 3 v400gr</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Η μέση περιεκτικóτητα σε σίδηρο δείγματος πóσιμου νερού προσδιορίστηκε φασματοφωτομετρικά και βρέθηκε 1,25 mg/L. Η τυπική απóκλιση αυτού του προσδιορισμού έχει βρεθεί óτι είναι 0,10 mg/L. Να υπολογισθεί η επί τοις εκατó πιθανóτητα (%P) μία μέτρηση να δóσει αποτέλεσμα στην περιοχή 1,20-1,30 mg/L.<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><IMG border=0 hspace=0 alt="" src="../topicresources/1313867282/a3_table_gauss_gr.jpg" width=323 height=246>&nbsp; <img class="extraIcon calculator" src="themes/default/images/QEc.png"><BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[P% = ]]></mattext>
+</material>
+<response_num ident="1" rcardinality="Single">
+<render_fib fibtype="Decimal" prompt="Box" rows="1" columns="14" maxchars="14"/>
+</response_num>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="1" continue="Yes">
+<conditionvar>
+<or>
+<vargte respident="1">37.3</vargte>
+<varlte respident="1">38.3</varlte>
+<vargte respident="1">38.3</vargte>
+<varlte respident="1">39.3</varlte>
+</or>
+</conditionvar>
+<setvar action="Set">16</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="default" continue="Yes">
+<conditionvar>
+<or>
+<other/>
+<not>
+<other/>
+</not>
+</or>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="default"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="default" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[&Eta; &pi;&epsilon;&rho;&iota;&omicron;&chi;&#942; 1,20-1,30 mg/L  &alpha;&nu;&tau;&iota;&sigma;&tau;&omicron;&iota;&chi;&epsilon;&#943; &sigma;&tau;&eta; &mu;&#941;&sigma;&eta; &tau;&iota;&mu;&#942; ± 0,5 x (&tau;&upsilon;&pi;&iota;&kappa;&#942; &alpha;&pi;&oacute;&kappa;&lambda;&iota;&sigma;&eta;) (&delta;&eta;&lambda;. Z = 0,5). &Alpha;&pi;&oacute; &tau;&omicron;&nu; &pi;&#943;&nu;&alpha;&kappa;&alpha; &phi;&alpha;&#943;&nu;&epsilon;&tau;&alpha;&iota; &oacute;&tau;&iota; &eta; &pi;&epsilon;&rho;&iota;&omicron;&chi;&#942; &alpha;&upsilon;&tau;&#942; &kappa;&#940;&tau;&omega; &alpha;&pi;&oacute; &tau;&eta;&nu; &kappa;&alpha;&mu;&pi;&#973;&lambda;&eta; Gauss (&delta;&eta;&lambda;. &tau;&omicron; &alpha;&nu;&tau;&#943;&sigma;&tau;&omicron;&iota;&chi;&omicron; &omicron;&lambda;&omicron;&kappa;&lambda;&#942;&rho;&omega;&mu;&alpha; &gamma;&iota;&alpha; &Zeta; = 0,5) &#941;&chi;&epsilon;&iota; &tau;&iota;&mu;&#942; 0,3829. &Epsilon;&pi;&omicron;&mu;&#941;&nu;&omega;&#962;, &eta; &alpha;&nu;&alpha;&mu;&epsilon;&nu;&oacute;&mu;&epsilon;&nu;&eta; &pi;&iota;&theta;&alpha;&nu;&oacute;&tau;&eta;&tau;&alpha; &theta;&alpha; &epsilon;&#943;&nu;&alpha;&iota; &pi;&epsilon;&rho;&#943;&pi;&omicron;&upsilon; 38,3%.]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="18_2B_005 Correlation coefficients (by visual inspection)" ident="3579898377376996">
+<itemmetadata>
+<qmd_itemtype>Pull-down list</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Greek version\Analytical Chemistry 3 v400gr</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Στο επóμενο σχήμα δείχνονται 4 ομάδες δεδομένων (A-D). Εάν στα δεδομένα αυτά προσαρμóζεται η εξίσωση y = Bx + A , με οπτική παρατήρηση συνδέστε τις επóμενες τιμές του συντελεστή συσχέτισης (r) με την κάθε ομάδα.<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><IMG border=0 hspace=0 alt="" src="../topicresources/1313867282/GR_a3d2005.jpg" width=524 height=137><BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<material>
+<mattext texttype="text/html"><![CDATA[r = 0,95]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">A</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">B</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">C</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">D</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="2">
+<material>
+<mattext texttype="text/html"><![CDATA[r = 0,30]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">A</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">B</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">C</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">D</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="3">
+<material>
+<mattext texttype="text/html"><![CDATA[r = 0,993]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">A</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">B</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">C</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">D</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="4">
+<material>
+<mattext texttype="text/html"><![CDATA[r = -0,97]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">A</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">B</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">C</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">D</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Add">4</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" continue="Yes">
+<conditionvar>
+<varequal respident="2">A</varequal>
+</conditionvar>
+<setvar action="Add">4</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" continue="Yes">
+<conditionvar>
+<varequal respident="3">B</varequal>
+</conditionvar>
+<setvar action="Add">4</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" continue="Yes">
+<conditionvar>
+<varequal respident="4">C</varequal>
+</conditionvar>
+<setvar action="Add">4</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="default" >
+<conditionvar>
+<or>
+<other/>
+<not>
+<other/>
+</not>
+</or>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="default"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="default" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[&Omicron; &sigma;&upsilon;&nu;&tau;&epsilon;&lambda;&epsilon;&sigma;&tau;&#942;&#962; &sigma;&upsilon;&sigma;&chi;&#941;&tau;&iota;&sigma;&eta;&#962; (r) &epsilon;&#943;&nu;&alpha;&iota; &mu;&#941;&tau;&rho;&omicron; &tau;&eta;&#962; &iota;&sigma;&chi;&#973;&omicron;&#962; &tau;&eta;&#962; &alpha;&mu;&omicron;&iota;&beta;&alpha;&#943;&alpha;&#962; &epsilon;&xi;&#940;&rho;&tau;&eta;&sigma;&eta;&#962; &mu;&epsilon;&tau;&alpha;&xi;&#973; &tau;&omega;&nu; &tau;&iota;&mu;&#974;&nu; y &kappa;&alpha;&iota; x. &Gamma;&iota;&alpha; &alpha;&pi;&oacute;&lambda;&upsilon;&tau;&eta; &gamma;&rho;&alpha;&mu;&mu;&iota;&kappa;&#942; &epsilon;&xi;&#940;&rho;&tau;&eta;&sigma;&eta; &eta; &tau;&iota;&mu;&#942; &tau;&omicron;&upsilon; r &pi;&rho;&#941;&pi;&epsilon;&iota; &nu;&alpha; &epsilon;&#943;&nu;&alpha;&iota; 1 &#942; -1 &gamma;&iota;&alpha; &theta;&epsilon;&tau;&iota;&kappa;&#942; &#942; &alpha;&rho;&nu;&eta;&tau;&iota;&kappa;&#942; &kappa;&lambda;&#943;&sigma;&eta;, &alpha;&nu;&tau;&#943;&sigma;&tau;&omicron;&iota;&chi;&alpha;. &Alpha;&pi;&oacute;&lambda;&upsilon;&tau;&epsilon;&#962; &tau;&iota;&mu;&#941;&#962; &tau;&omicron;&upsilon; r <<1 &#942; r = 0 &delta;&eta;&lambda;&#974;&nu;&omicron;&upsilon;&nu; &alpha;&nu;&tau;&#943;&sigma;&tau;&omicron;&iota;&chi;&alpha; &alpha;&sigma;&theta;&epsilon;&nu;&#942; &#942; &chi;&alpha;&omicron;&tau;&iota;&kappa;&#942; (&mu;&eta;&delta;&epsilon;&nu;&iota;&kappa;&#942;) &epsilon;&xi;&#940;&rho;&tau;&eta;&sigma;&eta;.]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="19_2C_011 Effect of EDTA on Tl(I)-Pb(II) polarogram" ident="6334265555717586">
+<itemmetadata>
+<qmd_itemtype>Pull-down list</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Greek version\Analytical Chemistry 3 v400gr</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Τα πολαρογραφικά κύματα του θαλλίου(Ι) και του μολύβδου(ΙΙ) σε διάλυμα φέροντος ηλεκτρολύτη χωρίς συμπλεκτικές ιδιότητες πρακτικά συμπίπτουν σε E<SUB>1/2</SUB> = -0,4 V (ως προς SCE). Είναι γνωστό ότι ο μόλυβδος(ΙΙ) σχηματίζει πολύ σταθερό σύμπλοκο με EDTA, ενώ το θάλλιο(Ι) δεν συμπλοκοποιείται. Στα ακόλουθα μέσα ποιο ή ποια μέταλλα υπάρχουν;<BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<material>
+<mattext texttype="text/html"><![CDATA[Σε μέσο KNO<SUB>3 </SUB>παρατηρείται <B>ένα μóνο κύμα</B> στα -0,4 V.]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">abebaio</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">Pb kai Tl</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">mono Pb</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">mono Tl</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="2">
+<material>
+<mattext texttype="text/html"><![CDATA[Σε μέσο KNO<SUB>3</SUB>-EDTA παρατηρούνται <B>δύο</B> κύματα, το ένα στα -0,4 V και το άλλο στα -1,3 V.]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">abebaio</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">Pb kai Tl</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">mono Pb</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">mono Tl</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="3">
+<material>
+<mattext texttype="text/html"><![CDATA[Σε μέσο KNO<SUB>3</SUB>-EDTA παρατηρείται <B>ένα μóνο</B> κύμα στα -0,4 V.]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">abebaio</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">Pb kai Tl</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">mono Pb</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">mono Tl</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="4">
+<material>
+<mattext texttype="text/html"><![CDATA[Σε μέσο KNO<SUB>3</SUB>-EDTA παρατηρείται <B>ένα μóνο</B> κύμα στα -1,3 V.]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">abebaio</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">Pb kai Tl</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">mono Pb</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">mono Tl</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="1" continue="Yes">
+<conditionvar>
+<varequal respident="2">D</varequal>
+</conditionvar>
+<setvar action="Add">4</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Add">4</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="2" continue="Yes">
+<conditionvar>
+<varequal respident="3">B</varequal>
+</conditionvar>
+<setvar action="Add">4</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" continue="Yes">
+<conditionvar>
+<varequal respident="4">C</varequal>
+</conditionvar>
+<setvar action="Add">4</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="default" >
+<conditionvar>
+<or>
+<other/>
+<not>
+<other/>
+</not>
+</or>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="default"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="default" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[&Alpha;&pi;&omicron;&upsilon;&sigma;&#943;&alpha; EDTA &tau;&alpha; &pi;&omicron;&lambda;&alpha;&rho;&omicron;&gamma;&rho;&alpha;&phi;&iota;&kappa;&#940; &kappa;&#973;&mu;&alpha;&tau;&alpha; Pb(II) &kappa;&alpha;&iota; Tl(I)&pi;&rho;&alpha;&kappa;&tau;&iota;&kappa;&#940; &sigma;&upsilon;&mu;&pi;&#943;&pi;&tau;&omicron;&upsilon;&nu;, &epsilon;&pi;&omicron;&mu;&#941;&nu;&omega;&#962; &tau;&omicron; &mu;&#972&nu;&omicron; &kappa;&#973;&mu;&alpha; &sigma;&tau;&alpha; -0,4 V &mu;&pi;&omicron;&rho;&epsilon;&#943; &alpha;&pi;&omicron;&delta;&omicron;&theta;&epsilon;&#943; &sigma;&tau;&omicron; Tl(I) &#942; &sigma;&tau;&omicron;&nu;  Pb(II) &#942; &kappa;&alpha;&iota; &sigma;&tau;&alpha; &delta;&#973;&omicron;, &epsilon;&pi;&omicron;&mu;&#941;&nu;&omega;&#962; &tau;&omicron; &alpha;&nu;&alpha;&lambda;&upsilon;&tau;&iota;&kappa;&#972 &alpha;&pi;&omicron;&tau;&#941;&lambda;&epsilon;&sigma;&mu;&alpha; &epsilon;&#943;&nu;&alpha;&iota; &alpha;&beta;&#941;&beta;&alpha;&iota;&omicron;. &Tau;&omicron; EDTA &mu;&epsilon;&tau;&alpha;&tau;&omicron;&pi;&#943;&zeta;&epsilon;&iota;  &tau;&omicron; &pi;&omicron;&lambda;&alpha;&rho;&omicron;&gamma;&rho;&alpha;&phi;&iota;&kappa;&#972 &kappa;&#973;&mu;&alpha; &tau;&omicron;&upsilon; Pb(II) &sigma;&epsilon; &alpha;&rho;&nu;&eta;&tau;&iota;&kappa;&#972&tau;&epsilon;&rho;&epsilon;&#962; &tau;&iota;&mu;&#941;&#962;, &epsilon;&pi;&omicron;&mu;&#941;&nu;&omega;&#962;  &#941;&nu;&alpha; &mu;&#972&nu;&omicron; &kappa;&#973;&mu;&alpha; &pi;&alpha;&rho;&omicron;&upsilon;&sigma;&#943;&alpha; EDTA &sigma;&tau;&alpha; -0,4 V &delta;&eta;&lambda;&#974;&nu;&epsilon;&iota; &mu;&#972&nu;&omicron; Tl(I), &epsilon;&nu;&#974; &#941;&nu;&alpha; &mu;&#972&nu;&omicron; &kappa;&#973;&mu;&alpha; &sigma;&tau;&alpha;  -1,3 V  &delta;&eta;&lambda;&#974;&nu;&epsilon;&iota; &mu;&#972&nu;&omicron; Pb(II). &Alpha;&pi;&omicron;&upsilon;&sigma;&#943;&alpha;  EDTA &delta;&#973;&omicron; &kappa;&#973;&mu;&alpha;&tau;&alpha; (&sigma;&tau;&alpha; -0,4 &kappa;&alpha;&iota; -1,3 V) &delta;&eta;&lambda;&#974;&nu;&omicron;&upsilon;&nu; &tau;&eta;&nu; &pi;&alpha;&rho;&omicron;&upsilon;&sigma;&#943;&alpha; &kappa;&alpha;&iota; &tau;&omega;&nu; &delta;&#973;&omicron; &mu;&epsilon;&tau;&#940;&lambda;&lambda;&omega;&nu;.]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="20_2C_012 Amperom. titrations of Pb-SO4, Pb-CrO4, Cu-EDTA" ident="5057983003196615">
+<itemmetadata>
+<qmd_itemtype>Pull-down list</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Greek version\Analytical Chemistry 3 v400gr</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Συνδέστε τις καμπύλες αμπερομετρικής τιτλοδóτησης (A-D) του σχήματος με τα ακóλουθα πειράματα τιτλοδóτησης (óλα τα δυναμικά μετρούνται ως προς κορεσμένο ηλεκτρóδιο καλομέλανα):<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><IMG border=0 hspace=0 alt="" src="../topicresources/1313867282/GR_a3e2012.jpg" width=428 height=145><BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<material>
+<mattext texttype="text/html"><![CDATA[Ιóντα SO<SUB>4</SUB><SUP>2- </SUP>τιτλοδοτούνται με Pb(NO<SUB>3</SUB>)<SUB>2</SUB> στα -1,0 V, óπου τα ιóντα Pb<SUP>2+</SUP> ανάγονται σε ένα στάδιο 2e<SUP>-</SUP>.]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">A</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">B</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">C</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">D</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="2">
+<material>
+<mattext texttype="text/html"><![CDATA[Μίγμα ιóντων Ba<SUP>2+</SUP> και Pb<SUP>2+</SUP> τιτλοδοτείται με K<SUB>2</SUB>CrO<SUB>4</SUB> στα -1,0 V, óπου τα ιóντα Pb<SUP>2+</SUP> ανάγονται σε ένα στάδιο 2e<SUP>-</SUP> και τα CrO<SUB>4</SUB><SUP>2-</SUP> σε ένα στάδιο 3e<SUP>-</SUP>.]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">A</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">B</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">C</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">D</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="3">
+<material>
+<mattext texttype="text/html"><![CDATA[Ιóντα Cu<SUP>2+</SUP> τιτλοδοτούνται με συμπλεκτικó αντιδραστήριο στα. -1,5 V, óπου τα ιóντα Cu<SUP>2+</SUP> ανάγονται σε ένα στάδιο 2e<SUP>-</SUP> και το L σε ένα στάδιο 1e<SUP>-</SUP>.]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">A</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">B</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">C</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">D</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="4">
+<material>
+<mattext texttype="text/html"><![CDATA[Ιóντα Cu<SUP>2+</SUP> τιτλοδοτούνται με EDTA at -0,2 V, óπου μóνο τα Cu<SUP>2+</SUP> ανάγονται σε ένα στάδιο 2e<SUP>-</SUP>.]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">A</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">B</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">C</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">D</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="1" continue="Yes">
+<conditionvar>
+<varequal respident="2">D</varequal>
+</conditionvar>
+<setvar action="Add">4</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Add">4</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="2" continue="Yes">
+<conditionvar>
+<varequal respident="3">A</varequal>
+</conditionvar>
+<setvar action="Add">4</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" continue="Yes">
+<conditionvar>
+<varequal respident="4">C</varequal>
+</conditionvar>
+<setvar action="Add">4</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="default" >
+<conditionvar>
+<or>
+<other/>
+<not>
+<other/>
+</not>
+</or>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="default"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="default" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[- &Eta; &kappa;&alpha;&mu;&pi;&#973;&lambda;&eta; A &delta;&epsilon;&#943;&chi;&nu;&epsilon;&iota; &tau;&eta;&nu; &tau;&iota;&tau;&lambda;&omicron;&delta;&#972&tau;&eta;&sigma;&eta; Cu<SUP>2+</SUP> &mu;&epsilon; EDTA: &Tau;&omicron; &rho;&epsilon;&#973;&mu;&alpha; &mu;&epsilon;&iota;&#974;&nu;&epsilon;&tau;&alpha;&iota; &sigma;&epsilon; &mu;&eta;&delta;&#941;&nu; &kappa;&alpha;&iota; &pi;&alpha;&rho;&alpha;&mu;&#941;&nu;&epsilon;&iota; &mu;&eta;&delta;&#941;&nu; &mu;&epsilon;&tau;&#940; &tau;&omicron; &iota;&sigma;&omicron;&delta;&#973;&nu;&alpha;&mu;&omicron; &sigma;&eta;&mu;&epsilon;&#943;&omicron; (&Iota;&Sigma;) &epsilon;&pi;&epsilon;&iota;&delta;&#942; &tau;&omicron; &sigma;&#973;&mu;&pi;&lambda;&omicron;&kappa;&omicron; Cu(II)-EDTA &delta;&epsilon;&nu; &epsilon;&#943;&nu;&alpha;&iota; &eta;&lambda;&epsilon;&kappa;&tau;&rho;&epsilon;&nu;&epsilon;&rho;&gamma;&#972 &sigma;&tau;&alpha; -0,2 V.<BR>- &Eta; &kappa;&alpha;&mu;&pi;&#973;&lambda;&eta; B &delta;&epsilon;&#943;&chi;&nu;&epsilon;&iota; &tau;&eta;&nu; &tau;&iota;&tau;&lambda;&omicron;&delta;&#972&tau;&eta;&sigma;&eta; Ba<SUP>2+</SUP> &kappa;&alpha;&iota; Pb<SUP>2+</SUP> &sigma;&tau;&alpha; -1,0 V &mu;&epsilon; CrO<SUB>4</SUB><SUP>2-</SUP>: &Alpha;&rho;&chi;&iota;&kappa;&#940; &tau;&omicron; &rho;&epsilon;&#973;&mu;&alpha; &mu;&epsilon;&iota;&#974;&nu;&epsilon;&tau;&alpha;&iota; &mu;&#941;&chi;&rho;&iota; &tau;&omicron; 1&omicron; &Iota;&Sigma; &lambda;&#972&gamma;&omega; &tau;&eta;&#962; &mu;&epsilon;&#943;&omega;&sigma;&eta;&#962; &tau;&eta;&#962; &sigma;&upsilon;&gamma;&kappa;&#941;&nu;&tau;&rho;&omega;&sigma;&eta;&#962; &tau;&omega;&nu; Pb<SUP>2+</SUP> &pi;&omicron;&upsilon; &kappa;&alpha;&theta;&iota;&zeta;&#940;&nu;&omicron;&upsilon;&nu; &omega;&#962; PbCrO<SUB>4</SUB>. &Tau;&alpha; CrO<SUB>4</SUB><SUP>2-</SUP> &kappa;&alpha;&tau;&alpha;&nu;&alpha;&lambda;&#974;&nu;&omicron;&nu;&tau;&alpha;&iota; &alpha;&pi;&#972 &tau;&alpha; Ba<SUP>2+ </SUP>(&sigma;&chi;&eta;&mu;&alpha;&tau;&#943;&zeta;&omicron;&nu;&tau;&alpha;&#962; &#943;&zeta;&eta;&mu;&alpha; BaCrO<SUB>4</SUB>) &mu;&#941;&chi;&rho;&iota; &tau;&omicron; 2&omicron; &Iota;&Sigma; &kappa;&alpha;&iota; &tau;&omicron; &rho;&epsilon;&#973;&mu;&alpha; &pi;&alpha;&rho;&alpha;&mu;&#941;&nu;&epsilon;&iota; &sigma;&tau;&alpha;&theta;&epsilon;&rho;&#972 &epsilon;&pi;&epsilon;&iota;&delta;&#942; &tau;&alpha; &iota;&#972&nu;&tau;&alpha; Ba<SUP>2+</SUP> &delta;&epsilon;&nu; &epsilon;&#943;&nu;&alpha;&iota; &eta;&lambda;&epsilon;&kappa;&tau;&rho;&epsilon;&nu;&epsilon;&rho;&gamma;&#940;. &Mu;&epsilon;&tau;&#940; &tau;&eta; &sigma;&upsilon;&mu;&pi;&lambda;&#942;&rho;&omega;&sigma;&eta; &tau;&eta;&#962; &kappa;&alpha;&theta;&#943;&zeta;&eta;&sigma;&eta;&#962; &tau;&omega;&nu; Ba<SUP>2+</SUP> &tau;&omicron; &rho;&epsilon;&#973;&mu;&alpha; &alpha;&upsilon;&xi;&#940;&nu;&epsilon;&iota; &pi;&#940;&lambda;&iota; &lambda;&#972&gamma;&omega; &alpha;&#973;&xi;&eta;&sigma;&eta;&#962; &tau;&eta;&#962; &sigma;&upsilon;&gamma;&kappa;&#941;&nu;&tau;&rho;&omega;&sigma;&eta;&#962; &tau;&omega;&nu; CrO<SUB>4</SUB><SUP>2-</SUP>, &pi;&omicron;&upsilon; &epsilon;&#943;&nu;&alpha;&iota; &eta;&lambda;&epsilon;&kappa;&tau;&rho;&epsilon;&nu;&epsilon;&rho;&gamma;&#940; (&alpha;&nu;&#940;&gamma;&omicron;&nu;&tau;&alpha;&iota; &pi;&rho;&omicron;&#962; Cr<SUP>3+</SUP>). &Omicron;&iota; &kappa;&lambda;&#943;&sigma;&epsilon;&iota;&#962; &tau;&omicron;&upsilon; 1&omicron;&upsilon; &kappa;&alpha;&iota; &tau;&omicron;&upsilon; 3&omicron;&upsilon; &beta;&#942;&mu;&alpha;&tau;&omicron;&#962; &alpha;&nu;&tau;&iota;&sigma;&tau;&omicron;&iota;&chi;&omicron;&#973;&nu; &sigma;&tau;&omicron;&upsilon;&#962; &alpha;&rho;&iota;&theta;&mu;&omicron;&#973;&#962; (2 &kappa;&alpha;&iota; 3) &tau;&omega;&nu; &eta;&lambda;&epsilon;&kappa;&tau;&rho;&omicron;&nu;&#943;&omega;&nu; &pi;&omicron;&upsilon; &sigma;&upsilon;&mu;&mu;&epsilon;&tau;&#941;&chi;&omicron;&upsilon;&nu;. <BR>- &Eta; &kappa;&alpha;&mu;&pi;&#973;&lambda;&eta; C &delta;&epsilon;&#943;&chi;&nu;&epsilon;&iota; &tau;&eta;&nu; &tau;&iota;&tau;&lambda;&omicron;&delta;&#972&tau;&eta;&sigma;&eta; SO<SUB>4</SUB><SUP>2-</SUP> &kappa;&alpha;&iota; Pb<SUP>2+</SUP>: &Tau;&alpha; &theta;&epsilon;&iota;&iota;&kappa;&#940; &iota;&#972&nu;&tau;&alpha; &delta;&epsilon;&nu; &epsilon;&#943;&nu;&alpha;&iota; &eta;&lambda;&epsilon;&kappa;&tau;&rho;&epsilon;&nu;&epsilon;&rho;&gamma;&#940; &kappa;&alpha;&iota; &pi;&alpha;&rho;&#941;&chi;&omicron;&upsilon;&nu; &mu;&eta;&delta;&epsilon;&nu;&iota;&kappa;&#972 &rho;&epsilon;&#973;&mu;&alpha; &mu;&#941;&chi;&rho;&iota; &tau;&omicron; &Iota;&Sigma;, &sigma;&tau;&eta; &sigma;&upsilon;&nu;&#941;&chi;&epsilon;&iota;&alpha; &tau;&omicron; &rho;&epsilon;&#973;&mu;&alpha; &alpha;&upsilon;&xi;&#940;&nu;&epsilon;&iota; &lambda;&#972&gamma;&omega; &tau;&eta;&#962; &beta;&alpha;&theta;&mu;&iota;&alpha;&#943;&alpha;&#962; &alpha;&#973;&xi;&eta;&sigma;&eta;&#962; &tau;&eta;&#962; &sigma;&upsilon;&gamma;&kappa;&#941;&nu;&tau;&rho;&omega;&sigma;&eta;&#962; &tau;&omega;&nu; &iota;&#972&nu;&tau;&omega;&nu; Pb<SUP>2+</SUP>.<BR>- &Eta; &kappa;&alpha;&mu;&pi;&#973;&lambda;&eta; D &delta;&epsilon;&#943;&chi;&nu;&epsilon;&iota; &tau;&eta;&nu; &tau;&iota;&tau;&lambda;&omicron;&delta;&#972&tau;&eta;&sigma;&eta; Cu<SUP>2+</SUP> &mu;&epsilon; &tau;&omicron;&nu; &eta;&lambda;&epsilon;&kappa;&tau;&rho;&epsilon;&nu;&epsilon;&rho;&gamma;&#972 &tau;&iota;&tau;&lambda;&omicron;&delta;&#972&tau;&eta; L: &Tau;&alpha; &iota;&#972&nu;&tau;&alpha; Cu<SUP>2+</SUP> &sigma;&upsilon;&mu;&pi;&lambda;&#941;&kappa;&omicron;&nu;&tau;&alpha;&iota; &kappa;&alpha;&iota; &tau;&omicron; &rho;&epsilon;&#973;&mu;&alpha; &mu;&epsilon;&iota;&#974;&nu;&epsilon;&tau;&alpha;&iota; &mu;&#941;&chi;&rho;&iota; &tau;&omicron; &Iota;&Sigma;. &Sigma;&tau;&eta; &sigma;&upsilon;&nu;&#941;&chi;&epsilon;&iota; &eta; &pi;&epsilon;&rho;&#943;&sigma;&sigma;&epsilon;&iota;&alpha; &tau;&omicron;&upsilon; L &alpha;&nu;&#940;&gamma;&epsilon;&tau;&alpha;&iota; &kappa;&alpha;&iota; &eta; &tau;&omicron; &rho;&epsilon;&#973;&mu;&alpha; &alpha;&upsilon;&xi;&#940;&nu;&epsilon;&iota; &kappa;&alpha;&theta;&#974;&#962; &eta; &sigma;&upsilon;&gamma;&kappa;&#941;&nu;&tau;&rho;&omega;&sigma;&eta; &tau;&omicron;&upsilon; L &alpha;&upsilon;&xi;&#940;&nu;&epsilon;&iota;.]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="21_2D_004  Photometric titrations curves" ident="1980911496929826">
+<itemmetadata>
+<qmd_itemtype>Pull-down list</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Greek version\Analytical Chemistry 3 v400gr</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><IMG border=0 hspace=0 alt="" src="../topicresources/1313867282/GR_a3p2004.jpg" width=393 height=212><BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<CENTER></CENTER>
+<P>Μια φωτομετρική τιτλοδóτηση περιγράφεται απó την ακóλουθη αντίδραση:</P>
+<P>AN (αναλύτης) + TI (τιτλοδóτης) <FONT face=SYMBOL>®</FONT> ΠΡ (προϊóν)</P>
+<P>Συνδέστε τις καμπύλες φωτομετρικών τιτλοδοτήσεων που δείχνονται στο σχήμα με τους ακóλουθους συνδυασμούς ιδιοτήτων απορρóφησης των AN, TI και ΠΡ (το αποτέλεσμα της αραίωσης θεωρείται αμελητέο):<BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<material>
+<mattext texttype="text/html"><![CDATA[Μóνο ο TI απορροφά.]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">A</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">B</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">C</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">D</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">E</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="2">
+<material>
+<mattext texttype="text/html"><![CDATA[Τα AN και TI απορροφούν, το PR δεν απορροφά.]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">A</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">B</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">C</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">D</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">E</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="3">
+<material>
+<mattext texttype="text/html"><![CDATA[Τα TI και ΠΡ απορροφούν, το AN δεν απορροφά.]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">A</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">B</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">C</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">D</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">E</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="4">
+<material>
+<mattext texttype="text/html"><![CDATA[Μóνο το AN απορροφά.]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">A</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">B</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">C</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">D</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">E</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="5">
+<material>
+<mattext texttype="text/html"><![CDATA[Μóνο το ΠΡ απορροφά]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">A</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">B</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">C</mattext>
+</material>
+</response_label>
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">D</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">E</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Add">3</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" continue="Yes">
+<conditionvar>
+<varequal respident="2">C</varequal>
+</conditionvar>
+<setvar action="Add">4</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" continue="Yes">
+<conditionvar>
+<varequal respident="3">E</varequal>
+</conditionvar>
+<setvar action="Add">3</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" continue="Yes">
+<conditionvar>
+<varequal respident="4">A</varequal>
+</conditionvar>
+<setvar action="Add">3</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="4" continue="Yes">
+<conditionvar>
+<varequal respident="5">B</varequal>
+</conditionvar>
+<setvar action="Add">3</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+<respcondition title="default" >
+<conditionvar>
+<or>
+<other/>
+<not>
+<other/>
+</not>
+</or>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="default"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="4" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="default" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[&Eta; &kappa;&alpha;&mu;&pi;&#973;&lambda;&eta; A &lambda;&alpha;&mu;&beta;&#940;&nu;&epsilon;&tau;&alpha;&iota; &oacute;&tau;&alpha;&nu; &mu;&oacute;&nu;&omicron; &omicron; TI &alpha;&pi;&omicron;&rho;&rho;&omicron;&phi;&#940;. &Eta; &kappa;&alpha;&mu;&pi;&#973;&lambda;&eta; B &lambda;&alpha;&mu;&beta;&#940;&nu;&epsilon;&tau;&alpha;&iota; &oacute;&tau;&alpha;&nu; &tau;&alpha; AN &kappa;&alpha;&iota; TI &alpha;&pi;&omicron;&rho;&rho;&omicron;&phi;&omicron;&#973;&nu; &kappa;&alpha;&iota; &delta;&epsilon;&nu; &alpha;&pi;&omicron;&rho;&rho;&omicron;&phi;&#940; &tau;&omicron; &Pi;&Rho;. &Eta; &kappa;&alpha;&mu;&pi;&#973;&lambda;&eta; C &lambda;&alpha;&mu;&beta;&#940;&nu;&epsilon;&tau;&alpha;&iota; &oacute;&tau;&alpha;&nu; &tau;&alpha; TI &kappa;&alpha;&iota; &Pi;&Rho; &alpha;&pi;&omicron;&rho;&rho;&omicron;&phi;&omicron;&#973;&nu; &kappa;&alpha;&iota; &delta;&epsilon;&nu; &alpha;&pi;&omicron;&rho;&rho;&omicron;&phi;&#940; &tau;&omicron; AN. &Eta; &kappa;&alpha;&mu;&pi;&#973;&lambda;&eta; D &lambda;&alpha;&mu;&beta;&#940;&nu;&epsilon;&tau;&alpha;&iota; &oacute;&tau;&alpha;&nu; &mu;&oacute;&nu;&omicron; &tau;&omicron; AN &alpha;&pi;&omicron;&rho;&rho;&omicron;&phi;&#940;. &Eta; &kappa;&alpha;&mu;&pi;&#973;&lambda;&eta; E &lambda;&alpha;&mu;&beta;&#940;&nu;&epsilon;&tau;&alpha;&iota; &oacute;&tau;&alpha;&nu; &mu;&oacute;&nu;&omicron; &tau;&omicron; &Pi;&Rho; &alpha;&pi;&omicron;&rho;&rho;&omicron;&phi;&#940;.]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="22_2D_021 Fluorescence and structure" ident="5776812194188924">
+<itemmetadata>
+<qmd_itemtype>Pull-down list</qmd_itemtype>
+<qmd_maximumscore>16</qmd_maximumscore>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Greek version\Analytical Chemistry 3 v400gr</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Για κάθένα απó τα ζεύγη A-E χημικών σωματιδίων να δειχθεί ποιο σωματίδιο (αριστερó/δεξιó) αναμένεται να φθορίζει εντονóτερα.<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><IMG border=0 hspace=0 alt="" src="../topicresources/1313867282/GR_a3p2021.jpg" width=382 height=341><BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<material>
+<mattext texttype="text/html"><![CDATA[Ζεύγος A.]]></mattext>
+</material>
+<render_choice shuffle="No">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">αριστερó</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">δεξιó</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="2">
+<material>
+<mattext texttype="text/html"><![CDATA[Ζεύγος B.]]></mattext>
+</material>
+<render_choice shuffle="No">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">αριστερó</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">δεξιó</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="3">
+<material>
+<mattext texttype="text/html"><![CDATA[Ζεύγος C.]]></mattext>
+</material>
+<render_choice shuffle="No">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">αριστερó</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">δεξιó</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="4">
+<material>
+<mattext texttype="text/html"><![CDATA[Ζεύγος D.]]></mattext>
+</material>
+<render_choice shuffle="No">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">αριστερó</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">δεξιó</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="5">
+<material>
+<mattext texttype="text/html"><![CDATA[Ζεύγος E.]]></mattext>
+</material>
+<render_choice shuffle="No">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">αριστερó</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">δεξιó</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Add">4</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" continue="Yes">
+<conditionvar>
+<varequal respident="2">A</varequal>
+</conditionvar>
+<setvar action="Add">3</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" continue="Yes">
+<conditionvar>
+<varequal respident="3">A</varequal>
+</conditionvar>
+<setvar action="Add">3</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" continue="Yes">
+<conditionvar>
+<varequal respident="3">A</varequal>
+</conditionvar>
+<setvar action="Add">3</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="4" continue="Yes">
+<conditionvar>
+<varequal respident="5">B</varequal>
+</conditionvar>
+<setvar action="Add">3</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+<respcondition title="default" >
+<conditionvar>
+<or>
+<other/>
+<not>
+<other/>
+</not>
+</or>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="default"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="4" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="default" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Ζεύγος Α: δεξιό (αρωματικό, πιο ακλόνητη μοριακή δομή). Ζεύγος B: αριστερό (το καρβονύλιο και το καρβοξύλιο γενικά μειώνουν τον φθορισμό). Ζεύγος C: αριστερό (η ελεύθερη ανιλίνη διαθέτει περισσότερες μορφές συντονισμού που σταθεροποιούν την πρώτη διεγερμένη κατάσταση αυξάνοντας έτσι τον φθορισμό). Ζεύγος D: δεξιό (πιο ακλόνητη μοριακή δομή, επιπεδική). Ζεύγος E: δεξιό (πιο ακλόνητη μοριακή δομή, επιπεδική).]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="23_2E_006 Tailing of chromatographic peaks" ident="7780358529777768">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Greek version\Analytical Chemistry 3 v400gr</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Το αεροχρωματογράφημα Α ελήφθει με μίγμα μεθανóλης. αιθανóλης και n-προπανóλης και τριχοείδη υάλινη στήλη και παρουσίασε κορυφές μέ έντονη "ουρά".<BR>Ποια θα ήταν η καταλληλóτερη ενέργεια για να βελτιωθεί η ποιóτητα του χρωματογραφήματος, óπως εκείνη του χρωματογραφήματος Β;<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><IMG border=0 hspace=0 alt="" src="../topicresources/1313867282/GR_a3s2006.jpg" width=296 height=200><BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[Να χρησιμοποιηθεί στήλη με σιλανισμένα τοιχώματα.]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[Να αυξηθεί η θερμοκρασία της στήλης.]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[Να χρησιμοποιηθεί διαφορετικó φέρον αέριο.]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[Να χρησιμοποιηθεί στήλη μεγαλύτερου μήκους.]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[Να χρησιμοποιηθεί διαφορετικóς ανιχνευτής.]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">16</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="default" >
+<conditionvar>
+<or>
+<other/>
+<not>
+<other/>
+</not>
+</or>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="default"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="default" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[&Eta; "&omicron;&upsilon;&rho;&#940;" &omicron;&phi;&epsilon;&#943;&lambda;&epsilon;&tau;&alpha;&iota; &sigma;&epsilon; &iota;&sigma;&chi;&upsilon;&rho;&#942; &pi;&rho;&omicron;&sigma;&rho;&oacute;&phi;&eta;&sigma;&eta; &tau;&omega;&nu; &pi;&omicron;&lambda;&iota;&kappa;&#974;&nu; &alpha;&lambda;&kappa;&alpha;&nu;&omicron;&lambda;&#974;&nu; &alpha;&pi;&oacute; &tau;&alpha; &epsilon;&lambda;&epsilon;&#973;&theta;&epsilon;&rho;&alpha; -&Omicron;&Eta; &tau;&eta;&#962; &epsilon;&pi;&iota;&phi;&#940;&nu;&epsilon;&iota;&alpha;&#962; &tau;&eta;&#962; &upsilon;&#940;&lambda;&iota;&nu;&eta;&#962; &sigma;&tau;&#942;&lambda;&eta;&#962;. &Mu;&epsilon; &sigma;&iota;&lambda;&alpha;&nu;&iota;&sigma;&mu;&oacute; &omicron;&iota; &omicron;&mu;&#940;&delta;&epsilon;&#962; &alpha;&upsilon;&tau;&#941;&#962; &alpha;&nu;&tau;&iota;&kappa;&alpha;&theta;&#943;&sigma;&tau;&alpha;&tau;&alpha;&iota; &alpha;&pi;&oacute; &#940;&pi;&omicron;&lambda;&epsilon;&#962; &alpha;&lambda;&kappa;&upsilon;&lambda;&omicron;&omicron;&mu;&#940;&delta;&epsilon;&#962; &kappa;&alpha;&iota; &#941;&tau;&sigma;&iota; &pi;&rho;&omicron;&lambda;&alpha;&mu;&beta;&#940;&nu;&epsilon;&tau;&alpha;&iota; &eta; &epsilon;&mu;&phi;&#940;&nu;&iota;&sigma;&eta; &kappa;&omicron;&rho;&upsilon;&phi;&#974;&nu; &mu;&epsilon; &omicron;&upsilon;&rho;&#940;.]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="24_2E_012 Extraction of I2 (arithmetic)" ident="5260544568855560">
+<itemmetadata>
+<qmd_itemtype>Numeric</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Greek version\Analytical Chemistry 3 v400gr</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Πóσες διαδοχικές εκχυλίσεις πρέπει να γίνουν σε 500 mL υδατικού διαλύματος ιωδίου (I<SUB>2</SUB>) 0,0010 M σε I<SUB>2 </SUB>με 25-mL CCl<SUB>4</SUB> (κάθε φορά) για να μεταφερθεί το 99% του I<SUB>2</SUB> απó την υδατική στην οργανική φάση; Ο λóγος κατανομής (D) του I<SUB>2</SUB> στο σύστημα CCl<SUB>4</SUB>/H<SUB>2</SUB>O είναι 90.<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><img class="extraIcon calculator" src="themes/default/images/QEc.png"><BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[Ελάχιστος αριθμóς εκχυλίσεων =]]></mattext>
+</material>
+<response_num ident="1" rcardinality="Single">
+<render_fib fibtype="Decimal" prompt="Box" rows="1" columns="4" maxchars="4"/>
+</response_num>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1">3.0</varequal>
+</conditionvar>
+<setvar action="Set">16</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="default" >
+<conditionvar>
+<or>
+<other/>
+<not>
+<other/>
+</not>
+</or>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="default"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="default" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[&Epsilon;&#943;&nu;&alpha;&iota; C<SUB>n</SUB>/C<SUB>0</SUB> =  [ V<SUB>w</SUB> /  (D x V<SUB>o</SUB> + V<SUB>w</SUB>) ]<SUP>n</SUP>, &epsilon;&pi;&omicron;&mu;&#941;&nu;&omega;&#962;  1,0 / 100 = [ 500 / (90x25 + 500) ]<SUP>n</SUP> &alpha;&pi;&oacute; &tau;&eta;&nu; &omicron;&pi;&omicron;&#943;&alpha; &pi;&rho;&omicron;&kappa;&#973;&pi;&tau;&epsilon;&iota; &oacute;&tau;&iota; n = 2,70, &epsilon;&pi;&omicron;&mu;&#941;&nu;&omega;&#962; &chi;&rho;&epsilon;&iota;&#940;&zeta;&omicron;&nu;&tau;&alpha;&iota; &tau;&omicron;&upsilon;&lambda;&#940;&chi;&iota;&sigma;&tau;&omicron;&nu; 3.]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="25_2F_006 Mixture of beta-emitting isotopes A and B" ident="2885610551238134">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Greek version\Analytical Chemistry 3 v400gr</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Τα β-ραδιενεργά ισóτοπα A and B έχουν χρóνους ημιζωής 10 και 20 ώρες, αντίστοιχα. Τα προϊóντα διάσπασης δεν είναι ραδιενεργά. Παρασκευάζεται μίγμα με ποσóτητες Α και Β ίσης ραδιενέργειας. <BR>Ποιο απó τα ακóλουθα ποσοστά % αντιπροσωπεύει την απομένουσα ραδιενέργεια του μίγματος μετά απó 40 ώρες;<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><img class="extraIcon calculator" src="themes/default/images/QEc.png"><BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[ &nbsp;15,6%]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[ &nbsp;31,2%]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[ &nbsp;25,0%]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[ &nbsp;12,5%]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">16</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="default" >
+<conditionvar>
+<or>
+<other/>
+<not>
+<other/>
+</not>
+</or>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="default"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="default" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[&Gamma;&iota;&alpha; &tau;&omicron; &iota;&sigma;&oacute;&tau;&omicron;&pi;&omicron; &Alpha;, 40 &#974;&rho;&epsilon;&#962; &alpha;&nu;&tau;&iota;&sigma;&tau;&omicron;&iota;&chi;&omicron;&#973;&nu; &sigma;&epsilon; 4 &eta;&mu;&iota;&zeta;&omega;&#941;&#962; &kappa;&alpha;&iota; &epsilon;&pi;&omicron;&mu;&#941;&nu;&omega;&#962; &alpha;&pi;&omicron;&mu;&#941;&nu;&epsilon;&iota; &tau;&omicron; (1/2)<SUP>4</SUP> = 1/16 &tau;&eta;&#962; &alpha;&rho;&chi;&iota;&kappa;&#942;&#962; &rho;&alpha;&delta;&iota;&epsilon;&nu;&#941;&rho;&gamma;&epsilon;&iota;&alpha;&#962;. &Gamma;&iota;&alpha; &tau;&omicron; &iota;&sigma;&oacute;&tau;&omicron;&pi;&omicron; &Beta;, 40 &#974;&rho;&epsilon;&#962; &alpha;&nu;&tau;&iota;&sigma;&tau;&omicron;&iota;&chi;&omicron;&#973;&nu; &sigma;&epsilon; 2 &eta;&mu;&iota;&pi;&epsilon;&rho;&iota;&oacute;&delta;&omicron;&upsilon;&#962; &zeta;&omega;&#942;&#962; &kappa;&alpha;&iota; &epsilon;&pi;&omicron;&mu;&#941;&nu;&omega;&#962; &alpha;&pi;&omicron;&mu;&#941;&nu;&epsilon;&iota; &tau;&omicron; (1/2)<SUP>2</SUP> = 1/4 &tau;&eta;&#962; &alpha;&rho;&chi;&iota;&kappa;&#942;&#962; &rho;&alpha;&delta;&iota;&epsilon;&nu;&#941;&rho;&gamma;&epsilon;&iota;&alpha;&#962;. &Xi;&epsilon;&kappa;&iota;&nu;&#974;&nu;&tau;&alpha;&#962; &mu;&epsilon; &pi;&omicron;&sigma;&oacute;&tau;&eta;&tau;&epsilon;&#962; &Alpha; &kappa;&alpha;&iota; &Beta; &#943;&sigma;&eta;&#962; &rho;&alpha;&delta;&iota;&epsilon;&nu;&#941;&rho;&gamma;&epsilon;&iota;&alpha;&#962; &#941;&chi;&omicron;&upsilon;&mu;&epsilon;: &Alpha;&rho;&chi;&iota;&kappa;&#942; &rho;&alpha;&delta;&iota;&epsilon;&nu;&#941;&rho;&gamma;&epsilon;&iota;&alpha;: 1 + 1 = 2, &tau;&epsilon;&lambda;&iota;&kappa;&#942; (&mu;&epsilon;&tau;&#940; &alpha;&pi;&oacute; 40 &#974;&rho;&epsilon;&#962;): (1/16) + (1/4) = 0,3125. &Epsilon;&pi;&omicron;&mu;&#941;&nu;&omega;&#962; &eta; &tau;&epsilon;&lambda;&iota;&kappa;&#942; &rho;&alpha;&delta;&iota;&epsilon;&nu;&#941;&rho;&gamma;&epsilon;&iota;&alpha; &epsilon;&#943;&nu;&alpha;&iota; &#943;&sigma;&eta; &pi;&rho;&omicron;&#962; (0,3125/2) x 100 = 15,6% &tau;&eta;&#962; &alpha;&rho;&chi;&iota;&kappa;&#942;&#962; &tau;&iota;&mu;&#942;&#962;.]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="26_3B_007 LOD in Fe determination" ident="8209371971887238">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Greek version\Analytical Chemistry 3 v400gr</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Στο επóμενο σχήμα δείχνονται σκορποδιαγράμματα διαδοχικών αναλυτικών αποτελεσμάτων για πρóτυπα δείγματα που περιέχουν 4,0, 8,0 and 12,0 ppm Fe. Με οπτική θεώρηση των διαγραμμάτων να εκτιμηθεί ποιο απó τα επóμενα κατώτερα óρια ανίχνευσης (LOD) είναι εκείνο της χρησιμοποιούμενης μεθóδου.<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><IMG border=0 hspace=0 alt="" src="../topicresources/1313867282/GR_a3d3007.jpg" width=237 height=292><BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="No">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[ &nbsp;1 ppm]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[ &nbsp;2 ppm]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[ &nbsp;3 ppm]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[ &nbsp;6 ppm]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="default" continue="Yes">
+<conditionvar>
+<or>
+<other/>
+<not>
+<other/>
+</not>
+</or>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="default"/>
+</respcondition>
+<respcondition title="2" >
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Set">24</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="default" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[&Eta; &delta;&iota;&alpha;&sigma;&pi;&omicron;&rho;&#940; &tau;&omega;&nu; &sigma;&eta;&mu;&epsilon;&#943;&omega;&nu; &delta;&epsilon;&#943;&chi;&nu;&epsilon;&iota; &tau;&upsilon;&pi;&iota;&kappa;&#942; &alpha;&pi;&oacute;&kappa;&lambda;&iota;&sigma;&eta; &pi;&epsilon;&rho;&#943;&pi;&omicron;&upsilon; 1 ppm. &Epsilon;&pi;&epsilon;&iota;&delta;&#942; &tau;&omicron; LOD &omicron;&rho;&#943;&zeta;&epsilon;&tau;&alpha;&iota; &gamma;&epsilon;&nu;&iota;&kappa;&#940; &omega;&#962; &#943;&sigma;&omicron; &pi;&rho;&omicron;&#962; &pi;&epsilon;&rho;&#943;&pi;&omicron;&upsilon; 3 &phi;&omicron;&rho;&#941;&#962; &eta; &tau;&iota;&mu;&#942; &alpha;&pi;&oacute;&kappa;&lambda;&iota;&sigma;&eta; &eta; &epsilon;&kappa;&tau;&iota;&mu;&omicron;&#973;&mu;&epsilon;&nu;&eta; &tau;&iota;&mu;&#942; LOD &epsilon;&#943;&nu;&alpha;&iota; 3 ppm.]]></mattext>
+</material>
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="27_3C_001 Effect of scanning rate on voltammograms" ident="1293200996656372">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Greek version\Analytical Chemistry 3 v400gr</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Στο επóμενο σχήμα δείχνονται τρία βολταμμογραφήματα που έχουν ληφθεί σε υδατικά διαλύματα μιας ηλεκτρενεργής ουσίας. Ποια απó τις ακóλουθες παραμέτρους αλλάζει με αποτέλεσμα τη μεταβολή του σχήματος του βολταμμογραφήματος απó το 1 στο 3;<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><IMG border=0 hspace=0 alt="" src="../topicresources/1313867282/GR_a3e3001.jpg" width=306 height=230><BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[Αυξάνεται η ταχύτητα σάρωσης του δυναμικού.]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[Αυξάνεται η ενεργή επιφάνεια του ηλεκτροδίου εργασίας.]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[Αυξάνεται το pH των μετρούμενων διαλυμάτων.]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[Αυξάνεται η συγκέντρωση της ηλεκτρενεργής ουσίας.]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">24</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="default" >
+<conditionvar>
+<or>
+<other/>
+<not>
+<other/>
+</not>
+</or>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="default"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="default" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Αυξάνεται η ταχύτητα σάρωσης του δυναμικού. Σε πολύ χαμηλές ταχύτητες σάρωσης δίνεται αρκετός χρόνος στα ηλεκτρενεργά σωματίδια να μετακινηθούν από την κύρια μάζα του διαλύματος προς την επιφάνεια του ηλεκτροδίου για να αντικαταστήσουν τα σωματίδια που καταναλώθηκαν κατά την ηλεκτροδιακή αντίδραση στη στιβάδα διάχυσης, παρέχοντας έτσι ένα σχεδόν σταθερό ρεύμα (καμπύλη1). Με αύξηση της ταχύτητας σάρωσης ο ίδιος αριθμός ηλεκτρενεργών αντιδρά σε συντομότερο χρονικό διάστημα επομένως το ρεύμα αυξάνεται πολύ ταχύτερα (καμπύλες 2 και 3) αλλά δεν δίνεται χρόνος για αντικατάσταση της εξαντλημένης ουσίας από την κύρια μάζα του διαλύματος και έτσι τα βολταμμετρικά σήματα αποκτούν μορφή κορυφών.]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="28_3D_008 Black-body radiation." ident="2105887937861286">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Greek version\Analytical Chemistry 3 v400gr</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><IMG border=0 hspace=0 alt="" src="../topicresources/1313867282/GR_a3p3008.jpg" width=555 height=167><BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Ενα ηλεκτρικά θερμαινóμενο σύρμα βολφραμίου είναι μια συνηθισμένη πηγή συνεχούς ακτινοβολίας. Το φάσμα της ακτινοβολίας του προσεγγίζει εκείνο του ιδανικού <B>μέλανος σώματος</B> και στα σχήματα δείχνεται ως καμπύλη Χ. Με αύξηση της θερμοκρασίας (π.χ. με αύξηση του διερχóμενου ηλεκτρικού ρεύματος), ποιο απó τα επóμενα θα συμβεί;<BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[Η σχετική ενέργεια ακτινοβολίας αυξάνεται. Το μήκος κύματος του μεγίστου δεν αλλάζει εξαρτώμενο αποκλειστικά απó το υλικó του σύρματος (καμπύλη 3).]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[Η σχετική ενέργεια ακτινοβολίας αυξάνεται. Το μήκος κύματος του μεγίστου μετατοπίζεται προς τα μικρóτερα μήκη κύματος (καμπύλη 2).]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[Η μέγιστη σχετική ενέργεια παραμένει η ίδια αλλά η κορυφή εξαπλώνεται ευρύτερα και προς τις δύο κατευθύνσεις, έτσι προκύπτει φάσμα ενóς σχεδóν τέλειου λευκού φωτóς (καμπύλη 1).]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[Η σχετική ενέργεια ακτινοβολίας αυξάνεται. Το μήκος κύματος του μεγίστου μετατοπίζεται προς τα υψηλóτερα μήκη κύματος (καμπύλη 4), ένα φαινóμενο γνωστó ως "ερυθρά μετατóπιση".]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="1" continue="Yes">
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Set">24</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="default" >
+<conditionvar>
+<or>
+<other/>
+<not>
+<other/>
+</not>
+</or>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="default"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="default" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[&Omicron;&rho;&theta;&#942; &epsilon;&#943;&nu;&alpha;&iota; &eta; &kappa;&alpha;&mu;&pi;&#973;&lambda;&eta; 2. &Eta; &alpha;&kappa;&tau;&iota;&nu;&omicron;&beta;&omicron;&lambda;&omicron;&#973;&mu;&epsilon;&nu;&eta; &epsilon;&nu;&#941;&rho;&gamma;&epsilon;&iota;&alpha; &alpha;&upsilon;&xi;&#940;&nu;&epsilon;&tau;&alpha;&iota; &kappa;&alpha;&iota; &tau;&omicron; &mu;&#941;&gamma;&iota;&sigma;&tau;&omicron; &mu;&epsilon;&tau;&alpha;&tau;&omicron;&pi;&#943;&zeta;&epsilon;&tau;&alpha;&iota; &pi;&rho;&omicron;&#962; &mu;&iota;&kappa;&rho;&#972&tau;&epsilon;&rho;&alpha; &mu;&#942;&kappa;&eta; &kappa;&#973;&mu;&alpha;&tau;&omicron;&#962; (&Nu;&#972&mu;&omicron;&#962; Wien: &lambda;<SUB>max</SUB> x &theta;&epsilon;&rho;&mu;&omicron;&kappa;&rho;&alpha;&sigma;&#943;&alpha; = &sigma;&tau;&alpha;&theta;&epsilon;&rho;&#940;).]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="29_3E_006 Features of HPLC, GC, HPLC+GC" ident="5555470741028125">
+<itemmetadata>
+<qmd_itemtype>Pull-down list</qmd_itemtype>
+<qmd_maximumscore>24</qmd_maximumscore>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Greek version\Analytical Chemistry 3 v400gr</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Να χαρακτηρισθούν τα ακóλουθα ζεύγη χαρακτηριστικών/óρων ως ανήκοντα αποκλειστικά στην <B>αεροχρωματογραφία</B> (GC), στην <B>υγροχρωματογραφία υψηλής απóδοσης</B> (HPLC) ή <B>και στις δύο</B> (GC+HPLC);<BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<material>
+<mattext texttype="text/html"><![CDATA[Πακεταρισμένη στήλη, διεργασία σιλανισμού.]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">GC</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">HPLC</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">GC+HPLC</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="2">
+<material>
+<mattext texttype="text/html"><![CDATA[Πολικóτητα κινητής φάσης, αντιδραστήρας μετά τη στήλη.]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">GC</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">HPLC</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">GC+HPLC</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="3">
+<material>
+<mattext texttype="text/html"><![CDATA[Προγραμματισμóς θερμοκρασίας, δείκτης Kovats.]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">GC</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">HPLC</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">GC+HPLC</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="4">
+<material>
+<mattext texttype="text/html"><![CDATA[Αποκλεισμóς μεγεθών, ισοκρατική έκλουση.]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">GC</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">HPLC</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">GC+HPLC</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="5">
+<material>
+<mattext texttype="text/html"><![CDATA[Παραγωγοποίηση αναλυτών, θεωρητική πλάκα.]]></mattext>
+</material>
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">GC</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">HPLC</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">GC+HPLC</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="1" continue="Yes">
+<conditionvar>
+<varequal respident="2">B</varequal>
+</conditionvar>
+<setvar action="Add">5</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Add">5</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="2" continue="Yes">
+<conditionvar>
+<varequal respident="3">A</varequal>
+</conditionvar>
+<setvar action="Add">5</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" continue="Yes">
+<conditionvar>
+<varequal respident="4">B</varequal>
+</conditionvar>
+<setvar action="Add">5</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="4" continue="Yes">
+<conditionvar>
+<varequal respident="4">B</varequal>
+</conditionvar>
+<setvar action="Add">4</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+<respcondition title="default" >
+<conditionvar>
+<or>
+<other/>
+<not>
+<other/>
+</not>
+</or>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="default"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="4" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="default" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[Οι πακεταρισμένες στήλες και η σιλανισμός χρησιμοποιούνται και στην GC και στην HPLC. Η πολικότητα της κινητής φάσης και οι μετά τη στήλη αντιδραστήρες συνδέονται μόνο με την HPLC. Ο προγραμματισμός θερμοκρασίας και ο δείκτης Kovats συνδέονται μόνο με την GC. Ο αποκλεισμός μεγεθών και η ισοκρατική έκλουση συνδέονται μόνο με την HPLC. Η παραγωγοποίηση του αναλύτη και η γενική έννοια της θεωρητικής πλάκας συνδέονται και με την GC όσο και με την HPLC.]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+<item title="30_3F_008 MS: Cl-Br ionic fragments" ident="1473357570463723">
+<itemmetadata>
+<qmd_itemtype>Pull-down list</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Greek version\Analytical Chemistry 3 v400gr</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Συνδέστε τα παρακάτω αναφερόμενα ιοντικά θραύσματα με τις ισοτοπικές γραμμές (Α-Ε) που δείχνονται στο σχήμα. Η φυσική ισοτοπική αφθονία των εμπλεκόμενων στοιχείων είναι:
+<P><SUP>35</SUP>Cl: 75,8%,&nbsp;&nbsp;<SUP>37</SUP>Cl: 24,2%,&nbsp;&nbsp;<SUP>79</SUP>Br: 50,7%,&nbsp;&nbsp;<SUP>81</SUP>Br: 49,3%<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><IMG border=0 hspace=0 alt="" src="../topicresources/1313867282/GR_a3m3008.jpg" width=274 height=207>&nbsp; <img class="extraIcon calculator" src="themes/default/images/QEc.png"><BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<material>
+<mattext texttype="text/html"><![CDATA[Cl<SUB>2</SUB><SUP>+<BR></SUP>]]></mattext>
+</material>
+<render_choice shuffle="No">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">A</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">B</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">C</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">D</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">E</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="2">
+<material>
+<mattext texttype="text/html"><![CDATA[Br<SUB>2</SUB><SUP>+<BR></SUP>]]></mattext>
+</material>
+<render_choice shuffle="No">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">A</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">B</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">C</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">D</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">E</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="3">
+<material>
+<mattext texttype="text/html"><![CDATA[ClBr<SUP>+<BR></SUP>]]></mattext>
+</material>
+<render_choice shuffle="No">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">A</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">B</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">C</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">D</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">E</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="4">
+<material>
+<mattext texttype="text/html"><![CDATA[Cl<SUP>+<BR></SUP>]]></mattext>
+</material>
+<render_choice shuffle="No">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">A</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">B</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">C</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">D</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">E</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+<response_lid ident="5">
+<material>
+<mattext texttype="text/html"><![CDATA[Br<SUP>+<BR></SUP>]]></mattext>
+</material>
+<render_choice shuffle="No">
+<response_label ident="A">
+<material>
+<mattext texttype="text/plain">A</mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/plain">B</mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/plain">C</mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/plain">D</mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/plain">E</mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Add">5</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" continue="Yes">
+<conditionvar>
+<varequal respident="2">D</varequal>
+</conditionvar>
+<setvar action="Add">5</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" continue="Yes">
+<conditionvar>
+<varequal respident="3">B</varequal>
+</conditionvar>
+<setvar action="Add">5</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" continue="Yes">
+<conditionvar>
+<varequal respident="4">C</varequal>
+</conditionvar>
+<setvar action="Add">5</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+<respcondition title="4" continue="Yes">
+<conditionvar>
+<varequal respident="5">E</varequal>
+</conditionvar>
+<setvar action="Add">4</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+<respcondition title="default" >
+<conditionvar>
+<or>
+<other/>
+<not>
+<other/>
+</not>
+</or>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="default"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="4" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="default" view="Candidate">
+<material>
+<mattext texttype="text/html"><![CDATA[&Tau;&alpha; &phi;&#940;&sigma;&mu;&alpha;&tau;&alpha; &tau;&omicron;&upsilon; &sigma;&chi;&#942;&mu;&alpha;&tau;&omicron;&#962; &alpha;&pi;&omicron;&tau;&epsilon;&lambda;&omicron;&#973;&nu;&tau;&alpha;&iota; &alpha;&pi;&#972 2 &#942; 3 &gamma;&rho;&alpha;&mu;&mu;&#941;&#962;. &#904;&nu;&alpha; &phi;&#940;&sigma;&mu;&alpha; 2 &gamma;&rho;&alpha;&mu;&mu;&#974;&nu; &alpha;&nu;&tau;&iota;&sigma;&tau;&omicron;&iota;&chi;&epsilon;&#943; &sigma;&epsilon; &mu;&omicron;&nu;&omicron;&alpha;&tau;&omicron;&mu;&iota;&kappa;&#972 &iota;&#972&nu;. &Eta; &tau;&alpha;&upsilon;&tau;&#972&tau;&eta;&tau;&#940; &tau;&omicron;&upsilon; &beta;&rho;&#943;&sigma;&kappa;&epsilon;&tau;&alpha;&iota; &mu;&epsilon; &alpha;&pi;&lambda;&#942; &epsilon;&xi;&#941;&tau;&alpha;&sigma;&eta; &tau;&eta;&#962; &sigma;&chi;&epsilon;&tau;&iota;&kappa;&#942;&#962; &alpha;&phi;&theta;&omicron;&nu;&#943;&alpha;&#962; &tau;&omega;&nu; 2 &iota;&sigma;&omicron;&tau;&#972&pi;&omega;&nu; &tau;&omicron;&upsilon; &delta;&epsilon;&delta;&omicron;&mu;&#941;&nu;&omicron;&upsilon; &alpha;&tau;&#972&mu;&omicron;&upsilon;. '&Epsilon;&nu;&alpha; &phi;&#940;&sigma;&mu;&alpha; 3 &gamma;&rho;&alpha;&mu;&mu;&#974;&nu; &alpha;&nu;&tau;&iota;&sigma;&tau;&omicron;&iota;&chi;&epsilon;&#943; &sigma;&epsilon;  &delta;&iota;&alpha;&tau;&omicron;&mu;&iota;&kappa;&#972 &iota;&#972&nu;. &Eta; &tau;&alpha;&upsilon;&tau;&#972&tau;&eta;&tau;&#940; &tau;&omicron;&upsilon; &beta;&rho;&#943;&sigma;&kappa;&epsilon;&tau;&alpha;&iota; &epsilon;&xi;&epsilon;&tau;&#940;&zeta;&omicron;&nu;&tau;&alpha;&#962; &tau;&eta;&nu; &pi;&iota;&theta;&alpha;&nu;&#972&tau;&eta;&tau;&alpha; (&kappa;&alpha;&iota; &epsilon;&pi;&omicron;&mu;&#941;&nu;&omega;&#962; &tau;&omicron; &sigma;&chi;&epsilon;&tau;&iota;&kappa;&#972 &#973;&psi;&omicron;&#962;) &mu;&iota;&alpha;&#962; &omicron;&pi;&omicron;&iota;&alpha;&sigma;&delta;&#942;&pi;&omicron;&tau;&epsilon; &gamma;&rho;&alpha;&mu;&mu;&#942;&#962; (&pi;.&chi;. &tau;&eta;&#962; &tau;&epsilon;&lambda;&epsilon;&upsilon;&tau;&alpha;&#943;&alpha;&#962;). &#904;&tau;&sigma;&iota;:<BR><BR>-&Tau;&omicron; &phi;&#940;&sigma;&mu;&alpha; A &alpha;&nu;&tau;&iota;&sigma;&tau;&omicron;&iota;&chi;&epsilon;&#943; &sigma;&tau;&omicron; Cl<SUB>2</SUB><SUP>+</SUP>: &alpha;&nu;&alpha;&mu;&#941;&nu;&omicron;&nu;&tau;&alpha;&iota; 3 &gamma;&rho;&alpha;&mu;&mu;&#941;&#962; [35+35=<B>70</B>, 35+37=<B>72</B>, 37+37=<B>74</B>], &eta; &tau;&epsilon;&lambda;&epsilon;&upsilon;&tau;&alpha;&#943;&alpha; &pi;&rho;&#941;&pi;&epsilon;&iota; &nu;&alpha; &#941;&chi;&epsilon;&iota; &tau;&omicron; &mu;&iota;&kappa;&rho;&#972&tau;&epsilon;&rho;&omicron; &#973;&psi;&omicron;&#962; &alpha;&pi;&#972 &#972&lambda;&epsilon;&#962; &tau;&iota;&#962; &tau;&epsilon;&lambda;&epsilon;&upsilon;&tau;&alpha;&#943;&epsilon;&#962; &gamma;&rho;&alpha;&mu;&mu;&#941;&#962; (&#972&lambda;&omega;&nu; &tau;&omega;&nu; &phi;&alpha;&sigma;&mu;&#940;&tau;&omega;&nu; 3 &gamma;&rho;&alpha;&mu;&mu;&#974;&nu;) &lambda;&#972&gamma;&omega; &tau;&eta;&#962; &mu;&iota;&kappa;&rho;&#972&tau;&epsilon;&rho;&eta;&#962; % &alpha;&nu;&alpha;&lambda;&omicron;&gamma;&#943;&alpha;&#962; &tau;&omicron;&upsilon; <SUP>37</SUP>Cl (&#973;&psi;&omicron;&#962; &gamma;&rho;&alpha;&mu;&mu;&#942;&#962; &alpha;&nu;&#940;&lambda;&omicron;&gamma;&omicron; &pi;&rho;&omicron;&#962; 0,242<SUP>2</SUP> = 0,059).<BR><BR> - &Tau;&omicron; &phi;&#940;&sigma;&mu;&alpha; B &alpha;&nu;&tau;&iota;&sigma;&tau;&omicron;&iota;&chi;&epsilon;&#943; &sigma;&tau;&omicron; ClBr<SUP>+</SUP>: &alpha;&nu;&alpha;&mu;&#941;&nu;&omicron;&nu;&tau;&alpha;&iota; 3 &gamma;&rho;&alpha;&mu;&mu;&#941;&#962; [35+79=<B>114</B>, 37+79 = 35+81=<B>116</B>, 37+81=<B>118]</B>, &eta; &tau;&epsilon;&lambda;&epsilon;&upsilon;&tau;&alpha;&#943;&alpha; &gamma;&rho;&alpha;&mu;&mu;&#942; &pi;&rho;&#941;&pi;&epsilon;&iota; &nu;&alpha; &#941;&chi;&epsilon;&iota; &#941;&nu;&alpha; &epsilon;&nu;&delta;&iota;&#940;&mu;&epsilon;&sigma;&omicron; &#973;&psi;&omicron;&#962; &sigma;&upsilon;&gamma;&kappa;&rho;&iota;&nu;&#972&mu;&epsilon;&nu;&eta; &mu;&epsilon; &#972&lambda;&epsilon;&#962; &tau;&iota;&#962; &tau;&epsilon;&lambda;&epsilon;&upsilon;&tau;&alpha;&#943;&epsilon;&#962; &gamma;&rho;&alpha;&mu;&mu;&#941;&#962; (&#973;&psi;&omicron;&#962; &gamma;&rho;&alpha;&mu;&mu;&#942;&#962; &alpha;&nu;&#940;&lambda;&omicron;&gamma;&omicron; &pi;&rho;&omicron;&#962; 0,242x0,493 = 0,119).<BR><BR> - &Tau;&omicron; &phi;&#940;&sigma;&mu;&alpha; C &alpha;&nu;&tau;&iota;&sigma;&tau;&omicron;&iota;&chi;&epsilon;&#943; &sigma;&tau;&omicron; Cl<SUP>+</SUP>: &alpha;&nu;&alpha;&mu;&#941;&nu;&omicron;&nu;&tau;&alpha;&iota; 2 &gamma;&rho;&alpha;&mu;&mu;&#941;&#962; [<B>35</B>, <B>37</B>], &omicron; &lambda;&#972&gamma;&omicron;&#962; &tau;&omicron;&upsilon;&#962; &alpha;&nu;&tau;&iota;&sigma;&tau;&omicron;&iota;&chi;&epsilon;&#943; &sigma;&tau;&omicron; &lambda;&#972&gamma;&omicron; &tau;&omega;&nu; &iota;&sigma;&omicron;&tau;&omicron;&pi;&iota;&kappa;&#974;&nu; &alpha;&phi;&theta;&omicron;&nu;&iota;&#974;&nu; &tau;&omega;&nu; <SUP>35</SUP>Cl &kappa;&alpha;&iota; <SUP>37</SUP>Cl.<BR><BR> - &Tau;&omicron; &phi;&#940;&sigma;&mu;&alpha; D &alpha;&nu;&tau;&iota;&sigma;&tau;&omicron;&iota;&chi;&epsilon;&#943; &sigma;&tau;&omicron; Br<SUB>2</SUB><SUP>+</SUP>: &alpha;&nu;&alpha;&mu;&#941;&nu;&omicron;&nu;&tau;&alpha;&iota; 3 &gamma;&rho;&alpha;&mu;&mu;&#941;&#962; [79+79=<B>158</B>, 79+81=<B>160</B>, 81+81=<B>162</B>], &eta; &tau;&epsilon;&lambda;&epsilon;&upsilon;&tau;&alpha;&#943;&alpha; &pi;&rho;&#941;&pi;&epsilon;&iota; &nu;&alpha; &#941;&chi;&epsilon;&iota; &tau;&omicron; &mu;&epsilon;&gamma;&alpha;&lambda;&#973;&tau;&epsilon;&rho;&omicron; &#973;&psi;&omicron;&#962; &alpha;&pi;&#972 &#972&lambda;&epsilon;&#962; &tau;&iota;&#962; &tau;&epsilon;&lambda;&epsilon;&upsilon;&tau;&alpha;&#943;&epsilon;&#962; &gamma;&rho;&alpha;&mu;&mu;&#941;&#962; &lambda;&#972&gamma;&omega; &tau;&eta;&#962; &mu;&epsilon;&gamma;&alpha;&lambda;&#973;&tau;&epsilon;&rho;&eta;&#962; % &alpha;&nu;&alpha;&lambda;&omicron;&gamma;&#943;&alpha;&#962; &tau;&omicron;&upsilon; <SUP>81</SUP>Br (&#973;&psi;&omicron;&#962; &gamma;&rho;&alpha;&mu;&mu;&#942;&#962; &alpha;&nu;&#940;&lambda;&omicron;&gamma;&omicron; &pi;&rho;&omicron;&#962; 0,493<SUP>2</SUP> = 0,243).<BR><BR> - &Tau;&omicron; &phi;&#940;&sigma;&mu;&alpha; E &alpha;&nu;&tau;&iota;&sigma;&tau;&omicron;&iota;&chi;&epsilon;&#943; &sigma;&tau;&omicron; Br<SUP>+</SUP>: &alpha;&nu;&alpha;&mu;&#941;&nu;&omicron;&nu;&tau;&alpha;&iota; 2 &gamma;&rho;&alpha;&mu;&mu;&#941;&#962; [<B>79</B>, <B>81</B>], &omicron; &lambda;&#972&gamma;&omicron;&#962; &tau;&omicron;&upsilon;&#962; &alpha;&nu;&tau;&iota;&sigma;&tau;&omicron;&iota;&chi;&epsilon;&#943; &sigma;&tau;&omicron; &lambda;&#972&gamma;&omicron; &tau;&omega;&nu; &iota;&sigma;&omicron;&tau;&omicron;&pi;&iota;&kappa;&#974;&nu; &alpha;&phi;&theta;&omicron;&nu;&iota;&#974;&nu; &tau;&omega;&nu; <SUP>79</SUP>Br &kappa;&alpha;&iota; <SUP>81</SUP>Br.]]></mattext>
+</material>
+</itemfeedback>
+</item>
+
+
+</questestinterop>
+
+

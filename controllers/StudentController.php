@@ -134,6 +134,32 @@ class StudentController extends Controller{
         }
     }
 
+
+
+/**
+     *  @name   actionDemotest
+     *  @descr  Show demo test page
+     */
+    private function actionDemotest(){
+      global $log, $engine;
+
+      $engine->renderDoctype();
+      $engine->loadLibs();
+      $engine->renderHeader();
+      $engine->renderPage();
+      $engine->renderFooter();
+    }
+
+    private function actionDodemotest(){
+      global $log, $engine;
+
+      $engine->renderDoctype();
+      $engine->loadLibs();
+      $engine->renderHeader();
+      $engine->renderPage();
+      $engine->renderFooter();
+    }
+
     /**
      *  @name   actionStarttest
      *  @descr  Starts to execute test
@@ -349,7 +375,7 @@ class StudentController extends Controller{
             array(
                 'allow',
                 'actions' => array('Index','Votes', 'Checkexamstatus', 'Logintest',
-                                   'Starttest', 'Test', 'Submittest', 'Register','Checkexamavailability','Closetest'),
+                                   'Starttest', 'Test', 'Submittest', 'Register','Checkexamavailability','Closetest','Demotest', 'Dodemotest'),
                 'roles'   => array('s'),
             ),
             array(

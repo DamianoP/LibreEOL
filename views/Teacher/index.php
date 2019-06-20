@@ -10,7 +10,12 @@
 global $config, $user;
 
 ?>
-
+<style>
+.ui-state-default{
+  background: initial!important;
+  font-weight:bold!important;
+}
+</style>
 <div id="navbar">
     <?php printMenu(); ?>
 </div>
@@ -36,9 +41,14 @@ global $config, $user;
             $statuses = array('w' => 'Waiting',
                               's' => 'Started',
                               'e' => 'Stopped');
+            $i=0;
+            $script= "";
             while($examInfo = $db->nextRowAssoc()){
-                $status = '<img alt="'.$examInfo['status'].'" src="'.$config['themeImagesDir'].$statuses[$examInfo['status']].'.png"
-                                title="'.constant('tt'.$statuses[$examInfo['status']]).'"/>';
+                $status = "<img alt='".$examInfo['status']."' src='".$config['themeImagesDir'].$statuses[$examInfo['status']].".png' title='".constant('tt'.$statuses[$examInfo['status']])."'/>";
+                if($i>0)
+                      $script.=",";
+                else
+                      $i++;
                 $exam = $examInfo['examName'];
                 $subject = $examInfo['subjectName'];
 
@@ -54,15 +64,15 @@ global $config, $user;
                 $time = date('H:i', $datetime);
 
                 $idExam = $examInfo['idExam'];
-                echo '<tr>
-                          <td>'.$status.'</td>
-                          <td>'.$exam.'</td>
-                          <td>'.$subject.'</td>
-                          <td>'.$day.'</td>
-                          <td>'.$time.'</td>
-                          <td>'.$idExam.'</td>
-                      </tr>';
+		$script.='["'.$status.'"
+                          ,"'.$exam.'"
+                          ,"'.$subject.'"
+                          ,"'.$day.'"
+                          ,"'.$time.'"
+                          ,"'.$idExam.'"
+                          ]';
             }
+            echo "<script>var dataset1=[".$script."];</script>";
             echo '</tbody>
               </table>';
         }else{
@@ -87,43 +97,31 @@ global $config, $user;
                           </tr>
                       </thead>
                       <tbody>';
+            $i=0;
+            $script= "";
             while($test = $db->nextRowAssoc()){
                 if($test['status'] == 'e' || $test['status'] == 'a' ){
 
                     $subject = $test['subName'];
                     $idTest = $test['idTest'];
                     $testStatus = $test['status'];
-
-                    /*
-                    $start = new DateTime($test['timeStart']);
-                    $end = new DateTime($test['timeEnd']);
-                    $diff = $start->diff($end);
-                    $time = $diff->format("%H:%I:%S");
-                    */
-
-			/*
-                    $start = strtotime($test['timeStart']);
-                    $end = strtotime($test['timeEnd']);
-                    $diff = $end - $start;
-
-                    $arr['days']=floor($diff/(60*60*24));
-                    $diff=$diff-(60*60*24*$arr['days']);
-                    $arr['hours']=floor($diff/(60*60));
-                    $diff=$diff-(60*60*$arr['hours']);
-                    $arr['minutes']=floor($diff/60);
-                    $diff=$diff-(60*$arr['minutes']);
-                    $arr['seconds']=$diff;
-
-                    $time = date("H:i:s",mktime($arr['hours'],$arr['minutes'],$arr['seconds']));
-
-			*/
-
                     $score = $test['scoreTest'];
 		    if(!isset($test['timeStart'])) 
                       $start="0000-00-00 00:00:00";
                     else
                       $start=$test['timeStart'];
-
+                    if($i>0)
+                      $script.=",";
+                    else
+                      $i++;
+                    $script.='["'.$test['surname'].' '.$test['name'].'"
+                              ,"'.$subject.'"
+                              ,"'.$start.'"
+                              ,"'.$score.'"
+                              ,"'.$idTest.'"
+                              ,"'.$testStatus.'"
+                              ]';
+/*
                     echo '<tr>
                               <td>'.$test['surname'].' '.$test['name'].'</td>
                               <td>'.$subject.'</td>
@@ -132,8 +130,10 @@ global $config, $user;
                               <td>'.$idTest.'</td>
                               <td>'.$testStatus.'</td>
                           </tr>';
+*/
                 }
             }
+            echo "<script>var dataset=[".$script."];</script>";
             echo '</tbody>
              </table>';
         }

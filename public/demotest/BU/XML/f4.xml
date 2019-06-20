@@ -1,0 +1,1290 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE questestinterop SYSTEM "ims_qtiasiv1p2.dtd">
+
+<questestinterop>
+<scale>100</scale>
+
+
+<item title="001 phys10uk r 11 -State of matter" ident="7761695738979199">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Bulgarian version\Физико химия 3 v400bg</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Налягането в даден контейнер се намалява с вакуумиращо устройство до 10<SUP>-9</SUP>&nbsp;Torr при 298,15&nbsp;К. Изчислете броя на молекулите, останали в контейнера, за единица обем.<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><img class="extraIcon calculator" src="themes/default/images/QEc.png"><BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[3,2·10<SUP>6</SUP> молекули·cm<SUP>-3</SUP>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[5,4·10<SUP>-14</SUP> мол]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[5,4·10<SUP>-17</SUP> мол·m<SUP>-3</SUP>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[3,2·10<SUP>13</SUP> молекули·cm<SUP>-3</SUP>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[3,2·10<SUP>11</SUP> молекули·cm<SUP>-3</SUP>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="3" >
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Set">4</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="002 phys11uk n 11 -Phase equilibrium" ident="1168418076838537">
+<itemmetadata>
+<qmd_itemtype>Multiple Response</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Bulgarian version\Физико химия 3 v400bg</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Ако дадена органична киселина АН е разпределена между вода (1) и неполярен органичен разтворител (2), кои два от следните изрази са верни?</P>
+<P><I>μ</I><SUP>*</SUP><SUB>AH</SUB> е обозначен химичният потенциал на чистата AH.<BR></P>]]></mattext>
+</material>
+<response_lid ident="1" rcardinality="Multiple">
+<render_choice shuffle="Yes" minnumber="1" maxnumber="5">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[<I>&micro*</I><SUB>HA</SUB>(1)&nbsp;=&nbsp;<I>&micro*</I><SUB>HA</SUB>(2)<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[<I>&micro*</I><SUB>HA</SUB>(2)&nbsp;=&nbsp;<I>&micro*</I><SUB>A<SUP>-</SUP></SUB>(1)&nbsp;+&nbsp;<I>&micro*</I><SUB>H<SUP>+</SUP></SUB>(1)<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[<I>&micro*</I><SUB>HA</SUB>(1)&nbsp;+&nbsp;<I>&micro*</I><SUB>HA</SUB>(2)&nbsp;=&nbsp;<I>&micro*</I><SUB>AH</SUB><BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[<I>&micro*</I><SUB>HA</SUB>(1)&nbsp;+&nbsp;<I>&micro*</I><SUB>AH</SUB>(2)&nbsp;=&nbsp;<I>&micro*</I><SUB>A<SUP>-</SUP></SUB>(1)&nbsp;+&nbsp;<I>&micro*</I><SUB>H<SUP>+</SUP></SUB>(1)<BR><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[<I>&micro*</I><SUB>A<SUP>-</SUP></SUB>(1)&nbsp;=&nbsp;<I>&micro*</I><SUB>H<SUP>+</SUP></SUB>(1)<BR><BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="header" continue="Yes">
+<conditionvar>Unrecognized or unsupported test method
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="header"/>
+</respcondition>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Add">2</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" continue="Yes">
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Add">2</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" >
+<conditionvar>
+<other/>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="header" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="003 phys12uk r 20 -Thermodynamics" ident="9988601080434547">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Bulgarian version\Физико химия 3 v400bg</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Изведете израз за парното налягане, <I>Р</I>, на разтвор, като функция на молната част, <EM>х</EM><SUB>2</SUB> , на разтвореното вещество, ако то се подчинява на закона на Раул.<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><FONT color=blue>данни:<BR><I>P</I><SUP>*</SUP><SUB>1</SUB> е парното налягане на чистия копонент 1<BR><I>P</I><SUP>*</SUP><SUB>2 </SUB>е парното налягане на чистия копонент 2<BR></FONT></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[<I>P&nbsp;=&nbsp;P</I><SUP>*</SUP><SUB>1</SUB>·<I>x</I><SUB>1</SUB>&nbsp;+ &nbsp;<I>P</I><SUP>*</SUP><SUB>2</SUB>·<I>x</I><SUB>2</SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[<I>P&nbsp;=&nbsp;P</I><SUP>*</SUP><SUB>1</SUB>·<I>x</I><SUB>2</SUB>&nbsp;+&nbsp;<I>P</I><SUP>*</SUP><SUB>1</SUB>·(1&nbsp;-&nbsp;<I>x</I><SUB>2</SUB>)<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[<I>P&nbsp;=&nbsp;P</I><SUP>*</SUP><SUB>1</SUB>&nbsp;+&nbsp;(<I>P</I><SUP>*</SUP><SUB>1</SUB>&nbsp;-&nbsp;<I>P</I><SUP>*</SUP><SUB>2</SUB>)·<I>x</I><SUB>2</SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[<I>P&nbsp;=&nbsp;P</I><SUP>*</SUP><SUB>1</SUB>&nbsp;+&nbsp;(<I>P</I><SUP>*</SUP><SUB>2</SUB>&nbsp;-&nbsp;<I>P</I><SUP>*</SUP><SUB>1</SUB>)·<I>x</I><SUB>2</SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[<I>P&nbsp;=&nbsp;P</I><SUP>*</SUP><SUB>1</SUB>&nbsp;+&nbsp;(<I>P</I><SUP>*</SUP><SUB>2</SUB>&nbsp;-&nbsp;<I>P</I><SUP>*</SUP><SUB>1</SUB>)·<I>x</I><SUB>1</SUB><BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">2</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="3" >
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Set">4</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="004 phys13uk k 11 -Chemical equilibria" ident="9372140417627944">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Bulgarian version\Физико химия 3 v400bg</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Ако се неутрализира един литър 0,1 моларен разтвор на оцетна киселина (слаба киселина, за която само 1,3% от всички молекули са дисоциирани във воден разтвор), какво количество натриев хидроксид ще е необходимо?<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><img class="extraIcon calculator" src="themes/default/images/QEc.png"><BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="No">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[По-малко от 0,1 граммолекула<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[0,1 граммолекула<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[повече от 0,1 граммолекула<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="1" >
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Set">4</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="005 phys14uk l 01 -Kinetics" ident="6639845466934486">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Bulgarian version\Физико химия 3 v400bg</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>За реакцията</P>
+<P>aA&nbsp;+&nbsp;bB&nbsp;&nbsp;→&nbsp;&nbsp;pP&nbsp;+&nbsp;qQ</P>
+<P>if <I>n</I><SUB>A</SUB> ако nA е количеството на веществото А, а <I>V</I> е обемът на системата, скоростта на превръщане <I>v</I><SUB>A</SUB> на веществото А може да се изрази като:<BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[<I>v</I><SUB>A</SUB>&nbsp;=&nbsp;−&nbsp;a/<I>V</I>&nbsp;·&nbsp;d<I>n</I><SUB>A</SUB>/d<I>t</I><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[<I>v</I><SUB>A</SUB>&nbsp;=&nbsp;−&nbsp;a·<I>V</I>&nbsp;·&nbsp;d<I>n</I><SUB>A</SUB>/d<I>t</I><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[<I>v</I><SUB>A</SUB>&nbsp;=&nbsp;−&nbsp;1/(a·<I>V</I>)&nbsp;·&nbsp;d<I>n</I><SUB>A</SUB>/d<I>t</I><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[<I>v</I><SUB>A</SUB>&nbsp;=&nbsp;−&nbsp;a/<I>t</I>&nbsp;·&nbsp;d<I>n</I><SUB>A</SUB>/d<I>V</I><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[<I>v</I><SUB>A</SUB>&nbsp;=&nbsp;−&nbsp;a·<I>t</I>&nbsp;·&nbsp;d<I>n</I><SUB>A</SUB>/d<I>V</I><BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="2" >
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Set">4</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="006 phys15uk a 02-Catalysis" ident="5627487852797603">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Bulgarian version\Физико химия 3 v400bg</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Довършете изречението:<BR>Прибавянето на катализатор към дадена химична реакция ...<BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[... променя нейната равновесна константа.<SUB> </SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[... променя нейната активираща енергия.<SUB> </SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[... променя стойността на Δ<SUB>r</SUB><I>G</I>° на реакцията.<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="1" >
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Set">4</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="007 phys16uk n 41 -Electrochemistry" ident="0250766185132614">
+<itemmetadata>
+<qmd_itemtype>Multiple Response</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Bulgarian version\Физико химия 3 v400bg</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Дадени са стандартните електродни потенциали при 25°C<BR></P>
+<TABLE border=0 align=center>
+<TBODY>
+<TR>
+<TD><I>E°</I>(Cl<SUB>2</SUB>&nbsp;/&nbsp;Cl<SUP>-</SUP>)&nbsp;=&nbsp;1,36&nbsp;V</TD>
+<TD><I>E°</I>(Fe<SUP>3+</SUP>&nbsp;/&nbsp;Fe<SUP>2+</SUP>)&nbsp;=&nbsp;0,77&nbsp;V</TD></TR>
+<TR>
+<TD><I>E°</I>(Ce<SUP>4+</SUP>&nbsp;/&nbsp;Ce<SUP>3+</SUP>)&nbsp;=&nbsp;1,61&nbsp;V&nbsp;&nbsp;&nbsp;</TD>
+<TD><I>E°</I>(MnO<SUB>4</SUB><SUP>-</SUP>,H<SUP>+</SUP>&nbsp;/&nbsp;Mn<SUP>2+</SUP>)&nbsp;=&nbsp;1,51&nbsp;V</TD></TR>
+<TR>
+<TD><I>E°</I>(Cu<SUP>2+</SUP>&nbsp;/&nbsp;Cu<SUP>+</SUP>)&nbsp;=&nbsp;0,15&nbsp;V</TD>
+<TD><I>E°</I>(O<SUB>2</SUB>,H<SUP>+</SUP>&nbsp;/&nbsp;H<SUB>2</SUB>O)&nbsp;=&nbsp;1,23&nbsp;V</TD></TR></TBODY></TABLE>
+<P>Кои <B>две</B> от следните реакции ще протекат спонтанно при стандартни условия (активността на компонентите е равна на единица)?<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Използвани съкращения: <B>(g)</B> за газ, <B>(l)</B> за течност, <B>(aq)</B> за воден разтвор.<BR></P>]]></mattext>
+</material>
+<response_lid ident="1" rcardinality="Multiple">
+<render_choice shuffle="Yes" minnumber="1" maxnumber="5">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[2&nbsp;Ce<SUP>4+</SUP>(aq)&nbsp;+&nbsp;2&nbsp;Cl<SUP>-</SUP>(aq)<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[5&nbsp;Fe<SUP>2+</SUP>(aq)&nbsp;+&nbsp;MnO<SUB>4</SUB><SUP>-</SUP>(aq)&nbsp;+&nbsp;8H<SUP>+</SUP>(aq)<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[&nbsp;Cu<SUP>2+</SUP>(aq)&nbsp;+&nbsp;Ce<SUP>3+</SUP>(aq)<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[4&nbsp;Fe<SUP>3+</SUP>(aq)&nbsp;+&nbsp;2&nbsp;H<SUB>2</SUB>O(l)<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[Fe<SUP>2+</SUP>(aq)&nbsp;+&nbsp;(1/2)&nbsp;H<SUB>2</SUB>(g)<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="2" continue="Yes">
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Add">2</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" continue="Yes">
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Add">2</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="008 phys17uk p 05 -Atomic structure" ident="6281071796369814">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Bulgarian version\Физико химия 3 v400bg</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Колко орбитали има в обвивка с <I>n </I>= 3 ?<BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[9<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[3<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[6<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[7<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">4</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="009 phys18uk m 08 -Molecular structure" ident="9946414946980982">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Bulgarian version\Физико химия 3 v400bg</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Редът на намаляване на диполния момент в поредицата молекули CH<SUB>4</SUB>, CH<SUB>3</SUB>F, CH<SUB>2</SUB>F<SUB>2</SUB> и CF<SUB>4</SUB>:<BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[CH<SUB>3</SUB>F&nbsp;&gt;&nbsp;CH<SUB>2</SUB>F<SUB>2</SUB>&nbsp;&gt;&nbsp;CF<SUB>4</SUB>&nbsp;&gt;&nbsp;CH<SUB>4</SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[CH<SUB>2</SUB>F<SUB>2</SUB>&nbsp;&gt;&nbsp;CF<SUB>4</SUB>&nbsp;&gt;&nbsp;CH<SUB>3</SUB>F&nbsp;&gt;&nbsp;CH<SUB>4</SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[CH<SUB>4</SUB>&nbsp;=&nbsp;CF<SUB>4</SUB>&nbsp;&gt;&nbsp;CH<SUB>3</SUB>F&nbsp;&gt;&nbsp;CH<SUB>2</SUB>F<SUB>2</SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[CF<SUB>4</SUB>&nbsp;&gt;&nbsp;CH<SUB>2</SUB>F<SUB>2</SUB>&nbsp;&gt;&nbsp;CH<SUB>3</SUB>F&nbsp;&gt;&nbsp;CH<SUB>4</SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[CH<SUB>2</SUB>F<SUB>2</SUB>&nbsp;&gt;&nbsp;CH<SUB>3</SUB>F&nbsp;&gt;&nbsp;CH<SUB>4</SUB>&nbsp;=&nbsp;CF<SUB>4</SUB><BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="4" >
+<conditionvar>
+<varequal respident="1">E</varequal>
+</conditionvar>
+<setvar action="Set">4</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="4" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="010 phys19uk m 21 -Spectroscopy" ident="0143883138001673">
+<itemmetadata>
+<qmd_itemtype>Multiple Response</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Bulgarian version\Физико химия 3 v400bg</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Ядреният спин на <SUP>31</SUP>P и на <SUP>19</SUP>F e <I>I</I>&nbsp;=&nbsp;1/2. Кои две от следните твърдения за ЯМР–спектъра на PF<SUB>3</SUB> са верни?<BR></P>]]></mattext>
+</material>
+<response_lid ident="1" rcardinality="Multiple">
+<render_choice shuffle="Yes" minnumber="1" maxnumber="6">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[Спектърът на <STRONG><SUP>31</SUP>P</STRONG> има синглетен характер.]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[Спектърът на <STRONG><SUP>31</SUP>P</STRONG> има дублетен характер.]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[Спектърът на <STRONG><SUP>31</SUP>P</STRONG> има квартетен характер.]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[Спектърът на <STRONG><SUP>19</SUP>F</STRONG> има синглетен характер.]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[Спектърът на <STRONG><SUP>19</SUP>F</STRONG> има дублетен характер.]]></mattext>
+</material>
+</response_label>
+<response_label ident="F">
+<material>
+<mattext texttype="text/html"><![CDATA[Спектърът на <STRONG><SUP>19</SUP>F</STRONG> има квартетен харатктер.]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="2" continue="Yes">
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Add">2</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="4" continue="Yes">
+<conditionvar>
+<varequal respident="1">E</varequal>
+</conditionvar>
+<setvar action="Add">2</setvar>
+<displayfeedback linkrefid="4"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="4" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="011 phys20uk n 52 -State of matter" ident="0813943585399832">
+<itemmetadata>
+<qmd_itemtype>Numeric</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Bulgarian version\Физико химия 3 v400bg</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Критичният обем на CH<SUB>4</SUB> е 99&nbsp;cm<SUP>3</SUP>·mol<SUP>-1</SUP>. Какъв е приблизителният радиус (в nm) на молекулите на газа, ако той се подчинява на уравнението на Ван дер Ваалс в критичната област?<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><img class="extraIcon calculator" src="themes/default/images/QEc.png"><BR><FONT color=blue>Данни: <I>N</I><SUB>A</SUB>&nbsp;=&nbsp;6.022·10<SUP>23</SUP>&nbsp;mol<SUP>-1</SUP></FONT><BR></P>]]></mattext>
+</material>
+<response_num ident="1" rcardinality="Single">
+<render_fib fibtype="Decimal" prompt="Box" rows="1" columns="14" maxchars="14"/>
+</response_num>
+<material>
+<mattext texttype="text/html"><![CDATA[nm<BR>]]></mattext>
+</material>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">0.24</varequal>
+</conditionvar>
+<setvar action="Set">6</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" >
+<conditionvar>
+<or>
+<vargte respident="1">0.14</vargte>
+<varlte respident="1">0.24</varlte>
+<vargte respident="1">0.24</vargte>
+<varlte respident="1">0.34</varlte>
+</or>
+</conditionvar>
+<setvar action="Set">6</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" >
+<conditionvar>
+<unanswered respident="1"/>
+</conditionvar>
+<setvar action="Add">0</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="012 phys21uk r 65 -Phase equilibrium" ident="7372594301752170">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Bulgarian version\Физико химия 3 v400bg</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Парното налягане на чист бензен при 20°C е 74,66&nbsp;Torr. То се понижава до 74,01&nbsp;Torr, когато в 100&nbsp;g бензен при 20°C се разтворят 2,00&nbsp;g въглеводород, съдържащ 94,4% въглерод.<BR>Изчислете молекулната формула на въглеводорода.<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><img class="extraIcon calculator" src="themes/default/images/QEc.png"><BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[C<SUB>14</SUB>H<SUB>10</SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[C<SUB>7</SUB>H<SUB>5</SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[C<SUB>21</SUB>H<SUB>15</SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[C<SUB>12</SUB>H<SUB>26</SUB><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[C<SUB>16</SUB>H<SUB>12</SUB><BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">6</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="013 phys22uk r 81 -Thermodynamics" ident="1681087325881706">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Bulgarian version\Физико химия 3 v400bg</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Даден е идеален разтвор, образуван от 3,00&nbsp;mol бензен и 2,00&nbsp;mol толуол. Изчислете отношението на фугативностите на чист бензен и на бензен в идеалния разтвор. Разгледайте всички величини при постоянна температура и постоянно налягане.<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><img class="extraIcon calculator" src="themes/default/images/QEc.png"><BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[0,60<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[1,67<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[0,40<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[2,50<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[1,00<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="1" >
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Set">6</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="014 phys23uk n 92 -Chemical equilibria" ident="4235749263905639">
+<itemmetadata>
+<qmd_itemtype>Numeric</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Bulgarian version\Физико химия 3 v400bg</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Разгледайте дисоциацията на азотен триоксид в съответствие с реакцията</P>
+<P>N<SUB>2</SUB>O<SUB>3</SUB>(g)&nbsp;&nbsp;→&nbsp;&nbsp;NO<SUB>2</SUB>(g)&nbsp;+&nbsp;NO(g)</P>
+<P>Ако степента на дисоциация (<I>a</I>) е 0,3&nbsp;при <I>Т</I>&nbsp;=&nbsp;298&nbsp;К и <I>P</I>°&nbsp;=&nbsp;1&nbsp;bar&nbsp;=&nbsp;10<SUP>5</SUP>&nbsp;Pa, каква е стандартната енергия на Гибс на тази реакция в kJ·mol<SUP>-1</SUP>?<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><img class="extraIcon calculator" src="themes/default/images/QEc.png"><BR><FONT color=blue>Данни: <I>R</I>&nbsp;=&nbsp;8,314&nbsp;J·K<SUP>-1</SUP>·mol<SUP>-1</SUP></FONT><BR></P>]]></mattext>
+</material>
+<response_num ident="1" rcardinality="Single">
+<render_fib fibtype="Decimal" prompt="Box" rows="1" columns="14" maxchars="14"/>
+</response_num>
+<material>
+<mattext texttype="text/html"><![CDATA[kJ·mol<SUP>-1</SUP>]]></mattext>
+</material>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">5.73</varequal>
+</conditionvar>
+<setvar action="Set">6</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" >
+<conditionvar>
+<or>
+<vargte respident="1">5.72</vargte>
+<varlte respident="1">5.73</varlte>
+<vargte respident="1">5.73</vargte>
+<varlte respident="1">5.74</varlte>
+</or>
+</conditionvar>
+<setvar action="Set">6</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" >
+<conditionvar>
+<other/>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="015 phys24uk a 10 -Kinetics" ident="1568731257634558">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Bulgarian version\Физико химия 3 v400bg</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>При 15°С дадена химична реакция завършва за 3&nbsp;min и 32&nbsp;секунди. Същата реакция при 50°С, при същите концентрации и сумарни количества, ще завърши за 45&nbsp;секунди. Каква е активиращата енергия на реакцията?<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><img class="extraIcon calculator" src="themes/default/images/QEc.png"><BR><FONT color=blue>Данни: <I>R</I>&nbsp;=&nbsp;8,314&nbsp;J·mol<SUP>-1</SUP>·K<SUP>-1</SUP></FONT><BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[39,7&nbsp;kJ·mol<SUP>-1</SUP><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[44,5&nbsp;kJ·mol<SUP>-1</SUP><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[28,7&nbsp;kJ·mol<SUP>-1</SUP><BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[34,2&nbsp;kJ·mol<SUP>-1</SUP><BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="3" >
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Set">6</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="016 phys25uk b 01 -Catalysis" ident="8465469714474184">
+<itemmetadata>
+<qmd_itemtype>Multiple Response</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Bulgarian version\Физико химия 3 v400bg</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>При изследване на катализираната с Pt реакция:</P>
+<P>2&nbsp;CO&nbsp;+&nbsp;2&nbsp;NO&nbsp;→&nbsp;2&nbsp;CO<SUB>2</SUB>&nbsp;+&nbsp;N<SUB>2</SUB></P>
+<P>е установено, че тя е от първи порядък по отношение на СО при ниски налягания на СО; при увеличаване на налягането на СО при постоянно налягане на NO и постоянна <I>Т</I>, скоростта минава през максимум, а при много високи налягания скоростта на реакцията е обратно пропорционална на налягането на СО, докато активиращата енергия е равна на топлината на адсорбция на СО. Когато парциалното налягане на NO е много по-голямо от това на СО, активиращата енергия е равна на топлината на адсорбция на N<SUB>2</SUB>.<BR>Кое от следните твърдения е в съответствие с тези наблюдения?<BR></P>]]></mattext>
+</material>
+<response_lid ident="1" rcardinality="Multiple">
+<render_choice shuffle="Yes" minnumber="1" maxnumber="4">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[Реакцията CO (ads) + O (ads) → CO<SUB>2</SUB> (ads) е скоростоопределяща.]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[Реакцията може да се инхибира от един от продуктите.]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[Адсорбцията на NO е скоростоопределящ етап.]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[Повърхностната реакция е между CO(ads) и NO(ads).]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="header" continue="Yes">
+<conditionvar>Unrecognized or unsupported test method
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="header"/>
+</respcondition>
+<respcondition title="0" continue="Yes">
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Add">3</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" continue="Yes">
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Add">3</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" continue="Yes">
+<conditionvar>
+<varequal respident="1">C</varequal>
+</conditionvar>
+<setvar action="Add">-1</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+<respcondition title="3" continue="Yes">
+<conditionvar>
+<varequal respident="1">D</varequal>
+</conditionvar>
+<setvar action="Add">-1</setvar>
+<displayfeedback linkrefid="3"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="header" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="3" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="017 phys26uk n 126 -Electrochemistry" ident="9834884305539149">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Bulgarian version\Физико химия 3 v400bg</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>В интервала между 273 и 350&nbsp;К потенциалът (в V) на елемента</P>
+<P>Pt(s)&nbsp;|&nbsp;H<SUB>2</SUB>(g,&nbsp;<I>f</I>&nbsp;=&nbsp;1)&nbsp;|&nbsp;HCl(aq,&nbsp;<I>a</I>&nbsp;=&nbsp;1)&nbsp;|&nbsp;AgCl(s)&nbsp;|&nbsp;Ag(s)</P>
+<P>приблизително е даден с</P>
+<P><I>E</I>&nbsp;=&nbsp;0,1213&nbsp;+&nbsp;1,746·10<SUP>-3</SUP>·<I>T</I>&nbsp;−&nbsp;3,26·10<SUP>-6</SUP>·<I>T</I><SUP>2</SUP></P>
+<P>Каква е стойността на Δ<SUB>r</SUB><I>S</I> в J K<SUP>-1</SUP>·mol<SUP>-1</SUP> за реакцията в елемента при 298&nbsp;К?<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><img class="extraIcon calculator" src="themes/default/images/QEc.png"><BR><FONT color=blue>Данни: <I>F</I>&nbsp;=&nbsp;96484&nbsp;C·mol<SUP>-1</SUP></FONT><BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[−19<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[19<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[34<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[−34<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[−38<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">A</varequal>
+</conditionvar>
+<setvar action="Set">6</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="018 phys27uk m 31 -Atomic structure" ident="0498220728185243">
+<itemmetadata>
+<qmd_itemtype>Multiple Choice</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Bulgarian version\Физико химия 3 v400bg</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Йонизационната енергия на натрий е 494&nbsp;kJ/mol. Радиация с дължина на вълната 590&nbsp;nm може да се използва за възбуждане на натриевия атом от неговото основно състояние до конфигурацията [Ne]&nbsp;3p<SUP>1</SUP>.<BR>Колко енергия е необходима за йонизиране на натрия в това възбудено състояние?<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><img class="extraIcon calculator" src="themes/default/images/QEc.png"><BR><FONT color=blue>Данни: <I>h</I>&nbsp;=&nbsp;6,63·10<SUP>-34</SUP>&nbsp;J·s;&nbsp;<I>N</I><SUB>A</SUB>&nbsp;=&nbsp;6,02·10<SUP>23</SUP>&nbsp;mol<SUP>-1</SUP>;&nbsp;<I>c</I>&nbsp;=&nbsp;3,00·10<SUP>8</SUP>&nbsp;m/s</FONT><BR></P>]]></mattext>
+</material>
+<response_lid ident="1">
+<render_choice shuffle="Yes">
+<response_label ident="A">
+<material>
+<mattext texttype="text/html"><![CDATA[203&nbsp;kJ/mol<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="B">
+<material>
+<mattext texttype="text/html"><![CDATA[291&nbsp;kJ/mol<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="C">
+<material>
+<mattext texttype="text/html"><![CDATA[385&nbsp;kJ/mol<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="D">
+<material>
+<mattext texttype="text/html"><![CDATA[494&nbsp;kJ/mol<BR>]]></mattext>
+</material>
+</response_label>
+<response_label ident="E">
+<material>
+<mattext texttype="text/html"><![CDATA[697&nbsp;kJ/mol<BR>]]></mattext>
+</material>
+</response_label>
+</render_choice>
+</response_lid>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="1" >
+<conditionvar>
+<varequal respident="1">B</varequal>
+</conditionvar>
+<setvar action="Set">6</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="019 phys28uk m 47 -Molecular structure" ident="8776152970020578">
+<itemmetadata>
+<qmd_itemtype>Numeric</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Bulgarian version\Физико химия 3 v400bg</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Основното вибрационно състояние на <SUP>1</SUP>H<SUP>35</SUP>Cl се наблюдава при 2988,9&nbsp;cm<SUP>-1</SUP>.<BR>Ако се приложи хармонично апроксимиране, каква е силовата константа за <SUP>1</SUP>H<SUP>35</SUP>Cl?<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><img class="extraIcon calculator" src="themes/default/images/QEc.png"><BR><FONT color=blue>Данни:<BR>атомни маси: <SUP>1</SUP>H&nbsp;=&nbsp;1,0078;&nbsp;<SUP>35</SUP>Cl&nbsp;=&nbsp;34,969&nbsp;g/mol;<BR><I>c</I>&nbsp;=&nbsp;2,9979·10<SUP>8</SUP>&nbsp;m/s;&nbsp;<I>N</I><SUB>A</SUB>&nbsp;=&nbsp;6,0221·10<SUP>23</SUP>&nbsp;mol<SUP>-1</SUP>.</FONT><BR></P>]]></mattext>
+</material>
+<response_num ident="1" rcardinality="Single">
+<render_fib fibtype="Decimal" prompt="Box" rows="1" columns="14" maxchars="14"/>
+</response_num>
+<material>
+<mattext texttype="text/html"><![CDATA[N/m]]></mattext>
+</material>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">515.59</varequal>
+</conditionvar>
+<setvar action="Set">6</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" >
+<conditionvar>
+<or>
+<vargte respident="1">515.54</vargte>
+<varlte respident="1">515.59</varlte>
+<vargte respident="1">515.59</vargte>
+<varlte respident="1">515.64</varlte>
+</or>
+</conditionvar>
+<setvar action="Set">4</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" >
+<conditionvar>
+<other/>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+</item>
+
+
+<item title="020 phys29uk m 63 -Spectroscopy" ident="9657649480095329">
+<itemmetadata>
+<qmd_itemtype>Numeric</qmd_itemtype>
+<qmd_status>Normal</qmd_status>
+<qmd_toolvendor>Questionmark Perception</qmd_toolvendor>
+<qmd_topic>DDB Bulgarian version\Физико химия 3 v400bg</qmd_topic>
+</itemmetadata>
+<presentation>
+<material>
+<mattext texttype="text/html"><![CDATA[<P>Моларният абсорбционен коефициент, е, на хлорбензен в разтвор на n-хептан при 265&nbsp;nm е равен на: ε&nbsp;=&nbsp;1,22·10<SUP>3</SUP>·m<SUP>2</SUP>·mol<SUP>-1</SUP>. Изчислете концентрацията на хлорбензен в разтвора на n-хептан, ако стойността на неговата оптическа пропускливост е 0,296 при 256 nm в кювета с ширина 2 cm.<BR></P>]]></mattext>
+</material>
+<material>
+<mattext texttype="text/html"><![CDATA[<P><img class="extraIcon calculator" src="themes/default/images/QEc.png"><BR></P>]]></mattext>
+</material>
+<response_num ident="1" rcardinality="Single">
+<render_fib fibtype="Decimal" prompt="Box" rows="1" columns="14" maxchars="14"/>
+</response_num>
+<material>
+<mattext texttype="text/html"><![CDATA[·10<SUP>-5</SUP>&nbsp;M]]></mattext>
+</material>
+</presentation>
+<resprocessing>
+<outcomes>
+<decvar/>
+</outcomes>
+<respcondition title="0" >
+<conditionvar>
+<varequal respident="1">2.17</varequal>
+</conditionvar>
+<setvar action="Set">6</setvar>
+<displayfeedback linkrefid="0"/>
+</respcondition>
+<respcondition title="1" >
+<conditionvar>
+<or>
+<vargte respident="1">2.16</vargte>
+<varlte respident="1">2.17</varlte>
+<vargte respident="1">2.17</vargte>
+<varlte respident="1">2.18</varlte>
+</or>
+</conditionvar>
+<setvar action="Set">6</setvar>
+<displayfeedback linkrefid="1"/>
+</respcondition>
+<respcondition title="2" >
+<conditionvar>
+<other/>
+</conditionvar>
+<setvar action="Set">0</setvar>
+<displayfeedback linkrefid="2"/>
+</respcondition>
+</resprocessing>
+<itemfeedback ident="0" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="1" view="Candidate">
+</itemfeedback>
+<itemfeedback ident="2" view="Candidate">
+</itemfeedback>
+</item>
+
+
+</questestinterop>
+
+

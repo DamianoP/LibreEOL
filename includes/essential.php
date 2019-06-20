@@ -186,7 +186,7 @@ function printMenu(){
     if($user->role == 't')
         teacherMenu();
     elseif($user->role == 'e')
-        eteacherMenu();
+	examinerMenu();
     elseif($user->role == 'er')
         eteacherMenu();
     elseif($user->role == 'a')
@@ -321,6 +321,31 @@ function eteacherMenu(){
 <?php
 }
 
+function examinerMenu(){
+    global $tt; ?>
+
+    <ul class="topnav">
+    <li><a href="index.php"><?= ttHome ?></a></li>
+    <li>
+        <a class="trigger"><?= ttSubjects ?></a>
+        <ul class="subnav">
+            <li><a href="index.php?page=subject/index2"><?= ttSelectSubject ?></a></li>
+            <li><a href="index.php?page=question/index2"><?= ttTopicsAndQuestions ?></a></li>
+        </ul>
+    </li>
+    <li>
+        <a class="trigger"><?= ttExams ?></a>
+        <ul class="subnav">
+            <li><a href="index.php?page=exam/exams"><?= ttMyExams ?></a></li>
+        </ul>
+    </li>
+    <li><a href="index.php?page=report"><?= ttReport ?></a></li>
+    <li><a href="index.php?page=admin/profile"><?= ttProfile ?></a></li>
+    <li><a href="index.php?page=admin/errorquestion" > <?=ttErrorquestion ?></a></li>
+
+
+<?php
+}
 
 /**
  * @name    adminTeacherMenu
@@ -366,7 +391,6 @@ function studentMenu(){
 <ul class="topnav">
     <li><a href="index.php"><?= ttHome ?></a></li>
     <li><a href="index.php?page=admin/profile"><?= ttProfile ?></a></li>
-    <li><a href="index.php?page=student/votes"><?= ttMyExams ?></a></li>
 
 <?php
 }
