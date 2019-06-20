@@ -4,9 +4,9 @@ LibreEol is an innovative online assessment system based on HTML5, CSS2/3, PHP7 
 Developed and verified by Damiano Perri 2016-2019 and Osvaldo Gervasi
 
 
-URL:  https://www.libreeol.org
-URL:  https://echemtest.libreeol.org
-Version 2.7.4 - 21/06/2019
+URL:  https://www.libreeol.org   <br>
+URL:  https://echemtest.libreeol.org   <br>
+Version 2.7.4 - 21/06/2019    <br>
 
 Other developers: Alessandro Moretti, Cristiano Regni, Emanuele Gragnoli , Giovanni Scieri, Luca Caprini , Matteo Botticchia , Riccardo Gai , Tommaso Giorni
 
