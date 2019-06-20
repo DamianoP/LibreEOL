@@ -1,7 +1,7 @@
 # echemTest-EOL
 LibreEol is an innovative online assessment system based on HTML5, CSS2/3, PHP7 and Ajax
 
-Developed and verified by Damiano Perri 2016-2018 and Osvaldo Gervasi
+Developed and verified by Damiano Perri 2016-2019 and Osvaldo Gervasi
 
 
 URL:  https://www.libreeol.org
