@@ -87,7 +87,6 @@ Timepicker
 
 Screenshot
 --------------------
-<br>
 The exams page:
 <br>
 <img width="600" height="290" src="tmp/img1.png?raw=true">
