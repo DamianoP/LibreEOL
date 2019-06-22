@@ -17,6 +17,7 @@ The E-assessment is foundamental in modern teaching/e-learning approaches, in fa
 * A standardization of tests carried out by teachers <br>
 * A simplifcation in tests deployment procedures <br>
 * A process speed up in publishing the results <br>
+
 LibreEol is a web application that represents a complete environment for performing the e-assessment of a large number of students who access the system from computer labs, under the control and the supervision of the examiner/teacher.  <br>
 Presently it has 10 diferent types of questions with which the teacher can express questions and responses <br>
 Each student is assigned an individual test.  <br>
