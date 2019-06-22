@@ -93,7 +93,6 @@ The exams page:
 
 The home page:
 <br>
-
 <img width="600" height="290" src="tmp/img2.png?raw=true">
 
 A student's test:
