@@ -83,3 +83,24 @@ Timepicker
    Homepage: http://trentrichardson.com/examples/timepicker/
    License: MIT or GPL License
    Location: /public/libs/timepicker.js
+
+
+Screenshot
+--------------------
+<br\>
+The exams page:
+<br\>
+<img width="600" height="600" src="tmp/img1.png?raw=true">
+
+<br\>
+<br\>
+The home page:
+<br\>
+
+<img width="600" height="600" src="tmp/img2.png?raw=true">
+
+<br\>
+<br\>
+A student's test:
+<br\>
+<img width="600" height="600" src="tmp/img3.png?raw=true">
