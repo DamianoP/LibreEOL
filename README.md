@@ -1,7 +1,22 @@
 # echemTest-EOL
-LibreEol is an innovative online assessment system based on HTML5, CSS2/3, PHP7 and Ajax
-
 Developed and verified by Damiano Perri 2016-2019 and Osvaldo Gervasi
+
+LibreEol is an innovative online assessment system based on HTML5, CSS2/3, PHP7 and Ajax
+LibreEOL allows to carry out tests related to exams of various type (University courses, professional certifcations, language skill assessment, etc)
+The E-assessment is foundamental in modern teaching/e-learning approaches, in fact it ensures:
+The deployment of exams in a very fast way, particularly in cases where the number of students are very high
+A standardization of tests carried out by teachers
+A simplifcation in tests deployment procedures
+A process speed up in publishing the results
+LibreEol is a web application that represents a complete environment for performing the e-assessment of a large number of students who access the system from computer labs, under the control and the supervision of the examiner/teacher. 
+Presently it has 10 diferent types of questions with which the teacher can express questions and responses
+Each student is assigned an individual test. 
+Each Exam has associated a univocal password the student has to specify to access the test.
+The questions of the test are fshed up from a set of questions the teacher defned for the topics of the named subject, classifying each question according to 3 levels of difculty (low, medium, high). 
+LibreEol may support multiple languages for each question (For each question is defned in the reference language and related translations)
+Exams are defned with various settings (type of students registration automatic/ manual, topics selected, evaluation metric, optional bonus, editable score, etc)
+Reports may be produced to show trends and results
+
 
 
 URL:  https://www.libreeol.org   <br>
