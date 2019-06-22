@@ -10,6 +10,21 @@ Version 2.7.4 - 21/06/2019    <br>
 
 Other developers: Alessandro Moretti, Cristiano Regni, Emanuele Gragnoli , Giovanni Scieri, Luca Caprini , Matteo Botticchia , Riccardo Gai , Tommaso Giorni
 
+Screenshot
+--------------------
+The exams page:
+<br>
+<img width="600" height="290" src="tmp/img1.png?raw=true">
+
+The home page:
+<br>
+<img width="600" height="290" src="tmp/img2.png?raw=true">
+
+A student's test:
+<br>
+<img width="600" height="290" src="tmp/img3.png?raw=true">
+
+
 Third-party Software
 --------------------
 
@@ -83,18 +98,3 @@ Timepicker
    Homepage: http://trentrichardson.com/examples/timepicker/
    License: MIT or GPL License
    Location: /public/libs/timepicker.js
-
-
-Screenshot
---------------------
-The exams page:
-<br>
-<img width="600" height="290" src="tmp/img1.png?raw=true">
-
-The home page:
-<br>
-<img width="600" height="290" src="tmp/img2.png?raw=true">
-
-A student's test:
-<br>
-<img width="600" height="290" src="tmp/img3.png?raw=true">
