@@ -11,6 +11,7 @@ Other developers: Alessandro Moretti, Cristiano Regni, Emanuele Gragnoli , Giova
 Description
 --------------------
 LibreEol is an innovative online assessment system based on HTML5, CSS2/3, PHP7 and Ajax <br>
+LibreEol is an open source software to create online quizzes, tests and exams  <br>
 LibreEOL allows to carry out tests related to exams of various type (University courses, professional certifcations, language skill assessment, etc) <br>
 The E-assessment is foundamental in modern teaching/e-learning approaches, in fact it ensures: <br>
 * The deployment of exams in a very fast way, particularly in cases where the number of students are very high <br>
