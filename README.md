@@ -1,11 +1,11 @@
 # LibreEOL
-Developed and verified by Damiano Perri 2016-2019 and Osvaldo Gervasi
+Developed and verified by Damiano Perri 2016-2020 and Osvaldo Gervasi
 
 URL:  https://www.libreeol.org   <br>
 URL:  https://echemtest.libreeol.org   <br>
 Version 2.7.4 - 21/06/2019    <br>
 
-Other developers: Alessandro Moretti, Cristiano Regni, Emanuele Gragnoli , Giovanni Scieri, Luca Caprini , Matteo Botticchia , Riccardo Gai , Tommaso Giorni
+Other developers who have contributed in the past years: Alessandro Moretti, Cristiano Regni, Emanuele Gragnoli , Giovanni Scieri, Luca Caprini , Matteo Botticchia , Riccardo Gai , Tommaso Giorni
 <br>
 
 Description
