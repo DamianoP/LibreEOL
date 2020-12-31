@@ -24,9 +24,9 @@ LibreEol is a web application that represents a complete environment for perform
 Presently it has 10 diferent types of questions with which the teacher can express questions and responses <br>
 Each student is assigned an individual test.  <br>
 Each Exam has associated a univocal password the student has to specify to access the test. <br>
-The questions of the test are fshed up from a set of questions the teacher defned for the topics of the named subject, classifying each question according to 3 levels of difculty (low, medium, high).  <br>
-LibreEol may support multiple languages for each question (For each question is defned in the reference language and related translations) <br>
-Exams are defned with various settings (type of students registration automatic/ manual, topics selected, evaluation metric, optional bonus, editable score, etc) <br>
+The questions of the test are flushed up from a set of questions the teacher defined for the topics of the named subject, classifying each question according to 3 levels of difficulty (low, medium, high).  <br>
+LibreEol may support multiple languages for each question (For each question is defined in the reference language and related translations) <br>
+Exams are defined with various settings (type of students registration automatic/ manual, topics selected, evaluation metric, optional bonus, editable score, etc) <br>
 Reports may be produced to show trends and results <br>
  <br>
 
