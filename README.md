@@ -13,15 +13,15 @@ Description
 --------------------
 LibreEol is an innovative online assessment system based on HTML5, CSS2/3, PHP7 and Ajax <br>
 LibreEol is an open source software to create online quizzes, tests and exams  <br>
-LibreEOL allows to carry out tests related to exams of various type (University courses, professional certifcations, language skill assessment, etc) <br>
-The E-assessment is foundamental in modern teaching/e-learning approaches, in fact it ensures: <br>
+LibreEOL allows to carry out tests related to exams of various type (University courses, professional certifications, language skill assessment, etc) <br>
+The E-assessment is fundamental in modern teaching/e-learning approaches, in fact it ensures: <br>
 * The deployment of exams in a very fast way, particularly in cases where the number of students are very high <br>
 * A standardization of tests carried out by teachers <br>
-* A simplifcation in tests deployment procedures <br>
+* A simplification in tests deployment procedures <br>
 * A process speed up in publishing the results <br>
 
 LibreEol is a web application that represents a complete environment for performing the e-assessment of a large number of students who access the system from computer labs, under the control and the supervision of the examiner/teacher.  <br>
-Presently it has 10 diferent types of questions with which the teacher can express questions and responses <br>
+Presently it has 10 different types of questions with which the teacher can express questions and responses <br>
 Each student is assigned an individual test.  <br>
 Each Exam has associated a univocal password the student has to specify to access the test. <br>
 The questions of the test are flushed up from a set of questions the teacher defined for the topics of the named subject, classifying each question according to 3 levels of difficulty (low, medium, high).  <br>
