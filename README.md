@@ -1,5 +1,5 @@
 # LibreEOL
-Developed and verified by Damiano Perri 2016-2021 , Osvaldo Gervasi and Marco Simonetti
+Developed and verified by Damiano Perri (2016-2021) , Osvaldo Gervasi and Marco Simonetti (2020-2021)
 
 URL:  https://www.libreeol.org   <br>
 URL:  https://echemtest.libreeol.org   <br>
