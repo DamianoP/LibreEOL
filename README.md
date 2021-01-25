@@ -4,7 +4,7 @@ Developed and verified by Damiano Perri (2016-2021) , Osvaldo Gervasi and Marco 
 URL:  https://www.libreeol.org   <br>
 URL:  https://echemtest.libreeol.org   <br>
 Version 2.7.4 - 21/06/2019 on GitHub   <br>
-Version 3.4.x on online websites - 31/01/2021   <br>
+Version 3.x.y on online websites - 31/01/2021   <br>
 
 Other developers who have contributed in the past years: Alessandro Moretti, Cristiano Regni, Emanuele Gragnoli , Giovanni Scieri, Luca Caprini , Matteo Botticchia , Riccardo Gai , Tommaso Giorni
 <br>
