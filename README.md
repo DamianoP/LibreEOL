@@ -6,7 +6,7 @@ URL:  https://echemtest.libreeol.org   <br>
 Version 2.7.4 - 21/06/2019 on GitHub   <br>
 Version 3.X.Y - 2021 on online websites   <br>
 
-Other developers who have contributed in the past years: Alessandro Moretti, Cristiano Regni, Emanuele Gragnoli , Giovanni Scieri, Luca Caprini , Matteo Botticchia , Riccardo Gai , Tommaso Giorni
+More information: <a href="https://www.libreeol.org/info/index.php?langs=en">here</a>
 <br>
 
 Description
