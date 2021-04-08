@@ -37,15 +37,15 @@ Screenshot
 --------------------
 The exams page:
 <br>
-<img width="600" height="290" src="tmp/img1.png?raw=true">
+<img width="600" height="290" src="tmp/img1.jpg?raw=true">
 
-The home page:
+Registered students (example):
 <br>
-<img width="600" height="290" src="tmp/img2.png?raw=true">
+<img width="600" height="290" src="tmp/img2.jpg?raw=true">
 
 A student's test:
 <br>
-<img width="600" height="290" src="tmp/img3.png?raw=true">
+<img width="600" height="290" src="tmp/img3.jpg?raw=true">
 
 
 Third-party Software
