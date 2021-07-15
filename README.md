@@ -8,7 +8,10 @@ Version 3.X.Y - 2021 on online websites   <br>
 
 More information: <a href="https://www.libreeol.org/info/index.php?langs=en">here</a>
 <br>
-
+<br>
+If you like LibreEOL you can decide to make a donation:<br>
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/donate?hosted_button_id=6YW9SCCM7JB7L)
+<br>
 Description
 --------------------
 LibreEOL is an innovative online assessment system based on HTML5, CSS2/3, PHP7 and Ajax <br>
