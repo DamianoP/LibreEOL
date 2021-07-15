@@ -47,10 +47,10 @@ Registered students (example):
 A student's test:
 <br>
 <img width="600" height="290" src="tmp/img3.jpg?raw=true">
-<br>
+<br><br>
 If you like LibreEOL you can decide to make a donation:<br>
 [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/donate?hosted_button_id=6YW9SCCM7JB7L)
-<br>
+<br><br>
 Third-party Software
 --------------------
 
