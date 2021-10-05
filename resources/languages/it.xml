@@ -612,4 +612,36 @@
   <text id="ttPrivacy2">normativa sulla privacy ECTN</text>
   <text id="ttPrivacy3">Desidero essere informato sulla possibilità di ottenere un Certificato di Competenza Individuale</text>
   <text id="ttDemoTest">Test di prova</text>
+  
+  <!--FILL IN THE BLANKS-->
+  <text id="ttAlertFB">ATTENZIONE: questa tipologia di domanda prevede l'uso di almeno una casella di testo</text>
+  <text id="ttEditAnswer">Modifica risposta</text>
+  <text id="ttAlert1FB">ATTENZIONE: Le varie traduzioni non contengono lo stesso numero di caselle di testo. Ricontrollare.</text>
+  <text id="ttHint">Suggerimento</text>
+  <text id="ttHintHelp">In questa schermata è possibile aggiungere le risposte che il candidato dovrà inserire in fase di esame</text>
+  <text id="ttHintHelpScoreRight">Punteggi risposta esatta:</text>
+  <text id="ttHintHelpScoreWrong">Punteggi risposta sbagliata:</text>
+  <text id="ttDefault">Default</text>
+  <text id="ttHintHelp1">: Ad ogni casella sarà assegnato lo stesso punteggio.</text>
+  <text id="ttHintHelp2">: L'utente potrà scegliere i punteggi da attribuire ad ogni casella.</text>
+  <text id="ttPleaseNote">N.B.</text>
+  <text id="ttHintHelp3">Per attivare una domanda la somma totale dei punteggi DEVE essere uguale ad uno.</text>
+  <text id="ttHintHelp4">: Nessuna detrazione in nessuna casella.</text>
+  <text id="ttHintHelp5">: L'utente potrà scegliere se assegnare o meno una detrazione del punteggio.</text>
+  <text id="ttFull">Pieno</text>
+  <text id="ttHintHelp6">sarà detratto il punteggio intero relativo alla casella corrispondente.</text>
+  <text id="ttEmptyLanguageFB">Per gestire questa lingua si prega di salvare prima una traduzione della domanda</text>
+  <text id="ttErrorEmptyAnswer">Non puoi salvare una risposta vuota</text>
+  <text id="ttErrorMaxLength">Lunghezza massima consentita: 200 caratteri</text>
+  <text id="ttErrorAlreadyExists">Attenzione:questa risposta è già presente</text>
+  <text id="ttDeleteAnswerFB">La risposta verrà definitivamente eliminata. Continuare?</text>
+  <text id="ttConfirmDeleteFBItem">I dati relativi alle caselle rimosse nella lingua principale saranno cancellati insieme a TUTTI i dati delle relative traduzioni. Sei sicuro di voler continuare?</text>
+  <text id="ttUpdateQuestionFB">Domanda aggiornata correttamente</text>
+  <text id="ttElement">Elemento</text>
+  <text id="ttPositiveFB">Positivo:</text>
+  <text id="ttNegative">Negativo</text>
+  <text id="ttTotalScore">Punteggio totalizzato</text>
+  <text id="ttAcceptedAnswers">Risposte accettate</text>
+  <text id="ttHelpPanelFB">In questo pannello è possibile inserire le risposte che il candidato dovrà inserire in fase di esame.</text>
+  <text id="ttHelpPanelFB1">Punteggi: Tutte le caselle presenti nella domanda avranno lo stesso punteggio nel caso sia data la risposta esatta. Non vi sarà invece nessuna detrazione in caso di risposta sbagliata (Il punteggio sarà zero).</text>
 </language>
