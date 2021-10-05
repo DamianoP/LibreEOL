@@ -1,7 +1,7 @@
 <?php
 /**
  * File: QT_OC.php
- * User: Anis
+ * User: Anis Ben Hamida
  * Date: 02/03/2021
  * Desc: Class for OnClick questions
  */
