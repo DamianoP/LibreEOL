@@ -612,4 +612,10 @@
   <text id="ttPrivacy2">normativa sulla privacy ECTN</text>
   <text id="ttPrivacy3">Desidero essere informato sulla possibilità di ottenere un Certificato di Competenza Individuale</text>
   <text id="ttDemoTest">Test di prova</text>
+  <text id="ttQTOC">Labels</text>
+  <text id="ttQTOCDescription">The question with labels allows to the participant to interact with a text with missing words by the use of labels.</text>
+  <text id="ttNoPosOC">No Position</text>
+  <text id="ttPosition">Position</text>
+  <text id="ttOCInstructions">Instructions for the question with labels:\n    • Left click on a label to select it\n    • Left click on a empty space to insert the selected label\n    • Left click on a label to swap it with the selected label\n    • Right click to remove a label from the text</text>
+
 </language>
