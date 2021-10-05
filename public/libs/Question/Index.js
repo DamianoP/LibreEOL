@@ -310,12 +310,33 @@ function showQuestionInfo(selectedQuestion) {
 //                alert(data);
                 $("body").append(data);
                 newLightbox($("#questionInfo"), {});
+                doSomethingWithType(questionsTable.row(questionRowSelected).data()[qtci.typeID]);
             }
         },
         error : function (request, status, error) {
             alert("jQuery AJAX request error:".error);
         }
     });
+}
+
+/**
+ *  @name   doSomethingWithType
+ *  @descr  function to add some code if is needed with a specific question type
+ *  @param  type     string      type of question
+ */
+function doSomethingWithType(type){
+    //FB: create an hidden input tag to identify which id's are present at init. So then when i have to save question i know which id's i have to create and delete
+    if (type=="FB"){
+        // matching= array with index=language and content=array of id's present in that language
+        var matching=new Array();
+        $("textarea[id^=qt]").each(function (){
+            matching[$(this).attr("id").split("qt")[1]] = $(this).val().match(/(?<=\<input data-id=.@==@=@==@)(.*?)(?=@==@=@==@. name=.fb_item. type=.text. \/>)/g);
+        });
+        if ($(".idAtInitFB").length){
+            $(".idAtInitFB").remove();
+        }
+        $("body").append("<input type='hidden' class='idAtInitFB'  value='"+JSON.stringify(matching)+"'>");
+    }
 }
 
 /**
@@ -440,6 +461,28 @@ function createCKEditorInstance(instance){
     });
 }
 
+
+function createCKEditorInstance_FB(instance){
+    destroyAllCKEditorInstances();
+    var roxyFileman = '/fileman/index.html';
+    var onchange = null;
+    switch(instance.split("t")[0]){
+        case "q" : onchange = function() { this.updateElement(); questionEditing = true; }; break;
+        case "a" : onchange = function() { this.updateElement(); answerEditing = true; }; break;
+        default : alert("CKEditor creation error");
+    }
+    CKEDITOR.replace(instance, {
+        allowedContent : true,
+        removePlugins:'resize,image,htmlbuttons,video,sourcearea,tableselection,tabletools,table,link,eqneditor,iframe,powrformbuilder,preview,blockquote,liststyle,list,placeholder,horizontalrule,pagebreak,filebrowser,popup,hkemoji,a11yhelp,forms',
+        filebrowserBrowseUrl:roxyFileman,
+//        filebrowserUploadUrl:roxyFileman,
+        filebrowserImageBrowseUrl:roxyFileman+'?type=image',
+//        filebrowserImageUploadUrl:roxyFileman+'?type=image',
+        on: { change: onchange }
+    });
+}
+
+
 function closeQuestionTypeSelect(){
     closeLightbox($('#newQuestionTypeSelect'));
 }
@@ -457,3 +500,6 @@ function helpjs(){
                      .dialog("open");
     $(".ui-dialog").css("background", "url('"+imageDir+"helpDialog.png')");
 }
+
+
+
