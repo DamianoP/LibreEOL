@@ -222,6 +222,11 @@ class StudentController extends Controller{
             if((isset($_POST['questions'])) && (isset($_POST['answers']))){
                 $questions = json_decode($_POST['questions'], true);
                 $answers = json_decode($_POST['answers'], true);
+                
+                foreach ($answers as &$item){
+                   $item=htmlspecialchars($item,ENT_NOQUOTES);
+                   $item=str_replace("'","&#39;",$item);
+               }
 
                 if($db->qUpdateTestAnswers($_SESSION['idSet'],$idLang, $questions, $answers)){
                     if((isset($_POST['submit'])) && ($_POST['submit'] == "true")){      // Close test
