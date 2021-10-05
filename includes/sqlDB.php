@@ -3905,6 +3905,54 @@ class sqlDB {
 
 
 
+/**
+     * @name    qSelectLike
+     * @param   $tableName      String          Table to search
+     * @param   $columnName     String          Field to search
+     * @param   $value          String          Value to search Like
+     * @param   $order          String          [ ALL=%value% , LEFT=%value , RIGHT=value%]
+     * @return  Boolean
+     * @descr   Search into a table a LIKE value for a column
+     */
+    public function qSelectLike($tableName, $columnName = '', $value = '', $order = ''){
+        global $log;
+        $ack = true;
+        $this->result = null;
+        $this->mysqli = $this->connect();
+
+        try{
+            $newValue = (is_array($value))? implode(',', $value) : $value;
+
+            $data = $this->prepareData(array($tableName, $columnName, $newValue, $order));
+
+            $query = "SELECT * FROM $data[0]";
+            if(($columnName != '') && ($value != '')) {
+                if ($order=="ALL")
+                    $query .= " WHERE $data[1] LIKE '%$data[2]%'";
+                else if ($order=="LEFT")
+                    $query .= " WHERE $data[1] LIKE '%$data[2]'";
+                else if ($order=="RIGHT")
+                    $query .= " WHERE $data[1] LIKE '$data[2]%'";
+                else{
+                                $ack = false;
+                                $log->append(__FUNCTION__." : "."order flag doesn't set properly. Only [ALL,LEFT,RIGHT] accepted");
+                            }
+            }
+
+            $this->execQuery($query);
+        }catch(Exception $ex){
+            $ack = false;
+            $log->append(__FUNCTION__." : ".$this->getError());
+        }
+
+        return $ack;
+    }
+
+
+
+
+
+
 
     /**
      * @name    qSelectTwoArgs
