@@ -2621,4 +2621,106 @@ a.red,a.delete:hover{
 a.inactive:hover{
     background-color:#DEDEDE ;
 }
+.droptarget {
+    display: inline-flex;
+    padding: 3px;
+    vertical-align:middle;
+    min-height: 16px;
+    min-width: 40px;
+    width: fit-content;
+    block-size: fit-content;
+    border-radius: 5px;
+    border: solid 1px #aaa;
+    color: #000;
+    background-color: #ffffff;
+    text-align: center;
+    transition: box-shadow .1s;
+    clear: both;
+}
+.droptarget:hover {
+    background-color: #8ed3f3;
+    box-shadow: 0 0 4px #35455d;
+    cursor:pointer;
+}
+.answerOC {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: solid 1px #aaa;
+    color: #000;
+    background-color: #ffffff;
+    text-align: center;
+    margin-right: 5px;
+    transition: box-shadow .1s;
+}
+.answerOC:hover {
+    background-color: #8ed3f3;
+    box-shadow: 0 0 4px #35455d;
+    cursor:pointer;
+}
+
+.activeOC {
+    background-color: #8ed3f3;
+    box-shadow: 0 0 4px #35455d;
+}
+.TableOC{
+    width: 90%;
+    height: fit-content;
+    border: #000000 3px;
+}
+.exmplInputOC{
+    vertical-align:middle;
+    border-radius: 5px;
+    border:1px black solid;
+    pointer-events: none;
+    height: 14px;
+    width: 40px;
+    margin-right: 1px;
+}
+.questionTextOC{
+    min-height: 150px;
+    width:98.4%;
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 1.1em;
+    color: #222222;
+    border: solid 1px #686868;
+    border-radius: 5px;
+    background-color: #e6e6e6;
+    padding: 8px 4px 8px 8px;
+    text-align: left;
+    vertical-align: text-top;
+}
+.questionTextOC hr{
+    margin-left: -8px;
+    margin-right: -4px;
+    border-color: #686868;
+    border: solid 0.5px;
+}
+.questionTextOC h3{
+    font-variant: small-caps;
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 3px;
+}
+.infoButtonOCContainer{
+    width: 5%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: right;
+}
+.infoButtonOC{
+    margin-right: 5px;
+    height: 20px;
+    width: 20px;
+}
+.questionSubTextOC{
+    width: 95%;
+    display: inline-block;
+}
+
 
