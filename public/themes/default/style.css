@@ -2622,3 +2622,256 @@ a.inactive:hover{
     background-color:#DEDEDE ;
 }
 
+
+/*-------------------------------------------------------------------------------FILL IN THE BLANKS----------------------------------------------*/
+#contentAnswerFB{
+    width:100%;
+    table-layout: fixed;
+    border: none;
+}
+#contentAnswerFB tr td{
+    word-wrap:break-word
+}
+.answerHeaderFB{
+    height: 40px;
+}
+
+.tbl-headerFB{
+    height: 40px;
+}
+.tbl-contentFB{
+    height:300px;
+    overflow-x:auto;
+    margin-top: 0px;
+    border: 1px solid rgba(255,255,255,0.3);
+    background-color: white;
+    border-radius: 0 0 3px 3px ;
+
+}
+
+
+#answersTablecountinginerFB th{
+    padding: 20px 15px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 15px;
+    color: black;
+    text-transform: uppercase;
+}
+#answersTablecountinginerFB td{
+    text-align: left;
+    vertical-align:middle;
+    font-weight: 300;
+    font-size: 12px;
+    color: black;
+    border-bottom: solid 1px #c7c7c7;
+}
+#answersTablecountinginerFB td.answersMenuFB {
+    padding-top: 25px;
+    padding-bottom: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 16px;
+}
+
+#answersTablecountinginerFB td.renderItemFB {
+    font-size: 15px;
+     padding-left: 15px;
+ }
+
+
+#answerInfoFB{
+    margin-top: 1px;
+    width: 830px;
+    border: 1px solid #686868;
+    border-radius: 7px;
+    position: relative;
+    left: -5px;
+}
+
+.newAnswer_FB:hover{
+    cursor: pointer;
+    transform: scale(1.1)
+
+}
+.newAnswer_FB{
+    margin-top: 2px;
+    width: 70px;
+    height: 24px;
+    border: 1px #dbd6d6 solid;
+    border-radius: 3px;
+    text-align: center;
+    padding: 0px;
+    margin-bottom: 2px;
+    margin-right: 40px;
+    float: right;
+}
+
+
+.listAnswerFB{
+width:200px;
+height:26px;
+float: left;
+border-radius: 5px;
+}
+
+.listAnswerFB option{
+    text-align: center;
+    font-size: 16px;
+}
+
+.updateAnswerFB{
+    margin-top: 2px;
+    width: 70px;
+    height: 24px;
+    border: 1px #dbd6d6 solid;
+    border-radius: 3px;
+    text-align: center;
+    padding: 0px;
+    margin-bottom: 2px;
+    pointer-events: none;
+    margin-left: 10px;
+}
+
+.updateAnswerFB:hover{
+    cursor: pointer;
+}
+
+#header1FB{
+    font-family: "Times New Roman";
+    border-radius: 5px 0 0px 0px ;
+    float: left;
+    width: 45%;
+    background-color: #6dbf6f;}
+
+
+#header3FB{
+    font-family: "Times New Roman";
+    border-radius: 0px 5px 0px 0px ;
+    float: left;
+    width: 55%;
+    background-color: #6dbf6f;
+}
+
+div.wideFB {
+    clear: left;
+}
+.renderItemFB{
+    width: 45%;
+
+}
+.answersMenuFB{
+    width: 55%;
+
+}
+
+
+.infoAnswerFB{
+  width: 100%;
+    text-align: center;
+    color: black;
+    text-decoration: underline;
+    font-family: "Arial";
+    background-color: white;
+    font-size: xx-large;
+    height:301px;
+    margin-top: 0px;
+    background-color: white;
+    border-radius: 0px 0px 10px 10px ;
+
+
+
+}
+
+
+
+a.disabled {
+    pointer-events: none;
+    cursor: default;
+}
+
+
+
+.help_FB{
+    float: right;
+    margin-right: 8px;
+    margin-top: 3px;
+
+}
+
+.help_FB text:hover{
+    cursor: pointer;
+    transform: scale(1.1);!important;
+    fill:#FFBD07;!important;
+}
+
+
+
+.answerback_FB{
+    padding-top: 10px;
+    padding-right: 24px;
+    float: right;
+    width: 20px;
+    height: 20px;
+}
+.answerback_FB:hover{
+    cursor: pointer;
+    transform: scale(1.1)
+}
+
+
+.update_FB{
+    padding-top: 10px;
+    padding-right: 24px;
+    float: right;
+    width: 20px;
+    height: 20px;
+}
+.update_FB:hover{
+    cursor: pointer;
+    transform: scale(1.1)
+}
+
+.deleteAnswer{
+    float: left;
+    margin-left: 30px;
+    text-align: center;
+    margin-right: 15px;
+    height: 25px;
+    width: 70px;
+    background-color: #dd4646;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: whitesmoke;
+    font-weight: bold;
+}
+.saveBoxAnswerFB:hover{
+    cursor: pointer;
+    transform: scale(1.1)
+}
+.saveBoxAnswerFB{
+
+    margin-right: 30px;
+    text-align: center;
+    margin-left: 15px;
+    height: 25px;
+    width: 70px;
+    background-color: #0d3b7e;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: whitesmoke;
+    font-weight: bold;
+    padding: 0px;
+}
+.deleteUpdateAnswer:hover{
+    cursor: pointer;
+    transform: scale(1.1)
+}
+
+#cke_25 { width: 100px; }
+.cke_button__fillblank_label {
+                                           display: inline !important
+                                       }
+
+
+
