@@ -617,4 +617,36 @@
   <text id="ttPrivacy2">ECTN Privacy Policy</text>
   <text id="ttPrivacy3">I wish to be informed on the possibility of obtaining an Individual Proficiency Certificate</text>
   <text id="ttDemoTest">Demo test</text>
+  
+  <!--FILL IN THE BLANKS-->
+  <text id="ttAlertFB">WARNING: this type of question requires the use of at least one text box</text>
+  <text id="ttEditAnswer">Edit answer</text>
+  <text id="ttAlert1FB">WARNING: The various translations do not contain the same number of text boxes. Check again.</text>
+  <text id="ttHint">Hint</text>
+  <text id="ttHintHelp">Text that will be shown to user during the exam relating to a specific box</text>
+  <text id="ttHintHelpScoreRight">Score right answer:</text>
+  <text id="ttHintHelpScoreWrong">Score wrong answer:</text>
+  <text id="ttDefault">Default</text>
+  <text id="ttHintHelp1">:  Every box will have same score.</text>
+  <text id="ttHintHelp2">: User can choose score for every box.</text>
+  <text id="ttPleaseNote">N.B.</text>
+  <text id="ttHintHelp3">To activate a question the total sum of the scores MUST be equal to one.</text>
+  <text id="ttHintHelp4">: No detraction in any box.</text>
+  <text id="ttHintHelp5">: User can choose whether or not to assign a deduction</text>
+  <text id="ttFull">Full</text>
+  <text id="ttHintHelp6">the whole score for the corresponding box will be deducted.</text>
+  <text id="ttEmptyLanguageFB">For handle this language you have to save a translation of the question before</text>
+  <text id="ttErrorEmptyAnswer">You can't save an empty answer</text>
+  <text id="ttErrorMaxLength">Max length allowed: 200 characters</text>
+  <text id="ttErrorAlreadyExists">Warning: this answer already exists</text>
+  <text id="ttDeleteAnswerFB">The answer will be deleted. Continue?</text>
+  <text id="ttConfirmDeleteFBItem">The data relating to the boxes removed in the main language will be deleted with ALL the data of the related translations. Are you sure you want to continue?</text>
+  <text id="ttUpdateQuestionFB">Question updated correctly</text>
+  <text id="ttElement">Element</text>
+  <text id="ttPositiveFB">Positive:</text>
+  <text id="ttNegative">Negative</text>
+  <text id="ttTotalScore">Total score</text>
+  <text id="ttAcceptedAnswers">Accepted answers</text>
+  <text id="ttHelpPanelFB">In this panel you can insert the answers that the candidate will have to enter during the examination phase.</text>
+  <text id="ttHelpPanelFB1">Scores: All the boxes in the question will have the same score if the correct answer is given. There will be no deduction in case of wrong answer (the score will be zero).</text>
 </language>
