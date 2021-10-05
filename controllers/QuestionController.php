@@ -421,6 +421,8 @@ class QuestionController extends Controller{
             $log->append(__FUNCTION__." : Params not set");
         }
     }
+    
+    
 
     /**
      *  @name   actionUpdateanswerinfo
@@ -434,6 +436,12 @@ class QuestionController extends Controller{
             $db = new sqlDB();
 
             $translationsA = json_decode($_POST['translationsA'], true);
+            if ($_POST['type']=="FB"){
+                foreach ($translationsA as &$element){
+                    $element=htmlspecialchars($element,ENT_QUOTES);
+                }
+                unset($element);
+            }
             if($translationsA[$_POST['mainLang']]){
                 $updateMandatory = false;
                 $questionID = $newQuestionID = $_POST['idQuestion'];
@@ -483,7 +491,8 @@ class QuestionController extends Controller{
             $log->append(__FUNCTION__." : Params not set - ".var_export($_POST, true));
         }
     }
-    //da finire
+    
+    
     private function actionGetanswersubinfo(){
         global $log;
         global $ajaxSeparator;
