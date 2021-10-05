@@ -379,7 +379,10 @@ function cancelNewQuestion(askConfirmation){
 
 function changeCKEditorQuestionLanguage(tab){
     var idLanguage = $(tab).attr("value");
-    createCKEditorInstance("qt"+idLanguage);
+    if($("#questionType").val()=="FB")
+       createCKEditorInstance_FB("qt"+idLanguage);
+    else
+        createCKEditorInstance("qt"+idLanguage);
     $("#qLangsTabs a.tab").removeClass("active");
     $(tab).addClass("active");
 }
