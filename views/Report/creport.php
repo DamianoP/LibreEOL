@@ -1,101 +1,63 @@
 <?php
-/**
- * File: index.php
- * User: Masterplan
- * Date: 3/21/13
- * Time: 8:44 PM
- * Desc: Admin's Homepage
- */
-
 global $config, $user;
-
 ?>
-<!--THIS SCRIPT IS USED FOR ABILITATE HTML 5 INPUT DATE FOR ALL BROWSER-->
-<!-- cdn for modernizr, if you haven't included it already -->
-<script src="http://cdn.jsdelivr.net/webshim/1.12.4/extras/modernizr-custom.js"></script>
-<!-- polyfiller file to detect and load polyfills -->
-<script src="http://cdn.jsdelivr.net/webshim/1.12.4/polyfiller.js"></script>
-<script>
-    webshims.setOptions('waitReady', false);
-    webshims.setOptions('forms-ext', {types: 'date'});
-    webshims.polyfill('forms forms-ext');
-</script>
-<!-- *********************************************************************-->
+
 <div id="navbar">
     <?php printMenu(); ?>
 </div>
 
 <div id="main">
-    <div id="assesmentHomepage">
-
-        <?php
-        openBox(ttReportCoaching, 'normal', 'report');
-
-        ?>
-
+    <div id="report-homepage">
+        <?php openBox(ttCoachingReport, 'normal', 'report'); ?>
         <div>
-
-            <div id="containertab">
-
-                    <form name="creport" method="post">
-                    <h3><?= ttReportCWelcome ?></h3>
-                    <p><?=ttReportCDescription?></p>
-                    <p><?=ttAOreportSaved?></p>
-
-                    <div class="col-left">
-                        <h4><?=ttReportTyping?><br></h4>
-                        <input type="text" name="word" class="input-report" placeholder="<?=ttReportSearch?>" oninput="printAssesments(this.value,<?php echo(json_encode($user->id)); ?>)">
-                        <br/>
-                        <h4><?=ttReportSearched?><br></h4>
-                        <select size="5" id="crsearched_ass" onchange="printParticipant()" class="select-creport">
-
-                        </select>
+            <div id="report-container">
+                <form id="creport" name="creport" method="post">
+                    <h2><?= ttCoachingReportWelcome ?></h2>
+                    <div class="report-select-container" id="subjects">
+                        <h3><?= ttSelectSubject ?><br></h3>
+                        <?php
+                        $db = new sqlDB();
+                        if ($db->qSubjects($user->id, $user->role)) {
+                            echo '<select size="5" id="crsubject" class="report-select"
+                                    onchange=optionSelected("years");getExamYears();showExams()>';
+                            while ($subject = $db->nextRowAssoc()) {
+                                echo "<option value='$subject[idSubject]'>" . $subject['name'] . "</option>";
+                            }
+                            echo '</select>';
+                        }
+                        ?>
                     </div>
-                    <div class="col-center">
-                        <!--<h4><?=ttReportSearched?><br></h4>
-                        <select size="5" id="crsearched_ass" onchange="printParticipant()" class="select-creport">
-
-                        </select>-->
-                        <h3><?=ttReportDateInterval?></h3>
-                        <?=ttReportDateFrom?> <input type="date" class="input-report" id="crdateIn" oninput="printParticipant()"/>&nbsp;&nbsp;<?=ttReportDateTo?>
-                        <input class="input-report" type="date" id="crdateFn" oninput="printParticipant()"/>
+                    <div class="report-select-container" id="years" hidden>
+                        <h3><?= ttSelectYear ?><br></h3>
+                        <select size="5" id="crsearchedyear" class="report-select-year"
+                                onchange='optionSelected("exam"); showExams()'></select>
                     </div>
-                    <div class="col-center">
-                        <h4><?=ttReportAOSelectPartecipant?><br></h4>
-                        <select size="5" id="crparticipant" class="select-creport">
-
-                        </select>
+                    <div class="report-select-container" id="exam" hidden>
+                        <h3><?= ttSelectExam ?><br></h3>
+                        <select size="5" id="crexam" class="report-select-exam"></select>
                     </div>
-                        <br/>
-                        <hr class="divider"/>
-                        <!--<h3><?=ttReportDateInterval?></h3>
-                        <?=ttReportDateFrom?> <input type="date" class="input-report" id="crdateIn" oninput="printParticipant()"/>&nbsp;&nbsp;<?=ttReportDateTo?>
-                        <input class="input-report" type="date" id="crdateFn" oninput="printParticipant()"/>
-                        <hr/>-->
-                        <h3><?=ttReportAssesmentScore?></h3>
-                        <?=ttActivate?><input type="checkbox" id="assesmentScore" onclick="unlock(this,assesmentMinScore,assesmentMaxScore)">
-                        <br/>
-                        <br/>
-                        <?=ttReportMinimumScore?>
-                        &nbsp;<input class="input-report" type="number" min="0" value="0" oninput="printParticipant()" disabled="disabled" id="assesmentMinScore">
-                        <br/>
-                        <br/>
-                        <?=ttReportMaximumScore?>
-                        <input class="input-report" type="number" min="0" value="30" oninput="printParticipant()" disabled="disabled" id="assesmentMaxScore">
-                        <hr/>
+                    <br/>
+                    <hr class="report-divider"/>
+                    <h3><?= ttFilterByScore ?></h3>
+                    <?= ttActivate ?><input type="checkbox" id="assessmentScore"
+                                            onclick="unlockFilter(this,assessmentMinScore,assessmentMaxScore)">
+                    <br/><br/>
+                    <?= ttMinimumScore ?>
+                    <input class="report-input" type="number" min="0" max="30" value="0" disabled
+                           id="assessmentMinScore">
+                    <br>
+                    <br>
+                    <?= ttMaximumScore ?>
+                    <input class="report-input" type="number" min="0" max="30" value="30" disabled
+                           id="assessmentMaxScore">
+                    <hr/>
                     <div id="tabsbutton">
-                        <a class="normal button rSpace" id="next" onclick="transferData(assesmentMinScore.value,assesmentMaxScore.value)"><?=ttNext?></a>
+                        <a class="report-button" id="next" onclick="transferData()"><?= ttNext ?></a>
                     </div>
-
                 </form>
             </div>
-
         </div>
-
-        <?php
-        closeBox();
-        ?>
-
+        <?php closeBox(); ?>
     </div>
     <div class="clearer"></div>
 </div>
