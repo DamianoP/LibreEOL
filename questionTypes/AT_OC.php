@@ -39,11 +39,18 @@ class AT_OC extends Answer {
         ?>
 
         <dl class="dropdownInfo scoreOC tSpace right" id="answerScore">
+
             <dt class="tSpace writable">
                 <?php
+                $spaces = 0;
+                $db1 = new sqlDB();
+                if(($db1->qSelectTwoArgs("TranslationQuestions", "fkQuestion", $this->get('fkQuestion'), "fkLanguage", $this->get("fkLanguage"))) && ($translation = $db1->getResultAssoc())){
+                    $text = $translation[0]['translation'];
+                    $spaces = preg_match_all("/<\s* input [^>]+ >/xi", $text);
+                };
                 $score = $this->get('score');
-                if($score == 0 || $score == null || !isset($score)){
-                    echo "<span>Nessuna Posizione<span class='value'>0</span></span>";
+                if($score == 0 || $score == null || !isset($score) || $score>$spaces){
+                    echo "<span>".ttNoPosOC."<span class='value'>0</span></span>";
                 }
                 else {
                     $position = explode("*",$score)[0];
@@ -54,18 +61,14 @@ class AT_OC extends Answer {
             <dd>
                 <ol>
                     <?php
-                    session_start();
-                    if(isset($_SESSION['counter'])){
-                        $numberItemOC = $_SESSION['counter'];
-                        $scoreSingle = round(1/($numberItemOC-1),2);
-                        echo "<li>".ttNoPosOC."<span class=\"value\">0</span></li>";
+                        $numberItemOC = $spaces;
+                        $scoreSingle = round(1/($numberItemOC),2);
+                        echo "<li>".ttNoPosOC."<span class='value'>0</span></li>";
                         if($numberItemOC != 0) {
-                            for ($i = 1; $i < $numberItemOC; $i++) {
-                                echo "<li>" . $i . "<span class=\"value\">" . $i . "*" . $scoreSingle . "</span></li>";
+                            for ($i = 1; $i <= $numberItemOC; $i++) {
+                                echo "<li>" . $i . "<span class='value'>" . $i . "*" . $scoreSingle . "</span></li>";
                             }
                         }
-                    }
-                    unset($element);
                 ?>
                 </ol>
             </dd>
