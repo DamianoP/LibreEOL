@@ -87,8 +87,6 @@ class QT_OC extends Question {
                     $text = preg_replace_callback($pattern, function($m) use (&$counter) {
                         return "<span class=\"droptarget\" style=\"pointer-events: none\"></span>" . "<sub><font color='0f4c81'>" . $counter++ . "</font></sub>";
                         }, $text);
-                    session_start();
-                    $_SESSION['counter'] = $counter;
                     echo "<div class='questionTextOC'>
                             <h3>".ttQuestion."</h3>
                             <hr>
