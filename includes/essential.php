@@ -43,7 +43,7 @@ function getQuestionTypes(){
         'NM',       # Numeric
         'TM',       # Text Match
         'HS',       # Hotspot
-        'PL',       # Pull Down
+        //'PL',       # Pull Down
         'FB',       # Fill In Blanks
 
     );
