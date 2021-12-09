@@ -12,7 +12,7 @@
  *----------------------------------*/
 session_start();
 // System version
-$config['systemVersion'] = '2.7.4';
+$config['systemVersion'] = '2.7.5';
 // System title
 $config['systemTitle'] = 'LibreEOL - Exams On Line';
 // System home website (used for emails)

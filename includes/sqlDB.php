@@ -2904,6 +2904,8 @@ class sqlDB {
         $this->result = null;
         $this->mysqli = $this->connect();
         try{
+            $scoreFinal=round($scoreFinal,2);
+            $scoreTest=round($scoreTest,2);
             $submitted = ($scoreTest == null)? false : true;
             $corrected = (count($correctScores) == 0)? false : true;
             $queries = array();
@@ -11749,7 +11751,7 @@ class sqlDB {
                       Users.name,
                       Users.surname,
                       sum(score) as punteggio,
-                      TestSettings.scoreType/(TestSettings.questions/Topics_TestSettings.numQuestions) as MaxScore
+                      TestSettings.scoreType/(TestSettings.questions/count(Topics.idTopic)) as MaxScore
                     from 
                       Subjects,Tests,Exams,TestSettings,Users,History,Questions,Topics,Topics_TestSettings
                     where 
@@ -11783,7 +11785,7 @@ class sqlDB {
                        and 
                        Tests.idTest='$idTest'
                     group by Tests.idTest,Topics.name
-                    order by Topics";
+                    order by Topics.name";
             return $this->execQuery($query);
         }catch(Exception $ex){
             $ack = false;

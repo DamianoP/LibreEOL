@@ -53,7 +53,7 @@ function confirmTest(askConfirmation){
         });
 
         var maxScore = parseFloat($("#maxScore").val());
-        var scoreFinal = $("#scorePost").text();
+        var scoreFinal = $("#scorePost").text().split("/")[0];
         if((scoreFinal == maxScore) && ($("#scoreLaudae").prop("checked")))
             scoreFinal = maxScore + 1;
         $.ajax({

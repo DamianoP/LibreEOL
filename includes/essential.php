@@ -236,7 +236,7 @@ function adminMenu(){
             <li><a href="index.php?page=admin/editgroup"><?= ttEditGroup ?>/<?= ttSubgroup ?></a></li>
         </ul>
     </li>
-    <li><a href="<?= $config['systemFileManagerDir']?>filemanager.php?type=certificate"><?= ttCertificates ?></a></li>
+    <!---<li><a href="<?= $config['systemFileManagerDir']?>filemanager.php?type=certificate"><?= ttCertificates ?></a></li>--->
     <li>
         <a class="trigger"><?= ttSystem ?></a>
         <ul class="subnav">
@@ -281,9 +281,8 @@ function teacherMenu(){
             <li><a href="index.php?page=exam/settings"><?= ttSettings ?></a></li>
         </ul>
     </li>
-    <li><a href="index.php?page=report"><?= ttReport ?></a></li>
+    <!---<li><a href="index.php?page=report"><?= ttReport ?></a></li>---->
     <li><a href="index.php?page=admin/profile"><?= ttProfile ?></a></li>
-    <li><a href="index.php?page=admin/errorquestion" > <?=ttErrorquestion ?></a></li>
 
 
 <?php
@@ -313,9 +312,8 @@ function eteacherMenu(){
             <li><a href="index.php?page=exam/settings"><?= ttSettings ?></a></li>
         </ul>
     </li>
-    <li><a href="index.php?page=report"><?= ttReport ?></a></li>
+    <!---<li><a href="index.php?page=report"><?= ttReport ?></a></li>---->
     <li><a href="index.php?page=admin/profile"><?= ttProfile ?></a></li>
-    <li><a href="index.php?page=admin/errorquestion" > <?=ttErrorquestion ?></a></li>
 
 
 <?php
@@ -339,9 +337,8 @@ function examinerMenu(){
             <li><a href="index.php?page=exam/exams"><?= ttMyExams ?></a></li>
         </ul>
     </li>
-    <li><a href="index.php?page=report"><?= ttReport ?></a></li>
+    <!---<li><a href="index.php?page=report"><?= ttReport ?></a></li>---->
     <li><a href="index.php?page=admin/profile"><?= ttProfile ?></a></li>
-    <li><a href="index.php?page=admin/errorquestion" > <?=ttErrorquestion ?></a></li>
 
 
 <?php
@@ -370,10 +367,9 @@ function adminTeacherMenu(){
             <li><a href="index.php?page=exam/settings"><?= ttSettings ?></a></li>
         </ul>
     </li>
-    <li><a href="index.php?page=report"><?= ttReport ?></a></li>
+    <!---<li><a href="index.php?page=report"><?= ttReport ?></a></li>---->
     <li><a href="index.php?page=admin/profile"><?= ttProfile ?></a></li>
     <li><a href="index.php?page=admin" style="color: red"><?= ttAdministration ?></a></li>
-    <li><a href="index.php?page=admin/errorquestion" > <?=ttErrorquestion ?></a></li>
 
 <?php
 }
