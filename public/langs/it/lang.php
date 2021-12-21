@@ -103,6 +103,7 @@ define('ttEverywhere' , "Ovunque");
 define('ttExam' , "Esame");
 define('ttExams' , "Esami");
 define('ttExit' , "Uscita");
+define('ttExport' , "Esporta");
 define('ttExtra' , "Extra");
 define('ttExamsArchive' , "Archivia");
 define('ttExamsInProgress' , "Esami in corso");
