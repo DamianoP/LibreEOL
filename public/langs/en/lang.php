@@ -102,6 +102,7 @@ define('ttEverywhere' , "Everywhere");
 define('ttExam' , "Exam");
 define('ttExams' , "Exams");
 define('ttExit' , "Exit");
+define('ttExport' , "Export");
 define('ttExtra' , "Extra");
 define('ttExamsArchive' , "Archive");
 define('ttExamsInProgress' , "Exams in progress");
