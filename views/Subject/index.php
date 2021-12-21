@@ -79,13 +79,14 @@ global $user, $config;
             </table>
         </div>
 
-        <div id="selectPanel" class="hidden">
+        <div id="selectPanel" class="hidden" style="text-align: center">
             <?php
             if($user->role == 'a'){
                 echo '<a class="right normal button" onclick="editSubjectInfo();">'.ttEdit.'</a>';
             }else{
                 echo '<a class="ok button right lSpace" onclick="selectSubject();">'.ttSelectSubject.'</a>
-                      <a class="normal button" onclick="editSubjectInfo();">'.ttEdit.'</a>';
+                      <a class="left normal button" onclick="editSubjectInfo();">'.ttEdit.'</a>
+                      <a class ="normal button" style="background: #9ad717" onclick="exportSubject();">'.ttExport.'</a>';
             }
             ?>
         </div>
