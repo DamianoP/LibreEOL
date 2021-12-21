@@ -238,3 +238,34 @@ function cancelNew(askConfirmation){
         subjectRowEdit =null;
     }
 }
+
+/**
+ *  @name   exportSubject
+ *  @descr  Download the requested subject
+ */
+function exportSubject() {
+
+    let sub = $(".selected").attr("value");
+    $.ajax({
+            url: "index.php?page=export/exportrequest",
+            type: "post",
+            data: {
+                idSubject: sub
+            },
+            success: function (data) {
+                if (data === 'ACK') {
+                    alert('Export request sended: Check your email.');
+                } else {
+                    alert(data);
+                }
+            },
+            error: function (request, status, error) {
+                alert("jQuery AJAX request error:".error);
+            }
+        }
+    );
+    //put the id of the subject in the input field in the form
+    //$("input[name=idSubject]").attr("value", $(".selected").attr("value"));
+    //$("#idSubjectForm").attr("action", "index.php?page=export/exportsubject");
+    //$("#idSubjectForm").submit();
+}
