@@ -129,6 +129,7 @@ define('ttEExamWaiting' , "The operation can not be completed because the exam i
 define('ttEExamsNotArchivedDeleteTopic' , "The operation can not be completed, because at least one not archived exam contains questions from this topic!");
 define('ttEExamsNotArchivedEditTestSettings' , "The operation can not be completed, because these settings are used by at least one not archived exam.");
 define('ttEExamsNotArchivedDeleteTestSettings' , "The operation can not be completed, because these settings are used by at least one not archived exam!");
+define('ttEExport',"The export request was not sent!");
 define('ttEIncorrectField' , "One or more field are not correct!");
 define('ttELogin' , "E-mail and/or Password are not correct!");
 define('ttEMainLanguageEmpty' , "Subject's main language can not be empty!");
@@ -211,6 +212,7 @@ define('ttMExamArchived' , "Exam successfully archived");
 define('ttMExamDeleted' , "Exam successfully deleted");
 define('ttMExamStarted' , "Exam successfully started");
 define('ttMExamStopped' , "Exam successfully stopped");
+define('ttMExportRequestSent',"Export request sent, please check your email");
 define('ttMLanguageCreated' , "Translation successfully created");
 define('ttMLanguageSaved' , "Translation successfully saved");
 define('ttMLanguageUpdated' , "Translation successfully updated");

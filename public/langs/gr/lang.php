@@ -102,6 +102,7 @@ define('ttEverywhere' , "Παντού");
 define('ttExam' , "Εξέταση");
 define('ttExams' , "Εξετάσεις");
 define('ttExit' , "Εξοδος");
+define('ttExport',"εξαγωγή");
 define('ttExtra' , "Επιπλέον");
 define('ttExamsArchive' , "Αρχείο");
 define('ttExamsInProgress' , "Οι εξετάσεις βρίσκονται σε εξέλιξη");
@@ -128,6 +129,7 @@ define('ttEExamWaiting' , "Η λειτουργία δεν μπορεί να ολ
 define('ttEExamsNotArchivedDeleteTopic' , "Η λειτουργία δεν μπορεί να ολοκληρωθεί, επειδή τουλάχιστον μία μη αρχειοθετημένη εξέταση περιέχει ερωτήσεις από αυτό το θέμα!");
 define('ttEExamsNotArchivedEditTestSettings' , "Η λειτουργία δεν μπορεί να ολοκληρωθεί, επειδή αυτές οι ρυθμίσεις χρησιμοποιούνται από τουλάχιστον μία μη αρχειοθετημένη εξέταση.");
 define('ttEExamsNotArchivedDeleteTestSettings' , "Η λειτουργία δεν μπορεί να ολοκληρωθεί, επειδή αυτές οι ρυθμίσεις χρησιμοποιούνται από τουλάχιστον μία μη αρχειοθετημένη εξέταση!");
+define('ttEExport',"Το αίτημα εξαγωγής δεν στάλθηκε!");
 define('ttEIncorrectField' , "Ένα ή περισσότερα πεδία δεν είναι σωστά!");
 define('ttELogin' , "Το ηλεκτρονικό ταχυδρομείο και / ή ο κωδικός πρόσβασης δεν είναι σωστά!");
 define('ttEMainLanguageEmpty' , "Η κύρια γλώσσα του αντικειμένου δεν μπορεί να είναι κενή!");
@@ -210,6 +212,7 @@ define('ttMExamArchived' , "Η εξέταση ολοκληρώθηκε με επ
 define('ttMExamDeleted' , "Η εξέταση διαγράφηκε με επιτυχία");
 define('ttMExamStarted' , "Η εξέταση ξεκίνησε με επιτυχία");
 define('ttMExamStopped' , "Η εξέταση έπαψε επιτυχώς");
+define('ttMExportRequestSent',"Το αίτημα εξαγωγής εστάλη, ελέγξτε το email σας");
 define('ttMLanguageCreated' , "Η μετάφραση δημιουργήθηκε με επιτυχία");
 define('ttMLanguageSaved' , "Η μετάφραση αποθηκεύτηκε με επιτυχία");
 define('ttMLanguageUpdated' , "Η μετάφραση ενημερώθηκε με επιτυχία");
