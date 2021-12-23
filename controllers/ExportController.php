@@ -2,7 +2,7 @@
 
 class ExportController extends Controller
 {
-    public string $defaultAction = 'Index';
+    public $defaultAction = 'Index';
 
     public function executeAction(string $action)
     {
@@ -24,7 +24,7 @@ class ExportController extends Controller
     private function actionExportsubjects()
     {
         include(dirname(__FILE__) . "/../includes/MoodleXMLDocument.php");
-        global $user;
+        global $user, $log;
         $sql = new sqlDB();
         if ($sql->qExportRequests()) {
             $rows = $sql->getResultAssoc();
@@ -47,21 +47,19 @@ class ExportController extends Controller
                     //invio della mail
                     if (!mail($row['email'], 'No-reply. Subject exporting',
                         $this->createMessage("your file requested", $currentSubject, $row['subject']), $headers)) {
-                        echo "errore: email not sended" . error_get_last()['message'] . "\n"; // in caso di errore mostra il messaggio
+                        $log->append(__FUNCTION__." email not sended: " . error_get_last()['message'] . "\n"); // in caso di errore mostra il messaggio
                     } else {
-                        echo "mail sended \n";
-
                         //aggiornamento database
                         if (!$sql->qUpdateExportRequest($row['subject'])) {
-                            echo "UPDATE:\n" . $sql->getError();
+                            $log->append(__FUNCTION__. " update request error: " . $sql->getError());
                         }
                     }
                 } catch (Exception $err) {
-                    echo 'exception: ' . $err->getMessage() . "\nline: " . $err->getLine() . "\ncode: " . $err->getCode() . "\ntrace: " . $err->getTrace();
+                    $log->append(__FUNCTION__. " exception: " . $err->getMessage() . "\nline: " . $err->getLine() . "\ncode: " . $err->getCode() . "\ntrace: " . $err->getTrace());
                 }
             }
         } else {
-            echo $sql->getError();
+            $log->append(__FUNCTION__." query error: ".$sql->getError());
         }
     }
 
@@ -78,7 +76,7 @@ class ExportController extends Controller
 
     private function createSubjectXMLMoodle($idSubject)
     {
-
+        global $log;
         $sql = new sqlDB();
 
         if ($sql->qSubjectQuestionsAndAnswers($idSubject)) {
@@ -94,15 +92,24 @@ class ExportController extends Controller
 
                 if ($currentTopic != $row['idTopic']) {
                     $currentTopic = $row['idTopic'];
-                    $xml->createCategory($row["topicName"], " ", $row['idTopic']);
+                    if(!$xml->createCategory($row["topicName"], " ", $row['idTopic'])){
+                        $log ->append($xml->getError());
+                        die($xml->getError());
+                    }
                 }
 
                 if ($currentQuestion != $row['idQuestion']) {
                     $currentQuestion = $row['idQuestion'];
-                    $xml->createQuestion($row['questionType'], $row['idQuestion'], $row['questionName'], $row['questionText']);
+                    if(!$xml->createQuestion($row['questionType'], $row['idQuestion'], $row['questionName'], $row['questionText'])){
+                        $log ->append($xml->getError());
+                        die($xml->getError());
+                    }
                 }
 
-                $xml->createAnswer($row['idAnswer'], $row['answerText'], $row['answerScore'], "");
+                if(!$xml->createAnswer($row['idAnswer'], $row['answerText'], $row['answerScore'], "")){
+                    $log ->append($xml->getError());
+                    die($xml->getError());
+                }
             }
             return $xml->getDoc();
 
@@ -111,7 +118,7 @@ class ExportController extends Controller
         }
     }
 
-    private function createMessage($mailMessage, $subject, $idSubject)
+    private function createMessage($mailMessage, $subject, $idSubject): string
     {
         $attchmentName = "subject_" . $idSubject . "_" . date("YmdHms") . ".xml";
         $attachment = chunk_split(base64_encode($subject));
@@ -127,7 +134,7 @@ class ExportController extends Controller
         $message .= "Content-Type: application/xml; name= " . $attchmentName . "\r\n";
         $message .= "Content-Disposition: attachment; filename = " . $attchmentName . "\r\n";
         $message .= "Content-Transfer-Encoding: base64\r\n";
-        $message .= "X-Attachment-Id: " . rand(1000, 99999) . "\r\n\r\n";
+        $message .= "X-Attachment-Id: ".$idSubject."\r\n\r\n";
         $message .= $attachment;
 
         return $message;
@@ -139,18 +146,18 @@ class ExportController extends Controller
         return array(
             array(
                 'allow',
-                'actions' => array('Exportsubjects', 'Exportrequest'),
+                'actions' => array('Exportrequest'),
                 'roles' => array('t'),
             ),
             array(
                 'allow',
-                'actions' => array('Exportsubjects', 'Exportrequest'),
+                'actions' => array('Exportrequest'),
                 'roles' => array('e'),
             ),
             array(
                 'allow',
-                'actions' => array('Exportsubjects', 'Exportrequest'),
-                'roles' => array('a', 't'),
+                'actions' => array('Exportsubjects'),
+                'roles' => array('a'),
             ),
             array(
                 'deny',
