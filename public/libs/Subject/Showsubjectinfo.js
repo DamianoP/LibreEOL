@@ -254,13 +254,13 @@ function exportSubject() {
             },
             success: function (data) {
                 if (data === 'ACK') {
-                    alert('Export request sended: Check your email.');
+                    showSuccessMessage(ttMExportRequestSent);
                 } else {
-                    alert(data);
+                    showErrorMessage(ttEExport)
                 }
             },
             error: function (request, status, error) {
-                alert("jQuery AJAX request error:".error);
+                alert("jQuery AJAX request error:".error)
             }
         }
     );
