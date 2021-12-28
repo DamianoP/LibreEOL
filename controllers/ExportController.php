@@ -66,12 +66,20 @@ class ExportController extends Controller
     private function actionExportrequest()
     {
         $idSubject = $_POST['idSubject'];
-        $sql = new sqlDB();
-        if ($sql->qInsertExportRequest($idSubject)) {
-            echo 'ACK';
+
+        $controlSubject = $this->controlSubject($idSubject);
+
+        if ($controlSubject === 'OK') {
+            $sql = new sqlDB();
+            if ($sql->qInsertExportRequest($idSubject)) {
+                echo 'ACK';
+            } else {
+                echo $sql->getError();
+            }
         } else {
-            echo $sql->getError();
+            echo $controlSubject;
         }
+
     }
 
     private function createSubjectXMLMoodle($idSubject)
@@ -138,6 +146,45 @@ class ExportController extends Controller
         $message .= $attachment;
 
         return $message;
+    }
+
+    private function controlSubject($idSubject): string
+    {
+        $currentQuestion = -1;
+        $sql = new sqlDB();
+        if ($sql->qSubjectQuestionsAndAnswers($idSubject)) { // se non sono presenti domande o topic viene considerata vuota
+            $rows = $sql->getResultAssoc();
+            if (empty($rows)) {
+                return 'EMPTYSUB';
+            }
+            for ($i = 0; $i < count($rows); $i++) {
+                $row = $rows[$i];
+                if ($currentQuestion === $row['idQuestion']) {
+                    continue;
+                } else {
+                    $currentQuestion = $row['idQuestion'];
+                }
+
+                if ($row['questionType'] !== 'ES' && $row['idAnswer'] === null) {   //domanda non aperta senza risposte
+                    return 'NOANSWER';
+                }
+
+                if ($row['questionType'] === 'MC' || $row['questionType'] === 'MR') {  //domande di tipo MR e MC con una sola risposta
+                    if ($i + 1 < count($rows)) {
+                        $nextRow = $rows[$i + 1];
+                        if ($currentQuestion !== $nextRow['idQuestion']) {
+                            return "NOEANSWERS";
+                        }
+
+                    } else {
+                        return "NOEANSWERS";
+                    }
+                }
+            }
+            return 'OK';
+        } else {
+            return $sql->getError();
+        }
     }
 
     private function accessRules(): array
