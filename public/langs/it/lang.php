@@ -575,3 +575,6 @@ define('ttPrivacy1', "Ho letto e accetto la");
 define('ttPrivacy2', "normativa sulla privacy ECTN");
 define('ttPrivacy3', "Desidero essere informato sulla possibilità di ottenere un Certificato di Competenza Individuale");
 define('ttDemoTest', "Test di prova");
+define('ttEExportEmptySub', "la materia da esportare è vuota");
+define('ttEExportNoAnswers',"è presente una domanda non essay senza risposte");
+define('ttEExportNotEnAnswers', "non ci sono abbastanza risposte per alcune domande");

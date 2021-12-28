@@ -580,3 +580,6 @@ define('ttPrivacy1' , "I read and accept the");
 define('ttPrivacy2' , "ECTN Privacy Policy");
 define('ttPrivacy3' , "I wish to be informed on the possibility of obtaining an Individual Proficiency Certificate");
 define('ttDemoTest' , "Demo test");
+define('ttEExportEmptySub', "the subject is empty");
+define('ttEExportNoAnswers', "there is a non essay question with no answers");
+define('ttEExportNotEnAnswers', "not enough answers for some questions");

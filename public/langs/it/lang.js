@@ -574,3 +574,6 @@ var ttPrivacy1 = "Ho letto e accetto la";
 var ttPrivacy2 = "normativa sulla privacy ECTN";
 var ttPrivacy3 = "Desidero essere informato sulla possibilità di ottenere un Certificato di Competenza Individuale";
 var ttDemoTest = "Test di prova";
+var ttEExportEmptySub = "la materia da esportare è vuota";
+var ttEExportNoAnswers = "è presente una domanda non essay senza risposte";
+var ttEExportNotEnAnswers = "non ci sono abbastanza risposte per alcune domande";

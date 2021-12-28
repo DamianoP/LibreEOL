@@ -580,3 +580,6 @@ var ttPrivacy1 = "I read and accept the";
 var ttPrivacy2 = "ECTN Privacy Policy";
 var ttPrivacy3 = "I wish to be informed on the possibility of obtaining an Individual Proficiency Certificate";
 var ttDemoTest = "Demo test";
+var ttEExportEmptySub = "the subject is empty";
+var ttEExportNoAnswers = "there is a non essay question with no answers"
+var ttEExportNotEnAnswers = "not enough answers for some questions";
