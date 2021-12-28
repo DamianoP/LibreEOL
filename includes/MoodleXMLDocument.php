@@ -3,16 +3,16 @@
 class MoodleXMLDocument
 {
     private DOMDocument $root;
-    private $currentQuestion;
+    private ?DOMElement $currentQuestion;
     private $quizNode;
-    private string $error;
+    private ?string $error;
 
     public function __construct()
     {
         $this->root = new DOMDocument();
         $this->root->formatOutput = true;
         $this->quizNode = $this->root->createElement("quiz");
-        $this->currentQuestion = $this->root->createElement("temp");
+        $this->currentQuestion = null;
         $this->root->appendChild($this->quizNode);
         $this->error = null;
     }
@@ -24,16 +24,19 @@ class MoodleXMLDocument
 
     public function getError(): ?string
     {
-        if($this->error != null) {
-            return __CLASS__ . " : " . $this->error;
-        }else{
+        if ($this->error != null) {
+            return __CLASS__ . " -> " . $this->error;
+        } else {
             return null;
         }
     }
 
-    public function createCategory($name, $info = "", $idTopic = " "): bool
+    public function createCategory($name, $idTopic, $info): bool
     {
         try {
+            if (empty($idTopic)) {
+                throw new Exception("Category id cannot be null");
+            }
             //question node
             $topic = $this->root->createElement('question');
             $topic->setAttribute("type", "category");
@@ -59,18 +62,22 @@ class MoodleXMLDocument
             //append to quiz node
             $this->quizNode->appendChild($topic);
 
-        } catch (Exception $e) {
+        } catch (Throwable $e) {
             $this->updateError($e, __FUNCTION__);
             return false;
         }
         return true;
     }
 
-    public function createQuestion($type, $id, $name, $text): bool
+    public function createQuestion($type, $id, $name, $text, $genFeedback = null, $defGrade = 1.0000000, $defPenalty = 0.3333333, $corFeed = 'Risposta corretta.', $parCorFeed = 'Risposta parzialmente corretta.', $incorFeed = 'Risposta errata.', $shuffleAnswer = 1, $hidden = 0, $unitGradingType = 0, $unitPenality = 0.1000000, $showUnits = 3, $unitsLeft = 0, $useCase = 0): bool
     {
         try {
+            if($id == null){
+                throw new Exception("Question id cannot be null");
+            }
             //create question
             $question = $this->root->createElement('question');
+
             $question->setAttribute("type", $this->selectType($type));
 
             //question name
@@ -80,98 +87,114 @@ class MoodleXMLDocument
             $question->appendChild($this->questionText($text));
 
             //general feedback
-            $question->appendChild($this->generalFeedbackNode());
+            $question->appendChild($this->generalFeedbackNode($genFeedback));
 
             //default grade
-            $question->appendChild($this->defaultGradeNode());
+            $question->appendChild($this->defaultGradeNode($defGrade));
 
             //penality
             if ($type === 'TF') {
                 $question->appendChild($this->penalityNode(1.0000000));
             } else {
-                $question->appendChild($this->penalityNode());
+                $question->appendChild($this->penalityNode($defPenalty));
             }
 
             // hidden
-            $question->appendChild($this->hiddenNode());
+            $question->appendChild($this->hiddenNode($hidden));
 
             //question properties
             if ($type === 'MC' || $type === 'YN') {
-                $question->appendChild($this->shuffleAnswerNode());
+                $question->appendChild($this->shuffleAnswerNode($shuffleAnswer));
                 $question->appendChild($this->singleNode('true'));
                 $question->appendChild($this->answerNumberingNode("abc"));
-                $question->appendChild($this->correctFeedbackNode());
-                $question->appendChild($this->pCorrectFeedbackNode());
-                $question->appendChild($this->incorrectFeedbackNode());
+                $question->appendChild($this->correctFeedbackNode($corFeed));
+                $question->appendChild($this->pCorrectFeedbackNode($parCorFeed));
+                $question->appendChild($this->incorrectFeedbackNode($incorFeed));
             } elseif ($type === 'MR') {
-                $question->appendChild($this->shuffleAnswerNode());
+                $question->appendChild($this->shuffleAnswerNode($shuffleAnswer));
                 $question->appendChild($this->singleNode());
                 $question->appendChild($this->answerNumberingNode("abc"));
-                $question->appendChild($this->correctFeedbackNode());
-                $question->appendChild($this->pCorrectFeedbackNode());
-                $question->appendChild($this->incorrectFeedbackNode());
+                $question->appendChild($this->correctFeedbackNode($corFeed));
+                $question->appendChild($this->pCorrectFeedbackNode($parCorFeed));
+                $question->appendChild($this->incorrectFeedbackNode($incorFeed));
             } elseif ($type === 'NM') {
-                $question->appendChild($this->unitgradingtypeNode());
-                $question->appendChild($this->unitpenalityNode());
-                $question->appendChild($this->showunitsNode());
-                $question->appendChild($this->unitsleftNode());
+                $question->appendChild($this->unitgradingtypeNode($unitGradingType));
+                $question->appendChild($this->unitpenalityNode($unitPenality));
+                $question->appendChild($this->showunitsNode($showUnits));
+                $question->appendChild($this->unitsleftNode($unitsLeft));
             } elseif ($type === 'TM') {
-                $question->appendChild($this->usecaseNode());
+                $question->appendChild($this->usecaseNode($useCase));
             }
 
             $this->currentQuestion = $question;
             $this->quizNode->appendChild($this->currentQuestion);
 
-        } catch (Exception $e) {
+        } catch (Throwable $e) {
             $this->updateError($e, __FUNCTION__);
             return false;
         }
         return true;
     }
 
-    public function createAnswer($id, $text, $score, $feedback): bool
+    public function createAnswer($id, $text, $score, $feedback = "", $tolerance = 0): bool
     {
         try {
-            $answer = $this->root->createElement("answer");
-            $answer->setAttribute('fraction', $this->scoreFixed($score));
-            if ($this->currentQuestion->getAttribute("type") === "truefalse") {
-                $answer->appendChild($this->textNode($this->textAnswerFixed($score, $text), true));
-            } elseif ($this->currentQuestion->getAttribute("type") === "numerical") {
-                $answer->appendChild($this->textNode($this->textAnswerFixed($score, $text), true));
-                $answer->appendChild($this->toleranceNode());
-            } elseif ($this->currentQuestion->getAttribute("type") === "shortanswer") {
-                $answer->appendChild($this->textNode($this->fixSrcPath($this->textAnswerFixed($score, $text)), true));
-            } else {
-                $answer->appendChild($this->textNode($this->fixSrcPath($this->textAnswerFixed($score, $text)), true));
+            if( $id == null ){
+                //throw new Exception("answer id must be not null");
+                return true;
             }
-            $this->addFileNodes($answer, $text);
-            $answer->appendChild($this->feedbackNode($feedback));
-            $answer->appendChild($this->idNode($id));
-            $this->currentQuestion->appendChild($answer);
-        } catch (Exception $e) {
+            if($this->currentQuestion == null){
+                throw new Exception("cannot create answer without a question, create a question before");
+            }
+
+            if ($this->currentQuestion->getAttribute("type") !== "essay") {
+
+                $answer = $this->root->createElement("answer");
+                $answer->setAttribute('fraction', $this->scoreFixed($score));
+                if ($this->currentQuestion->getAttribute("type") === "truefalse") {
+                    $answer->appendChild($this->textNode($this->textAnswerFixed($score, $text), true));
+                } elseif ($this->currentQuestion->getAttribute("type") === "numerical") {
+                    $answer->appendChild($this->textNode($this->textAnswerFixed($score, $text), true));
+                    $answer->appendChild($this->toleranceNode($tolerance));
+                } elseif ($this->currentQuestion->getAttribute("type") === "shortanswer") {
+                    $answer->appendChild($this->textNode($this->fixSrcPath($this->textAnswerFixed($score, $text)), true));
+                } else {
+                    $answer->appendChild($this->textNode($this->fixSrcPath($this->textAnswerFixed($score, $text)), true));
+                }
+                $this->addFileNodes($answer, $text);
+                $answer->appendChild($this->feedbackNode($feedback));
+                $answer->appendChild($this->idNode($id));
+                $this->currentQuestion->appendChild($answer);
+            }
+        } catch (Throwable $e) {
             $this->updateError($e, __FUNCTION__);
             return false;
         }
         return true;
     }
 
-    private function selectType($type): string
+    private function selectType($type): ?string
     {
-        switch ($type) {
-            case 'MR':
-            case 'YN':
-            case 'MC':
-                return 'multichoice';
-            case 'NM':
-                return 'numerical';
-            case 'TM':
-                return 'shortanswer';
-            case 'ES':
-                return 'essay';
-            case 'TF':
-                return 'truefalse';
-            default:
-                return '';
+        try {
+            switch ($type) {
+                case 'MR':
+                case 'YN':
+                case 'MC':
+                    return 'multichoice';
+                case 'NM':
+                    return 'numerical';
+                case 'TM':
+                    return 'shortanswer';
+                case 'ES':
+                    return 'essay';
+                case 'TF':
+                    return 'truefalse';
+                default:
+                    return $this->checkTypeFormat($type);
+            }
+        } catch (Throwable $e) {
+            $this->updateError($e, __FUNCTION__);
+            return null;
         }
     }
 
@@ -182,7 +205,7 @@ class MoodleXMLDocument
             $name = $this->root->createElement('name');
             $textField = $this->textNode($text, true);
             $name->appendChild($textField);
-        } catch (Exception $e) {
+        } catch (Throwable $e) {
             $this->updateError($e, __FUNCTION__);
         }
         return $name;
@@ -197,7 +220,7 @@ class MoodleXMLDocument
             $textField = $this->textNode($this->fixSrcPath($text), true);
             $qTextNode->appendChild($textField);
             $this->addFileNodes($qTextNode, $text);
-        } catch (Exception $e) {
+        } catch (Throwable $e) {
             $this->updateError($e, __FUNCTION__);
         }
         return $qTextNode;
@@ -214,7 +237,7 @@ class MoodleXMLDocument
                 $textField = $this->root->createTextNode($text);
             }
             $node->appendChild($textField);
-        } catch (Exception $e) {
+        } catch (Throwable $e) {
             $this->error = __FUNCTION__ . $this->errorSummary($e);
         }
         return $node;
@@ -227,7 +250,7 @@ class MoodleXMLDocument
             $node = $this->root->createElement('idnumber');
             $idField = $this->root->createTextNode($id);
             $node->appendChild($idField);
-        } catch (Exception $e) {
+        } catch (Throwable $e) {
             $this->error = __FUNCTION__ . $this->errorSummary($e);
         }
         return $node;
@@ -240,20 +263,20 @@ class MoodleXMLDocument
             $node = $this->root->createElement('feedback');
             $textField = $this->textNode($text, false);
             $node->appendChild($textField);
-        } catch (Exception $e) {
+        } catch (Throwable $e) {
             $this->updateError($e, __FUNCTION__);
         }
         return $node;
     }
 
-    private function shuffleAnswerNode($bool = 1)
+    private function shuffleAnswerNode($bool)
     {
         $node = null;
         try {
             $node = $this->root->createElement('shuffleanswers');
             $textField = $this->root->createTextNode($bool);
             $node->appendChild($textField);
-        } catch (Exception $e) {
+        } catch (Throwable $e) {
             $this->error = __FUNCTION__ . $this->errorSummary($e);
         }
         return $node;
@@ -266,7 +289,7 @@ class MoodleXMLDocument
             $node = $this->root->createElement('single');
             $textField = $this->root->createTextNode($bool);
             $node->appendChild($textField);
-        } catch (Exception $e) {
+        } catch (Throwable $e) {
             $this->error = __FUNCTION__ . $this->errorSummary($e);
         }
         return $node;
@@ -285,7 +308,7 @@ class MoodleXMLDocument
         return $node;
     }
 
-    private function generalFeedbackNode($text = '')
+    private function generalFeedbackNode($text)
     {
         $node = null;
         try {
@@ -294,13 +317,13 @@ class MoodleXMLDocument
             $textField = $this->textNode($this->fixSrcPath($text), false);
             $this->addFileNodes($node, $text);
             $node->appendChild($textField);
-        } catch (Exception $e) {
+        } catch (Throwable $e) {
             $this->updateError($e, __FUNCTION__);
         }
         return $node;
     }
 
-    private function correctFeedbackNode($text = 'Risposta corretta.')
+    private function correctFeedbackNode($text)
     {
         $node = null;
         try {
@@ -309,13 +332,13 @@ class MoodleXMLDocument
             $textField = $this->textNode($this->fixSrcPath($text), false);
             $this->addFileNodes($node, $text);
             $node->appendChild($textField);
-        } catch (Exception $e) {
+        } catch (Throwable $e) {
             $this->updateError($e, __FUNCTION__);
         }
         return $node;
     }
 
-    private function pCorrectFeedbackNode($text = 'Risposta parzialmente corretta.')
+    private function pCorrectFeedbackNode($text)
     {
         $node = null;
         try {
@@ -330,7 +353,7 @@ class MoodleXMLDocument
         return $node;
     }
 
-    private function incorrectFeedbackNode($text = 'Risposta errata.')
+    private function incorrectFeedbackNode($text)
     {
         $node = null;
         try {
@@ -339,146 +362,146 @@ class MoodleXMLDocument
             $textField = $this->textNode($this->fixSrcPath($text), false);
             $this->addFileNodes($node, $text);
             $node->appendChild($textField);
-        } catch (Exception $e) {
+        } catch (Throwable $e) {
             $this->updateError($e, __FUNCTION__);
         }
         return $node;
     }
 
-    private function defaultGradeNode($grade = 1.0000000)
+    private function defaultGradeNode($grade)
     {
         $node = null;
         try {
             $node = $this->root->createElement('defaultgrade');
             $textField = $this->root->createTextNode($grade);
             $node->appendChild($textField);
-        } catch (Exception $e) {
+        } catch (Throwable $e) {
             $this->error = __FUNCTION__ . $this->errorSummary($e);
         }
         return $node;
     }
 
-    private function penalityNode($penality = 0.3333333)
+    private function penalityNode($penality)
     {
         $node = null;
         try {
             $node = $this->root->createElement('penality');
             $textField = $this->root->createTextNode($penality);
             $node->appendChild($textField);
-        } catch (Exception $e) {
+        } catch (Throwable $e) {
             $this->error = __FUNCTION__ . $this->errorSummary($e);
         }
         return $node;
     }
 
-    private function hiddenNode($hidden = 0)
+    private function hiddenNode($hidden)
     {
         $node = null;
         try {
             $node = $this->root->createElement('hidden');
             $textField = $this->root->createTextNode($hidden);
             $node->appendChild($textField);
-        } catch (Exception $e) {
+        } catch (Throwable $e) {
             $this->error = __FUNCTION__ . $this->errorSummary($e);
         }
         return $node;
     }
 
 
-    private function usecaseNode($value = 0)
+    private function usecaseNode($value)
     {
         $node = null;
         try {
             $node = $this->root->createElement('hidden');
             $textField = $this->root->createTextNode($value);
             $node->appendChild($textField);
-        } catch (Exception $e) {
+        } catch (Throwable $e) {
             $this->error = __FUNCTION__ . $this->errorSummary($e);
         }
         return $node;
     }
 
-    private function unitgradingtypeNode($value = 0)
+    private function unitgradingtypeNode($value)
     {
         $node = null;
         try {
             $node = $this->root->createElement('unitgradingtype');
             $textField = $this->root->createTextNode($value);
             $node->appendChild($textField);
-        } catch (Exception $e) {
+        } catch (Throwable $e) {
             $this->error = __FUNCTION__ . $this->errorSummary($e);
         }
         return $node;
     }
 
-    private function unitpenalityNode($value = 0.1000000)
+    private function unitpenalityNode($value)
     {
         $node = null;
         try {
             $node = $this->root->createElement('unitpenality');
             $textField = $this->root->createTextNode($value);
             $node->appendChild($textField);
-        } catch (Exception $e) {
+        } catch (Throwable $e) {
             $this->error = __FUNCTION__ . $this->errorSummary($e);
         }
         return $node;
     }
 
-    private function showunitsNode($value = 3)
+    private function showunitsNode($value)
     {
         $node = null;
         try {
             $node = $this->root->createElement('showunits');
             $textField = $this->root->createTextNode($value);
             $node->appendChild($textField);
-        } catch (Exception $e) {
+        } catch (Throwable $e) {
             $this->error = __FUNCTION__ . $this->errorSummary($e);
         }
         return $node;
     }
 
-    private function unitsleftNode($value = 0)
+    private function unitsleftNode($value)
     {
         $node = null;
         try {
             $node = $this->root->createElement('unitsleft');
             $textField = $this->root->createTextNode($value);
             $node->appendChild($textField);
-        } catch (Exception $e) {
+        } catch (Throwable $e) {
             $this->error = __FUNCTION__ . $this->errorSummary($e);
         }
         return $node;
     }
 
-    private function toleranceNode($value = 0)
+    private function toleranceNode($value)
     {
         $node = null;
         try {
             $node = $this->root->createElement('tolerance');
             $textField = $this->root->createTextNode($value);
             $node->appendChild($textField);
-        } catch (Exception $e) {
+        } catch (Throwable $e) {
             $this->error = __FUNCTION__ . $this->errorSummary($e);
         }
         return $node;
     }
 
-    private function fileNode($src, $path = '/', $encoding = 'base64')
+    private function fileNode($src)
     {
         $fileNode = null;
         try {
             $src2 = explode("/", $src);
             $fileNode = $this->root->createElement("file");
             $fileNode->setAttribute("name", end($src2));
-            $fileNode->setAttribute("path", $path);
-            $fileNode->setAttribute("encoding", $encoding);
+            $fileNode->setAttribute("path", '/');
+            $fileNode->setAttribute("encoding", 'base64');
             $file = file_get_contents($_SERVER['DOCUMENT_ROOT'] . $src);
             if ($file) {
                 $fileNode->nodeValue = chunk_split(base64_encode($file));
             } else {
                 $fileNode->nodeValue = "file_not_found";
             }
-        } catch (Exception $e) {
+        } catch (Throwable $e) {
             $this->error = __FUNCTION__ . $this->errorSummary($e);
         }
         return $fileNode;
@@ -507,7 +530,7 @@ class MoodleXMLDocument
                     }
                 }
             }
-        } catch (Exception $e) {
+        } catch (Throwable $e) {
             $this->updateError($e, __FUNCTION__);
         }
     }
@@ -546,7 +569,7 @@ class MoodleXMLDocument
                     }
                 }
                 $result = $html->saveXML($html->getElementsByTagName('p')->item(0));
-            } catch (Exception $e) {
+            } catch (Throwable $e) {
                 $this->updateError($e, __FUNCTION__);
             }
             return $result;
@@ -593,12 +616,30 @@ class MoodleXMLDocument
         }
     }
 
-    private function errorSummary(Exception $exception): string
+    private function checkTypeFormat($type): string
     {
-        return "exception: " . $exception->getMessage() . "\nline: " . $exception->getLine() . "\ncode: " . $exception->getCode() . "\ntrace: " . $exception->getTrace();
+        switch ($type) {
+            case 'multichoice':
+            case 'truefalse':
+            case 'shortanswer':
+            case 'matching':
+            case 'cloze':
+            case 'essay':
+            case 'numerical':
+            case 'description':
+                return $type;
+            default:
+                //$this->error = __FUNCTION__ ." :  $type is not allowed in Moodle XML questions";
+                throw new Exception("$type is not allowed in Moodle XML questions");
+        }
     }
 
-    private function updateError(Exception $exception, $function)
+    private function errorSummary(Throwable $exception): string
+    {
+        return ": " . $exception->getMessage() . " ( line:" . $exception->getLine() . ", code:" . $exception->getCode() . ", trace:" . $exception->getTrace() . " )";
+    }
+
+    private function updateError(Throwable $exception, $function)
     {
         if ($this->error == null) {
             $this->error = $function . $this->errorSummary($exception);
