@@ -253,10 +253,22 @@ function exportSubject() {
                 idSubject: sub
             },
             success: function (data) {
-                if (data === 'ACK') {
-                    showSuccessMessage(ttMExportRequestSent);
-                } else {
-                    showErrorMessage(ttEExport)
+                switch (data) {
+                    case 'ACK':
+                        showSuccessMessage(ttMExportRequestSent);
+                        break;
+                    case 'EMPTYSUB':
+                        showErrorMessage(ttEExportEmptySub)
+                        break;
+                    case 'NOANSWER':
+                        showErrorMessage(ttEExportNoAnswers)
+                        break;
+                    case 'NOEANSWERS':
+                        showErrorMessage(ttEExportNotEnAnswers)
+                        break;
+                    default:
+                        showErrorMessage(data)
+                        break;
                 }
             },
             error: function (request, status, error) {
