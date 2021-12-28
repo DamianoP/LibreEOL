@@ -1167,7 +1167,6 @@ class sqlDB {
 
         return $ack;
     }
-
     /**
      * @name    qNewAnswer
      * @param   $idQuestion         String        Question's ID
@@ -11874,6 +11873,7 @@ class sqlDB {
         try {
             $query = "SELECT idTopic,
                         T.name as topicName,
+                        T.description as topicDescription,
                         idQuestion,
                         idAnswer,
                         Q.type as questionType,
@@ -11885,7 +11885,7 @@ class sqlDB {
                       FROM Subjects 
                           JOIN Topics T on Subjects.idSubject = T.fkSubject 
                           JOIN Questions Q on T.idTopic = Q.fkTopic 
-                          JOIN Answers A on Q.idQuestion = A.fkQuestion 
+                          LEFT OUTER JOIN Answers A on Q.idQuestion = A.fkQuestion 
                           LEFT OUTER JOIN TranslationAnswers TA on A.idAnswer = TA.fkAnswer
                           LEFT OUTER JOIN TranslationQuestions TQ on Q.idQuestion = TQ.fkQuestion
                         WHERE Subjects.idSubject = '$idSubject' 
