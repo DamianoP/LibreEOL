@@ -608,4 +608,10 @@
   <text id="ttPrivacy2">ECTN Privacy Policy</text>
   <text id="ttPrivacy3">I wish to be informed on the possibility of obtaining an Individual Proficiency Certificate</text>
   <text id="ttDemoTest">Demo test</text>
+  <text id="ttExport">Export</text>
+  <text id="ttEExport">Die Exportanfrage wurde nicht gesendet!</text>
+  <text id="ttMExportRequestSent">Exportanfrage erfolgreich gesendet, überprüfen sie thre E-Mail</text>
+  <text id="ttEExportEmptySubject">das Thema ist leer.</text>
+  <text id="ttEExportNoAnswers">Es gibt eine Frage ohne Aufsatz ohne Antworten.</text>
+  <text id="ttExportNotEnAnswers">nicht genug Antworten auf einige Fragen</text>
 </language>

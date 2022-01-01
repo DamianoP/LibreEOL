@@ -617,4 +617,10 @@
   <text id="ttPrivacy2">Πολιτική Απορρήτου του ECTN</text>
   <text id="ttPrivacy3">Επιθυμώ να ενημερώνομαι για τη δυνατότητα απόκτησης πιστοποιητικού ατομικής επάρκειας</text>
   <text id="ttDemoTest">Demo test</text>
+  <text id="ttExport">εξαγωγή</text>
+  <text id="ttEExport">Το αίτημα εξαγωγής δεν στάλθηκε!</text>
+  <text id="ttMExportRequestSent">Το αίτημα εξαγωγής εστάλη, ελέγξτε το email σας</text>
+  <text id="ttEExportEmptySubject">το θέμα είναι κενό.</text>
+  <text id="ttEExportNoAnswers">υπάρχει μια ερώτηση χωρίς δοκιμές χωρίς απαντήσεις.</text>
+  <text id="ttExportNotEnAnswers">δεν υπάρχουν αρκετές απαντήσεις για ορισμένες ερωτήσεις</text>
 </language>

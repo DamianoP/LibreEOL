@@ -617,4 +617,10 @@
   <text id="ttPrivacy2">Polityka prywatności ECTN</text>
   <text id="ttPrivacy3">Chcę być informowany o możliwości uzyskania Indywidualnego Certyfikatu Biegłości</text>
   <text id="ttDemoTest">Demo test</text>
+  <text id="ttExport">Eksport</text>
+  <text id="ttEExport">Żądanie eksportu nie zostało wysłane!</text>
+  <text id="ttMExportRequestSent">Wysłano żądanie eksportu, sprawdź pocztę e-mail</text>
+  <text id="ttEExportEmptySubject">temat jest pusty.</text>
+  <text id="ttEExportNoAnswers">jest pytanie bez eseju bez odpowiedzi.</text>
+  <text id="ttExportNotEnAnswers">za mało odpowiedzi na niektóre pytania</text>
 </language>

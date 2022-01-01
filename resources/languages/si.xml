@@ -617,4 +617,10 @@
   <text id="ttPrivacy2">Pravilnik o zasebnosti ECTN</text>
   <text id="ttPrivacy3">Želim biti obveščen o možnosti pridobitve individualnega spričevala o strokovni usposobljenosti</text>
   <text id="ttDemoTest">Demo test</text>
+  <text id="ttExport">Export</text>
+  <text id="ttEExport">Požiadavka na export nebola odoslaná!</text>
+  <text id="ttMExportRequestSent">Export request sent, please check your email</text>
+  <text id="ttEExportEmptySubject">predmet je prázdny.</text>
+  <text id="ttEExportNoAnswers">existuje otázka bez eseje bez odpovedí.</text>
+  <text id="ttExportNotEnAnswers">na niektoré otázky nestačí odpovede.</text>
 </language>

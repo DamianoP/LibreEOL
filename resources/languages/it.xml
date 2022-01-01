@@ -612,4 +612,10 @@
   <text id="ttPrivacy2">normativa sulla privacy ECTN</text>
   <text id="ttPrivacy3">Desidero essere informato sulla possibilità di ottenere un Certificato di Competenza Individuale</text>
   <text id="ttDemoTest">Test di prova</text>
+  <text id="ttExport">Esporta</text>
+  <text id="ttEExport">La richiesta di export non è stata inviata!</text>
+  <text id="ttMExportRequestSent">Richiesta di Export inviata con successo, controlla la tua email</text>
+  <text id="ttEExportEmptySubject">la materia da esportare è vuota</text>
+  <text id="ttEExportNoAnswers">è presente una domanda non essay senza risposte</text>
+  <text id="ttExportNotEnAnswers">non ci sono abbastanza risposte per alcune domande</text>
 </language>

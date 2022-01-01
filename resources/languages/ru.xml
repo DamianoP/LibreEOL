@@ -617,4 +617,10 @@
   <text id="ttPrivacy2">Политика конфиденциальности ECTN</text>
   <text id="ttPrivacy3">Я хочу быть проинформированным о возможности получения Индивидуального Свидетельства о квалификации</text>
   <text id="ttDemoTest">Demo test</text>
+  <text id="ttExport">экспорт</text>
+  <text id="ttEExport">Запрос на экспорт не отправлен!</text>
+  <text id="ttMExportRequestSent">Запрос на экспорт отправлен, пожалуйста, проверьте свою электронную почту</text>
+  <text id="ttEExportEmptySubject">тема пуста.</text>
+  <text id="ttEExportNoAnswers">есть вопрос, не связанный с эссе, на который нет ответов.</text>
+  <text id="ttExportNotEnAnswers">недостаточно ответов на некоторые вопросы</text>
 </language>
