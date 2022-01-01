@@ -572,3 +572,6 @@ var ttPrivacy1 = "I read and accept the";
 var ttPrivacy2 = "ECTN Privacy Policy";
 var ttPrivacy3 = "I wish to be informed on the possibility of obtaining an Individual Proficiency Certificate";
 var ttDemoTest = "Demo test";
+var ttEExportEmptySub = "das Thema ist leer.";
+var ttEExportNoAnswers = "Es gibt eine Frage ohne Aufsatz ohne Antworten."
+var ttEExportNotEnAnswers = "nicht genug Antworten auf einige Fragen";

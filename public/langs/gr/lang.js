@@ -580,3 +580,7 @@ var ttPrivacy1 = "Διάβασα και δέχτηκα το";
 var ttPrivacy2 = "Πολιτική Απορρήτου του ECTN";
 var ttPrivacy3 = "Επιθυμώ να ενημερώνομαι για τη δυνατότητα απόκτησης πιστοποιητικού ατομικής επάρκειας";
 var ttDemoTest = "Demo test";
+var ttEExportEmptySub = "το θέμα είναι κενό.";
+var ttEExportNoAnswers = "υπάρχει μια ερώτηση χωρίς δοκιμές χωρίς απαντήσεις."
+var ttEExportNotEnAnswers = "δεν υπάρχουν αρκετές απαντήσεις για ορισμένες ερωτήσεις";
+

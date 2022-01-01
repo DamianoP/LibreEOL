@@ -580,3 +580,7 @@ var ttPrivacy1 = "Czytam i akceptuję";
 var ttPrivacy2 = "Polityka prywatności ECTN";
 var ttPrivacy3 = "Chcę być informowany o możliwości uzyskania Indywidualnego Certyfikatu Biegłości";
 var ttDemoTest = "Demo test";
+var ttEExportEmptySub = "temat jest pusty.";
+var ttEExportNoAnswers = "jest pytanie bez eseju bez odpowiedzi."
+var ttEExportNotEnAnswers = "za mało odpowiedzi na niektóre pytania";
+

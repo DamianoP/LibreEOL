@@ -572,3 +572,6 @@ define('ttPrivacy1' , "I read and accept the");
 define('ttPrivacy2' , "ECTN Privacy Policy");
 define('ttPrivacy3' , "I wish to be informed on the possibility of obtaining an Individual Proficiency Certificate");
 define('ttDemoTest' , "Demo test");
+define('ttEExportEmptySub', "das Thema ist leer.");
+define('ttEExportNoAnswers', "Es gibt eine Frage ohne Aufsatz ohne Antworten.");
+define('ttEExportNotEnAnswers', "nicht genug Antworten auf einige Fragen");

@@ -580,3 +580,6 @@ define('ttPrivacy1' , "Leo y acepto el");
 define('ttPrivacy2' , "Política de privacidad de ECTN");
 define('ttPrivacy3' , "Deseo ser informado sobre la posibilidad de obtener un Certificado de Competencia Individual");
 define('ttDemoTest' , "Demo test");
+define('ttEExportEmptySub', "el tema está vacío.");
+define('ttEExportNoAnswers', "hay una pregunta que no es de ensayo y no tiene respuestas.");
+define('ttEExportNotEnAnswers', "no hay suficientes respuestas para algunas preguntas");

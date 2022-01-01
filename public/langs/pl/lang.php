@@ -580,3 +580,6 @@ define('ttPrivacy1' , "Czytam i akceptuję");
 define('ttPrivacy2' , "Polityka prywatności ECTN");
 define('ttPrivacy3' , "Chcę być informowany o możliwości uzyskania Indywidualnego Certyfikatu Biegłości");
 define('ttDemoTest' , "Demo test");
+define('ttEExportEmptySub', "temat jest pusty.");
+define('ttEExportNoAnswers', "jest pytanie bez eseju bez odpowiedzi.");
+define('ttEExportNotEnAnswers', "za mało odpowiedzi na niektóre pytania");

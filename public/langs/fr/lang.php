@@ -580,3 +580,6 @@ define('ttPrivacy1' , "Je lis et accepte le");
 define('ttPrivacy2' , "Politique de confidentialité ECTN");
 define('ttPrivacy3' , "Je souhaite être informé de la possibilité d'obtenir un certificat d'aptitude individuel");
 define('ttDemoTest' , "Demo test");
+define('ttEExportEmptySub', "le sujet est vide.");
+define('ttEExportNoAnswers', "il y a une question sans dissertation sans réponse.");
+define('ttEExportNotEnAnswers', "pas assez de réponses pour certaines questions");

@@ -580,3 +580,6 @@ define('ttPrivacy1', "Я читаю и принимаю");
 define('ttPrivacy2', "Политика конфиденциальности ECTN");
 define('ttPrivacy3', "Я хочу быть проинформированным о возможности получения Индивидуального Свидетельства о квалификации");
 define('ttDemoTest', "Demo test");
+define('ttEExportEmptySub', "тема пуста.");
+define('ttEExportNoAnswers', "есть вопрос, не связанный с эссе, на который нет ответов.");
+define('ttEExportNotEnAnswers', "недостаточно ответов на некоторые вопросы");

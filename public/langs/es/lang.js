@@ -580,3 +580,6 @@ var ttPrivacy1 = "Leo y acepto el";
 var ttPrivacy2 = "Política de privacidad de ECTN";
 var ttPrivacy3 = "Deseo ser informado sobre la posibilidad de obtener un Certificado de Competencia Individual";
 var ttDemoTest = "Demo test";
+var ttEExportEmptySub = "el tema está vacío.";
+var ttEExportNoAnswers = "hay una pregunta que no es de ensayo y no tiene respuestas."
+var ttEExportNotEnAnswers = "no hay suficientes respuestas para algunas preguntas";

@@ -129,7 +129,7 @@ define('ttEExamWaiting' , "Operacije ni mogoče dokončati, ker se izpit nikoli 
 define('ttEExamsNotArchivedDeleteTopic' , "Operacije ni mogoče dokončati, ker vsaj en ne arhiviran izpit vsebuje vprašanja iz te teme!");
 define('ttEExamsNotArchivedEditTestSettings' , "Operacije ni mogoče dokončati, ker se te nastavitve uporabljajo z vsaj enim ne arhiviranim izpitom.");
 define('ttEExamsNotArchivedDeleteTestSettings' , "Operacije ni mogoče dokončati, ker te nastavitve uporablja vsaj en nepovabljen izpit!");
-define('ttEExport',"The export request was not sent!");
+define('ttEExport',"Požiadavka na export nebola odoslaná!");
 define('ttEIncorrectField' , "Eno ali več polj ni pravilno!");
 define('ttELogin' , "E-pošta in / ali geslo nista pravilna!");
 define('ttEMainLanguageEmpty' , "Glavni jezik predmeta ne sme biti prazen!");
@@ -580,3 +580,6 @@ define('ttPrivacy1' , "Prebral sem in sprejemam");
 define('ttPrivacy2' , "Pravilnik o zasebnosti ECTN");
 define('ttPrivacy3' , "Želim biti obveščen o možnosti pridobitve individualnega spričevala o strokovni usposobljenosti");
 define('ttDemoTest' , "Demo test");
+define('ttEExportEmptySub', "predmet je prázdny.");
+define('ttEExportNoAnswers', "existuje otázka bez eseje bez odpovedí.");
+define('ttEExportNotEnAnswers', "na niektoré otázky nestačí odpovede.");

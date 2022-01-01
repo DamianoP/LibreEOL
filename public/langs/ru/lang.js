@@ -580,3 +580,7 @@ var ttPrivacy1 = "Я читаю и принимаю";
 var ttPrivacy2 = "Политика конфиденциальности ECTN";
 var ttPrivacy3 = "Я хочу быть проинформированным о возможности получения Индивидуального Свидетельства о квалификации";
 var ttDemoTest = "Demo test";
+var ttEExportEmptySub = "тема пуста.";
+var ttEExportNoAnswers = "есть вопрос, не связанный с эссе, на который нет ответов."
+var ttEExportNotEnAnswers = "недостаточно ответов на некоторые вопросы";
+

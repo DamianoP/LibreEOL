@@ -580,3 +580,6 @@ var ttPrivacy1 = "Je lis et accepte le";
 var ttPrivacy2 = "Politique de confidentialité ECTN";
 var ttPrivacy3 = "Je souhaite être informé de la possibilité d'obtenir un certificat d'aptitude individuel";
 var ttDemoTest = "Demo test";
+var ttEExportEmptySub = "le sujet est vide.";
+var ttEExportNoAnswers = "il y a une question sans dissertation sans réponse."
+var ttEExportNotEnAnswers = "pas assez de réponses pour certaines questions";

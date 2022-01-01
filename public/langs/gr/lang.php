@@ -580,3 +580,6 @@ define('ttPrivacy1' , "Διάβασα και δέχτηκα το");
 define('ttPrivacy2' , "Πολιτική Απορρήτου του ECTN");
 define('ttPrivacy3' , "Επιθυμώ να ενημερώνομαι για τη δυνατότητα απόκτησης πιστοποιητικού ατομικής επάρκειας");
 define('ttDemoTest' , "Demo test");
+define('ttEExportEmptySub', "το θέμα είναι κενό.");
+define('ttEExportNoAnswers', "υπάρχει μια ερώτηση χωρίς δοκιμές χωρίς απαντήσεις.");
+define('ttEExportNotEnAnswers', "δεν υπάρχουν αρκετές απαντήσεις για ορισμένες ερωτήσεις");
