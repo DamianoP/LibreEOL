@@ -72,13 +72,17 @@ class MoodleXMLDocument
     public function createQuestion($type, $id, $name, $text, $genFeedback = null, $defGrade = 1.0000000, $defPenalty = 0.3333333, $corFeed = 'Risposta corretta.', $parCorFeed = 'Risposta parzialmente corretta.', $incorFeed = 'Risposta errata.', $shuffleAnswer = 1, $hidden = 0, $unitGradingType = 0, $unitPenality = 0.1000000, $showUnits = 3, $unitsLeft = 0, $useCase = 0): bool
     {
         try {
-            if($id == null){
+            if ($id == null) {
                 throw new Exception("Question id cannot be null");
             }
             //create question
             $question = $this->root->createElement('question');
 
-            $question->setAttribute("type", $this->selectType($type));
+            $formattedType = $this->selectType($type);
+            if ($formattedType === null) {
+                throw new Exception();
+            }
+            $question->setAttribute("type", $formattedType);
 
             //question name
             $question->appendChild($this->nameNode($name));
@@ -139,32 +143,45 @@ class MoodleXMLDocument
     public function createAnswer($id, $text, $score, $feedback = "", $tolerance = 0): bool
     {
         try {
-            if( $id == null ){
-                //throw new Exception("answer id must be not null");
-                return true;
-            }
-            if($this->currentQuestion == null){
+
+            if ($this->currentQuestion == null) {
                 throw new Exception("cannot create answer without a question, create a question before");
             }
 
             if ($this->currentQuestion->getAttribute("type") !== "essay") {
+                if ($id == null) {
+                    throw new Exception("answer id must be not null");
+                }
 
                 $answer = $this->root->createElement("answer");
                 $answer->setAttribute('fraction', $this->scoreFixed($score));
-                if ($this->currentQuestion->getAttribute("type") === "truefalse") {
-                    $answer->appendChild($this->textNode($this->textAnswerFixed($score, $text), true));
-                } elseif ($this->currentQuestion->getAttribute("type") === "numerical") {
-                    $answer->appendChild($this->textNode($this->textAnswerFixed($score, $text), true));
-                    $answer->appendChild($this->toleranceNode($tolerance));
-                } elseif ($this->currentQuestion->getAttribute("type") === "shortanswer") {
-                    $answer->appendChild($this->textNode($this->fixSrcPath($this->textAnswerFixed($score, $text)), true));
-                } else {
-                    $answer->appendChild($this->textNode($this->fixSrcPath($this->textAnswerFixed($score, $text)), true));
+
+                switch ($this->currentQuestion->getAttribute("type")) {
+                    case "truefalse":
+                        $answer->appendChild($this->textNode($this->textAnswerFixed($score, $text), true));
+                        break;
+
+                    case "numerical":
+                        $answer->appendChild($this->textNode($this->textAnswerFixed($score, $text), true));
+                        $answer->appendChild($this->toleranceNode($tolerance));
+                        break;
+
+                    case "shortanswer":
+                        $answer->appendChild($this->textNode($this->fixSrcPath($this->textAnswerFixed($score, $text)), true));
+                        break;
+
+                    default:
+                        $answer->appendChild($this->textNode($this->fixSrcPath($this->textAnswerFixed($score, $text)), true));
+
                 }
-                $this->addFileNodes($answer, $text);
+
+                if (!$this->addFileNodes($answer, $text)) {
+                    throw new Exception();
+                }
                 $answer->appendChild($this->feedbackNode($feedback));
                 $answer->appendChild($this->idNode($id));
                 $this->currentQuestion->appendChild($answer);
+
             }
         } catch (Throwable $e) {
             $this->updateError($e, __FUNCTION__);
@@ -190,7 +207,11 @@ class MoodleXMLDocument
                 case 'TF':
                     return 'truefalse';
                 default:
-                    return $this->checkTypeFormat($type);
+                    if ($this->checkTypeFormat($type)) {
+                        return $type;
+                    } else {
+                        throw new Exception("questions of type " . $type . " are not allowed in the Moodle format");
+                    }
             }
         } catch (Throwable $e) {
             $this->updateError($e, __FUNCTION__);
@@ -207,6 +228,7 @@ class MoodleXMLDocument
             $name->appendChild($textField);
         } catch (Throwable $e) {
             $this->updateError($e, __FUNCTION__);
+            return null;
         }
         return $name;
     }
@@ -217,11 +239,18 @@ class MoodleXMLDocument
         try {
             $qTextNode = $this->root->createElement('questiontext');
             $qTextNode->setAttribute('format', 'html');
-            $textField = $this->textNode($this->fixSrcPath($text), true);
+            $fixedSrc = $this->fixSrcPath($text);
+            if ($text !== null && $fixedSrc === null) {
+                throw new Exception();
+            }
+            $textField = $this->textNode($fixedSrc, false);
             $qTextNode->appendChild($textField);
-            $this->addFileNodes($qTextNode, $text);
+            if (!$this->addFileNodes($qTextNode, $text)) {
+                throw new Exception();
+            }
         } catch (Throwable $e) {
             $this->updateError($e, __FUNCTION__);
+            return null;
         }
         return $qTextNode;
     }
@@ -239,6 +268,7 @@ class MoodleXMLDocument
             $node->appendChild($textField);
         } catch (Throwable $e) {
             $this->error = __FUNCTION__ . $this->errorSummary($e);
+            return null;
         }
         return $node;
     }
@@ -252,6 +282,7 @@ class MoodleXMLDocument
             $node->appendChild($idField);
         } catch (Throwable $e) {
             $this->error = __FUNCTION__ . $this->errorSummary($e);
+            return null;
         }
         return $node;
     }
@@ -265,6 +296,7 @@ class MoodleXMLDocument
             $node->appendChild($textField);
         } catch (Throwable $e) {
             $this->updateError($e, __FUNCTION__);
+            return null;
         }
         return $node;
     }
@@ -278,6 +310,7 @@ class MoodleXMLDocument
             $node->appendChild($textField);
         } catch (Throwable $e) {
             $this->error = __FUNCTION__ . $this->errorSummary($e);
+            return null;
         }
         return $node;
     }
@@ -291,6 +324,7 @@ class MoodleXMLDocument
             $node->appendChild($textField);
         } catch (Throwable $e) {
             $this->error = __FUNCTION__ . $this->errorSummary($e);
+            return null;
         }
         return $node;
     }
@@ -304,6 +338,7 @@ class MoodleXMLDocument
             $node->appendChild($textField);
         } catch (Exception $e) {
             $this->error = __FUNCTION__ . $this->errorSummary($e);
+            return null;
         }
         return $node;
     }
@@ -314,11 +349,18 @@ class MoodleXMLDocument
         try {
             $node = $this->root->createElement('generalfeedback');
             $node->setAttribute('format', 'html');
-            $textField = $this->textNode($this->fixSrcPath($text), false);
-            $this->addFileNodes($node, $text);
+            $fixedSrc = $this->fixSrcPath($text);
+            if ($text !== null && $fixedSrc === null) {
+                throw new Exception();
+            }
+            $textField = $this->textNode($fixedSrc, false);
+            if (!$this->addFileNodes($node, $text)) {
+                throw new Exception();
+            }
             $node->appendChild($textField);
         } catch (Throwable $e) {
             $this->updateError($e, __FUNCTION__);
+            return null;
         }
         return $node;
     }
@@ -329,11 +371,18 @@ class MoodleXMLDocument
         try {
             $node = $this->root->createElement('correctfeedback');
             $node->setAttribute('format', 'html');
-            $textField = $this->textNode($this->fixSrcPath($text), false);
-            $this->addFileNodes($node, $text);
+            $fixedSrc = $this->fixSrcPath($text);
+            if ($text !== null && $fixedSrc === null) {
+                throw new Exception();
+            }
+            $textField = $this->textNode($fixedSrc, false);
+            if (!$this->addFileNodes($node, $text)) {
+                throw new Exception();
+            }
             $node->appendChild($textField);
         } catch (Throwable $e) {
             $this->updateError($e, __FUNCTION__);
+            return null;
         }
         return $node;
     }
@@ -344,11 +393,18 @@ class MoodleXMLDocument
         try {
             $node = $this->root->createElement('partiallycorrectfeedback');
             $node->setAttribute('format', 'html');
-            $textField = $this->textNode($this->fixSrcPath($text), false);
-            $this->addFileNodes($node, $text);
+            $fixedSrc = $this->fixSrcPath($text);
+            if ($text !== null && $fixedSrc === null) {
+                throw new Exception();
+            }
+            $textField = $this->textNode($fixedSrc, false);
+            if (!$this->addFileNodes($node, $text)) {
+                throw new Exception();
+            }
             $node->appendChild($textField);
         } catch (Exception $e) {
             $this->updateError($e, __FUNCTION__);
+            return null;
         }
         return $node;
     }
@@ -359,11 +415,18 @@ class MoodleXMLDocument
         try {
             $node = $this->root->createElement('incorrectfeedback');
             $node->setAttribute('format', 'html');
-            $textField = $this->textNode($this->fixSrcPath($text), false);
-            $this->addFileNodes($node, $text);
+            $fixedSrc = $this->fixSrcPath($text);
+            if ($text !== null && $fixedSrc === null) {
+                throw new Exception();
+            }
+            $textField = $this->textNode($fixedSrc, false);
+            if (!$this->addFileNodes($node, $text)) {
+                throw new Exception();
+            }
             $node->appendChild($textField);
         } catch (Throwable $e) {
             $this->updateError($e, __FUNCTION__);
+            return null;
         }
         return $node;
     }
@@ -377,6 +440,7 @@ class MoodleXMLDocument
             $node->appendChild($textField);
         } catch (Throwable $e) {
             $this->error = __FUNCTION__ . $this->errorSummary($e);
+            return null;
         }
         return $node;
     }
@@ -390,6 +454,7 @@ class MoodleXMLDocument
             $node->appendChild($textField);
         } catch (Throwable $e) {
             $this->error = __FUNCTION__ . $this->errorSummary($e);
+            return null;
         }
         return $node;
     }
@@ -403,20 +468,21 @@ class MoodleXMLDocument
             $node->appendChild($textField);
         } catch (Throwable $e) {
             $this->error = __FUNCTION__ . $this->errorSummary($e);
+            return null;
         }
         return $node;
     }
-
 
     private function usecaseNode($value)
     {
         $node = null;
         try {
-            $node = $this->root->createElement('hidden');
+            $node = $this->root->createElement('usecase');
             $textField = $this->root->createTextNode($value);
             $node->appendChild($textField);
         } catch (Throwable $e) {
             $this->error = __FUNCTION__ . $this->errorSummary($e);
+            return null;
         }
         return $node;
     }
@@ -430,6 +496,7 @@ class MoodleXMLDocument
             $node->appendChild($textField);
         } catch (Throwable $e) {
             $this->error = __FUNCTION__ . $this->errorSummary($e);
+            return null;
         }
         return $node;
     }
@@ -443,6 +510,7 @@ class MoodleXMLDocument
             $node->appendChild($textField);
         } catch (Throwable $e) {
             $this->error = __FUNCTION__ . $this->errorSummary($e);
+            return null;
         }
         return $node;
     }
@@ -456,6 +524,7 @@ class MoodleXMLDocument
             $node->appendChild($textField);
         } catch (Throwable $e) {
             $this->error = __FUNCTION__ . $this->errorSummary($e);
+            return null;
         }
         return $node;
     }
@@ -469,6 +538,7 @@ class MoodleXMLDocument
             $node->appendChild($textField);
         } catch (Throwable $e) {
             $this->error = __FUNCTION__ . $this->errorSummary($e);
+            return null;
         }
         return $node;
     }
@@ -482,6 +552,7 @@ class MoodleXMLDocument
             $node->appendChild($textField);
         } catch (Throwable $e) {
             $this->error = __FUNCTION__ . $this->errorSummary($e);
+            return null;
         }
         return $node;
     }
@@ -499,15 +570,16 @@ class MoodleXMLDocument
             if ($file) {
                 $fileNode->nodeValue = chunk_split(base64_encode($file));
             } else {
-                $fileNode->nodeValue = "file_not_found";
+                throw new Exception("file at " . $src . " not found");
             }
         } catch (Throwable $e) {
             $this->error = __FUNCTION__ . $this->errorSummary($e);
+            return null;
         }
         return $fileNode;
     }
 
-    private function addFileNodes(DOMElement $node, $text)
+    private function addFileNodes(DOMElement $node, $text): bool
     {
         try {
             if (!empty($text)) {
@@ -532,9 +604,10 @@ class MoodleXMLDocument
             }
         } catch (Throwable $e) {
             $this->updateError($e, __FUNCTION__);
+            return false;
         }
+        return true;
     }
-
 
     private function fixSrcPath($text)
     {
@@ -571,13 +644,13 @@ class MoodleXMLDocument
                 $result = $html->saveXML($html->getElementsByTagName('p')->item(0));
             } catch (Throwable $e) {
                 $this->updateError($e, __FUNCTION__);
+                return null;
             }
             return $result;
         }
     }
 
-    private
-    function scoreFixed($score)
+    private function scoreFixed($score)
     {
         switch ($score) {
             case 'N*1':
@@ -595,8 +668,7 @@ class MoodleXMLDocument
         }
     }
 
-    private
-    function textAnswerFixed($score, $text)
+    private function textAnswerFixed($score, $text)
     {
         switch ($score) {
             case 'N*1':
@@ -616,7 +688,7 @@ class MoodleXMLDocument
         }
     }
 
-    private function checkTypeFormat($type): string
+    private function checkTypeFormat($type): bool
     {
         switch ($type) {
             case 'multichoice':
@@ -627,10 +699,9 @@ class MoodleXMLDocument
             case 'essay':
             case 'numerical':
             case 'description':
-                return $type;
+                return true;
             default:
-                //$this->error = __FUNCTION__ ." :  $type is not allowed in Moodle XML questions";
-                throw new Exception("$type is not allowed in Moodle XML questions");
+                return false;
         }
     }
 
@@ -644,7 +715,7 @@ class MoodleXMLDocument
         if ($this->error == null) {
             $this->error = $function . $this->errorSummary($exception);
         } else {
-            $this->error = $function . " -> " . $this->error;
+            $this->error = $function . " (line:" . $exception->getLine() . ") -> " . $this->error;
         }
     }
 
