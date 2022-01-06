@@ -9,7 +9,7 @@ class MoodleXMLDocument
 
     public function __construct()
     {
-        $this->root = new DOMDocument();
+        $this->root = new DOMDocument('1.0', 'utf-8');
         $this->root->formatOutput = true;
         $this->quizNode = $this->root->createElement("quiz");
         $this->currentQuestion = null;
