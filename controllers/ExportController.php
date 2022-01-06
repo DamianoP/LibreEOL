@@ -126,7 +126,47 @@ class ExportController extends Controller
         }
     }
 
-    private function createMessage($mailMessage, $subject, $idSubject): string
+    private function createSubjectXMLQTI($idSubject)
+    {
+        global $log;
+        $sql = new sqlDB();
+
+        if ($sql->qSubjectQuestionsAndAnswers($idSubject)) {
+
+            $xml = new QTIXMLDocument();
+            $rows = $sql->getResultAssoc();
+
+            $i = 0;
+            while ($i < count($rows)) {
+
+                $row = $rows[$i];
+                $topic = $row['topicName'];
+                $questionName = $row['questionName'];
+                $questionText = $row['questionText'];
+                $questionType = $row['questionType'];
+                $currentQuestion = $row['idQuestion'];
+                $answers = [];
+                $index = 0;
+
+                while ($currentQuestion == $rows[$i]['idQuestion']) {
+                    $row = $rows[$i];
+                    $answer = $this->convertAnswer($index, $row['answerText'], $row['answerScore'], null, null, $questionType);
+                    array_push($answers, $answer);
+                    $i++;
+                    $index++;
+                }
+                $xml->addItemNode($topic, $currentQuestion, $questionName, $questionText, $questionType, $answers);
+
+            }
+            return $xml->getDoc();
+
+        } else {
+            return $sql->getError();
+        }
+    }
+
+    private
+    function createMessage($mailMessage, $subject, $idSubject): string
     {
         $attchmentName = "subject_" . $idSubject . "_" . date("YmdHms") . ".xml";
         $attachment = chunk_split(base64_encode($subject));
@@ -187,7 +227,82 @@ class ExportController extends Controller
         }
     }
 
-    private function accessRules(): array
+    private function convertAnswer($index, $text, $score, $feedback, $feedbackId, $type): array
+    {
+        $answerId = null;
+        $answerText = null;
+        $answerScore = $this->convertScoreYNTF($score);
+
+        switch ($type) {
+            case 'MC':
+            case 'MR':
+                $answerId = chr(65 + $index);
+                $answerText = $text;
+                break;
+            case 'YN':
+            case 'TF':
+                $answerId = chr(65 + $index);
+                $answerText = $this->getAnswerFromScoreYNTF($score);
+                break;
+            case 'NM':
+            case 'TM':
+                $answerId = $text;
+                $answerText = $text;
+                break;
+            default:
+                $answerId = 0;
+                $answerText = 'undefined';
+        }
+
+        return array(
+            'id' => $answerId,
+            'text' => $answerText,
+            'score' => $answerScore,
+            'feedback' => $feedback,
+            'feedbackId' => $feedbackId
+        );
+    }
+
+    private function convertScoreYNTF($score)
+    {
+        switch ($score) {
+            case 'N*1':
+            case 'Y*1':
+            case 'T*1':
+            case 'F*1':
+                return 10;
+            case 'N*0':
+            case 'Y*0':
+            case 'T*0':
+            case 'F*0':
+                return 0;
+            default:
+                return $score * 10;
+        }
+    }
+
+    private function getAnswerFromScoreYNTF($score): string
+    {
+        switch ($score) {
+            case 'T*1':
+            case 'T*0':
+                return 'True';
+            case 'F*0':
+            case 'F*1':
+                return 'False';
+            case 'Y*1':
+            case 'Y*0':
+                return 'Yes';
+            case 'N*1':
+            case 'N*0':
+                return 'No';
+            default:
+                return '';
+        }
+    }
+
+    private
+    function accessRules(): array
     {
 
         return array(
