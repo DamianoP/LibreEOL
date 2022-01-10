@@ -23,7 +23,6 @@ class ExportController extends Controller
 
     private function actionExportsubjects()
     {
-        include(dirname(__FILE__) . "/../includes/MoodleXMLDocument.php");
         global $user, $log;
         $sql = new sqlDB();
         if ($sql->qExportRequests()) {
@@ -34,7 +33,13 @@ class ExportController extends Controller
                     $row = $rows[$i];
 
                     //creazione del xml della materia
-                    $currentSubject = $this->createSubjectXMLMoodle($row['subject']);
+                    if ($row['type'] === 'moodle') {
+                        include(dirname(__FILE__) . "/../includes/MoodleXMLDocument.php");
+                        $currentSubject = $this->createSubjectXMLMoodle($row['subject']);
+                    } else {
+                        include(dirname(__FILE__) . "/../includes/QTIXMLDocument.php");
+                        $currentSubject = $this->createSubjectXMLQTI($row['subject']);
+                    }
 
                     //setting dell'header della mail
                     $headers = "MIME-Version: 1.0\r\n"; // Defining the MIME version
@@ -66,12 +71,13 @@ class ExportController extends Controller
     private function actionExportrequest()
     {
         $idSubject = $_POST['idSubject'];
+        $type = $_POST['type'];
 
         $controlSubject = $this->controlSubject($idSubject);
 
         if ($controlSubject === 'OK') {
             $sql = new sqlDB();
-            if ($sql->qInsertExportRequest($idSubject)) {
+            if ($sql->qInsertExportRequest($idSubject, $type)) {
                 echo 'ACK';
             } else {
                 echo $sql->getError();
@@ -100,8 +106,8 @@ class ExportController extends Controller
 
                 if ($currentTopic != $row['idTopic']) {
                     $currentTopic = $row['idTopic'];
-                    if(!$xml->createCategory($row["topicName"], " ", $row['idTopic'])){
-                        $log ->append($xml->getError());
+                    if (!$xml->createCategory($row["topicName"], " ", $row['idTopic'])) {
+                        $log->append($xml->getError());
                         die($xml->getError());
                     }
                 }
@@ -148,6 +154,7 @@ class ExportController extends Controller
                 $answers = [];
                 $index = 0;
 
+                // converting the answers in the right format (like the one in the next comment)
                 while ($currentQuestion == $rows[$i]['idQuestion']) {
                     $row = $rows[$i];
                     $answer = $this->convertAnswer($index, $row['answerText'], $row['answerScore'], null, null, $questionType);
@@ -155,18 +162,21 @@ class ExportController extends Controller
                     $i++;
                     $index++;
                 }
-                $xml->addItemNode($topic, $currentQuestion, $questionName, $questionText, $questionType, $answers);
+
+                // addItemNode wants an associative array for the answers:   answers = [['id'=>id, 'text'=>text, 'score'=>score, 'feedback'=>feedback, 'feedbackId'=>feedbackId],['id'=>id2,..]..]
+                if(!$xml->addItemNode($topic, $currentQuestion, $questionName, $questionText, $questionType, $answers)){
+                    $log ->append($xml->getError());
+                    die($xml->getError());
+                }
 
             }
             return $xml->getDoc();
-
         } else {
             return $sql->getError();
         }
     }
 
-    private
-    function createMessage($mailMessage, $subject, $idSubject): string
+    private function createMessage($mailMessage, $subject, $idSubject): string
     {
         $attchmentName = "subject_" . $idSubject . "_" . date("YmdHms") . ".xml";
         $attachment = chunk_split(base64_encode($subject));
@@ -188,6 +198,7 @@ class ExportController extends Controller
         return $message;
     }
 
+    //this function check if the subject is well-formed, for example i consider error the fact that there is a non-essay question without answers
     private function controlSubject($idSubject): string
     {
         $currentQuestion = -1;
@@ -227,6 +238,7 @@ class ExportController extends Controller
         }
     }
 
+    //this function convert the answer from the database in a better format for the qti document
     private function convertAnswer($index, $text, $score, $feedback, $feedbackId, $type): array
     {
         $answerId = null;
@@ -236,8 +248,8 @@ class ExportController extends Controller
         switch ($type) {
             case 'MC':
             case 'MR':
-                $answerId = chr(65 + $index);
-                $answerText = $text;
+                $answerId = chr(65 + $index); //chr convert a number in the relative char from the ASCII code (for example 65 is 'A')
+                $answerText = $text;                   // in the response_label node (of response_lid type questions) is needed an id for the label and letters are commonly used
                 break;
             case 'YN':
             case 'TF':
@@ -263,6 +275,7 @@ class ExportController extends Controller
         );
     }
 
+    //this function convert the score of the yes/no true/false questions, in the qti format the score must be a number
     private function convertScoreYNTF($score)
     {
         switch ($score) {
@@ -281,6 +294,7 @@ class ExportController extends Controller
         }
     }
 
+    //this function get the answer text from yes/no true/false score, since in the database there are no answer texts for those categories
     private function getAnswerFromScoreYNTF($score): string
     {
         switch ($score) {
@@ -301,8 +315,7 @@ class ExportController extends Controller
         }
     }
 
-    private
-    function accessRules(): array
+    private function accessRules(): array
     {
 
         return array(
