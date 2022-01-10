@@ -30,6 +30,8 @@ class QTIXMLDocument
         }
     }
 
+
+    // function for add the item to the questestinterop node
     public function addItemNode($topic, $questionId, $questionName, $questionText, $questionType, $answers): bool
     {
         try {
@@ -41,7 +43,7 @@ class QTIXMLDocument
             $node->appendChild($this->resprocessingNode($answers, $questionType));
             for ($i = 0; $i < count($answers); $i++) {
                 $answer = $answers[$i];
-                if ($answer['feedbackId'] !== null || $answer['feedback'] !== null) {
+                if ($answer['feedbackId'] !== null && $answer['feedback'] !== null) {
                     $node->appendChild($this->itemfeedbackNode($answer['feedbackId'], $answer['feedback']));
                 }
             }
@@ -55,14 +57,13 @@ class QTIXMLDocument
 
 
 
-
-
     /*********************************************************/
     /*                                                       */
     /*                  ITEM NODES  (lv1)                    */
     /*                                                       */
     /*********************************************************/
 
+    // creates the itemmetadata node, it contains metadata of the item (considered as question) like the type (multichoice, multiple response, etc) the topic etc..
     private function itemmetadataNode($itemtype, $topic)
     {
         try {
@@ -78,11 +79,14 @@ class QTIXMLDocument
         }
     }
 
+    // creates the presentation node, it contains the information for representing question and answers
     private function presentationNode($question, $answers, $type)
     {
         try {
             $node = $this->root->createElement('presentation');
-            $node->appendChild($this->materialNode($question));
+            $node->appendChild($this->materialNode($question)); // insert the question text in a material->mattext node
+
+            // insert the answers in correct format for each category
             switch ($type) {
                 case 'MC':
                 case 'YN':
@@ -113,17 +117,22 @@ class QTIXMLDocument
         }
     }
 
+    // creates the resprocessing node, it contains information for processing the result (for example setting the score for choosing the right answers)
     private function resprocessingNode($answers, $type)
     {
         try {
             $node = $this->root->createElement('resprocessing');
             $node->appendChild($this->outcomesNode());
             $index = 0;
+
+            // for every answer with a non zero score must have a response condiction node
             for ($i = 0; $i < count($answers); $i++) {
                 $answer = $answers[$i];
                 if ($answer['score'] !== 0) {
                     $index += 1;
                     $node->appendChild($this->respcondictionNode($index, $answer['id'], $answer['feedbackId'], $answer['score']));
+
+                    // for numeric answers there is also the condiction of not answering the question
                     if ($type == 'NM') {
                         $node->appendChild($this->respcondictionNode($index + 1, $answer['id'], $answer['feedbackId'], $answer['score'], true));
                     }
@@ -136,6 +145,8 @@ class QTIXMLDocument
         }
     }
 
+    // creates the itemfeedback node, it contains the text and the id of the feedback message that is used in other nodes
+    // every feedback message has an id and for example it could be specified to give a feedback message after choosing an answer (in the resprocessing node)
     private function itemfeedbackNode($ident, $feedback)
     {
         try {
@@ -163,6 +174,7 @@ class QTIXMLDocument
     /*                                                       */
     /*********************************************************/
 
+    // creates the qmd_itemtype node, it contains metadata information about the category of the item/question
     private function qmd_itemtypeNode($itemtype)
     {
         try {
@@ -176,6 +188,7 @@ class QTIXMLDocument
         }
     }
 
+    // creates the qmd_status node, it contains metadata information about the status of the item
     private function qmd_statusNode()
     {
         try {
@@ -189,6 +202,7 @@ class QTIXMLDocument
         }
     }
 
+    // creates the qmd_toolvendor node, it contains metadata information about the creator (or a tool used for create quiz) of the item
     private function qmd_toolvendorNode()
     {
         try {
@@ -202,6 +216,7 @@ class QTIXMLDocument
         }
     }
 
+    // creates the qmd_topic node, it contains metadata information about the topic of the item/question
     private function qmd_topic($topic)
     {
         try {
@@ -224,6 +239,7 @@ class QTIXMLDocument
     /*                                                       */
     /*********************************************************/
 
+    // creates the response_lid node, it contains representation information for answers of type multiple choice, multiple response, true/false, yes/no
     private function response_lidNode($answers, $rcardinality = null)
     {
         try {
@@ -240,6 +256,7 @@ class QTIXMLDocument
         }
     }
 
+    // creates the response_str node, it contains representation information for answers of type text match and essay
     private function response_strNode($rows, $columns, $max)
     {
         try {
@@ -254,6 +271,7 @@ class QTIXMLDocument
         }
     }
 
+    // creates the response_num node, it contains representation information for answers of type numeric
     private function response_numNode($rawAnswer, $numtype = null)
     {
         try {
@@ -280,6 +298,7 @@ class QTIXMLDocument
     /*                                                       */
     /*********************************************************/
 
+    // creates the outcomes node, it contains variable declarations used in the result processing. it's needed even if you don't have to declare variables
     private function outcomesNode()
     {
         try {
@@ -292,6 +311,7 @@ class QTIXMLDocument
         }
     }
 
+    // creates the respcondition node, it contains information (instructions) for handling the chosen answer (assign a score for example)
     private function respcondictionNode($title, $lableid, $linkrefid, $score, $unanswered = false)
     {
         try {
@@ -302,7 +322,7 @@ class QTIXMLDocument
                 $node->appendChild($this->conditionvarNode('other', null, null));
                 $node->appendChild($this->setvarNode('0', 'Set'));
                 $node->appendChild($this->displayfeedbackNode('default'));
-            } elseif ($unanswered) {
+            } elseif ($unanswered) { // numerical
                 $node->appendChild($this->conditionvarNode('unanswered', "1", null));
                 $node->appendChild($this->setvarNode('0', 'Set'));
                 $node->appendChild($this->displayfeedbackNode('default'));
@@ -329,6 +349,7 @@ class QTIXMLDocument
     /*                                                       */
     /*********************************************************/
 
+    // creates the render_choice node, it's used for rendering the possibles answer choices (multiple choice, multiple response, true/false, yes/no)
     private function render_choiceNode(array $answers, $shuffle = null)
     {
         try {
@@ -348,12 +369,12 @@ class QTIXMLDocument
         }
     }
 
+    // creates the render_fib node, it's used for rendering fill-in-blanck answers like numeric, essay, or text match answers
     private function render_fibNode($fibtype, $rows, $columns, $maxchars)
     {
         try {
             $node = $this->root->createElement('render_fib');
             $node->setAttribute('fibtype', $fibtype);
-            //$node->setAttribute('prompt',$prompt);
             $node->setAttribute('rows', $rows);
             $node->setAttribute('columns', $columns);
             $node->setAttribute('maxchars', $maxchars);
@@ -373,6 +394,7 @@ class QTIXMLDocument
     /*                                                       */
     /*********************************************************/
 
+    // creates the decvar node, it's used for declare variables that could be used into the respcondition section
     private function decvarNode($value = null, $varname = null)
     {
         try {
@@ -401,6 +423,7 @@ class QTIXMLDocument
     /*                                                       */
     /*********************************************************/
 
+    // creates the conditionvar node, it contains a conditional test used for evaluate the user choice
     private function conditionvarNode($type, $respid, $lableid)
     {
         try {
@@ -419,6 +442,7 @@ class QTIXMLDocument
         }
     }
 
+    // creates the setvar node, it's used for changing the value of the default variable "SCORE" used for evaluate the test
     private function setvarNode($value, $action = null)
     {
         try {
@@ -435,14 +459,12 @@ class QTIXMLDocument
         }
     }
 
+    // creates the displayfeedback node, it's used for display a feedback after the user choice
     private function displayfeedbackNode($linkrefid)
     {
         try {
             $node = $this->root->createElement("displayfeedback");
             $node->setAttribute('linkrefid', $linkrefid);
-            if (null !== null) {
-                $node->setAttribute('feedbacktype', null);
-            }
             return $node;
         } catch (Throwable $ex) {
             $this->updateError($ex, __FUNCTION__);
@@ -459,6 +481,7 @@ class QTIXMLDocument
     /*                                                       */
     /*********************************************************/
 
+    // creates the response_label node, it's used for create an answer choice in the render_choice node
     private function response_label($ident, $text)
     {
         try {
@@ -481,6 +504,7 @@ class QTIXMLDocument
     /*                                                       */
     /*********************************************************/
 
+    // creates the or node, it's used to create the Boolean 'OR' operation between the two or more enclosed tests
     private function orNode()
     {
         try {
@@ -491,6 +515,7 @@ class QTIXMLDocument
         }
     }
 
+    // creates the and node, it's used to create the Boolean 'AND' operation between the two or more enclosed tests
     private function andNode()
     {
         try {
@@ -501,6 +526,7 @@ class QTIXMLDocument
         }
     }
 
+    // creates the not node, it's used to invert the logical test outcome that is required
     private function notNode()
     {
         try {
@@ -511,6 +537,7 @@ class QTIXMLDocument
         }
     }
 
+    // creates the other node, used for trigger the condition when all the other test have not turned a 'true' state
     private function otherNode()
     {
         try {
@@ -521,6 +548,7 @@ class QTIXMLDocument
         }
     }
 
+    // creates the unanswered node, used for specify the condition to apply if the answer for the question is not received
     private function unansweredNode($respident)
     {
         try {
@@ -533,6 +561,7 @@ class QTIXMLDocument
         }
     }
 
+    // creates the varequal node, used for make a test of equivalence
     private function varequalNode($respident, $lableid)
     {
         $node = null;
@@ -557,6 +586,7 @@ class QTIXMLDocument
     /*                                                       */
     /*********************************************************/
 
+    // creates a material node, used for insert text or multimedia data
     private function materialNode($text)
     {
         $node = null;
@@ -570,6 +600,7 @@ class QTIXMLDocument
         }
     }
 
+    // creates a mattext node, used for insert a text
     private function mattextNode($text)
     {
         $node = null;
@@ -585,6 +616,7 @@ class QTIXMLDocument
         }
     }
 
+
     private function errorSummary(Throwable $exception): string
     {
         return ": " . $exception->getMessage() . " ( line:" . $exception->getLine() . ", code:" . $exception->getCode() . ", trace:" . $exception->getTrace() . " )";
@@ -598,25 +630,4 @@ class QTIXMLDocument
             $this->error = $function . " (line:" . $exception->getLine() . ") -> " . $this->error;
         }
     }
-
-    public function convertType($type)
-    {
-        switch ($type) {
-            case 'MR':
-            case 'YN':
-            case 'TF':
-                return 'singleChoice';
-            case 'NM':
-                return 'numerical';
-            case 'TM':
-                return 'string';
-            case 'ES':
-                return 'essay';
-            case 'MC':
-                return 'multipleChoice';
-            default:
-                return '';
-        }
-    }
-
 }
