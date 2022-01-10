@@ -243,14 +243,15 @@ function cancelNew(askConfirmation){
  *  @name   exportSubject
  *  @descr  Download the requested subject
  */
-function exportSubject() {
+function exportSubject(type) {
 
     let sub = $(".selected").attr("value");
     $.ajax({
             url: "index.php?page=export/exportrequest",
             type: "post",
             data: {
-                idSubject: sub
+                idSubject: sub,
+                type: type
             },
             success: function (data) {
                 switch (data) {
@@ -280,4 +281,12 @@ function exportSubject() {
     //$("input[name=idSubject]").attr("value", $(".selected").attr("value"));
     //$("#idSubjectForm").attr("action", "index.php?page=export/exportsubject");
     //$("#idSubjectForm").submit();
+}
+
+function showExportType(){
+     if($('#selectExportType').is(':hidden')){
+         $('#selectExportType').show();
+     }else{
+         $('#selectExportType').hide();
+     }
 }
