@@ -11899,14 +11899,16 @@ class sqlDB {
             return false;
         }
     }
-    public function qInsertExportRequest($idSubject){
+
+    public function qInsertExportRequest($idSubject, $type){
         global $log, $user;
         $this->result = null;
         $this->mysqli = $this->connect();
         try{
-            $query = "INSERT INTO subjectToExport (fkUser, fkSubject, status)
-                    VALUES ('$user->id', '$idSubject', '0')
-                    ON DUPLICATE KEY UPDATE status = '0', 
+            $query = "INSERT INTO subjectToExport (fkUser, fkSubject, status, type)
+                    VALUES ('$user->id', '$idSubject','0','$type')
+                    ON DUPLICATE KEY UPDATE status = '0',
+                        type = '$type',
                     lastRequest =now()";
             $this->execQuery($query);
             return true;
@@ -11922,7 +11924,7 @@ class sqlDB {
         $this->mysqli = $this->connect();
         try{
             $query = "UPDATE subjectToExport 
-                        SET status = 1 
+                        SET status = 1
                         WHERE fkSubject = '$idSubject' 
                           AND fkUser = '$user->id'";
             $this->execQuery($query);
@@ -11940,6 +11942,7 @@ class sqlDB {
         try{
             $query = "SELECT idUser as user, 
                             fkSubject as subject, 
+                            type,
                             email 
                         FROM subjectToExport 
                         JOIN Users ON fkUser =  Users.idUser 
