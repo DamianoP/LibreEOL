@@ -81,12 +81,23 @@ global $user, $config;
 
         <div id="selectPanel" class="hidden" style="text-align: center">
             <?php
-            if($user->role == 'a'){
-                echo '<a class="right normal button" onclick="editSubjectInfo();">'.ttEdit.'</a>';
-            }else{
-                echo '<a class="ok button right lSpace" onclick="selectSubject();">'.ttSelectSubject.'</a>
-                      <a class="left normal button" onclick="editSubjectInfo();">'.ttEdit.'</a>
-                      <a class ="normal button" style="background: #9ad717" onclick="exportSubject();">'.ttExport.'</a>';
+            if ($user->role == 'a') {
+                echo '<a class="right normal button" onclick="editSubjectInfo();">' . ttEdit . '</a>';
+            } else {
+                echo '<ul style="display: inline;list-style-type: none;">
+                        <li><a class="ok button right lSpace" onclick="selectSubject();">' . ttSelectSubject . '</a></li>
+                        <li><a class="left normal button" onclick="editSubjectInfo();">' . ttEdit . '</a></li>
+                         <li><a class ="normal button" style="background: #9ad717" onclick="showExportType()">' . ttExport . '</a>
+                            <div id="selectExportType" class="list hidden">
+                                <br>
+                                <ul>
+                                    <li><a style="text-align: left" value="moodle" onclick="exportSubject(' . "'moodle'" . ')">Moodle</a></li>
+                                    <li><a style="text-align: left" value="qti"  onclick="exportSubject(' . "'qti'" . ')">QTI</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                      </ul>';
+
             }
             ?>
         </div>
