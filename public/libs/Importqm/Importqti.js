@@ -80,9 +80,17 @@ function readXML() {
                     if(importDebug>=1)console.log("Parsing question i: " + i);
                     let parsedQuestion = {};
                     let questionI = questions[i];
+
+                    //main nodes of the items
                     let presentation = questionI.getElementsByTagName("presentation")[0];
                     let resprocessing = questionI.getElementsByTagName("resprocessing")[0];
-                    parsedQuestion["type"] = convertQuestionType(presentation, resprocessing);
+                    let itemmetadata = questionI.getElementsByTagName("itemmetadata")[0];
+
+                    // retrieving the type from the metadata information
+                    parsedQuestion["type"] = convertQuestionTypeAlt(itemmetadata.getElementsByTagName("qmd_itemtype")[0]);
+                    if(['PL', 'HS', 'undefined'].includes(parsedQuestion["type"])){
+                        continue;
+                    }
                     parsedQuestion["files"] = [];
                     if (parsedQuestion["type"] === "undefined") {
                         console.log(questionI);
@@ -93,29 +101,33 @@ function readXML() {
                     //     parsedQuestion["type"] = "MR";
                     // }
                     if (importDebug >= 1) console.log("text content 2");
+
+                    //get the text from the material nodes
                     parsedQuestion["text"] = getText(presentation)//questionI.getElementsByTagName("questiontext")[0].getElementsByTagName("text")[0].textContent;
+
                     //checkFiles
-//                     try {
-//                         let files = questionI.getElementsByTagName("questiontext")[0].getElementsByTagName("file");
-//                         for (let h = 0; h < files.length; h++) {
-//                             let fileXML = files[h];
-// //                            workVar=fileXML;
-//                             if (importDebug >= 1) console.log("text content 3");
-//                             let base64 = fileXML.textContent;
-//                             let name = fileXML.getAttribute("name");
-//                             let file = {};
-//                             file["name"] = name.replace(" ", "_");
-//                             file["name"] = file["name"].replace("%20", "_");
-//                             file["name"] = importTimestamp + file["name"];
-//                             file["base64"] = base64;
-//                             parsedQuestion["files"].push(file);
-//                         }
-//                     } catch (e) {
-//                         console.log(e);
-//                     }
-                    //end checkFiles
+/*                    try {
+                        let files = questionI.getElementsByTagName("questiontext")[0].getElementsByTagName("file");
+                        for (let h = 0; h < files.length; h++) {
+                            let fileXML = files[h];
+                            workVar=fileXML;
+                            if (importDebug >= 1) console.log("text content 3");
+                            let base64 = fileXML.textContent;
+                            let name = fileXML.getAttribute("name");
+                            let file = {};
+                            file["name"] = name.replace(" ", "_");
+                            file["name"] = file["name"].replace("%20", "_");
+                            file["name"] = importTimestamp + file["name"];
+                            file["base64"] = base64;
+                            parsedQuestion["files"].push(file);
+                        }
+                    } catch (e) {
+                        console.log(e);
+                    }
+*/                   //end checkFiles
+
                     parsedQuestion["text"] = purgeHTMLforImport(parsedQuestion["text"]);
-                    if(parsedQuestion["text"]=="" || parsedQuestion["text"]=="&nbsp;" || parsedQuestion["text"]==" "){
+                    if(["&nbsp;", "", " "].includes(parsedQuestion["text"])){
                         console.log("Empty question text: "+questionI);
                         continue;
                     }
@@ -142,23 +154,25 @@ function readXML() {
                                 console.log("answerScore " + parsedAnswer["score"]);
                             }
                             parsedQuestion["answers"].push(parsedAnswer);
-                            // try {
-                            //     let files = answerJ.getElementsByTagName("file");
-                            //     for (let h = 0; h < files.length; h++) {
-                            //         let fileXML = files[h];
-                            //         if (importDebug >= 1) console.log("text content 5");
-                            //         let base64 = fileXML.textContent;
-                            //         let name = fileXML.getAttribute("name");
-                            //         let file = {};
-                            //         file["name"] = name.replace(" ", "_");
-                            //         file["name"] = file["name"].replace("%20", "_");
-                            //         file["name"] = importTimestamp + file["name"];
-                            //         file["base64"] = base64;
-                            //         parsedQuestion["files"].push(file);
-                            //     }
-                            // } catch (e) {
-                            //     console.log(e);
-                            // }
+ /*
+                           try {
+                                let files = answerJ.getElementsByTagName("file");
+                                for (let h = 0; h < files.length; h++) {
+                                    let fileXML = files[h];
+                                    if (importDebug >= 1) console.log("text content 5");
+                                    let base64 = fileXML.textContent;
+                                    let name = fileXML.getAttribute("name");
+                                    let file = {};
+                                    file["name"] = name.replace(" ", "_");
+                                    file["name"] = file["name"].replace("%20", "_");
+                                    file["name"] = importTimestamp + file["name"];
+                                    file["base64"] = base64;
+                                    parsedQuestion["files"].push(file);
+                                }
+                            } catch (e) {
+                                console.log(e);
+                            }
+ */
                         }
                     }
                     typeOK.push(parsedQuestion["type"]);
@@ -198,7 +212,7 @@ function readXML() {
     }
 }
 
-//function for retrieving the question type from the item, metadata
+//function for retrieving the question type from the item properties
 function convertQuestionType(presentation, resprocessing) {
 
     let localType = null;
@@ -269,6 +283,20 @@ function convertQuestionType(presentation, resprocessing) {
             throw new DOMException("error, wrong format");
     }
 
+}
+
+// alternative version of the previous function. this one retrieve the type from the metadata information of the item
+function convertQuestionTypeAlt(itemtype){
+    switch(itemtype.textContent.toLowerCase()){
+        case 'multiple choice': return 'MC';
+        case 'multiple response' : return 'MR';
+        case 'numeric' : return 'NM';
+        case 'text match' : return 'TM';
+        case 'essay' : return 'ES';
+        case 'pull-down list' : return 'PL';
+        case 'hot spot' : return 'HS';
+        default : return 'undefined';
+    }
 }
 
 function getText(nodeWithMaterials) {
