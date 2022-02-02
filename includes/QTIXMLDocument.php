@@ -5,6 +5,7 @@ class QTIXMLDocument
     private DOMDocument $root;
     private $questestinteropNode;
     private ?string $error;
+    private $resources;
 
     public function __construct()
     {
@@ -14,6 +15,7 @@ class QTIXMLDocument
         $this->questestinteropNode->setAttribute('xmlns', 'http://www.imsglobal.org/xsd/ims_qtiasiv1p2');
         $this->root->appendChild($this->questestinteropNode);
         $this->error = null;
+        $this->resources = [];
     }
 
     public function getDoc()
@@ -28,6 +30,10 @@ class QTIXMLDocument
         } else {
             return null;
         }
+    }
+
+    public function getResources(){
+        return $this->resources;
     }
 
 
@@ -136,6 +142,9 @@ class QTIXMLDocument
                     if ($type == 'NM') {
                         $node->appendChild($this->respcondictionNode($index + 1, $answer['id'], $answer['feedbackId'], $answer['score'], true));
                     }
+                }
+                if($answer['id'] === "essay"){
+                    $node->appendChild($this->respcondictionNode('default', null, null, null));
                 }
             }
             return $node;
@@ -326,7 +335,8 @@ class QTIXMLDocument
                 $node->appendChild($this->conditionvarNode('unanswered', "1", null));
                 $node->appendChild($this->setvarNode('0', 'Set'));
                 $node->appendChild($this->displayfeedbackNode('default'));
-            } else {
+            }
+            else {
                 $node->appendChild($this->conditionvarNode('varequal', "1", $lableid));
                 $node->appendChild($this->setvarNode($score, 'Set'));
                 if ($linkrefid !== null) {
@@ -591,8 +601,30 @@ class QTIXMLDocument
     {
         $node = null;
         try {
+            $parText = $text;
             $node = $this->root->createElement("material");
-            $node->appendChild($this->mattextNode($text));
+            $resTags = $this->addRes($text);
+            foreach($resTags as $res){
+                if($res["type"] == "img"){
+                    $splitted = preg_split('/<img .*>/i', $parText, 2, PREG_SPLIT_NO_EMPTY);
+                    //echo $splitted[0]." and ".$splitted[1]." on img <br>";
+                    if(count($splitted)>1) {
+                        $node->appendChild($this->mattextNode($splitted[0]));
+                    }
+                    $node->appendChild($this->matimageNode($res["filename"]));
+                    $parText = $splitted[1];
+                }
+                if($res["type"] == "audio") {
+                    $splitted = preg_split('/<audio .*<\/audio>/i', $parText, 2, PREG_SPLIT_NO_EMPTY);
+                    //echo $splitted[0] . " and " . $splitted[1] . " on audio <br>";
+                    if(count($splitted)>1) {
+                        $node->appendChild($this->mattextNode($splitted[0]));
+                    }
+                    $node->appendChild($this->mataudioNode($res["filename"]));
+                    $parText = $splitted[1];
+                }
+            }
+            $node->appendChild($this->mattextNode($parText));
             return $node;
         } catch (Throwable $ex) {
             $this->updateError($ex, __FUNCTION__);
@@ -616,6 +648,75 @@ class QTIXMLDocument
         }
     }
 
+    // creates a mattext node, used for insert an image file
+    private function matimageNode($image){
+        $node = null;
+        try {
+            $split = explode('.', $image);
+            $node = $this->root->createElement("matimage");
+            $node->setAttribute('imagtype', 'image/'.$split[1]);
+            $node->setAttribute('uri', $image);
+            return $node;
+        } catch (Throwable $ex) {
+            $this->updateError($ex, __FUNCTION__);
+            return null;
+        }
+    }
+
+    // creates a mattext node, used for insert an audio file
+    private function mataudioNode($audio){
+        $node = null;
+        try {
+            $split = explode('.', $audio);
+            $node = $this->root->createElement("mataudio");
+            $node->setAttribute('audiotype', 'audio/'.$split[1]);
+            $node->setAttribute('uri', $audio);
+            return $node;
+        } catch (Throwable $ex) {
+            $this->updateError($ex, __FUNCTION__);
+            return null;
+        }
+    }
+
+    // add resource file path to resources array
+    private function addRes($text)
+    {
+        if (!empty($text)) {
+            try {
+                $html = new DOMDocument();
+                $html->loadHTML($text);
+                $resTags = [];
+                $xpath = new DOMXPath($html);
+                $elem = $xpath->query('//img | //audio');
+
+                foreach($elem as $child) {
+                    if ($child->nodeName == "img") {
+                        $srci = $child->attributes->getNamedItem("src")->nodeValue;
+                        array_push($this->resources, $srci);
+                        $srciList = explode("/", $srci);
+                        array_push($resTags, ["type"=>"img", "filename"=>end($srciList)]);
+                    }
+                    if ($child->nodeName == "audio") {
+                        foreach ($child->childNodes as $child2) {
+                            if ($child2->nodeName == "source") {
+                                $srca = $child2->attributes->getNamedItem("src")->nodeValue;
+                                $srcaList = explode("/", $srca);
+                                array_push($this->resources, $srca);
+                                array_push($resTags, ["type"=>"audio","filename"=>end($srcaList)]);
+                            }
+                        }
+                    }
+                }
+
+                return $resTags;
+            } catch (Throwable $e) {
+                $this->updateError($e, __FUNCTION__);
+                return null;
+            }
+        }else{
+            return '';
+        }
+    }
 
     private function errorSummary(Throwable $exception): string
     {
