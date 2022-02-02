@@ -32,14 +32,33 @@ class ExportController extends Controller
                 try {
                     $row = $rows[$i];
 
-                    //creazione del xml della materia
+                    //creazione dello zip della materia
+                    $zipname = "subject_" . $row['subject'] . "_" . date("YmdHms") . ".zip";
+                    $currentSubject = new ZipArchive();
+                    if($currentSubject->open($zipname, ZipArchive::OVERWRITE | ZipArchive::CREATE) !== true){
+                        throw new Exception("error in zip file creation");
+                    }
+
                     if ($row['type'] === 'moodle') {
                         include(dirname(__FILE__) . "/../includes/MoodleXMLDocument.php");
-                        $currentSubject = $this->createSubjectXMLMoodle($row['subject']);
+                        $currentSubject->addFromString($row['subject'].'.xml', $this->createSubjectXMLMoodle($row['subject']));
+
                     } else {
                         include(dirname(__FILE__) . "/../includes/QTIXMLDocument.php");
-                        $currentSubject = $this->createSubjectXMLQTI($row['subject']);
+                        $qti = $this->createSubjectXMLQTI($row['subject']);
+                        $currentSubject->addFromString($row['subject'].'.xml', $qti['doc']);
+                        foreach ($qti['res'] as $res){
+                            echo $_SERVER['DOCUMENT_ROOT'].$res."<br>";
+                            if(file_exists($_SERVER['DOCUMENT_ROOT'].$res)) {
+                                $pathExpl = explode('/', $res);
+                                $currentSubject->addFile($_SERVER['DOCUMENT_ROOT'] . $res, end($pathExpl));
+                            }
+                        }
                     }
+                    echo $currentSubject->getStatusString();
+                    if($currentSubject->close() !== true){
+                        throw new Exception($currentSubject->getStatusString(). "error in zip file creation");
+                    };
 
                     //setting dell'header della mail
                     $headers = "MIME-Version: 1.0\r\n"; // Defining the MIME version
@@ -51,7 +70,7 @@ class ExportController extends Controller
 
                     //invio della mail
                     if (!mail($row['email'], 'No-reply. Subject exporting',
-                        $this->createMessage("your file requested", $currentSubject, $row['subject']), $headers)) {
+                        $this->createMessage("your file requested", $zipname, $row['subject']), $headers)) {
                         $log->append(__FUNCTION__." email not sended: " . error_get_last()['message'] . "\n"); // in caso di errore mostra il messaggio
                     } else {
                         //aggiornamento database
@@ -59,7 +78,9 @@ class ExportController extends Controller
                             $log->append(__FUNCTION__. " update request error: " . $sql->getError());
                         }
                     }
+                    unlink($zipname);
                 } catch (Exception $err) {
+                    echo __FUNCTION__. " exception: " . $err->getMessage() . "\nline: " . $err->getLine() . "\ncode: " . $err->getCode() . "\ntrace: " . $err->getTrace();
                     $log->append(__FUNCTION__. " exception: " . $err->getMessage() . "\nline: " . $err->getLine() . "\ncode: " . $err->getCode() . "\ntrace: " . $err->getTrace());
                 }
             }
@@ -170,16 +191,15 @@ class ExportController extends Controller
                 }
 
             }
-            return $xml->getDoc();
+            return ['doc'=> $xml->getDoc(), 'res' => $xml->getResources()];
         } else {
             return $sql->getError();
         }
     }
 
-    private function createMessage($mailMessage, $subject, $idSubject): string
+    private function createMessage($mailMessage, $zipName, $idSubject): string
     {
-        $attchmentName = "subject_" . $idSubject . "_" . date("YmdHms") . ".xml";
-        $attachment = chunk_split(base64_encode($subject));
+        $attachment = chunk_split(base64_encode(file_get_contents($zipName)));
 
         $boundary = "PHP-mixed-" . md5(time());
         $boundWithPre = "\n--" . $boundary;
@@ -189,9 +209,12 @@ class ExportController extends Controller
         $message .= "\n $mailMessage";
 
         $message .= $boundWithPre . "\r\n";
-        $message .= "Content-Type: application/xml; name= " . $attchmentName . "\r\n";
-        $message .= "Content-Disposition: attachment; filename = " . $attchmentName . "\r\n";
+        $message .= "Content-Type: application/zip; name= " . $zipName . "\r\n";
+        $message .= "Content-Disposition: attachment; filename = " . $zipName . "\r\n";
         $message .= "Content-Transfer-Encoding: base64\r\n";
+        $message .= "Content-length: " . filesize($zipName)."\r\n";
+        $message .= "Pragma: no-cache\r\n";
+        $message .= "Expires: 0\r\n";
         $message .= "X-Attachment-Id: ".$idSubject."\r\n\r\n";
         $message .= $attachment;
 
@@ -262,8 +285,8 @@ class ExportController extends Controller
                 $answerText = $text;
                 break;
             default:
-                $answerId = 0;
-                $answerText = 'undefined';
+                $answerId = 'essay';
+                $answerText = 'essay';
         }
 
         return array(
