@@ -159,7 +159,7 @@ function addLanguageCell(){
             }
         });
         if(!chekRep){
-            let textarea = '<span class="value hidden">'+text+'</span><textarea class="language green">'+text+'</textarea>'
+            let textarea = '<span class="value hidden">'+text+'</span><textarea class="language green">'+text+'</textarea>';
             translationsTable.row.add([ id, text, textarea ]).draw();
 
             showSuccessMessage(ttLanguageCellAdded);
