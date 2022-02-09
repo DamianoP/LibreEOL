@@ -33,7 +33,7 @@ class ExportController extends Controller
                     $row = $rows[$i];
 
                     //creazione dello zip della materia
-                    $zipname = "subject_" . $row['subject'] . "_" . date("YmdHms") . ".zip";
+                    $zipname = '../tmp/exports/'."subject_" . $row['subject'] . "_" . date("YmdHms") . ".zip";
                     $currentSubject = new ZipArchive();
                     if($currentSubject->open($zipname, ZipArchive::OVERWRITE | ZipArchive::CREATE) !== true){
                         throw new Exception("error in zip file creation");
@@ -197,9 +197,11 @@ class ExportController extends Controller
         }
     }
 
-    private function createMessage($mailMessage, $zipName, $idSubject): string
+    private function createMessage($mailMessage, $zipPath, $idSubject): string
     {
-        $attachment = chunk_split(base64_encode(file_get_contents($zipName)));
+        $attachment = chunk_split(base64_encode(file_get_contents($zipPath)));
+        $attachmentName = explode('/', $zipPath);
+        $attachmentName = end($attachmentName);
 
         $boundary = "PHP-mixed-" . md5(time());
         $boundWithPre = "\n--" . $boundary;
@@ -209,10 +211,10 @@ class ExportController extends Controller
         $message .= "\n $mailMessage";
 
         $message .= $boundWithPre . "\r\n";
-        $message .= "Content-Type: application/zip; name= " . $zipName . "\r\n";
-        $message .= "Content-Disposition: attachment; filename = " . $zipName . "\r\n";
+        $message .= "Content-Type: application/zip; name= " . $attachmentName . "\r\n";
+        $message .= "Content-Disposition: attachment; filename = " . $attachmentName . "\r\n";
         $message .= "Content-Transfer-Encoding: base64\r\n";
-        $message .= "Content-length: " . filesize($zipName)."\r\n";
+        $message .= "Content-length: " . filesize($zipPath)."\r\n";
         $message .= "Pragma: no-cache\r\n";
         $message .= "Expires: 0\r\n";
         $message .= "X-Attachment-Id: ".$idSubject."\r\n\r\n";
