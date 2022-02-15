@@ -40,11 +40,11 @@ class ExportController extends Controller
                     }
 
                     if ($row['type'] === 'moodle') {
-                        include(dirname(__FILE__) . "/../includes/MoodleXMLDocument.php");
+                        require_once(dirname(__FILE__) . "/../includes/MoodleXMLDocument.php");
                         $currentSubject->addFromString($row['subject'].'.xml', $this->createSubjectXMLMoodle($row['subject']));
 
                     } else {
-                        include(dirname(__FILE__) . "/../includes/QTIXMLDocument.php");
+                        require_once(dirname(__FILE__) . "/../includes/QTIXMLDocument.php");
                         $qti = $this->createSubjectXMLQTI($row['subject']);
                         $currentSubject->addFromString($row['subject'].'.xml', $qti['doc']);
                         foreach ($qti['res'] as $res){
@@ -70,8 +70,8 @@ class ExportController extends Controller
 
                     //invio della mail
                     if (!mail($row['email'], 'No-reply. Subject exporting',
-                        $this->createMessage("your file requested", $zipname, $row['subject']), $headers)) {
-                        $log->append(__FUNCTION__." email not sended: " . error_get_last()['message'] . "\n"); // in caso di errore mostra il messaggio
+                        $this->createMessage("$user->name, your subject has been exported successfully.", $zipname, $row['subject']), $headers)) {
+                        $log->append(__FUNCTION__." email not sent: " . error_get_last()['message'] . "\n"); // in caso di errore mostra il messaggio
                     } else {
                         //aggiornamento database
                         if (!$sql->qUpdateExportRequest($row['subject'])) {
