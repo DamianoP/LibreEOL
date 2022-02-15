@@ -87,14 +87,7 @@ global $user, $config;
                 echo '<ul style="display: inline;list-style-type: none;">
                         <li><a class="ok button right lSpace" onclick="selectSubject();">' . ttSelectSubject . '</a></li>
                         <li><a class="left normal button" onclick="editSubjectInfo();">' . ttEdit . '</a></li>
-                         <li><a class ="normal button" style="background: #9ad717" onclick="showExportType()">' . ttExport . '</a>
-                            <div id="selectExportType" class="list hidden">
-                                <br>
-                                <ul>
-                                    <li><a style="text-align: left" value="moodle" onclick="exportSubject(' . "'moodle'" . ')">Moodle</a></li>
-                                    <li><a style="text-align: left" value="qti"  onclick="exportSubject(' . "'qti'" . ')">QTI</a></li>
-                                </ul>
-                            </div>
+                         <li><a class ="normal button" style="background: #9ad717" onclick="selectExportType()">' . ttExport . '</a>
                         </li>
                       </ul>';
 
@@ -122,4 +115,5 @@ global $user, $config;
 
         <div class="clearer"></div>
     </div>
+    <div id="dialogExport"><p></p></div>
 </div>

@@ -97,6 +97,7 @@ function addDialog (callback,params) {
         .data("params", params)
         .dialog("option", "title", ttAddLangCellTitle )
         .dialog("open");
+    $(".ui-dialog").css("background", "url('"+imageDir+"confirmDialog.png')");
 }
 
 

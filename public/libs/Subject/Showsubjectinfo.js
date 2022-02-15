@@ -38,6 +38,35 @@ $(function(){
 
 });
 
+$(function(){
+    if($("#dialogExport").length > 0){
+        $("#dialogExport").dialog({
+            autoOpen        :   false,
+            draggable       :   false,
+            resizable       :   true,
+            width           :   "auto",
+            height          :   "auto",
+            modal           :   true,
+            closeOnEscape   :   false,
+            position        :   ["center", 50],
+            buttons : {
+                No : function(){
+                    $(this).dialog("close");
+                    confirmCallback($(this).data("callback"), 'none', false);
+                },
+                QTI : function(){
+                    $(this).dialog("close");
+                    confirmCallback($(this).data("callback"), 'qti', true);
+                },
+                Moodle : function (){
+                    $(this).dialog("close");
+                    confirmCallback($(this).data("callback"), 'moodle', true);
+                }
+            }
+        });
+    }
+});
+
 /**
  *  @name   selectSubject
  *  @descr  Select subject and go to Topics/Questions edit page or Test Settings edit page
@@ -277,16 +306,19 @@ function exportSubject(type) {
             }
         }
     );
-    //put the id of the subject in the input field in the form
-    //$("input[name=idSubject]").attr("value", $(".selected").attr("value"));
-    //$("#idSubjectForm").attr("action", "index.php?page=export/exportsubject");
-    //$("#idSubjectForm").submit();
 }
 
-function showExportType(){
-     if($('#selectExportType').is(':hidden')){
-         $('#selectExportType').show();
-     }else{
-         $('#selectExportType').hide();
-     }
+function exportDialog (callback,params) {
+    $('#dialogExport p').html(ttExportMessage);
+    $('#dialogExport').data("callback", callback)
+        .data("params", params)
+        .dialog("option", "title", ttExport )
+        .dialog("open");
+    $(".ui-dialog").css("background", "url('"+imageDir+"confirmDialog.png')");
+}
+
+function selectExportType(){
+    exportDialog(function (type){
+        exportSubject(type);
+    });
 }
