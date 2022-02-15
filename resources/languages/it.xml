@@ -621,6 +621,7 @@
   <text id="ttAddLangCellTitle">Aggiungi cella di lingua</text>
   <text id="ttETransIdExisting">Cella di traduzione gia esistente</text>
   <text id="ttLanguageCellAdded">Cella di lingua aggiunta</text>
-  <text id="ttIdLangCell">Id cella di lingua:  </text>
-  <text id="ttTextLangCell">Testo cella di lingua: </text>
+  <text id="ttIdLangCell">Id cella di lingua:</text>
+  <text id="ttTextLangCell">Testo cella di lingua:</text>
+  <text id="ttExportMessage">Scegli il formato per esportare</text>
 </language>

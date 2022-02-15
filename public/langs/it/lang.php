@@ -581,5 +581,6 @@ define('ttExportNotEnAnswers' , "non ci sono abbastanza risposte per alcune doma
 define('ttAddLangCellTitle' , "Aggiungi cella di lingua");
 define('ttETransIdExisting' , "Cella di traduzione gia esistente");
 define('ttLanguageCellAdded' , "Cella di lingua aggiunta");
-define('ttIdLangCell' , "Id cella di lingua:  ");
-define('ttTextLangCell' , "Testo cella di lingua: ");
+define('ttIdLangCell' , "Id cella di lingua:");
+define('ttTextLangCell' , "Testo cella di lingua:");
+define('ttExportMessage' , "Scegli il formato per esportare");
