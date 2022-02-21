@@ -9,7 +9,7 @@ class MoodleXMLDocument
 
     public function __construct()
     {
-        $this->root = new DOMDocument('1.0', 'utf-8');
+        $this->root = new DOMDocument('1.0', 'ISO-8859-1');
         $this->root->formatOutput = true;
         $this->quizNode = $this->root->createElement("quiz");
         $this->currentQuestion = null;
@@ -17,11 +17,13 @@ class MoodleXMLDocument
         $this->error = null;
     }
 
+    //function for retrieve the MoodleXMLDocument as string
     public function getDoc()
     {
         return $this->root->saveXML();
     }
 
+    //function for get the error string
     public function getError(): ?string
     {
         if ($this->error != null) {
@@ -31,6 +33,7 @@ class MoodleXMLDocument
         }
     }
 
+    //function for create the category node
     public function createCategory($name, $idTopic, $info): bool
     {
         try {
@@ -69,6 +72,7 @@ class MoodleXMLDocument
         return true;
     }
 
+    //function for create the question nodes, must create them after the category node is created
     public function createQuestion($type, $id, $name, $text, $genFeedback = null, $defGrade = 1.0000000, $defPenalty = 0.3333333, $corFeed = 'Risposta corretta.', $parCorFeed = 'Risposta parzialmente corretta.', $incorFeed = 'Risposta errata.', $shuffleAnswer = 1, $hidden = 0, $unitGradingType = 0, $unitPenality = 0.1000000, $showUnits = 3, $unitsLeft = 0, $useCase = 0): bool
     {
         try {
@@ -140,6 +144,7 @@ class MoodleXMLDocument
         return true;
     }
 
+    //function for create the answer nodes
     public function createAnswer($id, $text, $score, $feedback = "", $tolerance = 0): bool
     {
         try {
@@ -190,6 +195,7 @@ class MoodleXMLDocument
         return true;
     }
 
+    //function for questionType conversion
     private function selectType($type): ?string
     {
         try {
@@ -219,6 +225,7 @@ class MoodleXMLDocument
         }
     }
 
+    //function for create name nodes
     private function nameNode($text)
     {
         $name = null;
@@ -233,6 +240,7 @@ class MoodleXMLDocument
         return $name;
     }
 
+    //function for create questionText nodes, placed inside question nodes
     private function questionText($text)
     {
         $qTextNode = null;
@@ -255,13 +263,14 @@ class MoodleXMLDocument
         return $qTextNode;
     }
 
+    //function for create text nodes
     private function textNode($text, $cdata)
     {
         $node = null;
         try {
             $node = $this->root->createElement("text");
             if ($cdata) {
-                $textField = $this->root->createCDATASection($text);
+                $textField = $this->root->createCDATASection(htmlentities($text));
             } else {
                 $textField = $this->root->createTextNode($text);
             }
@@ -273,6 +282,7 @@ class MoodleXMLDocument
         return $node;
     }
 
+    //function for create id nodes
     private function idNode($id)
     {
         $node = null;
@@ -287,6 +297,7 @@ class MoodleXMLDocument
         return $node;
     }
 
+    //function for create feedback  nodes
     private function feedbackNode($text)
     {
         $node = null;
@@ -301,6 +312,7 @@ class MoodleXMLDocument
         return $node;
     }
 
+    //function for create shuffleanswer nodes, used in question nodes
     private function shuffleAnswerNode($bool)
     {
         $node = null;
@@ -315,6 +327,7 @@ class MoodleXMLDocument
         return $node;
     }
 
+    //function for create single nodes, used in question nodes for multiple or single response
     private function singleNode($bool = 'false')
     {
         $node = null;
@@ -329,6 +342,7 @@ class MoodleXMLDocument
         return $node;
     }
 
+    //function for create answerNumbering nodes, used in question nodes
     private function answerNumberingNode($text = 'none')
     {
         $node = null;
@@ -343,6 +357,7 @@ class MoodleXMLDocument
         return $node;
     }
 
+    //function for create generalfeedback nodes, used in question nodes
     private function generalFeedbackNode($text)
     {
         $node = null;
@@ -365,6 +380,7 @@ class MoodleXMLDocument
         return $node;
     }
 
+    //function for create correctfeedback nodes, used in question nodes
     private function correctFeedbackNode($text)
     {
         $node = null;
@@ -387,6 +403,7 @@ class MoodleXMLDocument
         return $node;
     }
 
+    //function for create partiallycorrectfeedback nodes, used in question nodes
     private function pCorrectFeedbackNode($text)
     {
         $node = null;
@@ -409,6 +426,7 @@ class MoodleXMLDocument
         return $node;
     }
 
+    //function for create incorrectfeedback nodes, used in question nodes
     private function incorrectFeedbackNode($text)
     {
         $node = null;
@@ -431,6 +449,7 @@ class MoodleXMLDocument
         return $node;
     }
 
+    //function for create defaultgrade nodes, used in question nodes
     private function defaultGradeNode($grade)
     {
         $node = null;
@@ -445,6 +464,7 @@ class MoodleXMLDocument
         return $node;
     }
 
+    //function for create penalty nodes, used in question nodes
     private function penalityNode($penality)
     {
         $node = null;
@@ -459,6 +479,7 @@ class MoodleXMLDocument
         return $node;
     }
 
+    //function for create hidden nodes, used in question nodes
     private function hiddenNode($hidden)
     {
         $node = null;
@@ -473,6 +494,7 @@ class MoodleXMLDocument
         return $node;
     }
 
+    //function for create usecase nodes, used in question nodes
     private function usecaseNode($value)
     {
         $node = null;
@@ -487,6 +509,7 @@ class MoodleXMLDocument
         return $node;
     }
 
+    //function for create unitgradingtype nodes, used in question nodes
     private function unitgradingtypeNode($value)
     {
         $node = null;
@@ -501,6 +524,7 @@ class MoodleXMLDocument
         return $node;
     }
 
+    //function for create unitpenalty nodes, used in question nodes
     private function unitpenalityNode($value)
     {
         $node = null;
@@ -515,6 +539,7 @@ class MoodleXMLDocument
         return $node;
     }
 
+    //function for create showunits nodes, used in question nodes
     private function showunitsNode($value)
     {
         $node = null;
@@ -529,6 +554,7 @@ class MoodleXMLDocument
         return $node;
     }
 
+    //function for create unitsleft nodes, used in question nodes
     private function unitsleftNode($value)
     {
         $node = null;
@@ -543,6 +569,7 @@ class MoodleXMLDocument
         return $node;
     }
 
+    //function for create tolerance nodes, used in question nodes
     private function toleranceNode($value)
     {
         $node = null;
@@ -557,6 +584,7 @@ class MoodleXMLDocument
         return $node;
     }
 
+    //function for create file nodes
     private function fileNode($src)
     {
         $fileNode = null;
@@ -579,6 +607,7 @@ class MoodleXMLDocument
         return $fileNode;
     }
 
+    //function for add file nodes to the document
     private function addFileNodes(DOMElement $node, $text): bool
     {
         try {
@@ -609,6 +638,7 @@ class MoodleXMLDocument
         return true;
     }
 
+    //function change the path of the file to plugin path
     private function fixSrcPath($text)
     {
         if (empty($text)) {
@@ -650,6 +680,7 @@ class MoodleXMLDocument
         }
     }
 
+    //function for change the format of the score
     private function scoreFixed($score)
     {
         switch ($score) {
@@ -668,6 +699,7 @@ class MoodleXMLDocument
         }
     }
 
+    //function for change the text of the answers of type yes/no true/false
     private function textAnswerFixed($score, $text)
     {
         switch ($score) {
@@ -688,6 +720,7 @@ class MoodleXMLDocument
         }
     }
 
+    //function for check if the type of the question is supported by moodle
     private function checkTypeFormat($type): bool
     {
         switch ($type) {
@@ -705,11 +738,13 @@ class MoodleXMLDocument
         }
     }
 
+    //function for build an error string
     private function errorSummary(Throwable $exception): string
     {
         return ": " . $exception->getMessage() . " ( line:" . $exception->getLine() . ", code:" . $exception->getCode() . ", trace:" . $exception->getTrace() . " )";
     }
 
+    //function for update the error string
     private function updateError(Throwable $exception, $function)
     {
         if ($this->error == null) {
