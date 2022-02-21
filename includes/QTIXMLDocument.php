@@ -9,7 +9,7 @@ class QTIXMLDocument
 
     public function __construct()
     {
-        $this->root = new DOMDocument('1.0', 'utf-8');
+        $this->root = new DOMDocument('1.0', 'ISO-8859-1');
         $this->root->formatOutput = true;
         $this->questestinteropNode = $this->root->createElement('questestinterop');
         $this->questestinteropNode->setAttribute('xmlns', 'http://www.imsglobal.org/xsd/ims_qtiasiv1p2');
@@ -639,7 +639,7 @@ class QTIXMLDocument
         try {
             $node = $this->root->createElement("mattext");
             $node->setAttribute('texttype', 'text/html');
-            $textField = $this->root->createCDATASection($text);
+            $textField = $this->root->createCDATASection(htmlentities($text));
             $node->appendChild($textField);
             return $node;
         } catch (Throwable $ex) {
