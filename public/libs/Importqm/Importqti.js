@@ -766,7 +766,7 @@ async function getResources(files) {
     console.log(res)
     return res;
 }
-
+//check if the xml file have the qti format
 async function checkQTIFormat(file){
     try {
         let xml = await file.text();
