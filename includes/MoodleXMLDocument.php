@@ -9,7 +9,7 @@ class MoodleXMLDocument
 
     public function __construct()
     {
-        $this->root = new DOMDocument('1.0', 'ISO-8859-1');
+        $this->root = new DOMDocument('1.0', 'utf-8');
         $this->root->formatOutput = true;
         $this->quizNode = $this->root->createElement("quiz");
         $this->currentQuestion = null;
@@ -157,7 +157,6 @@ class MoodleXMLDocument
                 if ($id == null) {
                     throw new Exception("answer id must be not null");
                 }
-
                 $answer = $this->root->createElement("answer");
                 $answer->setAttribute('fraction', $this->scoreFixed($score));
 
@@ -171,12 +170,8 @@ class MoodleXMLDocument
                         $answer->appendChild($this->toleranceNode($tolerance));
                         break;
 
-                    case "shortanswer":
-                        $answer->appendChild($this->textNode($this->fixSrcPath($this->textAnswerFixed($score, $text)), true));
-                        break;
-
                     default:
-                        $answer->appendChild($this->textNode($this->fixSrcPath($this->textAnswerFixed($score, $text)), true));
+                        $answer->appendChild($this->textNode($this->fixSrcPath($text), true));
 
                 }
 
@@ -251,7 +246,7 @@ class MoodleXMLDocument
             if ($text !== null && $fixedSrc === null) {
                 throw new Exception();
             }
-            $textField = $this->textNode($fixedSrc, false);
+            $textField = $this->textNode($fixedSrc, true);
             $qTextNode->appendChild($textField);
             if (!$this->addFileNodes($qTextNode, $text)) {
                 throw new Exception();
@@ -270,7 +265,7 @@ class MoodleXMLDocument
         try {
             $node = $this->root->createElement("text");
             if ($cdata) {
-                $textField = $this->root->createCDATASection(htmlentities($text));
+                $textField = $this->root->createCDATASection($text);
             } else {
                 $textField = $this->root->createTextNode($text);
             }
@@ -671,7 +666,10 @@ class MoodleXMLDocument
                         }
                     }
                 }
-                $result = $html->saveXML($html->getElementsByTagName('p')->item(0));
+                $result = $html->saveXML($html->getElementsByTagName('body')->item(0));
+                $result = preg_replace('<body>', 'p', $result, 1);
+                $result = preg_replace('</body>', '/p', $result, 1);
+                //$result = substr_replace($result, '</p>',-7, 7);
             } catch (Throwable $e) {
                 $this->updateError($e, __FUNCTION__);
                 return null;
