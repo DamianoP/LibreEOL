@@ -601,7 +601,15 @@ class QTIXMLDocument
     {
         $node = null;
         try {
-            $parText = $text;
+
+            //this is for escaping all the html characters that can cause bugs like ']>'
+            $html = new DOMDocument();
+            $html->loadHTML($text);
+            $parText = $html->saveXML($html->getElementsByTagName('body')->item(0));
+            $parText = preg_replace('<body>', 'p', $parText, 1);
+            $parText = preg_replace('</body>', '/p', $parText, 1);
+
+
             $node = $this->root->createElement("material");
             $resTags = $this->addRes($text);
             foreach($resTags as $res){
@@ -639,7 +647,7 @@ class QTIXMLDocument
         try {
             $node = $this->root->createElement("mattext");
             $node->setAttribute('texttype', 'text/html');
-            $textField = $this->root->createCDATASection(htmlentities($text));
+            $textField = $this->root->createCDATASection($text);
             $node->appendChild($textField);
             return $node;
         } catch (Throwable $ex) {
