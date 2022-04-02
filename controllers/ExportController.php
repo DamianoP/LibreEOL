@@ -26,66 +26,48 @@ class ExportController extends Controller
         global $user, $log;
         $sql = new sqlDB();
         if ($sql->qExportRequests()) {
-            $rows = $sql->getResultAssoc();
-            //invio della mail per ogni record della query
-            for ($i = 0; $i < count($rows); $i++) {
+            $rowsReq = $sql->getResultAssoc();
+
+            //export subject for every request
+            for ($i = 0; $i < count($rowsReq); $i++) {
                 try {
-                    $row = $rows[$i];
+                    $rowReq = $rowsReq[$i];
 
-                    //creazione dello zip della materia
-                    $zipname = '../tmp/exports/'."subject_" . $row['subject'] . "_" . date("YmdHms") . ".zip";
-                    $currentSubject = new ZipArchive();
-                    if($currentSubject->open($zipname, ZipArchive::OVERWRITE | ZipArchive::CREATE) !== true){
-                        throw new Exception("error in zip file creation");
+                    //subject zip creation
+                    $zipname = '../tmp/exports/' . "subject_" . date("YmdHms") . ".zip";
+                    if ($rowReq['type'] === 'moodle') {
+                        $zipArchive = $this->createZipSubjectXMLMoodle($zipname, $rowReq['subject']);
+                    } else {
+                        $zipArchive = $this->createZipSubjectXMLQTI($zipname, $rowReq['subject']);
+                    }
+                    if ($zipArchive->close() !== true) {
+                        throw new Exception($zipArchive->getStatusString() . "error in zip file creation");
                     }
 
-                    if ($row['type'] === 'moodle') {
-                        require_once(dirname(__FILE__) . "/../includes/MoodleXMLDocument.php");
-                        $currentSubject->addFromString($row['subject'].'.xml', $this->createSubjectXMLMoodle($row['subject']));
+                    //setting email header
+                    $headers = $this->createHeader($user->email);
 
+                    //email sending
+                    if (!mail($rowReq['email'], 'No-reply. Subject exporting',
+                        $this->createMessage("$user->name, your subject has been exported successfully.", $zipname, $rowReq['subject']), $headers)) {
+                        $log->append(__FUNCTION__ . " email not sent: " . error_get_last()['message'] . error_get_last()['line'] . "\n"); // in caso di errore mostra il messaggio
                     } else {
-                        require_once(dirname(__FILE__) . "/../includes/QTIXMLDocument.php");
-                        $qti = $this->createSubjectXMLQTI($row['subject']);
-                        $currentSubject->addFromString($row['subject'].'.xml', $qti['doc']);
-                        foreach ($qti['res'] as $res){
-                            echo $_SERVER['DOCUMENT_ROOT'].$res."<br>";
-                            if(file_exists($_SERVER['DOCUMENT_ROOT'].$res)) {
-                                $pathExpl = explode('/', $res);
-                                $currentSubject->addFile($_SERVER['DOCUMENT_ROOT'] . $res, end($pathExpl));
-                            }
+                        //update database
+                        if (!$sql->qUpdateExportRequest($rowReq['subject'])) {
+                            $log->append(__FUNCTION__ . " update request error: " . $sql->getError());
                         }
                     }
-                    echo $currentSubject->getStatusString();
-                    if($currentSubject->close() !== true){
-                        throw new Exception($currentSubject->getStatusString(). "error in zip file creation");
-                    };
 
-                    //setting dell'header della mail
-                    $headers = "MIME-Version: 1.0\r\n"; // Defining the MIME version
-                    $headers .= "From: info@libreeol.org\r\n";  //$user->email /paolobitini.tesista@libreeol.org
-                    $headers .= "Reply-To: $user->email";
-                    $headers .= "X-Mailer: PHP/" . phpversion() . "\r\n";
-                    $headers .= "Content-Type: multipart/mixed;";
-                    $headers .= "boundary=\"" . "PHP-mixed-" . md5(time()) . "\"";
-
-                    //invio della mail
-                    if (!mail($row['email'], 'No-reply. Subject exporting',
-                        $this->createMessage("$user->name, your subject has been exported successfully.", $zipname, $row['subject']), $headers)) {
-                        $log->append(__FUNCTION__." email not sent: " . error_get_last()['message'] . "\n"); // in caso di errore mostra il messaggio
-                    } else {
-                        //aggiornamento database
-                        if (!$sql->qUpdateExportRequest($row['subject'])) {
-                            $log->append(__FUNCTION__. " update request error: " . $sql->getError());
-                        }
-                    }
                     unlink($zipname);
+
                 } catch (Exception $err) {
-                    echo __FUNCTION__. " exception: " . $err->getMessage() . "\nline: " . $err->getLine() . "\ncode: " . $err->getCode() . "\ntrace: " . $err->getTrace();
-                    $log->append(__FUNCTION__. " exception: " . $err->getMessage() . "\nline: " . $err->getLine() . "\ncode: " . $err->getCode() . "\ntrace: " . $err->getTrace());
+                    echo __FUNCTION__ . " exception: " . $err->getMessage() . "\nline: " . $err->getLine() . "\ncode: " . $err->getCode() . "\ntrace: " . $err->getTrace();
+                    $log->append(__FUNCTION__ . " exception: " . $err->getMessage() . "\nline: " . $err->getLine() . "\ncode: " . $err->getCode() . "\ntrace: " . $err->getTrace());
                 }
             }
+
         } else {
-            $log->append(__FUNCTION__." query error: ".$sql->getError());
+            $log->append(__FUNCTION__ . " query error: " . $sql->getError());
         }
     }
 
@@ -109,50 +91,150 @@ class ExportController extends Controller
 
     }
 
-    private function createSubjectXMLMoodle($idSubject)
+    //function for create the zip containing the subject exported in moodle format
+    private function createZipSubjectXMLMoodle($zipname, $idSubject)
     {
+        require_once(dirname(__FILE__) . "/../includes/MoodleXMLDocument.php");
         global $log;
-        $sql = new sqlDB();
 
-        if ($sql->qSubjectQuestionsAndAnswers($idSubject)) {
+        try {
+            $zipArchive = $this->createZipArchive($zipname);
+            $sql = new sqlDB();
 
-            $xml = new MoodleXMLDocument();
+            if ($sql->qSubjectQuestionsAndAnswers($idSubject)) {
 
-            $currentTopic = null;
-            $currentQuestion = null;
-            $rows = $sql->getResultAssoc();
+                $xml = new MoodleXMLDocument();
 
-            for ($i = 0; $i < count($rows); $i++) {
-                $row = $rows[$i];
+                $currentTopic = null;
+                $currentQuestion = null;
+                $rows = $sql->getResultAssoc();
 
-                if ($currentTopic != $row['idTopic']) {
-                    $currentTopic = $row['idTopic'];
-                    if (!$xml->createCategory($row["topicName"], " ", $row['idTopic'])) {
+                for ($i = 0; $i < count($rows); $i++) {
+                    $row = $rows[$i];
+
+                    if ($currentTopic != $row['idTopic']) {
+                        $currentTopic = $row['idTopic'];
+                        if (!$xml->createCategory($row["topicName"], " ", $row['idTopic'])) {
+                            $log->append($xml->getError());
+                            die($xml->getError());
+                        }
+                    }
+
+                    // hotspot question are not supported in the moodle format
+                    if ($row['questionType'] === 'HS') {
+                        continue;
+                    }
+
+                    if ($currentQuestion != $row['idQuestion']) {
+                        $currentQuestion = $row['idQuestion'];
+                        if (!$xml->createQuestion($row['questionType'], $row['idQuestion'], $row['questionName'], $row['questionText'])) {
+                            $log->append($xml->getError());
+                            die();
+                        }
+                    }
+
+                    if (!$xml->createAnswer($row['idAnswer'], $row['answerText'], $row['answerScore'], "")) {
                         $log->append($xml->getError());
-                        die($xml->getError());
+                        die();
                     }
                 }
 
-                if ($currentQuestion != $row['idQuestion']) {
-                    $currentQuestion = $row['idQuestion'];
-                    if(!$xml->createQuestion($row['questionType'], $row['idQuestion'], $row['questionName'], $row['questionText'])){
-                        $log ->append($xml->getError());
-                        die($xml->getError());
-                    }
-                }
+                $zipArchive->addFromString($idSubject . '.xml', $xml->getDoc());
+                return $zipArchive;
 
-                if(!$xml->createAnswer($row['idAnswer'], $row['answerText'], $row['answerScore'], "")){
-                    $log ->append($xml->getError());
-                    die($xml->getError());
-                }
+            } else {
+                $log->append($sql->getError());
+                die();
             }
-            return $xml->getDoc();
-
-        } else {
-            return $sql->getError();
+        } catch (Throwable $err) {
+            $log->append(__FUNCTION__ . " exception: " . $err->getMessage() . "\nline: " . $err->getLine() . "\ncode: " . $err->getCode() . "\ntrace: " . $err->getTrace());
+            die();
         }
     }
 
+    //function for create the zip containing the subject exported in QTI 2.2 format (IMS Content Package)
+    private function createZipSubjectXMLQTI($zipname, $idSubject)
+    {
+        require_once(dirname(__FILE__) . "/../includes/QTIv2p2Document.php");
+        global $log;
+
+        try {
+
+            $zipArchive = $this->createZipArchive($zipname);
+            $zipArchive->addEmptyDir('Resources');
+            $sql = new sqlDB();
+
+            if ($sql->qSubjectQuestionsAndAnswers($idSubject)) {
+
+                $xml = new QTIv2p2Document();
+                $rows = $sql->getResultAssoc();
+                $questionNumber = 0;
+
+                for ($j = 0; $j < count($rows); $j++) {
+
+                    $row = $rows[$j];
+                    $topic = $row['topicName'];
+                    $questionName = $row['questionName'];
+                    $questionText = $row['questionText'];
+                    $questionType = $row['questionType'];
+                    $currentQuestion = $row['idQuestion'];
+                    $answers = [];
+                    $index = 0;
+
+                    // converting the answers in the right format
+                    // QTIv2_p_2Document class wants an associative array for the answers:   answers = [['id'=>id, 'text'=>text, 'score'=>score, 'feedback'=>feedback, 'feedbackId'=>feedbackId],['id'=>id2,..]..]
+                    for ($j2 = $j; $j2 < count($rows); $j2++) {
+                        if ($currentQuestion == $rows[$j2]['idQuestion']) {
+                            $row = $rows[$j2];
+                            $answer = $this->convertAnswer($index, $row['answerText'], $row['answerScore'], null, null, $questionType);
+                            array_push($answers, $answer);
+                            $index++;
+                            $j++;
+                        } else {
+                            $j--;
+                            break;
+                        }
+                    }
+
+                    //adding questions as single xml files
+                    $questionNumber++;
+                    if ($xml->createQuestionByType($questionType, $questionNumber, $questionName, $questionText, $answers)) {
+                        $zipArchive->addFromString('question_ID' . $questionNumber . '.xml', $xml->getQuestionItem());
+                    } else {
+                        $log->append($xml->getError());
+                        die();
+                    }
+                }
+
+                //adding manifest to zip
+                $zipArchive->addFromString('imsmanifest.xml', $xml->getManifest());
+
+                //adding multimedia resources to zip
+                $qtiRes = $xml->getResources();
+                foreach ($qtiRes as $res) {
+                    echo $_SERVER['DOCUMENT_ROOT'] . $res . "<br>";
+                    if (file_exists($_SERVER['DOCUMENT_ROOT'] . $res)) {
+                        $pathExpl = explode('/', $res);
+                        $filename = end($pathExpl);
+                        $finalPath = 'Resources/' . str_replace(' ', '_', $filename);
+                        $zipArchive->addFile($_SERVER['DOCUMENT_ROOT'] . $res, $finalPath);
+                    }
+                }
+
+                //return the zip
+                return $zipArchive;
+
+            }else{
+                $log->append($sql->getError());
+                die();
+            }
+        } catch (Throwable $err) {
+            $log->append(__FUNCTION__ . " exception: " . $err->getMessage() . "\nline: " . $err->getLine() . "\ncode: " . $err->getCode() . "\ntrace: " . $err->getTrace());
+            die();
+        }
+    }
+
+    //old qti version
     private function createSubjectXMLQTI($idSubject)
     {
         global $log;
@@ -185,18 +267,37 @@ class ExportController extends Controller
                 }
 
                 // addItemNode wants an associative array for the answers:   answers = [['id'=>id, 'text'=>text, 'score'=>score, 'feedback'=>feedback, 'feedbackId'=>feedbackId],['id'=>id2,..]..]
-                if(!$xml->addItemNode($topic, $currentQuestion, $questionName, $questionText, $questionType, $answers)){
-                    $log ->append($xml->getError());
+                if (!$xml->addItemNode($topic, $currentQuestion, $questionName, $questionText, $questionType, $answers)) {
+                    $log->append($xml->getError());
                     die($xml->getError());
                 }
 
             }
-            return ['doc'=> $xml->getDoc(), 'res' => $xml->getResources()];
+            return ['doc' => $xml->getDoc(), 'res' => $xml->getResources()];
         } else {
             return $sql->getError();
         }
     }
 
+    //database rows print debug
+    private function printRowDebug($row)
+    {
+        echo htmlentities($row['topicName'] . " " . $row['questionName'] . " " . $row['questionType'] . " " . $row['idQuestion'] . " " . $row['idAnswer'] . " " . $row['answerScore']);
+        echo "<br>";
+    }
+
+    //creates email header
+    private function createHeader($email): string{
+        $headers = "MIME-Version: 1.0\r\n"; // Defining the MIME version
+        $headers .= "From: info@libreeol.org\r\n";  //$user->email /paolobitini.tesista@libreeol.org
+        $headers .= "Reply-To: $email";
+        $headers .= "X-Mailer: PHP/" . phpversion() . "\r\n";
+        $headers .= "Content-Type: multipart/mixed;";
+        $headers .= "boundary=\"" . "PHP-mixed-" . md5(time()) . "\"";
+        return $headers;
+    }
+
+    //creates email message
     private function createMessage($mailMessage, $zipPath, $idSubject): string
     {
         $attachment = chunk_split(base64_encode(file_get_contents($zipPath)));
@@ -214,13 +315,30 @@ class ExportController extends Controller
         $message .= "Content-Type: application/zip; name= " . $attachmentName . "\r\n";
         $message .= "Content-Disposition: attachment; filename = " . $attachmentName . "\r\n";
         $message .= "Content-Transfer-Encoding: base64\r\n";
-        $message .= "Content-length: " . filesize($zipPath)."\r\n";
+        $message .= "Content-length: " . filesize($zipPath) . "\r\n";
         $message .= "Pragma: no-cache\r\n";
         $message .= "Expires: 0\r\n";
-        $message .= "X-Attachment-Id: ".$idSubject."\r\n\r\n";
+        $message .= "X-Attachment-Id: " . $idSubject . "\r\n\r\n";
         $message .= $attachment;
 
         return $message;
+    }
+
+    //creates zip archive
+    private function createZipArchive($zipname): ?ZipArchive
+    {
+        global $log;
+        try {
+            $zipArchive = new ZipArchive();
+            if ($zipArchive->open($zipname, ZipArchive::OVERWRITE | ZipArchive::CREATE) !== true) {
+                throw new Exception("error in zip file creation");
+            } else {
+                return $zipArchive;
+            }
+        } catch (Throwable $err) {
+            $log->append(__FUNCTION__ . " exception: " . $err->getMessage() . "\nline: " . $err->getLine() . "\ncode: " . $err->getCode() . "\ntrace: " . $err->getTrace());
+            return null;
+        }
     }
 
     //this function check if the subject is well-formed, for example i consider error the fact that there is a non-essay question without answers
@@ -273,12 +391,13 @@ class ExportController extends Controller
         switch ($type) {
             case 'MC':
             case 'MR':
-                $answerId = chr(65 + $index); //chr convert a number in the relative char from the ASCII code (for example 65 is 'A')
-                $answerText = $text;                   // in the response_label node (of response_lid type questions) is needed an id for the label and letters are commonly used
+            case 'HS':
+                $answerId = 'RESP' . $index;
+                $answerText = $text;
                 break;
             case 'YN':
             case 'TF':
-                $answerId = chr(65 + $index);
+                $answerId = 'RESP' . $index;
                 $answerText = $this->getAnswerFromScoreYNTF($score);
                 break;
             case 'NM':
@@ -308,14 +427,14 @@ class ExportController extends Controller
             case 'Y*1':
             case 'T*1':
             case 'F*1':
-                return 10;
+                return 1;
             case 'N*0':
             case 'Y*0':
             case 'T*0':
             case 'F*0':
                 return 0;
             default:
-                return $score * 10;
+                return $score;
         }
     }
 
