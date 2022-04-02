@@ -32,7 +32,8 @@ class QTIXMLDocument
         }
     }
 
-    public function getResources(){
+    public function getResources()
+    {
         return $this->resources;
     }
 
@@ -90,7 +91,9 @@ class QTIXMLDocument
     {
         try {
             $node = $this->root->createElement('presentation');
-            $node->appendChild($this->materialNode($question)); // insert the question text in a material->mattext node
+            if ($type !== 'HS') {
+                $node->appendChild($this->materialNode($question)); // insert the question text in a material->mattext node
+            }
 
             // insert the answers in correct format for each category
             switch ($type) {
@@ -99,16 +102,15 @@ class QTIXMLDocument
                 case 'TF':
                     $node->appendChild($this->response_lidNode($answers, "Single"));
                     break;
+                case 'HS':
+                    $node->appendChild($this->response_xyNode($answers, $question, "Single"));
+                    break;
                 case 'NM':
-                    $answerText = $answers[0]['text'];
-                    $node->appendChild($this->response_numNode($answerText, "Decimal"));
+                    $node->appendChild($this->response_numNode("Decimal"));
                     break;
                 case 'TM':
-                    $answerText = $answers[0]['text'];
-                    $node->appendChild($this->response_strNode("1", strlen($answerText), strlen($answerText)));
-                    break;
                 case 'ES':
-                    $node->appendChild($this->response_strNode("4", "50", "200"));
+                    $node->appendChild($this->response_strNode());
                     break;
                 case 'MR':
                     $node->appendChild($this->response_lidNode($answers, "Multiple"));
@@ -136,15 +138,19 @@ class QTIXMLDocument
                 $answer = $answers[$i];
                 if ($answer['score'] !== 0) {
                     $index += 1;
-                    $node->appendChild($this->respcondictionNode($index, $answer['id'], $answer['feedbackId'], $answer['score']));
+                    if ($type === 'HS') {
+                        $node->appendChild($this->respcondictionNode($index, $answer['id'], $answer['feedbackId'], $answer['score'], 'hotspot'));
+                    } else {
+                        $node->appendChild($this->respcondictionNode($index, $answer['id'], $answer['feedbackId'], $answer['score'], 'none'));
+                    }
 
                     // for numeric answers there is also the condiction of not answering the question
-                    if ($type == 'NM') {
-                        $node->appendChild($this->respcondictionNode($index + 1, $answer['id'], $answer['feedbackId'], $answer['score'], true));
+                    if ($type === 'NM') {
+                        $node->appendChild($this->respcondictionNode($index + 1, $answer['id'], $answer['feedbackId'], $answer['score'], 'unanswered'));
                     }
                 }
-                if($answer['id'] === "essay"){
-                    $node->appendChild($this->respcondictionNode('default', null, null, null));
+                if ($type === 'ES') {
+                    $node->appendChild($this->respcondictionNode('default', null, null, null, "none"));
                 }
             }
             return $node;
@@ -249,14 +255,12 @@ class QTIXMLDocument
     /*********************************************************/
 
     // creates the response_lid node, it contains representation information for answers of type multiple choice, multiple response, true/false, yes/no
-    private function response_lidNode($answers, $rcardinality = null)
+    private function response_lidNode($answers, $rcardinality)
     {
         try {
             $node = $this->root->createElement('response_lid');
             $node->setAttribute('ident', "1");
-            if ($rcardinality !== null) {
-                $node->setAttribute('rcardinality', $rcardinality);
-            }
+            $node->setAttribute('rcardinality', $rcardinality);
             $node->appendChild($this->render_choiceNode($answers, 'Yes'));
             return $node;
         } catch (Throwable $ex) {
@@ -265,14 +269,28 @@ class QTIXMLDocument
         }
     }
 
+    private function response_xyNode($answers, $question, $rcardinality)
+    {
+        try {
+            $node = $this->root->createElement('response_lid');
+            $node->setAttribute('ident', "1");
+            $node->setAttribute('rcardinality', $rcardinality);
+            $node->appendChild($this->render_hotspotNode($answers, $question));
+            return $node;
+        } catch (Throwable $ex) {
+            $this->updateError($ex, __FUNCTION__);
+            return null;
+        }
+    }
+
     // creates the response_str node, it contains representation information for answers of type text match and essay
-    private function response_strNode($rows, $columns, $max)
+    private function response_strNode()
     {
         try {
             $node = $this->root->createElement('response_str');
             $node->setAttribute('ident', "1");
             $node->setAttribute('rcardinality', 'Single');
-            $node->appendChild($this->render_fibNode('String', $rows, $columns, $max));
+            $node->appendChild($this->render_fibNode());
             return $node;
         } catch (Throwable $ex) {
             $this->updateError($ex, __FUNCTION__);
@@ -281,7 +299,7 @@ class QTIXMLDocument
     }
 
     // creates the response_num node, it contains representation information for answers of type numeric
-    private function response_numNode($rawAnswer, $numtype = null)
+    private function response_numNode($numtype = null)
     {
         try {
             $node = $this->root->createElement('response_num');
@@ -290,7 +308,7 @@ class QTIXMLDocument
             if ($numtype !== null) {
                 $node->setAttribute('numtype', $numtype);
             }
-            $node->appendChild($this->render_fibNode($numtype, '1', strlen($rawAnswer), strlen($rawAnswer)));
+            $node->appendChild($this->render_fibNode());
             return $node;
         } catch (Throwable $ex) {
             $this->updateError($ex, __FUNCTION__);
@@ -321,7 +339,7 @@ class QTIXMLDocument
     }
 
     // creates the respcondition node, it contains information (instructions) for handling the chosen answer (assign a score for example)
-    private function respcondictionNode($title, $lableid, $linkrefid, $score, $unanswered = false)
+    private function respcondictionNode($title, $lableid, $linkrefid, $score, $type)
     {
         try {
             $node = $this->root->createElement('respcondition');
@@ -331,12 +349,15 @@ class QTIXMLDocument
                 $node->appendChild($this->conditionvarNode('other', null, null));
                 $node->appendChild($this->setvarNode('0', 'Set'));
                 $node->appendChild($this->displayfeedbackNode('default'));
-            } elseif ($unanswered) { // numerical
-                $node->appendChild($this->conditionvarNode('unanswered', "1", null));
+            } elseif ($type === 'unanswered') { //  for numerical
+                $node->appendChild($this->conditionvarNode("unanswered", "1", null));
                 $node->appendChild($this->setvarNode('0', 'Set'));
                 $node->appendChild($this->displayfeedbackNode('default'));
-            }
-            else {
+            } elseif ($type === 'hotspot') {
+                $node->appendChild($this->conditionvarNode('varinside', "1", $lableid));
+                $node->appendChild($this->setvarNode('0', 'Set'));
+                $node->appendChild($this->displayfeedbackNode('default'));
+            } else {
                 $node->appendChild($this->conditionvarNode('varequal', "1", $lableid));
                 $node->appendChild($this->setvarNode($score, 'Set'));
                 if ($linkrefid !== null) {
@@ -379,15 +400,29 @@ class QTIXMLDocument
         }
     }
 
+    // creates the render_hotspot node, it's used for rendering hotspot questions
+    private function render_hotspotNode(array $answers, $question)
+    {
+        try {
+            $node = $this->root->createElement('render_hotspot');
+            $node->appendChild($this->materialNode($question));
+            for ($i = 0; $i < count($answers); $i++) {
+                $answer = $answers[$i];
+                $node->appendChild($this->response_label($answer['id'], $answer['text'], "Rectangle"));
+            }
+            return $node;
+        } catch (Throwable $ex) {
+            $this->updateError($ex, __FUNCTION__);
+            return null;
+        }
+    }
+
     // creates the render_fib node, it's used for rendering fill-in-blanck answers like numeric, essay, or text match answers
-    private function render_fibNode($fibtype, $rows, $columns, $maxchars)
+    private function render_fibNode()
     {
         try {
             $node = $this->root->createElement('render_fib');
-            $node->setAttribute('fibtype', $fibtype);
-            $node->setAttribute('rows', $rows);
-            $node->setAttribute('columns', $columns);
-            $node->setAttribute('maxchars', $maxchars);
+            $node->appendChild($this->response_label('fiblabel'));
             return $node;
         } catch (Throwable $ex) {
             $this->updateError($ex, __FUNCTION__);
@@ -438,12 +473,18 @@ class QTIXMLDocument
     {
         try {
             $node = $this->root->createElement('conditionvar');
-            if ($type == 'varequal') {
-                $node->appendChild($this->varequalNode($respid, $lableid));
-            } elseif ($type == 'unanswered') {
-                $node->appendChild($this->unansweredNode($respid));
-            } else {
-                $node->appendChild($this->otherNode());
+            switch ($type) {
+                case 'varequal':
+                    $node->appendChild($this->varequalNode($respid, $lableid));
+                    break;
+                case 'unanswered':
+                    $node->appendChild($this->unansweredNode($respid));
+                    break;
+                case 'varinside':
+                    $node->appendChild($this->varinsideNode($respid, $lableid));
+                    break;
+                default:
+                    $node->appendChild($this->otherNode());
             }
             return $node;
         } catch (Throwable $ex) {
@@ -492,12 +533,21 @@ class QTIXMLDocument
     /*********************************************************/
 
     // creates the response_label node, it's used for create an answer choice in the render_choice node
-    private function response_label($ident, $text)
+    private function response_label($ident, $text = null, $rarea = null)
     {
         try {
             $node = $this->root->createElement("response_label");
             $node->setAttribute('ident', $ident);
-            $node->appendChild($this->materialNode($text));
+
+            if ($rarea != null) {                                             // hotspot question
+                $node->setAttribute('rarea', $rarea);
+                $node->appendChild($this->root->createTextNode($text));     // the coordinates of hotspot
+                return $node;
+            }
+            if($text != null){
+                $node->appendChild($this->materialNode($text));             // multiple choice response
+                return $node;
+            }
             return $node;
         } catch (Throwable $ex) {
             $this->updateError($ex, __FUNCTION__);
@@ -587,8 +637,22 @@ class QTIXMLDocument
         }
     }
 
-
-
+    // creates the varinside node, used for make a test of equivalence for hotspot answers
+    private function varinsideNode($respident, $recarea)
+    {
+        $node = null;
+        try {
+            $node = $this->root->createElement("varinside");
+            $node->setAttribute('respident', $respident);
+            $node->setAttribute('areatype', "Rectangle");
+            $textField = $this->root->createTextNode($recarea);   //the rectangle area
+            $node->appendChild($textField);
+            return $node;
+        } catch (Throwable $ex) {
+            $this->updateError($ex, __FUNCTION__);
+            return null;
+        }
+    }
 
     /*********************************************************/
     /*                                                       */
@@ -602,38 +666,83 @@ class QTIXMLDocument
         $node = null;
         try {
 
-            //this is for escaping all the html characters that can cause bugs like ']>'
+            /*
             $html = new DOMDocument();
             $html->loadHTML($text);
-            $parText = $html->saveXML($html->getElementsByTagName('body')->item(0));
-            $parText = preg_replace('<body>', 'p', $parText, 1);
-            $parText = preg_replace('</body>', '/p', $parText, 1);
+            $xpath = new DOMXPath($html);
+            $elem = $xpath->query('//img | //audio');
 
-
-            $node = $this->root->createElement("material");
-            $resTags = $this->addRes($text);
-            foreach($resTags as $res){
-                if($res["type"] == "img"){
-                    $splitted = preg_split('/<img .*>/i', $parText, 2, PREG_SPLIT_NO_EMPTY);
-                    //echo $splitted[0]." and ".$splitted[1]." on img <br>";
-                    if(count($splitted)>1) {
-                        $node->appendChild($this->mattextNode($splitted[0]));
-                    }
-                    $node->appendChild($this->matimageNode($res["filename"]));
-                    $parText = $splitted[1];
+            foreach ($elem as $child) {
+                if ($child->nodeName == "img") {
+                    $srci = $child->attributes->getNamedItem("src")->nodeValue;
+                    $srciExp = explode("/", $srci);
+                    $fileImg = end($srciExp);
+                    //$IMS-CC-FILEBASE$
+                    $child->attributes->getNamedItem("src")->nodeValue = 'Resources/' . $fileImg;
                 }
-                if($res["type"] == "audio") {
-                    $splitted = preg_split('/<audio .*<\/audio>/i', $parText, 2, PREG_SPLIT_NO_EMPTY);
-                    //echo $splitted[0] . " and " . $splitted[1] . " on audio <br>";
-                    if(count($splitted)>1) {
-                        $node->appendChild($this->mattextNode($splitted[0]));
+                if ($child->nodeName == "audio") {
+                    foreach ($child->childNodes as $child2) {
+                        if ($child2->nodeName == "source") {
+                            $srca = $child2->attributes->getNamedItem("src")->nodeValue;
+                            $srcaExp = explode("/", $srca);
+                            $fileAud = end($srcaExp);
+                            $child2->attributes->getNamedItem("src")->nodeValue = 'Resources/' . $fileAud;
+                        }
                     }
-                    $node->appendChild($this->mataudioNode($res["filename"]));
-                    $parText = $splitted[1];
                 }
             }
-            $node->appendChild($this->mattextNode($parText));
+
+            $textCorrect = $html->saveXML($html->getElementsByTagName('body')->item(0));
+            $textCorrect = str_replace('<body>', '', $textCorrect);
+            $textCorrect = str_replace('</body>', '', $textCorrect);
+
+            $res = $this->addRes($text);
+
+            $node = $this->root->createElement("material");
+            $node->appendChild($this->mattextNode($textCorrect));
+
             return $node;
+            */
+
+                $html = new DOMDocument();
+                $html->loadHTML($text);
+                $parText = $html->saveXML($html->getElementsByTagName('body')->item(0));
+                //$parText = preg_replace('<body>', 'p', $parText, 1);
+                //$parText = preg_replace('</body>', '/p', $parText, 1);
+                $parText = str_replace('<body>', '', $parText);
+                $parText = str_replace('</body>', '', $parText);
+                $node = $this->root->createElement("material");
+                $resTags = $this->addRes($text);
+
+                foreach ($resTags as $res) {
+                    if ($res["type"] == "img") {
+                        $splitted = preg_split('/<img .*>/i', $parText, 2);
+                        //echo $splitted[0]." and ".$splitted[1]." on img <br>";
+                        $splitted[0]=trim($splitted[0]);
+                        if(!empty($splitted[0])) {
+                            $node->appendChild($this->mattextNode($splitted[0]));
+                        }
+                        $node->appendChild($this->matimageNode($res["filename"]));
+                        $parText = $splitted[1];
+                    }
+                    if ($res["type"] == "audio") {
+                        $splitted = preg_split('/<audio .*<\/audio>/i', $parText, 2);
+                        //echo $splitted[0] . " and " . $splitted[1] . " on audio <br>";
+                        $splitted[0]=trim($splitted[0]);
+                        if(!empty($splitted[0])) {
+                            $node->appendChild($this->mattextNode($splitted[0]));
+                        }
+                        $node->appendChild($this->mataudioNode($res["filename"]));
+                        $parText = $splitted[1];
+                    }
+                }
+                $parText = trim($parText);
+
+                if(!empty($parText)) {
+                    $node->appendChild($this->mattextNode($parText));
+                }
+            return $node;
+
         } catch (Throwable $ex) {
             $this->updateError($ex, __FUNCTION__);
             return null;
@@ -657,12 +766,13 @@ class QTIXMLDocument
     }
 
     // creates a mattext node, used for insert an image file
-    private function matimageNode($image){
+    private function matimageNode($image)
+    {
         $node = null;
         try {
             $split = explode('.', $image);
             $node = $this->root->createElement("matimage");
-            $node->setAttribute('imagtype', 'image/'.$split[1]);
+            $node->setAttribute('imagtype', 'image/' . $split[1]);
             $node->setAttribute('uri', $image);
             return $node;
         } catch (Throwable $ex) {
@@ -672,12 +782,13 @@ class QTIXMLDocument
     }
 
     // creates a mattext node, used for insert an audio file
-    private function mataudioNode($audio){
+    private function mataudioNode($audio)
+    {
         $node = null;
         try {
             $split = explode('.', $audio);
             $node = $this->root->createElement("mataudio");
-            $node->setAttribute('audiotype', 'audio/'.$split[1]);
+            $node->setAttribute('audiotype', 'audio/' . $split[1]);
             $node->setAttribute('uri', $audio);
             return $node;
         } catch (Throwable $ex) {
@@ -697,12 +808,12 @@ class QTIXMLDocument
                 $xpath = new DOMXPath($html);
                 $elem = $xpath->query('//img | //audio');
 
-                foreach($elem as $child) {
+                foreach ($elem as $child) {
                     if ($child->nodeName == "img") {
                         $srci = $child->attributes->getNamedItem("src")->nodeValue;
                         array_push($this->resources, $srci);
                         $srciList = explode("/", $srci);
-                        array_push($resTags, ["type"=>"img", "filename"=>end($srciList)]);
+                        array_push($resTags, ["type" => "img", "filename" => end($srciList)]);
                     }
                     if ($child->nodeName == "audio") {
                         foreach ($child->childNodes as $child2) {
@@ -710,7 +821,7 @@ class QTIXMLDocument
                                 $srca = $child2->attributes->getNamedItem("src")->nodeValue;
                                 $srcaList = explode("/", $srca);
                                 array_push($this->resources, $srca);
-                                array_push($resTags, ["type"=>"audio","filename"=>end($srcaList)]);
+                                array_push($resTags, ["type" => "audio", "filename" => end($srcaList)]);
                             }
                         }
                     }
@@ -721,7 +832,7 @@ class QTIXMLDocument
                 $this->updateError($e, __FUNCTION__);
                 return null;
             }
-        }else{
+        } else {
             return '';
         }
     }
