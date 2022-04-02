@@ -11890,7 +11890,7 @@ class sqlDB {
                           LEFT OUTER JOIN TranslationQuestions TQ on Q.idQuestion = TQ.fkQuestion
                         WHERE Subjects.idSubject = '$idSubject' 
                         AND (TA.fkLanguage = Subjects.fkLanguage OR TA.fkLanguage IS NULL)
-                        AND Q.type in ('MC', 'MR', 'NM', 'TM', 'ES', 'TF', 'YN') 
+                        AND Q.type in ('MC', 'MR', 'NM', 'TM', 'ES', 'TF', 'YN', 'HS') 
                         ORDER BY idTopic, idQuestion, idAnswer";
             $this->execQuery($query);
             return true;
