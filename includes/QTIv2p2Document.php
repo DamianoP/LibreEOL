@@ -902,18 +902,6 @@ class QTIv2p2Document
                 $this->removeAllAttributes($elem);
             }
 
-//            $body = $html->getElementsByTagName('body')->item(0);
-//            if($body->childNodes->length > 1){
-//                $newbody = $html->createElement('body');
-//                $children = iterator_to_array($body->childNodes);
-//                $p = $html->createElement('p');
-//                foreach($children as $child){
-//                    $p->appendChild($child);
-//                }
-//                $newbody->appendChild($p);
-//                $body->parentNode->replaceChild($newbody, $body);
-//            }
-
             $htmlText = $html->saveXML($html->getElementsByTagName('body')[0]);
             return $this->replaceUnsupportedHTMLTags($htmlText);
 
@@ -986,8 +974,8 @@ class QTIv2p2Document
     private function replaceUnsupportedHTMLTags($text)
     {
 
-        $tagsToChange = ['<body>', '</body>', '<br/>', '<br>', '<s>', '</s>', '<u>', '</u>'];
-        $tagsReplacement = ['<div>', '</div>', '', '', '<p>', '</p>', '<em>', '</em>'];
+        $tagsToChange = ['<body>', '</body>', '<s>', '</s>', '<u>', '</u>'];
+        $tagsReplacement = ['<div>', '</div>', '<p>', '</p>', '<em>', '</em>'];
 
         return str_replace($tagsToChange, $tagsReplacement, $text);
 
