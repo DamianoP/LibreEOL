@@ -11864,7 +11864,98 @@ class sqlDB {
 
     }
 
+
+    public function qSubjectQuestionsAndAnswers($idSubject)
+    {
+        global $log;
+        $this->result = null;
+        $this->mysqli = $this->connect();
+        try {
+            $query = "SELECT idTopic,
+                        T.name as topicName,
+                        T.description as topicDescription,
+                        idQuestion,
+                        idAnswer,
+                        Q.type as questionType,
+                        Q.difficulty as questionDifficulty,
+                        Q.shortText as questionName,
+                        A.score as answerScore,
+                        TA.translation as answerText,
+                        TQ.translation as questionText
+                      FROM Subjects 
+                          JOIN Topics T on Subjects.idSubject = T.fkSubject 
+                          JOIN Questions Q on T.idTopic = Q.fkTopic 
+                          LEFT OUTER JOIN Answers A on Q.idQuestion = A.fkQuestion 
+                          LEFT OUTER JOIN TranslationAnswers TA on A.idAnswer = TA.fkAnswer
+                          LEFT OUTER JOIN TranslationQuestions TQ on Q.idQuestion = TQ.fkQuestion
+                        WHERE Subjects.idSubject = '$idSubject' 
+                        AND (TA.fkLanguage = Subjects.fkLanguage OR TA.fkLanguage IS NULL)
+                        AND Q.type in ('MC', 'MR', 'NM', 'TM', 'ES', 'TF', 'YN', 'HS') 
+                        ORDER BY idTopic, idQuestion, idAnswer";
+            $this->execQuery($query);
+            return true;
+        } catch (Exception $ex) {
+            $log->append(__FUNCTION__ . " : " . $this->getError());
+            return false;
+        }
+    }
+
+    public function qInsertExportRequest($idSubject, $type){
+        global $log, $user;
+        $this->result = null;
+        $this->mysqli = $this->connect();
+        try{
+            $query = "INSERT INTO subjectToExport (fkUser, fkSubject, status, type)
+                    VALUES ('$user->id', '$idSubject','0','$type')
+                    ON DUPLICATE KEY UPDATE status = '0',
+                        type = '$type',
+                    lastRequest =now()";
+            $this->execQuery($query);
+            return true;
+        }catch (Exception $ex){
+            $log->append(__FUNCTION__ . " : " . $this->getError());
+            return false;
+        }
+    }
+
+    public function qUpdateExportRequest($idSubject){
+        global $log, $user;
+        $this->result = null;
+        $this->mysqli = $this->connect();
+        try{
+            $query = "UPDATE subjectToExport 
+                        SET status = 1
+                        WHERE fkSubject = '$idSubject' 
+                          AND fkUser = '$user->id'";
+            $this->execQuery($query);
+            return true;
+        }catch (Exception $ex){
+            $log->append(__FUNCTION__ . " : " . $this->getError());
+            return false;
+        }
+    }
+
+    public function qExportRequests(){
+        global $log;
+        $this->result = null;
+        $this->mysqli = $this->connect();
+        try{
+            $query = "SELECT idUser as user, 
+                            fkSubject as subject, 
+                            type,
+                            email 
+                        FROM subjectToExport 
+                        JOIN Users ON fkUser =  Users.idUser 
+                        WHERE status = 0";
+            $this->execQuery($query);
+            return true;
+        }catch (Exception $ex){
+            $log->append(__FUNCTION__ . " : " . $this->getError());
+            return false;
+        }
+    }
 }
+
 
 
 

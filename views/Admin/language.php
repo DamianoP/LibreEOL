@@ -64,6 +64,7 @@ $langTo = $xmlTo->getElementById('name')->nodeValue.' ('.strtoupper($xmlTo->getE
 
         <a class="ok button right lSpace tSpace" id="update" onclick="saveLanguageFiles();"><?= ttSaveLanguageFiles ?></a>
 <!--        <a class="normal button right lSpace tSpace" id="save" onclick="saveLanguageXML();">--><?//= ttSaveLanguageXML ?><!--</a>-->
+        <a class="ok button right lSpace tSpace" id="add" onclick="addLanguageCell()"><?= ttAddLangCellTitle ?></a>
         <a class="normal button left tSpace" id="cancel" onclick="window.location = 'index.php?page=admin/selectlanguage';"><?= ttCancel ?></a>
 
         <div class="clearer"></div>
@@ -73,4 +74,5 @@ $langTo = $xmlTo->getElementById('name')->nodeValue.' ('.strtoupper($xmlTo->getE
         <div class="clearer"></div>
 
     </div>
+    <div id="dialogAdd"><p></p></div>
 </div>

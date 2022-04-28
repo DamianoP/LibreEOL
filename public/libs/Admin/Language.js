@@ -14,6 +14,31 @@ var ttci = {
 };
 
 $(function(){
+    if($("#dialogAdd").length > 0){
+        $("#dialogAdd").dialog({
+            autoOpen        :   false,
+            draggable       :   false,
+            resizable       :   true,
+            width           :   400,
+            height          :   "auto",
+            modal           :   true,
+            closeOnEscape   :   false,
+            position        :   ["center", 50],
+            buttons : {
+                No : function(){
+                    $(this).dialog("close");
+                    confirmCallback($(this).data("callback"), $(this).data("params"), false);
+                },
+                Yes : function(){
+                    $(this).dialog("close");
+                    confirmCallback($(this).data("callback"), $(this).data("params"), true);
+                }
+            }
+        });
+    }
+});
+
+$(function(){
 
     /**
      *  @descr  Translation DataTables initialization
@@ -62,6 +87,20 @@ $(function(){
 
 });
 
+
+function addDialog (callback,params) {
+    $('#dialogAdd p').html(
+        '<label>'+ ttIdLangCell +'<input type="text" id="idlangcell"></label><br><br>' +
+        '<label>'+ ttTextLangCell +'<input type="text" id="textlangcell"></label>'
+    );
+    $('#dialogAdd').data("callback", callback)
+        .data("params", params)
+        .dialog("option", "title", ttAddLangCellTitle )
+        .dialog("open");
+    $(".ui-dialog").css("background", "url('"+imageDir+"confirmDialog.png')");
+}
+
+
 /**
  *  @name   updateLanguageFiles
  *  @descr  Saves PHP/Javascript file of requested language
@@ -103,6 +142,32 @@ function saveLanguageFiles(){
         }else
             showErrorMessage(ttEEmptyFields);
     })
+}
+
+/**
+ *  @name   addLanguageCell
+ *  @descr  Adds a new language cell of the requested language
+ */
+function addLanguageCell(){
+    addDialog(function (){
+        let id = $("#idlangcell").val().trim();
+        let text = $("#textlangcell").val();
+        let chekRep = false;
+        translationsTable.rows().eq(0).filter(function (index) {
+            let tableId = translationsTable.cell(index, ttci.translationID).data().trim();
+            if (id === tableId) {
+                chekRep = true;
+            }
+        });
+        if(!chekRep){
+            let textarea = '<span class="value hidden">'+text+'</span><textarea class="language green">'+text+'</textarea>';
+            translationsTable.row.add([ id, text, textarea ]).draw();
+
+            showSuccessMessage(ttLanguageCellAdded);
+        }else{
+            showErrorMessage(ttETransIdExisting);
+        }
+    });
 }
 
 /**

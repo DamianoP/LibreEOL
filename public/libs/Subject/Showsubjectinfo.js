@@ -38,6 +38,35 @@ $(function(){
 
 });
 
+$(function(){
+    if($("#dialogExport").length > 0){
+        $("#dialogExport").dialog({
+            autoOpen        :   false,
+            draggable       :   false,
+            resizable       :   true,
+            width           :   "auto",
+            height          :   "auto",
+            modal           :   true,
+            closeOnEscape   :   false,
+            position        :   ["center", 50],
+            buttons : {
+                No : function(){
+                    $(this).dialog("close");
+                    confirmCallback($(this).data("callback"), 'none', false);
+                },
+                QTI : function(){
+                    $(this).dialog("close");
+                    confirmCallback($(this).data("callback"), 'qti', true);
+                },
+                Moodle : function (){
+                    $(this).dialog("close");
+                    confirmCallback($(this).data("callback"), 'moodle', true);
+                }
+            }
+        });
+    }
+});
+
 /**
  *  @name   selectSubject
  *  @descr  Select subject and go to Topics/Questions edit page or Test Settings edit page
@@ -237,4 +266,59 @@ function cancelNew(askConfirmation){
         subjectNew = false;
         subjectRowEdit =null;
     }
+}
+
+/**
+ *  @name   exportSubject
+ *  @descr  Download the requested subject
+ */
+function exportSubject(type) {
+
+    let sub = $(".selected").attr("value");
+    $.ajax({
+            url: "index.php?page=export/exportrequest",
+            type: "post",
+            data: {
+                idSubject: sub,
+                type: type
+            },
+            success: function (data) {
+                switch (data) {
+                    case 'ACK':
+                        showSuccessMessage(ttMExportRequestSent);
+                        break;
+                    case 'EMPTYSUB':
+                        showErrorMessage(ttEExportEmptySub)
+                        break;
+                    case 'NOANSWER':
+                        showErrorMessage(ttEExportNoAnswers)
+                        break;
+                    case 'NOEANSWERS':
+                        showErrorMessage(ttEExportNotEnAnswers)
+                        break;
+                    default:
+                        showErrorMessage(data)
+                        break;
+                }
+            },
+            error: function (request, status, error) {
+                alert("jQuery AJAX request error:".error)
+            }
+        }
+    );
+}
+
+function exportDialog (callback,params) {
+    $('#dialogExport p').html(ttExportMessage);
+    $('#dialogExport').data("callback", callback)
+        .data("params", params)
+        .dialog("option", "title", ttExport )
+        .dialog("open");
+    $(".ui-dialog").css("background", "url('"+imageDir+"confirmDialog.png')");
+}
+
+function selectExportType(){
+    exportDialog(function (type){
+        exportSubject(type);
+    });
 }
