@@ -1,5 +1,5 @@
 # LibreEOL
-Developed and verified by <a href="https://www.linkedin.com/in/damiano-perri-6938b893/">Damiano Perri</a> (2016-2021) , <a href="https://ogervasi.unipg.it/">Osvaldo Gervasi</a> and <a href="https://www.researchgate.net/profile/Marco-Simonetti-6">Marco Simonetti</a> (2020-2021)
+Developed and verified by <a href="https://www.linkedin.com/in/damiano-perri-6938b893/">Damiano Perri</a> (2016-2022) , <a href="https://ogervasi.unipg.it/">Osvaldo Gervasi</a> and <a href="https://www.researchgate.net/profile/Marco-Simonetti-6">Marco Simonetti</a> (2020-2022)
 
 URL:  https://www.libreeol.org   <br>
 URL:  https://echemtest.libreeol.org   <br>
