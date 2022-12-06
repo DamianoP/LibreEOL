@@ -1,7 +1,7 @@
 <?php
 /**
  * File: AT_OC.php
- * User: Anis Ben Hamida
+ * User: Anis
  * Date: 02/03/2021
  * Desc: Class for answer in On Click questions
  */
