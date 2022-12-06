@@ -622,5 +622,9 @@
   <text id="ttNoPosOC">No Position</text>
   <text id="ttPosition">Position</text>
   <text id="ttOCInstructions">Instructions for the question with labels:\n    • Left click on a label to select it\n    • Left click on a empty space to insert the selected label\n    • Left click on a label to swap it with the selected label\n    • Right click to remove a label from the text</text>
-
+  <text id="ttOCE1">◉ The question needs at least one empty space \n </text>
+  <text id="ttOCE2">◉ The question needs at least two labels \n </text>
+  <text id="ttOCE3">◉ There are not enough labels for this question \n </text>
+  <text id="ttOCE4">◉ Each empty space needs to have at least one label assigned to it \n</text>
+  <text id="ttOCE5">◉ The total score is not equal to 1 \n </text>
 </language>
