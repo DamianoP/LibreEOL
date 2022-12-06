@@ -617,5 +617,9 @@
   <text id="ttNoPosOC">Nessuna Posizione</text>
   <text id="ttPosition">Posizione</text>
   <text id="ttOCInstructions">Istruzioni per la domanda con etichette:\n    • Click sinistro su un'etichetta per selezionarla\n    • Click sinistro su uno spazio per inserire l'etichetta selezionata\n    • Click sinistro consecutivo su due etichette per scambiarle\n    • Click destro per rimuovere un'etichetta dal testo</text>
-
+  <text id="ttOCE1">◉ Non è stato inserito almeno uno spazio vuoto</text>
+  <text id="ttOCE2">◉ Sono state inserite meno di due etichette</text>
+  <text id="ttOCE3">◉ Non sono state create sufficenti etichette per la domanda</text>
+  <text id="ttOCE4">◉ Non tutti gli spazi hanno un'etichetta assegnata</text>
+  <text id="ttOCE5">◉ Il punteggio totale non è uguale a 1</text>
 </language>
