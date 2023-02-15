@@ -308,28 +308,42 @@ class QT_OC extends Question {
         $db = new sqlDB();
         if(($db->qAnswerSet($this->get('idQuestion'), null, $idSubject)) && ($answerSet = $db->getResultAssoc('idAnswer'))){
             foreach($answerSet as $idAnswer => $answer){
+                $answeredCheck = 0;
+                $answeredPos = null;
                 $answerdClass = "";
                 $scoreNoPosition = explode("*", $answer['score'])[1];
                 $position = explode("*", $answer['score'])[0];
                 $right_wrongClass = ($scoreNoPosition > 0) ? 'rightAnswer' : 'wrongAnswer';
+                $assignedScore = 0;
 
                 if(in_array($idAnswer, $answered))
                 {
                     $answeredPos = array_search($idAnswer, $answered);
                     $answeredText[$answeredPos]=$answer['translation'];
                     $answerdClass = 'answered';
+                    $answeredCheck = 1;
                 }
                 if($position>0) {
                     $correctAnswer[$position - 1] = $idAnswer;
                     if ($correctAnswer[$position - 1] == $answered[$position - 1]) {
                         $questionScore += round(($scoreNoPosition * $scale), 2);
+                        $assignedScore = round(($scoreNoPosition * $scale), 2);
                         $correctCounter++;
                     }
                 }
-                $questionAnswers .= '<div class="'.$answerdClass.'">
+                $colorCorrection = "#ffffff";
+                $assignedPos = "nessuna";
+                if($answeredCheck == 1){ $assignedPos = $answeredPos + 1;}
+                if($position == 0){$position = "nessuna";}
+                if($assignedPos == $position && $assignedPos != "nessuna"){$colorCorrection = "#cdf9d3";}
+                else if($assignedPos != $position){$colorCorrection = "#ffcece";}
+
+                $questionAnswers .= '<div class="'.$answerdClass.'" style ="background-color: '.$colorCorrection.'">
                                          <span value="'.$idAnswer.'" class="responseOC '.$right_wrongClass.'"></span>
-                                         <label>'.$answer['translation'].'</label>
-                                         <label class="score">'.number_format(round($scoreNoPosition * $scale, 2), 2).'</label>
+                                         <label class="correctionOC">'.$answer['translation'].'</label>
+                                         <label class="correctionOC">Posizione corretta: '.$position.'</label>
+                                         <label class="correctionOC">Posizione assegnata: '.$assignedPos.'</label>
+                                         <label class="score">'.$assignedScore.'</label>
                                      </div>';
             }
             if(count($answered)==$correctCounter){
