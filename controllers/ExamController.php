@@ -179,7 +179,7 @@ class ExamController extends Controller{
            (isset($_POST['regEnd'])) && (isset($_POST['rooms']))){
 
             $db = new sqlDB();
-	    $db2 = new sqlDB();
+	        $db2 = new sqlDB();
             $password = randomPassword(8);
             if(($db->qNewExam($_POST['name'], $_POST['idSubject'], $_POST['idTestSettings'], $_POST['datetime'],
                               $_POST['desc'], $_POST['regStart'], $_POST['regEnd'], $_POST['rooms'], $password)) && ($examInfo = $db->nextRowAssoc())){
@@ -483,7 +483,7 @@ non viene più utilizzata
                 if(($testInfo['scoreFinal'] != '')&&($testInfo['scoreFinal'] != 0)) {
                     $result = $this->calcResult($testInfo);       
                     if ($result != 'NOTPASS') {
-                        $db->qGetUserTest($testInfo['idTest']);
+                        $db->qTest($testInfo['idTest']);
                         $userInfo = $db->nextRowAssoc();
                         
                         $dbU1 = new sqlDB();
@@ -1905,8 +1905,239 @@ non viene più utilizzata
         }
     }
 
+    /**
+     * MASSIMILIANO 3/01/2023   
+     */
 
+    //This function renders the coaching report page.
+    private function actionCoachingreport(){
+        global $engine;
 
+        $engine->renderDoctype();
+        $engine->loadLibs();
+        $engine->renderHeader();
+        $engine->renderPage();
+        $engine->renderFooter();
+    }
+
+    //Returns a json with a student's answers from name surname and id of an exam.
+    private function actionStudentanswers(){
+        $db = new sqlDB();
+
+        $db->qGetanswers($_POST['idStudent'],$_POST['idExam']);
+        
+        $result = array();
+
+        while($answer = $db->nextRowAssoc()){
+            array_push($result, $answer);
+        }
+
+        echo json_encode($result);
+    }
+
+    //Returns a json with details of a 30 questions set of a given test.
+    private function actionGetanswersinfo(){
+        $db = new sqlDB();
+
+        $answers = $_POST['answers'];
+        $result = array();
+
+        for($i=0; $i<count($answers); $i++){
+            $db->qgetQuestionInfo($answers[$i]['fkQuestion']);
+            array_push($result, $db->nextRowAssoc());
+        }
+
+        echo json_encode($result);
+    }
+
+    //Returns the average score of a given set of students (specifying name, surname and idExam).
+    private function actionAveragefromset(){
+        $db = new sqlDB();
+        $ids = $_POST['studentsIds'];
+        $result = 0;
+
+        for($i=0; $i<count($ids); $i++){
+
+            $db->qGetanswers($ids[$i]['fkUser'], $_POST['idExam']);
+
+            while($answer = $db->nextRowAssoc()){
+                $result += $answer['score'];
+            }
+        }
+
+        echo json_encode(($result/count($ids)));
+    }
+
+    //Return number of correct answers for a given test student.
+    private function actionGetanswercount(){
+        $db = new sqlDB();
+
+        $db->getCorrectQuestionCountCat($_POST['idStudent'],$_POST['idExam']);
+
+        $correctAnswersCount = array();
+
+        while($answer = $db->nextRowAssoc()){
+            array_push($correctAnswersCount, $answer);
+        }
+
+        echo json_encode(["correctAnswers" => $correctAnswersCount]);
+    }
+
+    private function actionGetanswerscorecategory(){
+        $db = new sqlDB();
+
+        $db->qGetQuestionCountCat($_POST['idStudent'],$_POST['idExam']);
+
+        $correctAnswersCount = array();
+
+        while($answer = $db->nextRowAssoc()){
+            array_push($correctAnswersCount, $answer);
+        }
+
+        echo json_encode(["correctAnswers" => $correctAnswersCount]);
+    }
+
+    //Returns an array containing duration for each student's exam.
+    private function actionGetdurationtests(){
+        $db = new sqlDB();
+
+        $durationArray = array();
+
+        for($i=0; $i<count($_POST['studentsIds']); $i++){
+
+            $db->qDurationTests($_POST['studentsIds'][$i]['fkUser'], $_POST['idExam']);
+
+            while($answer = $db->nextRowAssoc()){
+                array_push($durationArray, $answer);
+            }
+        }
+
+        echo json_encode($durationArray);
+    }
+
+    //Returns tests settings of the given exam test.
+    private function actionTestsettings(){
+        $db = new sqlDB();
+
+        $durationArray = array();
+
+        $db->qTestSettings($_POST['idExam']);
+        echo json_encode($db->nextRowAssoc());
+    }
+
+    //Returns highest and lowest score among all students.
+    private function actionGetmaxmin(){
+        $db = new sqlDB();
+        $durationArray = array();
+
+        $max = 0;
+        $min = 10000;
+
+        for($i=0; $i<count($_POST['studentsIds']); $i++){
+            $db->qGetScore($_POST['studentsIds'][$i]['fkUser'], $_POST['idExam']);
+            
+            $score = doubleval($db->nextRowAssoc()['TotalScore']);
+
+            if($score > $max){
+                $max = $score;
+            }
+
+            if($score< $min){
+                $min = $score;
+            }
+        }
+
+        echo json_encode(array('min'=>$min,'max'=>$max));
+    }
+
+    //Returns json with the scores for all students.
+    private function actionAllscores(){
+        $db = new sqlDB();
+        $scores = array();
+        $names = array();
+
+        for($i=0; $i<count($_POST['idStudents']); $i++){
+            $db->qGetScore($_POST['idStudents'][$i]['fkUser'], $_POST['idExam']);
+            array_push($scores, $db->nextRowAssoc()['TotalScore']);
+            array_push($names, $_POST['students'][$i][0]." ".$_POST['students'][$i][1]);
+        }   
+
+        echo json_encode(array('scores'=>$scores,'names'=>$names));
+    }
+
+    private function actionGlobalcatcount(){
+        $db = new sqlDB();
+
+        $total = array();
+        $correctCount = array();
+        
+        for($i=0; $i<count($_POST['studentsIds']); $i++){
+            $db->getCorrectQuestionCountCat($_POST['studentsIds'][$i]['fkUser'], $_POST['idExam']);
+
+            while($answer = $db->nextRowAssoc()){
+                $correctCount[$answer["type"]] += $answer["cnt"];
+            }
+            $db->qGetQuestionCountCat($_POST['studentsIds'][$i]['fkUser'], $_POST['idExam']);
+
+            while($answer = $db->nextRowAssoc()){
+                $total[$answer["type"]] += $answer["cnt"];
+            }
+        }
+
+        echo json_encode(array('total'=>$total,'correct'=>$correctCount));
+    }
+
+    private function actionGetallstudentsids(){
+        $db = new sqlDB();
+
+        $db->qStudentsIds($_POST['idExam']);
+        $result = array();
+
+        while($answer = $db->nextRowAssoc()){
+            array_push($result, $answer);
+        }
+
+        echo json_encode($result);
+    }
+
+    /*------------------------FINE MASSIMILIANO------------------------*/
+    /*------------------------FRANCESCO------------------------*/
+    
+    private function actionGetDateUserTest(){
+        $db = new sqlDB();
+        $db->qDateTest($_POST['idStudent'],$_POST['idExam']);
+
+        echo json_encode($db->nextRowAssoc());
+    }
+
+        private function actionGetDetailsUserTest(){       
+        $db = new sqlDB();
+        $db->qQuestionTab($_POST['idStudent'],$_POST['idExam'], $_POST['idLanguage']);
+
+        $questionArray = array();
+        while($answer = $db->nextRowAssoc()){
+            array_push($questionArray, $answer);
+        }
+
+        echo json_encode($questionArray);
+    }
+
+    private function actionGetTotalAndCorrect(){
+        $db = new sqlDB();
+        $db->qTotalAndCorrect($_POST['idExam']);
+
+        $result = array();
+        while($answer = $db->nextRowAssoc()){
+            array_push($result, $answer);
+        }
+
+        echo json_encode($result);
+    }
+
+    private function actionGetCurrentUser(){
+        global $user;
+        echo json_encode($user);
+    }
 
     /**
      *  @name   accessRules
@@ -1930,7 +2161,7 @@ non viene più utilizzata
                 'allow',
                 'actions' => array('Settings', 'Showsettingsinfo','Shownewsettingsinfo', 'Updatesettingsinfo', 'Newsettings','Newsettings2', 'Deletesettings',
                                    'Exams', 'Showexaminfo', 'Testsettingslist', 'Updateexaminfo', 'Newexam', 'Changestatus',
-                                   'Showregistrationslist', 'Showaddstudentspanel', 'Registerstudents', 'Toggleblock', 'Correct', 'View', 'Archiveexam','Printcertificate','Savestudentexam','Sendmail','Updatearchivedtest','Resetsessiontestsettings'),
+                                   'Showregistrationslist', 'Showaddstudentspanel', 'Registerstudents', 'Toggleblock', 'Correct', 'View', 'Archiveexam','Printcertificate','Savestudentexam','Sendmail','Updatearchivedtest','Resetsessiontestsettings', 'Coachingreport', 'Studentanswers', 'Getanswersinfo', 'Averagefromset', 'Getanswercount', 'Getdurationtests', 'Testsettings', 'Getmaxmin', 'Allscores', 'Getanswerscorecategory', 'Globalcatcount' , 'Getdateusertest','Getdetailsusertest', 'Gettotalandcorrect', 'Getcurrentuser', 'Getallstudentsids'),
                 'roles'   => array('t','e'),
             ),
 	    array(

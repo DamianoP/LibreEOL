@@ -1792,6 +1792,41 @@ private function actionResultsexams(){
         fclose($file);
     }
 
+    /*
+    !MASSIMILIANO 19/21DEC
+    */
+
+    private function actionFirstquery(){
+            $db = new sqlDB();
+
+            if(!($db->qStudents())){
+                echo "errore query";
+            }
+
+            echo json_encode($db->qTry());
+        }
+
+    /*
+    With this function we can return the test table using either the test id or a set id.
+
+    If we use "nextRowAssoc" function we gotta scan trough the associative array since the function
+    returns one row only.
+
+    We can select a single attribute from the table using the [] operator.
+    */
+    
+    private function actionRetrieveinfo(){
+        $db = new sqlDB();
+
+        if(!($db->qTestDetails("placeholder", 18407))){
+            echo("query error function actionRetrieveinfo");
+        }
+
+        //echo json_encode($db->nextRowAssoc()['idTest']); !example 
+        echo json_encode($db->nextRowAssoc()['idUser']);
+    }
+
+
 
 
     private function accessRules(){
@@ -1803,7 +1838,7 @@ private function actionResultsexams(){
                     'Printparticipantdetails','Aoreportparameters','Showgroups','Aoreportresult',
                     'Savetemplate','Loadtemplate','Deletetemplate',
                     'Creport','Showstudentcreport','Creportparameters','Creportlist',
-                    'Showtestscreport','Loadcreportresult','Creportpdf','Resultstudent','Resultsexams'),
+                    'Showtestscreport','Loadcreportresult','Creportpdf','Resultstudent','Resultsexams', 'Firstquery','Retrieveinfo'),
                 'roles'   => array('a','e','t','at'),
             ),
             array(
@@ -1814,3 +1849,4 @@ private function actionResultsexams(){
         );
     }
 }
+
