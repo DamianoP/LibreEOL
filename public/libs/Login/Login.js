@@ -24,7 +24,7 @@ $(document).ready(function () {
  */
 function logIn() {
     if(!document.getElementById("checkbox").checked){
-        $("#result").text("Before proceeding, you must accept the privacy policy");
+        $("#result").text("Before proceeding, you must accept the ");
         return;
     }
     if(($("#email").val() == "") || ($("#password").val() == "")){

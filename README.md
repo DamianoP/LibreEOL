@@ -1,10 +1,10 @@
 # LibreEOL
-Developed and verified by <a href="https://www.linkedin.com/in/damiano-perri-6938b893/">Damiano Perri</a> (2016-2021) , <a href="https://ogervasi.unipg.it/">Osvaldo Gervasi</a> and <a href="https://www.researchgate.net/profile/Marco-Simonetti-6">Marco Simonetti</a> (2020-2021)
+Developed and verified by <a href="https://www.linkedin.com/in/damiano-perri-6938b893/">Damiano Perri</a> (2015-2023) , <a href="https://ogervasi.unipg.it/">Osvaldo Gervasi</a> and <a href="https://www.researchgate.net/profile/Marco-Simonetti-6">Marco Simonetti</a> (2020-2023)
 
 URL:  https://www.libreeol.org   <br>
 URL:  https://echemtest.libreeol.org   <br>
 Version 2.7.5 - 09 December 2021 on GitHub   <br>
-Version 5.X - 2022 on online websites   <br>
+Version 5.X - 2023 on online websites   <br>
 
 More information: <a href="https://www.libreeol.org/info/index.php?langs=en">here</a>
 <br>

@@ -312,8 +312,7 @@ function changeExamStatus(askConfirmationAndExamToChange){
 function helpjs(){
 
     $("#dialogError p").html(ttHelpExams);
-    $("#dialogError").dialog( "option", "title", ttHelpDefault )
-                     .dialog("open");
+    $("#dialogError").dialog( "option", "title", ttHelpDefault ).dialog("open");
     $(".ui-dialog").css("background", "url('"+imageDir+"helpDialog.png')");
 
 }
@@ -380,4 +379,40 @@ function resultExams(){
             alert("jQuery AJAX request error:".error);
         }
     });
+}
+
+//MASSIMILIANO 20DEC
+
+function firstQuery(){
+    $.ajax({
+        url     : "index.php?page=report/firstquery",
+        type    : "post",
+        success : function(data){
+            console.log(data);
+        },
+        error : function (request, status, error) {
+            console.log("Ajax error: \n" + error);
+        }
+    });
+}
+
+function retrieveInfo(){
+    $.ajax({
+        url: "index.php?page=report/retrieveinfo",
+        type: "post",
+        success : function(data){
+            console.log(data);
+        },
+        error: function(request, status, error){
+            console.log("error in ajax request retrieve info /libs/Exam/Exams.js:\n" + error);
+        }
+    });
+}
+
+/*  Submits an hidden form which stores idTest and idExamPost. 
+    idTest -> id of a specific test? TODO controllare idTest
+    idExamPost -> id of the exam of the tab that was opened from the user among all the exams.
+*/
+function coachingReport(){
+    $("#idTestForm").attr("action", "index.php?page=exam/coachingreport").submit();
 }

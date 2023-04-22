@@ -25,8 +25,11 @@ if(isset($_POST['idExam'])){
     <?php printMenu(); ?>
 </div>
 
-<div id="loader" class="loader"></div>
+<div id="loader" class="loader" onclick=""></div>
 <div id="main">
+
+    <!--  -->
+    
     <div>
         <div id="examsTableContainer" style="visibility: hidden; text-align:center;">
             <div class="smallButtons">

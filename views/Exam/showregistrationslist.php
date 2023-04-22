@@ -242,11 +242,15 @@ $(function(){
 
 <form action="" method="post" id="idTestForm" target="_blank">
     <input type="hidden" id="idTest" name="idTest" value="">
+    <!--MASSIMILIANO-->
+    <!--Created another input field so i can pass the idExam to the report Page-->
+    <input type="hidden" id="idExamInput" name="idExamPost" value="<?= $_POST['idExam'] ?>">
 </form>
 
 <input type="hidden" id="idExam" value="<?= $_POST['idExam'] ?>"/>
 <a class="normal button right lSpace tSpace" onclick="localrefreshStudentsList();"> <?= ttRefresh ?></a>
 <a class="normal button right lSpace tSpace" onclick="resultStudent(1)" > <?= ttReport ?> </a>
+<a class="normal button right lSpace tSpace" onclick="coachingReport()"> Coaching Report </a>
 <a class="normal button tSpace" onclick="closeStudentsList();"> <?= ttClose ?></a>
 <div class="clearer"></div>
 
