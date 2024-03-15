@@ -41,21 +41,21 @@ body.noscroll {
 }
 #header {
 /* IE10 Consumer Preview */ 
-background-image: -ms-radial-gradient(right bottom, ellipse farthest-side, #859EC4 0%, #BDC5D9 50%, #859EC4 100%);
+background-image: -ms-radial-gradient(right bottom, ellipse farthest-side, #5FA860 0%, #89F28A 50%, #5FA860 100%);
 /* Mozilla Firefox */ 
-background-image: -moz-radial-gradient(right bottom, ellipse farthest-side, #859EC4 0%, #BDC5D9 50%, #859EC4 100%);
+background-image: -moz-radial-gradient(right bottom, ellipse farthest-side, #5FA860 0%, #89F28A 50%, #5FA860 100%);
 /* Opera */ 
-background-image: -o-radial-gradient(right bottom, ellipse farthest-side, #859EC4 0%, #BDC5D9 50%, #859EC4 100%);
+background-image: -o-radial-gradient(right bottom, ellipse farthest-side, #5FA860 0%, #89F28A 50%, #5FA860 100%);
 /* Webkit (Safari/Chrome 10) */ 
-background-image: -webkit-gradient(radial, right bottom, 0, right bottom, 972, color-stop(0, #859EC4), color-stop(0.5, #BDC5D9), color-stop(1, #859EC4));
+background-image: -webkit-gradient(radial, right bottom, 0, right bottom, 972, color-stop(0, #5FA860), color-stop(0.5, #89F28A), color-stop(1, #5FA860));
 /* Webkit (Chrome 11+) */ 
-background-image: -webkit-radial-gradient(right bottom, ellipse farthest-side, #859EC4 0%, #BDC5D9 50%, #859EC4 100%);
+background-image: -webkit-radial-gradient(right bottom, ellipse farthest-side, #5FA860 0%, #89F28A 50%, #5FA860 100%);
 /* W3C Markup, IE10 Release Preview */ 
-background-image: radial-gradient(ellipse farthest-side at right bottom, #859EC4 0%, #BDC5D9 50%, #859EC4 100%);
+background-image: radial-gradient(ellipse farthest-side at right bottom, #5FA860 0%, #89F28A 50%, #5FA860 100%);
     width	            :	100%;
     margin              :	5px auto auto;
     height              :   122px;
-    background-color    :   #859ec4;
+    background-color    :   #5fa860;
     -webkit-box-shadow : 0 0 10px #666;
 }
 /*
@@ -2621,6 +2621,7 @@ a.red,a.delete:hover{
 a.inactive:hover{
     background-color:#DEDEDE ;
 }
+
 .droptarget {
     display: inline-flex;
     padding: 3px;
@@ -2722,5 +2723,12 @@ a.inactive:hover{
     width: 95%;
     display: inline-block;
 }
-
-
+.questionOCProblems {
+    font-size: 16px;
+    color: red;
+}
+.correctionOC{
+    display: inline-block;
+    text-align: left;
+    width: 25%;
+}

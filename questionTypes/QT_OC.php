@@ -1,7 +1,7 @@
 <?php
 /**
  * File: QT_OC.php
- * User: Anis Ben Hamida
+ * User: Anis
  * Date: 02/03/2021
  * Desc: Class for OnClick questions
  */
@@ -155,8 +155,57 @@ class QT_OC extends Question {
 
     public function printQuestionPreview(){
         global $config;
+
+        $positionCheck = 0;
+        $checkingArray = [];
         $db = new sqlDB();
-        if(($db->qAnswerSet($this->get('idQuestion'), $this->get('fkLanguage'), $_SESSION['idSubject'])) && ($answerSet = $db->getResultAssoc())){
+        $numAnswers = 0;
+        $totScore = 0;
+        $error = 0;
+        $text = $this->get('translation');
+        $numQuestions = substr_count($text, "<input");
+        $problemMessage='<div class="questionOCProblems">'.ttError.'<br>';
+        if (($db->qAnswerSet($this->get('idQuestion'), $this->get('fkLanguage'), $_SESSION['idSubject']))&&($answerSet = $db->getResultAssoc())) {
+            for ($i = 0; $i < $numQuestions; $i++) {
+                $checkingArray[$i] = $i + 1;
+            }
+            //checks if there is at least one empty space
+            if ($numQuestions <= 0) {
+                $error = 1;
+                $problemMessage .= ttOCE1 . '<br>';
+            }
+            foreach ($answerSet as $item) {
+                if ($item['score'] != 0) {
+                    $totScore += explode("*", $item['score'])[1];
+                    $position = explode("*", $item['score'])[0];
+                    if ($position == $checkingArray[$position - 1]) {
+                        $checkingArray[$position - 1] = 0;
+                    }
+                }
+                $numAnswers++;
+            }
+
+            //checks if there are at least 2 labels
+            if ($numAnswers < 2) {
+                $problemMessage .= ttOCE2 . '<br>';
+                $error = 1;
+            }
+            //checks if there are enough labels for the empty spaces
+            if ($numQuestions > $numAnswers) {
+                $problemMessage .= ttOCE3 . '<br>';
+                $error = 1;
+            }
+
+            for ($i = 0; $i < count($checkingArray); $i++) {
+                if ($checkingArray[$i] != 0) {
+                    $positionCheck = 1;
+                }
+            }
+            //checks if at least 1 space hasn't got an assigned label
+            if ($positionCheck != 0) {
+                $problemMessage .= ttOCE4 . '<br>';
+                $error = 1;
+            }
 
             $questionAnswers = '';
             shuffle($answerSet);
@@ -165,36 +214,40 @@ class QT_OC extends Question {
                 $idQ = $this->get('idQuestion');
                 if($answer['fkLanguage'] != $this->get('fkLanguage'))
                     $class = 'mainLang';
-                $questionAnswers .= '<span idQ = "'.$idQ.'" value="'.$answer['idAnswer'].'" class = "answerOC">
-                '.$answer['translation'].'
-                </span>';
-            }
-
-            // -------  Add extra buttons  ------- //
-            $extra = '';
-            if(strpos($this->get('extra'), 'c') !== false)
-                $extra .= '<img class="extraIcon calculator" src="'.$config['themeImagesDir'].'QEc.png'.'">';
-            if(strpos($this->get('extra'), 'p') !== false)
-                $extra .= '<img class="extraIcon periodicTable" src="'.$config['themeImagesDir'].'QEp.png'.'">';
-            ?>
-
-            <div class="questionTest" value="<?= $this->get('idQuestion') ?>" type="OC">
-                <?php
-                $text = $this->get('translation');
-                $pattern = "/<\s* input [^>]+ >/xi";
-                $dropId = $this->get('idQuestion');
-                $regex = preg_replace($pattern, "<span class=\"droptarget\" value=$dropId idAns=\"\"></span>", $text);
+                    $questionAnswers .= '<span idQ = "'.$idQ.'" value="'.$answer['idAnswer'].'" class = "answerOC">
+                    '.$answer['translation'].'
+                    </span>';
+                }
+        }
+                if ($numAnswers == 0) {
+                    $problemMessage .= ttOCE3 . '<br>';
+                    $error = 1;
+                }
+                // -------  Add extra buttons  ------- //
+                $extra = '';
+                if(strpos($this->get('extra'), 'c') !== false)
+                    $extra .= '<img class="extraIcon calculator" src="'.$config['themeImagesDir'].'QEc.png'.'">';
+                if(strpos($this->get('extra'), 'p') !== false)
+                    $extra .= '<img class="extraIcon periodicTable" src="'.$config['themeImagesDir'].'QEp.png'.'">';
                 ?>
 
-                <div class="questionText"><div class="questionSubTextOC"><?= $regex ?></div><div class="infoButtonOCContainer"><img class="infoButtonOC" src="themes/default/images/help.png"></div></div>
-                <div class="questionAnswers"><?= $questionAnswers ?></div>
-            </div>
+                <div class="questionTest" value="<?= $this->get('idQuestion') ?>" type="OC">
+                    <?php
+                    $text = $this->get('translation');
+                    $pattern = "/<\s* input [^>]+ >/xi";
+                    $dropId = $this->get('idQuestion');
+                    $regex = preg_replace($pattern, "<span class=\"droptarget\" value=$dropId idAns=\"\"></span>", $text);
+                    ?>
 
-            <?php
-        }
+                    <div class="questionText"><div class="questionSubTextOC"><?= $regex ?></div><div class="infoButtonOCContainer"><img class="infoButtonOC" src="themes/default/images/help.png"></div></div>
+                    <div class="questionAnswers"><?= $questionAnswers ?></div>
+                    <?= $error==1?$problemMessage."</div>":"" ?>
+                </div>
+
+                <?php
         $this->printQuestionTypeLibrary();
         echo '<script> main_OC(); </script>';
-    }
+}
 
     public function printQuestionInTest($idSubject, $answered, $extras){
         global $config;
@@ -255,28 +308,42 @@ class QT_OC extends Question {
         $db = new sqlDB();
         if(($db->qAnswerSet($this->get('idQuestion'), null, $idSubject)) && ($answerSet = $db->getResultAssoc('idAnswer'))){
             foreach($answerSet as $idAnswer => $answer){
+                $answeredCheck = 0;
+                $answeredPos = null;
                 $answerdClass = "";
                 $scoreNoPosition = explode("*", $answer['score'])[1];
                 $position = explode("*", $answer['score'])[0];
                 $right_wrongClass = ($scoreNoPosition > 0) ? 'rightAnswer' : 'wrongAnswer';
+                $assignedScore = 0;
 
                 if(in_array($idAnswer, $answered))
                 {
                     $answeredPos = array_search($idAnswer, $answered);
                     $answeredText[$answeredPos]=$answer['translation'];
                     $answerdClass = 'answered';
+                    $answeredCheck = 1;
                 }
                 if($position>0) {
                     $correctAnswer[$position - 1] = $idAnswer;
                     if ($correctAnswer[$position - 1] == $answered[$position - 1]) {
                         $questionScore += round(($scoreNoPosition * $scale), 2);
+                        $assignedScore = round(($scoreNoPosition * $scale), 2);
                         $correctCounter++;
                     }
                 }
-                $questionAnswers .= '<div class="'.$answerdClass.'">
+                $colorCorrection = "#ffffff";
+                $assignedPos = "nessuna";
+                if($answeredCheck == 1){ $assignedPos = $answeredPos + 1;}
+                if($position == 0){$position = "nessuna";}
+                if($assignedPos == $position && $assignedPos != "nessuna"){$colorCorrection = "#cdf9d3";}
+                else if($assignedPos != $position){$colorCorrection = "#ffcece";}
+
+                $questionAnswers .= '<div class="'.$answerdClass.'" style ="background-color: '.$colorCorrection.'">
                                          <span value="'.$idAnswer.'" class="responseOC '.$right_wrongClass.'"></span>
-                                         <label>'.$answer['translation'].'</label>
-                                         <label class="score">'.number_format(round($scoreNoPosition * $scale, 2), 2).'</label>
+                                         <label class="correctionOC">'.$answer['translation'].'</label>
+                                         <label class="correctionOC">Posizione corretta: '.$position.'</label>
+                                         <label class="correctionOC">Posizione assegnata: '.$assignedPos.'</label>
+                                         <label class="score">'.$assignedScore.'</label>
                                      </div>';
             }
             if(count($answered)==$correctCounter){
@@ -358,5 +425,79 @@ class QT_OC extends Question {
             $score = 1;
         }
         return $score;
+    }
+
+    public function checkConsistency($writer=1){
+        global $config;
+        $ack = false;
+        $positionCheck = 0;
+        $checkingArray = [];
+        $db = new sqlDB();
+        $numAnswers = 0;
+        $totScore = 0;
+        $checkingCount = 0;
+        $stringError = "";
+        if (($db->qAnswerSet($this->get('idQuestion'), $this->get('fkLanguage'), $_SESSION['idSubject']))&&($answerSet = $db->getResultAssoc())){
+            $text = $this->get('translation');
+            $numQuestions = substr_count($text, "<input");
+        }
+        for($i=0; $i<$numQuestions; $i++){
+            $checkingArray[$i]=$i+1;
+        }
+        //checks if there is at least one empty space
+        if($numQuestions>0){
+            $checkingCount +=1;
+        }
+        else{
+            $stringError .= ttOCE1.'<br>';
+        }
+
+        foreach ($answerSet as $item) {
+            if ($item['score'] != 0) {
+                $totScore += explode("*", $item['score'])[1];
+                $position = explode("*", $item['score'])[0];
+                if ($position == $checkingArray[$position-1]) {
+                    $checkingArray[$position-1] = 0;
+                }
+            }
+            $numAnswers++;
+        }
+
+        //checks if there are at least 2 labels
+        if($numAnswers>1){
+            $checkingCount+=1;
+        }
+        else{
+            $stringError .= ttOCE2.'<br>';
+        }
+        //checks if there are enough labels for the empty spaces
+        if($numQuestions <= $numAnswers){
+            $checkingCount+=1;
+        }
+        else{
+            $stringError .= ttOCE3.'<br>';
+        }
+
+        for($i=0; $i<count($checkingArray); $i++){
+            if($checkingArray[$i]!=0){
+                $positionCheck=1;
+            }
+        }
+        //checks if at least 1 space hasn't got an assigned label
+        if($positionCheck==0){
+            $checkingCount+=1;
+        }
+        else{
+            $stringError .= ttOCE4.'<br>';
+        }
+        //checks if the total score is = 1
+        if(round($totScore) == 1){
+            $checkingCount+=1;
+        }
+        else{
+            $stringError .= ttOCE5.'<br>';
+        }
+        if($checkingCount==5){$ack=true;}
+        return $ack;
     }
 }
