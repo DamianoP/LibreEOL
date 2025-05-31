@@ -4,7 +4,7 @@ Developed and verified by <a href="https://www.linkedin.com/in/damiano-perri-693
 URL:  https://www.libreeol.org   <br>
 URL:  https://echemtest.libreeol.org   <br>
 Version 2.7.5 - 09 December 2021 on GitHub   <br>
-Version 6.X - 2025 on online websites   <br>
+Version 7.X - 2025 on online websites   <br>
 
 More information: <a href="https://www.libreeol.org/info/index.php?langs=en">here</a>
 <br>
