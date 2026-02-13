@@ -4,7 +4,7 @@ Developed and verified by <a href="https://www.linkedin.com/in/damiano-perri-693
 URL:  https://www.libreeol.org   <br>
 URL:  https://echemtest.libreeol.org   <br>
 Version 2.7.5 - 09 December 2021 on GitHub   <br>
-Version 7.X - 2025 on online websites   <br>
+Version 8.X - 2026 on online websites   <br>
 
 More information: <a href="https://www.libreeol.org/info/index.php?langs=en">here</a>
 <br>
@@ -12,7 +12,7 @@ More information: <a href="https://www.libreeol.org/info/index.php?langs=en">her
 
 Description
 --------------------
-LibreEOL is an innovative online assessment system based on HTML5, CSS2/3, PHP7 and Ajax <br>
+LibreEOL is an innovative online assessment system based on HTML5, CSS2/3, PHP8 and Ajax <br>
 LibreEOL is an open source software to create online quizzes, tests and exams  <br>
 LibreEOL allows to carry out tests related to exams of various type (University courses, professional certifications, language skill assessment, etc) <br>
 The E-assessment is fundamental in modern teaching/e-learning approaches, in fact it ensures: <br>
